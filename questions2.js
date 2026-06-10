@@ -787,13 +787,13 @@ const E2_MATH_M2 = [
     options:['A and B','A and C','B and C','C and D'],
     answer:1, topic:'Problem Solving & Data'
   },
-  {
-    id:99, section:'math', module:2,
-    text:'Siva invested $1,200 into two accounts. One account yields 5 percent simple annual interest, and the other yields 7 percent simple annual interest. If after exactly one year, the two investments yielded a total of $74 in interest, how much, in dollars, was invested into the account earning 5 percent interest? Ignore the dollar sign when placing your answer.',
-    options:['400','500','600','700'],
-    answer:1, topic:'Algebra',
-    isFillIn:true, fillAnswer:'500'
-  }
+  // {
+  //   id:99, section:'math', module:2,
+  //   text:'Siva invested $1,200 into two accounts. One account yields 5 percent simple annual interest, and the other yields 7 percent simple annual interest. If after exactly one year, the two investments yielded a total of $74 in interest, how much, in dollars, was invested into the account earning 5 percent interest? Ignore the dollar sign when placing your answer.',
+  //   options:['400','500','600','700'],
+  //   answer:1, topic:'Algebra',
+  //   isFillIn:true, fillAnswer:'500'
+  // }
 ];
 
 // ── Combine all questions for Exam 2 ──────────
