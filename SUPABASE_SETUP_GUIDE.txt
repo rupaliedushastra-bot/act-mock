@@ -1,0 +1,146 @@
+================================================================
+  SUPABASE SETUP GUIDE — Digital SAT Practice Exam 1
+  Free mein unlimited student data save karo!
+================================================================
+
+Supabase ek free database hai jahan har student ka result
+automatically save hoga. Aap baad mein dashboard se sab
+dekh sakte ho — naam, score, phone, topic-wise performance.
+
+Sirf 4 steps hain. Ek baar setup, hamesha ke liye kaam kare!
+
+================================================================
+STEP 1: Supabase Account Banao (Free)
+================================================================
+1. Browser mein jao: https://supabase.com
+2. "Start your project" → GitHub se ya email se sign up karo
+3. "New Project" click karo
+4. Details bharo:
+   - Organization: koi bhi naam (e.g. EduQuest)
+   - Project Name: sat-exam
+   - Database Password: koi strong password (save karke rakho!)
+   - Region: Southeast Asia (Singapore) — India ke paas hai
+5. "Create new project" click karo
+6. 1-2 minute wait karo — project ban raha hoga
+
+================================================================
+STEP 2: Database Table Banao
+================================================================
+1. Left sidebar mein "SQL Editor" click karo
+2. "New query" click karo
+3. Neeche diya hua SQL copy karke paste karo:
+
+─────────────────────────────────────────────────────────
+CREATE TABLE sat_results (
+  id              BIGSERIAL PRIMARY KEY,
+  student_name    TEXT NOT NULL,
+  student_email   TEXT,
+  student_phone   TEXT,
+  sat_score       INTEGER,
+  rw_score        INTEGER,
+  math_score      INTEGER,
+  percentage      INTEGER,
+  grade           TEXT,
+  correct         INTEGER,
+  wrong           INTEGER,
+  skipped         INTEGER,
+  total           INTEGER,
+  topic_scores    JSONB,
+  weak_topics     TEXT,
+  submitted_at    TIMESTAMPTZ,
+  created_at      TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Public read/write access (exam portal ke liye zaroori)
+ALTER TABLE sat_results ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Allow insert for all"
+  ON sat_results FOR INSERT
+  WITH CHECK (true);
+
+CREATE POLICY "Allow read for all"
+  ON sat_results FOR SELECT
+  USING (true);
+─────────────────────────────────────────────────────────
+
+4. "Run" button (ya Ctrl+Enter) click karo
+5. "Success" message aana chahiye
+
+================================================================
+STEP 3: API Keys Copy Karo
+================================================================
+1. Left sidebar mein "Settings" (gear icon) click karo
+2. "API" section click karo
+3. Do cheezein copy karo:
+
+   PROJECT URL:
+   (kuch aisa dikhega: https://abcxyzpqr.supabase.co)
+   → Yeh "YOUR_SUPABASE_URL" ki jagah paste karna hai
+
+   ANON PUBLIC KEY:
+   (bahut lamba string hoga: eyJhbGciOiJIUzI1NiIs...)
+   → Yeh "YOUR_SUPABASE_ANON_KEY" ki jagah paste karna hai
+
+================================================================
+STEP 4: supabase.js File Update Karo
+================================================================
+sat_exam folder mein "supabase.js" file kholo.
+Lines 11-12 update karo:
+
+  url:     'https://XXXXXXXX.supabase.co',   ← Step 3 ka URL
+  anonKey: 'eyJhbGci...bahut lamba...',       ← Step 3 ka Key
+
+Save karo — bas! ✅
+
+================================================================
+DATA KAISE DEKHEN (Dashboard)
+================================================================
+1. Supabase.com pe login karo
+2. Apna project open karo
+3. Left sidebar → "Table Editor"
+4. "sat_results" table click karo
+5. Har student ki entry dikhegi:
+   - Naam, Email, Phone
+   - SAT Score, R&W Score, Math Score
+   - Correct / Wrong / Skipped
+   - Topic-wise accuracy
+   - Submit time
+
+DATA EXPORT (Excel mein):
+- Table Editor → top-right "Export" button → CSV download
+- Excel mein import karo
+
+================================================================
+FREE PLAN LIMITS (Supabase)
+================================================================
+✅ 500 MB database storage
+✅ Unlimited rows (practically)
+✅ 2 GB bandwidth/month
+✅ No credit card required
+✅ Project 1 week inactive ho toh pause hota hai
+   (Free plan mein — use karte raho toh theek hai)
+
+================================================================
+TEST KAISE KARO
+================================================================
+1. index.html browser mein kholo
+2. Test complete karke submit karo
+3. Supabase → Table Editor → sat_results mein row dikhe
+4. Browser Console (F12) mein:
+   "✅ Result saved to Supabase successfully" message aana chahiye
+
+================================================================
+PROBLEM? COMMON ERRORS:
+================================================================
+❌ "relation sat_results does not exist"
+   → Step 2 ka SQL dobara run karo
+
+❌ "Invalid API key"
+   → supabase.js mein URL aur Key dobara check karo
+   → Copy karte waqt spaces na aaye
+
+❌ "new row violates row-level security"
+   → Step 2 ke SQL mein CREATE POLICY wala part dobara run karo
+
+Supabase Docs: https://supabase.com/docs
+================================================================

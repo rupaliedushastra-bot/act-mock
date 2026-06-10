@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduQuest – Digital SAT Practice</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IBM Plex Sans',sans-serif;background:#0d0d14;color:#fff;min-height:100vh;display:flex;flex-direction:column}
+
+/* Header */
+.hdr{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 32px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.brand{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;display:flex;align-items:center;gap:10px}
+.brand-pill{background:#1a56db;border-radius:6px;padding:3px 10px;font-size:0.72rem;letter-spacing:.08em;text-transform:uppercase}
+.contact{font-size:0.8rem;color:rgba(255,255,255,0.4)}
+
+/* Hero */
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 20px;text-align:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(26,86,219,0.15);border:1px solid rgba(26,86,219,0.3);border-radius:100px;padding:6px 16px;font-size:0.78rem;font-weight:600;color:#60a5fa;letter-spacing:.04em;text-transform:uppercase;margin-bottom:28px}
+.hero h1{font-family:'Syne',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;line-height:1.1;margin-bottom:16px;letter-spacing:-0.03em}
+.hero h1 span{background:linear-gradient(135deg,#60a5fa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:rgba(255,255,255,0.55);font-size:1.05rem;max-width:460px;line-height:1.7;margin-bottom:52px}
+
+/* Exam cards grid */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px;width:100%}
+@media(max-width:580px){.cards{grid-template-columns:1fr}}
+
+.exam-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:32px;text-align:left;position:relative;overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s}
+.exam-card:hover{border-color:rgba(26,86,219,0.5);transform:translateY(-3px);box-shadow:0 20px 50px rgba(0,0,0,0.4)}
+.exam-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#1a56db,#3b82f6)}
+.exam-card.exam2::before{background:linear-gradient(90deg,#059669,#34d399)}
+
+.card-num{font-family:'Syne',sans-serif;font-size:3rem;font-weight:800;line-height:1;color:rgba(255,255,255,0.08);margin-bottom:8px}
+.card-title{font-family:'Syne',sans-serif;font-size:1.25rem;font-weight:700;margin-bottom:6px}
+.card-sub{font-size:0.82rem;color:rgba(255,255,255,0.45);margin-bottom:24px;line-height:1.5}
+
+.card-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:24px}
+.cm{background:rgba(255,255,255,0.05);border-radius:10px;padding:10px 12px}
+.cm .val{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;color:#fff}
+.cm .lbl{font-size:0.7rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
+
+.card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.tag{font-size:0.72rem;padding:4px 10px;border-radius:100px;font-weight:600;background:rgba(26,86,219,0.15);color:#93c5fd;border:1px solid rgba(26,86,219,0.2)}
+.exam2 .tag{background:rgba(5,150,105,0.15);color:#6ee7b7;border-color:rgba(5,150,105,0.2)}
+
+.card-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;border-radius:10px;background:linear-gradient(135deg,#1a56db,#1e429f);color:#fff;font-family:'IBM Plex Sans',sans-serif;font-size:0.94rem;font-weight:600;cursor:pointer;border:none;text-decoration:none;transition:all .15s}
+.card-btn:hover{transform:translateY(-1px);box-shadow:0 8px 25px rgba(26,86,219,0.45)}
+.exam2 .card-btn{background:linear-gradient(135deg,#059669,#047857)}
+.exam2 .card-btn:hover{box-shadow:0 8px 25px rgba(5,150,105,0.45)}
+
+/* Features row */
+.features{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;max-width:760px;width:100%;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.06)}
+.feat{display:flex;align-items:center;gap:8px;font-size:0.82rem;color:rgba(255,255,255,0.4)}
+.feat-icon{font-size:1rem}
+
+/* Footer */
+footer{text-align:center;padding:20px;font-size:0.78rem;color:rgba(255,255,255,0.2);border-top:1px solid rgba(255,255,255,0.05)}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="brand">
+    <span>📝</span>
+    <span>EduQuest</span>
+    <span class="brand-pill">SAT Portal</span>
+  </div>
+  <div class="contact">rupali.eduquest@gmail.com</div>
+</header>
+
+<main class="hero">
+  <div class="hero-badge">✦ Full-Length Practice Tests</div>
+  <h1>Digital SAT<br><span>Practice Exams</span></h1>
+  <p>Authentic SAT-format practice with real questions, timed modules, detailed score reports, and instant PDF download.</p>
+
+  <div class="cards">
+
+    <!-- Exam 1 -->
+    <div class="exam-card">
+      <div class="card-num">01</div>
+      <div class="card-title">Practice Exam 1</div>
+      <div class="card-sub">4 modules · Reading & Writing + Math<br>Classic SAT format</div>
+      <div class="card-meta">
+        <div class="cm"><div class="val">98</div><div class="lbl">Questions</div></div>
+        <div class="cm"><div class="val">134</div><div class="lbl">Minutes</div></div>
+        <div class="cm"><div class="val">4</div><div class="lbl">Modules</div></div>
+        <div class="cm"><div class="val">400–1600</div><div class="lbl">Score Range</div></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag">Words in Context</span>
+        <span class="tag">Algebra</span>
+        <span class="tag">Geometry</span>
+        <span class="tag">Craft & Structure</span>
+        <span class="tag">Advanced Math</span>
+      </div>
+      <a href="index.html" class="card-btn">Start Exam 1 →</a>
+    </div>
+
+    <!-- Exam 2 -->
+    <div class="exam-card exam2">
+      <div class="card-num">02</div>
+      <div class="card-title">Practice Exam 2</div>
+      <div class="card-sub">2 modules · English & Math mixed<br>Integrated format</div>
+      <div class="card-meta">
+        <div class="cm"><div class="val">99</div><div class="lbl">Questions</div></div>
+        <div class="cm"><div class="val">134</div><div class="lbl">Minutes</div></div>
+        <div class="cm"><div class="val">2</div><div class="lbl">Modules</div></div>
+        <div class="cm"><div class="val">400–1600</div><div class="lbl">Score Range</div></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag">Standard English</span>
+        <span class="tag">Complex Numbers</span>
+        <span class="tag">Data Analysis</span>
+        <span class="tag">Trig & Geometry</span>
+        <span class="tag">Synthesis</span>
+      </div>
+      <a href="index2.html" class="card-btn">Start Exam 2 →</a>
+    </div>
+
+  </div>
+
+  <div class="features">
+    <div class="feat"><span class="feat-icon">⏱</span> Timed modules</div>
+    <div class="feat"><span class="feat-icon">📊</span> Detailed score report</div>
+    <div class="feat"><span class="feat-icon">📥</span> PDF auto-download</div>
+    <div class="feat"><span class="feat-icon">📧</span> Results emailed to admin</div>
+    <div class="feat"><span class="feat-icon">💾</span> Saved to Supabase</div>
+    <div class="feat"><span class="feat-icon">🖼</span> Real diagrams from book</div>
+  </div>
+</main>
+
+<footer>© EduQuest · Digital SAT Practice Portal · rupali.eduquest@gmail.com</footer>
+
+</body>
+</html>

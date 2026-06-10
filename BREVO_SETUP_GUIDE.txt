@@ -1,0 +1,116 @@
+================================================================
+  BREVO SMTP SETUP GUIDE — Digital SAT Practice Exam 1
+  Free mein 300 emails/day — koi credit card nahi!
+  Admin: rupali.eduquest@gmail.com
+================================================================
+
+Brevo (pehle SendinBlue) ek free email service hai.
+Isse student ka result — PDF ke saath — seedha admin ko
+email ho jaata hai. Sirf 3 steps hain!
+
+================================================================
+STEP 1: Brevo Account Banao (Free)
+================================================================
+1. Browser mein jao: https://app.brevo.com
+2. "Sign up free" click karo
+3. Gmail se sign in karo:
+   → rupali.eduquest@gmail.com use karo
+4. Account verify ho jayega
+
+FREE PLAN MEIN:
+✅ 300 emails/day FREE
+✅ PDF attachment support
+✅ No credit card required
+✅ Unlimited contacts
+
+================================================================
+STEP 2: API Key Banao
+================================================================
+1. Login karne ke baad:
+   Top-right mein apna naam click karo → "SMTP & API"
+   
+   YA seedha jao:
+   https://app.brevo.com/settings/keys/api
+
+2. "Create a new API key" click karo
+3. Name dena hoga — kuch bhi likho, jaise:
+   "EduQuest SAT Portal"
+4. "Generate" click karo
+5. API Key copy karo (ek hi baar dikhega!)
+   (Kuch aisa dikhega: xkeysib-XXXXXXXXXXXXXXXX...)
+   
+   ⚠️ IMPORTANT: Is key ko abhi copy karke safe jagah 
+   rakho — baad mein dobara nahi dikhega!
+
+================================================================
+STEP 3: Sender Email Verify Karo
+================================================================
+Brevo chahta hai ki email sirf verified address se jaaye.
+
+1. Jao: https://app.brevo.com/senders/domain/list
+2. "Add a sender" click karo
+3. Email: rupali.eduquest@gmail.com dalo
+4. "Save" karo
+5. Gmail inbox check karo — Brevo ka verification email aaya hoga
+6. Verification link click karo
+7. Sender verified ✅
+
+================================================================
+STEP 4: email.js Mein API Key Paste Karo
+================================================================
+sat_exam folder mein "email.js" file kholo.
+Line 14 update karo:
+
+  brevoApiKey: 'xkeysib-XXXXXXXXXXXXXXXXXXXXXXXXX',
+
+Save karo — bas ho gaya! ✅
+
+================================================================
+YEH EMAIL MEIN KIYA AAYEGA (Admin ko):
+================================================================
+Subject: 📝 SAT Result: [Student Name] — [Score]
+
+Email body mein:
+✅ Student naam, email, phone number
+✅ Submit time (IST)
+✅ SAT Estimated Score (400-1600)
+✅ Reading & Writing Score (/800)
+✅ Math Score (/800)
+✅ Correct / Wrong / Skipped count
+✅ Top 3 weak topics
+✅ Topic-wise performance table
+✅ PDF Report attachment (student ki puri report)
+
+================================================================
+TEST KAISE KARO
+================================================================
+1. index.html browser mein kholo
+2. Test complete karo aur submit karo
+3. rupali.eduquest@gmail.com check karo
+4. Browser Console (F12) mein:
+   "✅ Admin email sent via Brevo SMTP" dikhna chahiye
+
+================================================================
+COMMON ERRORS:
+================================================================
+❌ "unauthorized" ya 401 error
+   → API key galat hai, dobara copy karo
+
+❌ "sender not found" ya 400 error  
+   → Step 3 mein sender email verify karo
+
+❌ Email spam mein ja raha hai
+   → Gmail mein mark as "Not Spam"
+   → Brevo dashboard mein "Domain Authentication" karo
+      (Settings → Senders & IP → Authenticate a domain)
+
+================================================================
+BREVO DASHBOARD SE KYA KAR SAKTE HO:
+================================================================
+- Sent emails ki history dekhna
+- Open/Click tracking
+- Email analytics
+- Templates banana
+
+Dashboard: https://app.brevo.com
+================================================================
