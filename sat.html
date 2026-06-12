@@ -649,7 +649,7 @@ function renderQ() {
   const qs   = modQuestions();
   $('qNum').textContent   = `Q ${currentInMod + 1} / ${qs.length}`;
   $('qTopic').textContent = qObj.topic || '';
-  $('qText').textContent  = qObj.text;
+  $('qText').innerHTML    = qObj.text;
 
   // Image
   const imgWrap = $('qImage');
