@@ -61,6 +61,27 @@ CREATE POLICY "Allow insert for all"
 CREATE POLICY "Allow read for all"
   ON sat_results FOR SELECT
   USING (true);
+
+-- 2. CREATE TABLE FOR REGISTRATIONS
+CREATE TABLE sat_registrations (
+  id              BIGSERIAL PRIMARY KEY,
+  student_name    TEXT NOT NULL,
+  student_email   TEXT,
+  student_phone   TEXT,
+  exam_name       TEXT,
+  registered_at   TIMESTAMPTZ,
+  created_at      TIMESTAMPTZ DEFAULT NOW()
+);
+
+ALTER TABLE sat_registrations ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Allow insert for registrations"
+  ON sat_registrations FOR INSERT
+  WITH CHECK (true);
+
+CREATE POLICY "Allow read for registrations"
+  ON sat_registrations FOR SELECT
+  USING (true);
 ─────────────────────────────────────────────────────────
 
 4. "Run" button (ya Ctrl+Enter) click karo

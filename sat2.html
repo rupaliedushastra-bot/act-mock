@@ -378,6 +378,10 @@ function startTest() {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert('Please enter a valid email.'); return; }
   student = { name, email, phone, startTime: new Date().toISOString() };
   sessionStorage.setItem('student', JSON.stringify(student));
+
+  // Save registration data to Supabase
+  if (typeof saveRegistration === 'function') saveRegistration(student, 'SAT Practice Exam 2');
+
   startModule(0);
   window.addEventListener('beforeunload', e => { e.preventDefault(); e.returnValue = ''; });
 }
