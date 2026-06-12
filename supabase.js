@@ -100,6 +100,7 @@ async function saveToSupabase(result) {
         grade: result.grade,
 
         // Stats
+        attempted: result.correct + result.wrong,
         correct: result.correct,
         wrong: result.wrong,
         skipped: result.unattempted,

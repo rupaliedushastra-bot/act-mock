@@ -73,13 +73,15 @@ function generatePDFReport(result, shouldSave = true) {
   y += 32;
 
   // Stat row
+  const attempted = result.correct + result.wrong;
   const STATS = [
-    ['Correct',  result.correct,       [5,150,105]],
-    ['Wrong',    result.wrong,         [220,38,38]],
-    ['Skipped',  result.unattempted,   [180,100,0]],
-    ['Score',    result.pct + '%',     [26,86,219]],
+    ['Attempted', attempted,            [13,13,20]],
+    ['Correct',   result.correct,       [5,150,105]],
+    ['Wrong',     result.wrong,         [220,38,38]],
+    ['Skipped',   result.unattempted,   [180,100,0]],
+    ['Score',     result.pct + '%',     [26,86,219]],
   ];
-  const bw = (W - 2*M - 9) / 4;
+  const bw = (W - 2*M - 12) / 5;
   STATS.forEach(([label, val, [r,g,b]], i) => {
     const bx = M + i*(bw+3);
     doc.setDrawColor(r,g,b); doc.setLineWidth(0.5);
