@@ -8,17 +8,20 @@
 // =============================================
 
 const EMAIL_CONFIG = {
-  brevoApiKey: 'YOUR_BREVO_API_KEY',   // Step 2 mein milega
+  smtpHost:     'smtp-relay.brevo.com',
+  smtpUsername: 'add519001@smtp-brevo.com',
+  smtpPassword: 'xsmtpsib-8a7d62287a91107184c502583f2143a3759f0a2a7157f27d02e9151eb251ffe2-ewdnPxv3YggtK8xI',
+  secureToken:  '',
   adminEmail:  'rupali.eduquest@gmail.com',
   adminName:   'Rupali – EduQuest',
-  fromEmail:   'rupali.eduquest@gmail.com', // Same as admin (Brevo sender)
+  fromEmail:   'rupali.eduquest@gmail.com', // Same as admin (Verified sender)
   fromName:    'EduQuest SAT Portal',
 };
 
-// ── Send admin email via Brevo SMTP API ───────
+// ── Send admin email via SmtpJS SMTP ───────
 async function sendEmails(result) {
-  if (EMAIL_CONFIG.brevoApiKey === 'YOUR_BREVO_API_KEY') {
-    console.warn('⚠️ Brevo API key not set. Follow BREVO_SETUP_GUIDE.txt');
+  if (!EMAIL_CONFIG.secureToken && (EMAIL_CONFIG.smtpUsername === 'YOUR_SMTP_USERNAME' || EMAIL_CONFIG.smtpPassword === 'YOUR_SMTP_PASSWORD')) {
+    console.warn('⚠️ SMTP credentials not set in email.js.');
     return;
   }
 
@@ -66,7 +69,7 @@ async function sendEmails(result) {
     <td style="background:linear-gradient(135deg,#1a56db,#1e429f);padding:32px 36px;text-align:center;">
       <div style="font-size:13px;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">EduQuest SAT Portal</div>
       <div style="font-size:26px;font-weight:800;color:#ffffff;margin-bottom:4px;">New Test Submission</div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.75);">Digital SAT Practice Exam 1</div>
+      <div style="font-size:14px;color:rgba(255,255,255,0.75);">${result.examName || 'Digital SAT Practice Exam 1'}</div>
     </td>
   </tr>
 
@@ -101,9 +104,39 @@ async function sendEmails(result) {
   <tr>
     <td style="padding:20px 36px 0;">
       <div style="background:#0d0d14;border-radius:12px;padding:24px;text-align:center;">
-        <div style="font-size:12px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Estimated SAT Score</div>
-        <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">${result.scaled || '—'}</div>
-        <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:4px;">out of 1600</div>
+        ${(() => {
+          if (result.scaled !== null && result.scaled !== undefined) {
+            return `
+              <div style="font-size:12px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Estimated SAT Score</div>
+              <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">${result.scaled}</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:4px;">out of 1600</div>
+            `;
+          } else if (result.rwScore !== null && result.rwScore !== undefined && result.mathScore !== null && result.mathScore !== undefined) {
+            const calculatedScaled = Math.round(400 + (result.correct / result.total) * 1200);
+            return `
+              <div style="font-size:12px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Estimated SAT Score</div>
+              <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">${calculatedScaled}</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:4px;">out of 1600</div>
+            `;
+          } else if (result.rwScore !== null && result.rwScore !== undefined) {
+            return `
+              <div style="font-size:12px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Reading & Writing Score</div>
+              <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">${result.rwScore}</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:4px;">out of 800</div>
+            `;
+          } else if (result.mathScore !== null && result.mathScore !== undefined) {
+            return `
+              <div style="font-size:12px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Math Score</div>
+              <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">${result.mathScore}</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:4px;">out of 800</div>
+            `;
+          } else {
+            return `
+              <div style="font-size:12px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Estimated Score</div>
+              <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">—</div>
+            `;
+          }
+        })()}
         <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;">
           <tr>
             <td align="center" style="border-right:1px solid rgba(255,255,255,0.1);">
@@ -200,65 +233,64 @@ Email:   ${result.student.email}
 Phone:   ${result.student.phone}
 Time:    ${submitTime} IST
 
-SAT Score: ${result.scaled || '—'} / 1600
+Exam:    ${result.examName || 'Digital SAT Practice Exam 1'}
+Score:   ${result.scaled || result.rwScore || '—'}
 R&W:       ${result.rwScore || '—'} / 800
 Math:      ${result.mathScore || '—'} / 800
 
 Correct: ${result.correct}  Wrong: ${result.wrong}  Skipped: ${result.unattempted}
-Score:   ${result.pct}% (${result.grade})
+Percentage:   ${result.pct}% (${result.grade || 'N/A'})
 
 Weak Topics: ${weakTopics}
 
 — EduQuest SAT Portal`;
 
-  // Generate PDF as base64
-  let pdfAttachment = null;
+  // Generate PDF as base64 URI for SmtpJS
+  let attachments = [];
   try {
     if (typeof generatePDFReport === 'function') {
       const pdfDoc    = generatePDFReport(result, false);
-      const pdfBase64 = pdfDoc.output('datauristring').split(',')[1];
+      const pdfDataUri = pdfDoc.output('datauristring');
       const safeName  = result.student.name.replace(/[^a-zA-Z0-9]/g, '_');
-      pdfAttachment = {
-        content: pdfBase64,
+      attachments.push({
         name:    `${safeName}_SAT_Report.pdf`,
-      };
+        data:    pdfDataUri
+      });
     }
   } catch (e) {
     console.warn('PDF generation for attachment failed:', e);
   }
 
-  // Build Brevo API payload
-  const payload = {
-    sender:   { name: EMAIL_CONFIG.fromName, email: EMAIL_CONFIG.fromEmail },
-    to:       [{ email: EMAIL_CONFIG.adminEmail, name: EMAIL_CONFIG.adminName }],
-    subject:  `📝 SAT Result: ${result.student.name} — ${result.scaled || result.pct + '%'}`,
-    htmlContent: htmlBody,
-    textContent: textBody,
+  // SmtpJS parameter payload
+  const emailParams = {
+    To:          EMAIL_CONFIG.adminEmail,
+    From:        `${EMAIL_CONFIG.fromName} <${EMAIL_CONFIG.fromEmail}>`,
+    Subject:     `📝 ${result.examName || 'SAT'} Result: ${result.student.name} — ${result.scaled || result.rwScore || result.pct + '%'}`,
+    Body:        htmlBody,
   };
 
-  // Attach PDF if generated successfully
-  if (pdfAttachment) {
-    payload.attachment = [pdfAttachment];
+  if (EMAIL_CONFIG.secureToken) {
+    emailParams.SecureToken = EMAIL_CONFIG.secureToken;
+  } else {
+    emailParams.Host =     EMAIL_CONFIG.smtpHost;
+    emailParams.Username = EMAIL_CONFIG.smtpUsername;
+    emailParams.Password = EMAIL_CONFIG.smtpPassword;
   }
 
-  // Send via Brevo Transactional Email API
-  try {
-    const res = await fetch('https://api.brevo.com/v3/smtp/email', {
-      method:  'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'api-key':       EMAIL_CONFIG.brevoApiKey,
-      },
-      body: JSON.stringify(payload),
-    });
+  if (attachments.length > 0) {
+    emailParams.Attachments = attachments;
+  }
 
-    if (res.ok) {
-      console.log('✅ Admin email sent via Brevo SMTP to', EMAIL_CONFIG.adminEmail);
-    } else {
-      const err = await res.json().catch(() => ({}));
-      console.error('❌ Brevo email failed:', res.status, err.message || err);
-    }
+  // Send via SmtpJS
+  try {
+    Email.send(emailParams).then(message => {
+      if (message === 'OK') {
+        console.log('✅ Admin email sent via SMTP successfully to', EMAIL_CONFIG.adminEmail);
+      } else {
+        console.error('❌ SMTP send failed:', message);
+      }
+    });
   } catch (err) {
-    console.error('❌ Brevo network error:', err);
+    console.error('❌ SMTP network/execution error:', err);
   }
 }

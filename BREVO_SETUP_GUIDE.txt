@@ -1,116 +1,71 @@
 ================================================================
-  BREVO SMTP SETUP GUIDE — Digital SAT Practice Exam 1
-  Free mein 300 emails/day — koi credit card nahi!
-  Admin: rupali.eduquest@gmail.com
+  SMTP EMAIL SETUP GUIDE — Digital SAT Practice Portal
+  SmtpJS Library + Any SMTP Server (e.g. Brevo, Gmail, Elastic Email)
 ================================================================
 
-Brevo (pehle SendinBlue) ek free email service hai.
-Isse student ka result — PDF ke saath — seedha admin ko
-email ho jaata hai. Sirf 3 steps hain!
+Ab portal email send karne ke liye direct SMTP client (SmtpJS) ka 
+use karta hai. Aap Brevo ka SMTP relay ya koi bhi dusra SMTP provider 
+use kar sakte hain.
+
+Follow target steps below:
 
 ================================================================
-STEP 1: Brevo Account Banao (Free)
+STEP 1: Apne SMTP Relay Credentials Kaise Nikalein
 ================================================================
-1. Browser mein jao: https://app.brevo.com
-2. "Sign up free" click karo
-3. Gmail se sign in karo:
-   → rupali.eduquest@gmail.com use karo
-4. Account verify ho jayega
 
-FREE PLAN MEIN:
-✅ 300 emails/day FREE
-✅ PDF attachment support
-✅ No credit card required
-✅ Unlimited contacts
+A. AGAR BREVO SMTP RELAY USE KARNA HAI:
+--------------------------------------
+1. Login to https://app.brevo.com
+2. Top-right click on your name → "SMTP & API"
+3. "SMTP" tab par click karein.
+4. Wahan aapko details milengi:
+   - SMTP Server / Host: smtp-relay.brevo.com
+   - Port: 587
+   - Login / Username: [Aapka login email, e.g. rupali.eduquest@gmail.com]
+5. Wahan "Create a new SMTP key" click karein aur password generate karke copy karein.
+   (⚠️ Safe place par save karein!)
 
-================================================================
-STEP 2: API Key Banao
-================================================================
-1. Login karne ke baad:
-   Top-right mein apna naam click karo → "SMTP & API"
-   
-   YA seedha jao:
-   https://app.brevo.com/settings/keys/api
-
-2. "Create a new API key" click karo
-3. Name dena hoga — kuch bhi likho, jaise:
-   "EduQuest SAT Portal"
-4. "Generate" click karo
-5. API Key copy karo (ek hi baar dikhega!)
-   (Kuch aisa dikhega: xkeysib-XXXXXXXXXXXXXXXX...)
-   
-   ⚠️ IMPORTANT: Is key ko abhi copy karke safe jagah 
-   rakho — baad mein dobara nahi dikhega!
+B. AGAR GMAIL SMTP RELAY USE KARNA HAI:
+---------------------------------------
+1. Host: smtp.gmail.com
+2. Port: 587
+3. Username: Aapka Gmail address
+4. Password: App Password (Normal password work nahi karega. Google Account → Security → App Passwords generate karein)
 
 ================================================================
-STEP 3: Sender Email Verify Karo
+STEP 2: email.js File Update Karein
 ================================================================
-Brevo chahta hai ki email sirf verified address se jaaye.
 
-1. Jao: https://app.brevo.com/senders/domain/list
-2. "Add a sender" click karo
-3. Email: rupali.eduquest@gmail.com dalo
-4. "Save" karo
-5. Gmail inbox check karo — Brevo ka verification email aaya hoga
-6. Verification link click karo
-7. Sender verified ✅
+Workspace mein "email.js" file kholein aur lines 10-18 ko update karein:
 
-================================================================
-STEP 4: email.js Mein API Key Paste Karo
-================================================================
-sat_exam folder mein "email.js" file kholo.
-Line 14 update karo:
-
-  brevoApiKey: 'xkeysib-XXXXXXXXXXXXXXXXXXXXXXXXX',
-
-Save karo — bas ho gaya! ✅
+const EMAIL_CONFIG = {
+  smtpHost:     'smtp-relay.brevo.com',       // Yahan SMTP host dalo
+  smtpUsername: 'rupali.eduquest@gmail.com',  // Yahan SMTP username dalo
+  smtpPassword: 'YOUR_SMTP_PASSWORD',         // Yahan SMTP key/password paste karein
+  secureToken:  '',                           // (Optional) SmtpJS secure token (agar credentials hide karne hain)
+  
+  adminEmail:  'rupali.eduquest@gmail.com',
+  adminName:   'Rupali – EduQuest',
+  fromEmail:   'rupali.eduquest@gmail.com',   // Verified sender email
+  fromName:    'EduQuest SAT Portal',
+};
 
 ================================================================
-YEH EMAIL MEIN KIYA AAYEGA (Admin ko):
+STEP 3: (Optional but Recommended) Secure Token Kaise Use Karein
 ================================================================
-Subject: 📝 SAT Result: [Student Name] — [Score]
+Agar aap client-side code (email.js) mein username aur password public
+nahi rakhna chahte, toh aap SmtpJS.com se token generate kar sakte hain:
 
-Email body mein:
-✅ Student naam, email, phone number
-✅ Submit time (IST)
-✅ SAT Estimated Score (400-1600)
-✅ Reading & Writing Score (/800)
-✅ Math Score (/800)
-✅ Correct / Wrong / Skipped count
-✅ Top 3 weak topics
-✅ Topic-wise performance table
-✅ PDF Report attachment (student ki puri report)
+1. Jao: https://smtpjs.com
+2. Home page par settings/encrypt form mein apne SMTP server, username aur password enter karein.
+3. "Generate Token" click karein.
+4. Jo token milega, use `secureToken` field mein dalo aur `smtpUsername`, `smtpPassword` ko blank chhod do.
 
 ================================================================
-TEST KAISE KARO
+VERIFY: Test Kaise Karein?
 ================================================================
-1. index.html browser mein kholo
-2. Test complete karo aur submit karo
-3. rupali.eduquest@gmail.com check karo
-4. Browser Console (F12) mein:
-   "✅ Admin email sent via Brevo SMTP" dikhna chahiye
-
-================================================================
-COMMON ERRORS:
-================================================================
-❌ "unauthorized" ya 401 error
-   → API key galat hai, dobara copy karo
-
-❌ "sender not found" ya 400 error  
-   → Step 3 mein sender email verify karo
-
-❌ Email spam mein ja raha hai
-   → Gmail mein mark as "Not Spam"
-   → Brevo dashboard mein "Domain Authentication" karo
-      (Settings → Senders & IP → Authenticate a domain)
-
-================================================================
-BREVO DASHBOARD SE KYA KAR SAKTE HO:
-================================================================
-- Sent emails ki history dekhna
-- Open/Click tracking
-- Email analytics
-- Templates banana
-
-Dashboard: https://app.brevo.com
-================================================================
+1. Browser mein "index.html" kholein.
+2. Form submit karein, test submit karein.
+3. DevTools Console (F12) check karein:
+   - Agar email successful raha: "✅ Admin email sent via SMTP successfully to ..."
+   - Agar fail hua: "❌ SMTP send failed: [Error Message]"
