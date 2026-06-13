@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – EduQuest</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: #0d0d14;
+      color: #fff;
+      min-height: 100vh
+    }
+
+    .hdr {
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06)
+    }
+
+    .brand {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700
+    }
+
+    .logout {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      background: none;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 6px 14px;
+      border-radius: 6px
+    }
+
+    .logout:hover {
+      border-color: #1a56db;
+      color: #fff
+    }
+
+    /* Login */
+    .login-wrap {
+      max-width: 380px;
+      margin: 100px auto;
+      padding: 20px
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 36px 28px
+    }
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-align: center
+    }
+
+    .field {
+      margin-bottom: 14px
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: 6px
+    }
+
+    .field input {
+      width: 100%;
+      border: 1.5px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      padding: 11px 14px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      outline: none;
+      background: rgba(255, 255, 255, 0.03);
+      color: #fff
+    }
+
+    .field input:focus {
+      border-color: #1a56db
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: linear-gradient(135deg, #1a56db, #1e429f);
+      color: #fff;
+      margin-top: 6px
+    }
+
+    .btn:hover {
+      transform: translateY(-1px)
+    }
+
+    #loginMsg {
+      text-align: center;
+      font-size: 0.85rem;
+      margin-top: 10px;
+      color: #f87171;
+      min-height: 18px
+    }
+
+    /* Dashboard */
+    .wrap {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px
+    }
+
+    .stats {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 20px;
+      flex-wrap: wrap
+    }
+
+    .stat {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px 22px;
+      flex: 1;
+      min-width: 120px
+    }
+
+    .stat .num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #60a5fa
+    }
+
+    .stat .lbl {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-top: 2px
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px
+    }
+
+    .tab {
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.6)
+    }
+
+    .tab.active {
+      background: rgba(26, 86, 219, 0.2);
+      border-color: #1a56db;
+      color: #fff
+    }
+
+    .search {
+      width: 100%;
+      border: 1.5px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+      background: rgba(255, 255, 255, 0.03);
+      color: #fff;
+      margin-bottom: 16px
+    }
+
+    .search:focus {
+      border-color: #1a56db
+    }
+
+    .user-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap
+    }
+
+    .user-info {
+      flex: 1;
+      min-width: 200px
+    }
+
+    .user-info .email {
+      font-weight: 600;
+      font-size: 0.95rem
+    }
+
+    .user-info .meta {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.45);
+      margin-top: 3px
+    }
+
+    .badge {
+      font-size: 0.72rem;
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 6px
+    }
+
+    .badge.granted {
+      background: rgba(5, 150, 105, 0.15);
+      color: #6ee7b7;
+      border: 1px solid rgba(5, 150, 105, 0.3)
+    }
+
+    .badge.pending {
+      background: rgba(217, 119, 6, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(217, 119, 6, 0.3)
+    }
+
+    .actions {
+      display: flex;
+      gap: 8px
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none
+    }
+
+    .btn-approve {
+      background: #059669;
+      color: #fff
+    }
+
+    .btn-approve:hover {
+      background: #047857
+    }
+
+    .btn-revoke {
+      background: rgba(220, 38, 38, 0.15);
+      color: #f87171;
+      border: 1px solid rgba(220, 38, 38, 0.3)
+    }
+
+    .btn-revoke:hover {
+      background: rgba(220, 38, 38, 0.25)
+    }
+
+    .org-input {
+      border: 1.5px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      background: rgba(255, 255, 255, 0.03);
+      color: #fff;
+      font-family: inherit;
+      width: 120px
+    }
+
+    .empty {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.4);
+      padding: 40px;
+      font-size: 0.9rem
+    }
+
+    .loading {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.4);
+      padding: 40px
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div id="loginScreen">
+    <header class="hdr">
+      <div class="brand">📝 EduQuest Admin</div>
+      <div></div>
+    </header>
+    <div class="login-wrap">
+      <div class="card">
+        <h2>Admin Login</h2>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="adminEmail" placeholder="admin@email.com">
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" id="adminPassword" placeholder="••••••••">
+        </div>
+        <button class="btn" onclick="adminLogin()">Login</button>
+        <p id="loginMsg"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" style="display:none">
+    <header class="hdr">
+      <div class="brand">📝 EduQuest Admin</div>
+      <button class="logout" onclick="adminLogout()">Logout</button>
+    </header>
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat">
+          <div class="num" id="statTotal">–</div>
+          <div class="lbl">Total Users</div>
+        </div>
+        <div class="stat">
+          <div class="num" id="statApproved">–</div>
+          <div class="lbl">Approved</div>
+        </div>
+        <div class="stat">
+          <div class="num" id="statPending">–</div>
+          <div class="lbl">Pending</div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="tab active" data-filter="pending" onclick="setFilter('pending')">Pending</div>
+        <div class="tab" data-filter="approved" onclick="setFilter('approved')">Approved</div>
+        <div class="tab" data-filter="all" onclick="setFilter('all')">All</div>
+      </div>
+
+      <input type="text" class="search" id="searchBox" placeholder="Search by email..." oninput="renderList()">
+
+      <div id="userList">
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js"></script>
+  <script>
+    const ADMIN_EMAIL = 'rupali.eduquest@gmail.com'; // <-- yahan apna admin email daalo
+
+    const supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+
+    let allProfiles = [];
+    let currentFilter = 'pending';
+
+    // ── Check session on load ──────────────────────
+    (async function init() {
+      const { data: { session } } = await supabaseClient.auth.getSession();
+      if (session && session.user.email === ADMIN_EMAIL) {
+        showDashboard();
+      } else {
+        showLogin();
+      }
+    })();
+
+    function showLogin() {
+      document.getElementById('loginScreen').style.display = 'block';
+      document.getElementById('dashboard').style.display = 'none';
+    }
+
+    function showDashboard() {
+      document.getElementById('loginScreen').style.display = 'none';
+      document.getElementById('dashboard').style.display = 'block';
+      loadProfiles();
+    }
+
+    // ── Login ───────────────────────────────────────
+    async function adminLogin() {
+      const email = document.getElementById('adminEmail').value.trim();
+      const password = document.getElementById('adminPassword').value;
+      const msg = document.getElementById('loginMsg');
+
+      if (email.toLowerCase() !== ADMIN_EMAIL.toLowerCase()) {
+        msg.textContent = 'This account is not authorized as admin.';
+        return;
+      }
+
+      const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
+      if (error) {
+        msg.textContent = error.message;
+        return;
+      }
+      showDashboard();
+    }
+
+    async function adminLogout() {
+      await supabaseClient.auth.signOut();
+      showLogin();
+    }
+
+    // ── Load profiles ────────────────────────────────
+    async function loadProfiles() {
+      const { data, error } = await supabaseClient
+        .from('profiles')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+      if (error) {
+        document.getElementById('userList').innerHTML = `<div class="empty">Error loading data: ${error.message}</div>`;
+        return;
+      }
+
+      allProfiles = data || [];
+      updateStats();
+      renderList();
+    }
+
+    function updateStats() {
+      const total = allProfiles.length;
+      const approved = allProfiles.filter(p => p.has_access).length;
+      document.getElementById('statTotal').textContent = total;
+      document.getElementById('statApproved').textContent = approved;
+      document.getElementById('statPending').textContent = total - approved;
+    }
+
+    // ── Filter tabs ───────────────────────────────────
+    function setFilter(filter) {
+      currentFilter = filter;
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelector(`.tab[data-filter="${filter}"]`).classList.add('active');
+      renderList();
+    }
+
+    // ── Render list ───────────────────────────────────
+    function renderList() {
+      const search = document.getElementById('searchBox').value.trim().toLowerCase();
+      let list = allProfiles;
+
+      if (currentFilter === 'pending') list = list.filter(p => !p.has_access);
+      else if (currentFilter === 'approved') list = list.filter(p => p.has_access);
+
+      if (search) list = list.filter(p => (p.email || '').toLowerCase().includes(search));
+
+      const container = document.getElementById('userList');
+      if (list.length === 0) {
+        container.innerHTML = `<div class="empty">No users found.</div>`;
+        return;
+      }
+
+      container.innerHTML = list.map(p => `
+    <div class="user-card">
+      <div class="user-info">
+        <div class="email">${p.email || '(no email)'}</div>
+        <div class="meta">Signed up: ${p.created_at ? new Date(p.created_at).toLocaleString() : '–'}</div>
+        <span class="badge ${p.has_access ? 'granted' : 'pending'}">${p.has_access ? '✓ Access Granted' : '⏳ Pending'}</span>
+        <input type="text" class="org-input" placeholder="Organization" value="${p.organization || ''}"
+          onchange="updateOrg('${p.id}', this.value)" style="margin-left:10px">
+      </div>
+      <div class="actions">
+        ${p.has_access
+          ? `<button class="btn-sm btn-revoke" onclick="setAccess('${p.id}', false)">Revoke</button>`
+          : `<button class="btn-sm btn-approve" onclick="setAccess('${p.id}', true)">Approve</button>`
+        }
+      </div>
+    </div>
+  `).join('');
+    }
+
+    // ── Approve / Revoke ────────────────────────────
+    async function setAccess(userId, value) {
+      const { error } = await supabaseClient
+        .from('profiles')
+        .update({ has_access: value })
+        .eq('id', userId);
+
+      if (error) {
+        alert('Update failed: ' + error.message);
+        return;
+      }
+
+      const p = allProfiles.find(x => x.id === userId);
+      if (p) p.has_access = value;
+      updateStats();
+      renderList();
+    }
+
+    // ── Update organization ──────────────────────────
+    async function updateOrg(userId, value) {
+      const { error } = await supabaseClient
+        .from('profiles')
+        .update({ organization: value })
+        .eq('id', userId);
+
+      if (error) {
+        alert('Update failed: ' + error.message);
+        return;
+      }
+
+      const p = allProfiles.find(x => x.id === userId);
+      if (p) p.organization = value;
+    }
+  </script>
+</body>
+
+</html>

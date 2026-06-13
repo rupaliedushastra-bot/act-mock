@@ -1,15 +1,3 @@
-// =============================================
-// supabase.js – Supabase Integration
-// Digital SAT Practice Exam 1 & 2
-// =============================================
-// Supabase se student data automatically
-// save hota hai:
-// 1) Registration — jab form fill hota hai
-// 2) Results      — jab test submit hota hai
-//
-// Setup ke liye SUPABASE_SETUP_GUIDE.txt padho.
-// =============================================
-
 const SUPABASE_CONFIG = {
     url: 'https://dyvvhmuegtzooijrtwyd.supabase.co', // e.g. https://xyzabc.supabase.co
     anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5dnZobXVlZ3R6b29panJ0d3lkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkwOTk5MTEsImV4cCI6MjA5NDY3NTkxMX0.pksVza66eu3WlM1_r_IGARkjd19BwUvbKntoUIwPhRY', // Settings > API > anon public key
@@ -33,16 +21,14 @@ async function saveRegistration(studentData, examName) {
     };
 
     try {
-        const res = await fetch(`${
-            SUPABASE_CONFIG.url
-        }/rest/v1/sat_registrations`, {
+        const res = await fetch(`${SUPABASE_CONFIG.url
+            }/rest/v1/sat_registrations`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'apikey': SUPABASE_CONFIG.anonKey,
-                'Authorization': `Bearer ${
-                    SUPABASE_CONFIG.anonKey
-                }`,
+                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey
+                    }`,
                 'Prefer': 'return=minimal'
             },
             body: JSON.stringify(row)
@@ -68,11 +54,9 @@ async function saveToSupabase(result) {
     }
 
     // Top weak topics (for quick view in dashboard)
-    const weakTopics = (result.topicAnalysis || []).filter(t => t.attempted > 0).sort((a, b) => a.acc - b.acc).slice(0, 3).map(t => `${
-        t.name
-    } (${
-        t.acc
-    }%)`).join(', ') || null;
+    const weakTopics = (result.topicAnalysis || []).filter(t => t.attempted > 0).sort((a, b) => a.acc - b.acc).slice(0, 3).map(t => `${t.name
+        } (${t.acc
+        }%)`).join(', ') || null;
 
     // Per-topic accuracy object (stored as JSON column)
     const topicScores = {};
@@ -116,16 +100,14 @@ async function saveToSupabase(result) {
     };
 
     try {
-        const res = await fetch(`${
-            SUPABASE_CONFIG.url
-        }/rest/v1/sat_results`, {
+        const res = await fetch(`${SUPABASE_CONFIG.url
+            }/rest/v1/sat_results`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'apikey': SUPABASE_CONFIG.anonKey,
-                'Authorization': `Bearer ${
-                    SUPABASE_CONFIG.anonKey
-                }`,
+                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey
+                    }`,
                 'Prefer': 'return=minimal'
             },
             body: JSON.stringify(row)
