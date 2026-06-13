@@ -24,9 +24,9 @@ module.exports = async (req, res) => {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const adminEmail = process.env.ADMIN_EMAIL || process.env.SMTP_USER;
+  const adminEmail = process.env.ADMIN_EMAIL || process.env.SMTP_USER || "rupali.eduquest@gmail.com";
   const fromName = "EduQuest SAT Portal";
-  const fromEmail = process.env.SMTP_USER;
+  const fromEmail = process.env.SMTP_USER || "rupali.eduquest@gmail.com";
 
   try {
     const body = req.body;

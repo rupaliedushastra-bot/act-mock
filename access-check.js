@@ -48,8 +48,8 @@
           <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;text-align:center;padding:20px;background:#0d0d14;color:#fff">
             <h2 style="margin-bottom:12px">🔒 Access Denied</h2>
             <p style="color:rgba(255,255,255,0.6);max-width:400px;line-height:1.6">
-              Aapke account ko is exam ka access nahi mila hai.
-              Access ke liye admin se contact karein:
+              Your account does not have access to this exam.
+              Please contact the admin for access:
               <br><strong>rupali.eduquest@gmail.com</strong>
             </p>
             <a href="${indexUrl}" style="margin-top:20px;color:#60a5fa">← Back to Home</a>
