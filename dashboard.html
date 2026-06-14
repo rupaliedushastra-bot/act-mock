@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard – EduQuest</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: #0d0d14;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column
+    }
+
+    /* Header */
+    .hdr {
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06)
+    }
+
+    .brand {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff
+    }
+
+    .brand-pill {
+      background: #1a56db;
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: 0.72rem;
+      letter-spacing: .08em;
+      text-transform: uppercase
+    }
+
+    .hdr-right {
+      display: flex;
+      align-items: center;
+      gap: 18px
+    }
+
+    .email-display {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6)
+    }
+
+    .btn-nav {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 7px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all .15s;
+      cursor: pointer
+    }
+
+    .btn-nav:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.3)
+    }
+
+    .btn-logout {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #f87171;
+      background: rgba(220, 38, 38, 0.1);
+      border: 1px solid rgba(220, 38, 38, 0.2);
+      padding: 7px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all .15s;
+      cursor: pointer
+    }
+
+    .btn-logout:hover {
+      background: rgba(220, 38, 38, 0.2);
+      border-color: rgba(220, 38, 38, 0.4)
+    }
+
+    /* Main wrap */
+    .wrap {
+      max-width: 960px;
+      width: 100%;
+      margin: 40px auto;
+      padding: 0 24px;
+      flex: 1
+    }
+
+    /* Welcome block */
+    .welcome-block {
+      margin-bottom: 32px
+    }
+
+    .welcome-block h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px
+    }
+
+    .welcome-block h1 span {
+      background: linear-gradient(135deg, #60a5fa, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text
+    }
+
+    .welcome-block p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.95rem
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 36px
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 20px 24px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: #1a56db
+    }
+
+    .stat-card.green::before {
+      background: #059669
+    }
+
+    .stat-card.amber::before {
+      background: #d97706
+    }
+
+    .stat-card.red::before {
+      background: #dc2626
+    }
+
+    .stat-val {
+      font-family: 'Syne', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2
+    }
+
+    .stat-lbl {
+      font-size: 0.72rem;
+      color: rgba(255, 255, 255, 0.45);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-top: 4px
+    }
+
+    /* Section header */
+    .sec-hdr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px
+    }
+
+    .sec-hdr h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700
+    }
+
+    .btn-combined {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #059669, #047857);
+      border: none;
+      padding: 9px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all .15s;
+      box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3)
+    }
+
+    .btn-combined:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(5, 150, 105, 0.45)
+    }
+
+    /* History list */
+    .history-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .history-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      transition: transform .2s, border-color .2s
+    }
+
+    .history-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(26, 86, 219, 0.4)
+    }
+
+    .card-left {
+      flex: 1;
+      min-width: 200px
+    }
+
+    .card-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 4px
+    }
+
+    .card-sub {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 8px
+    }
+
+    .card-badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap
+    }
+
+    .c-badge {
+      font-size: 0.72rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 3px 8px;
+      border-radius: 6px;
+      color: rgba(255, 255, 255, 0.75)
+    }
+
+    .card-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap
+    }
+
+    .score-box {
+      text-align: right
+    }
+
+    .score-lbl {
+      font-size: 0.65rem;
+      color: rgba(255, 255, 255, 0.4);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: 2px
+    }
+
+    .score-val {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #34d399
+    }
+
+    .score-val span {
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.35);
+      font-weight: 400
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 8px
+    }
+
+    .btn-action {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #fff;
+      background: rgba(26, 86, 219, 0.15);
+      border: 1px solid rgba(26, 86, 219, 0.3);
+      padding: 7px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all .15s
+    }
+
+    .btn-action:hover {
+      background: rgba(26, 86, 219, 0.28);
+      border-color: rgba(26, 86, 219, 0.5)
+    }
+
+    .btn-action.outline {
+      background: none;
+      border-color: rgba(255, 255, 255, 0.18)
+    }
+
+    .btn-action.outline:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.3)
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 48px;
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px dashed rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.95rem
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 1000;
+      overflow-y: auto;
+      padding: 40px 20px
+    }
+
+    .modal-content {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #0d0d14;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      position: relative
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .15s
+    }
+
+    .modal-close:hover {
+      border-color: #f87171;
+      color: #f87171
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.2);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      margin-top: 60px
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hdr">
+    <a href="index.html" class="brand">
+      <span>📝</span>
+      <span>EduQuest</span>
+      <span class="brand-pill">SAT Portal</span>
+    </a>
+    <div class="hdr-right" id="hdrRight">
+      <span class="email-display" id="stuEmail">Loading...</span>
+      <a href="index.html" class="btn-nav">Take Exam</a>
+      <button onclick="logout()" class="btn-logout">Logout</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Welcome section -->
+    <div class="welcome-block">
+      <h1 id="welcomeTitle">Welcome, <span>Student</span></h1>
+      <p>Here is your full test history and academic performance tracking dashboard.</p>
+    </div>
+
+    <!-- Stats summary grid -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-val" id="statTaken">0</div>
+        <div class="stat-lbl">Exams Taken</div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-val" id="statAvgSat">—</div>
+        <div class="stat-lbl">Avg SAT Score</div>
+      </div>
+      <div class="stat-card amber">
+        <div class="stat-val" id="statAvgAcc">0%</div>
+        <div class="stat-lbl">Avg Accuracy</div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-val" id="statTotalQs">0</div>
+        <div class="stat-lbl">Questions Attempted</div>
+      </div>
+    </div>
+
+    <!-- Section header for history -->
+    <div class="sec-hdr">
+      <h2>Completed Practice Exams</h2>
+      <button id="btnCombined" class="btn-combined" style="display: none;" onclick="downloadCombinedReport()">
+        <span>📥</span> Download Combined Report (PDF)
+      </button>
+    </div>
+
+    <!-- History list container -->
+    <div class="history-list" id="historyContainer">
+      <div style="text-align: center; padding: 40px; color: rgba(255,255,255,0.4);">Loading results...</div>
+    </div>
+  </main>
+
+  <!-- Modal for report details -->
+  <div id="reportModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 20px;" id="modalExamTitle">Test Review</h2>
+      <div id="modalReportContent"></div>
+    </div>
+  </div>
+
+  <footer>© EduQuest · Digital SAT Practice Portal · rupali.eduquest@gmail.com</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="questions.js"></script>
+  <script src="questions2.js"></script>
+  <script src="test_3/questions3.js"></script>
+  <script src="supabase.js"></script>
+  <script src="report.js"></script>
+  <script>
+    const supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+    let resultsList = [];
+
+    // Redirect to login if not logged in
+    async function checkAuth() {
+      const { data: { session } } = await supabaseClient.auth.getSession();
+      if (!session) {
+        window.location.href = 'login.html?redirect=dashboard.html';
+        return;
+      }
+      const email = session.user.email;
+      document.getElementById('stuEmail').textContent = email;
+      
+      // Determine student name from metadata or email prefix
+      const name = session.user.user_metadata?.name || email.split('@')[0];
+      document.getElementById('welcomeTitle').innerHTML = `Welcome, <span>${name}</span>`;
+
+      loadStudentData(email);
+    }
+
+    async function loadStudentData(email) {
+      try {
+        const { data, error } = await supabaseClient
+          .from('sat_results')
+          .select('*')
+          .ilike('student_email', email)
+          .order('submitted_at', { ascending: false });
+
+        if (error) throw error;
+
+        resultsList = data || [];
+        renderDashboard(resultsList);
+      } catch (err) {
+        console.error('Error fetching dashboard results:', err);
+        document.getElementById('historyContainer').innerHTML = `
+          <div style="color: #f87171; text-align: center; padding: 20px;">
+            Failed to load data: ${err.message}
+          </div>
+        `;
+      }
+    }
+
+    function renderDashboard(rows) {
+      const container = document.getElementById('historyContainer');
+      
+      // Update statistics
+      const taken = rows.length;
+      document.getElementById('statTaken').textContent = taken;
+
+      if (taken === 0) {
+        document.getElementById('statAvgSat').textContent = '—';
+        document.getElementById('statAvgAcc').textContent = '0%';
+        document.getElementById('statTotalQs').textContent = '0';
+        document.getElementById('btnCombined').style.display = 'none';
+
+        container.innerHTML = `
+          <div class="empty-state">
+            You have not completed any practice tests yet. <a href="index.html" style="color: #60a5fa; text-decoration: underline;">Start a test now</a> to see your dashboard results!
+          </div>
+        `;
+        return;
+      }
+
+      // Calculations
+      let totalQ = 0;
+      let totalAcc = 0;
+      let satScores = [];
+      let totalCorrect = 0, totalWrong = 0, totalSkipped = 0;
+
+      rows.forEach(r => {
+        totalQ += r.total;
+        totalAcc += r.percentage;
+        totalCorrect += r.correct;
+        totalWrong += r.wrong;
+        totalSkipped += r.skipped;
+        if (r.sat_score) satScores.push(r.sat_score);
+      });
+
+      const avgSat = satScores.length ? Math.round(satScores.reduce((a, b) => a + b, 0) / satScores.length) : null;
+      const avgAcc = Math.round(totalAcc / taken);
+
+      document.getElementById('statAvgAcc').textContent = `${avgAcc}%`;
+      document.getElementById('statTotalQs').textContent = totalQ;
+      
+      if (avgSat !== null) {
+        document.getElementById('statAvgSat').innerHTML = `${avgSat} <span style="font-size: 0.8rem; font-weight:400; color: rgba(255,255,255,0.4);">/ 1600</span>`;
+      } else {
+        document.getElementById('statAvgSat').textContent = '—';
+      }
+
+      // Show/hide combined report button
+      if (taken >= 2) {
+        document.getElementById('btnCombined').style.display = 'inline-flex';
+      } else {
+        document.getElementById('btnCombined').style.display = 'none';
+      }
+
+      // Render exams taken list
+      container.innerHTML = rows.map((row, idx) => {
+        const dateStr = new Date(row.submitted_at).toLocaleDateString('en-IN', {
+          day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'
+        });
+        
+        const scoreDisplay = row.sat_score 
+          ? `${row.sat_score} <span>/ 1600</span>` 
+          : `${row.rw_score || '—'} <span>/ 800 (R&W)</span>`;
+
+        return `
+          <div class="history-card">
+            <div class="card-left">
+              <div class="card-title">${row.exam_name || 'Digital SAT Practice'}</div>
+              <div class="card-sub">Date: ${dateStr}</div>
+              <div class="card-badges">
+                <span class="c-badge">Grade: ${row.grade || '—'}</span>
+                <span class="c-badge">Accuracy: ${row.percentage || 0}%</span>
+                <span class="c-badge">${row.correct} Correct &middot; ${row.wrong} Wrong</span>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="score-box">
+                <div class="score-lbl">Score</div>
+                <div class="score-val">${scoreDisplay}</div>
+              </div>
+              <div class="card-actions">
+                <button class="btn-action" onclick="viewReportDetails(${idx})">View Review</button>
+                <button class="btn-action outline" onclick="downloadSinglePDF(${idx})">PDF</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // ── Reconstruct Result Object ─────────────────────
+    function reconstructResult(row) {
+      let examQs = [];
+      if (row.exam_name && row.exam_name.includes('Exam 3')) {
+        examQs = QUESTIONS3;
+      } else if (row.exam_name && row.exam_name.includes('Exam 2')) {
+        examQs = QUESTIONS2;
+      } else {
+        examQs = QUESTIONS;
+      }
+
+      const details = (row.student_answers || []).map(ans => {
+        const originalQ = examQs.find(q => q.id === ans.question_id) || {};
+        return {
+          ...originalQ,
+          id: ans.question_id,
+          section: ans.section,
+          topic: ans.topic,
+          status: ans.status,
+          chosen: ans.chosen_option !== null ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined,
+          answer: ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
+        };
+      });
+
+      return {
+        student: {
+          name: row.student_name,
+          email: row.student_email,
+          phone: row.student_phone
+        },
+        correct: row.correct,
+        wrong: row.wrong,
+        unattempted: row.skipped,
+        total: row.total,
+        pct: row.percentage,
+        grade: row.grade,
+        scaled: row.sat_score,
+        rwScore: row.rw_score,
+        mathScore: row.math_score,
+        details: details,
+        submitTime: row.submitted_at,
+        examName: row.exam_name || 'Digital SAT – Practice Exam 1',
+        topicAnalysis: Object.entries(row.topic_scores || {}).map(([name, scores]) => ({
+          name: name,
+          total: scores.total,
+          correct: scores.correct,
+          wrong: scores.wrong,
+          acc: scores.accuracy
+        }))
+      };
+    }
+
+    // ── Actions ──────────────────────────────────────
+    function viewReportDetails(idx) {
+      const row = resultsList[idx];
+      const result = reconstructResult(row);
+      document.getElementById('modalExamTitle').textContent = result.examName + ' — Question Review';
+      renderModalReport(result);
+      document.getElementById('reportModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('reportModal').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    function downloadSinglePDF(idx) {
+      const row = resultsList[idx];
+      const result = reconstructResult(row);
+      if (typeof generatePDFReport === 'function') {
+        generatePDFReport(result, true);
+      } else {
+        alert('PDF Generation helper not loaded.');
+      }
+    }
+
+    function downloadCombinedReport() {
+      if (resultsList.length < 2) return;
+      const parsedResults = resultsList.map(row => reconstructResult(row));
+      const studentInfo = {
+        name: resultsList[0].student_name,
+        email: resultsList[0].student_email,
+        phone: resultsList[0].student_phone
+      };
+      if (typeof generateCombinedPDF === 'function') {
+        generateCombinedPDF(parsedResults, studentInfo);
+      } else {
+        alert('Combined PDF Generation helper not loaded.');
+      }
+    }
+
+    // ── Render review markup inside modal ────────────
+    function renderModalReport(result) {
+      const LETTERS = ['A', 'B', 'C', 'D'];
+      const { correct, wrong, unattempted, total, pct, scaled, rwScore, mathScore, details } = result;
+      const scoreColor = pct >= 70 ? '#34d399' : pct >= 50 ? '#fbbf24' : '#f87171';
+
+      let scoreHTML = '';
+      if (scaled) {
+        scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${scaled}</div>
+                     <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">SAT Score Estimate &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
+      } else {
+        scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${rwScore || '—'}</div>
+                     <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">Reading & Writing Score &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
+      }
+
+      let html = `
+        <div style="text-align: center; margin-bottom: 30px; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+          ${scoreHTML}
+          <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap;">
+            <div><strong>R&W Score:</strong> ${rwScore || '—'}</div>
+            <div><strong>Math Score:</strong> ${mathScore || '—'}</div>
+            <div><strong>Correct:</strong> ${correct}</div>
+            <div><strong>Wrong:</strong> ${wrong}</div>
+            <div><strong>Skipped:</strong> ${unattempted}</div>
+          </div>
+        </div>
+        
+        <div style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; font-family: 'Syne', sans-serif; font-size: 1.25rem; color: #60a5fa;">📝 Complete Questions &amp; Answers Review</h3>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            ${details.map(qObj => {
+              const cleanedText = (qObj.text || '').replace(/\n/g, '<br>');
+              return `
+                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 18px; font-size: 0.9rem; text-align: left;">
+                  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                    <span style="font-weight: 600; color: #93c5fd;">Q${qObj.id} [${qObj.topic || ''}]</span>
+                    <span style="font-size: 0.78rem; background: rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 6px; color: rgba(255,255,255,0.6); text-transform: uppercase;">${qObj.section === 'rw' ? 'R&W' : 'Math'}</span>
+                  </div>
+                  <div style="margin-bottom: 12px; line-height: 1.6; color: rgba(255,255,255,0.9);">${cleanedText}</div>
+                  
+                  ${qObj.image ? `<div style="margin-bottom:12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 10px; text-align: center;">
+                    <img src="${qObj.image}" style="max-width: 100%; max-height: 250px; border-radius: 4px;">
+                  </div>` : ''}
+
+                  <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                    ${qObj.status === 'unattempted'
+                      ? `<div style="color: #fbbf24; font-weight: 500;">➖ Your answer: Skipped</div>
+                         <div style="color: #34d399; font-weight: 500;">✅ Correct: (${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}</div>`
+                      : qObj.status === 'correct'
+                        ? `<div style="color: #34d399; font-weight: 500;">✅ Your answer: (${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''} (Correct)</div>`
+                        : `<div style="color: #f87171; font-weight: 500;">❌ Your answer: (${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}</div>
+                           <div style="color: #34d399; font-weight: 500;">✅ Correct: (${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}</div>`
+                    }
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+      document.getElementById('modalReportContent').innerHTML = html;
+    }
+
+    async function logout() {
+      await supabaseClient.auth.signOut();
+      window.location.href = 'login.html';
+    }
+
+    checkAuth();
+  </script>
+</body>
+
+</html>

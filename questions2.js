@@ -807,13 +807,13 @@ const MODULE_MAP2 = {
 
 // ── Topic Map ─────────────────────────────────
 const TOPIC_MAP2 = {
-  'Words in Context':           { questions: QUESTIONS2.filter(q=>q.topic==='Words in Context').map(q=>q.id) },
-  'Craft and Structure':        { questions: QUESTIONS2.filter(q=>q.topic==='Craft and Structure').map(q=>q.id) },
-  'Information and Ideas':      { questions: QUESTIONS2.filter(q=>q.topic==='Information and Ideas').map(q=>q.id) },
-  'Standard English Conventions':{ questions: QUESTIONS2.filter(q=>q.topic==='Standard English Conventions').map(q=>q.id) },
-  'Rhetorical Synthesis':       { questions: QUESTIONS2.filter(q=>q.topic==='Rhetorical Synthesis').map(q=>q.id) },
-  'Algebra':                    { questions: QUESTIONS2.filter(q=>q.topic==='Algebra').map(q=>q.id) },
-  'Advanced Math':              { questions: QUESTIONS2.filter(q=>q.topic==='Advanced Math').map(q=>q.id) },
-  'Problem Solving & Data':     { questions: QUESTIONS2.filter(q=>q.topic==='Problem Solving & Data').map(q=>q.id) },
-  'Geometry':                   { questions: QUESTIONS2.filter(q=>q.topic==='Geometry').map(q=>q.id) },
+  'Words in Context':           { name: 'Words in Context',           questions: QUESTIONS2.filter(q=>q.topic==='Words in Context').map(q=>q.id) },
+  'Craft and Structure':        { name: 'Craft and Structure',        questions: QUESTIONS2.filter(q=>q.topic==='Craft and Structure').map(q=>q.id) },
+  'Information and Ideas':      { name: 'Information and Ideas',      questions: QUESTIONS2.filter(q=>q.topic==='Information and Ideas').map(q=>q.id) },
+  'Standard English Conventions':{ name: 'Standard English Conventions', questions: QUESTIONS2.filter(q=>q.topic==='Standard English Conventions').map(q=>q.id) },
+  'Rhetorical Synthesis':       { name: 'Rhetorical Synthesis',       questions: QUESTIONS2.filter(q=>q.topic==='Rhetorical Synthesis').map(q=>q.id) },
+  'Algebra':                    { name: 'Algebra',                    questions: QUESTIONS2.filter(q=>q.topic==='Algebra').map(q=>q.id) },
+  'Advanced Math':              { name: 'Advanced Math',              questions: QUESTIONS2.filter(q=>q.topic==='Advanced Math').map(q=>q.id) },
+  'Problem Solving & Data':     { name: 'Problem Solving & Data',     questions: QUESTIONS2.filter(q=>q.topic==='Problem Solving & Data').map(q=>q.id) },
+  'Geometry':                   { name: 'Geometry',                   questions: QUESTIONS2.filter(q=>q.topic==='Geometry').map(q=>q.id) },
 };

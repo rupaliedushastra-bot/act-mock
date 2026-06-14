@@ -469,6 +469,8 @@
       let hdrHtml = `<div class="contact">${email}</div>`;
       if (isAdmin) {
         hdrHtml += `<a href="admin.html" class="login-btn" style="background:rgba(124,58,237,0.15);border-color:rgba(124,58,237,0.3);margin-right:8px">Admin Dashboard</a>`;
+      } else {
+        hdrHtml += `<a href="dashboard.html" class="login-btn" style="background:#059669;border-color:#059669;margin-right:8px">🎓 Student Dashboard</a>`;
       }
       hdrHtml += `<button onclick="supabaseLogout()" class="login-btn" style="background:none;border-color:rgba(255,255,255,0.2);cursor:pointer">Logout</button>`;
       document.getElementById('hdrRight').innerHTML = hdrHtml;

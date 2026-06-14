@@ -123,7 +123,7 @@ function generatePDFReport(result, shouldSave = true) {
     if (y > 268) { doc.addPage(); y = 20; }
     if (idx % 2 === 0) rect(M, y, W-2*M, 7, 249, 250, 255);
     doc.setDrawColor(220,224,240); doc.setLineWidth(0.2); doc.rect(M,y,W-2*M,7,'S');
-    txt(t.name,    M+3,   y+5, 8);
+    txt(t.name || t.key || '',    M+3,   y+5, 8);
     txt(t.total,   M+113, y+5, 8, false, [80,80,100], 'center');
     txt(t.correct, M+126, y+5, 8, false, [5,150,105], 'center');
     txt(t.wrong,   M+136, y+5, 8, false, [220,38,38], 'center');
@@ -136,15 +136,15 @@ function generatePDFReport(result, shouldSave = true) {
   });
   y += 4;
 
-  // ── PAGE 2: Incorrect & Skipped answers ─────────────
+  // ── PAGE 2: All Questions & Answers Review ─────────────
   const LETTERS = ['A','B','C','D'];
-  const reviewQs = (result.details || []).filter(d => d.status === 'wrong' || d.status === 'unattempted');
+  const reviewQs = result.details || [];
 
   if (reviewQs.length > 0) {
     doc.addPage(); y = 20;
-    rect(M, y, W-2*M, 9, 255, 245, 230); // light amber/orange background
-    doc.setDrawColor(217, 119, 6); doc.setLineWidth(0.4); doc.rect(M,y,W-2*M,9,'S');
-    txt(`INCORRECT & SKIPPED ANSWERS REVIEW  (${reviewQs.length} questions)`, M+4, y+6, 9, true, [180,90,10]);
+    rect(M, y, W-2*M, 9, 230, 242, 255); // light blue background
+    doc.setDrawColor(26, 86, 219); doc.setLineWidth(0.4); doc.rect(M,y,W-2*M,9,'S');
+    txt(`COMPLETE QUESTIONS & ANSWERS REVIEW  (${reviewQs.length} questions)`, M+4, y+6, 9, true, [26,86,219]);
     y += 15;
 
     const clean = str => (str || '').replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, m =>
@@ -158,12 +158,17 @@ function generatePDFReport(result, shouldSave = true) {
       let yAnsText = '';
       if (qObj.status === 'unattempted') {
         yAnsText = `➖ Your Answer: (Skipped)`;
+      } else if (qObj.status === 'correct') {
+        yAnsText = `✓ Your Answer: (${LETTERS[qObj.chosen]}) ${clean(qObj.options[qObj.chosen])}`;
       } else {
         yAnsText = `✗ Your Answer: (${LETTERS[qObj.chosen]}) ${clean(qObj.options[qObj.chosen])}`;
       }
       
       const yAns   = doc.splitTextToSize(yAnsText, W-2*M-14);
-      const cAns   = doc.splitTextToSize(`✓ Correct:     (${LETTERS[qObj.answer]}) ${clean(qObj.options[qObj.answer])}`, W-2*M-14);
+      let cAns = [];
+      if (qObj.status !== 'correct') {
+        cAns = doc.splitTextToSize(`✓ Correct:     (${LETTERS[qObj.answer]}) ${clean(qObj.options[qObj.answer])}`, W-2*M-14);
+      }
       const need   = qLines.length*4.5 + yAns.length*4.2 + cAns.length*4.2 + 10;
 
       if (y + need > 275) { doc.addPage(); y = 20; }
@@ -171,6 +176,8 @@ function generatePDFReport(result, shouldSave = true) {
       // left accent bar
       if (qObj.status === 'unattempted') {
         rect(M, y, 1.8, need-3, 217, 119, 6); // amber/orange
+      } else if (qObj.status === 'correct') {
+        rect(M, y, 1.8, need-3, 5, 130, 80); // green
       } else {
         rect(M, y, 1.8, need-3, 220, 38, 38); // red
       }
@@ -183,13 +190,17 @@ function generatePDFReport(result, shouldSave = true) {
       doc.setFontSize(8); doc.setFont('helvetica','normal'); 
       if (qObj.status === 'unattempted') {
         doc.setTextColor(217, 119, 6);
+      } else if (qObj.status === 'correct') {
+        doc.setTextColor(5, 130, 80);
       } else {
         doc.setTextColor(200, 30, 30);
       }
       yAns.forEach(l => { doc.text(l, M+8, iy+3.2); iy += 4.2; });
       // correct answer
-      doc.setTextColor(5,130,80);
-      cAns.forEach(l => { doc.text(l, M+8, iy+3.2); iy += 4.2; });
+      if (qObj.status !== 'correct') {
+        doc.setTextColor(5,130,80);
+        cAns.forEach(l => { doc.text(l, M+8, iy+3.2); iy += 4.2; });
+      }
 
       y += need + 2;
     });
@@ -207,5 +218,154 @@ function generatePDFReport(result, shouldSave = true) {
 
   const filename = `${result.student.name.replace(/\s+/g,'_')}_SAT_Report.pdf`;
   if (shouldSave) doc.save(filename);
+  return doc;
+}
+
+function generateCombinedPDF(resultsList, studentInfo) {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+  const W = 210, M = 15;
+  let y = 0;
+
+  const txt = (s,x,yy,sz=10,bold=false,color=[30,30,30],align='left') => {
+    doc.setFontSize(sz);
+    doc.setFont('helvetica', bold ? 'bold' : 'normal');
+    doc.setTextColor(...color);
+    doc.text(String(s), x, yy, { align });
+  };
+  const rect = (x,yy,w,h,r,g,b,fill=true) => {
+    if (fill) { doc.setFillColor(r,g,b); doc.rect(x,yy,w,h,'F'); }
+    else      { doc.setDrawColor(r,g,b); doc.rect(x,yy,w,h,'S'); }
+  };
+  const line = (x1,y1,x2,y2,r=200,g=200,b=200,lw=0.3) => {
+    doc.setDrawColor(r,g,b); doc.setLineWidth(lw); doc.line(x1,y1,x2,y2);
+  };
+
+  // Header bar
+  rect(0, 0, W, 28, 13, 13, 20);
+  rect(0, 0, 6, 28, 16, 185, 129); // green accent bar for combined report
+  txt('Digital SAT — Combined Performance Report', W/2, 11, 14, true, [255,255,255], 'center');
+  txt(`EduQuest · rupali.eduquest@gmail.com`, W/2, 19, 9, false, [160,180,255], 'center');
+  txt(`Aggregated Results of ${resultsList.length} Practice Exams`, W/2, 25, 8, false, [120,220,180], 'center');
+  y = 34;
+
+  // Student Info Box
+  rect(M, y, W-2*M, 20, 240, 248, 245);
+  doc.setDrawColor(180, 220, 200); doc.setLineWidth(0.3);
+  doc.rect(M, y, W-2*M, 20, 'S');
+  txt('STUDENT INFO', M+4, y+5, 7.5, true, [16, 185, 129]);
+  txt(`Name:   ${studentInfo.name}`,  M+4,    y+11, 9);
+  txt(`Email:  ${studentInfo.email}`, M+4,    y+16, 8.5);
+  txt(`Phone:  ${studentInfo.phone || 'N/A'}`, W/2+4,  y+11, 9);
+  txt(`Report Date: ${new Date().toLocaleDateString('en-IN')}`, W/2+4, y+16, 8.5);
+  y += 26;
+
+  // Aggregate Stats
+  let totalCorrect = 0, totalWrong = 0, totalSkipped = 0, totalQ = 0;
+  let satScores = [], rwScores = [], mathScores = [];
+  
+  resultsList.forEach(r => {
+    totalCorrect += r.correct;
+    totalWrong += r.wrong;
+    totalSkipped += r.unattempted;
+    totalQ += r.total;
+    if (r.scaled) satScores.push(r.scaled);
+    if (r.rwScore) rwScores.push(r.rwScore);
+    if (r.mathScore) mathScores.push(r.mathScore);
+  });
+
+  const avgSat = satScores.length ? Math.round(satScores.reduce((a,b)=>a+b, 0) / satScores.length) : 'N/A';
+  const avgRw = rwScores.length ? Math.round(rwScores.reduce((a,b)=>a+b, 0) / rwScores.length) : 'N/A';
+  const avgMath = mathScores.length ? Math.round(mathScores.reduce((a,b)=>a+b, 0) / mathScores.length) : 'N/A';
+
+  // Render Stats box
+  rect(M, y, W-2*M, 26, 16, 185, 129); // green hero box
+  txt(String(avgSat), M+14, y+18, 28, true, [255,255,255]);
+  txt('Average SAT Score', M+14, y+24, 7, false, [200,255,220]);
+  txt(`Avg R&W: ${avgRw}   Avg Math: ${avgMath}`, W/2+8, y+12, 11, true, [255,255,255]);
+  txt(`${totalCorrect} Correct  ·  ${totalWrong} Wrong  ·  ${totalSkipped} Skipped`, W/2+8, y+19, 8.5, false, [210,240,210]);
+  txt(`Across ${resultsList.length} exams (${totalQ} total questions)`, W/2+8, y+24, 7.5, false, [190,230,200]);
+  y += 32;
+
+  // Individual test summaries list
+  txt('EXAMS TAKEN SUMMARY', M, y+4, 8, true, [16,185,129]);
+  y += 8;
+  
+  // Table header
+  rect(M, y, W-2*M, 7, 230, 245, 235);
+  doc.setDrawColor(190,215,200); doc.setLineWidth(0.3); doc.rect(M,y,W-2*M,7,'S');
+  [['Exam Name', M+3], ['Date', M+85], ['Score', M+125], ['Accuracy', M+155]].forEach(([h,x]) => {
+    txt(h, x, y+5, 7.5, true, [16,185,129]);
+  });
+  y += 7;
+
+  resultsList.forEach((r, idx) => {
+    if (idx % 2 === 0) rect(M, y, W-2*M, 7, 248, 252, 249);
+    doc.setDrawColor(220,230,225); doc.setLineWidth(0.2); doc.rect(M,y,W-2*M,7,'S');
+    txt(r.examName, M+3, y+5, 8);
+    txt(new Date(r.submitTime).toLocaleDateString('en-IN'), M+85, y+5, 8);
+    txt(r.scaled ? `${r.scaled} / 1600` : (r.rwScore ? `${r.rwScore} / 800 (R&W)` : 'N/A'), M+125, y+5, 8);
+    txt(`${r.pct}% (${r.correct}/${r.total})`, M+155, y+5, 8);
+    y += 7;
+  });
+  y += 10;
+
+  // Compiled Topic Performance
+  txt('AGGREGATED TOPIC-WISE PERFORMANCE', M, y+4, 8, true, [16,185,129]);
+  y += 8;
+
+  // Aggregate topics
+  const topicsData = {};
+  resultsList.forEach(r => {
+    (r.topicAnalysis || []).forEach(t => {
+      const tName = t.name || t.key || 'Unknown';
+      if (!topicsData[tName]) {
+        topicsData[tName] = { total: 0, correct: 0, wrong: 0 };
+      }
+      topicsData[tName].total += t.total;
+      topicsData[tName].correct += t.correct;
+      topicsData[tName].wrong += t.wrong;
+    });
+  });
+
+  // Table header
+  rect(M, y, W-2*M, 7, 230, 245, 235);
+  doc.setDrawColor(190,200,210); doc.setLineWidth(0.3); doc.rect(M,y,W-2*M,7,'S');
+  [['Topic', M+3], ['Total Qs', M+110], ['✓', M+125], ['✗', M+135], ['Avg Accuracy', M+145]].forEach(([h,x]) => {
+    txt(h, x, y+5, 7.5, true, [16,185,129]);
+  });
+  y += 7;
+
+  Object.entries(topicsData).forEach(([name, data], idx) => {
+    if (y > 268) { doc.addPage(); y = 20; }
+    const attempted = data.correct + data.wrong;
+    const acc = attempted ? Math.round((data.correct / attempted) * 100) : 0;
+    
+    if (idx % 2 === 0) rect(M, y, W-2*M, 7, 248, 252, 249);
+    doc.setDrawColor(220,230,225); doc.setLineWidth(0.2); doc.rect(M,y,W-2*M,7,'S');
+    txt(name, M+3, y+5, 8);
+    txt(data.total, M+113, y+5, 8, false, [80,80,100], 'center');
+    txt(data.correct, M+128, y+5, 8, false, [5,150,105], 'center');
+    txt(data.wrong, M+138, y+5, 8, false, [220,38,38], 'center');
+    
+    const bc = acc>=70?[5,150,105]:acc>=40?[180,100,0]:[220,38,38];
+    rect(M+145, y+2.5, 42, 2.5, 220,224,235);
+    if (acc > 0) rect(M+145, y+2.5, 42*(acc/100), 2.5, ...bc);
+    txt(`${acc}%`, M+188, y+5, 7, false, [80,80,100]);
+    y += 7;
+  });
+
+  // Footer on every page
+  const totalPages = doc.getNumberOfPages();
+  for (let p = 1; p <= totalPages; p++) {
+    doc.setPage(p);
+    line(M, 285, W-M, 285, 180,190,220);
+    txt(`Combined Performance Report — EduQuest`, M, 290, 6.5, false, [140,150,180]);
+    txt(`Page ${p} of ${totalPages}`, W-M, 290, 6.5, false, [140,150,180], 'right');
+    txt('rupali.eduquest@gmail.com', W/2, 290, 6.5, false, [140,150,180], 'center');
+  }
+
+  const filename = `${studentInfo.name.replace(/\s+/g,'_')}_Combined_SAT_Report.pdf`;
+  doc.save(filename);
   return doc;
 }

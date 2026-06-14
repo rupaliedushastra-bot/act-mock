@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAT Diagnosis Test</title>
+  <title>SAT Diagnostic Test</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
@@ -1541,7 +1541,7 @@
         const correct = rows.filter(d => d.status === 'correct').length;
         const wrong = rows.filter(d => d.status === 'wrong').length;
         const acc = attempted ? Math.round((correct / attempted) * 100) : 0;
-        return { key, name, total: rows.length, attempted, correct, wrong, acc };
+        return { key, name: name || key, total: rows.length, attempted, correct, wrong, acc };
       });
     }
 
@@ -1598,24 +1598,26 @@
       </table>
     </div>
 
-    ${(wrong + unattempted) > 0 ? `
     <div class="inc-review">
-      <h3>⚠️ Incorrect &amp; Skipped Answers Review (${wrong + unattempted})</h3>
+      <h3>📝 Complete Questions &amp; Answers Review (${total})</h3>
       <div>
-        ${details.filter(d => d.status === 'wrong' || d.status === 'unattempted').map(qObj => `
+        ${details.map(qObj => `
           <div class="inc-q">
             <h4>Q${qObj.id} [${qObj.topic}]: ${qObj.text.substring(0, 120)}${qObj.text.length > 120 ? '…' : ''}</h4>
             ${qObj.image ? `<div style="margin-bottom:10px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:6px;text-align:center">
               <img src="${qObj.image}" class="review-img" style="max-width:100%;max-height:350px;width:auto;object-fit:contain;border-radius:4px;display:block;margin:0 auto;cursor:zoom-in;transition:max-height .3s ease" alt="diagram">
             </div>` : ''}
             ${qObj.status === 'unattempted'
-          ? `<div class="inc-row" style="color:var(--amber)"><span class="label">➖ Your answer:</span><span>Skipped</span></div>`
-          : `<div class="inc-row wrong"><span class="label">❌ Your answer:</span><span>(${LETTERS[qObj.chosen]}) ${qObj.options[qObj.chosen]}</span></div>`
+          ? `<div class="inc-row" style="color:var(--amber)"><span class="label">➖ Your answer:</span><span>Skipped</span></div>
+                 <div class="inc-row right"><span class="label">✅ Correct:</span><span>(${LETTERS[qObj.answer]}) ${qObj.options[qObj.answer]}</span></div>`
+          : qObj.status === 'correct'
+            ? `<div class="inc-row right"><span class="label">✅ Your answer:</span><span>(${LETTERS[qObj.chosen]}) ${qObj.options[qObj.chosen]} (Correct)</span></div>`
+            : `<div class="inc-row wrong"><span class="label">❌ Your answer:</span><span>(${LETTERS[qObj.chosen]}) ${qObj.options[qObj.chosen]}</span></div>
+                   <div class="inc-row right"><span class="label">✅ Correct:</span><span>(${LETTERS[qObj.answer]}) ${qObj.options[qObj.answer]}</span></div>`
         }
-            <div class="inc-row right"><span class="label">✅ Correct:</span><span>(${LETTERS[qObj.answer]}) ${qObj.options[qObj.answer]}</span></div>
           </div>`).join('')}
       </div>
-    </div>` : ''}
+    </div>
 
     <div class="res-actions">
       <button class="btn btn-primary" onclick="downloadPDF()">⬇ Download PDF Again</button>
@@ -1639,7 +1641,7 @@
       new Chart($('barChart'), {
         type: 'bar',
         data: {
-          labels: topicAnalysis.map(t => t.name.length > 18 ? t.name.substring(0, 16) + '…' : t.name),
+          labels: topicAnalysis.map(t => { const nm = t.name || t.key || ''; return nm.length > 18 ? nm.substring(0, 16) + '…' : nm; }),
           datasets: [{
             label: 'Accuracy %', data: topicAnalysis.map(t => t.acc),
             backgroundColor: topicAnalysis.map(t => t.acc >= 70 ? 'rgba(5,150,105,.2)' : t.acc >= 40 ? 'rgba(217,119,6,.2)' : 'rgba(220,38,38,.2)'),

@@ -378,8 +378,31 @@
     </div>
   </div>
 
+  <!-- Modal for User History -->
+  <div id="userHistoryModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.85); z-index: 999; overflow-y: auto; padding: 40px 20px;">
+    <div style="max-width: 800px; margin: 0 auto; background: #0d0d14; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 30px; position: relative;">
+      <button onclick="closeUserHistoryModal()" style="position: absolute; top: 20px; right: 20px; background: none; border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
+      <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 20px; color: #fff;" id="historyModalTitle">Student History</h2>
+      <div id="historyModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Modal for report details -->
+  <div id="reportModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.85); z-index: 1000; overflow-y: auto; padding: 40px 20px;">
+    <div style="max-width: 900px; margin: 0 auto; background: #0d0d14; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 30px; position: relative;">
+      <button onclick="closeReportModal()" style="position: absolute; top: 20px; right: 20px; background: none; border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
+      <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 20px; color: #fff;" id="modalExamTitle">Test Review</h2>
+      <div id="modalReportContent"></div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="questions.js"></script>
+  <script src="questions2.js"></script>
+  <script src="test_3/questions3.js"></script>
   <script src="supabase.js"></script>
+  <script src="report.js"></script>
   <script>
     const ADMIN_EMAIL = 'rupali.eduquest@gmail.com'; // <-- yahan apna admin email daalo
 
@@ -433,26 +456,95 @@
       showLogin();
     }
 
-    // ── Load profiles ────────────────────────────────
+    // ── Load profiles and test results ────────────────
     async function loadProfiles() {
-      const { data, error } = await supabaseClient
-        .from('profiles')
-        .select('*')
-        .order('created_at', { ascending: false });
+      const listContainer = document.getElementById('userList');
+      listContainer.innerHTML = `<div class="loading">Loading database entries...</div>`;
+      try {
+        const { data: profiles, error: errP } = await supabaseClient
+          .from('profiles')
+          .select('*')
+          .order('created_at', { ascending: false });
 
-      if (error) {
-        document.getElementById('userList').innerHTML = `<div class="empty">Error loading data: ${error.message}</div>`;
-        return;
+        if (errP) throw errP;
+
+        const { data: results, error: errR } = await supabaseClient
+          .from('sat_results')
+          .select('*')
+          .order('submitted_at', { ascending: false });
+
+        if (errR) throw errR;
+
+        // Group results by email
+        const resultsByEmail = {};
+        (results || []).forEach(r => {
+          if (!r.student_email) return;
+          const emailKey = r.student_email.toLowerCase().trim();
+          if (!resultsByEmail[emailKey]) {
+            resultsByEmail[emailKey] = [];
+          }
+          resultsByEmail[emailKey].push(r);
+        });
+
+        // Unified student map
+        const studentMap = {};
+
+        // 1. Add all signed up profiles
+        (profiles || []).forEach(p => {
+          if (!p.email) return;
+          const emailKey = p.email.toLowerCase().trim();
+          const userResults = resultsByEmail[emailKey] || [];
+          
+          let displayName = emailKey.split('@')[0];
+          if (userResults.length > 0 && userResults[0].student_name) {
+            displayName = userResults[0].student_name;
+          }
+
+          studentMap[emailKey] = {
+            id: p.id,
+            email: p.email,
+            name: displayName,
+            created_at: p.created_at,
+            has_access: p.has_access || false,
+            organization: p.organization || '',
+            tests_count: userResults.length,
+            results: userResults,
+            has_profile: true
+          };
+        });
+
+        // 2. Add users who only submitted tests but have no profile row
+        Object.entries(resultsByEmail).forEach(([emailKey, userResults]) => {
+          if (studentMap[emailKey]) return;
+
+          studentMap[emailKey] = {
+            id: null,
+            email: userResults[0].student_email || emailKey,
+            name: userResults[0].student_name || emailKey.split('@')[0],
+            created_at: userResults[userResults.length - 1].submitted_at, // first test time
+            has_access: false,
+            organization: '',
+            tests_count: userResults.length,
+            results: userResults,
+            has_profile: false
+          };
+        });
+
+        // Sort all students by their registration or first test date (newest first)
+        allProfiles = Object.values(studentMap).sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+        updateStats();
+        renderList();
+      } catch (err) {
+        console.error('Error loading admin dashboard:', err);
+        listContainer.innerHTML = `<div class="empty">Error loading data: ${err.message}</div>`;
       }
-
-      allProfiles = data || [];
-      updateStats();
-      renderList();
     }
 
     function updateStats() {
-      const total = allProfiles.length;
-      const approved = allProfiles.filter(p => p.has_access).length;
+      const profilesOnly = allProfiles.filter(p => p.has_profile);
+      const total = profilesOnly.length;
+      const approved = profilesOnly.filter(p => p.has_access).length;
       document.getElementById('statTotal').textContent = total;
       document.getElementById('statApproved').textContent = approved;
       document.getElementById('statPending').textContent = total - approved;
@@ -471,10 +563,15 @@
       const search = document.getElementById('searchBox').value.trim().toLowerCase();
       let list = allProfiles;
 
-      if (currentFilter === 'pending') list = list.filter(p => !p.has_access);
-      else if (currentFilter === 'approved') list = list.filter(p => p.has_access);
+      if (currentFilter === 'pending') {
+        list = list.filter(p => p.has_profile && !p.has_access);
+      } else if (currentFilter === 'approved') {
+        list = list.filter(p => p.has_profile && p.has_access);
+      }
 
-      if (search) list = list.filter(p => (p.email || '').toLowerCase().includes(search));
+      if (search) {
+        list = list.filter(p => (p.email || '').toLowerCase().includes(search) || (p.name || '').toLowerCase().includes(search));
+      }
 
       const container = document.getElementById('userList');
       if (list.length === 0) {
@@ -482,23 +579,45 @@
         return;
       }
 
-      container.innerHTML = list.map(p => `
-    <div class="user-card">
-      <div class="user-info">
-        <div class="email">${p.email || '(no email)'}</div>
-        <div class="meta">Signed up: ${p.created_at ? new Date(p.created_at).toLocaleString() : '–'}</div>
-        <span class="badge ${p.has_access ? 'granted' : 'pending'}">${p.has_access ? '✓ Access Granted' : '⏳ Pending'}</span>
-        <input type="text" class="org-input" placeholder="Organization" value="${p.organization || ''}"
-          onchange="updateOrg('${p.id}', this.value)" style="margin-left:10px">
-      </div>
-      <div class="actions">
-        ${p.has_access
-          ? `<button class="btn-sm btn-revoke" onclick="setAccess('${p.id}', false)">Revoke</button>`
-          : `<button class="btn-sm btn-approve" onclick="setAccess('${p.id}', true)">Approve</button>`
+      container.innerHTML = list.map(p => {
+        let badgeHtml = '';
+        let orgHtml = '';
+        let actionButtons = '';
+
+        if (p.has_profile) {
+          badgeHtml = `<span class="badge ${p.has_access ? 'granted' : 'pending'}">${p.has_access ? '✓ Access Granted' : '⏳ Pending'}</span>`;
+          orgHtml = `<input type="text" class="org-input" placeholder="Organization" value="${p.organization || ''}"
+            onchange="updateOrg('${p.id}', this.value)" style="margin-left:10px">`;
+          actionButtons = p.has_access
+            ? `<button class="btn-sm btn-revoke" onclick="setAccess('${p.id}', false)">Revoke</button>`
+            : `<button class="btn-sm btn-approve" onclick="setAccess('${p.id}', true)">Approve</button>`;
+        } else {
+          badgeHtml = `<span class="badge pending" style="background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.1)">No Account</span>`;
+          orgHtml = `<span style="font-size:0.78rem;color:rgba(255,255,255,0.3);margin-left:10px">External</span>`;
+          actionButtons = `<span style="font-size:0.78rem;color:rgba(255,255,255,0.3);padding:8px 0;display:inline-block">N/A</span>`;
         }
-      </div>
-    </div>
-  `).join('');
+
+        return `
+          <div class="user-card">
+            <div class="user-info">
+              <div class="email">${p.email || '(no email)'}</div>
+              <div class="meta">
+                <span>Name: ${p.name}</span> &middot; 
+                <span>Completed Tests: ${p.tests_count}</span> &middot; 
+                <span>Registered: ${p.created_at ? new Date(p.created_at).toLocaleDateString('en-IN') : '–'}</span>
+              </div>
+              <div style="margin-top: 6px; display: flex; align-items: center;">
+                ${badgeHtml}
+                ${orgHtml}
+              </div>
+            </div>
+            <div class="actions">
+              <button class="btn-sm" style="background:#1a56db;color:#fff;margin-right:4px;cursor:pointer" onclick="showUserHistory('${p.email}')">History</button>
+              ${actionButtons}
+            </div>
+          </div>
+        `;
+      }).join('');
     }
 
     // ── Approve / Revoke ────────────────────────────
@@ -533,6 +652,230 @@
 
       const p = allProfiles.find(x => x.id === userId);
       if (p) p.organization = value;
+    }
+
+    // ── Admin Dashboard Student History popup helpers ──
+    let activeUserHistory = [];
+
+    async function showUserHistory(email) {
+      document.getElementById('historyModalTitle').textContent = `History: ${email}`;
+      document.getElementById('historyModalContent').innerHTML = `<div style="text-align: center; padding: 20px; color: rgba(255,255,255,0.6);">Loading test history...</div>`;
+      document.getElementById('userHistoryModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+
+      const student = allProfiles.find(s => s.email.toLowerCase() === email.toLowerCase());
+      if (student) {
+        activeUserHistory = student.results || [];
+        renderHistoryModalList(email);
+      } else {
+        document.getElementById('historyModalContent').innerHTML = `<div style="text-align: center; padding: 20px; color: #f87171;">Student data not found.</div>`;
+      }
+    }
+
+    function closeUserHistoryModal() {
+      document.getElementById('userHistoryModal').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    function renderHistoryModalList(email) {
+      const container = document.getElementById('historyModalContent');
+      if (activeUserHistory.length === 0) {
+        container.innerHTML = `<div style="text-align: center; padding: 20px; color: rgba(255,255,255,0.5);">This student has not completed any tests yet.</div>`;
+        return;
+      }
+
+      let headerHTML = '';
+      if (activeUserHistory.length >= 2) {
+        headerHTML = `<div style="text-align: right; margin-bottom: 15px;">
+          <button class="btn" style="display: inline-block; width: auto; background: #059669; font-size: 0.85rem; padding: 6px 14px;" onclick="downloadAdminCombinedReport('${email}')">Download Combined Report (PDF)</button>
+        </div>`;
+      }
+
+      const listHTML = activeUserHistory.map((row, idx) => {
+        const dateStr = new Date(row.submitted_at).toLocaleDateString('en-IN', {
+          day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'
+        });
+        const scoreDisplay = row.sat_score 
+          ? `<span style="font-size: 1.2rem; font-weight: 700; color: #34d399;">${row.sat_score}</span> <span style="font-size: 0.78rem; color: rgba(255,255,255,0.4);">/ 1600</span>` 
+          : `<span style="font-size: 1.2rem; font-weight: 700; color: #60a5fa;">${row.rw_score || '—'}</span> <span style="font-size: 0.78rem; color: rgba(255,255,255,0.4);">/ 800 (R&W)</span>`;
+
+        return `
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 12px; padding: 14px; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">${row.exam_name || 'Digital SAT Practice'}</div>
+              <div style="font-size: 0.75rem; color: rgba(255,255,255,0.4); margin-top: 2px;">Date: ${dateStr}</div>
+              <div style="margin-top: 4px; font-size: 0.75rem; color: rgba(255,255,255,0.6);">
+                <span>Grade: ${row.grade || '—'}</span> &middot; <span>Accuracy: ${row.percentage || 0}%</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+              <div style="text-align: right;">
+                <div style="font-size: 0.68rem; color: rgba(255,255,255,0.4); text-transform: uppercase;">Score</div>
+                <div>${scoreDisplay}</div>
+              </div>
+              <div style="display: flex; gap: 6px;">
+                <button class="btn" style="width: auto; margin: 0; padding: 5px 10px; font-size: 0.78rem;" onclick="viewAdminReportDetails(${idx})">View Review</button>
+                <button class="btn" style="width: auto; margin: 0; padding: 5px 10px; font-size: 0.78rem; background: none; border: 1px solid rgba(255,255,255,0.2);" onclick="downloadAdminSinglePDF(${idx})">PDF</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      container.innerHTML = headerHTML + listHTML;
+    }
+
+    // ── Reconstruct Result Object from row ──────────
+    function reconstructResult(row) {
+      let examQs = [];
+      if (row.exam_name && row.exam_name.includes('Exam 3')) {
+        examQs = QUESTIONS3;
+      } else if (row.exam_name && row.exam_name.includes('Exam 2')) {
+        examQs = QUESTIONS2;
+      } else {
+        examQs = QUESTIONS;
+      }
+
+      const details = (row.student_answers || []).map(ans => {
+        const originalQ = examQs.find(q => q.id === ans.question_id) || {};
+        return {
+          ...originalQ,
+          id: ans.question_id,
+          section: ans.section,
+          topic: ans.topic,
+          status: ans.status,
+          chosen: ans.chosen_option !== null ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined,
+          answer: ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
+        };
+      });
+
+      return {
+        student: {
+          name: row.student_name,
+          email: row.student_email,
+          phone: row.student_phone
+        },
+        correct: row.correct,
+        wrong: row.wrong,
+        unattempted: row.skipped,
+        total: row.total,
+        pct: row.percentage,
+        grade: row.grade,
+        scaled: row.sat_score,
+        rwScore: row.rw_score,
+        mathScore: row.math_score,
+        details: details,
+        submitTime: row.submitted_at,
+        examName: row.exam_name || 'Digital SAT – Practice Exam 1',
+        topicAnalysis: Object.entries(row.topic_scores || {}).map(([name, scores]) => ({
+          name: name,
+          total: scores.total,
+          correct: scores.correct,
+          wrong: scores.wrong,
+          acc: scores.accuracy
+        }))
+      };
+    }
+
+    // ── Actions ─────────────────────────────────────
+    function viewAdminReportDetails(idx) {
+      const row = activeUserHistory[idx];
+      const result = reconstructResult(row);
+      document.getElementById('modalExamTitle').textContent = `${result.student.name} — ${result.examName} Detailed Review`;
+      renderModalReport(result);
+      document.getElementById('reportModal').style.display = 'block';
+    }
+
+    function closeReportModal() {
+      document.getElementById('reportModal').style.display = 'none';
+    }
+
+    function downloadAdminSinglePDF(idx) {
+      const row = activeUserHistory[idx];
+      const result = reconstructResult(row);
+      if (typeof generatePDFReport === 'function') {
+        generatePDFReport(result, true);
+      } else {
+        alert('PDF Generation helper not loaded.');
+      }
+    }
+
+    function downloadAdminCombinedReport(email) {
+      if (activeUserHistory.length < 2) return;
+      const resultsList = activeUserHistory.map(row => reconstructResult(row));
+      const studentInfo = {
+        name: activeUserHistory[0].student_name,
+        email: activeUserHistory[0].student_email,
+        phone: activeUserHistory[0].student_phone
+      };
+      if (typeof generateCombinedPDF === 'function') {
+        generateCombinedPDF(resultsList, studentInfo);
+      } else {
+        alert('Combined PDF Generation helper not loaded.');
+      }
+    }
+
+    // ── Render Complete Questions inside modal ──────
+    function renderModalReport(result) {
+      const LETTERS = ['A', 'B', 'C', 'D'];
+      const { correct, wrong, unattempted, total, pct, scaled, rwScore, mathScore, details } = result;
+      const scoreColor = pct >= 70 ? '#34d399' : pct >= 50 ? '#fbbf24' : '#f87171';
+
+      let scoreHTML = '';
+      if (scaled) {
+        scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${scaled}</div>
+                     <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">SAT Score Estimate &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
+      } else {
+        scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${rwScore || '—'}</div>
+                     <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">Reading & Writing Score &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
+      }
+
+      let html = `
+        <div style="text-align: center; margin-bottom: 30px; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+          ${scoreHTML}
+          <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap;">
+            <div><strong>R&W Score:</strong> ${rwScore || '—'}</div>
+            <div><strong>Math Score:</strong> ${mathScore || '—'}</div>
+            <div><strong>Correct:</strong> ${correct}</div>
+            <div><strong>Wrong:</strong> ${wrong}</div>
+            <div><strong>Skipped:</strong> ${unattempted}</div>
+          </div>
+        </div>
+        
+        <div style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; font-family: 'Syne', sans-serif; font-size: 1.25rem; color: #60a5fa;">📝 Complete Questions &amp; Answers Review</h3>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            ${details.map(qObj => {
+              const cleanedText = (qObj.text || '').replace(/\n/g, '<br>');
+              return `
+                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 18px; font-size: 0.9rem; text-align: left;">
+                  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                    <span style="font-weight: 600; color: #93c5fd;">Q${qObj.id} [${qObj.topic || ''}]</span>
+                    <span style="font-size: 0.78rem; background: rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 6px; color: rgba(255,255,255,0.6); text-transform: uppercase;">${qObj.section === 'rw' ? 'R&W' : 'Math'}</span>
+                  </div>
+                  <div style="margin-bottom: 12px; line-height: 1.6; color: rgba(255,255,255,0.9);">${cleanedText}</div>
+                  
+                  ${qObj.image ? `<div style="margin-bottom:12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 10px; text-align: center;">
+                    <img src="${qObj.image}" style="max-width: 100%; max-height: 250px; border-radius: 4px;">
+                  </div>` : ''}
+
+                  <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                    ${qObj.status === 'unattempted'
+                      ? `<div style="color: #fbbf24; font-weight: 500;">➖ Your answer: Skipped</div>
+                         <div style="color: #34d399; font-weight: 500;">✅ Correct: (${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}</div>`
+                      : qObj.status === 'correct'
+                        ? `<div style="color: #34d399; font-weight: 500;">✅ Your answer: (${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''} (Correct)</div>`
+                        : `<div style="color: #f87171; font-weight: 500;">❌ Your answer: (${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}</div>
+                           <div style="color: #34d399; font-weight: 500;">✅ Correct: (${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}</div>`
+                    }
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+      document.getElementById('modalReportContent').innerHTML = html;
     }
   </script>
 </body>
