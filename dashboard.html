@@ -645,8 +645,8 @@
           section: ans.section,
           topic: ans.topic,
           status: ans.status,
-          chosen: ans.chosen_option !== null ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined,
-          answer: ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
+          chosen: originalQ.isFillIn ? ans.chosen_option : (ans.chosen_option !== null && ans.chosen_option !== undefined ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined),
+          answer: originalQ.isFillIn ? undefined : ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
         };
       });
 
@@ -691,6 +691,27 @@
     function closeModal() {
       document.getElementById('reportModal').style.display = 'none';
       document.body.style.overflow = '';
+    }
+
+    function filterModalQs(status, btn) {
+      // Update button styles
+      const btns = btn.parentElement.querySelectorAll('button');
+      btns.forEach(b => {
+        b.style.background = 'rgba(255,255,255,0.1)';
+        b.style.border = '1px solid rgba(255,255,255,0.2)';
+      });
+      btn.style.background = '#1a56db';
+      btn.style.border = 'none';
+
+      // Filter cards
+      const cards = document.querySelectorAll('.modal-q-card');
+      cards.forEach(card => {
+        if (status === 'all' || card.getAttribute('data-status') === status) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
     }
 
     function downloadSinglePDF(idx) {
@@ -746,12 +767,20 @@
         </div>
         
         <div style="margin-bottom: 24px;">
-          <h3 style="margin-bottom: 16px; font-family: 'Syne', sans-serif; font-size: 1.25rem; color: #60a5fa;">📝 Complete Questions &amp; Answers Review</h3>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+            <h3 style="font-family: 'Syne', sans-serif; font-size: 1.25rem; color: #60a5fa; margin: 0;">📝 Complete Questions &amp; Answers Review</h3>
+            <div style="display: flex; gap: 8px;">
+              <button class="btn-sm" style="background:#1a56db;color:#fff;border:none;padding:6px 12px;" onclick="filterModalQs('all', this)">All</button>
+              <button class="btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;" onclick="filterModalQs('correct', this)">Correct</button>
+              <button class="btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;" onclick="filterModalQs('wrong', this)">Wrong</button>
+              <button class="btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;" onclick="filterModalQs('unattempted', this)">Skipped</button>
+            </div>
+          </div>
           <div style="display: flex; flex-direction: column; gap: 16px;">
             ${details.map(qObj => {
               const cleanedText = (qObj.text || '').replace(/\n/g, '<br>');
               return `
-                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 18px; font-size: 0.9rem; text-align: left;">
+                <div class="modal-q-card" data-status="${qObj.status}" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 18px; font-size: 0.9rem; text-align: left;">
                   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
                     <span style="font-weight: 600; color: #93c5fd;">Q${qObj.id} [${qObj.topic || ''}]</span>
                     <span style="font-size: 0.78rem; background: rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 6px; color: rgba(255,255,255,0.6); text-transform: uppercase;">${qObj.section === 'rw' ? 'R&W' : 'Math'}</span>
@@ -765,11 +794,11 @@
                   <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
                     ${qObj.status === 'unattempted'
                       ? `<div style="color: #fbbf24; font-weight: 500;">➖ Your answer: Skipped</div>
-                         <div style="color: #34d399; font-weight: 500;">✅ Correct: (${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}</div>`
+                         <div style="color: #34d399; font-weight: 500;">✅ Correct: ${qObj.isFillIn ? qObj.fillAnswer : `(${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}`}</div>`
                       : qObj.status === 'correct'
-                        ? `<div style="color: #34d399; font-weight: 500;">✅ Your answer: (${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''} (Correct)</div>`
-                        : `<div style="color: #f87171; font-weight: 500;">❌ Your answer: (${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}</div>
-                           <div style="color: #34d399; font-weight: 500;">✅ Correct: (${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}</div>`
+                        ? `<div style="color: #34d399; font-weight: 500;">✅ Your answer: ${qObj.isFillIn ? qObj.chosen : `(${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}`} (Correct)</div>`
+                        : `<div style="color: #f87171; font-weight: 500;">❌ Your answer: ${qObj.isFillIn ? (qObj.chosen || 'None') : `(${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}`}</div>
+                           <div style="color: #34d399; font-weight: 500;">✅ Correct: ${qObj.isFillIn ? qObj.fillAnswer : `(${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}`}</div>`
                     }
                   </div>
                 </div>

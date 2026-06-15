@@ -101,8 +101,8 @@ async function saveToSupabase(result) {
             section: d.section,
             topic: d.topic,
             status: d.status, // 'correct', 'wrong', 'unattempted'
-            chosen_option: d.chosen !== undefined ? ['A', 'B', 'C', 'D'][d.chosen] : null,
-            correct_option: ['A', 'B', 'C', 'D'][d.answer]
+            chosen_option: d.options ? (d.chosen !== undefined && d.chosen !== null ? ['A', 'B', 'C', 'D'][d.chosen] : null) : (d.chosen || null),
+            correct_option: d.options ? ['A', 'B', 'C', 'D'][d.answer] : d.fillAnswer
         })),
 
         // Exam name
@@ -137,3 +137,21 @@ async function saveToSupabase(result) {
         console.error('❌ Supabase network error:', err);
     }
 }
+
+// Prefill email if user is logged in
+document.addEventListener('DOMContentLoaded', async () => {
+    if (window.supabase && typeof SUPABASE_CONFIG !== 'undefined') {
+        try {
+            const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+            const { data: { session } } = await client.auth.getSession();
+            if (session && session.user && session.user.email) {
+                const regEmail = document.getElementById('regEmail');
+                if (regEmail && !regEmail.value) {
+                    regEmail.value = session.user.email;
+                }
+            }
+        } catch (e) {
+            console.error('Error prefilling email:', e);
+        }
+    }
+});

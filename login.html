@@ -140,6 +140,31 @@
             line-height: 1.5
         }
 
+        .password-wrapper {
+            position: relative;
+            display: block;
+        }
+
+        .eye-btn {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .eye-btn:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
         .btn {
             display: block;
             width: 100%;
@@ -218,7 +243,10 @@
             </div>
             <div class="field">
                 <label>Password</label>
-                <input type="password" id="stuLoginPassword" placeholder="••••••••">
+                <div class="password-wrapper">
+                    <input type="password" id="stuLoginPassword" placeholder="••••••••">
+                    <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
+                </div>
             </div>
             <button class="btn btn-primary" onclick="studentLogin()">Login as Student</button>
         </div>
@@ -231,7 +259,10 @@
             </div>
             <div class="field">
                 <label>Password</label>
-                <input type="password" id="stuSignupPassword" placeholder="At least 6 characters">
+                <div class="password-wrapper">
+                    <input type="password" id="stuSignupPassword" placeholder="At least 6 characters">
+                    <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
+                </div>
                 <p class="hint">After signup, an admin will need to approve your account before you can access locked exams.</p>
             </div>
             <button class="btn btn-primary" onclick="studentSignup()">Create Student Account</button>
@@ -245,7 +276,10 @@
             </div>
             <div class="field">
                 <label>Password</label>
-                <input type="password" id="adminLoginPassword" placeholder="••••••••">
+                <div class="password-wrapper">
+                    <input type="password" id="adminLoginPassword" placeholder="••••••••">
+                    <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
+                </div>
             </div>
             <button class="btn btn-primary admin" onclick="adminLogin()">Login as Admin</button>
         </div>
@@ -258,11 +292,17 @@
             </div>
             <div class="field">
                 <label>Password</label>
-                <input type="password" id="adminSignupPassword" placeholder="At least 6 characters">
+                <div class="password-wrapper">
+                    <input type="password" id="adminSignupPassword" placeholder="At least 6 characters">
+                    <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
+                </div>
             </div>
             <div class="field">
                 <label>Admin Access Code</label>
-                <input type="password" id="adminAccessCode" placeholder="Secret access code">
+                <div class="password-wrapper">
+                    <input type="password" id="adminAccessCode" placeholder="Secret access code">
+                    <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
+                </div>
                 <p class="hint">Only people with the correct access code can create an admin account.</p>
             </div>
             <button class="btn btn-primary admin" onclick="adminSignup()">Create Admin Account</button>
@@ -292,6 +332,17 @@
             const m = document.getElementById('msg');
             m.textContent = text;
             m.className = type;
+        }
+
+        function togglePassword(btn) {
+            const input = btn.previousElementSibling;
+            if (input.type === 'password') {
+                input.type = 'text';
+                btn.textContent = '👁️‍🗨️'; // Crossed eye or similar open eye
+            } else {
+                input.type = 'password';
+                btn.textContent = '👁️';
+            }
         }
 
         // ── Role / Mode switching ──────────────────────

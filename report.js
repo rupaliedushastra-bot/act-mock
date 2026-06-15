@@ -159,15 +159,15 @@ function generatePDFReport(result, shouldSave = true) {
       if (qObj.status === 'unattempted') {
         yAnsText = `➖ Your Answer: (Skipped)`;
       } else if (qObj.status === 'correct') {
-        yAnsText = `✓ Your Answer: (${LETTERS[qObj.chosen]}) ${clean(qObj.options[qObj.chosen])}`;
+        yAnsText = `✓ Your Answer: ${qObj.isFillIn ? qObj.chosen : `(${LETTERS[qObj.chosen]}) ${clean(qObj.options[qObj.chosen])}`}`;
       } else {
-        yAnsText = `✗ Your Answer: (${LETTERS[qObj.chosen]}) ${clean(qObj.options[qObj.chosen])}`;
+        yAnsText = `✗ Your Answer: ${qObj.isFillIn ? (qObj.chosen || 'None') : `(${LETTERS[qObj.chosen]}) ${clean(qObj.options[qObj.chosen])}`}`;
       }
       
       const yAns   = doc.splitTextToSize(yAnsText, W-2*M-14);
       let cAns = [];
       if (qObj.status !== 'correct') {
-        cAns = doc.splitTextToSize(`✓ Correct:     (${LETTERS[qObj.answer]}) ${clean(qObj.options[qObj.answer])}`, W-2*M-14);
+        cAns = doc.splitTextToSize(`✓ Correct:     ${qObj.isFillIn ? qObj.fillAnswer : `(${LETTERS[qObj.answer]}) ${clean(qObj.options[qObj.answer])}`}`, W-2*M-14);
       }
       const need   = qLines.length*4.5 + yAns.length*4.2 + cAns.length*4.2 + 10;
 
@@ -353,6 +353,78 @@ function generateCombinedPDF(resultsList, studentInfo) {
     if (acc > 0) rect(M+145, y+2.5, 42*(acc/100), 2.5, ...bc);
     txt(`${acc}%`, M+188, y+5, 7, false, [80,80,100]);
     y += 7;
+  });
+
+  // ── PAGE 3+: All Questions & Answers Review for Each Exam ─────────────
+  const LETTERS = ['A','B','C','D'];
+  const clean = str => (str || '').replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, m =>
+    ({'&nbsp;':' ','&deg;':'°','&rarr;':'→','&larr;':'←','&minus;':'−','&sup2;':'²','&sup3;':'³'}[m] || ' ')
+  );
+
+  resultsList.forEach((result, idx) => {
+    const reviewQs = result.details || [];
+    if (reviewQs.length > 0) {
+      doc.addPage(); y = 20;
+      rect(M, y, W-2*M, 14, 230, 242, 255); // light blue background
+      doc.setDrawColor(26, 86, 219); doc.setLineWidth(0.4); doc.rect(M,y,W-2*M,14,'S');
+      txt(`COMPLETE REVIEW: ${result.examName || `Exam ${idx+1}`}`, M+4, y+6, 9, true, [26,86,219]);
+      txt(`(${reviewQs.length} questions · ${new Date(result.submitTime).toLocaleDateString('en-IN')})`, M+4, y+11, 7.5, false, [60,100,200]);
+      y += 20;
+
+      reviewQs.forEach(qObj => {
+        const qText  = `Q${qObj.id} [${qObj.topic || ''}]: ${clean(qObj.text)}`;
+        const qLines = doc.splitTextToSize(qText, W-2*M-10);
+        
+        let yAnsText = '';
+        if (qObj.status === 'unattempted') {
+          yAnsText = `➖ Your Answer: (Skipped)`;
+        } else if (qObj.status === 'correct') {
+          yAnsText = `✓ Your Answer: ${qObj.isFillIn ? qObj.chosen : `(${LETTERS[qObj.chosen]}) ${clean(qObj.options[qObj.chosen])}`}`;
+        } else {
+          yAnsText = `✗ Your Answer: ${qObj.isFillIn ? (qObj.chosen || 'None') : `(${LETTERS[qObj.chosen]}) ${clean(qObj.options[qObj.chosen])}`}`;
+        }
+        
+        const yAns   = doc.splitTextToSize(yAnsText, W-2*M-14);
+        let cAns = [];
+        if (qObj.status !== 'correct') {
+          cAns = doc.splitTextToSize(`✓ Correct:     ${qObj.isFillIn ? qObj.fillAnswer : `(${LETTERS[qObj.answer]}) ${clean(qObj.options[qObj.answer])}`}`, W-2*M-14);
+        }
+        const need   = qLines.length*4.5 + yAns.length*4.2 + cAns.length*4.2 + 10;
+
+        if (y + need > 275) { doc.addPage(); y = 20; }
+
+        // left accent bar
+        if (qObj.status === 'unattempted') {
+          rect(M, y, 1.8, need-3, 217, 119, 6); // amber/orange
+        } else if (qObj.status === 'correct') {
+          rect(M, y, 1.8, need-3, 5, 130, 80); // green
+        } else {
+          rect(M, y, 1.8, need-3, 220, 38, 38); // red
+        }
+
+        let iy = y + 1;
+        // question text
+        doc.setFontSize(8.5); doc.setFont('helvetica','bold'); doc.setTextColor(30,30,30);
+        qLines.forEach(l => { doc.text(l, M+5, iy+3.5); iy += 4.5; });
+        // user answer
+        doc.setFontSize(8); doc.setFont('helvetica','normal'); 
+        if (qObj.status === 'unattempted') {
+          doc.setTextColor(217, 119, 6);
+        } else if (qObj.status === 'correct') {
+          doc.setTextColor(5, 130, 80);
+        } else {
+          doc.setTextColor(200, 30, 30);
+        }
+        yAns.forEach(l => { doc.text(l, M+8, iy+3.2); iy += 4.2; });
+        // correct answer
+        if (qObj.status !== 'correct') {
+          doc.setTextColor(5,130,80);
+          cAns.forEach(l => { doc.text(l, M+8, iy+3.2); iy += 4.2; });
+        }
+
+        y += need + 2;
+      });
+    }
   });
 
   // Footer on every page
