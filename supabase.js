@@ -155,3 +155,111 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 });
+
+
+
+// =============================================
+// SUPABASE ACT ADDON
+// Is code ko supabase.js ke end mein paste karo
+// Ya ek alag file act_supabase.js banake load karo
+// act1.html mein supabase.js ke baad
+// =============================================
+
+// ── Save ACT result to Supabase ───────────────
+// act_results table mein data store hoga (SAT se alag)
+async function saveACTResult(result) {
+    if (SUPABASE_CONFIG.url === 'YOUR_SUPABASE_URL') {
+        console.warn('⚠️ Supabase not configured yet.');
+        return;
+    }
+
+    // Topic scores as JSON object
+    const topicScores = {};
+    (result.topicAnalysis || []).forEach(t => {
+        const key = `${t.section}::${t.name}`;
+        topicScores[key] = {
+            section: t.section,
+            topic: t.name,
+            total: t.total,
+            correct: t.correct,
+            wrong: t.wrong,
+            accuracy: t.acc
+        };
+    });
+
+    // Weak topics (bottom 3 by accuracy)
+    const weakTopics = (result.topicAnalysis || [])
+        .filter(t => t.attempted > 0)
+        .sort((a, b) => a.acc - b.acc)
+        .slice(0, 3)
+        .map(t => `${t.name} [${t.section}] (${t.acc}%)`)
+        .join(', ') || null;
+
+    // Student answers JSON
+    const studentAnswers = (result.details || []).map(d => ({
+        question_id: d.id,
+        section: d.section,
+        topic: d.topic,
+        status: d.status,   // 'correct', 'wrong', 'unattempted'
+        chosen_option: d.chosen !== undefined && d.chosen !== null
+            ? ['A', 'B', 'C', 'D'][d.chosen]
+            : null,
+        correct_option: ['A', 'B', 'C', 'D'][d.answer]
+    }));
+
+    const row = {
+        // Student info
+        student_name: result.student.name,
+        student_email: result.student.email,
+        student_phone: result.student.phone,
+
+        // Exam info
+        exam_name: result.examName || 'ACT Practice Test 1',
+
+        // Composite + section scores
+        composite_score: result.composite || null,
+        english_score: result.sectionScores?.english || null,
+        math_score: result.sectionScores?.math || null,
+        reading_score: result.sectionScores?.reading || null,
+        science_score: result.sectionScores?.science || null,
+
+        // Overall stats
+        percentage: result.pct,
+        grade: result.grade,
+        correct: result.correct,
+        wrong: result.wrong,
+        skipped: result.unattempted,
+        total: result.total,
+
+        // JSON columns
+        topic_scores: topicScores,
+        weak_topics: weakTopics,
+        student_answers: studentAnswers,
+
+        // Timestamps
+        submitted_at: result.submitTime,
+        created_at: new Date().toISOString()
+    };
+
+    try {
+        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/act_results`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'apikey': SUPABASE_CONFIG.anonKey,
+                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
+                'Prefer': 'return=minimal'
+            },
+            body: JSON.stringify(row)
+        });
+
+        if (res.ok || res.status === 201) {
+            console.log('✅ ACT Result saved to Supabase successfully');
+        } else {
+            const errText = await res.text();
+            console.error('❌ ACT Supabase save failed:', res.status, errText);
+        }
+    } catch (err) {
+        console.error('❌ ACT Supabase network error:', err);
+    }
+}

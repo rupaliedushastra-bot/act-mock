@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduQuest – Digital SAT Practice</title>
+  <title>EduQuest – ACT Practice Portal</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
@@ -44,7 +44,7 @@
     }
 
     .brand-pill {
-      background: #1a56db;
+      background: #059669;
       border-radius: 6px;
       padding: 3px 10px;
       font-size: 0.72rem;
@@ -67,8 +67,8 @@
       font-size: 0.82rem;
       font-weight: 600;
       color: #fff;
-      background: rgba(26, 86, 219, 0.15);
-      border: 1px solid rgba(26, 86, 219, 0.3);
+      background: rgba(5, 150, 105, 0.15);
+      border: 1px solid rgba(5, 150, 105, 0.3);
       padding: 7px 18px;
       border-radius: 8px;
       text-decoration: none;
@@ -76,8 +76,8 @@
     }
 
     .login-btn:hover {
-      background: rgba(26, 86, 219, 0.28);
-      border-color: rgba(26, 86, 219, 0.5);
+      background: rgba(5, 150, 105, 0.28);
+      border-color: rgba(5, 150, 105, 0.5);
       transform: translateY(-1px)
     }
 
@@ -96,13 +96,13 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(26, 86, 219, 0.15);
-      border: 1px solid rgba(26, 86, 219, 0.3);
+      background: rgba(5, 150, 105, 0.15);
+      border: 1px solid rgba(5, 150, 105, 0.3);
       border-radius: 100px;
       padding: 6px 16px;
       font-size: 0.78rem;
       font-weight: 600;
-      color: #60a5fa;
+      color: #34d399;
       letter-spacing: .04em;
       text-transform: uppercase;
       margin-bottom: 28px
@@ -118,7 +118,7 @@
     }
 
     .hero h1 span {
-      background: linear-gradient(135deg, #60a5fa, #34d399);
+      background: linear-gradient(135deg, #34d399, #60a5fa, #c4b5fd, #fde68a);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text
@@ -127,17 +127,17 @@
     .hero p {
       color: rgba(255, 255, 255, 0.55);
       font-size: 1.05rem;
-      max-width: 460px;
+      max-width: 500px;
       line-height: 1.7;
       margin-bottom: 52px
     }
 
-    /* Exam cards grid */
+    /* Cards grid */
     .cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
-      max-width: 760px;
+      max-width: 800px;
       width: 100%
     }
 
@@ -145,6 +145,12 @@
       .cards {
         grid-template-columns: 1fr
       }
+    }
+
+    /* Single card (full width when alone) */
+    .cards.single {
+      grid-template-columns: 1fr;
+      max-width: 440px
     }
 
     .exam-card {
@@ -159,11 +165,12 @@
     }
 
     .exam-card:hover {
-      border-color: rgba(26, 86, 219, 0.5);
+      border-color: rgba(5, 150, 105, 0.5);
       transform: translateY(-3px);
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4)
     }
 
+    /* Rainbow top bar for ACT */
     .exam-card::before {
       content: '';
       position: absolute;
@@ -171,11 +178,7 @@
       left: 0;
       right: 0;
       height: 3px;
-      background: linear-gradient(90deg, #1a56db, #3b82f6)
-    }
-
-    .exam-card.exam2::before {
-      background: linear-gradient(90deg, #059669, #34d399)
+      background: linear-gradient(90deg, #1a56db 25%, #059669 50%, #7c3aed 75%, #d97706 100%)
     }
 
     .card-num {
@@ -205,7 +208,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px;
-      margin-bottom: 24px
+      margin-bottom: 16px
     }
 
     .cm {
@@ -229,27 +232,28 @@
       margin-top: 2px
     }
 
-    .card-tags {
-      display: flex;
-      flex-wrap: wrap;
+    /* Section preview chips inside card */
+    .section-chips {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 6px;
-      margin-bottom: 24px
+      margin-bottom: 20px
     }
 
-    .tag {
-      font-size: 0.72rem;
-      padding: 4px 10px;
-      border-radius: 100px;
-      font-weight: 600;
-      background: rgba(26, 86, 219, 0.15);
-      color: #93c5fd;
-      border: 1px solid rgba(26, 86, 219, 0.2)
+    .s-chip {
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 0.72rem
     }
 
-    .exam2 .tag {
-      background: rgba(5, 150, 105, 0.15);
-      color: #6ee7b7;
-      border-color: rgba(5, 150, 105, 0.2)
+    .s-chip .s-name {
+      font-weight: 700;
+      margin-bottom: 1px
+    }
+
+    .s-chip .s-detail {
+      opacity: 0.65;
+      font-size: 0.68rem
     }
 
     .card-btn {
@@ -260,7 +264,7 @@
       width: 100%;
       padding: 12px;
       border-radius: 10px;
-      background: linear-gradient(135deg, #1a56db, #1e429f);
+      background: linear-gradient(135deg, #059669, #047857);
       color: #fff;
       font-family: 'IBM Plex Sans', sans-serif;
       font-size: 0.94rem;
@@ -273,14 +277,6 @@
 
     .card-btn:hover {
       transform: translateY(-1px);
-      box-shadow: 0 8px 25px rgba(26, 86, 219, 0.45)
-    }
-
-    .exam2 .card-btn {
-      background: linear-gradient(135deg, #059669, #047857)
-    }
-
-    .exam2 .card-btn:hover {
       box-shadow: 0 8px 25px rgba(5, 150, 105, 0.45)
     }
 
@@ -291,7 +287,7 @@
       justify-content: center;
       gap: 28px;
       flex-wrap: wrap;
-      max-width: 760px;
+      max-width: 800px;
       width: 100%;
       margin-top: 40px;
       padding-top: 32px;
@@ -304,10 +300,6 @@
       gap: 8px;
       font-size: 0.82rem;
       color: rgba(255, 255, 255, 0.4)
-    }
-
-    .feat-icon {
-      font-size: 1rem
     }
 
     /* Footer */
@@ -325,9 +317,9 @@
 
   <header class="hdr">
     <div class="brand">
-      <span>📝</span>
+      <span>🎯</span>
       <span>EduQuest</span>
-      <span class="brand-pill">SAT Portal</span>
+      <span class="brand-pill">ACT Portal</span>
     </div>
     <div class="hdr-right" id="hdrRight">
       <div class="contact">rupali.eduquest@gmail.com</div>
@@ -337,104 +329,71 @@
 
   <main class="hero">
     <div class="hero-badge">✦ Full-Length Practice Tests</div>
-    <h1>Digital SAT<br><span>Practice Exams</span></h1>
-    <p>Authentic SAT-format practice with real questions, timed modules, detailed score reports, and instant PDF
-      download.</p>
+    <h1>ACT<br><span>Practice Exams</span></h1>
+    <p>Authentic ACT-format practice with real questions, timed sections, composite scoring (1–36), and instant PDF
+      report download.</p>
 
-    <div class="cards">
+    <div class="cards single">
 
-      <!-- Exam 2 -->
-      <div class="exam-card ">
-        <div class="card-num">01</div>
-        <div class="card-title">Practice Exam 1</div>
-        <div class="card-sub">2 modules · English & Math mixed<br>Integrated format</div>
-        <div class="card-meta">
-          <div class="cm">
-            <div class="val">98</div>
-            <div class="lbl">Questions</div>
-          </div>
-          <div class="cm">
-            <div class="val">134</div>
-            <div class="lbl">Minutes</div>
-          </div>
-          <div class="cm">
-            <div class="val">2</div>
-            <div class="lbl">Modules</div>
-          </div>
-          <div class="cm">
-            <div class="val">400–1600</div>
-            <div class="lbl">Score Range</div>
-          </div>
-        </div>
-
-        <a href="sat2.html" class="card-btn">Start Exam 1 →</a>
-      </div>
-
-      <!-- Exam 1 -->
-      <div class="exam-card exam2">
-        <div class="card-num">02</div>
-        <div class="card-title">Practice Exam 2</div>
-        <div class="card-sub">2 modules · Reading & Writing + Math<br>Classic SAT format</div>
-        <div class="card-meta">
-          <div class="cm">
-            <div class="val">98</div>
-            <div class="lbl">Questions</div>
-          </div>
-          <div class="cm">
-            <div class="val">134</div>
-            <div class="lbl">Minutes</div>
-          </div>
-          <div class="cm">
-            <div class="val">2</div>
-            <div class="lbl">Modules</div>
-          </div>
-          <div class="cm">
-            <div class="val">400–1600</div>
-            <div class="lbl">Score Range</div>
-          </div>
-        </div>
-
-        <a href="sat.html" class="card-btn" id="btn-exam1">Start Exam 2 →</a>
-      </div>
-
-
-      <!-- Exam 3 -->
+      <!-- ACT Practice Test 1 -->
       <div class="exam-card">
-        <div class="card-num">03</div>
-        <div class="card-title">Practice Exam 3</div>
-        <div class="card-sub">1 module · Reading &amp; Writing<br>Classic SAT format</div>
+        <div class="card-num">01</div>
+        <div class="card-title">ACT Practice Test 1</div>
+        <div class="card-sub">4 sections · English, Math, Reading & Science<br>Full-length ACT simulation</div>
+
         <div class="card-meta">
           <div class="cm">
-            <div class="val">33</div>
+            <div class="val">215</div>
             <div class="lbl">Questions</div>
           </div>
           <div class="cm">
-            <div class="val">39</div>
+            <div class="val">175</div>
             <div class="lbl">Minutes</div>
           </div>
           <div class="cm">
-            <div class="val">1</div>
-            <div class="lbl">Module</div>
+            <div class="val">4</div>
+            <div class="lbl">Sections</div>
           </div>
           <div class="cm">
-            <div class="val">200–800</div>
+            <div class="val">1–36</div>
             <div class="lbl">Score Range</div>
           </div>
         </div>
 
-        <a href="test_3/sat3.html" class="card-btn" id="btn-exam3">Start Exam 3 →</a>
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">75 Qs · 45 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">60 Qs · 60 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">40 Qs · 35 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(217,119,6,0.1);border:1px solid rgba(217,119,6,0.2)">
+            <div class="s-name" style="color:#fde68a">🔬 Science</div>
+            <div class="s-detail" style="color:rgba(253,230,138,0.7)">40 Qs · 35 min</div>
+          </div>
+        </div>
+
+        <a href="act1.html" class="card-btn" id="btn-act1">Start ACT Practice Test 1 →</a>
       </div>
+
     </div>
 
     <div class="features">
-      <div class="feat"><span class="feat-icon">⏱</span> Timed modules</div>
-      <div class="feat"><span class="feat-icon">📊</span> Detailed score report</div>
-      <div class="feat"><span class="feat-icon">📥</span> PDF download</div>
-      <div class="feat"><span class="feat-icon">🖼</span> Real diagrams from book</div>
+      <div class="feat"><span>⏱</span> Per-section timer</div>
+      <div class="feat"><span>📊</span> Composite + section scores</div>
+      <div class="feat"><span>📥</span> PDF report download</div>
+      <div class="feat"><span>🗂</span> Topic-wise analysis</div>
+      <div class="feat"><span>📝</span> Full question review</div>
     </div>
   </main>
 
-  <footer>© EduQuest · Digital SAT Practice Portal · rupali.eduquest@gmail.com</footer>
+  <footer>© EduQuest · ACT Practice Portal · rupali.eduquest@gmail.com</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase.js"></script>
@@ -444,24 +403,16 @@
 
     async function initIndex() {
       const { data: { session } } = await supabaseClient.auth.getSession();
-
-      const btn1 = document.getElementById('btn-exam1');
-      const btn3 = document.getElementById('btn-exam3');
+      const btn1 = document.getElementById('btn-act1');
 
       if (!session) {
-        // Not logged in -> Show locks on Exam 1 and Exam 3
         if (btn1) {
-          btn1.innerHTML = '🔒 Unlock & Start Exam 1 →';
-          btn1.href = 'login.html?redirect=sat.html';
-        }
-        if (btn3) {
-          btn3.innerHTML = '🔒 Unlock & Start Exam 3 →';
-          btn3.href = 'login.html?redirect=test_3/sat3.html';
+          btn1.innerHTML = '🔒 Login to Start ACT Practice Test 1 →';
+          btn1.href = 'login.html?redirect=act1.html';
         }
         return;
       }
 
-      // Logged in
       const email = session.user.email;
       const isAdmin = email.toLowerCase() === ADMIN_EMAIL.toLowerCase();
 
@@ -470,31 +421,22 @@
       if (isAdmin) {
         hdrHtml += `<a href="admin.html" class="login-btn" style="background:rgba(124,58,237,0.15);border-color:rgba(124,58,237,0.3);margin-right:8px">Admin Dashboard</a>`;
       } else {
-        hdrHtml += `<a href="dashboard.html" class="login-btn" style="background:#059669;border-color:#059669;margin-right:8px">🎓 Student Dashboard</a>`;
+        hdrHtml += `<a href="dashboard.html" class="login-btn" style="background:rgba(5,150,105,0.15);border-color:rgba(5,150,105,0.3);margin-right:8px">🎓 Student Dashboard</a>`;
       }
       hdrHtml += `<button onclick="supabaseLogout()" class="login-btn" style="background:none;border-color:rgba(255,255,255,0.2);cursor:pointer">Logout</button>`;
       document.getElementById('hdrRight').innerHTML = hdrHtml;
 
-      // Define logout helper globally
       window.supabaseLogout = async function () {
         await supabaseClient.auth.signOut();
         window.location.reload();
       };
 
       if (isAdmin) {
-        // Admin has access to everything
-        if (btn1) {
-          btn1.innerHTML = 'Start Exam 1 (Admin) →';
-          btn1.href = 'sat.html';
-        }
-        if (btn3) {
-          btn3.innerHTML = 'Start Exam 3 (Admin) →';
-          btn3.href = 'test_3/sat3.html';
-        }
+        if (btn1) { btn1.innerHTML = 'Start ACT Test 1 (Admin) →'; btn1.href = 'act1.html'; }
         return;
       }
 
-      // If student, check has_access from profiles table
+      // Check student access
       try {
         const { data: profile, error } = await supabaseClient
           .from('profiles')
@@ -503,25 +445,12 @@
           .single();
 
         if (error || !profile || !profile.has_access) {
-          // No access -> lock cards
           if (btn1) {
-            btn1.innerHTML = '🔒 Request Access (Exam 1) →';
-            btn1.href = 'sat.html'; // Let access-check show access denied screen
-          }
-          if (btn3) {
-            btn3.innerHTML = '🔒 Request Access (Exam 3) →';
-            btn3.href = 'test_3/sat3.html'; // Let access-check show access denied screen
+            btn1.innerHTML = '🔒 Request Access →';
+            btn1.href = 'act1.html';
           }
         } else {
-          // Has access -> unlocked
-          if (btn1) {
-            btn1.innerHTML = 'Start Exam 1 →';
-            btn1.href = 'sat.html';
-          }
-          if (btn3) {
-            btn3.innerHTML = 'Start Exam 3 →';
-            btn3.href = 'test_3/sat3.html';
-          }
+          if (btn1) { btn1.innerHTML = 'Start ACT Practice Test 1 →'; btn1.href = 'act1.html'; }
         }
       } catch (err) {
         console.error('Error fetching profile:', err);

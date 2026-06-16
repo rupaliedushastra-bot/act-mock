@@ -379,19 +379,29 @@
   </div>
 
   <!-- Modal for User History -->
-  <div id="userHistoryModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.85); z-index: 999; overflow-y: auto; padding: 40px 20px;">
-    <div style="max-width: 800px; margin: 0 auto; background: #0d0d14; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 30px; position: relative;">
-      <button onclick="closeUserHistoryModal()" style="position: absolute; top: 20px; right: 20px; background: none; border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
-      <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 20px; color: #fff;" id="historyModalTitle">Student History</h2>
+  <div id="userHistoryModal"
+    style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.85); z-index: 999; overflow-y: auto; padding: 40px 20px;">
+    <div
+      style="max-width: 800px; margin: 0 auto; background: #0d0d14; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 30px; position: relative;">
+      <button onclick="closeUserHistoryModal()"
+        style="position: absolute; top: 20px; right: 20px; background: none; border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
+      <h2
+        style="font-family: 'Syne', sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 20px; color: #fff;"
+        id="historyModalTitle">Student History</h2>
       <div id="historyModalContent"></div>
     </div>
   </div>
 
   <!-- Modal for report details -->
-  <div id="reportModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.85); z-index: 1000; overflow-y: auto; padding: 40px 20px;">
-    <div style="max-width: 900px; margin: 0 auto; background: #0d0d14; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 30px; position: relative;">
-      <button onclick="closeReportModal()" style="position: absolute; top: 20px; right: 20px; background: none; border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
-      <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 20px; color: #fff;" id="modalExamTitle">Test Review</h2>
+  <div id="reportModal"
+    style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.85); z-index: 1000; overflow-y: auto; padding: 40px 20px;">
+    <div
+      style="max-width: 900px; margin: 0 auto; background: #0d0d14; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 30px; position: relative;">
+      <button onclick="closeReportModal()"
+        style="position: absolute; top: 20px; right: 20px; background: none; border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
+      <h2
+        style="font-family: 'Syne', sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 20px; color: #fff;"
+        id="modalExamTitle">Test Review</h2>
       <div id="modalReportContent"></div>
     </div>
   </div>
@@ -403,6 +413,8 @@
   <script src="test_3/questions3.js"></script>
   <script src="supabase.js"></script>
   <script src="report.js"></script>
+  <script src="act_questions1.js"></script>
+  <script src="act_report1.js"></script>
   <script>
     const ADMIN_EMAIL = 'rupali.eduquest@gmail.com'; // <-- yahan apna admin email daalo
 
@@ -461,81 +473,81 @@
       const listContainer = document.getElementById('userList');
       listContainer.innerHTML = `<div class="loading">Loading database entries...</div>`;
       try {
+        // Profiles
         const { data: profiles, error: errP } = await supabaseClient
-          .from('profiles')
-          .select('*')
-          .order('created_at', { ascending: false });
-
+          .from('profiles').select('*').order('created_at', { ascending: false });
         if (errP) throw errP;
 
-        const { data: results, error: errR } = await supabaseClient
-          .from('sat_results')
-          .select('*')
-          .order('submitted_at', { ascending: false });
+        // SAT results
+        const { data: satResults, error: errS } = await supabaseClient
+          .from('sat_results').select('*').order('submitted_at', { ascending: false });
+        if (errS) throw errS;
 
-        if (errR) throw errR;
+        // ACT results
+        const { data: actResults, error: errA } = await supabaseClient
+          .from('act_results').select('*').order('submitted_at', { ascending: false });
+        if (errA) console.warn('Could not fetch ACT results:', errA);
 
+        // Topic results (existing)
         const { data: topicResults, error: errT } = await supabaseClient
-          .from('sat_topic_report')
-          .select('*');
-
-        if (errT) console.warn("Could not fetch topic reports", errT);
+          .from('sat_topic_report').select('*');
+        if (errT) console.warn('Could not fetch topic reports:', errT);
 
         const allRawResults = [];
 
-        (results || []).forEach(r => {
-           allRawResults.push({
-               ...r,
-               _type: 'practice',
-               _email: (r.student_email || '').toLowerCase().trim(),
-               _name: r.student_name,
-               _date: r.submitted_at || null
-           });
+        // Tag SAT results
+        (satResults || []).forEach(r => {
+          allRawResults.push({
+            ...r, _type: 'sat',
+            _email: (r.student_email || '').toLowerCase().trim(),
+            _name: r.student_name,
+            _date: r.submitted_at || null
+          });
         });
 
+        // Tag ACT results
+        (actResults || []).forEach(r => {
+          allRawResults.push({
+            ...r, _type: 'act',
+            _email: (r.student_email || '').toLowerCase().trim(),
+            _name: r.student_name,
+            _date: r.submitted_at || null
+          });
+        });
+
+        // Tag topic results
         (topicResults || []).forEach(r => {
-           allRawResults.push({
-               ...r,
-               _type: 'topic',
-               _email: (r.email || '').toLowerCase().trim(),
-               _name: r.name,
-               _date: r.submit_time || null
-           });
+          allRawResults.push({
+            ...r, _type: 'topic',
+            _email: (r.email || '').toLowerCase().trim(),
+            _name: r.name,
+            _date: r.submit_time || null
+          });
         });
 
-        // Sort combined array by date descending
+        // Sort all by date
         allRawResults.sort((a, b) => new Date(b._date) - new Date(a._date));
 
-        // Group results by email
+        // Group by email
         const resultsByEmail = {};
         allRawResults.forEach(r => {
           if (!r._email) return;
-          if (!resultsByEmail[r._email]) {
-            resultsByEmail[r._email] = [];
-          }
+          if (!resultsByEmail[r._email]) resultsByEmail[r._email] = [];
           resultsByEmail[r._email].push(r);
         });
 
-        // Unified student map
+        // Build student map
         const studentMap = {};
-
-        // 1. Add all signed up profiles
         (profiles || []).forEach(p => {
           if (!p.email) return;
           const emailKey = p.email.toLowerCase().trim();
           const userResults = resultsByEmail[emailKey] || [];
-          
           let displayName = emailKey.split('@')[0];
-          if (userResults.length > 0 && userResults[0]._name) {
-            displayName = userResults[0]._name;
-          }
+          if (userResults.length > 0 && userResults[0]._name) displayName = userResults[0]._name;
 
           studentMap[emailKey] = {
-            id: p.id,
-            email: p.email,
-            name: displayName,
-            created_at: p.created_at,
-            has_access: p.has_access || false,
+            id: p.id, email: p.email, name: displayName,
+            created_at: p.created_at, has_access: p.has_access || false,
             organization: p.organization || '',
             tests_count: userResults.length,
             results: userResults,
@@ -543,25 +555,22 @@
           };
         });
 
-        // 2. Add users who only submitted tests but have no profile row
+        // Add users with results but no profile
         Object.entries(resultsByEmail).forEach(([emailKey, userResults]) => {
           if (studentMap[emailKey]) return;
-
           studentMap[emailKey] = {
-            id: null,
-            email: userResults[0]._email || emailKey,
+            id: null, email: userResults[0]._email || emailKey,
             name: userResults[0]._name || emailKey.split('@')[0],
-            created_at: userResults[userResults.length - 1]._date, // first test time
-            has_access: false,
-            organization: '',
+            created_at: userResults[userResults.length - 1]._date,
+            has_access: false, organization: '',
             tests_count: userResults.length,
-            results: userResults,
-            has_profile: false
+            results: userResults, has_profile: false
           };
         });
 
-        // Sort all students by their registration or first test date (newest first)
-        allProfiles = Object.values(studentMap).sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+        allProfiles = Object.values(studentMap).sort(
+          (a, b) => new Date(b.created_at) - new Date(a.created_at)
+        );
 
         updateStats();
         renderList();
@@ -727,26 +736,32 @@
         const dateStr = new Date(row._date).toLocaleDateString('en-IN', {
           day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'
         });
-        
+
         let scoreDisplay;
         if (isTopic) {
-           scoreDisplay = `<span style="font-size: 1.2rem; font-weight: 700; color: #34d399;">${row.pct || 0}%</span> <span style="font-size: 0.78rem; color: rgba(255,255,255,0.4);">/ 100%</span>`;
+          scoreDisplay = `<span style="font-size:1.2rem;font-weight:700;color:#34d399">${row.pct || row.percentage || 0}%</span>
+                     <span style="font-size:0.78rem;color:rgba(255,255,255,0.4)"> Accuracy</span>`;
+        } else if (row._type === 'act') {
+          scoreDisplay = `<span style="font-size:1.2rem;font-weight:700;color:#34d399">${row.composite_score || '—'}</span>
+                     <span style="font-size:0.78rem;color:rgba(255,255,255,0.4)">/ 36 (ACT)</span>`;
         } else {
-           scoreDisplay = row.sat_score 
-            ? `<span style="font-size: 1.2rem; font-weight: 700; color: #34d399;">${row.sat_score}</span> <span style="font-size: 0.78rem; color: rgba(255,255,255,0.4);">/ 1600</span>` 
-            : `<span style="font-size: 1.2rem; font-weight: 700; color: #60a5fa;">${row.rw_score || '—'}</span> <span style="font-size: 0.78rem; color: rgba(255,255,255,0.4);">/ 800 (R&W)</span>`;
+          scoreDisplay = row.sat_score
+            ? `<span style="font-size:1.2rem;font-weight:700;color:#34d399">${row.sat_score}</span>
+               <span style="font-size:0.78rem;color:rgba(255,255,255,0.4)">/ 1600 (SAT)</span>`
+            : `<span style="font-size:1.2rem;font-weight:700;color:#34d399">${row.rw_score || '—'}</span>
+               <span style="font-size:0.78rem;color:rgba(255,255,255,0.4)"> (R&W)</span>`;
         }
 
-        const badgeHtml = isTopic 
-           ? `<span style="display:inline-block; margin-left: 8px; padding: 2px 6px; font-size: 0.65rem; border-radius: 4px; background: rgba(96, 165, 250, 0.2); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3);">Topic Test</span>`
-           : `<span style="display:inline-block; margin-left: 8px; padding: 2px 6px; font-size: 0.65rem; border-radius: 4px; background: rgba(52, 211, 153, 0.2); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.3);">Practice Exam</span>`;
+    const badgeHtml = isTopic
+      ? `<span style="display:inline-block; margin-left: 8px; padding: 2px 6px; font-size: 0.65rem; border-radius: 4px; background: rgba(96, 165, 250, 0.2); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3);">Topic Test</span>`
+      : `<span style="display:inline-block; margin-left: 8px; padding: 2px 6px; font-size: 0.65rem; border-radius: 4px; background: rgba(52, 211, 153, 0.2); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.3);">Practice Exam</span>`;
 
-        const titleStr = isTopic ? (row.topic || 'Topic Test') : (row.exam_name || 'Digital SAT Practice');
+    const titleStr = isTopic ? (row.topic || 'Topic Test') : (row.exam_name || 'Digital SAT Practice');
 
-        let actionBtns = `<button class="btn" style="width: auto; margin: 0; padding: 5px 10px; font-size: 0.78rem;" onclick="viewAdminReportDetails(${idx})">View Review</button>
+    let actionBtns = `<button class="btn" style="width: auto; margin: 0; padding: 5px 10px; font-size: 0.78rem;" onclick="viewAdminReportDetails(${idx})">View Review</button>
                           <button class="btn" style="width: auto; margin: 0; padding: 5px 10px; font-size: 0.78rem; background: none; border: 1px solid rgba(255,255,255,0.2);" onclick="downloadAdminSinglePDF(${idx})">PDF</button>`;
 
-        return `
+    return `
           <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 12px; padding: 14px; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
             <div>
               <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">${titleStr} ${badgeHtml}</div>
@@ -768,94 +783,96 @@
         `;
       }).join('');
 
-      container.innerHTML = headerHTML + listHTML;
+    container.innerHTML = headerHTML + listHTML;
     }
 
     // ── Reconstruct Result Object from row ──────────
-    function reconstructResult(row) {
-      if (row._type === 'topic') {
-        let details = [];
-        try {
-           const parsed = JSON.parse(row.details_json || '[]');
-           details = parsed.map(q => ({
-             id: q.id,
-             topic: row.topic,
-             text: "Question text and options are not available for topic tests.",
-             options: ["Option A", "Option B", "Option C", "Option D"],
-             status: q.status,
-             chosen: q.chosen !== undefined ? q.chosen : (q.status === 'correct' ? q.answer : null),
-             answer: q.answer
-           }));
-        } catch(e) { console.error('Error parsing topic details', e); }
 
+    function reconstructResult(row) {
+      if (row._type === 'act') {
+        const details = (row.student_answers || []).map(ans => {
+          const origQ = (typeof ACT_QUESTIONS1 !== 'undefined'
+            ? ACT_QUESTIONS1.find(q => q.id === ans.question_id)
+            : null) || {};
+          return {
+            ...origQ,
+            id: ans.question_id,
+            section: ans.section,
+            topic: ans.topic,
+            status: ans.status,
+            chosen: ans.chosen_option !== null && ans.chosen_option !== undefined
+              ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined,
+            answer: ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
+          };
+        });
         return {
-          student: {
-            name: row.name,
-            email: row.email,
-            phone: row.phone
+          student: { name: row.student_name, email: row.student_email, phone: row.student_phone },
+          examName: row.exam_name || 'ACT Practice Test 1',
+          correct: row.correct, wrong: row.wrong, unattempted: row.skipped,
+          total: row.total, pct: row.percentage, grade: row.grade,
+          composite: row.composite_score,
+          sectionScores: {
+            english: row.english_score, math: row.math_score,
+            reading: row.reading_score, science: row.science_score
           },
-          correct: row.correct,
-          wrong: row.wrong,
-          unattempted: row.unattempted,
-          total: row.total,
-          pct: row.pct || row.percentage,
-          grade: row.grade,
-          scaled: row.scaled,
-          rwScore: null,
-          mathScore: null,
-          details: details,
-          submitTime: row.submit_time || row.created_at,
-          examName: row.topic || 'Topic Test',
-          topicAnalysis: []
+          scaled: row.composite_score, rwScore: null, mathScore: null,
+          details, submitTime: row.submitted_at,
+          topicAnalysis: Object.entries(row.topic_scores || {}).map(([key, t]) => ({
+            key, section: t.section, name: t.topic,
+            total: t.total, correct: t.correct, wrong: t.wrong, acc: t.accuracy
+          }))
         };
       }
 
-      let examQs = [];
-      if (row.exam_name && row.exam_name.includes('Exam 3')) {
-        examQs = QUESTIONS3;
-      } else if (row.exam_name && row.exam_name.includes('Exam 2')) {
-        examQs = QUESTIONS2;
-      } else {
-        examQs = QUESTIONS;
+      if (row._type === 'topic') {
+        let details = [];
+        try {
+          const parsed = JSON.parse(row.details_json || '[]');
+          details = parsed.map(q => ({
+            id: q.id, topic: row.topic,
+            text: 'Question text not available for topic tests.',
+            options: ['Option A', 'Option B', 'Option C', 'Option D'],
+            status: q.status,
+            chosen: q.chosen !== undefined ? q.chosen : (q.status === 'correct' ? q.answer : null),
+            answer: q.answer
+          }));
+        } catch (e) { console.error('Error parsing topic details', e); }
+        return {
+          student: { name: row.name, email: row.email, phone: row.phone },
+          examName: row.topic || 'Topic Test',
+          correct: row.correct, wrong: row.wrong, unattempted: row.unattempted,
+          total: row.total, pct: row.pct || row.percentage, grade: row.grade,
+          scaled: null, rwScore: null, mathScore: null,
+          details, submitTime: row.submit_time || row.created_at, topicAnalysis: []
+        };
       }
+
+      // SAT (existing logic)
+      let examQs = [];
+      if (row.exam_name?.includes('Exam 3')) examQs = typeof QUESTIONS3 !== 'undefined' ? QUESTIONS3 : [];
+      else if (row.exam_name?.includes('Exam 2')) examQs = typeof QUESTIONS2 !== 'undefined' ? QUESTIONS2 : [];
+      else examQs = typeof QUESTIONS !== 'undefined' ? QUESTIONS : [];
 
       const details = (row.student_answers || []).map(ans => {
         const originalQ = examQs.find(q => q.id === ans.question_id) || {};
         return {
-          ...originalQ,
-          id: ans.question_id,
-          section: ans.section,
-          topic: ans.topic,
-          status: ans.status,
-          chosen: originalQ.isFillIn ? ans.chosen_option : (ans.chosen_option !== null && ans.chosen_option !== undefined ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined),
+          ...originalQ, id: ans.question_id, section: ans.section, topic: ans.topic, status: ans.status,
+          chosen: originalQ.isFillIn ? ans.chosen_option
+            : (ans.chosen_option !== null && ans.chosen_option !== undefined
+              ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined),
           answer: originalQ.isFillIn ? undefined : ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
         };
       });
 
       return {
-        student: {
-          name: row.student_name,
-          email: row.student_email,
-          phone: row.student_phone
-        },
-        correct: row.correct,
-        wrong: row.wrong,
-        unattempted: row.skipped,
-        total: row.total,
-        pct: row.percentage,
-        grade: row.grade,
-        scaled: row.sat_score,
-        rwScore: row.rw_score,
-        mathScore: row.math_score,
-        details: details,
-        submitTime: row.submitted_at,
-        examName: row.exam_name || 'Digital SAT – Practice Exam 1',
-        topicAnalysis: Object.entries(row.topic_scores || {}).map(([name, scores]) => ({
-          name: name,
-          total: scores.total,
-          correct: scores.correct,
-          wrong: scores.wrong,
-          acc: scores.accuracy
+        student: { name: row.student_name, email: row.student_email, phone: row.student_phone },
+        examName: row.exam_name || 'Digital SAT Practice Exam 1',
+        correct: row.correct, wrong: row.wrong, unattempted: row.skipped,
+        total: row.total, pct: row.percentage, grade: row.grade,
+        scaled: row.sat_score, rwScore: row.rw_score, mathScore: row.math_score,
+        details, submitTime: row.submitted_at,
+        topicAnalysis: Object.entries(row.topic_scores || {}).map(([name, s]) => ({
+          name, total: s.total, correct: s.correct, wrong: s.wrong, acc: s.accuracy
         }))
       };
     }
@@ -894,16 +911,20 @@
       });
     }
 
+
     function downloadAdminSinglePDF(idx) {
       const row = activeUserHistory[idx];
       const result = reconstructResult(row);
-      if (typeof generatePDFReport === 'function') {
-        generatePDFReport(result, true);
+      if (row._type === 'act') {
+        if (typeof generateACTPDFReport === 'function') {
+          generateACTPDFReport(result, true);
+        } else { alert('ACT PDF generator not loaded.'); }
       } else {
-        alert('PDF Generation helper not loaded.');
+        if (typeof generatePDFReport === 'function') {
+          generatePDFReport(result, true);
+        } else { alert('PDF generator not loaded.'); }
       }
     }
-
     function downloadAdminCombinedReport(email) {
       const practiceExams = activeUserHistory.filter(r => r._type === 'practice');
       if (practiceExams.length < 2) return;
@@ -923,11 +944,15 @@
     // ── Render Complete Questions inside modal ──────
     function renderModalReport(result) {
       const LETTERS = ['A', 'B', 'C', 'D'];
-      const { correct, wrong, unattempted, total, pct, scaled, rwScore, mathScore, details } = result;
+      const { correct, wrong, unattempted, total, pct, scaled, rwScore, mathScore, details, composite, sectionScores, examName } = result;
       const scoreColor = pct >= 70 ? '#34d399' : pct >= 50 ? '#fbbf24' : '#f87171';
+      const isACT = (examName || '').toUpperCase().includes('ACT');
 
       let scoreHTML = '';
-      if (scaled) {
+      if (isACT) {
+        scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${composite || scaled || '—'}</div>
+                     <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">ACT Composite Score &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
+      } else if (scaled) {
         scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${scaled}</div>
                      <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">SAT Score Estimate &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
       } else {
@@ -935,15 +960,32 @@
                      <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">Reading & Writing Score &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
       }
 
-      let html = `
-        <div style="text-align: center; margin-bottom: 30px; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          ${scoreHTML}
-          <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap;">
+      let breakDownHTML = '';
+      if (isACT && sectionScores) {
+         breakDownHTML = `
+            <div><strong>English:</strong> ${sectionScores.english || '—'}</div>
+            <div><strong>Math:</strong> ${sectionScores.math || '—'}</div>
+            <div><strong>Reading:</strong> ${sectionScores.reading || '—'}</div>
+            <div><strong>Science:</strong> ${sectionScores.science || '—'}</div>
+            <div><strong>Correct:</strong> ${correct}</div>
+            <div><strong>Wrong:</strong> ${wrong}</div>
+            <div><strong>Skipped:</strong> ${unattempted}</div>
+         `;
+      } else {
+         breakDownHTML = `
             <div><strong>R&W Score:</strong> ${rwScore || '—'}</div>
             <div><strong>Math Score:</strong> ${mathScore || '—'}</div>
             <div><strong>Correct:</strong> ${correct}</div>
             <div><strong>Wrong:</strong> ${wrong}</div>
             <div><strong>Skipped:</strong> ${unattempted}</div>
+         `;
+      }
+
+      let html = `
+        <div style="text-align: center; margin-bottom: 30px; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+          ${scoreHTML}
+          <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap;">
+            ${breakDownHTML}
           </div>
         </div>
         
@@ -959,12 +1001,12 @@
           </div>
           <div style="display: flex; flex-direction: column; gap: 16px;">
             ${details.map(qObj => {
-              const cleanedText = (qObj.text || '').replace(/\n/g, '<br>');
-              return `
+        const cleanedText = (qObj.text || '').replace(/\n/g, '<br>');
+        return `
                 <div class="modal-q-card" data-status="${qObj.status}" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 18px; font-size: 0.9rem; text-align: left;">
                   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
                     <span style="font-weight: 600; color: #93c5fd;">Q${qObj.id} [${qObj.topic || ''}]</span>
-                    <span style="font-size: 0.78rem; background: rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 6px; color: rgba(255,255,255,0.6); text-transform: uppercase;">${qObj.section === 'rw' ? 'R&W' : 'Math'}</span>
+                    <span style="font-size: 0.78rem; background: rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 6px; color: rgba(255,255,255,0.6); text-transform: uppercase;">${qObj.section === 'rw' ? 'R&W' : (qObj.section === 'math' ? 'Math' : qObj.section)}</span>
                   </div>
                   <div style="margin-bottom: 12px; line-height: 1.6; color: rgba(255,255,255,0.9);">${cleanedText}</div>
                   
@@ -974,17 +1016,17 @@
 
                   <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
                     ${qObj.status === 'unattempted'
-                      ? `<div style="color: #fbbf24; font-weight: 500;">➖ Your answer: Skipped</div>
+            ? `<div style="color: #fbbf24; font-weight: 500;">➖ Your answer: Skipped</div>
                          <div style="color: #34d399; font-weight: 500;">✅ Correct: ${qObj.isFillIn ? qObj.fillAnswer : `(${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}`}</div>`
-                      : qObj.status === 'correct'
-                        ? `<div style="color: #34d399; font-weight: 500;">✅ Your answer: ${qObj.isFillIn ? qObj.chosen : `(${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}`} (Correct)</div>`
-                        : `<div style="color: #f87171; font-weight: 500;">❌ Your answer: ${qObj.isFillIn ? (qObj.chosen || 'None') : `(${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}`}</div>
+            : qObj.status === 'correct'
+              ? `<div style="color: #34d399; font-weight: 500;">✅ Your answer: ${qObj.isFillIn ? qObj.chosen : `(${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}`} (Correct)</div>`
+              : `<div style="color: #f87171; font-weight: 500;">❌ Your answer: ${qObj.isFillIn ? (qObj.chosen || 'None') : `(${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}`}</div>
                            <div style="color: #34d399; font-weight: 500;">✅ Correct: ${qObj.isFillIn ? qObj.fillAnswer : `(${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}`}</div>`
-                    }
+          }
                   </div>
                 </div>
               `;
-            }).join('')}
+      }).join('')}
           </div>
         </div>
       `;

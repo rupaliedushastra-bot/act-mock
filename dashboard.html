@@ -24,7 +24,6 @@
       flex-direction: column
     }
 
-    /* Header */
     .hdr {
       height: 58px;
       display: flex;
@@ -46,7 +45,7 @@
     }
 
     .brand-pill {
-      background: #1a56db;
+      background: #059669;
       border-radius: 6px;
       padding: 3px 10px;
       font-size: 0.72rem;
@@ -101,7 +100,6 @@
       border-color: rgba(220, 38, 38, 0.4)
     }
 
-    /* Main wrap */
     .wrap {
       max-width: 960px;
       width: 100%;
@@ -110,7 +108,6 @@
       flex: 1
     }
 
-    /* Welcome block */
     .welcome-block {
       margin-bottom: 32px
     }
@@ -124,7 +121,7 @@
     }
 
     .welcome-block h1 span {
-      background: linear-gradient(135deg, #60a5fa, #34d399);
+      background: linear-gradient(135deg, #34d399, #60a5fa);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text
@@ -159,11 +156,11 @@
       left: 0;
       width: 4px;
       height: 100%;
-      background: #1a56db
+      background: #059669
     }
 
-    .stat-card.green::before {
-      background: #059669
+    .stat-card.blue::before {
+      background: #1a56db
     }
 
     .stat-card.amber::before {
@@ -195,15 +192,54 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       flex-wrap: wrap;
       gap: 12px
     }
 
     .sec-hdr h2 {
       font-family: 'Syne', sans-serif;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-weight: 700
+    }
+
+    /* Filter tabs */
+    .filter-tabs {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 20px;
+      flex-wrap: wrap
+    }
+
+    .filter-tab {
+      padding: 7px 16px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.5);
+      transition: all .15s;
+      user-select: none
+    }
+
+    .filter-tab.active {
+      background: rgba(5, 150, 105, 0.15);
+      border-color: #059669;
+      color: #6ee7b7
+    }
+
+    .filter-tab.active.act {
+      background: rgba(5, 150, 105, 0.15);
+      border-color: #059669;
+      color: #6ee7b7
+    }
+
+    .filter-tab.active.sat {
+      background: rgba(26, 86, 219, 0.15);
+      border-color: #1a56db;
+      color: #93c5fd
     }
 
     .btn-combined {
@@ -249,6 +285,10 @@
 
     .history-card:hover {
       transform: translateY(-2px);
+      border-color: rgba(5, 150, 105, 0.4)
+    }
+
+    .history-card.sat:hover {
       border-color: rgba(26, 86, 219, 0.4)
     }
 
@@ -257,11 +297,38 @@
       min-width: 200px
     }
 
+    .card-title-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px
+    }
+
     .card-title {
       font-family: 'Syne', sans-serif;
       font-weight: 700;
-      font-size: 1.1rem;
-      margin-bottom: 4px
+      font-size: 1.05rem
+    }
+
+    .exam-type-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: .05em
+    }
+
+    .exam-type-badge.act {
+      background: rgba(5, 150, 105, 0.2);
+      color: #6ee7b7;
+      border: 1px solid rgba(5, 150, 105, 0.3)
+    }
+
+    .exam-type-badge.sat {
+      background: rgba(26, 86, 219, 0.2);
+      color: #93c5fd;
+      border: 1px solid rgba(26, 86, 219, 0.3)
     }
 
     .card-sub {
@@ -283,6 +350,21 @@
       padding: 3px 8px;
       border-radius: 6px;
       color: rgba(255, 255, 255, 0.75)
+    }
+
+    /* ACT section scores mini */
+    .act-sec-scores {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 8px
+    }
+
+    .act-sec-mini {
+      font-size: 0.68rem;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 600
     }
 
     .card-right {
@@ -326,8 +408,8 @@
       font-size: 0.8rem;
       font-weight: 600;
       color: #fff;
-      background: rgba(26, 86, 219, 0.15);
-      border: 1px solid rgba(26, 86, 219, 0.3);
+      background: rgba(5, 150, 105, 0.15);
+      border: 1px solid rgba(5, 150, 105, 0.3);
       padding: 7px 14px;
       border-radius: 8px;
       cursor: pointer;
@@ -335,6 +417,16 @@
     }
 
     .btn-action:hover {
+      background: rgba(5, 150, 105, 0.28);
+      border-color: rgba(5, 150, 105, 0.5)
+    }
+
+    .btn-action.sat-btn {
+      background: rgba(26, 86, 219, 0.15);
+      border-color: rgba(26, 86, 219, 0.3)
+    }
+
+    .btn-action.sat-btn:hover {
       background: rgba(26, 86, 219, 0.28);
       border-color: rgba(26, 86, 219, 0.5)
     }
@@ -406,7 +498,6 @@
       color: #f87171
     }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 24px;
@@ -422,9 +513,8 @@
 
   <header class="hdr">
     <a href="index.html" class="brand">
-      <span>📝</span>
-      <span>EduQuest</span>
-      <span class="brand-pill">SAT Portal</span>
+      <span>🎯</span><span>EduQuest</span>
+      <span class="brand-pill">Portal</span>
     </a>
     <div class="hdr-right" id="hdrRight">
       <span class="email-display" id="stuEmail">Loading...</span>
@@ -434,21 +524,20 @@
   </header>
 
   <main class="wrap">
-    <!-- Welcome section -->
     <div class="welcome-block">
       <h1 id="welcomeTitle">Welcome, <span>Student</span></h1>
-      <p>Here is your full test history and academic performance tracking dashboard.</p>
+      <p>Your complete test history — ACT & SAT practice performance dashboard.</p>
     </div>
 
-    <!-- Stats summary grid -->
+    <!-- Overall stats -->
     <div class="stats-grid">
-      <div class="stat-card">
+      <div class="stat-card blue">
         <div class="stat-val" id="statTaken">0</div>
         <div class="stat-lbl">Exams Taken</div>
       </div>
-      <div class="stat-card green">
-        <div class="stat-val" id="statAvgSat">—</div>
-        <div class="stat-lbl">Avg SAT Score</div>
+      <div class="stat-card">
+        <div class="stat-val" id="statAvgACT">—</div>
+        <div class="stat-lbl">Avg ACT Score</div>
       </div>
       <div class="stat-card amber">
         <div class="stat-val" id="statAvgAcc">0%</div>
@@ -460,193 +549,277 @@
       </div>
     </div>
 
-    <!-- Section header for history -->
+    <!-- Section header -->
     <div class="sec-hdr">
       <h2>Completed Practice Exams</h2>
-      <button id="btnCombined" class="btn-combined" style="display: none;" onclick="downloadCombinedReport()">
-        <span>📥</span> Download Combined Report (PDF)
+      <button id="btnCombined" class="btn-combined" style="display:none" onclick="downloadCombinedReport()">
+        <span>📥</span> Combined Report (PDF)
       </button>
     </div>
 
-    <!-- History list container -->
+    <!-- Filter tabs -->
+    <div class="filter-tabs">
+      <div class="filter-tab active" id="tab-all" onclick="setFilter('all',this)">All Exams</div>
+      <div class="filter-tab act" id="tab-act" onclick="setFilter('act',this)">🎯 ACT</div>
+      <div class="filter-tab sat" id="tab-sat" onclick="setFilter('sat',this)">📝 SAT</div>
+    </div>
+
     <div class="history-list" id="historyContainer">
-      <div style="text-align: center; padding: 40px; color: rgba(255,255,255,0.4);">Loading results...</div>
+      <div style="text-align:center;padding:40px;color:rgba(255,255,255,0.4)">Loading results...</div>
     </div>
   </main>
 
-  <!-- Modal for report details -->
+  <!-- Modal for SAT report review -->
   <div id="reportModal" class="modal">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal()">✕</button>
-      <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 20px;" id="modalExamTitle">Test Review</h2>
+      <h2 style="font-family:'Syne',sans-serif;font-size:1.8rem;text-align:center;margin-bottom:20px"
+        id="modalExamTitle">Test Review</h2>
       <div id="modalReportContent"></div>
     </div>
   </div>
 
-  <footer>© EduQuest · Digital SAT Practice Portal · rupali.eduquest@gmail.com</footer>
+  <footer>© EduQuest · Practice Portal · rupali.eduquest@gmail.com</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- SAT question sets (for SAT review reconstruction) -->
   <script src="questions.js"></script>
   <script src="questions2.js"></script>
   <script src="test_3/questions3.js"></script>
+  <!-- ACT question set -->
+  <script src="act_questions1.js"></script>
   <script src="supabase.js"></script>
   <script src="report.js"></script>
+  <script src="act_report1.js"></script>
+
   <script>
     const supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-    let resultsList = [];
+    let allResults = [];   // combined ACT + SAT rows with _type tag
+    let currentFilter = 'all';
 
-    // Redirect to login if not logged in
+    // ── Auth check ──────────────────────────────────
     async function checkAuth() {
       const { data: { session } } = await supabaseClient.auth.getSession();
-      if (!session) {
-        window.location.href = 'login.html?redirect=dashboard.html';
-        return;
-      }
+      if (!session) { window.location.href = 'login.html?redirect=dashboard.html'; return; }
       const email = session.user.email;
       document.getElementById('stuEmail').textContent = email;
-      
-      // Determine student name from metadata or email prefix
       const name = session.user.user_metadata?.name || email.split('@')[0];
       document.getElementById('welcomeTitle').innerHTML = `Welcome, <span>${name}</span>`;
-
       loadStudentData(email);
     }
 
+    // ── Load both ACT + SAT results ─────────────────
     async function loadStudentData(email) {
       try {
-        const { data, error } = await supabaseClient
+        // Fetch ACT results
+        const { data: actData, error: actErr } = await supabaseClient
+          .from('act_results')
+          .select('*')
+          .ilike('student_email', email)
+          .order('submitted_at', { ascending: false });
+        if (actErr) console.warn('ACT fetch error:', actErr);
+
+        // Fetch SAT results
+        const { data: satData, error: satErr } = await supabaseClient
           .from('sat_results')
           .select('*')
           .ilike('student_email', email)
           .order('submitted_at', { ascending: false });
+        if (satErr) console.warn('SAT fetch error:', satErr);
 
-        if (error) throw error;
+        // Tag and merge
+        const actRows = (actData || []).map(r => ({ ...r, _type: 'act' }));
+        const satRows = (satData || []).map(r => ({ ...r, _type: 'sat' }));
 
-        resultsList = data || [];
-        renderDashboard(resultsList);
+        // Sort combined by date descending
+        allResults = [...actRows, ...satRows].sort((a, b) =>
+          new Date(b.submitted_at) - new Date(a.submitted_at)
+        );
+
+        renderDashboard(allResults);
       } catch (err) {
-        console.error('Error fetching dashboard results:', err);
-        document.getElementById('historyContainer').innerHTML = `
-          <div style="color: #f87171; text-align: center; padding: 20px;">
-            Failed to load data: ${err.message}
-          </div>
-        `;
+        console.error('Dashboard load error:', err);
+        document.getElementById('historyContainer').innerHTML =
+          `<div style="color:#f87171;text-align:center;padding:20px">Failed to load: ${err.message}</div>`;
       }
     }
 
+    // ── Filter ──────────────────────────────────────
+    function setFilter(filter, el) {
+      currentFilter = filter;
+      document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+      el.classList.add('active');
+      renderList(filterRows(allResults));
+    }
+
+    function filterRows(rows) {
+      if (currentFilter === 'act') return rows.filter(r => r._type === 'act');
+      if (currentFilter === 'sat') return rows.filter(r => r._type === 'sat');
+      return rows;
+    }
+
+    // ── Render dashboard ────────────────────────────
     function renderDashboard(rows) {
-      const container = document.getElementById('historyContainer');
-      
-      // Update statistics
       const taken = rows.length;
       document.getElementById('statTaken').textContent = taken;
 
       if (taken === 0) {
-        document.getElementById('statAvgSat').textContent = '—';
+        document.getElementById('statAvgACT').textContent = '—';
         document.getElementById('statAvgAcc').textContent = '0%';
         document.getElementById('statTotalQs').textContent = '0';
         document.getElementById('btnCombined').style.display = 'none';
-
-        container.innerHTML = `
+        document.getElementById('historyContainer').innerHTML = `
           <div class="empty-state">
-            You have not completed any practice tests yet. <a href="index.html" style="color: #60a5fa; text-decoration: underline;">Start a test now</a> to see your dashboard results!
-          </div>
-        `;
+            You haven't completed any practice tests yet.
+            <a href="index.html" style="color:#34d399;text-decoration:underline;margin-left:4px">Start a test now</a>
+          </div>`;
         return;
       }
 
-      // Calculations
-      let totalQ = 0;
-      let totalAcc = 0;
-      let satScores = [];
-      let totalCorrect = 0, totalWrong = 0, totalSkipped = 0;
-
+      // Stats
+      let totalQ = 0, totalAcc = 0, actScores = [];
       rows.forEach(r => {
         totalQ += r.total;
-        totalAcc += r.percentage;
-        totalCorrect += r.correct;
-        totalWrong += r.wrong;
-        totalSkipped += r.skipped;
-        if (r.sat_score) satScores.push(r.sat_score);
+        totalAcc += (r.percentage || 0);
+        if (r._type === 'act' && r.composite_score) actScores.push(r.composite_score);
       });
-
-      const avgSat = satScores.length ? Math.round(satScores.reduce((a, b) => a + b, 0) / satScores.length) : null;
       const avgAcc = Math.round(totalAcc / taken);
+      const avgACT = actScores.length ? Math.round(actScores.reduce((a, b) => a + b, 0) / actScores.length) : null;
 
       document.getElementById('statAvgAcc').textContent = `${avgAcc}%`;
       document.getElementById('statTotalQs').textContent = totalQ;
-      
-      if (avgSat !== null) {
-        document.getElementById('statAvgSat').innerHTML = `${avgSat} <span style="font-size: 0.8rem; font-weight:400; color: rgba(255,255,255,0.4);">/ 1600</span>`;
-      } else {
-        document.getElementById('statAvgSat').textContent = '—';
+      document.getElementById('statAvgACT').innerHTML = avgACT !== null
+        ? `${avgACT} <span style="font-size:0.8rem;font-weight:400;color:rgba(255,255,255,0.4)">/ 36</span>`
+        : '—';
+
+      const actRows = rows.filter(r => r._type === 'act');
+      document.getElementById('btnCombined').style.display = actRows.length >= 2 ? 'inline-flex' : 'none';
+
+      renderList(filterRows(rows));
+    }
+
+    // ── Render list ─────────────────────────────────
+    function renderList(rows) {
+      const container = document.getElementById('historyContainer');
+      if (rows.length === 0) {
+        container.innerHTML = `<div class="empty-state">No exams found for this filter.</div>`;
+        return;
       }
 
-      // Show/hide combined report button
-      if (taken >= 2) {
-        document.getElementById('btnCombined').style.display = 'inline-flex';
-      } else {
-        document.getElementById('btnCombined').style.display = 'none';
-      }
-
-      // Render exams taken list
       container.innerHTML = rows.map((row, idx) => {
+        const globalIdx = allResults.indexOf(row);
         const dateStr = new Date(row.submitted_at).toLocaleDateString('en-IN', {
           day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'
         });
-        
-        const scoreDisplay = row.sat_score 
-          ? `${row.sat_score} <span>/ 1600</span>` 
-          : `${row.rw_score || '—'} <span>/ 800 (R&W)</span>`;
 
-        return `
-          <div class="history-card">
-            <div class="card-left">
-              <div class="card-title">${row.exam_name || 'Digital SAT Practice'}</div>
-              <div class="card-sub">Date: ${dateStr}</div>
-              <div class="card-badges">
-                <span class="c-badge">Grade: ${row.grade || '—'}</span>
-                <span class="c-badge">Accuracy: ${row.percentage || 0}%</span>
-                <span class="c-badge">${row.correct} Correct &middot; ${row.wrong} Wrong</span>
+        if (row._type === 'act') {
+          // ── ACT card ──
+          const composite = row.composite_score;
+          const secColors = { english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd', science: '#fde68a' };
+          const secBg = { english: 'rgba(26,86,219,0.12)', math: 'rgba(5,150,105,0.12)', reading: 'rgba(124,58,237,0.12)', science: 'rgba(217,119,6,0.12)' };
+          const secBorder = { english: 'rgba(26,86,219,0.25)', math: 'rgba(5,150,105,0.25)', reading: 'rgba(124,58,237,0.25)', science: 'rgba(217,119,6,0.25)' };
+
+          const secChips = ['english', 'math', 'reading', 'science'].map(sec => {
+            const score = row[`${sec}_score`];
+            if (!score) return '';
+            return `<span class="act-sec-mini" style="background:${secBg[sec]};border:1px solid ${secBorder[sec]};color:${secColors[sec]}">${sec.charAt(0).toUpperCase() + sec.slice(1)}: ${score}</span>`;
+          }).join('');
+
+          return `
+            <div class="history-card">
+              <div class="card-left">
+                <div class="card-title-row">
+                  <div class="card-title">${row.exam_name || 'ACT Practice Test'}</div>
+                  <span class="exam-type-badge act">ACT</span>
+                </div>
+                <div class="card-sub">Date: ${dateStr}</div>
+                <div class="card-badges">
+                  <span class="c-badge">Grade: ${row.grade || '—'}</span>
+                  <span class="c-badge">Accuracy: ${row.percentage || 0}%</span>
+                  <span class="c-badge">${row.correct} Correct · ${row.wrong} Wrong</span>
+                </div>
+                <div class="act-sec-scores">${secChips}</div>
               </div>
-            </div>
-            <div class="card-right">
-              <div class="score-box">
-                <div class="score-lbl">Score</div>
-                <div class="score-val">${scoreDisplay}</div>
+              <div class="card-right">
+                <div class="score-box">
+                  <div class="score-lbl">Composite</div>
+                  <div class="score-val" style="color:#34d399">${composite || '—'} <span>/ 36</span></div>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-action" onclick="viewACTReview(${globalIdx})">View Review</button>
+                  <button class="btn-action outline" onclick="downloadACTPDF(${globalIdx})">PDF</button>
+                </div>
               </div>
-              <div class="card-actions">
-                <button class="btn-action" onclick="viewReportDetails(${idx})">View Review</button>
-                <button class="btn-action outline" onclick="downloadSinglePDF(${idx})">PDF</button>
+            </div>`;
+
+        } else {
+          // ── SAT card ──
+          const scoreDisplay = row.sat_score
+            ? `${row.sat_score} <span>/ 1600</span>`
+            : `${row.rw_score || '—'} <span>/ 800 (R&W)</span>`;
+
+          return `
+            <div class="history-card sat">
+              <div class="card-left">
+                <div class="card-title-row">
+                  <div class="card-title">${row.exam_name || 'Digital SAT Practice'}</div>
+                  <span class="exam-type-badge sat">SAT</span>
+                </div>
+                <div class="card-sub">Date: ${dateStr}</div>
+                <div class="card-badges">
+                  <span class="c-badge">Grade: ${row.grade || '—'}</span>
+                  <span class="c-badge">Accuracy: ${row.percentage || 0}%</span>
+                  <span class="c-badge">${row.correct} Correct · ${row.wrong} Wrong</span>
+                </div>
               </div>
-            </div>
-          </div>
-        `;
+              <div class="card-right">
+                <div class="score-box">
+                  <div class="score-lbl">Score</div>
+                  <div class="score-val">${scoreDisplay}</div>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-action sat-btn" onclick="viewSATReview(${globalIdx})">View Review</button>
+                  <button class="btn-action outline" onclick="downloadSATPDF(${globalIdx})">PDF</button>
+                </div>
+              </div>
+            </div>`;
+        }
       }).join('');
     }
 
-    // ── Reconstruct Result Object ─────────────────────
-    function reconstructResult(row) {
-      let examQs = [];
-      if (row.exam_name && row.exam_name.includes('Exam 3')) {
-        examQs = QUESTIONS3;
-      } else if (row.exam_name && row.exam_name.includes('Exam 2')) {
-        examQs = QUESTIONS2;
-      } else {
-        examQs = QUESTIONS;
-      }
+    // ── ACT review & PDF ────────────────────────────
+    function viewACTReview(idx) {
+      const row = allResults[idx];
+      // Build result object for modal
+      const result = reconstructACTResult(row);
+      document.getElementById('modalExamTitle').textContent = result.examName + ' — Question Review';
+      renderACTReviewModal(result);
+      document.getElementById('reportModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
 
+    function downloadACTPDF(idx) {
+      const row = allResults[idx];
+      const result = reconstructACTResult(row);
+      if (typeof generateACTPDFReport === 'function') {
+        generateACTPDFReport(result, true);
+      } else { alert('ACT PDF generator not loaded.'); }
+    }
+
+    function reconstructACTResult(row) {
+      // Match stored answers back to ACT_QUESTIONS1
       const details = (row.student_answers || []).map(ans => {
-        const originalQ = examQs.find(q => q.id === ans.question_id) || {};
+        const originalQ = ACT_QUESTIONS1.find(q => q.id === ans.question_id) || {};
         return {
           ...originalQ,
           id: ans.question_id,
           section: ans.section,
           topic: ans.topic,
           status: ans.status,
-          chosen: originalQ.isFillIn ? ans.chosen_option : (ans.chosen_option !== null && ans.chosen_option !== undefined ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined),
-          answer: originalQ.isFillIn ? undefined : ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
+          chosen: ans.chosen_option !== null && ans.chosen_option !== undefined
+            ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined,
+          answer: ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
         };
       });
 
@@ -656,158 +829,172 @@
           email: row.student_email,
           phone: row.student_phone
         },
+        examName: row.exam_name || 'ACT Practice Test 1',
         correct: row.correct,
         wrong: row.wrong,
         unattempted: row.skipped,
         total: row.total,
         pct: row.percentage,
         grade: row.grade,
-        scaled: row.sat_score,
-        rwScore: row.rw_score,
-        mathScore: row.math_score,
-        details: details,
+        composite: row.composite_score,
+        sectionScores: {
+          english: row.english_score,
+          math: row.math_score,
+          reading: row.reading_score,
+          science: row.science_score
+        },
+        details,
         submitTime: row.submitted_at,
-        examName: row.exam_name || 'Digital SAT – Practice Exam 1',
-        topicAnalysis: Object.entries(row.topic_scores || {}).map(([name, scores]) => ({
-          name: name,
-          total: scores.total,
-          correct: scores.correct,
-          wrong: scores.wrong,
-          acc: scores.accuracy
+        topicAnalysis: Object.entries(row.topic_scores || {}).map(([key, t]) => ({
+          key,
+          section: t.section,
+          name: t.topic,
+          total: t.total,
+          correct: t.correct,
+          wrong: t.wrong,
+          acc: t.accuracy
         }))
       };
     }
 
-    // ── Actions ──────────────────────────────────────
-    function viewReportDetails(idx) {
-      const row = resultsList[idx];
-      const result = reconstructResult(row);
+    function renderACTReviewModal(result) {
+      const LETTERS = ['A', 'B', 'C', 'D'];
+      const secColors = { english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd', science: '#fde68a' };
+      const scoreColor = result.composite >= 28 ? '#34d399' : result.composite >= 20 ? '#fbbf24' : '#f87171';
+
+      let secScoresHTML = Object.entries(result.sectionScores || {}).map(([sec, score]) => `
+        <div><strong>${sec.charAt(0).toUpperCase() + sec.slice(1)}:</strong>
+          <span style="color:${secColors[sec]};font-weight:700"> ${score || '—'}</span>/36
+        </div>
+      `).join('');
+
+      let html = `
+        <div style="text-align:center;margin-bottom:24px;background:rgba(255,255,255,0.02);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.05)">
+          <div style="font-size:3.5rem;font-weight:800;color:${scoreColor};font-family:'Syne',sans-serif;line-height:1">${result.composite || '—'}</div>
+          <div style="font-size:0.9rem;color:rgba(255,255,255,0.5);margin-top:4px">ACT Composite Score · ${result.correct}/${result.total} Correct (${result.pct}%)</div>
+          <div style="display:flex;justify-content:center;gap:20px;margin-top:16px;flex-wrap:wrap;font-size:0.88rem">
+            ${secScoresHTML}
+            <div><strong>Correct:</strong> ${result.correct}</div>
+            <div><strong>Wrong:</strong> ${result.wrong}</div>
+            <div><strong>Skipped:</strong> ${result.unattempted}</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
+          <button onclick="filterModalQsACT('all',this)" style="background:#059669;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">All</button>
+          <button onclick="filterModalQsACT('correct',this)" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Correct</button>
+          <button onclick="filterModalQsACT('wrong',this)" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Wrong</button>
+          <button onclick="filterModalQsACT('unattempted',this)" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Skipped</button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          ${result.details.map(q => {
+        const clr = secColors[q.section] || '#fff';
+        return `
+              <div class="modal-q-card" data-status="${q.status}"
+                style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:16px;font-size:0.88rem">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+                  <span style="font-weight:600;color:${clr}">Q${q.id} [${q.topic || ''}]</span>
+                  <span style="font-size:0.72rem;background:rgba(255,255,255,0.07);padding:2px 8px;border-radius:6px;color:rgba(255,255,255,0.5);text-transform:uppercase">${q.section}</span>
+                </div>
+                <div style="line-height:1.6;color:rgba(255,255,255,0.88);margin-bottom:10px;white-space:pre-wrap">${q.text || ''}</div>
+                <div style="background:rgba(0,0,0,0.2);border-radius:8px;padding:10px;display:flex;flex-direction:column;gap:5px">
+                  ${q.status === 'unattempted'
+            ? `<div style="color:#fbbf24;font-weight:500">➖ Your answer: Skipped</div>
+                       <div style="color:#34d399;font-weight:500">✅ Correct: (${LETTERS[q.answer]}) ${q.options?.[q.answer] || ''}</div>`
+            : q.status === 'correct'
+              ? `<div style="color:#34d399;font-weight:500">✅ Your answer: (${LETTERS[q.chosen]}) ${q.options?.[q.chosen] || ''} (Correct)</div>`
+              : `<div style="color:#f87171;font-weight:500">❌ Your answer: (${LETTERS[q.chosen]}) ${q.options?.[q.chosen] || ''}</div>
+                         <div style="color:#34d399;font-weight:500">✅ Correct: (${LETTERS[q.answer]}) ${q.options?.[q.answer] || ''}</div>`
+          }
+                </div>
+              </div>`;
+      }).join('')}
+        </div>`;
+      document.getElementById('modalReportContent').innerHTML = html;
+    }
+
+    function filterModalQsACT(status, btn) {
+      btn.parentElement.querySelectorAll('button').forEach(b => {
+        b.style.background = 'rgba(255,255,255,0.1)'; b.style.border = '1px solid rgba(255,255,255,0.2)';
+      });
+      btn.style.background = '#059669'; btn.style.border = 'none';
+      document.querySelectorAll('.modal-q-card').forEach(card => {
+        card.style.display = (status === 'all' || card.getAttribute('data-status') === status) ? 'block' : 'none';
+      });
+    }
+
+    // ── SAT review & PDF (existing logic) ──────────
+    function viewSATReview(idx) {
+      const row = allResults[idx];
+      const result = reconstructSATResult(row);
       document.getElementById('modalExamTitle').textContent = result.examName + ' — Question Review';
-      renderModalReport(result);
+      renderSATReviewModal(result);
       document.getElementById('reportModal').style.display = 'block';
       document.body.style.overflow = 'hidden';
+    }
+
+    function downloadSATPDF(idx) {
+      const row = allResults[idx];
+      const result = reconstructSATResult(row);
+      if (typeof generatePDFReport === 'function') {
+        generatePDFReport(result, true);
+      } else { alert('SAT PDF generator not loaded.'); }
+    }
+
+    function reconstructSATResult(row) {
+      let examQs = [];
+      if (row.exam_name?.includes('Exam 3')) examQs = typeof QUESTIONS3 !== 'undefined' ? QUESTIONS3 : [];
+      else if (row.exam_name?.includes('Exam 2')) examQs = typeof QUESTIONS2 !== 'undefined' ? QUESTIONS2 : [];
+      else examQs = typeof QUESTIONS !== 'undefined' ? QUESTIONS : [];
+
+      const details = (row.student_answers || []).map(ans => {
+        const originalQ = examQs.find(q => q.id === ans.question_id) || {};
+        return {
+          ...originalQ, id: ans.question_id, section: ans.section, topic: ans.topic, status: ans.status,
+          chosen: originalQ.isFillIn ? ans.chosen_option : (ans.chosen_option !== null && ans.chosen_option !== undefined ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined),
+          answer: originalQ.isFillIn ? undefined : ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
+        };
+      });
+      return {
+        student: { name: row.student_name, email: row.student_email, phone: row.student_phone },
+        examName: row.exam_name || 'Digital SAT Practice',
+        correct: row.correct, wrong: row.wrong, unattempted: row.skipped,
+        total: row.total, pct: row.percentage, grade: row.grade,
+        scaled: row.sat_score, rwScore: row.rw_score, mathScore: row.math_score,
+        details, submitTime: row.submitted_at,
+        topicAnalysis: Object.entries(row.topic_scores || {}).map(([name, s]) => ({
+          name, total: s.total, correct: s.correct, wrong: s.wrong, acc: s.accuracy
+        }))
+      };
+    }
+
+    function renderSATReviewModal(result) {
+      // Reuse existing renderModalReport from report.js if available
+      if (typeof renderModalReport === 'function') {
+        renderModalReport(result);
+      } else {
+        document.getElementById('modalReportContent').innerHTML =
+          `<p style="color:rgba(255,255,255,0.5);text-align:center;padding:20px">SAT review renderer not loaded.</p>`;
+      }
+    }
+
+    // ── Combined PDF (ACT only) ─────────────────────
+    function downloadCombinedReport() {
+      const actRows = allResults.filter(r => r._type === 'act');
+      if (actRows.length < 2) return;
+      const parsed = actRows.map(row => reconstructACTResult(row));
+      const studentInfo = {
+        name: actRows[0].student_name,
+        email: actRows[0].student_email,
+        phone: actRows[0].student_phone || ''
+      };
+      if (typeof generateCombinedPDF === 'function') {
+        generateCombinedPDF(parsed, studentInfo);
+      } else { alert('Combined PDF generator not loaded.'); }
     }
 
     function closeModal() {
       document.getElementById('reportModal').style.display = 'none';
       document.body.style.overflow = '';
-    }
-
-    function filterModalQs(status, btn) {
-      // Update button styles
-      const btns = btn.parentElement.querySelectorAll('button');
-      btns.forEach(b => {
-        b.style.background = 'rgba(255,255,255,0.1)';
-        b.style.border = '1px solid rgba(255,255,255,0.2)';
-      });
-      btn.style.background = '#1a56db';
-      btn.style.border = 'none';
-
-      // Filter cards
-      const cards = document.querySelectorAll('.modal-q-card');
-      cards.forEach(card => {
-        if (status === 'all' || card.getAttribute('data-status') === status) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-
-    function downloadSinglePDF(idx) {
-      const row = resultsList[idx];
-      const result = reconstructResult(row);
-      if (typeof generatePDFReport === 'function') {
-        generatePDFReport(result, true);
-      } else {
-        alert('PDF Generation helper not loaded.');
-      }
-    }
-
-    function downloadCombinedReport() {
-      if (resultsList.length < 2) return;
-      const parsedResults = resultsList.map(row => reconstructResult(row));
-      const studentInfo = {
-        name: resultsList[0].student_name,
-        email: resultsList[0].student_email,
-        phone: resultsList[0].student_phone
-      };
-      if (typeof generateCombinedPDF === 'function') {
-        generateCombinedPDF(parsedResults, studentInfo);
-      } else {
-        alert('Combined PDF Generation helper not loaded.');
-      }
-    }
-
-    // ── Render review markup inside modal ────────────
-    function renderModalReport(result) {
-      const LETTERS = ['A', 'B', 'C', 'D'];
-      const { correct, wrong, unattempted, total, pct, scaled, rwScore, mathScore, details } = result;
-      const scoreColor = pct >= 70 ? '#34d399' : pct >= 50 ? '#fbbf24' : '#f87171';
-
-      let scoreHTML = '';
-      if (scaled) {
-        scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${scaled}</div>
-                     <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">SAT Score Estimate &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
-      } else {
-        scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${rwScore || '—'}</div>
-                     <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">Reading & Writing Score &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
-      }
-
-      let html = `
-        <div style="text-align: center; margin-bottom: 30px; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          ${scoreHTML}
-          <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap;">
-            <div><strong>R&W Score:</strong> ${rwScore || '—'}</div>
-            <div><strong>Math Score:</strong> ${mathScore || '—'}</div>
-            <div><strong>Correct:</strong> ${correct}</div>
-            <div><strong>Wrong:</strong> ${wrong}</div>
-            <div><strong>Skipped:</strong> ${unattempted}</div>
-          </div>
-        </div>
-        
-        <div style="margin-bottom: 24px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
-            <h3 style="font-family: 'Syne', sans-serif; font-size: 1.25rem; color: #60a5fa; margin: 0;">📝 Complete Questions &amp; Answers Review</h3>
-            <div style="display: flex; gap: 8px;">
-              <button class="btn-sm" style="background:#1a56db;color:#fff;border:none;padding:6px 12px;" onclick="filterModalQs('all', this)">All</button>
-              <button class="btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;" onclick="filterModalQs('correct', this)">Correct</button>
-              <button class="btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;" onclick="filterModalQs('wrong', this)">Wrong</button>
-              <button class="btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;" onclick="filterModalQs('unattempted', this)">Skipped</button>
-            </div>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 16px;">
-            ${details.map(qObj => {
-              const cleanedText = (qObj.text || '').replace(/\n/g, '<br>');
-              return `
-                <div class="modal-q-card" data-status="${qObj.status}" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 18px; font-size: 0.9rem; text-align: left;">
-                  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
-                    <span style="font-weight: 600; color: #93c5fd;">Q${qObj.id} [${qObj.topic || ''}]</span>
-                    <span style="font-size: 0.78rem; background: rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 6px; color: rgba(255,255,255,0.6); text-transform: uppercase;">${qObj.section === 'rw' ? 'R&W' : 'Math'}</span>
-                  </div>
-                  <div style="margin-bottom: 12px; line-height: 1.6; color: rgba(255,255,255,0.9);">${cleanedText}</div>
-                  
-                  ${qObj.image ? `<div style="margin-bottom:12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 10px; text-align: center;">
-                    <img src="${qObj.image}" style="max-width: 100%; max-height: 250px; border-radius: 4px;">
-                  </div>` : ''}
-
-                  <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
-                    ${qObj.status === 'unattempted'
-                      ? `<div style="color: #fbbf24; font-weight: 500;">➖ Your answer: Skipped</div>
-                         <div style="color: #34d399; font-weight: 500;">✅ Correct: ${qObj.isFillIn ? qObj.fillAnswer : `(${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}`}</div>`
-                      : qObj.status === 'correct'
-                        ? `<div style="color: #34d399; font-weight: 500;">✅ Your answer: ${qObj.isFillIn ? qObj.chosen : `(${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}`} (Correct)</div>`
-                        : `<div style="color: #f87171; font-weight: 500;">❌ Your answer: ${qObj.isFillIn ? (qObj.chosen || 'None') : `(${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}`}</div>
-                           <div style="color: #34d399; font-weight: 500;">✅ Correct: ${qObj.isFillIn ? qObj.fillAnswer : `(${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}`}</div>`
-                    }
-                  </div>
-                </div>
-              `;
-            }).join('')}
-          </div>
-        </div>
-      `;
-      document.getElementById('modalReportContent').innerHTML = html;
     }
 
     async function logout() {
