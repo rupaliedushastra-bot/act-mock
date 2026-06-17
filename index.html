@@ -333,54 +333,7 @@
     <p>Authentic ACT-format practice with real questions, timed sections, composite scoring (1–36), and instant PDF
       report download.</p>
 
-    <div class="cards">
-
-      <!-- ACT Practice Test 1 -->
-      <div class="exam-card">
-        <div class="card-num">01</div>
-        <div class="card-title">ACT Practice Test 1</div>
-        <div class="card-sub">4 sections · English, Math, Reading & Science<br>Full-length ACT simulation</div>
-
-        <div class="card-meta">
-          <div class="cm">
-            <div class="val">215</div>
-            <div class="lbl">Questions</div>
-          </div>
-          <div class="cm">
-            <div class="val">175</div>
-            <div class="lbl">Minutes</div>
-          </div>
-          <div class="cm">
-            <div class="val">4</div>
-            <div class="lbl">Sections</div>
-          </div>
-          <div class="cm">
-            <div class="val">1–36</div>
-            <div class="lbl">Score Range</div>
-          </div>
-        </div>
-
-        <div class="section-chips">
-          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
-            <div class="s-name" style="color:#93c5fd">📝 English</div>
-            <div class="s-detail" style="color:rgba(147,197,253,0.7)">75 Qs · 45 min</div>
-          </div>
-          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
-            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
-            <div class="s-detail" style="color:rgba(110,231,183,0.7)">60 Qs · 60 min</div>
-          </div>
-          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
-            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
-            <div class="s-detail" style="color:rgba(196,181,253,0.7)">40 Qs · 35 min</div>
-          </div>
-          <div class="s-chip" style="background:rgba(217,119,6,0.1);border:1px solid rgba(217,119,6,0.2)">
-            <div class="s-name" style="color:#fde68a">🔬 Science</div>
-            <div class="s-detail" style="color:rgba(253,230,138,0.7)">40 Qs · 35 min</div>
-          </div>
-        </div>
-
-        <a href="act1.html" class="card-btn" id="btn-act1">Start ACT Practice Test 1 →</a>
-      </div>
+    <div class="cards single">
 
       <!-- ACT Practice Test 2 -->
       <div class="exam-card">
@@ -450,14 +403,9 @@
 
     async function initIndex() {
       const { data: { session } } = await supabaseClient.auth.getSession();
-      const btn1 = document.getElementById('btn-act1');
       const btn2 = document.getElementById('btn-act2');
 
       if (!session) {
-        if (btn1) {
-          btn1.innerHTML = '🔒 Login to Start ACT Practice Test 1 →';
-          btn1.href = 'login.html?redirect=act1.html';
-        }
         if (btn2) {
           btn2.innerHTML = '🔒 Login to Start ACT Practice Test 2 →';
           btn2.href = 'login.html?redirect=act-2/act1.html';
@@ -484,7 +432,6 @@
       };
 
       if (isAdmin) {
-        if (btn1) { btn1.innerHTML = 'Start ACT Test 1 (Admin) →'; btn1.href = 'act1.html'; }
         if (btn2) { btn2.innerHTML = 'Start ACT Test 2 (Admin) →'; btn2.href = 'act-2/act1.html'; }
         return;
       }
@@ -498,16 +445,11 @@
           .single();
 
         if (error || !profile || !profile.has_access) {
-          if (btn1) {
-            btn1.innerHTML = '🔒 Request Access →';
-            btn1.href = 'act1.html';
-          }
           if (btn2) {
             btn2.innerHTML = '🔒 Request Access →';
             btn2.href = 'act-2/act1.html';
           }
         } else {
-          if (btn1) { btn1.innerHTML = 'Start ACT Practice Test 1 →'; btn1.href = 'act1.html'; }
           if (btn2) { btn2.innerHTML = 'Start ACT Practice Test 2 →'; btn2.href = 'act-2/act1.html'; }
         }
       } catch (err) {
