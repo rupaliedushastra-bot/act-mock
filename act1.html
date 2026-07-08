@@ -1033,19 +1033,15 @@
             <div class="sections-preview">
                 <div class="sec-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
                     <div class="sec-name" style="color:#93c5fd">📝 English</div>
-                    <div class="sec-detail" style="color:rgba(147,197,253,0.7)">75 Qs · 45 min</div>
+                    <div class="sec-detail" style="color:rgba(147,197,253,0.7)">50 Qs · 35 min</div>
                 </div>
                 <div class="sec-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
                     <div class="sec-name" style="color:#6ee7b7">🔢 Math</div>
-                    <div class="sec-detail" style="color:rgba(110,231,183,0.7)">60 Qs · 60 min</div>
+                    <div class="sec-detail" style="color:rgba(110,231,183,0.7)">45 Qs · 50 min</div>
                 </div>
                 <div class="sec-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
                     <div class="sec-name" style="color:#c4b5fd">📖 Reading</div>
-                    <div class="sec-detail" style="color:rgba(196,181,253,0.7)">40 Qs · 35 min</div>
-                </div>
-                <div class="sec-chip" style="background:rgba(217,119,6,0.1);border:1px solid rgba(217,119,6,0.2)">
-                    <div class="sec-name" style="color:#fde68a">🔬 Science</div>
-                    <div class="sec-detail" style="color:rgba(253,230,138,0.7)">40 Qs · 35 min</div>
+                    <div class="sec-detail" style="color:rgba(196,181,253,0.7)">36 Qs · 40 min</div>
                 </div>
             </div>
 
@@ -1103,10 +1099,6 @@
             <div class="sec-tab reading" onclick="goToSection('reading')">
                 📖 Reading
                 <div class="tab-count" id="tabCount-reading">0/40</div>
-            </div>
-            <div class="sec-tab science" onclick="goToSection('science')">
-                🔬 Science
-                <div class="tab-count" id="tabCount-science">0/40</div>
             </div>
         </div>
 
@@ -1225,22 +1217,21 @@
         let currentQIndex = 0;        // index within CURRENT section questions
         let answers = {};              // { questionId: chosenIndex }
         let timerInterval = null;
-        let sectionTimers = { english: 45 * 60, math: 60 * 60, reading: 35 * 60, science: 35 * 60 };
-        let sectionTimerRemaining = 45 * 60;
+        let sectionTimers = { english: 35 * 60, math: 50 * 60, reading: 40 * 60 };
+        let sectionTimerRemaining = 35 * 60;
         let testResult = null;
 
         // Section question arrays
         const SECTION_QUESTIONS = {
             english: ACT_QUESTIONS1.filter(q => q.section === 'english'),
             math: ACT_QUESTIONS1.filter(q => q.section === 'math'),
-            reading: ACT_QUESTIONS1.filter(q => q.section === 'reading'),
-            science: ACT_QUESTIONS1.filter(q => q.section === 'science'),
+            reading: ACT_QUESTIONS1.filter(q => q.section === 'reading')
         };
 
         const SECTION_COLORS = {
-            english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd', science: '#fde68a'
+            english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd'
         };
-        const SECTION_NAMES = { english: '📝 English', math: '🔢 Math', reading: '📖 Reading', science: '🔬 Science' };
+        const SECTION_NAMES = { english: '📝 English', math: '🔢 Math', reading: '📖 Reading' };
 
         // ── Start test ────────────────────────────────────
         function startTest() {
@@ -1290,7 +1281,7 @@
         }
 
         function autoAdvanceSection() {
-            const order = ['english', 'math', 'reading', 'science'];
+            const order = ['english', 'math', 'reading'];
             const idx = order.indexOf(currentSection);
             if (idx < order.length - 1) {
                 const next = order[idx + 1];
@@ -1333,9 +1324,9 @@
             // Topic tag
             const tag = document.getElementById('qTopicTag');
             tag.textContent = q.topic || '';
-            const clr = { english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd', science: '#fde68a' }[currentSection];
-            const bgr = { english: 'rgba(26,86,219,0.12)', math: 'rgba(5,150,105,0.12)', reading: 'rgba(124,58,237,0.12)', science: 'rgba(217,119,6,0.12)' }[currentSection];
-            const bdr = { english: 'rgba(26,86,219,0.3)', math: 'rgba(5,150,105,0.3)', reading: 'rgba(124,58,237,0.3)', science: 'rgba(217,119,6,0.3)' }[currentSection];
+            const clr = { english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd' }[currentSection];
+            const bgr = { english: 'rgba(26,86,219,0.12)', math: 'rgba(5,150,105,0.12)', reading: 'rgba(124,58,237,0.12)' }[currentSection];
+            const bdr = { english: 'rgba(26,86,219,0.3)', math: 'rgba(5,150,105,0.3)', reading: 'rgba(124,58,237,0.3)' }[currentSection];
             tag.style.cssText = `color:${clr};background:${bgr};border-color:${bdr}`;
 
             // Counter
@@ -1456,8 +1447,8 @@
 
             // ── Score calculation ─────────────────────────
             let correct = 0, wrong = 0, unattempted = 0;
-            const sectionRaw = { english: 0, math: 0, reading: 0, science: 0 };
-            const sectionCorrect = { english: 0, math: 0, reading: 0, science: 0 };
+            const sectionRaw = { english: 0, math: 0, reading: 0 };
+            const sectionCorrect = { english: 0, math: 0, reading: 0 };
             const topicMap = {};
 
             ACT_QUESTIONS1.forEach(q => {
@@ -1487,8 +1478,7 @@
             const sectionScores = {
                 english: getACTSectionScore('english', sectionRaw.english),
                 math: getACTSectionScore('math', sectionRaw.math),
-                reading: getACTSectionScore('reading', sectionRaw.reading),
-                science: getACTSectionScore('science', sectionRaw.science),
+                reading: getACTSectionScore('reading', sectionRaw.reading)
             };
             const composite = getACTCompositeScore(sectionScores);
 
@@ -1561,8 +1551,8 @@
 
             // Section scores
             const secRow = document.getElementById('sectionScoresRow');
-            const secColors = { english: '#1a56db', math: '#059669', reading: '#7c3aed', science: '#d97706' };
-            const secLabels = { english: 'English', math: 'Math', reading: 'Reading', science: 'Science' };
+            const secColors = { english: '#1a56db', math: '#059669', reading: '#7c3aed' };
+            const secLabels = { english: 'English', math: 'Math', reading: 'Reading' };
             secRow.innerHTML = Object.entries(r.sectionScores).map(([sec, score]) => `
     <div class="sec-score-box" style="background:${secColors[sec]}22;border:1px solid ${secColors[sec]}44">
       <div class="s-label" style="color:${SECTION_COLORS[sec]}">${secLabels[sec]}</div>

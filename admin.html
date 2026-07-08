@@ -1,1038 +1,1267 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard – EduQuest</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
+  <title>Universal Super Admin Panel — EduQuest Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="supabase.js"></script>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0
+    :root {
+      --primary: #7c3aed;
+      --primary-hover: #6d28d9;
+      --bg-dark: #0d0d14;
+      --bg-card: rgba(255, 255, 255, 0.04);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --font-brand: 'Syne', sans-serif;
+      --font-body: 'IBM Plex Sans', sans-serif;
+      --shadow-glow: 0 0 30px rgba(124, 58, 237, 0.2);
     }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'IBM Plex Sans', sans-serif;
-      background: #0d0d14;
-      color: #fff;
-      min-height: 100vh
+      font-family: var(--font-body);
+      background: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
     }
-
+    a { color: inherit; text-decoration: none; }
+    
     .hdr {
-      height: 58px;
+      height: 64px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 24px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06)
+      padding: 0 32px;
+      background: rgba(13, 13, 20, 0.8);
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-
     .brand {
-      font-family: 'Syne', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 700
-    }
-
-    .logout {
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.5);
-      cursor: pointer;
-      background: none;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      padding: 6px 14px;
-      border-radius: 6px
-    }
-
-    .logout:hover {
-      border-color: #1a56db;
-      color: #fff
-    }
-
-    /* Login */
-    .login-wrap {
-      max-width: 380px;
-      margin: 100px auto;
-      padding: 20px
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 20px;
-      padding: 36px 28px
-    }
-
-    h2 {
-      font-family: 'Syne', sans-serif;
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      text-align: center
-    }
-
-    .field {
-      margin-bottom: 14px
-    }
-
-    .field label {
-      display: block;
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: rgba(255, 255, 255, 0.5);
-      text-transform: uppercase;
-      letter-spacing: .05em;
-      margin-bottom: 6px
-    }
-
-    .field input {
-      width: 100%;
-      border: 1.5px solid rgba(255, 255, 255, 0.12);
-      border-radius: 8px;
-      padding: 11px 14px;
-      font-family: inherit;
-      font-size: 0.95rem;
-      outline: none;
-      background: rgba(255, 255, 255, 0.03);
-      color: #fff
-    }
-
-    .field input:focus {
-      border-color: #1a56db
-    }
-
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      border-radius: 8px;
-      font-family: inherit;
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-      border: none;
-      background: linear-gradient(135deg, #1a56db, #1e429f);
-      color: #fff;
-      margin-top: 6px
-    }
-
-    .btn:hover {
-      transform: translateY(-1px)
-    }
-
-    #loginMsg {
-      text-align: center;
-      font-size: 0.85rem;
-      margin-top: 10px;
-      color: #f87171;
-      min-height: 18px
-    }
-
-    /* Dashboard */
-    .wrap {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px
-    }
-
-    .stats {
-      display: flex;
-      gap: 14px;
-      margin-bottom: 20px;
-      flex-wrap: wrap
-    }
-
-    .stat {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
-      padding: 16px 22px;
-      flex: 1;
-      min-width: 120px
-    }
-
-    .stat .num {
-      font-family: 'Syne', sans-serif;
-      font-size: 1.8rem;
+      font-family: var(--font-brand);
+      font-size: 1.25rem;
       font-weight: 800;
-      color: #60a5fa
-    }
-
-    .stat .lbl {
-      font-size: 0.75rem;
-      color: rgba(255, 255, 255, 0.5);
-      text-transform: uppercase;
-      letter-spacing: .05em;
-      margin-top: 2px
-    }
-
-    .tabs {
       display: flex;
-      gap: 8px;
-      margin-bottom: 16px
+      align-items: center;
+      gap: 10px;
     }
-
-    .tab {
-      padding: 8px 18px;
+    .brand-icon { font-size: 1.5rem; }
+    .brand-pill {
+      background: linear-gradient(135deg, #10b981, #059669);
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: 0.72rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .auth-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.88rem;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+      color: #fff;
+      border: none;
       border-radius: 8px;
-      font-size: 0.85rem;
+      padding: 8px 18px;
       font-weight: 600;
       cursor: pointer;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: rgba(255, 255, 255, 0.6)
+      transition: all 0.2s;
+    }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: var(--shadow-glow); }
+
+    .admin-wrap {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 30px 24px 80px;
+    }
+    .admin-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 24px 28px;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      backdrop-filter: blur(12px);
+    }
+    .admin-title h1 {
+      font-family: var(--font-brand);
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+    }
+    .admin-title p { color: var(--text-muted); font-size: 0.95rem; margin-top: 4px; }
+    
+    /* ── UNIVERSAL PORTAL SWITCHER ───────────────────────── */
+    .portal-switcher {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 28px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+      flex-wrap: wrap;
+    }
+    .portal-btn {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-family: var(--font-brand);
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.25s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+    .portal-btn:hover {
+      background: rgba(255, 255, 255, 0.07);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .portal-btn.active {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.35), rgba(91, 33, 182, 0.25));
+      border-color: var(--primary);
+      color: #fff;
+      box-shadow: var(--shadow-glow);
+    }
+    
+    /* ── STATS BAR ───────────────────────────────────────── */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+    }
+    .stat-val {
+      font-family: var(--font-brand);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #a78bfa;
+    }
+    .stat-lbl {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
     }
 
-    .tab.active {
-      background: rgba(26, 86, 219, 0.2);
-      border-color: #1a56db;
-      color: #fff
+    /* ── SUB TABS WITHIN PORTAL ──────────────────────────── */
+    .sub-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .sub-tab-btn {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-color);
+      color: var(--text-dim);
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .sub-tab-btn.active {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      border-color: rgba(255,255,255,0.3);
     }
 
-    .search {
-      width: 100%;
-      border: 1.5px solid rgba(255, 255, 255, 0.12);
-      border-radius: 8px;
-      padding: 10px 14px;
-      font-family: inherit;
+    /* ── FILTERS & CONTROLS ──────────────────────────────── */
+    .controls-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .search-box {
+      background: rgba(0,0,0,0.4);
+      border: 1.5px solid var(--border-color);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 10px;
+      width: 320px;
       font-size: 0.9rem;
       outline: none;
-      background: rgba(255, 255, 255, 0.03);
+    }
+    .search-box:focus { border-color: var(--primary); }
+    .filter-pills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-pill {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-pill.active {
+      background: var(--primary);
       color: #fff;
-      margin-bottom: 16px
+      border-color: transparent;
     }
-
-    .search:focus {
-      border-color: #1a56db
+    .btn-grant-all {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
     }
+    .btn-grant-all:hover { opacity: 0.9; transform: translateY(-1px); }
 
+    /* ── USER CARDS (ACCEPT / REJECT PATTERN) ────────────── */
+    .users-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+      gap: 16px;
+    }
+    @media (max-width: 900px) {
+      .users-grid { grid-template-columns: 1fr; }
+    }
     .user-card {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      transition: all 0.2s;
+    }
+    .user-card:hover { border-color: rgba(255,255,255,0.2); }
+    .user-card-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .user-email {
+      font-weight: 700;
+      color: #fff;
+      font-size: 1rem;
+      word-break: break-all;
+    }
+    .user-meta {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .req-badge {
+      background: rgba(245, 158, 11, 0.2);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
+      70% { box-shadow: 0 0 0 6px rgba(245, 158, 11, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+    }
+    .org-input {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      width: 100%;
+      margin-top: 10px;
+      outline: none;
+    }
+    .org-input:focus { border-color: #60a5fa; }
+    .access-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: rgba(0,0,0,0.25);
+      padding: 14px;
       border-radius: 12px;
-      padding: 16px 20px;
-      margin-bottom: 10px;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    .access-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .access-lbl {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #cbd5e1;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      flex-wrap: wrap
+      gap: 8px;
     }
-
-    .user-info {
-      flex: 1;
-      min-width: 200px
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
     }
-
-    .user-info .email {
-      font-weight: 600;
-      font-size: 0.95rem
-    }
-
-    .user-info .meta {
-      font-size: 0.78rem;
-      color: rgba(255, 255, 255, 0.45);
-      margin-top: 3px
-    }
-
-    .badge {
-      font-size: 0.72rem;
-      padding: 3px 10px;
-      border-radius: 100px;
-      font-weight: 600;
-      display: inline-block;
-      margin-top: 6px
-    }
-
-    .badge.granted {
-      background: rgba(5, 150, 105, 0.15);
-      color: #6ee7b7;
-      border: 1px solid rgba(5, 150, 105, 0.3)
-    }
-
-    .badge.pending {
-      background: rgba(217, 119, 6, 0.15);
-      color: #fbbf24;
-      border: 1px solid rgba(217, 119, 6, 0.3)
-    }
-
-    .actions {
-      display: flex;
-      gap: 8px
-    }
-
-    .btn-sm {
-      padding: 8px 16px;
+    .status-dot.unlocked { background: #10b981; box-shadow: 0 0 6px #10b981; }
+    .status-dot.locked { background: #ef4444; }
+    
+    /* ACCEPT & REJECT BUTTONS */
+    .btn-group { display: flex; gap: 6px; }
+    .btn-accept {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34d399;
+      padding: 6px 14px;
       border-radius: 8px;
-      font-size: 0.84rem;
-      font-weight: 600;
-      cursor: pointer;
-      border: none
-    }
-
-    .btn-approve {
-      background: #059669;
-      color: #fff
-    }
-
-    .btn-approve:hover {
-      background: #047857
-    }
-
-    .btn-revoke {
-      background: rgba(220, 38, 38, 0.15);
-      color: #f87171;
-      border: 1px solid rgba(220, 38, 38, 0.3)
-    }
-
-    .btn-revoke:hover {
-      background: rgba(220, 38, 38, 0.25)
-    }
-
-    .org-input {
-      border: 1.5px solid rgba(255, 255, 255, 0.12);
-      border-radius: 6px;
-      padding: 6px 10px;
       font-size: 0.8rem;
-      background: rgba(255, 255, 255, 0.03);
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-accept:hover { background: #10b981; color: #fff; }
+    .btn-reject {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      color: #f87171;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-reject:hover { background: #ef4444; color: #fff; }
+
+    /* ── REPORT CARDS ────────────────────────────────────── */
+    .student-report-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      transition: all 0.25s;
+    }
+    .src-header {
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid transparent;
+      transition: background 0.2s;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .src-header:hover { background: rgba(255, 255, 255, 0.05); }
+    .src-info .src-email {
+      font-weight: 700;
+      font-size: 1.05rem;
       color: #fff;
-      font-family: inherit;
-      width: 120px
+    }
+    .src-info .src-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .src-stats {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .src-stat { text-align: center; }
+    .src-stat .ss-num {
+      font-family: var(--font-brand);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #a78bfa;
+    }
+    .src-stat .ss-lbl {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+    .src-toggle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      transition: transform 0.25s;
+    }
+    .src-body {
+      display: none;
+      padding: 20px 24px;
+      background: rgba(0, 0, 0, 0.25);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .src-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+    .src-table th {
+      padding: 10px 12px;
+      color: var(--text-muted);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+    }
+    .src-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+    }
+    .src-table tr {
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .src-table tr:hover td {
+      background: rgba(167, 139, 250, 0.08);
+      color: #fff;
     }
 
-    .empty {
-      text-align: center;
-      color: rgba(255, 255, 255, 0.4);
-      padding: 40px;
-      font-size: 0.9rem
+    /* ── MODAL STYLES ────────────────────────────────────── */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 9999;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
     }
-
-    .loading {
-      text-align: center;
-      color: rgba(255, 255, 255, 0.4);
-      padding: 40px
+    .modal-overlay.open { display: flex; }
+    .modal-card {
+      background: #13131f;
+      border: 1px solid rgba(167, 139, 250, 0.3);
+      border-radius: 24px;
+      width: 100%;
+      max-width: 880px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 32px;
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
     }
+    .modal-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+    .modal-hdr h3 {
+      font-family: var(--font-brand);
+      font-size: 1.4rem;
+      color: #fff;
+      margin: 0;
+    }
+    .modal-close {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .modal-close:hover { background: var(--primary); border-color: transparent; }
+    .modal-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .modal-stat-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      padding: 14px 10px;
+      text-align: center;
+    }
+    .modal-stat-box .num {
+      font-family: var(--font-brand);
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+    .modal-stat-box .lbl {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .q-review-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    .q-review-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 10px;
+    }
+    .q-status-badge {
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .q-status-correct { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+    .q-status-wrong { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+    .q-status-skipped { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+    
+    .q-text {
+      font-size: 0.95rem;
+      color: #fff;
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+    .q-opt-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .q-opt {
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.88rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .q-opt.correct-ans {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: #10b981;
+      color: #34d399;
+      font-weight: 600;
+    }
+    .q-opt.wrong-chosen {
+      background: rgba(239, 68, 68, 0.15);
+      border-color: #ef4444;
+      color: #f87171;
+      font-weight: 600;
+    }
+    .q-exp {
+      background: rgba(96, 165, 250, 0.08);
+      border-left: 3px solid #60a5fa;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+    .tab-section { display: none; }
+    .tab-section.active { display: block; }
   </style>
 </head>
-
 <body>
 
-  <!-- LOGIN SCREEN -->
-  <div id="loginScreen">
-    <header class="hdr">
-      <div class="brand">📝 EduQuest Admin</div>
-      <div></div>
-    </header>
-    <div class="login-wrap">
-      <div class="card">
-        <h2>Admin Login</h2>
-        <div class="field">
-          <label>Email</label>
-          <input type="email" id="adminEmail" placeholder="admin@email.com">
-        </div>
-        <div class="field">
-          <label>Password</label>
-          <input type="password" id="adminPassword" placeholder="••••••••">
-        </div>
-        <button class="btn" onclick="adminLogin()">Login</button>
-        <p id="loginMsg"></p>
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <header class="hdr">
+    <a href="index.html" class="brand">
+      <div class="brand-icon">⚡</div>
+      <span>EduQuest</span>
+      <span class="brand-pill">Universal Super Admin</span>
+    </a>
+    <div class="auth-section">
+      <span style="color: #34d399; font-weight: 600;">👑 Admin Mode</span>
+      <button class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;" onclick="adminLogout()">Log Out</button>
+    </div>
+  </header>
+
+  <!-- ── Main Content ───────────────────────────────────── -->
+  <main class="admin-wrap">
+    <div class="admin-hdr">
+      <div class="admin-title">
+        <h1>Universal Exam Authorization &amp; Analytics</h1>
+        <p>Manage student access approvals (Accept/Reject) and review practice reports across all EduQuest modules.</p>
       </div>
+    </div>
+
+    <!-- Universal Portal Switcher -->
+    <div class="portal-switcher">
+      <button class="portal-btn active" id="btn-portal-ssat" onclick="switchPortal('ssat')">🚀 SSAT</button>
+      <button class="portal-btn" id="btn-portal-mock" onclick="switchPortal('mock')">📝 SAT (Mock)</button>
+      <button class="portal-btn" id="btn-portal-topic" onclick="switchPortal('topic')">📖 SAT (Topic)</button>
+      <button class="portal-btn" id="btn-portal-tmua" onclick="switchPortal('tmua')">📐 TMUA</button>
+      <button class="portal-btn" id="btn-portal-ucat" onclick="switchPortal('ucat')">🩺 UCAT</button>
+      <button class="portal-btn" id="btn-portal-act" onclick="switchPortal('act')">📊 ACT</button>
+      <button class="portal-btn" id="btn-portal-ap" onclick="switchPortal('ap')">🎓 AP</button>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-val" id="stat-total-users">0</div>
+        <div class="stat-lbl">Total Registered Students</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-approved" style="color: #34d399;">0</div>
+        <div class="stat-lbl" id="stat-lbl-approved">Approved in Portal</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-pending" style="color: #fbbf24;">0</div>
+        <div class="stat-lbl">Pending Requests</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-reports" style="color: #38bdf8;">0</div>
+        <div class="stat-lbl">Completed Test Reports</div>
+      </div>
+    </div>
+
+    <!-- Sub Tabs -->
+    <div class="sub-tabs">
+      <button class="sub-tab-btn active" id="subtab-users" onclick="switchSubTab('users')">👥 Student Access Management</button>
+      <button class="sub-tab-btn" id="subtab-reports" onclick="switchSubTab('reports')">📈 Test Reports &amp; Scores</button>
+    </div>
+
+    <!-- ── VIEW 1: STUDENT ACCESS MANAGEMENT ────────────── -->
+    <div id="view-users" class="tab-section active">
+      <div class="controls-row">
+        <div class="filter-pills">
+          <button class="filter-pill active" id="pill-all" onclick="setFilter('all')">All Students</button>
+          <button class="filter-pill" id="pill-pending" onclick="setFilter('pending')">⏳ Pending / Requested 🔔</button>
+          <button class="filter-pill" id="pill-approved" onclick="setFilter('approved')">✓ Approved</button>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <input type="text" class="search-box" id="search-input" placeholder="Search student email, name or org..." oninput="renderUsers()">
+          <button class="btn-grant-all" onclick="acceptAllPending()">⚡ Accept All Pending Requests</button>
+        </div>
+      </div>
+
+      <div class="users-grid" id="users-grid">
+        <div style="text-align: center; padding: 40px; color: var(--text-muted); grid-column: 1/-1;">Loading student accounts...</div>
+      </div>
+    </div>
+
+    <!-- ── VIEW 2: TEST REPORTS & SCORES ────────────────── -->
+    <div id="view-reports" class="tab-section">
+      <div class="controls-row">
+        <input type="text" class="search-box" id="search-reports" placeholder="Search test reports by email or exam..." oninput="renderReports()">
+      </div>
+      <div id="reports-list">
+        <div style="text-align: center; padding: 40px; color: var(--text-muted);">Loading test reports...</div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Test Report Detail Modal ───────────────────────── -->
+  <div class="modal-overlay" id="reportModalOverlay" onclick="if(event.target===this) closeReportModal()">
+    <div class="modal-card" id="reportModalContent">
+      <!-- Dynamic modal content -->
     </div>
   </div>
 
-  <!-- DASHBOARD -->
-  <div id="dashboard" style="display:none">
-    <header class="hdr">
-      <div class="brand">📝 EduQuest Admin</div>
-      <button class="logout" onclick="adminLogout()">Logout</button>
-    </header>
-    <div class="wrap">
-      <div class="stats">
-        <div class="stat">
-          <div class="num" id="statTotal">–</div>
-          <div class="lbl">Total Users</div>
-        </div>
-        <div class="stat">
-          <div class="num" id="statApproved">–</div>
-          <div class="lbl">Approved</div>
-        </div>
-        <div class="stat">
-          <div class="num" id="statPending">–</div>
-          <div class="lbl">Pending</div>
-        </div>
-      </div>
-
-      <div class="tabs">
-        <div class="tab active" data-filter="pending" onclick="setFilter('pending')">Pending</div>
-        <div class="tab" data-filter="approved" onclick="setFilter('approved')">Approved</div>
-        <div class="tab" data-filter="all" onclick="setFilter('all')">All</div>
-      </div>
-
-      <input type="text" class="search" id="searchBox" placeholder="Search by email..." oninput="renderList()">
-
-      <div id="userList">
-        <div class="loading">Loading...</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal for User History -->
-  <div id="userHistoryModal"
-    style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.85); z-index: 999; overflow-y: auto; padding: 40px 20px;">
-    <div
-      style="max-width: 800px; margin: 0 auto; background: #0d0d14; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 30px; position: relative;">
-      <button onclick="closeUserHistoryModal()"
-        style="position: absolute; top: 20px; right: 20px; background: none; border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
-      <h2
-        style="font-family: 'Syne', sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 20px; color: #fff;"
-        id="historyModalTitle">Student History</h2>
-      <div id="historyModalContent"></div>
-    </div>
-  </div>
-
-  <!-- Modal for report details -->
-  <div id="reportModal"
-    style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.85); z-index: 1000; overflow-y: auto; padding: 40px 20px;">
-    <div
-      style="max-width: 900px; margin: 0 auto; background: #0d0d14; border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 30px; position: relative;">
-      <button onclick="closeReportModal()"
-        style="position: absolute; top: 20px; right: 20px; background: none; border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 50%; width: 36px; height: 36px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
-      <h2
-        style="font-family: 'Syne', sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 20px; color: #fff;"
-        id="modalExamTitle">Test Review</h2>
-      <div id="modalReportContent"></div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="questions.js"></script>
-  <script src="questions2.js"></script>
-  <script src="test_3/questions3.js"></script>
-  <script src="supabase.js"></script>
-  <script src="report.js"></script>
-  <script src="act_questions1.js"></script>
-  <script src="act_report1.js"></script>
   <script>
-    const ADMIN_EMAIL = 'rupali.eduquest@gmail.com'; // <-- yahan apna admin email daalo
-
-    const supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-
+    const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
     let allProfiles = [];
-    let currentFilter = 'pending';
+    let allReports = { ssat: [], mock: [], topic: [], tmua: [], ucat: [], act: [], ap: [] };
+    let currentPortal = 'ssat';
+    let currentFilter = 'all';
 
-    // ── Check session on load ──────────────────────
-    (async function init() {
-      const { data: { session } } = await supabaseClient.auth.getSession();
-      if (session && session.user.email === ADMIN_EMAIL) {
-        showDashboard();
-      } else {
-        showLogin();
-      }
-    })();
-
-    function showLogin() {
-      document.getElementById('loginScreen').style.display = 'block';
-      document.getElementById('dashboard').style.display = 'none';
-    }
-
-    function showDashboard() {
-      document.getElementById('loginScreen').style.display = 'none';
-      document.getElementById('dashboard').style.display = 'block';
-      loadProfiles();
-    }
-
-    // ── Login ───────────────────────────────────────
-    async function adminLogin() {
-      const email = document.getElementById('adminEmail').value.trim();
-      const password = document.getElementById('adminPassword').value;
-      const msg = document.getElementById('loginMsg');
-
-      if (email.toLowerCase() !== ADMIN_EMAIL.toLowerCase()) {
-        msg.textContent = 'This account is not authorized as admin.';
+    document.addEventListener('DOMContentLoaded', async () => {
+      const { data: { session } } = await client.auth.getSession();
+      if (!session || session.user.email !== 'rupali.eduquest@gmail.com') {
+        window.location.href = 'login.html?redirect=admin.html';
         return;
       }
-
-      const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
-      if (error) {
-        msg.textContent = error.message;
-        return;
-      }
-      showDashboard();
-    }
+      loadData();
+    });
 
     async function adminLogout() {
-      await supabaseClient.auth.signOut();
-      showLogin();
+      await client.auth.signOut();
+      window.location.href = 'login.html';
     }
 
-    // ── Load profiles and test results ────────────────
-    async function loadProfiles() {
-      const listContainer = document.getElementById('userList');
-      listContainer.innerHTML = `<div class="loading">Loading database entries...</div>`;
+    async function loadData() {
+      // 1. Fetch Profiles
+      const { data: profiles, error: errP } = await client.from('profiles').select('*').order('created_at', { ascending: false });
+      if (errP) console.error('Error loading profiles:', errP);
+      allProfiles = profiles || [];
+
+      // 2. Fetch Reports across all tables
       try {
-        // Profiles
-        const { data: profiles, error: errP } = await supabaseClient
-          .from('profiles').select('*').order('created_at', { ascending: false });
-        if (errP) throw errP;
-
-        // SAT results
-        const { data: satResults, error: errS } = await supabaseClient
-          .from('sat_results').select('*').order('submitted_at', { ascending: false });
-        if (errS) throw errS;
-
-        // ACT results
-        const { data: actResults, error: errA } = await supabaseClient
-          .from('act_results').select('*').order('submitted_at', { ascending: false });
-        if (errA) console.warn('Could not fetch ACT results:', errA);
-
-        // Topic results (existing)
-        const { data: topicResults, error: errT } = await supabaseClient
-          .from('sat_topic_report').select('*');
-        if (errT) console.warn('Could not fetch topic reports:', errT);
-
-        const allRawResults = [];
-
-        // Tag SAT results
-        (satResults || []).forEach(r => {
-          allRawResults.push({
-            ...r, _type: 'sat',
-            _email: (r.student_email || '').toLowerCase().trim(),
-            _name: r.student_name,
-            _date: r.submitted_at || null
-          });
-        });
-
-        // Tag ACT results
-        (actResults || []).forEach(r => {
-          allRawResults.push({
-            ...r, _type: 'act',
-            _email: (r.student_email || '').toLowerCase().trim(),
-            _name: r.student_name,
-            _date: r.submitted_at || null
-          });
-        });
-
-        // Tag topic results
-        (topicResults || []).forEach(r => {
-          allRawResults.push({
-            ...r, _type: 'topic',
-            _email: (r.email || '').toLowerCase().trim(),
-            _name: r.name,
-            _date: r.submit_time || null
-          });
-        });
-
-        // Sort all by date
-        allRawResults.sort((a, b) => new Date(b._date) - new Date(a._date));
-
-        // Group by email
-        const resultsByEmail = {};
-        allRawResults.forEach(r => {
-          if (!r._email) return;
-          if (!resultsByEmail[r._email]) resultsByEmail[r._email] = [];
-          resultsByEmail[r._email].push(r);
-        });
-
-        // Build student map
-        const studentMap = {};
-        (profiles || []).forEach(p => {
-          if (!p.email) return;
-          const emailKey = p.email.toLowerCase().trim();
-          const userResults = resultsByEmail[emailKey] || [];
-          let displayName = emailKey.split('@')[0];
-          if (userResults.length > 0 && userResults[0]._name) displayName = userResults[0]._name;
-
-          studentMap[emailKey] = {
-            id: p.id, email: p.email, name: displayName,
-            created_at: p.created_at, has_access: p.has_access || false,
-            organization: p.organization || '',
-            tests_count: userResults.length,
-            results: userResults,
-            has_profile: true
-          };
-        });
-
-        // Add users with results but no profile
-        Object.entries(resultsByEmail).forEach(([emailKey, userResults]) => {
-          if (studentMap[emailKey]) return;
-          studentMap[emailKey] = {
-            id: null, email: userResults[0]._email || emailKey,
-            name: userResults[0]._name || emailKey.split('@')[0],
-            created_at: userResults[userResults.length - 1]._date,
-            has_access: false, organization: '',
-            tests_count: userResults.length,
-            results: userResults, has_profile: false
-          };
-        });
-
-        allProfiles = Object.values(studentMap).sort(
-          (a, b) => new Date(b.created_at) - new Date(a.created_at)
-        );
-
-        updateStats();
-        renderList();
-      } catch (err) {
-        console.error('Error loading admin dashboard:', err);
-        listContainer.innerHTML = `<div class="empty">Error loading data: ${err.message}</div>`;
+        const { data: ssatR } = await client.from('ssat_report').select('*').order('submit_time', { ascending: false });
+        allReports.ssat = ssatR || [];
+        const { data: mockR } = await client.from('sat_results').select('*').order('submitted_at', { ascending: false });
+        allReports.mock = mockR || [];
+        const { data: topicR } = await client.from('sat_topic_report').select('*').order('submit_time', { ascending: false });
+        allReports.topic = topicR || [];
+        const { data: tmuaR } = await client.from('tmua_report').select('*').order('submit_time', { ascending: false });
+        allReports.tmua = tmuaR || [];
+        const { data: ucatR } = await client.from('Ucat_diagnosis').select('*').order('submit_time', { ascending: false });
+        allReports.ucat = ucatR || [];
+        const { data: actR } = await client.from('act_results').select('*').order('submitted_at', { ascending: false });
+        allReports.act = actR || [];
+        const { data: apR } = await client.from('ap_report').select('*').order('submit_time', { ascending: false });
+        allReports.ap = apR || [];
+      } catch (e) {
+        console.warn('Note: Some report tables may be empty or not created yet:', e);
       }
+
+      updateStats();
+      renderUsers();
+      renderReports();
+    }
+
+    function switchPortal(portal) {
+      currentPortal = portal;
+      document.querySelectorAll('.portal-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(`btn-portal-${portal}`).classList.add('active');
+      
+      const names = { ssat: 'SSAT', mock: 'SAT Mock', topic: 'SAT Topic', tmua: 'TMUA', ucat: 'UCAT', act: 'ACT', ap: 'AP' };
+      document.getElementById('stat-lbl-approved').textContent = `Approved in ${names[portal]}`;
+      
+      updateStats();
+      renderUsers();
+      renderReports();
+    }
+
+    function switchSubTab(tab) {
+      document.querySelectorAll('.sub-tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(`subtab-${tab}`).classList.add('active');
+      
+      document.getElementById('view-users').style.display = tab === 'users' ? 'block' : 'none';
+      document.getElementById('view-reports').style.display = tab === 'reports' ? 'block' : 'none';
+    }
+
+    function setFilter(filter) {
+      currentFilter = filter;
+      document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+      document.getElementById(`pill-${filter}`).classList.add('active');
+      renderUsers();
     }
 
     function updateStats() {
-      const profilesOnly = allProfiles.filter(p => p.has_profile);
-      const total = profilesOnly.length;
-      const approved = profilesOnly.filter(p => p.has_access).length;
-      document.getElementById('statTotal').textContent = total;
-      document.getElementById('statApproved').textContent = approved;
-      document.getElementById('statPending').textContent = total - approved;
+      const total = allProfiles.length;
+      document.getElementById('stat-total-users').textContent = total;
+      
+      let approved = 0;
+      let pending = 0;
+
+      allProfiles.forEach(p => {
+        if (currentPortal === 'ssat') {
+          if (p.has_ssat_upper_access || p.has_ssat_middle_access || p.has_ssat_low_access) approved++;
+          if (p.ssat_upper_access_requested || p.ssat_middle_access_requested || p.ssat_low_access_requested) pending++;
+        } else if (currentPortal === 'mock') {
+          if (p.has_access) approved++;
+          if (p.sat_access_requested) pending++;
+        } else if (currentPortal === 'topic') {
+          if (p.has_topic_reading_access || p.has_topic_math_access || p.has_topic_class_test_access) approved++;
+          if (p.topic_access_requested) pending++;
+        } else if (currentPortal === 'tmua') {
+          if (p.has_tmua_diag_access || p.has_tmua_topic_access) approved++;
+          if (p.tmua_access_requested) pending++;
+        } else if (currentPortal === 'ucat') {
+          if (p.has_ucat_access) approved++;
+          if (p.ucat_access_requested) pending++;
+        } else if (currentPortal === 'act') {
+          if (p.has_act_diag_access || p.has_act_topic_access || p.has_act_access) approved++;
+          if (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested) pending++;
+        } else if (currentPortal === 'ap') {
+          if (p.has_ap_access) approved++;
+          if (p.ap_access_requested) pending++;
+        }
+      });
+
+      document.getElementById('stat-approved').textContent = approved;
+      document.getElementById('stat-pending').textContent = pending;
+      document.getElementById('stat-reports').textContent = (allReports[currentPortal] || []).length;
     }
 
-    // ── Filter tabs ───────────────────────────────────
-    function setFilter(filter) {
-      currentFilter = filter;
-      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      document.querySelector(`.tab[data-filter="${filter}"]`).classList.add('active');
-      renderList();
-    }
+    function renderUsers() {
+      const query = (document.getElementById('search-input').value || '').toLowerCase().trim();
+      const grid = document.getElementById('users-grid');
+      grid.innerHTML = '';
 
-    // ── Render list ───────────────────────────────────
-    function renderList() {
-      const search = document.getElementById('searchBox').value.trim().toLowerCase();
-      let list = allProfiles;
+      let list = allProfiles.filter(p => {
+        const matchQuery = !query || (p.email || '').toLowerCase().includes(query) || (p.name || '').toLowerCase().includes(query) || (p.organization || '').toLowerCase().includes(query);
+        if (!matchQuery) return false;
 
-      if (currentFilter === 'pending') {
-        list = list.filter(p => p.has_profile && !p.has_access);
-      } else if (currentFilter === 'approved') {
-        list = list.filter(p => p.has_profile && p.has_access);
-      }
+        if (currentFilter === 'all') return true;
+        
+        // Check pending/approved based on portal
+        if (currentPortal === 'ssat') {
+          const isApp = p.has_ssat_upper_access || p.has_ssat_middle_access || p.has_ssat_low_access;
+          const isReq = p.ssat_upper_access_requested || p.ssat_middle_access_requested || p.ssat_low_access_requested;
+          return currentFilter === 'approved' ? isApp : (isReq || !isApp);
+        } else if (currentPortal === 'mock') {
+          return currentFilter === 'approved' ? p.has_access : (p.sat_access_requested || !p.has_access);
+        } else if (currentPortal === 'topic') {
+          const isApp = p.has_topic_reading_access || p.has_topic_math_access || p.has_topic_class_test_access;
+          return currentFilter === 'approved' ? isApp : (p.topic_access_requested || !isApp);
+        } else if (currentPortal === 'tmua') {
+          const isApp = p.has_tmua_diag_access || p.has_tmua_topic_access;
+          return currentFilter === 'approved' ? isApp : (p.tmua_access_requested || !isApp);
+        } else if (currentPortal === 'ucat') {
+          return currentFilter === 'approved' ? p.has_ucat_access : (p.ucat_access_requested || !p.has_ucat_access);
+        } else if (currentPortal === 'act') {
+          const isApp = p.has_act_diag_access || p.has_act_topic_access || p.has_act_access;
+          return currentFilter === 'approved' ? isApp : (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested || !isApp);
+        } else if (currentPortal === 'ap') {
+          return currentFilter === 'approved' ? p.has_ap_access : (p.ap_access_requested || !p.has_ap_access);
+        }
+        return true;
+      });
 
-      if (search) {
-        list = list.filter(p => (p.email || '').toLowerCase().includes(search) || (p.name || '').toLowerCase().includes(search));
-      }
-
-      const container = document.getElementById('userList');
       if (list.length === 0) {
-        container.innerHTML = `<div class="empty">No users found.</div>`;
+        grid.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted); grid-column:1/-1;">No students found matching filters.</div>`;
         return;
       }
 
-      container.innerHTML = list.map(p => {
-        let badgeHtml = '';
-        let orgHtml = '';
-        let actionButtons = '';
+      list.forEach(p => {
+        let accessRowsHtml = '';
+        let hasReq = false;
 
-        if (p.has_profile) {
-          badgeHtml = `<span class="badge ${p.has_access ? 'granted' : 'pending'}">${p.has_access ? '✓ Access Granted' : '⏳ Pending'}</span>`;
-          orgHtml = `<input type="text" class="org-input" placeholder="Organization" value="${p.organization || ''}"
-            onchange="updateOrg('${p.id}', this.value)" style="margin-left:10px">`;
-          actionButtons = p.has_access
-            ? `<button class="btn-sm btn-revoke" onclick="setAccess('${p.id}', false)">Revoke</button>`
-            : `<button class="btn-sm btn-approve" onclick="setAccess('${p.id}', true)">Approve</button>`;
-        } else {
-          badgeHtml = `<span class="badge pending" style="background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.1)">No Account</span>`;
-          orgHtml = `<span style="font-size:0.78rem;color:rgba(255,255,255,0.3);margin-left:10px">External</span>`;
-          actionButtons = `<span style="font-size:0.78rem;color:rgba(255,255,255,0.3);padding:8px 0;display:inline-block">N/A</span>`;
+        if (currentPortal === 'ssat') {
+          if (p.ssat_upper_access_requested || p.ssat_middle_access_requested || p.ssat_low_access_requested) hasReq = true;
+          accessRowsHtml = `
+            ${renderRow(p.id, '🚀 Upper Level', p.has_ssat_upper_access, p.ssat_upper_access_requested, 'has_ssat_upper_access', 'ssat_upper_access_requested')}
+            ${renderRow(p.id, '📘 Middle Level', p.has_ssat_middle_access, p.ssat_middle_access_requested, 'has_ssat_middle_access', 'ssat_middle_access_requested')}
+            ${renderRow(p.id, '🟢 Elementary Level', p.has_ssat_low_access, p.ssat_low_access_requested, 'has_ssat_low_access', 'ssat_low_access_requested')}
+          `;
+        } else if (currentPortal === 'mock') {
+          if (p.sat_access_requested) hasReq = true;
+          accessRowsHtml = renderRow(p.id, '📝 SAT Mock Access', p.has_access, p.sat_access_requested, 'has_access', 'sat_access_requested');
+        } else if (currentPortal === 'topic') {
+          if (p.topic_access_requested) hasReq = true;
+          accessRowsHtml = `
+            ${renderRow(p.id, '📖 Reading & Writing Topic', p.has_topic_reading_access, p.topic_access_requested, 'has_topic_reading_access', 'topic_access_requested')}
+            ${renderRow(p.id, '🔢 Math Topic', p.has_topic_math_access, p.topic_access_requested, 'has_topic_math_access', 'topic_access_requested')}
+            ${renderRow(p.id, '🏫 R&W Class Test', p.has_topic_class_test_access, p.topic_access_requested, 'has_topic_class_test_access', 'topic_access_requested')}
+          `;
+        } else if (currentPortal === 'tmua') {
+          if (p.tmua_access_requested) hasReq = true;
+          accessRowsHtml = `
+            ${renderRow(p.id, '📐 TMUA Diagnostic', p.has_tmua_diag_access, p.tmua_access_requested, 'has_tmua_diag_access', 'tmua_access_requested')}
+            ${renderRow(p.id, '📐 TMUA Topic Test', p.has_tmua_topic_access, p.tmua_access_requested, 'has_tmua_topic_access', 'tmua_access_requested')}
+          `;
+        } else if (currentPortal === 'ucat') {
+          if (p.ucat_access_requested) hasReq = true;
+          accessRowsHtml = renderRow(p.id, '🩺 UCAT Practice Access', p.has_ucat_access, p.ucat_access_requested, 'has_ucat_access', 'ucat_access_requested');
+        } else if (currentPortal === 'act') {
+          if (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested) hasReq = true;
+          accessRowsHtml = `
+            ${renderRow(p.id, '🎯 ACT Diagnostic', p.has_act_diag_access || p.has_act_access, p.act_diag_access_requested || p.act_access_requested, 'has_act_diag_access', 'act_diag_access_requested')}
+            ${renderRow(p.id, '📖 ACT Topic Test', p.has_act_topic_access || p.has_act_access, p.act_topic_access_requested, 'has_act_topic_access', 'act_topic_access_requested')}
+          `;
+        } else if (currentPortal === 'ap') {
+          if (p.ap_access_requested) hasReq = true;
+          accessRowsHtml = renderRow(p.id, '🎓 AP Practice Access', p.has_ap_access, p.ap_access_requested, 'has_ap_access', 'ap_access_requested');
         }
 
-        return `
-          <div class="user-card">
-            <div class="user-info">
-              <div class="email">${p.email || '(no email)'}</div>
-              <div class="meta">
-                <span>Name: ${p.name}</span> &middot; 
-                <span>Completed Tests: ${p.tests_count}</span> &middot; 
-                <span>Registered: ${p.created_at ? new Date(p.created_at).toLocaleDateString('en-IN') : '–'}</span>
+        const dateStr = p.created_at ? new Date(p.created_at).toLocaleDateString() : '–';
+        const card = document.createElement('div');
+        card.className = 'user-card';
+        card.innerHTML = `
+          <div>
+            <div class="user-card-hdr">
+              <div>
+                <div class="user-email">${p.email}</div>
+                <div class="user-meta">Name: ${p.name || 'No Name'} &middot; Phone: ${p.phone || '–'} &middot; Signed up: ${dateStr}</div>
               </div>
-              <div style="margin-top: 6px; display: flex; align-items: center;">
-                ${badgeHtml}
-                ${orgHtml}
-              </div>
+              ${hasReq ? `<div class="req-badge">🔔 Requested</div>` : ''}
             </div>
-            <div class="actions">
-              <button class="btn-sm" style="background:#1a56db;color:#fff;margin-right:4px;cursor:pointer" onclick="showUserHistory('${p.email}')">History</button>
-              ${actionButtons}
-            </div>
+            <input type="text" class="org-input" placeholder="Organization / School" value="${p.organization || ''}" onchange="updateOrg('${p.id}', this.value)">
+          </div>
+          <div class="access-rows">
+            ${accessRowsHtml}
           </div>
         `;
-      }).join('');
+        grid.appendChild(card);
+      });
     }
 
-    // ── Approve / Revoke ────────────────────────────
-    async function setAccess(userId, value) {
-      const { error } = await supabaseClient
-        .from('profiles')
-        .update({ has_access: value })
-        .eq('id', userId);
+    function renderRow(userId, label, isGranted, isReq, fieldName, reqFieldName) {
+      let statusBadge = '';
+      let btnHtml = '';
 
-      if (error) {
-        alert('Update failed: ' + error.message);
-        return;
+      if (isGranted) {
+        statusBadge = `<span style="background:rgba(52,211,153,0.15); color:#34d399; padding:2px 8px; border-radius:10px; font-size:0.75rem; font-weight:700; margin-left:8px; border:1px solid rgba(52,211,153,0.3); display:inline-flex; align-items:center; gap:4px;">✓ APPROVED</span>`;
+        btnHtml = `
+          <button class="btn-accept" style="background:#059669; color:#fff; cursor:default; opacity:0.95; border:1px solid #34d399; font-weight:600;" disabled>✓ Approved</button>
+          <button class="btn-reject" style="background:rgba(248,113,113,0.15); color:#f87171; border:1px solid rgba(248,113,113,0.3); font-weight:500;" onclick="toggleAccess('${userId}', '${fieldName}', '${reqFieldName}', false)">✕ Revoke Access</button>
+        `;
+      } else if (isReq) {
+        statusBadge = `<span style="background:rgba(251,191,36,0.15); color:#fbbf24; padding:2px 8px; border-radius:10px; font-size:0.75rem; font-weight:700; margin-left:8px; border:1px solid rgba(251,191,36,0.3); display:inline-flex; align-items:center; gap:4px;">⏳ PENDING REQUEST</span>`;
+        btnHtml = `
+          <button class="btn-accept" style="background:linear-gradient(135deg, #10b981, #059669); color:#fff; font-weight:700; box-shadow:0 2px 8px rgba(16,185,129,0.4); border:1px solid #34d399;" onclick="toggleAccess('${userId}', '${fieldName}', '${reqFieldName}', true)">✓ Approve Access</button>
+          <button class="btn-reject" style="background:rgba(255,255,255,0.05); color:rgba(255,255,255,0.5); border:1px solid rgba(255,255,255,0.1); font-weight:500;" onclick="toggleAccess('${userId}', '${fieldName}', '${reqFieldName}', false)">✕ Reject</button>
+        `;
+      } else {
+        statusBadge = `<span style="background:rgba(248,113,113,0.15); color:#f87171; padding:2px 8px; border-radius:10px; font-size:0.75rem; font-weight:700; margin-left:8px; border:1px solid rgba(248,113,113,0.3); display:inline-flex; align-items:center; gap:4px;">✕ NOT APPROVED</span>`;
+        btnHtml = `
+          <button class="btn-accept" style="background:rgba(16,185,129,0.15); color:#34d399; border:1px solid rgba(16,185,129,0.3); font-weight:600;" onclick="toggleAccess('${userId}', '${fieldName}', '${reqFieldName}', true)">✓ Grant Access</button>
+          <button class="btn-reject" style="background:rgba(248,113,113,0.2); color:#f87171; cursor:default; opacity:0.8; border:1px solid rgba(248,113,113,0.4); font-weight:600;" disabled>✕ Locked</button>
+        `;
       }
 
-      const p = allProfiles.find(x => x.id === userId);
-      if (p) p.has_access = value;
+      return `
+        <div class="access-row">
+          <div class="access-lbl">
+            <span class="status-dot ${isGranted ? 'unlocked' : 'locked'}"></span>
+            <span style="font-weight:600;">${label}</span>
+            ${statusBadge}
+          </div>
+          <div class="btn-group">
+            ${btnHtml}
+          </div>
+        </div>
+      `;
+    }
+
+    async function toggleAccess(userId, fieldName, reqFieldName, grantValue) {
+      const updateObj = {};
+      updateObj[fieldName] = grantValue;
+      if (reqFieldName) updateObj[reqFieldName] = false; // Clear request flag on accept/reject
+
+      try {
+        await client.from('profiles').update(updateObj).eq('id', userId);
+        const p = allProfiles.find(x => x.id === userId);
+        if (p) {
+          p[fieldName] = grantValue;
+          if (reqFieldName) p[reqFieldName] = false;
+        }
+        updateStats();
+        renderUsers();
+      } catch (err) {
+        alert(`❌ Failed to update access: ${err.message}`);
+      }
+    }
+
+    async function acceptAllPending() {
+      if (!confirm(`Are you sure you want to Accept & Grant all pending access requests for ${currentPortal.toUpperCase()}?`)) return;
+      
+      let count = 0;
+      for (const p of allProfiles) {
+        const updateObj = {};
+        let needsUpdate = false;
+
+        if (currentPortal === 'ssat') {
+          if (p.ssat_upper_access_requested || !p.has_ssat_upper_access) { updateObj.has_ssat_upper_access = true; updateObj.ssat_upper_access_requested = false; needsUpdate = true; }
+          if (p.ssat_middle_access_requested || !p.has_ssat_middle_access) { updateObj.has_ssat_middle_access = true; updateObj.ssat_middle_access_requested = false; needsUpdate = true; }
+          if (p.ssat_low_access_requested || !p.has_ssat_low_access) { updateObj.has_ssat_low_access = true; updateObj.ssat_low_access_requested = false; needsUpdate = true; }
+        } else if (currentPortal === 'mock') {
+          if (p.sat_access_requested || !p.has_access) { updateObj.has_access = true; updateObj.sat_access_requested = false; needsUpdate = true; }
+        } else if (currentPortal === 'topic') {
+          if (p.topic_access_requested || !p.has_topic_reading_access || !p.has_topic_math_access || !p.has_topic_class_test_access) {
+            updateObj.has_topic_reading_access = true; updateObj.has_topic_math_access = true; updateObj.has_topic_class_test_access = true; updateObj.topic_access_requested = false; needsUpdate = true;
+          }
+        } else if (currentPortal === 'tmua') {
+          if (p.tmua_access_requested || !p.has_tmua_diag_access || !p.has_tmua_topic_access) {
+            updateObj.has_tmua_diag_access = true; updateObj.has_tmua_topic_access = true; updateObj.tmua_access_requested = false; needsUpdate = true;
+          }
+        } else if (currentPortal === 'ucat') {
+          if (p.ucat_access_requested || !p.has_ucat_access) { updateObj.has_ucat_access = true; updateObj.ucat_access_requested = false; needsUpdate = true; }
+        } else if (currentPortal === 'act') {
+          if (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested || !p.has_act_diag_access || !p.has_act_topic_access) {
+            updateObj.has_act_diag_access = true; updateObj.has_act_topic_access = true; updateObj.has_act_access = true;
+            updateObj.act_diag_access_requested = false; updateObj.act_topic_access_requested = false; updateObj.act_access_requested = false; needsUpdate = true;
+          }
+        } else if (currentPortal === 'ap') {
+          if (p.ap_access_requested || !p.has_ap_access) { updateObj.has_ap_access = true; updateObj.ap_access_requested = false; needsUpdate = true; }
+        }
+
+        if (needsUpdate) {
+          await client.from('profiles').update(updateObj).eq('id', p.id);
+          Object.assign(p, updateObj);
+          count++;
+        }
+      }
+
+      alert(`✅ Successfully granted access to ${count} student accounts!`);
       updateStats();
-      renderList();
+      renderUsers();
     }
 
-    // ── Update organization ──────────────────────────
     async function updateOrg(userId, value) {
-      const { error } = await supabaseClient
-        .from('profiles')
-        .update({ organization: value })
-        .eq('id', userId);
-
-      if (error) {
-        alert('Update failed: ' + error.message);
-        return;
-      }
-
+      await client.from('profiles').update({ organization: value }).eq('id', userId);
       const p = allProfiles.find(x => x.id === userId);
       if (p) p.organization = value;
     }
 
-    // ── Admin Dashboard Student History popup helpers ──
-    let activeUserHistory = [];
+    function renderReports() {
+      const query = (document.getElementById('search-reports').value || '').toLowerCase().trim();
+      const list = allReports[currentPortal] || [];
+      const container = document.getElementById('reports-list');
+      container.innerHTML = '';
 
-    async function showUserHistory(email) {
-      document.getElementById('historyModalTitle').textContent = `History: ${email}`;
-      document.getElementById('historyModalContent').innerHTML = `<div style="text-align: center; padding: 20px; color: rgba(255,255,255,0.6);">Loading test history...</div>`;
-      document.getElementById('userHistoryModal').style.display = 'block';
-      document.body.style.overflow = 'hidden';
+      const grouped = {};
+      list.forEach(r => {
+        const email = (r.student_email || r.email || 'anonymous@student.com').toLowerCase().trim();
+        const title = (r.exam_title || r.exam_name || r.topic || '').toLowerCase();
+        if (query && !email.includes(query) && !title.includes(query)) return;
+        if (!grouped[email]) grouped[email] = [];
+        grouped[email].push(r);
+      });
 
-      const student = allProfiles.find(s => s.email.toLowerCase() === email.toLowerCase());
-      if (student) {
-        activeUserHistory = student.results || [];
-        renderHistoryModalList(email);
-      } else {
-        document.getElementById('historyModalContent').innerHTML = `<div style="text-align: center; padding: 20px; color: #f87171;">Student data not found.</div>`;
-      }
-    }
+      window._currentGroupedReports = grouped;
+      const emails = Object.keys(grouped);
 
-    function closeUserHistoryModal() {
-      document.getElementById('userHistoryModal').style.display = 'none';
-      document.body.style.overflow = '';
-    }
-
-    function renderHistoryModalList(email) {
-      const container = document.getElementById('historyModalContent');
-      if (activeUserHistory.length === 0) {
-        container.innerHTML = `<div style="text-align: center; padding: 20px; color: rgba(255,255,255,0.5);">This student has not completed any tests yet.</div>`;
+      if (emails.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted);">No completed test reports found for ${currentPortal.toUpperCase()}.</div>`;
         return;
       }
 
-      let headerHTML = '';
-      const practiceExams = activeUserHistory.filter(r => r._type === 'practice');
-      if (practiceExams.length >= 2) {
-        headerHTML = `<div style="text-align: right; margin-bottom: 15px;">
-          <button class="btn" style="display: inline-block; width: auto; background: #059669; font-size: 0.85rem; padding: 6px 14px;" onclick="downloadAdminCombinedReport('${email}')">Download Combined Report (PDF)</button>
-        </div>`;
-      }
+      emails.forEach(email => {
+        const tests = grouped[email];
+        const totalTests = tests.length;
+        const avgPct = Math.round(tests.reduce((s, t) => {
+          let p = t.percentage || t.pct || (t.correct_count !== undefined && t.total_questions ? Math.round((t.correct_count / t.total_questions) * 100) : 0);
+          return s + p;
+        }, 0) / totalTests);
+        
+        const avgScaled = Math.round(tests.reduce((s, t) => s + Number(t.scaled_score || t.composite_score || t.scaled || 0), 0) / totalTests) || '–';
+        const safeEmail = email.replace(/[^a-zA-Z0-9]/g, '_');
+        const studentName = tests[0].student_name || tests[0].name || 'Verified Student';
 
-      const listHTML = activeUserHistory.map((row, idx) => {
-        const isTopic = row._type === 'topic';
-        const dateStr = new Date(row._date).toLocaleDateString('en-IN', {
-          day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'
-        });
-
-        let scoreDisplay;
-        if (isTopic) {
-          scoreDisplay = `<span style="font-size:1.2rem;font-weight:700;color:#34d399">${row.pct || row.percentage || 0}%</span>
-                     <span style="font-size:0.78rem;color:rgba(255,255,255,0.4)"> Accuracy</span>`;
-        } else if (row._type === 'act') {
-          scoreDisplay = `<span style="font-size:1.2rem;font-weight:700;color:#34d399">${row.composite_score || '—'}</span>
-                     <span style="font-size:0.78rem;color:rgba(255,255,255,0.4)">/ 36 (ACT)</span>`;
-        } else {
-          scoreDisplay = row.sat_score
-            ? `<span style="font-size:1.2rem;font-weight:700;color:#34d399">${row.sat_score}</span>
-               <span style="font-size:0.78rem;color:rgba(255,255,255,0.4)">/ 1600 (SAT)</span>`
-            : `<span style="font-size:1.2rem;font-weight:700;color:#34d399">${row.rw_score || '—'}</span>
-               <span style="font-size:0.78rem;color:rgba(255,255,255,0.4)"> (R&W)</span>`;
-        }
-
-    const badgeHtml = isTopic
-      ? `<span style="display:inline-block; margin-left: 8px; padding: 2px 6px; font-size: 0.65rem; border-radius: 4px; background: rgba(96, 165, 250, 0.2); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3);">Topic Test</span>`
-      : `<span style="display:inline-block; margin-left: 8px; padding: 2px 6px; font-size: 0.65rem; border-radius: 4px; background: rgba(52, 211, 153, 0.2); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.3);">Practice Exam</span>`;
-
-    const titleStr = isTopic ? (row.topic || 'Topic Test') : (row.exam_name || 'Digital SAT Practice');
-
-    let actionBtns = `<button class="btn" style="width: auto; margin: 0; padding: 5px 10px; font-size: 0.78rem;" onclick="viewAdminReportDetails(${idx})">View Review</button>
-                          <button class="btn" style="width: auto; margin: 0; padding: 5px 10px; font-size: 0.78rem; background: none; border: 1px solid rgba(255,255,255,0.2);" onclick="downloadAdminSinglePDF(${idx})">PDF</button>`;
-
-    return `
-          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 12px; padding: 14px; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
-            <div>
-              <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">${titleStr} ${badgeHtml}</div>
-              <div style="font-size: 0.75rem; color: rgba(255,255,255,0.4); margin-top: 2px;">Date: ${dateStr}</div>
-              <div style="margin-top: 4px; font-size: 0.75rem; color: rgba(255,255,255,0.6);">
-                <span>Grade: ${row.grade || '—'}</span> &middot; <span>Accuracy: ${row.percentage || row.pct || 0}%</span>
-              </div>
+        const card = document.createElement('div');
+        card.className = 'student-report-card';
+        card.innerHTML = `
+          <div class="src-header" onclick="toggleReportCard('${safeEmail}')">
+            <div class="src-info">
+              <div class="src-email">${email}</div>
+              <div class="src-meta">👤 ${studentName} &middot; Portal: ${currentPortal.toUpperCase()}</div>
             </div>
-            <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-              <div style="text-align: right;">
-                <div style="font-size: 0.68rem; color: rgba(255,255,255,0.4); text-transform: uppercase;">Score</div>
-                <div>${scoreDisplay}</div>
-              </div>
-              <div style="display: flex; gap: 6px; align-items: center;">
-                ${actionBtns}
-              </div>
+            <div class="src-stats">
+              <div class="src-stat"><div class="ss-num">${totalTests}</div><div class="ss-lbl">Tests</div></div>
+              <div class="src-stat"><div class="ss-num" style="color:#34d399">${avgPct}%</div><div class="ss-lbl">Avg %</div></div>
+              <div class="src-stat"><div class="ss-num" style="color:#60a5fa">${avgScaled}</div><div class="ss-lbl">Scaled/Comp</div></div>
+              <div class="src-toggle" id="toggle-${safeEmail}">▼</div>
             </div>
           </div>
+          <div class="src-body" id="body-${safeEmail}">
+            <h4 style="margin-bottom:14px; font-size:0.95rem; color:#9f67ff; font-family:var(--font-brand);">Completed ${currentPortal.toUpperCase()} Tests Breakdown</h4>
+            <table class="src-table">
+              <thead>
+                <tr>
+                  <th>Exam Name</th>
+                  <th>Level / Type</th>
+                  <th>Date</th>
+                  <th>Score % (Correct/Total)</th>
+                  <th>Scaled / Composite</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${tests.map((t, idx) => {
+                  const title = t.exam_title || t.exam_name || t.topic || 'Practice Test';
+                  const dateStr = (t.submit_time || t.submitted_at) ? new Date(t.submit_time || t.submitted_at).toLocaleDateString() : '–';
+                  const correct = t.correct_count !== undefined ? t.correct_count : (t.correct || 0);
+                  const total = t.total_questions !== undefined ? t.total_questions : (t.total || 0);
+                  const pct = t.percentage || t.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
+                  const scaled = t.scaled_score || t.composite_score || t.scaled || '–';
+                  const level = t.level || t.test_type || 'Standard';
+                  return `
+                    <tr onclick="openReportModal('${email}', ${idx})" title="Click to view full report & question review">
+                      <td style="font-weight:700; color:#fff;">${title}</td>
+                      <td><span style="color:#a78bfa;">${level}</span></td>
+                      <td style="color:var(--text-muted);">${dateStr}</td>
+                      <td style="color:#34d399; font-weight:700;">${pct}% (${correct}/${total})</td>
+                      <td style="color:#60a5fa; font-weight:700;">${scaled}</td>
+                    </tr>
+                  `;
+                }).join('')}
+              </tbody>
+            </table>
+          </div>
         `;
-      }).join('');
-
-    container.innerHTML = headerHTML + listHTML;
-    }
-
-    // ── Reconstruct Result Object from row ──────────
-
-    function reconstructResult(row) {
-      if (row._type === 'act') {
-        const details = (row.student_answers || []).map(ans => {
-          const origQ = (typeof ACT_QUESTIONS1 !== 'undefined'
-            ? ACT_QUESTIONS1.find(q => q.id === ans.question_id)
-            : null) || {};
-          return {
-            ...origQ,
-            id: ans.question_id,
-            section: ans.section,
-            topic: ans.topic,
-            status: ans.status,
-            chosen: ans.chosen_option !== null && ans.chosen_option !== undefined
-              ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined,
-            answer: ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
-          };
-        });
-        return {
-          student: { name: row.student_name, email: row.student_email, phone: row.student_phone },
-          examName: row.exam_name || 'ACT Practice Test 1',
-          correct: row.correct, wrong: row.wrong, unattempted: row.skipped,
-          total: row.total, pct: row.percentage, grade: row.grade,
-          composite: row.composite_score,
-          sectionScores: {
-            english: row.english_score, math: row.math_score,
-            reading: row.reading_score, science: row.science_score
-          },
-          scaled: row.composite_score, rwScore: null, mathScore: null,
-          details, submitTime: row.submitted_at,
-          topicAnalysis: Object.entries(row.topic_scores || {}).map(([key, t]) => ({
-            key, section: t.section, name: t.topic,
-            total: t.total, correct: t.correct, wrong: t.wrong, acc: t.accuracy
-          }))
-        };
-      }
-
-      if (row._type === 'topic') {
-        let details = [];
-        try {
-          const parsed = JSON.parse(row.details_json || '[]');
-          details = parsed.map(q => ({
-            id: q.id, topic: row.topic,
-            text: 'Question text not available for topic tests.',
-            options: ['Option A', 'Option B', 'Option C', 'Option D'],
-            status: q.status,
-            chosen: q.chosen !== undefined ? q.chosen : (q.status === 'correct' ? q.answer : null),
-            answer: q.answer
-          }));
-        } catch (e) { console.error('Error parsing topic details', e); }
-        return {
-          student: { name: row.name, email: row.email, phone: row.phone },
-          examName: row.topic || 'Topic Test',
-          correct: row.correct, wrong: row.wrong, unattempted: row.unattempted,
-          total: row.total, pct: row.pct || row.percentage, grade: row.grade,
-          scaled: null, rwScore: null, mathScore: null,
-          details, submitTime: row.submit_time || row.created_at, topicAnalysis: []
-        };
-      }
-
-      // SAT (existing logic)
-      let examQs = [];
-      if (row.exam_name?.includes('Exam 3')) examQs = typeof QUESTIONS3 !== 'undefined' ? QUESTIONS3 : [];
-      else if (row.exam_name?.includes('Exam 2')) examQs = typeof QUESTIONS2 !== 'undefined' ? QUESTIONS2 : [];
-      else examQs = typeof QUESTIONS !== 'undefined' ? QUESTIONS : [];
-
-      const details = (row.student_answers || []).map(ans => {
-        const originalQ = examQs.find(q => q.id === ans.question_id) || {};
-        return {
-          ...originalQ, id: ans.question_id, section: ans.section, topic: ans.topic, status: ans.status,
-          chosen: originalQ.isFillIn ? ans.chosen_option
-            : (ans.chosen_option !== null && ans.chosen_option !== undefined
-              ? ['A', 'B', 'C', 'D'].indexOf(ans.chosen_option) : undefined),
-          answer: originalQ.isFillIn ? undefined : ['A', 'B', 'C', 'D'].indexOf(ans.correct_option)
-        };
+        container.appendChild(card);
       });
-
-      return {
-        student: { name: row.student_name, email: row.student_email, phone: row.student_phone },
-        examName: row.exam_name || 'Digital SAT Practice Exam 1',
-        correct: row.correct, wrong: row.wrong, unattempted: row.skipped,
-        total: row.total, pct: row.percentage, grade: row.grade,
-        scaled: row.sat_score, rwScore: row.rw_score, mathScore: row.math_score,
-        details, submitTime: row.submitted_at,
-        topicAnalysis: Object.entries(row.topic_scores || {}).map(([name, s]) => ({
-          name, total: s.total, correct: s.correct, wrong: s.wrong, acc: s.accuracy
-        }))
-      };
     }
 
-    // ── Actions ─────────────────────────────────────
-    function viewAdminReportDetails(idx) {
-      const row = activeUserHistory[idx];
-      const result = reconstructResult(row);
-      document.getElementById('modalExamTitle').textContent = `${result.student.name} — ${result.examName} Detailed Review`;
-      renderModalReport(result);
-      document.getElementById('reportModal').style.display = 'block';
+    function toggleReportCard(safeEmail) {
+      const body = document.getElementById(`body-${safeEmail}`);
+      const toggle = document.getElementById(`toggle-${safeEmail}`);
+      if (body && body.style.display === 'block') {
+        body.style.display = 'none';
+        if (toggle) toggle.textContent = '▼';
+      } else if (body) {
+        body.style.display = 'block';
+        if (toggle) toggle.textContent = '▲';
+      }
+    }
+
+    let modalChartInst = null;
+    function openReportModal(email, idx) {
+      const t = window._currentGroupedReports?.[email]?.[idx];
+      if (!t) return;
+
+      const title = t.exam_title || t.exam_name || t.topic || 'Test Detail';
+      const dateStr = (t.submit_time || t.submitted_at) ? new Date(t.submit_time || t.submitted_at).toLocaleString() : '–';
+      const correct = t.correct_count !== undefined ? t.correct_count : (t.correct || 0);
+      const wrong = t.wrong !== undefined ? t.wrong : (t.total_questions ? t.total_questions - correct : 0);
+      const skipped = t.unattempted || 0;
+      const total = t.total_questions !== undefined ? t.total_questions : (t.total || (correct + wrong + skipped) || 0);
+      const pct = t.percentage || t.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
+      const scaled = t.scaled_score || t.composite_score || t.scaled || '–';
+      const grade = t.grade || (pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : 'D');
+
+      let details = [];
+      try { details = typeof t.details_json === 'string' ? JSON.parse(t.details_json) : (t.details_json || t.details || []); } catch(e) {}
+      if (details.length === 0 && t.student_answers) {
+        try { details = typeof t.student_answers === 'string' ? JSON.parse(t.student_answers) : t.student_answers; } catch(e) {}
+      }
+
+      const modal = document.getElementById('reportModalContent');
+      modal.innerHTML = `
+        <div class="modal-hdr">
+          <h3>${title}</h3>
+          <button class="modal-close" onclick="closeReportModal()">✕</button>
+        </div>
+        <div style="text-align:center; margin-bottom:12px;">
+          <div style="font-size:0.95rem; font-weight:600; color:rgba(255,255,255,0.6); margin-bottom:4px;">Student: ${email}</div>
+          <div style="font-family:'Syne'; font-size:2.4rem; font-weight:800; color:#a78bfa;">${scaled}</div>
+          <div style="font-size:0.82rem; color:rgba(255,255,255,0.4);">Score · ${dateStr}</div>
+        </div>
+
+        <div class="modal-stats-grid">
+          <div class="modal-stat-box"><div class="num" style="color:#34d399">${correct}</div><div class="lbl">Correct</div></div>
+          <div class="modal-stat-box"><div class="num" style="color:#f87171">${wrong}</div><div class="lbl">Wrong</div></div>
+          <div class="modal-stat-box"><div class="num" style="color:#fbbf24">${skipped}</div><div class="lbl">Skipped</div></div>
+          <div class="modal-stat-box"><div class="num" style="color:#60a5fa">${total}</div><div class="lbl">Total Qs</div></div>
+          <div class="modal-stat-box"><div class="num" style="color:#a78bfa">${pct}%</div><div class="lbl">Score %</div></div>
+          <div class="modal-stat-box"><div class="num" style="color:#34d399">${grade}</div><div class="lbl">Grade</div></div>
+        </div>
+
+        <div style="max-width:320px; margin:24px auto;"><canvas id="modalPieChart" height="200"></canvas></div>
+
+        <h4 style="color:#fff; font-family:var(--font-brand); margin:24px 0 16px; font-size:1.1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:8px;">
+          📋 Detailed Question Review (${details.length || total} questions)
+        </h4>
+
+        <div id="modalQuestionsContainer">
+          ${details && details.length > 0 ? details.map((d, i) => {
+            const qText = d.question || d.text || d.prompt || '';
+            const hasText = !!qText;
+            const status = d.status || (d.chosen === d.answer ? 'correct' : (d.chosen !== undefined && d.chosen !== 'None' ? 'wrong' : 'unattempted'));
+            const statusClass = status === 'correct' ? 'q-status-correct' : status === 'wrong' ? 'q-status-wrong' : 'q-status-skipped';
+            const statusText = status === 'correct' ? '✅ Correct' : status === 'wrong' ? '❌ Wrong' : '⏭ Skipped';
+            const exp = d.explanation || d.solution || 'No detailed explanation available for this question.';
+            const LETTERS = ['A', 'B', 'C', 'D', 'E'];
+
+            return `
+              <div class="q-review-card">
+                <div class="q-review-hdr">
+                  <span style="font-weight:700; font-size:0.95rem; color:#fff;">Question ${d.id || (i+1)}</span>
+                  <span class="q-status-badge ${statusClass}">${statusText}</span>
+                </div>
+                
+                ${hasText ? `<div class="q-text">${qText}</div>` : `<div class="q-text" style="opacity:0.6;">Question text not available for this topic.</div>`}
+
+                ${d.options && d.options.length > 0 ? `
+                  <div class="q-opt-list">
+                    ${d.options.map((opt, oIdx) => {
+                      const isAns = (oIdx === d.answer || opt === d.answer || LETTERS[oIdx] === d.answer);
+                      const isChosen = (oIdx === d.chosen || opt === d.chosen || LETTERS[oIdx] === d.chosen);
+                      let cls = '';
+                      let badge = '';
+                      if (isAns) { cls = 'correct-ans'; badge = ' <span style="margin-left:auto; font-weight:700; color:#10b981;">✓ Correct</span>'; }
+                      else if (isChosen && status === 'wrong') { cls = 'wrong-chosen'; badge = ' <span style="margin-left:auto; font-weight:700; color:#ef4444;">✗ Student Choice</span>'; }
+                      return `<div class="q-opt ${cls}"><span><strong>${LETTERS[oIdx] || ''}.</strong> ${opt}</span>${badge}</div>`;
+                    }).join('')}
+                  </div>
+                ` : `
+                  <div style="font-size:0.9rem; margin-bottom:12px; color:#cbd5e1;">
+                    ${status === 'wrong' ? `Student Answer: <strong style="color:#ef4444;">${d.chosen || 'None'}</strong> &middot; Correct: <strong style="color:#10b981;">${d.answer || '–'}</strong>` : `Correct Answer: <strong style="color:#10b981;">${d.answer || '–'}</strong>`}
+                  </div>
+                `}
+
+                <div class="q-exp">
+                  <strong style="color:#60a5fa; display:block; margin-bottom:4px;">💡 Explanation:</strong>
+                  ${exp}
+                </div>
+              </div>
+            `;
+          }).join('') : `<div style="text-align:center; padding:30px; color:var(--text-muted);">No detailed question breakdown available for this test submission.</div>`}
+        </div>
+      `;
+
+      document.getElementById('reportModalOverlay').classList.add('open');
+
+      if (modalChartInst) modalChartInst.destroy();
+      const ctx = document.getElementById('modalPieChart').getContext('2d');
+      modalChartInst = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Correct', 'Wrong', 'Skipped'],
+          datasets: [{
+            data: [correct, wrong, skipped],
+            backgroundColor: ['#10b981', '#ef4444', '#f59e0b'],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: 'bottom', labels: { color: '#cbd5e1', font: { size: 12 } } } },
+          cutout: '65%'
+        }
+      });
     }
 
     function closeReportModal() {
-      document.getElementById('reportModal').style.display = 'none';
-    }
-
-    function filterAdminModalQs(status, btn) {
-      // Update button styles
-      const btns = btn.parentElement.querySelectorAll('button');
-      btns.forEach(b => {
-        b.style.background = 'rgba(255,255,255,0.1)';
-        b.style.border = '1px solid rgba(255,255,255,0.2)';
-      });
-      btn.style.background = '#1a56db';
-      btn.style.border = 'none';
-
-      // Filter cards
-      const cards = document.querySelectorAll('.modal-q-card');
-      cards.forEach(card => {
-        if (status === 'all' || card.getAttribute('data-status') === status) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-
-
-    function downloadAdminSinglePDF(idx) {
-      const row = activeUserHistory[idx];
-      const result = reconstructResult(row);
-      if (row._type === 'act') {
-        if (typeof generateACTPDFReport === 'function') {
-          generateACTPDFReport(result, true);
-        } else { alert('ACT PDF generator not loaded.'); }
-      } else {
-        if (typeof generatePDFReport === 'function') {
-          generatePDFReport(result, true);
-        } else { alert('PDF generator not loaded.'); }
-      }
-    }
-    function downloadAdminCombinedReport(email) {
-      const practiceExams = activeUserHistory.filter(r => r._type === 'practice');
-      if (practiceExams.length < 2) return;
-      const resultsList = practiceExams.map(row => reconstructResult(row));
-      const studentInfo = {
-        name: practiceExams[0]._name,
-        email: practiceExams[0]._email,
-        phone: practiceExams[0].student_phone || ''
-      };
-      if (typeof generateCombinedPDF === 'function') {
-        generateCombinedPDF(resultsList, studentInfo);
-      } else {
-        alert('Combined PDF Generation helper not loaded.');
-      }
-    }
-
-    // ── Render Complete Questions inside modal ──────
-    function renderModalReport(result) {
-      const LETTERS = ['A', 'B', 'C', 'D'];
-      const { correct, wrong, unattempted, total, pct, scaled, rwScore, mathScore, details, composite, sectionScores, examName } = result;
-      const scoreColor = pct >= 70 ? '#34d399' : pct >= 50 ? '#fbbf24' : '#f87171';
-      const isACT = (examName || '').toUpperCase().includes('ACT');
-
-      let scoreHTML = '';
-      if (isACT) {
-        scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${composite || scaled || '—'}</div>
-                     <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">ACT Composite Score &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
-      } else if (scaled) {
-        scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${scaled}</div>
-                     <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">SAT Score Estimate &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
-      } else {
-        scoreHTML = `<div style="font-size: 3.5rem; font-weight: 800; color: ${scoreColor}; font-family: 'Syne', sans-serif; line-height: 1;">${rwScore || '—'}</div>
-                     <div style="font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 4px;">Reading & Writing Score &middot; ${correct} / ${total} Correct (${pct}%)</div>`;
-      }
-
-      let breakDownHTML = '';
-      if (isACT && sectionScores) {
-         breakDownHTML = `
-            <div><strong>English:</strong> ${sectionScores.english || '—'}</div>
-            <div><strong>Math:</strong> ${sectionScores.math || '—'}</div>
-            <div><strong>Reading:</strong> ${sectionScores.reading || '—'}</div>
-            <div><strong>Science:</strong> ${sectionScores.science || '—'}</div>
-            <div><strong>Correct:</strong> ${correct}</div>
-            <div><strong>Wrong:</strong> ${wrong}</div>
-            <div><strong>Skipped:</strong> ${unattempted}</div>
-         `;
-      } else {
-         breakDownHTML = `
-            <div><strong>R&W Score:</strong> ${rwScore || '—'}</div>
-            <div><strong>Math Score:</strong> ${mathScore || '—'}</div>
-            <div><strong>Correct:</strong> ${correct}</div>
-            <div><strong>Wrong:</strong> ${wrong}</div>
-            <div><strong>Skipped:</strong> ${unattempted}</div>
-         `;
-      }
-
-      let html = `
-        <div style="text-align: center; margin-bottom: 30px; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          ${scoreHTML}
-          <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap;">
-            ${breakDownHTML}
-          </div>
-        </div>
-        
-        <div style="margin-bottom: 24px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
-            <h3 style="font-family: 'Syne', sans-serif; font-size: 1.25rem; color: #60a5fa; margin: 0;">📝 Complete Questions &amp; Answers Review</h3>
-            <div style="display: flex; gap: 8px;">
-              <button class="btn-sm" style="background:#1a56db;color:#fff;border:none;padding:6px 12px;" onclick="filterAdminModalQs('all', this)">All</button>
-              <button class="btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;" onclick="filterAdminModalQs('correct', this)">Correct</button>
-              <button class="btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;" onclick="filterAdminModalQs('wrong', this)">Wrong</button>
-              <button class="btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:6px 12px;" onclick="filterAdminModalQs('unattempted', this)">Skipped</button>
-            </div>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 16px;">
-            ${details.map(qObj => {
-        const cleanedText = (qObj.text || '').replace(/\n/g, '<br>');
-        return `
-                <div class="modal-q-card" data-status="${qObj.status}" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 18px; font-size: 0.9rem; text-align: left;">
-                  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
-                    <span style="font-weight: 600; color: #93c5fd;">Q${qObj.id} [${qObj.topic || ''}]</span>
-                    <span style="font-size: 0.78rem; background: rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 6px; color: rgba(255,255,255,0.6); text-transform: uppercase;">${qObj.section === 'rw' ? 'R&W' : (qObj.section === 'math' ? 'Math' : qObj.section)}</span>
-                  </div>
-                  <div style="margin-bottom: 12px; line-height: 1.6; color: rgba(255,255,255,0.9);">${cleanedText}</div>
-                  
-                  ${qObj.image ? `<div style="margin-bottom:12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 10px; text-align: center;">
-                    <img src="${qObj.image}" style="max-width: 100%; max-height: 250px; border-radius: 4px;">
-                  </div>` : ''}
-
-                  <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
-                    ${qObj.status === 'unattempted'
-            ? `<div style="color: #fbbf24; font-weight: 500;">➖ Your answer: Skipped</div>
-                         <div style="color: #34d399; font-weight: 500;">✅ Correct: ${qObj.isFillIn ? qObj.fillAnswer : `(${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}`}</div>`
-            : qObj.status === 'correct'
-              ? `<div style="color: #34d399; font-weight: 500;">✅ Your answer: ${qObj.isFillIn ? qObj.chosen : `(${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}`} (Correct)</div>`
-              : `<div style="color: #f87171; font-weight: 500;">❌ Your answer: ${qObj.isFillIn ? (qObj.chosen || 'None') : `(${LETTERS[qObj.chosen]}) ${qObj.options ? qObj.options[qObj.chosen] : ''}`}</div>
-                           <div style="color: #34d399; font-weight: 500;">✅ Correct: ${qObj.isFillIn ? qObj.fillAnswer : `(${LETTERS[qObj.answer]}) ${qObj.options ? qObj.options[qObj.answer] : ''}`}</div>`
-          }
-                  </div>
-                </div>
-              `;
-      }).join('')}
-          </div>
-        </div>
-      `;
-      document.getElementById('modalReportContent').innerHTML = html;
+      document.getElementById('reportModalOverlay').classList.remove('open');
     }
   </script>
 </body>
-
 </html>

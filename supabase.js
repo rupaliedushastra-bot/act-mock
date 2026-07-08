@@ -215,6 +215,8 @@ async function saveACTResult(result) {
 
         // Exam info
         exam_name: result.examName || 'ACT Practice Test 1',
+        level: result.level || 'Diagnostic',
+        test_type: result.level || 'Diagnostic',
 
         // Composite + section scores
         composite_score: result.composite || null,
@@ -229,12 +231,15 @@ async function saveACTResult(result) {
         correct: result.correct,
         wrong: result.wrong,
         skipped: result.unattempted,
+        unattempted: result.unattempted,
         total: result.total,
 
         // JSON columns
         topic_scores: topicScores,
+        section_scores: topicScores,
         weak_topics: weakTopics,
         student_answers: studentAnswers,
+        details: studentAnswers,
 
         // Timestamps
         submitted_at: result.submitTime,

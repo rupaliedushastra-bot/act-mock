@@ -57,12 +57,14 @@ function generateACTPDFReport(result, shouldSave = true) {
     txt('ACT Composite Score', M + 16, y + 26, 7, false, [200, 255, 220]);
     // Section scores on right
     const secData = [
-        ['English', result.sectionScores.english, [93, 197, 253]],
-        ['Math', result.sectionScores.math, [110, 231, 183]],
-        ['Reading', result.sectionScores.reading, [196, 181, 253]],
-        ['Science', result.sectionScores.science, [253, 230, 138]],
+        ['English', result.sectionScores?.english || '-', [93, 197, 253]],
+        ['Math', result.sectionScores?.math || '-', [110, 231, 183]],
+        ['Reading', result.sectionScores?.reading || '-', [196, 181, 253]],
     ];
-    const secBoxW = (W - 2 * M - 55) / 4;
+    if (result.sectionScores?.science !== undefined) {
+        secData.push(['Science', result.sectionScores.science, [253, 230, 138]]);
+    }
+    const secBoxW = (W - 2 * M - 55) / secData.length;
     secData.forEach(([name, score, [r, g, b]], i) => {
         const sx = M + 52 + i * (secBoxW + 2);
         doc.setFillColor(0, 0, 0, 0.3);
