@@ -387,8 +387,27 @@
         }
 
         @media(max-width:768px) {
+            .test-hdr {
+                height: auto;
+                min-height: 56px;
+                padding: 10px 12px;
+                flex-wrap: wrap;
+                gap: 8px;
+                justify-content: space-between;
+            }
+            .hdr-section-info {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                border-top: 1px solid rgba(255,255,255,0.06);
+                padding-top: 6px;
+                margin-top: 2px;
+            }
             .q-area {
                 padding: 20px 16px
+            }
+            .palette-wrap {
+                display: none
             }
         }
 
