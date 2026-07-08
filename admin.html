@@ -927,7 +927,7 @@
         } else if (currentPortal === 'act') {
           if (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested) hasReq = true;
           accessRowsHtml = `
-            ${renderRow(p.id, '🎯 ACT Practice Tests 4-7', p.has_act_diag_access || p.has_act_access, p.act_diag_access_requested || p.act_access_requested, 'has_act_diag_access', 'act_diag_access_requested')}
+            ${renderRow(p.id, '🎯 ACT Practice Tests 4-8', p.has_act_diag_access || p.has_act_access, p.act_diag_access_requested || p.act_access_requested, 'has_act_diag_access', 'act_diag_access_requested')}
             ${renderRow(p.id, '📖 ACT Topic Test', p.has_act_topic_access || p.has_act_access, p.act_topic_access_requested, 'has_act_topic_access', 'act_topic_access_requested')}
           `;
         } else if (currentPortal === 'ap') {
