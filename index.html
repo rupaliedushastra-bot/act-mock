@@ -442,14 +442,9 @@
 
     async function initIndex() {
       const { data: { session } } = await supabaseClient.auth.getSession();
-      const btn1 = document.getElementById('btn-act1');
       const btn2 = document.getElementById('btn-act2');
 
       if (!session) {
-        if (btn1) {
-          btn1.innerHTML = '🔒 Login to Start ACT Practice Test 1 →';
-          btn1.href = 'login.html?redirect=act1.html';
-        }
         if (btn2) {
           btn2.innerHTML = '🔒 Login to Start ACT Practice Test 2 →';
           btn2.href = 'login.html?redirect=act-2/act1.html';
@@ -476,7 +471,6 @@
       };
 
       if (isAdmin) {
-        if (btn1) { btn1.innerHTML = 'Start ACT Test 1 (Admin) →'; btn1.href = 'act1.html'; }
         if (btn2) { btn2.innerHTML = 'Start ACT Test 2 (Admin) →'; btn2.href = 'act-2/act1.html'; }
         return;
       }
@@ -490,16 +484,11 @@
           .single();
 
         if (error || !profile || !profile.has_access) {
-          if (btn1) {
-            btn1.innerHTML = '🔒 Request Access →';
-            btn1.href = 'act1.html';
-          }
           if (btn2) {
             btn2.innerHTML = '🔒 Request Access →';
             btn2.href = 'act-2/act1.html';
           }
         } else {
-          if (btn1) { btn1.innerHTML = 'Start ACT Practice Test 1 →'; btn1.href = 'act1.html'; }
           if (btn2) { btn2.innerHTML = 'Start ACT Practice Test 2 →'; btn2.href = 'act-2/act1.html'; }
         }
       } catch (err) {
