@@ -1,0 +1,71 @@
+================================================================
+  SMTP EMAIL SETUP GUIDE — Digital SAT Practice Portal
+  SmtpJS Library + Any SMTP Server (e.g. Brevo, Gmail, Elastic Email)
+================================================================
+
+Ab portal email send karne ke liye direct SMTP client (SmtpJS) ka 
+use karta hai. Aap Brevo ka SMTP relay ya koi bhi dusra SMTP provider 
+use kar sakte hain.
+
+Follow target steps below:
+
+================================================================
+STEP 1: Apne SMTP Relay Credentials Kaise Nikalein
+================================================================
+
+A. AGAR BREVO SMTP RELAY USE KARNA HAI:
+--------------------------------------
+1. Login to https://app.brevo.com
+2. Top-right click on your name → "SMTP & API"
+3. "SMTP" tab par click karein.
+4. Wahan aapko details milengi:
+   - SMTP Server / Host: smtp-relay.brevo.com
+   - Port: 587
+   - Login / Username: [Aapka login email, e.g. rupali.eduquest@gmail.com]
+5. Wahan "Create a new SMTP key" click karein aur password generate karke copy karein.
+   (⚠️ Safe place par save karein!)
+
+B. AGAR GMAIL SMTP RELAY USE KARNA HAI:
+---------------------------------------
+1. Host: smtp.gmail.com
+2. Port: 587
+3. Username: Aapka Gmail address
+4. Password: App Password (Normal password work nahi karega. Google Account → Security → App Passwords generate karein)
+
+================================================================
+STEP 2: email.js File Update Karein
+================================================================
+
+Workspace mein "email.js" file kholein aur lines 10-18 ko update karein:
+
+const EMAIL_CONFIG = {
+  smtpHost:     'smtp-relay.brevo.com',       // Yahan SMTP host dalo
+  smtpUsername: 'rupali.eduquest@gmail.com',  // Yahan SMTP username dalo
+  smtpPassword: 'YOUR_SMTP_PASSWORD',         // Yahan SMTP key/password paste karein
+  secureToken:  '',                           // (Optional) SmtpJS secure token (agar credentials hide karne hain)
+  
+  adminEmail:  'rupali.eduquest@gmail.com',
+  adminName:   'Rupali – EduQuest',
+  fromEmail:   'rupali.eduquest@gmail.com',   // Verified sender email
+  fromName:    'EduQuest SAT Portal',
+};
+
+================================================================
+STEP 3: (Optional but Recommended) Secure Token Kaise Use Karein
+================================================================
+Agar aap client-side code (email.js) mein username aur password public
+nahi rakhna chahte, toh aap SmtpJS.com se token generate kar sakte hain:
+
+1. Jao: https://smtpjs.com
+2. Home page par settings/encrypt form mein apne SMTP server, username aur password enter karein.
+3. "Generate Token" click karein.
+4. Jo token milega, use `secureToken` field mein dalo aur `smtpUsername`, `smtpPassword` ko blank chhod do.
+
+================================================================
+VERIFY: Test Kaise Karein?
+================================================================
+1. Browser mein "index.html" kholein.
+2. Form submit karein, test submit karein.
+3. DevTools Console (F12) check karein:
+   - Agar email successful raha: "✅ Admin email sent via SMTP successfully to ..."
+   - Agar fail hua: "❌ SMTP send failed: [Error Message]"

@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Practice Dashboard — EduQuest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="supabase.js"></script>
+  <script src="report.js"></script>
+  <script src="act_report1.js"></script>
+  <style>
+    :root {
+      --primary: #7c3aed;
+      --primary-hover: #6d28d9;
+      --bg-dark: #0d0d14;
+      --bg-card: rgba(255, 255, 255, 0.04);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --font-brand: 'Syne', sans-serif;
+      --font-body: 'IBM Plex Sans', sans-serif;
+      --shadow-glow: 0 0 30px rgba(124, 58, 237, 0.2);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Header ─────────────────────────────────────────── */
+    .hdr {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      background: rgba(13, 13, 20, 0.8);
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .brand {
+      font-family: var(--font-brand);
+      font-size: 1.25rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-icon { font-size: 1.5rem; }
+    .brand-pill {
+      background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: 0.72rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .auth-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.88rem;
+    }
+    .user-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+    .btn-logout {
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-logout:hover { background: #ef4444; color: #fff; }
+
+    /* ── Layout ─────────────────────────────────────────── */
+    .dash-wrap {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 30px 24px 80px;
+    }
+    .welcome-card {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(26, 86, 219, 0.15));
+      border: 1px solid rgba(167, 139, 250, 0.2);
+      border-radius: 24px;
+      padding: 32px;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      box-shadow: var(--shadow-glow);
+    }
+    .welcome-text h1 {
+      font-family: var(--font-brand);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #fff;
+    }
+    .welcome-text p { color: var(--text-muted); font-size: 1rem; margin-top: 6px; }
+    .btn-take-exam {
+      background: linear-gradient(135deg, var(--primary), #5b21b6);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-take-exam:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4); }
+
+    /* ── STATS BAR ───────────────────────────────────────── */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 22px;
+      text-align: center;
+    }
+    .stat-val {
+      font-family: var(--font-brand);
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #a78bfa;
+    }
+    .stat-lbl {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+
+    /* ── FILTER TABS ─────────────────────────────────────── */
+    .filter-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 28px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+      flex-wrap: wrap;
+    }
+    .filter-tab {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-family: var(--font-brand);
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.25s;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .filter-tab:hover {
+      background: rgba(255, 255, 255, 0.07);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .filter-tab.active {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.35), rgba(91, 33, 182, 0.25));
+      border-color: var(--primary);
+      color: #fff;
+      box-shadow: var(--shadow-glow);
+    }
+    .filter-tab.access-tab {
+      border-color: rgba(16, 185, 129, 0.4);
+      color: #34d399;
+    }
+    .filter-tab.access-tab.active {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(5, 150, 105, 0.2));
+      border-color: #10b981;
+      color: #fff;
+      box-shadow: 0 0 30px rgba(16, 185, 129, 0.2);
+    }
+
+    /* ── SECTION HEADER & ACTIONS ────────────────────────── */
+    .section-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .section-hdr h2 {
+      font-family: var(--font-brand);
+      font-size: 1.5rem;
+      color: #fff;
+    }
+    .btn-combined-pdf {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-combined-pdf:hover { background: rgba(255, 255, 255, 0.1); border-color: #a78bfa; }
+
+    /* ── HISTORY LIST CARDS ──────────────────────────────── */
+    .history-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .test-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 22px 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.25s;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .test-card:hover {
+      border-color: rgba(167, 139, 250, 0.4);
+      transform: translateX(4px);
+      box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+    }
+    .tc-left { display: flex; align-items: center; gap: 18px; }
+    .tc-icon {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      background: rgba(124, 58, 237, 0.15);
+      border: 1px solid rgba(124, 58, 237, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+    }
+    .tc-info h3 {
+      font-family: var(--font-brand);
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .tc-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .tc-tag {
+      background: rgba(255,255,255,0.06);
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .tc-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .tc-score-box { text-align: right; }
+    .tc-score-val {
+      font-family: var(--font-brand);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #34d399;
+    }
+    .tc-score-lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+    .tc-actions { display: flex; gap: 10px; }
+    .btn-review {
+      background: linear-gradient(135deg, var(--primary), #5b21b6);
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-review:hover { opacity: 0.9; transform: translateY(-1px); }
+    .btn-pdf {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-pdf:hover { background: rgba(255, 255, 255, 0.1); border-color: #60a5fa; color: #60a5fa; }
+
+    /* ── ACCESS PERMISSIONS GRID (EXTRA TAB) ─────────────── */
+    .access-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+    }
+    .access-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      transition: all 0.25s;
+    }
+    .access-card:hover { border-color: rgba(255, 255, 255, 0.2); transform: translateY(-3px); }
+    .ac-hdr { display: flex; align-items: center; gap: 14px; }
+    .ac-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+    .ac-title h3 { font-family: var(--font-brand); font-size: 1.15rem; color: #fff; }
+    .ac-title p { font-size: 0.82rem; color: var(--text-muted); margin-top: 2px; }
+    .ac-status {
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.88rem;
+    }
+    .btn-req-access {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+    }
+    .btn-req-access:hover { opacity: 0.9; transform: translateY(-1px); }
+    .btn-req-access:disabled {
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.4);
+      cursor: default;
+      box-shadow: none;
+      transform: none;
+    }
+
+    /* ── MODAL STYLES ────────────────────────────────────── */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 9999;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-card {
+      background: #13131f;
+      border: 1px solid rgba(167, 139, 250, 0.3);
+      border-radius: 24px;
+      width: 100%;
+      max-width: 880px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 32px;
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    }
+    .modal-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+    .modal-hdr h3 { font-family: var(--font-brand); font-size: 1.4rem; color: #fff; margin: 0; }
+    .modal-close {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .modal-close:hover { background: var(--primary); border-color: transparent; }
+    .modal-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .modal-stat-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      padding: 14px 10px;
+      text-align: center;
+    }
+    .modal-stat-box .num { font-family: var(--font-brand); font-size: 1.4rem; font-weight: 800; }
+    .modal-stat-box .lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-top: 4px; }
+    
+    .q-review-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    .q-review-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 10px;
+    }
+    .q-status-badge { padding: 4px 10px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; }
+    .q-status-correct { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+    .q-status-wrong { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+    .q-status-skipped { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+    
+    .q-text { font-size: 0.95rem; color: #fff; line-height: 1.5; margin-bottom: 14px; }
+    .q-opt-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+    .q-opt {
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.88rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .q-opt.correct-ans { background: rgba(16, 185, 129, 0.15); border-color: #10b981; color: #34d399; font-weight: 600; }
+    .q-opt.wrong-chosen { background: rgba(239, 68, 68, 0.15); border-color: #ef4444; color: #f87171; font-weight: 600; }
+    .q-exp {
+      background: rgba(96, 165, 250, 0.08);
+      border-left: 3px solid #60a5fa;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+    @media(max-width: 768px) {
+      .hdr {
+        height: auto;
+        min-height: 64px;
+        padding: 12px 16px;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+      }
+      .auth-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+      }
+      .user-badge {
+        font-size: 0.78rem;
+        word-break: break-all;
+      }
+      .dash-wrap {
+        padding: 20px 16px;
+      }
+      .welcome-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+      }
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .exams-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <header class="hdr">
+    <a href="index.html" class="brand">
+      <div class="brand-icon">⚡</div>
+      <span>EduQuest</span>
+      <span class="brand-pill">Student Practice Hub</span>
+    </a>
+    <div class="auth-section">
+      <div class="user-badge" id="user-info-badge">
+        <span>👤</span>
+        <span id="user-email-display">Loading...</span>
+      </div>
+      <button class="btn-logout" onclick="studentLogout()">Log Out</button>
+    </div>
+  </header>
+
+  <!-- ── Main Dashboard ─────────────────────────────────── -->
+  <main class="dash-wrap">
+    <!-- Welcome Banner -->
+    <div class="welcome-card">
+      <div class="welcome-text">
+        <h1 id="welcome-title">Welcome Back, Student!</h1>
+        <p>Track your practice exams, review question explanations, and manage your authorization access.</p>
+      </div>
+      <div>
+        <a href="index.html" class="btn-take-exam">🚀 Take New Practice Test</a>
+      </div>
+    </div>
+
+    <!-- Stats Bar (Hidden on Access tab) -->
+    <div class="stats-bar" id="stats-section">
+      <div class="stat-card">
+        <div class="stat-val" id="stat-total-exams">0</div>
+        <div class="stat-lbl">Exams Taken</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-avg-pct" style="color: #34d399;">0%</div>
+        <div class="stat-lbl">Average Score %</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-avg-scaled" style="color: #60a5fa;">–</div>
+        <div class="stat-lbl">Avg Scaled / Composite</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-total-qs" style="color: #f59e0b;">0</div>
+        <div class="stat-lbl">Questions Attempted</div>
+      </div>
+    </div>
+
+    <!-- Filter Tabs (Includes all 8 tabs!) -->
+    <div class="filter-tabs">
+      <div class="filter-tab active" id="tab-all" onclick="setFilter('all')">📊 All Exams</div>
+      <div class="filter-tab" id="tab-act" onclick="setFilter('act')">🎯 ACT</div>
+      <div class="filter-tab" id="tab-sat" onclick="setFilter('sat')">📝 SAT (Mock)</div>
+      <div class="filter-tab" id="tab-topic" onclick="setFilter('topic')">📖 SAT (Topic)</div>
+      <div class="filter-tab" id="tab-ssat" onclick="setFilter('ssat')">🚀 SSAT</div>
+      <div class="filter-tab" id="tab-tmua" onclick="setFilter('tmua')">📐 TMUA</div>
+      <div class="filter-tab" id="tab-ucat" onclick="setFilter('ucat')">🩺 UCAT</div>
+      <div class="filter-tab" id="tab-ap" onclick="setFilter('ap')">🎓 AP</div>
+      <div class="filter-tab access-tab" id="tab-access" onclick="setFilter('access')">⚡ Access Permissions &amp; Requests</div>
+    </div>
+
+    <!-- ── VIEW 1: TEST HISTORY LIST ────────────────────── -->
+    <div id="view-history">
+      <div class="section-hdr">
+        <h2 id="history-title">Completed Practice Exams</h2>
+        <button class="btn-combined-pdf" onclick="generateCombinedPDF()">📄 Download Combined Report (PDF)</button>
+      </div>
+
+      <div id="sub-filter-act" style="display: none; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+        <button class="filter-tab active" id="act-sub-all" onclick="setActSubFilter('all')" style="padding: 8px 16px; font-size: 0.85rem;">All ACT Exams</button>
+        <button class="filter-tab" id="act-sub-diag" onclick="setActSubFilter('diag')" style="padding: 8px 16px; font-size: 0.85rem;">🎯 ACT Practice 4-7</button>
+        <button class="filter-tab" id="act-sub-topic" onclick="setActSubFilter('topic')" style="padding: 8px 16px; font-size: 0.85rem;">📖 ACT Topic</button>
+      </div>
+
+      <div class="history-list" id="history-list">
+        <div style="text-align: center; padding: 50px; color: var(--text-muted);">Loading your test reports...</div>
+      </div>
+    </div>
+
+    <!-- ── VIEW 2: ACCESS PERMISSIONS & REQUESTS (EXTRA TAB) -->
+    <div id="view-access" style="display: none;">
+      <div class="section-hdr">
+        <h2>⚡ Module Access Authorization &amp; Instant Requests</h2>
+      </div>
+      <p style="color: var(--text-muted); margin-bottom: 24px; line-height: 1.6;">
+        Below is your real-time authorization status for all EduQuest test modules. If a module is locked, click <strong style="color:#34d399;">Request Access</strong> to instantly notify your admin for approval.
+      </p>
+
+      <div class="access-grid">
+        <!-- ACT Diagnostic Access -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">🎯</div>
+              <div class="ac-title"><h3>ACT Practice 4-7 Access</h3><p>Full-length practice tests 4 to 7</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-act-diag"><span>Status:</span><span id="status-lbl-act-diag">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-act-diag" onclick="requestAccess('act_diag_access_requested')">Request Practice 4-7 Access</button>
+        </div>
+
+        <!-- ACT Topic Access -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">📖</div>
+              <div class="ac-title"><h3>ACT Topic Access</h3><p>Section-wise &amp; topic practice tests</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-act-topic"><span>Status:</span><span id="status-lbl-act-topic">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-act-topic" onclick="requestAccess('act_topic_access_requested')">Request Topic Access</button>
+        </div>
+
+        <!-- SAT Mock Access -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">📝</div>
+              <div class="ac-title"><h3>SAT Mock Access</h3><p>Digital SAT Practice Exams</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-sat"><span>Status:</span><span id="status-lbl-sat">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-sat" onclick="requestAccess('sat_access_requested')">Request SAT Mock Access</button>
+        </div>
+
+        <!-- SAT Topic Access -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">📖</div>
+              <div class="ac-title"><h3>SAT Topic &amp; Class Tests</h3><p>Reading, Writing &amp; Math topic drills</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-topic"><span>Status:</span><span id="status-lbl-topic">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-topic" onclick="requestAccess('topic_access_requested')">Request Topic Access</button>
+        </div>
+
+        <!-- SSAT Upper Level -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">🚀</div>
+              <div class="ac-title"><h3>SSAT Upper Level</h3><p>Grades 8–11 practice exams</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-ssat-upper"><span>Status:</span><span id="status-lbl-ssat-upper">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-ssat-upper" onclick="requestAccess('ssat_upper_access_requested')">Request Upper Level</button>
+        </div>
+
+        <!-- SSAT Middle Level -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">📘</div>
+              <div class="ac-title"><h3>SSAT Middle Level</h3><p>Grades 5–7 practice exams</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-ssat-middle"><span>Status:</span><span id="status-lbl-ssat-middle">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-ssat-middle" onclick="requestAccess('ssat_middle_access_requested')">Request Middle Level</button>
+        </div>
+
+        <!-- SSAT Elementary Level -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">🟢</div>
+              <div class="ac-title"><h3>SSAT Elementary Level</h3><p>Grades 3–4 practice exams</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-ssat-low"><span>Status:</span><span id="status-lbl-ssat-low">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-ssat-low" onclick="requestAccess('ssat_low_access_requested')">Request Elementary Level</button>
+        </div>
+
+        <!-- TMUA Practice -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">📐</div>
+              <div class="ac-title"><h3>TMUA Practice Access</h3><p>Math university admissions</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-tmua"><span>Status:</span><span id="status-lbl-tmua">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-tmua" onclick="requestAccess('tmua_access_requested')">Request TMUA Access</button>
+        </div>
+
+        <!-- UCAT Practice -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">🩺</div>
+              <div class="ac-title"><h3>UCAT Practice Access</h3><p>Medical clinical aptitude</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-ucat"><span>Status:</span><span id="status-lbl-ucat">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-ucat" onclick="requestAccess('ucat_access_requested')">Request UCAT Access</button>
+        </div>
+
+        <!-- AP Practice -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">🎓</div>
+              <div class="ac-title"><h3>AP Practice Access</h3><p>Advanced Placement exams</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-ap"><span>Status:</span><span id="status-lbl-ap">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-ap" onclick="requestAccess('ap_access_requested')">Request AP Access</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── Test Report Detail Modal ───────────────────────── -->
+  <div class="modal-overlay" id="reportModalOverlay" onclick="if(event.target===this) closeReportModal()">
+    <div class="modal-card" id="reportModalContent">
+      <!-- Dynamic modal content -->
+    </div>
+  </div>
+
+  <script>
+    const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+    let currentUser = null;
+    let userProfile = null;
+    let allExams = [];
+    let currentFilter = 'all';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const { data: { session } } = await client.auth.getSession();
+      if (!session) {
+        window.location.href = 'login.html?redirect=dashboard.html';
+        return;
+      }
+      currentUser = session.user;
+      const email = currentUser.email || 'student@eduquest.com';
+      document.getElementById('user-email-display').textContent = email;
+      
+      const name = currentUser.user_metadata?.name || email.split('@')[0];
+      document.getElementById('welcome-title').textContent = `Welcome Back, ${name.charAt(0).toUpperCase() + name.slice(1)}!`;
+
+      await loadStudentData(email, currentUser.id);
+    });
+
+    async function studentLogout() {
+      await client.auth.signOut();
+      window.location.href = 'login.html';
+    }
+
+    async function loadStudentData(email, userId) {
+      const { data: profile } = await client.from('profiles').select('*').eq('id', userId).single();
+      userProfile = profile || {};
+      const isAdmin = email === 'rupali.eduquest@gmail.com';
+
+      updateAccessCards(isAdmin);
+
+      allExams = [];
+      try {
+        const { data: actR } = await client.from('act_results').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
+        (actR || []).forEach(r => {
+          const isTopic = r.level === 'Topic' || r.test_type === 'Topic' || (r.exam_name || '').toLowerCase().includes('topic');
+          allExams.push({ ...r, _type: 'act', _subType: isTopic ? 'topic' : 'diag', _date: r.submitted_at || r.created_at || r.submit_time });
+        });
+
+        const { data: satR } = await client.from('sat_results').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
+        (satR || []).forEach(r => allExams.push({ ...r, _type: 'sat', _date: r.submitted_at || r.created_at || r.submit_time }));
+
+        const { data: topicR } = await client.from('sat_topic_report').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
+        (topicR || []).forEach(r => allExams.push({ ...r, _type: 'topic', _date: r.submit_time || r.submitted_at }));
+
+        const { data: ssatR } = await client.from('ssat_report').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
+        (ssatR || []).forEach(r => allExams.push({ ...r, _type: 'ssat', _date: r.submit_time || r.submitted_at }));
+
+        const { data: tmuaR } = await client.from('tmua_report').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
+        (tmuaR || []).forEach(r => allExams.push({ ...r, _type: 'tmua', _date: r.submit_time || r.submitted_at }));
+
+        const { data: ucatR } = await client.from('Ucat_diagnosis').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
+        (ucatR || []).forEach(r => allExams.push({ ...r, _type: 'ucat', _date: r.submit_time || r.submitted_at }));
+
+        const { data: apR } = await client.from('ap_report').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
+        (apR || []).forEach(r => allExams.push({ ...r, _type: 'ap', _date: r.submit_time || r.submitted_at }));
+      } catch (e) {
+        console.warn('Note: Error fetching some report tables:', e);
+      }
+
+      allExams.sort((a, b) => new Date(b._date || 0) - new Date(a._date || 0));
+
+      updateStats(allExams);
+      renderHistory();
+    }
+
+    function updateAccessCards(isAdmin) {
+      updateSingleCard('act-diag', userProfile.has_act_diag_access || userProfile.has_act_access || isAdmin, userProfile.act_diag_access_requested || userProfile.act_access_requested);
+      updateSingleCard('act-topic', userProfile.has_act_topic_access || userProfile.has_act_access || isAdmin, userProfile.act_topic_access_requested);
+      updateSingleCard('sat', userProfile.has_access || isAdmin, userProfile.sat_access_requested);
+      updateSingleCard('topic', userProfile.has_topic_reading_access || userProfile.has_topic_math_access || userProfile.has_access || isAdmin, userProfile.topic_access_requested);
+      updateSingleCard('ssat-upper', userProfile.has_ssat_upper_access || userProfile.has_access || isAdmin, userProfile.ssat_upper_access_requested);
+      updateSingleCard('ssat-middle', userProfile.has_ssat_middle_access || userProfile.has_access || isAdmin, userProfile.ssat_middle_access_requested);
+      updateSingleCard('ssat-low', userProfile.has_ssat_low_access || userProfile.has_access || isAdmin, userProfile.ssat_low_access_requested);
+      updateSingleCard('tmua', userProfile.has_tmua_diag_access || userProfile.has_tmua_topic_access || userProfile.has_access || isAdmin, userProfile.tmua_access_requested);
+      updateSingleCard('ucat', userProfile.has_ucat_access || userProfile.has_access || isAdmin, userProfile.ucat_access_requested);
+      updateSingleCard('ap', userProfile.has_ap_access || userProfile.has_access || isAdmin, userProfile.ap_access_requested);
+    }
+
+    function updateSingleCard(id, unlocked, requested) {
+      const lbl = document.getElementById(`status-lbl-${id}`);
+      const btn = document.getElementById(`btn-req-${id}`);
+      if (!lbl || !btn) return;
+
+      if (unlocked) {
+        lbl.textContent = '✅ Unlocked & Approved';
+        lbl.style.color = '#34d399';
+        btn.textContent = '✓ Access Granted';
+        btn.disabled = true;
+      } else if (requested) {
+        lbl.textContent = '⏳ Pending Admin Review';
+        lbl.style.color = '#fbbf24';
+        btn.textContent = '⏳ Request Sent';
+        btn.disabled = true;
+      } else {
+        lbl.textContent = '🔒 Locked (Authorization Needed)';
+        lbl.style.color = '#f87171';
+        btn.disabled = false;
+      }
+    }
+
+    async function requestAccess(field) {
+      const { data: { session } } = await client.auth.getSession();
+      if (!session) return;
+
+      const updateObj = {};
+      updateObj[field] = true;
+
+      await client.from('profiles').update(updateObj).eq('id', session.user.id);
+      alert('⚡ Your access request has been submitted to Rupali Mam / Admin!');
+      userProfile[field] = true;
+      updateAccessCards(session.user.email === 'rupali.eduquest@gmail.com');
+    }
+
+    let currentActSubFilter = 'all';
+    function setActSubFilter(sub) {
+      currentActSubFilter = sub;
+      document.querySelectorAll('#sub-filter-act .filter-tab').forEach(b => b.classList.remove('active'));
+      const btn = document.getElementById(`act-sub-${sub}`);
+      if (btn) btn.classList.add('active');
+      renderHistory();
+    }
+
+    function setFilter(filter) {
+      currentFilter = filter;
+      document.querySelectorAll('.filter-tabs .filter-tab').forEach(t => t.classList.remove('active'));
+      document.getElementById(`tab-${filter}`).classList.add('active');
+
+      const actSub = document.getElementById('sub-filter-act');
+      if (actSub) actSub.style.display = (filter === 'act') ? 'flex' : 'none';
+
+      if (filter === 'access') {
+        document.getElementById('stats-section').style.display = 'none';
+        document.getElementById('view-history').style.display = 'none';
+        document.getElementById('view-access').style.display = 'block';
+      } else {
+        document.getElementById('stats-section').style.display = 'grid';
+        document.getElementById('view-history').style.display = 'block';
+        document.getElementById('view-access').style.display = 'none';
+        renderHistory();
+      }
+    }
+
+    function updateStats(list) {
+      const total = list.length;
+      document.getElementById('stat-total-exams').textContent = total;
+
+      if (total === 0) {
+        document.getElementById('stat-avg-pct').textContent = '0%';
+        document.getElementById('stat-avg-scaled').textContent = '–';
+        document.getElementById('stat-total-qs').textContent = '0';
+        return;
+      }
+
+      let totalPct = 0;
+      let totalScaled = 0;
+      let scaledCount = 0;
+      let totalQs = 0;
+
+      list.forEach(r => {
+        const correct = r.correct_count !== undefined ? r.correct_count : (r.correct || 0);
+        const totalQ = r.total_questions !== undefined ? r.total_questions : (r.total || 0);
+        const pct = r.percentage || r.pct || (totalQ > 0 ? Math.round((correct / totalQ) * 100) : 0);
+        totalPct += pct;
+
+        const scaled = Number(r.scaled_score || r.composite_score || r.scaled || 0);
+        if (scaled > 0) { totalScaled += scaled; scaledCount++; }
+
+        totalQs += totalQ;
+      });
+
+      document.getElementById('stat-avg-pct').textContent = `${Math.round(totalPct / total)}%`;
+      document.getElementById('stat-avg-scaled').textContent = scaledCount > 0 ? Math.round(totalScaled / scaledCount) : '–';
+      document.getElementById('stat-total-qs').textContent = totalQs;
+    }
+
+    function renderHistory() {
+      const container = document.getElementById('history-list');
+      container.innerHTML = '';
+
+      const filtered = allExams.filter(r => {
+        if (currentFilter === 'all') return true;
+        if (r._type !== currentFilter) return false;
+        if (currentFilter === 'act' && currentActSubFilter !== 'all') {
+          return r._subType === currentActSubFilter;
+        }
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding:50px; color:var(--text-muted); background:var(--bg-card); border-radius:18px; border:1px solid var(--border-color);">No practice exams completed for this filter yet. Start a test today!</div>`;
+        return;
+      }
+
+      const icons = { act: '🎯', sat: '📝', topic: '📖', ssat: '🚀', tmua: '📐', ucat: '🩺', ap: '🎓' };
+      const names = { act: 'ACT', sat: 'SAT Mock', topic: 'SAT Topic', ssat: 'SSAT', tmua: 'TMUA', ucat: 'UCAT', ap: 'AP' };
+
+      filtered.forEach((r, idx) => {
+        const title = r.exam_title || r.exam_name || r.topic || `${names[r._type] || 'Practice'} Test`;
+        const dateStr = r._date ? new Date(r._date).toLocaleDateString() : '–';
+        const correct = r.correct_count !== undefined ? r.correct_count : (r.correct || 0);
+        const total = r.total_questions !== undefined ? r.total_questions : (r.total || 0);
+        const pct = r.percentage || r.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
+        const scaled = r.scaled_score || r.composite_score || r.scaled || '–';
+        const level = r.level || r.test_type || names[r._type] || 'Standard';
+        const grade = r.grade || (pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : 'D');
+
+        const card = document.createElement('div');
+        card.className = 'test-card';
+        card.innerHTML = `
+          <div class="tc-left">
+            <div class="tc-icon">${icons[r._type] || '⚡'}</div>
+            <div class="tc-info">
+              <h3>${title}</h3>
+              <div class="tc-meta">
+                <span class="tc-tag">${level}</span>
+                <span>📅 ${dateStr}</span>
+                <span>✓ ${correct}/${total} Correct (${pct}%)</span>
+                <span>🏆 Grade ${grade}</span>
+              </div>
+            </div>
+          </div>
+          <div class="tc-right">
+            <div class="tc-score-box">
+              <div class="tc-score-val">${scaled}</div>
+              <div class="tc-score-lbl">Scaled / Comp</div>
+            </div>
+            <div class="tc-actions">
+              <button class="btn-review" onclick="openReviewModal(${idx})">🔍 View Review</button>
+              <button class="btn-pdf" onclick="downloadSinglePDF(${idx})">📄 PDF Report</button>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    let modalChartInst = null;
+    function openReviewModal(idx) {
+      const filtered = allExams.filter(r => currentFilter === 'all' || r._type === currentFilter);
+      const t = filtered[idx];
+      if (!t) return;
+
+      const title = t.exam_title || t.exam_name || t.topic || 'Test Detail';
+      const dateStr = t._date ? new Date(t._date).toLocaleString() : '–';
+      const correct = t.correct_count !== undefined ? t.correct_count : (t.correct || 0);
+      const wrong = t.wrong !== undefined ? t.wrong : (t.total_questions ? t.total_questions - correct : 0);
+      const skipped = t.unattempted || 0;
+      const total = t.total_questions !== undefined ? t.total_questions : (t.total || (correct + wrong + skipped) || 0);
+      const pct = t.percentage || t.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
+      const scaled = t.scaled_score || t.composite_score || t.scaled || '–';
+      const grade = t.grade || (pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : 'D');
+
+      let details = [];
+      try { details = typeof t.details_json === 'string' ? JSON.parse(t.details_json) : (t.details_json || t.details || []); } catch(e) {}
+      if (details.length === 0 && t.student_answers) {
+        try { details = typeof t.student_answers === 'string' ? JSON.parse(t.student_answers) : t.student_answers; } catch(e) {}
+      }
+
+      const modal = document.getElementById('reportModalContent');
+      modal.innerHTML = `
+        <div class="modal-hdr">
+          <h3>${title}</h3>
+          <button class="modal-close" onclick="closeReportModal()">✕</button>
+        </div>
+        <div style="text-align:center; margin-bottom:12px;">
+          <div style="font-size:0.95rem; font-weight:600; color:rgba(255,255,255,0.6); margin-bottom:4px;">Student: ${currentUser?.email || 'Student'}</div>
+          <div style="font-family:'Syne'; font-size:2.4rem; font-weight:800; color:#a78bfa;">${scaled}</div>
+          <div style="font-size:0.82rem; color:rgba(255,255,255,0.4);">Score · ${dateStr}</div>
+        </div>
+
+        <div class="modal-stats-grid">
+          <div class="modal-stat-box"><div class="num" style="color:#34d399">${correct}</div><div class="lbl">Correct</div></div>
+          <div class="modal-stat-box"><div class="num" style="color:#f87171">${wrong}</div><div class="lbl">Wrong</div></div>
+          <div class="modal-stat-box"><div class="num" style="color:#fbbf24">${skipped}</div><div class="lbl">Skipped</div></div>
+          <div class="modal-stat-box"><div class="num" style="color:#60a5fa">${total}</div><div class="lbl">Total Qs</div></div>
+          <div class="modal-stat-box"><div class="num" style="color:#a78bfa">${pct}%</div><div class="lbl">Score %</div></div>
+          <div class="modal-stat-box"><div class="num" style="color:#34d399">${grade}</div><div class="lbl">Grade</div></div>
+        </div>
+
+        <div style="max-width:320px; margin:24px auto;"><canvas id="modalPieChart" height="200"></canvas></div>
+
+        <h4 style="color:#fff; font-family:var(--font-brand); margin:24px 0 16px; font-size:1.1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:8px;">
+          📋 Detailed Question Review (${details.length || total} questions)
+        </h4>
+
+        <div id="modalQuestionsContainer">
+          ${details && details.length > 0 ? details.map((d, i) => {
+            const qText = d.question || d.text || d.prompt || '';
+            const hasText = !!qText;
+            const status = d.status || (d.chosen === d.answer ? 'correct' : (d.chosen !== undefined && d.chosen !== 'None' ? 'wrong' : 'unattempted'));
+            const statusClass = status === 'correct' ? 'q-status-correct' : status === 'wrong' ? 'q-status-wrong' : 'q-status-skipped';
+            const statusText = status === 'correct' ? '✅ Correct' : status === 'wrong' ? '❌ Wrong' : '⏭ Skipped';
+            const exp = d.explanation || d.solution || 'No detailed explanation available for this question.';
+            const LETTERS = ['A', 'B', 'C', 'D', 'E'];
+
+            return `
+              <div class="q-review-card">
+                <div class="q-review-hdr">
+                  <span style="font-weight:700; font-size:0.95rem; color:#fff;">Question ${d.id || (i+1)}</span>
+                  <span class="q-status-badge ${statusClass}">${statusText}</span>
+                </div>
+                
+                ${hasText ? `<div class="q-text">${qText}</div>` : `<div class="q-text" style="opacity:0.6;">Question text not available for this topic.</div>`}
+
+                ${d.options && d.options.length > 0 ? `
+                  <div class="q-opt-list">
+                    ${d.options.map((opt, oIdx) => {
+                      const isAns = (oIdx === d.answer || opt === d.answer || LETTERS[oIdx] === d.answer);
+                      const isChosen = (oIdx === d.chosen || opt === d.chosen || LETTERS[oIdx] === d.chosen);
+                      let cls = '';
+                      let badge = '';
+                      if (isAns) { cls = 'correct-ans'; badge = ' <span style="margin-left:auto; font-weight:700; color:#10b981;">✓ Correct</span>'; }
+                      else if (isChosen && status === 'wrong') { cls = 'wrong-chosen'; badge = ' <span style="margin-left:auto; font-weight:700; color:#ef4444;">✗ Student Choice</span>'; }
+                      return `<div class="q-opt ${cls}"><span><strong>${LETTERS[oIdx] || ''}.</strong> ${opt}</span>${badge}</div>`;
+                    }).join('')}
+                  </div>
+                ` : `
+                  <div style="font-size:0.9rem; margin-bottom:12px; color:#cbd5e1;">
+                    ${status === 'wrong' ? `Student Answer: <strong style="color:#ef4444;">${d.chosen || 'None'}</strong> &middot; Correct: <strong style="color:#10b981;">${d.answer || '–'}</strong>` : `Correct Answer: <strong style="color:#10b981;">${d.answer || '–'}</strong>`}
+                  </div>
+                `}
+
+                <div class="q-exp">
+                  <strong style="color:#60a5fa; display:block; margin-bottom:4px;">💡 Explanation:</strong>
+                  ${exp}
+                </div>
+              </div>
+            `;
+          }).join('') : `<div style="text-align:center; padding:30px; color:var(--text-muted);">No detailed question breakdown available for this test submission.</div>`}
+        </div>
+      `;
+
+      document.getElementById('reportModalOverlay').classList.add('open');
+
+      if (modalChartInst) modalChartInst.destroy();
+      const ctx = document.getElementById('modalPieChart').getContext('2d');
+      modalChartInst = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Correct', 'Wrong', 'Skipped'],
+          datasets: [{
+            data: [correct, wrong, skipped],
+            backgroundColor: ['#10b981', '#ef4444', '#f59e0b'],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: 'bottom', labels: { color: '#cbd5e1', font: { size: 12 } } } },
+          cutout: '65%'
+        }
+      });
+    }
+
+    function closeReportModal() {
+      document.getElementById('reportModalOverlay').classList.remove('open');
+    }
+
+    function downloadSinglePDF(idx) {
+      const filtered = allExams.filter(r => currentFilter === 'all' || r._type === currentFilter);
+      const t = filtered[idx];
+      if (!t) return;
+
+      if (t._type === 'act' && typeof window.generateACTPDFReport === 'function') {
+        const payload = {
+          student: { name: t.student_name || currentUser?.email || 'Student', email: t.student_email || currentUser?.email || 'student@eduquest.com', phone: t.phone || '–' },
+          examName: t.exam_name || 'ACT Practice Test',
+          submitTime: t._date || new Date().toISOString(),
+          composite: t.composite_score || t.scaled_score || 0,
+          sectionScores: t.section_scores || { english: t.english_score||0, math: t.math_score||0, reading: t.reading_score||0, science: t.science_score||0 },
+          correct: t.correct_count !== undefined ? t.correct_count : (t.correct || 0),
+          wrong: t.wrong || 0,
+          unattempted: t.unattempted || 0,
+          pct: t.percentage || t.pct || 0,
+          grade: t.grade || 'B',
+          details: typeof t.details_json === 'string' ? JSON.parse(t.details_json) : (t.details_json || t.details || [])
+        };
+        window.generateACTPDFReport(payload, true);
+      } else if (typeof window.generatePDFReport === 'function') {
+        const payload = {
+          student: { name: t.student_name || currentUser?.email || 'Student', email: t.student_email || currentUser?.email || 'student@eduquest.com', phone: t.phone || '–' },
+          examName: t.exam_title || t.exam_name || t.topic || 'Practice Test',
+          submitTime: t._date || new Date().toISOString(),
+          scaled: t.scaled_score || t.composite_score || t.sat_score || 0,
+          correct: t.correct_count !== undefined ? t.correct_count : (t.correct || 0),
+          wrong: t.wrong || 0,
+          unattempted: t.unattempted || 0,
+          total: t.total_questions !== undefined ? t.total_questions : (t.total || 0),
+          pct: t.percentage || t.pct || 0,
+          grade: t.grade || 'B',
+          details: typeof t.details_json === 'string' ? JSON.parse(t.details_json) : (t.details_json || t.details || [])
+        };
+        window.generatePDFReport(payload, true);
+      } else {
+        alert('📄 Generating standard PDF report... (jsPDF callback)');
+      }
+    }
+
+    function generateCombinedPDF() {
+      if (allExams.length === 0) {
+        alert('No practice exam reports available to generate combined PDF.');
+        return;
+      }
+      if (typeof window.jspdf === 'undefined') {
+        alert('jsPDF library not loaded.');
+        return;
+      }
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      doc.setFillColor(13, 13, 20);
+      doc.rect(0, 0, 210, 297, 'F');
+      
+      doc.setTextColor(255, 255, 255);
+      doc.setFontSize(20);
+      doc.text('EduQuest Combined Practice Report', 105, 25, { align: 'center' });
+      
+      doc.setFontSize(11);
+      doc.setTextColor(167, 139, 250);
+      doc.text(`Student: ${currentUser?.email || 'Student'}`, 105, 35, { align: 'center' });
+      doc.text(`Generated: ${new Date().toLocaleDateString()}`, 105, 42, { align: 'center' });
+
+      let y = 60;
+      doc.setFontSize(12);
+      doc.setTextColor(255, 255, 255);
+      doc.text('Completed Practice Exams Summary:', 15, y);
+      y += 10;
+
+      allExams.forEach((t, i) => {
+        if (y > 270) { doc.addPage(); doc.setFillColor(13, 13, 20); doc.rect(0, 0, 210, 297, 'F'); y = 25; }
+        const title = t.exam_title || t.exam_name || t.topic || 'Practice Test';
+        const pct = t.percentage || t.pct || 0;
+        const scaled = t.scaled_score || t.composite_score || t.scaled || '–';
+        const dateStr = t._date ? new Date(t._date).toLocaleDateString() : '–';
+
+        doc.setDrawColor(255, 255, 255);
+        doc.setLineWidth(0.1);
+        doc.rect(15, y, 180, 18);
+        
+        doc.setFontSize(10);
+        doc.setTextColor(255, 255, 255);
+        doc.text(`${i+1}. ${title} (${t._type.toUpperCase()})`, 20, y + 8);
+        doc.setTextColor(148, 163, 184);
+        doc.text(`Date: ${dateStr}`, 20, y + 14);
+        
+        doc.setTextColor(52, 211, 153);
+        doc.text(`Score: ${pct}%`, 130, y + 11);
+        doc.setTextColor(96, 165, 250);
+        doc.text(`Scaled: ${scaled}`, 160, y + 11);
+        
+        y += 24;
+      });
+
+      doc.save('EduQuest_Combined_Report.pdf');
+    }
+  </script>
+</body>
+</html>

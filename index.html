@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduQuest – ACT Practice Portal</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: #0d0d14;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column
+    }
+
+    /* Header */
+    .hdr {
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06)
+    }
+
+    .brand {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .brand-pill {
+      background: #059669;
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: 0.72rem;
+      letter-spacing: .08em;
+      text-transform: uppercase
+    }
+
+    .contact {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.4)
+    }
+
+    .hdr-right {
+      display: flex;
+      align-items: center;
+      gap: 18px
+    }
+
+    .login-btn {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #fff;
+      background: rgba(5, 150, 105, 0.15);
+      border: 1px solid rgba(5, 150, 105, 0.3);
+      padding: 7px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all .15s
+    }
+
+    .login-btn:hover {
+      background: rgba(5, 150, 105, 0.28);
+      border-color: rgba(5, 150, 105, 0.5);
+      transform: translateY(-1px)
+    }
+
+    /* Hero */
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 20px;
+      text-align: center
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(5, 150, 105, 0.15);
+      border: 1px solid rgba(5, 150, 105, 0.3);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #34d399;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      margin-bottom: 28px
+    }
+
+    .hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      letter-spacing: -0.03em
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, #34d399, #60a5fa, #c4b5fd, #fde68a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text
+    }
+
+    .hero p {
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 1.05rem;
+      max-width: 500px;
+      line-height: 1.7;
+      margin-bottom: 52px
+    }
+
+    /* Cards grid */
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 800px;
+      width: 100%
+    }
+
+    /* Topic Cards grid */
+    .topic-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1100px;
+      width: 100%
+    }
+
+    @media(max-width:992px) {
+      .topic-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width:768px) {
+      .hdr {
+        height: auto;
+        min-height: 58px;
+        padding: 12px 16px;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+      }
+      .hdr-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+      }
+      .contact {
+        font-size: 0.78rem;
+        word-break: break-all;
+        text-align: center;
+        width: 100%;
+      }
+      .login-btn {
+        padding: 6px 14px;
+        font-size: 0.78rem;
+      }
+      .cards {
+        grid-template-columns: 1fr
+      }
+      .topic-cards {
+        grid-template-columns: 1fr
+      }
+      .hero {
+        padding: 32px 16px;
+      }
+    }
+
+    /* Single card (full width when alone) */
+    .cards.single {
+      grid-template-columns: 1fr;
+      max-width: 440px
+    }
+
+    .exam-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 32px;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+      transition: border-color .2s, transform .2s, box-shadow .2s
+    }
+
+    .exam-card:hover {
+      border-color: rgba(5, 150, 105, 0.5);
+      transform: translateY(-3px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4)
+    }
+
+    /* Rainbow top bar for ACT */
+    .exam-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #1a56db 25%, #059669 50%, #7c3aed 75%, #d97706 100%)
+    }
+
+    .card-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1;
+      color: rgba(255, 255, 255, 0.08);
+      margin-bottom: 8px
+    }
+
+    .card-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 6px
+    }
+
+    .card-sub {
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.45);
+      margin-bottom: 24px;
+      line-height: 1.5
+    }
+
+    .card-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 16px
+    }
+
+    .cm {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 10px 12px
+    }
+
+    .cm .val {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff
+    }
+
+    .cm .lbl {
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.4);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-top: 2px
+    }
+
+    /* Section preview chips inside card */
+    .section-chips {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 20px
+    }
+
+    .s-chip {
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 0.72rem
+    }
+
+    .s-chip .s-name {
+      font-weight: 700;
+      margin-bottom: 1px
+    }
+
+    .s-chip .s-detail {
+      opacity: 0.65;
+      font-size: 0.68rem
+    }
+
+    .card-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #059669, #047857);
+      color: #fff;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.94rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: all .15s
+    }
+
+    .card-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 25px rgba(5, 150, 105, 0.45)
+    }
+
+    /* Features row */
+    .features {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      max-width: 800px;
+      width: 100%;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06)
+    }
+
+    .feat {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.4)
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.2);
+      border-top: 1px solid rgba(255, 255, 255, 0.05)
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hdr">
+    <div class="brand">
+      <span>🎯</span>
+      <span>EduQuest</span>
+      <span class="brand-pill">ACT Portal</span>
+    </div>
+    <div class="hdr-right" id="hdrRight">
+      <div class="contact">rupali.eduquest@gmail.com</div>
+      <a href="login.html" class="login-btn">Login / Sign Up</a>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-badge">✦ Full-Length Practice Tests</div>
+    <h1>ACT<br><span>Practice Exams</span></h1>
+    <p>Authentic ACT-format practice with real questions, timed sections, composite scoring (1–36), and instant PDF
+      report download.</p>
+
+    
+    <div class="tabs" style="display:flex; gap:16px; margin-bottom:24px;">
+      <button id="tab-btn-diagnostic" onclick="switchTab('diagnostic')" class="card-btn" style="width:auto; padding: 10px 24px; border: none; outline: none;">Practice Tests</button>
+      <button id="tab-btn-topics" onclick="switchTab('topics')" class="card-btn" style="width:auto; padding: 10px 24px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); outline: none;">Mini Topic Tests</button>
+    </div>
+    <div class="cards" id="tab-diagnostic">
+      <!-- ACT Practice Test 1 -->
+      <div class="exam-card">
+        <div class="card-num">01</div>
+        <div class="card-title">ACT Practice Test 1</div>
+        <div class="card-sub">3 sections · English, Math & Reading<br>Full-length ACT simulation</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">131</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">125</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">3</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">50 Qs · 35 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">45 Qs · 50 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">36 Qs · 40 min</div>
+          </div>
+        </div>
+
+        <a href="act1.html" class="card-btn" id="btn-act1">Start ACT Practice Test 1 →</a>
+      </div>
+
+      <!-- ACT Practice Test 2 -->
+      <div class="exam-card">
+        <div class="card-num">02</div>
+        <div class="card-title">ACT Practice Test 2</div>
+        <div class="card-sub">3 sections · English, Math & Reading<br>Full-length ACT simulation</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">131</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">125</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">3</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">50 Qs · 35 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">45 Qs · 50 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">36 Qs · 40 min</div>
+          </div>
+        </div>
+
+        <a href="./act-2/act1.html" class="card-btn" id="btn-act2">Start ACT Practice Test 2 →</a>
+      </div>
+
+      <!-- ACT Practice Test 3 -->
+      <div class="exam-card">
+        <div class="card-num">03</div>
+        <div class="card-title">ACT Practice Test 3</div>
+        <div class="card-sub">3 sections · English, Math & Reading<br>Full-length ACT simulation</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">131</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">125</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">3</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">50 Qs · 35 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">45 Qs · 50 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">36 Qs · 40 min</div>
+          </div>
+        </div>
+
+        <a href="./act-3/act1.html" class="card-btn" id="btn-act3">Start ACT Practice Test 3 →</a>
+      </div>
+
+      <!-- ACT Practice Test 4 -->
+      <div class="exam-card">
+        <div class="card-num">04</div>
+        <div class="card-title">ACT Practice Test 4</div>
+        <div class="card-sub">3 sections · English, Math & Reading<br>Diagnostic Simulation</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">131</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">125</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">3</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">50 Qs · 35 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">45 Qs · 50 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">36 Qs · 40 min</div>
+          </div>
+        </div>
+
+        <a href="act-diagnostic-1/act1.html" class="card-btn" id="btn-diag1">Start ACT Practice Test 4 →</a>
+      </div>
+
+      <!-- ACT Practice Test 5 -->
+      <div class="exam-card">
+        <div class="card-num">05</div>
+        <div class="card-title">ACT Practice Test 5</div>
+        <div class="card-sub">3 sections · English, Math & Reading<br>Shuffled & Value-Altered Simulation</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">131</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">125</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">3</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">50 Qs · 35 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">45 Qs · 50 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">36 Qs · 40 min</div>
+          </div>
+        </div>
+
+        <a href="act-diagnostic-2/act1.html" class="card-btn" id="btn-diag2">Start ACT Practice Test 5 →</a>
+      </div>
+
+      <!-- ACT Practice Test 6 -->
+      <div class="exam-card">
+        <div class="card-num">06</div>
+        <div class="card-title">ACT Practice Test 6</div>
+        <div class="card-sub">3 sections · English, Math & Reading<br>Shuffled & Value-Altered Simulation</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">131</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">125</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">3</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">50 Qs · 35 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">45 Qs · 50 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">36 Qs · 40 min</div>
+          </div>
+        </div>
+
+        <a href="act-diagnostic-3/act1.html" class="card-btn" id="btn-diag3">Start ACT Practice Test 6 →</a>
+      </div>
+
+      <!-- ACT Practice Test 7 -->
+      <div class="exam-card">
+        <div class="card-num">07</div>
+        <div class="card-title">ACT Practice Test 7</div>
+        <div class="card-sub">3 sections · English, Math & Reading<br>Kaplan Prep Plus 2024 Test 1</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">131</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">125</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">3</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">50 Qs · 35 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">45 Qs · 50 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">36 Qs · 40 min</div>
+          </div>
+        </div>
+
+        <a href="act-diagnostic-4/act1.html" class="card-btn" id="btn-diag4">Start ACT Practice Test 7 →</a>
+      </div>
+
+      <!-- ACT Practice Test 8 -->
+      <div class="exam-card">
+        <div class="card-num">08</div>
+        <div class="card-title">ACT Practice Test 8</div>
+        <div class="card-sub">3 sections · English, Math & Reading<br>Shuffled & Value-Altered Kaplan Test 1</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">131</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">125</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">3</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">50 Qs · 35 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">45 Qs · 50 min</div>
+          </div>
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">36 Qs · 40 min</div>
+          </div>
+        </div>
+
+        <a href="act-diagnostic-5/act1.html" class="card-btn" id="btn-diag5">Start ACT Practice Test 8 →</a>
+      </div>
+    </div>
+
+    
+    <div id="tab-topics" style="display:none;" class="topic-cards">
+
+      <!-- Topic Test 01 -->
+      <div class="exam-card">
+        <div class="card-num">01</div>
+        <div class="card-title">Grammar & Usage</div>
+        <div class="card-sub">1 section · English<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">12</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">20 Qs · 12 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-grammar_usage/test.html" class="card-btn">Start Grammar & Usage Test →</a>
+      </div>
+
+      <!-- Topic Test 02 -->
+      <div class="exam-card">
+        <div class="card-num">02</div>
+        <div class="card-title">Sentence Structure</div>
+        <div class="card-sub">1 section · English<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">12</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">20 Qs · 12 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-sentence_structure/test.html" class="card-btn">Start Sentence Structure Test →</a>
+      </div>
+
+      <!-- Topic Test 03 -->
+      <div class="exam-card">
+        <div class="card-num">03</div>
+        <div class="card-title">Style & Tone</div>
+        <div class="card-sub">1 section · English<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">12</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">20 Qs · 12 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-style_tone/test.html" class="card-btn">Start Style & Tone Test →</a>
+      </div>
+
+      <!-- Topic Test 04 -->
+      <div class="exam-card">
+        <div class="card-num">04</div>
+        <div class="card-title">Rhetorical Skills</div>
+        <div class="card-sub">1 section · English<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">12</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">20 Qs · 12 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-rhetorical_skills/test.html" class="card-btn">Start Rhetorical Skills Test →</a>
+      </div>
+
+      <!-- Topic Test 05 -->
+      <div class="exam-card">
+        <div class="card-num">05</div>
+        <div class="card-title">Punctuation</div>
+        <div class="card-sub">1 section · English<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">12</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
+            <div class="s-name" style="color:#93c5fd">📝 English</div>
+            <div class="s-detail" style="color:rgba(147,197,253,0.7)">20 Qs · 12 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-punctuation/test.html" class="card-btn">Start Punctuation Test →</a>
+      </div>
+
+      <!-- Topic Test 06 -->
+      <div class="exam-card">
+        <div class="card-num">06</div>
+        <div class="card-title">Pre-Algebra</div>
+        <div class="card-sub">1 section · Math<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-pre_algebra/test.html" class="card-btn">Start Pre-Algebra Test →</a>
+      </div>
+
+      <!-- Topic Test 07 -->
+      <div class="exam-card">
+        <div class="card-num">07</div>
+        <div class="card-title">Elementary Algebra</div>
+        <div class="card-sub">1 section · Math<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-elementary_algebra/test.html" class="card-btn">Start Elementary Algebra Test →</a>
+      </div>
+
+      <!-- Topic Test 08 -->
+      <div class="exam-card">
+        <div class="card-num">08</div>
+        <div class="card-title">Intermediate Algebra</div>
+        <div class="card-sub">1 section · Math<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-intermediate_algebra/test.html" class="card-btn">Start Intermediate Algebra Test →</a>
+      </div>
+
+      <!-- Topic Test 09 -->
+      <div class="exam-card">
+        <div class="card-num">09</div>
+        <div class="card-title">Coordinate Geometry</div>
+        <div class="card-sub">1 section · Math<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-coordinate_geometry/test.html" class="card-btn">Start Coordinate Geometry Test →</a>
+      </div>
+
+      <!-- Topic Test 10 -->
+      <div class="exam-card">
+        <div class="card-num">10</div>
+        <div class="card-title">Plane Geometry</div>
+        <div class="card-sub">1 section · Math<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-plane_geometry/test.html" class="card-btn">Start Plane Geometry Test →</a>
+      </div>
+
+      <!-- Topic Test 11 -->
+      <div class="exam-card">
+        <div class="card-num">11</div>
+        <div class="card-title">Trigonometry</div>
+        <div class="card-sub">1 section · Math<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
+            <div class="s-name" style="color:#6ee7b7">🔢 Math</div>
+            <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-trigonometry/test.html" class="card-btn">Start Trigonometry Test →</a>
+      </div>
+
+      <!-- Topic Test 12 -->
+      <div class="exam-card">
+        <div class="card-num">12</div>
+        <div class="card-title">Literary Narrative</div>
+        <div class="card-sub">1 section · Reading<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">18</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">20 Qs · 18 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-literary_narrative/test.html" class="card-btn">Start Literary Narrative Test →</a>
+      </div>
+
+      <!-- Topic Test 13 -->
+      <div class="exam-card">
+        <div class="card-num">13</div>
+        <div class="card-title">Social Science</div>
+        <div class="card-sub">1 section · Reading<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">18</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">20 Qs · 18 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-social_science/test.html" class="card-btn">Start Social Science Test →</a>
+      </div>
+
+      <!-- Topic Test 14 -->
+      <div class="exam-card">
+        <div class="card-num">14</div>
+        <div class="card-title">Natural Science</div>
+        <div class="card-sub">1 section · Reading<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">18</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">20 Qs · 18 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-natural_science/test.html" class="card-btn">Start Natural Science Test →</a>
+      </div>
+
+      <!-- Topic Test 15 -->
+      <div class="exam-card">
+        <div class="card-num">15</div>
+        <div class="card-title">Humanities</div>
+        <div class="card-sub">1 section · Reading<br>Targeted Topic Practice</div>
+
+        <div class="card-meta">
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">18</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
+        </div>
+
+        <div class="section-chips">
+          <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
+            <div class="s-name" style="color:#c4b5fd">📖 Reading</div>
+            <div class="s-detail" style="color:rgba(196,181,253,0.7)">20 Qs · 18 min</div>
+          </div>
+        </div>
+
+        <a href="./topic-humanities/test.html" class="card-btn">Start Humanities Test →</a>
+      </div>
+
+    </div>
+
+    <div class="features">
+      <div class="feat"><span>⏱</span> Per-section timer</div>
+      <div class="feat"><span>📊</span> Composite + section scores</div>
+      <div class="feat"><span>📥</span> PDF report download</div>
+      <div class="feat"><span>🗂</span> Topic-wise analysis</div>
+      <div class="feat"><span>📝</span> Full question review</div>
+    </div>
+  </main>
+
+  <footer>© EduQuest · ACT Practice Portal · rupali.eduquest@gmail.com</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js"></script>
+  <script>
+    const ADMIN_EMAIL = 'rupali.eduquest@gmail.com';
+    const supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+
+    async function initIndex() {
+      const { data: { session } } = await supabaseClient.auth.getSession();
+      const btn2 = document.getElementById('btn-act2');
+      const btn3 = document.getElementById('btn-act3');
+      const btnDiag = document.getElementById('btn-diag1');
+      const btnDiag2 = document.getElementById('btn-diag2');
+      const btnDiag3 = document.getElementById('btn-diag3');
+      const btnDiag4 = document.getElementById('btn-diag4');
+      const btnDiag5 = document.getElementById('btn-diag5');
+
+      if (!session) {
+        if (btn2) {
+          btn2.innerHTML = '🔒 Login to Start ACT Practice Test 2 →';
+          btn2.href = 'login.html?redirect=act-2/act1.html';
+        }
+        if (btn3) {
+          btn3.innerHTML = '🔒 Login to Start ACT Practice Test 3 →';
+          btn3.href = 'login.html?redirect=act-3/act1.html';
+        }
+        if (btnDiag) {
+          btnDiag.innerHTML = '🔒 Login to Start ACT Practice Test 4 →';
+          btnDiag.href = 'login.html?redirect=act-diagnostic-1/act1.html';
+        }
+        if (btnDiag2) {
+          btnDiag2.innerHTML = '🔒 Login to Start ACT Practice Test 5 →';
+          btnDiag2.href = 'login.html?redirect=act-diagnostic-2/act1.html';
+        }
+        if (btnDiag3) {
+          btnDiag3.innerHTML = '🔒 Login to Start ACT Practice Test 6 →';
+          btnDiag3.href = 'login.html?redirect=act-diagnostic-3/act1.html';
+        }
+        if (btnDiag4) {
+          btnDiag4.innerHTML = '🔒 Login to Start ACT Practice Test 7 →';
+          btnDiag4.href = 'login.html?redirect=act-diagnostic-4/act1.html';
+        }
+        if (btnDiag5) {
+          btnDiag5.innerHTML = '🔒 Login to Start ACT Practice Test 8 →';
+          btnDiag5.href = 'login.html?redirect=act-diagnostic-5/act1.html';
+        }
+        return;
+      }
+
+      const email = session.user.email;
+      const isAdmin = email.toLowerCase() === ADMIN_EMAIL.toLowerCase();
+
+      // Update header
+      let hdrHtml = `<div class="contact">${email}</div>`;
+      if (isAdmin) {
+        hdrHtml += `<a href="admin.html" class="login-btn" style="background:rgba(124,58,237,0.15);border-color:rgba(124,58,237,0.3);margin-right:8px">Admin Dashboard</a>`;
+      } else {
+        hdrHtml += `<a href="dashboard.html" class="login-btn" style="background:rgba(5,150,105,0.15);border-color:rgba(5,150,105,0.3);margin-right:8px">🎓 Student Dashboard</a>`;
+      }
+      hdrHtml += `<button onclick="supabaseLogout()" class="login-btn" style="background:none;border-color:rgba(255,255,255,0.2);cursor:pointer">Logout</button>`;
+      document.getElementById('hdrRight').innerHTML = hdrHtml;
+
+      window.supabaseLogout = async function () {
+        await supabaseClient.auth.signOut();
+        window.location.reload();
+      };
+
+      if (isAdmin) {
+        if (btn2) { btn2.innerHTML = 'Start ACT Test 2 (Admin) →'; btn2.href = 'act-2/act1.html'; }
+        if (btn3) { btn3.innerHTML = 'Start ACT Test 3 (Admin) →'; btn3.href = 'act-3/act1.html'; }
+        if (btnDiag) { btnDiag.innerHTML = 'Start ACT Practice Test 4 (Admin) →'; btnDiag.href = 'act-diagnostic-1/act1.html'; }
+        if (btnDiag2) { btnDiag2.innerHTML = 'Start ACT Practice Test 5 (Admin) →'; btnDiag2.href = 'act-diagnostic-2/act1.html'; }
+        if (btnDiag3) { btnDiag3.innerHTML = 'Start ACT Practice Test 6 (Admin) →'; btnDiag3.href = 'act-diagnostic-3/act1.html'; }
+        if (btnDiag4) { btnDiag4.innerHTML = 'Start ACT Practice Test 7 (Admin) →'; btnDiag4.href = 'act-diagnostic-4/act1.html'; }
+        if (btnDiag5) { btnDiag5.innerHTML = 'Start ACT Practice Test 8 (Admin) →'; btnDiag5.href = 'act-diagnostic-5/act1.html'; }
+        return;
+      }
+
+      // Check student access
+      try {
+        const { data: profile, error } = await supabaseClient
+          .from('profiles')
+          .select('has_access')
+          .eq('id', session.user.id)
+          .single();
+
+        if (error || !profile || !profile.has_access) {
+          if (btn2) {
+            btn2.innerHTML = '🔒 Request Access →';
+            btn2.href = 'act-2/act1.html';
+          }
+          if (btn3) {
+            btn3.innerHTML = '🔒 Request Access →';
+            btn3.href = 'act-3/act1.html';
+          }
+          if (btnDiag) {
+            btnDiag.innerHTML = '🔒 Request Access →';
+            btnDiag.href = 'act-diagnostic-1/act1.html';
+          }
+          if (btnDiag2) {
+            btnDiag2.innerHTML = '🔒 Request Access →';
+            btnDiag2.href = 'act-diagnostic-2/act1.html';
+          }
+          if (btnDiag3) {
+            btnDiag3.innerHTML = '🔒 Request Access →';
+            btnDiag3.href = 'act-diagnostic-3/act1.html';
+          }
+          if (btnDiag4) {
+            btnDiag4.innerHTML = '🔒 Request Access →';
+            btnDiag4.href = 'act-diagnostic-4/act1.html';
+          }
+          if (btnDiag5) {
+            btnDiag5.innerHTML = '🔒 Request Access →';
+            btnDiag5.href = 'act-diagnostic-5/act1.html';
+          }
+        } else {
+          if (btn2) { btn2.innerHTML = 'Start ACT Practice Test 2 →'; btn2.href = 'act-2/act1.html'; }
+          if (btn3) { btn3.innerHTML = 'Start ACT Practice Test 3 →'; btn3.href = 'act-3/act1.html'; }
+          if (btnDiag) { btnDiag.innerHTML = 'Start ACT Practice Test 4 →'; btnDiag.href = 'act-diagnostic-1/act1.html'; }
+          if (btnDiag2) { btnDiag2.innerHTML = 'Start ACT Practice Test 5 →'; btnDiag2.href = 'act-diagnostic-2/act1.html'; }
+          if (btnDiag3) { btnDiag3.innerHTML = 'Start ACT Practice Test 6 →'; btnDiag3.href = 'act-diagnostic-3/act1.html'; }
+          if (btnDiag4) { btnDiag4.innerHTML = 'Start ACT Practice Test 7 →'; btnDiag4.href = 'act-diagnostic-4/act1.html'; }
+          if (btnDiag5) { btnDiag5.innerHTML = 'Start ACT Practice Test 8 →'; btnDiag5.href = 'act-diagnostic-5/act1.html'; }
+        }
+      } catch (err) {
+        console.error('Error fetching profile:', err);
+      }
+    }
+
+    initIndex();
+  </script>
+
+  <script>
+    function switchTab(tabId) {
+      const diagWrap = document.getElementById('tab-diagnostic');
+      const topicWrap = document.getElementById('tab-topics');
+      if(diagWrap) diagWrap.style.display = tabId === 'diagnostic' ? 'grid' : 'none';
+      if(topicWrap) topicWrap.style.display = tabId === 'topics' ? 'grid' : 'none';
+      
+      const btnD = document.getElementById('tab-btn-diagnostic');
+      const btnT = document.getElementById('tab-btn-topics');
+      if(btnD) {
+          btnD.style.background = tabId === 'diagnostic' ? 'linear-gradient(135deg, #059669, #047857)' : 'rgba(255,255,255,0.1)';
+          btnD.style.border = tabId === 'diagnostic' ? 'none' : '1px solid rgba(255,255,255,0.2)';
+      }
+      if(btnT) {
+          btnT.style.background = tabId === 'topics' ? 'linear-gradient(135deg, #059669, #047857)' : 'rgba(255,255,255,0.1)';
+          btnT.style.border = tabId === 'topics' ? 'none' : '1px solid rgba(255,255,255,0.2)';
+      }
+    }
+  </script>
+</body>
+
+
+</html>
