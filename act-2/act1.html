@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACT Practice Test 2 – EduQuest</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ACT Practice Test 2 – EduQuest</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&amp;family=IBM+Plex+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
         * {
             box-sizing: border-box;
             margin: 0;
@@ -1019,216 +1018,181 @@
         }
     </style>
 </head>
-
 <body>
-
-    <!-- ═══════════════════════════════════════════════
+<!-- ═══════════════════════════════════════════════
      REGISTRATION SCREEN
 ════════════════════════════════════════════════ -->
-    <div id="regScreen">
-        <div class="reg-card">
-            <h1>ACT Practice <span>Test 1</span></h1>
-            <p class="reg-sub">Full-length ACT simulation · 4 sections · 215 questions · 175 minutes</p>
-
-            <div class="reg-meta">
-                <div class="reg-meta-item">
-                    <div class="val">215</div>
-                    <div class="lbl">Questions</div>
-                </div>
-                <div class="reg-meta-item">
-                    <div class="val">175</div>
-                    <div class="lbl">Minutes</div>
-                </div>
-                <div class="reg-meta-item">
-                    <div class="val">4</div>
-                    <div class="lbl">Sections</div>
-                </div>
-                <div class="reg-meta-item">
-                    <div class="val">1–36</div>
-                    <div class="lbl">Score Range</div>
-                </div>
-            </div>
-
-            <div class="sections-preview">
-                <div class="sec-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
-                    <div class="sec-name" style="color:#93c5fd">📝 English</div>
-                    <div class="sec-detail" style="color:rgba(147,197,253,0.7)">50 Qs · 35 min</div>
-                </div>
-                <div class="sec-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
-                    <div class="sec-name" style="color:#6ee7b7">🔢 Math</div>
-                    <div class="sec-detail" style="color:rgba(110,231,183,0.7)">45 Qs · 50 min</div>
-                </div>
-                <div class="sec-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
-                    <div class="sec-name" style="color:#c4b5fd">📖 Reading</div>
-                    <div class="sec-detail" style="color:rgba(196,181,253,0.7)">36 Qs · 40 min</div>
-                </div>
-            </div>
-
-            <div class="field">
-                <label>Full Name</label>
-                <input type="text" id="regName" placeholder="Your full name">
-            </div>
-            <div class="field">
-                <label>Email</label>
-                <input type="email" id="regEmail" placeholder="you@example.com">
-            </div>
-            <div class="field">
-                <label>Phone</label>
-                <div class="phone-row">
-                    <select id="regCountryCode"></select>
-                    <input type="tel" id="regPhone" placeholder="Phone number">
-                </div>
-            </div>
-
-            <button class="btn-start" onclick="startTest()">Begin ACT Practice Test 2 →</button>
-            <p id="regMsg"></p>
-        </div>
-    </div>
-
-    <!-- ═══════════════════════════════════════════════
+<div id="regScreen">
+<div class="reg-card">
+<h1>ACT Practice <span>Test 2</span></h1>
+<p class="reg-sub">Full-length ACT simulation · 3 sections · 131 questions · 125 minutes</p>
+<div class="reg-meta">
+<div class="reg-meta-item">
+<div class="val">131</div>
+<div class="lbl">Questions</div>
+</div>
+<div class="reg-meta-item">
+<div class="val">125</div>
+<div class="lbl">Minutes</div>
+</div>
+<div class="reg-meta-item">
+<div class="val">3</div>
+<div class="lbl">Sections</div>
+</div>
+<div class="reg-meta-item">
+<div class="val">1–36</div>
+<div class="lbl">Score Range</div>
+</div>
+</div>
+<div class="sections-preview"><div class="sec-chip" style="background:rgba(26,86,219,0.15);color:#93c5fd"><div class="sec-name">📝 English</div><div class="sec-detail">50 Qs · 35 min</div></div><div class="sec-chip" style="background:rgba(5,150,105,0.15);color:#6ee7b7"><div class="sec-name">🔢 Math</div><div class="sec-detail">45 Qs · 50 min</div></div><div class="sec-chip" style="background:rgba(124,58,237,0.15);color:#c4b5fd"><div class="sec-name">📖 Reading</div><div class="sec-detail">36 Qs · 40 min</div></div></div>
+<div class="field">
+<label>Full Name</label>
+<input id="regName" placeholder="Your full name" type="text"/>
+</div>
+<div class="field">
+<label>Email</label>
+<input id="regEmail" placeholder="you@example.com" type="email"/>
+</div>
+<div class="field">
+<label>Phone</label>
+<div class="phone-row">
+<select id="regCountryCode"></select>
+<input id="regPhone" placeholder="Phone number" type="tel"/>
+</div>
+</div>
+<button class="btn-start" onclick="startTest()">Begin ACT Practice Test 2 →</button>
+<p id="regMsg"></p>
+</div>
+</div>
+<!-- ═══════════════════════════════════════════════
      TEST SCREEN
 ════════════════════════════════════════════════ -->
-    <div id="testScreen">
-        <!-- Header -->
-        <header class="test-hdr">
-            <div class="hdr-brand">
-                <span>📝</span><span>EduQuest</span>
-                <span class="hdr-brand-pill">ACT</span>
-            </div>
-            <div class="hdr-section-info">
-                <div class="section-badge" id="sectionBadge">English</div>
-                <span class="q-counter" id="qCounter">Q 1 / 75</span>
-            </div>
-            <div class="timer-wrap">
-                <span class="timer-label">Time Left</span>
-                <span id="timerDisplay">45:00</span>
-            </div>
-        </header>
-
-        <!-- Section tabs -->
-        <div class="section-tabs" id="sectionTabs">
-            <div class="sec-tab english active" onclick="goToSection('english')">
+<div id="testScreen">
+<!-- Header -->
+<header class="test-hdr">
+<div class="hdr-brand">
+<span>📝</span><span>EduQuest</span>
+<span class="hdr-brand-pill">ACT</span>
+</div>
+<div class="hdr-section-info">
+<div class="section-badge" id="sectionBadge">English</div>
+<span class="q-counter" id="qCounter">Q 1 / 75</span>
+</div>
+<div class="timer-wrap">
+<span class="timer-label">Time Left</span>
+<span id="timerDisplay">45:00</span>
+</div>
+</header>
+<!-- Section tabs -->
+<div class="section-tabs" id="sectionTabs">
+<div class="sec-tab english active" onclick="goToSection('english')">
                 📝 English
                 <div class="tab-count" id="tabCount-english">0/75</div>
-            </div>
-            <div class="sec-tab math" onclick="goToSection('math')">
+</div>
+<div class="sec-tab math" onclick="goToSection('math')">
                 🔢 Math
                 <div class="tab-count" id="tabCount-math">0/60</div>
-            </div>
-            <div class="sec-tab reading" onclick="goToSection('reading')">
+</div>
+<div class="sec-tab reading" onclick="goToSection('reading')">
                 📖 Reading
                 <div class="tab-count" id="tabCount-reading">0/40</div>
-            </div>
-        </div>
-
-        <!-- Body -->
-        <div class="test-body">
-            <!-- Question area -->
-            <div class="q-area" id="qArea">
-                <div class="q-num-label" id="qNumLabel">
+</div>
+</div>
+<!-- Body -->
+<div class="test-body">
+<!-- Question area -->
+<div class="q-area" id="qArea">
+<div class="q-num-label" id="qNumLabel">
                     Question <span id="qNumSpan">1</span>
-                    <span class="q-topic-tag" id="qTopicTag"></span>
-                </div>
-                <div class="q-text" id="qText"></div>
-                <div class="options" id="optionsWrap"></div>
-                <div class="q-nav">
-                    <button class="btn-nav btn-prev" onclick="prevQ()">← Previous</button>
-                    <button class="btn-nav btn-next" id="btnNext" onclick="nextQ()">Next →</button>
-                </div>
-            </div>
-
-            <!-- Palette -->
-            <div class="palette-wrap">
-                <div class="palette-title">Question Palette</div>
-                <div id="paletteContent"></div>
-                <div class="palette-legend">
-                    <div class="leg-item">
-                        <div class="leg-dot" style="background:rgba(26,86,219,0.4);border:1px solid #1a56db"></div>
+<span class="q-topic-tag" id="qTopicTag"></span>
+</div>
+<div class="q-text" id="qText"></div>
+<div class="options" id="optionsWrap"></div>
+<div class="q-nav">
+<button class="btn-nav btn-prev" onclick="prevQ()">← Previous</button>
+<button class="btn-nav btn-next" id="btnNext" onclick="nextQ()">Next →</button>
+</div>
+</div>
+<!-- Palette -->
+<div class="palette-wrap">
+<div class="palette-title">Question Palette</div>
+<div id="paletteContent"></div>
+<div class="palette-legend">
+<div class="leg-item">
+<div class="leg-dot" style="background:rgba(26,86,219,0.4);border:1px solid #1a56db"></div>
                         Answered
                     </div>
-                    <div class="leg-item">
-                        <div class="leg-dot"
-                            style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1)"></div>
+<div class="leg-item">
+<div class="leg-dot" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1)"></div>
                         Unanswered
                     </div>
-                </div>
-                <button class="palette-submit" onclick="confirmSubmit()">Submit Test</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- ═══════════════════════════════════════════════
+</div>
+<button class="palette-submit" onclick="confirmSubmit()">Submit Test</button>
+</div>
+</div>
+</div>
+<!-- ═══════════════════════════════════════════════
      RESULT SCREEN
 ════════════════════════════════════════════════ -->
-    <div id="resultScreen">
-        <div class="result-wrap">
-            <div class="result-hero">
-                <div class="composite-label">ACT Composite Score</div>
-                <div class="composite-score" id="compositeScore">—</div>
-                <div class="composite-max">out of 36</div>
-                <div class="section-scores-row" id="sectionScoresRow"></div>
-            </div>
-
-            <div class="result-stats" id="resultStats"></div>
-
-            <div class="topic-table-wrap">
-                <div class="topic-table-hdr">
-                    <h3>📊 Topic-wise Performance</h3>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Topic</th>
-                            <th>Section</th>
-                            <th>Total</th>
-                            <th>Correct</th>
-                            <th>Wrong</th>
-                            <th>Accuracy</th>
-                        </tr>
-                    </thead>
-                    <tbody id="topicTableBody"></tbody>
-                </table>
-            </div>
-
-            <div class="result-actions">
-                <button class="btn-action-res btn-pdf" onclick="downloadPDF()">📥 Download PDF Report</button>
-                <button class="btn-action-res btn-home" onclick="window.location.href='../index.html'">← Back to
+<div id="resultScreen">
+<div class="result-wrap">
+<div class="result-hero">
+<div class="composite-label">ACT Composite Score</div>
+<div class="composite-score" id="compositeScore">—</div>
+<div class="composite-max">out of 36</div>
+<div class="section-scores-row" id="sectionScoresRow"></div>
+</div>
+<div class="result-stats" id="resultStats"></div>
+<div class="topic-table-wrap">
+<div class="topic-table-hdr">
+<h3>📊 Topic-wise Performance</h3>
+</div>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Section</th>
+<th>Total</th>
+<th>Correct</th>
+<th>Wrong</th>
+<th>Accuracy</th>
+</tr>
+</thead>
+<tbody id="topicTableBody"></tbody>
+</table>
+</div>
+<div class="result-actions">
+<button class="btn-action-res btn-pdf" onclick="downloadPDF()">📥 Download PDF Report</button>
+<button class="btn-action-res btn-home" onclick="window.location.href='../index.html'">← Back to
                     Home</button>
-                <button class="btn-action-res btn-home" onclick="showReviewModal()">📝 Review Questions</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Review Modal -->
-    <div class="modal-overlay" id="reviewModal">
-        <div class="modal-box">
-            <button class="modal-close" onclick="closeReview()">✕</button>
-            <h2 style="font-family:'Syne',sans-serif;font-size:1.6rem;margin-bottom:20px;text-align:center">Question
+<button class="btn-action-res btn-home" onclick="showReviewModal()">📝 Review Questions</button>
+</div>
+</div>
+</div>
+<!-- Review Modal -->
+<div class="modal-overlay" id="reviewModal">
+<div class="modal-box">
+<button class="modal-close" onclick="closeReview()">✕</button>
+<h2 style="font-family:'Syne',sans-serif;font-size:1.6rem;margin-bottom:20px;text-align:center">Question
                 Review</h2>
-            <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
-                <button onclick="filterReview('all',this)"
-                    style="background:#1a56db;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">All</button>
-                <button onclick="filterReview('correct',this)"
-                    style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Correct</button>
-                <button onclick="filterReview('wrong',this)"
-                    style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Wrong</button>
-                <button onclick="filterReview('unattempted',this)"
-                    style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Skipped</button>
-            </div>
-            <div id="reviewContent" style="display:flex;flex-direction:column;gap:14px;max-height:70vh;overflow-y:auto">
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="../countries.js"></script>
-    <script src="../supabase.js"></script>
-    <script src="act_questions1.js"></script>
-    <script src="act_report1.js"></script>
-    <script src="../access-check.js"></script>
-
-    <script>
+<div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
+<button onclick="filterReview('all',this)" style="background:#1a56db;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">All</button>
+<button onclick="filterReview('correct',this)" style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Correct</button>
+<button onclick="filterReview('wrong',this)" style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Wrong</button>
+<button onclick="filterReview('unattempted',this)" style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Skipped</button>
+</div>
+<div id="reviewContent" style="display:flex;flex-direction:column;gap:14px;max-height:70vh;overflow-y:auto">
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="../countries.js"></script>
+<script src="../supabase.js"></script>
+<script src="act_questions1.js"></script>
+<script src="act_report1.js"></script>
+<script src="../access-check.js"></script>
+<script>
         // ── State ─────────────────────────────────────────
         let studentInfo = {};
         let testStartTime = null;
@@ -1672,5 +1636,4 @@
         }
     </script>
 </body>
-
 </html>
