@@ -356,6 +356,10 @@
       border-top: 1px solid rgba(255, 255, 255, 0.05)
     }
   </style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+
 </head>
 
 <body>
@@ -1754,6 +1758,29 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase.js"></script>
   <script>
+
+function formatLaTeX(str) {
+    if (!str || typeof str !== 'string') return str || '';
+    let res = str.replace(/\$([^\$]+)\$/g, (m, math) => {
+        if (window.katex) {
+            try {
+                return katex.renderToString(math, { throwOnError: false });
+            } catch(e) {}
+        }
+        return `<span class="latex-math">${formatMathCaret(math)}</span>`;
+    });
+    return formatMathCaret(res);
+}
+
+function formatMathCaret(text) {
+    if (!text) return '';
+    return text.replace(/([A-Za-z0-9\)\}\]]+)\^(\(([^\)]+)\)|(\{([^\}]+)\})|(\-?[A-Za-z0-9\/]+))/g, (m, base, p2, p3, p4, p5, p6) => {
+        const exp = p3 || p5 || p6;
+        return `${base}<sup>${exp}</sup>`;
+    });
+}
+
+
     const ADMIN_EMAIL = 'rupali.eduquest@gmail.com';
     const supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
 

@@ -694,7 +694,7 @@ const ACT_QUESTIONS1 = [
       "id": 53,
       "section": "math",
       "topic": "Intermediate Algebra",
-      "text": "What is the value of x in the equation 2^x = 32?",
+      "text": "What is the value of x in the equation $2^x = 32$?",
       "options": [
         "4",
         "5",

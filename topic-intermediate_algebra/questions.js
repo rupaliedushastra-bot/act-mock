@@ -81,7 +81,7 @@ const ACT_QUESTIONS1 = [
     "id": 7,
     "section": "math",
     "topic": "Intermediate Algebra",
-    "text": "What is the value of y in the equation 2^y = 32?",
+    "text": "What is the value of y in the equation $2^y = 32$?",
     "options": [
       "16",
       "4",
@@ -159,7 +159,7 @@ const ACT_QUESTIONS1 = [
     "id": 13,
     "section": "math",
     "topic": "Intermediate Algebra",
-    "text": "What is the value of y in the equation 2^y = 32?",
+    "text": "What is the value of y in the equation $2^y = 32$?",
     "options": [
       "5",
       "4",
@@ -237,7 +237,7 @@ const ACT_QUESTIONS1 = [
     "id": 19,
     "section": "math",
     "topic": "Intermediate Algebra",
-    "text": "What is the value of x in the equation 2^x = 32?",
+    "text": "What is the value of x in the equation $2^x = 32$?",
     "options": [
       "16",
       "4",

@@ -1218,7 +1218,7 @@ const ACT_QUESTIONS1 = [
         "id": 94,
         "section": "math",
         "topic": "Intermediate Algebra",
-        "text": "What is the value of x in the equation 5^x = 125?",
+        "text": "What is the value of x in the equation $5^x = 125$?",
         "options": [
             "3",
             "5",

@@ -81,7 +81,7 @@ const ACT_QUESTIONS1 = [
     "id": 7,
     "section": "math",
     "topic": "Exponents & Radicals",
-    "text": "What is the value of 64^(1/3)?",
+    "text": "What is the value of $64^{1/3}$?",
     "options": [
       "4",
       "6",
@@ -120,7 +120,7 @@ const ACT_QUESTIONS1 = [
     "id": 10,
     "section": "math",
     "topic": "Exponents & Radicals",
-    "text": "Which is equivalent to x^(3/2)?",
+    "text": "Which is equivalent to $x^{3/2}$?",
     "options": [
       "x² · √x",
       "√(x³)",
@@ -185,7 +185,7 @@ const ACT_QUESTIONS1 = [
     "id": 15,
     "section": "math",
     "topic": "Exponents & Radicals",
-    "text": "Which of the following is equivalent to 4^(−1/2)?",
+    "text": "Which of the following is equivalent to $4^{-1/2}$?",
     "options": [
       "−2",
       "1/2",

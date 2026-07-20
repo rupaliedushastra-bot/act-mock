@@ -712,7 +712,7 @@ const ACT_QUESTIONS1 = [
         "id": 55,
         "section": "math",
         "topic": "Intermediate Algebra",
-        "text": "What is the value of x in the equation 3^x = 81?",
+        "text": "What is the value of x in the equation $3^x = 81$?",
         "options": [
             "2",
             "3",
@@ -961,7 +961,10 @@ const ACT_QUESTIONS1 = [
         "topic": "Plane Geometry",
         "text": "A sector of a circle has a central angle of 120° and a radius of 6 cm. What is the area of the sector, in terms of π?",
         "options": [
-            "6π cm²', '12π cm²', '18π cm²', '36π cm²"
+            "6π cm²",
+            "12π cm²",
+            "18π cm²",
+            "36π cm²"
         ],
         "answer": 1
     },
