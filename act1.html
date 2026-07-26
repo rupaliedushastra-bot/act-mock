@@ -2,12 +2,15 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ACT Practice Test 1 – EduQuest</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&amp;family=IBM+Plex+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ACT Practice Test 1 – EduQuest</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&amp;family=IBM+Plex+Sans:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <style>
         * {
             box-sizing: border-box;
             margin: 0;
@@ -394,17 +397,20 @@
                 gap: 8px;
                 justify-content: space-between;
             }
+
             .hdr-section-info {
                 order: 3;
                 width: 100%;
                 justify-content: center;
-                border-top: 1px solid rgba(255,255,255,0.06);
+                border-top: 1px solid rgba(255, 255, 255, 0.06);
                 padding-top: 6px;
                 margin-top: 2px;
             }
+
             .q-area {
                 padding: 20px 16px
             }
+
             .palette-wrap {
                 display: none
             }
@@ -1018,206 +1024,253 @@
         }
     </style>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 
 </head>
+
 <body>
-<!-- ═══════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════
      REGISTRATION SCREEN
 ════════════════════════════════════════════════ -->
-<div id="regScreen">
-<div class="reg-card">
-<h1>ACT Practice <span>Test 1</span></h1>
-<p class="reg-sub">Full-length ACT simulation · 3 sections · 131 questions · 125 minutes</p>
-<div class="reg-meta">
-<div class="reg-meta-item">
-<div class="val">131</div>
-<div class="lbl">Questions</div>
-</div>
-<div class="reg-meta-item">
-<div class="val">125</div>
-<div class="lbl">Minutes</div>
-</div>
-<div class="reg-meta-item">
-<div class="val">3</div>
-<div class="lbl">Sections</div>
-</div>
-<div class="reg-meta-item">
-<div class="val">1–36</div>
-<div class="lbl">Score Range</div>
-</div>
-</div>
-<div class="sections-preview"><div class="sec-chip" style="background:rgba(26,86,219,0.15);color:#93c5fd"><div class="sec-name">📝 English</div><div class="sec-detail">50 Qs · 35 min</div></div><div class="sec-chip" style="background:rgba(5,150,105,0.15);color:#6ee7b7"><div class="sec-name">🔢 Math</div><div class="sec-detail">45 Qs · 50 min</div></div><div class="sec-chip" style="background:rgba(124,58,237,0.15);color:#c4b5fd"><div class="sec-name">📖 Reading</div><div class="sec-detail">36 Qs · 40 min</div></div></div>
-<div class="field">
-<label>Full Name</label>
-<input id="regName" placeholder="Your full name" type="text"/>
-</div>
-<div class="field">
-<label>Email</label>
-<input id="regEmail" placeholder="you@example.com" type="email"/>
-</div>
-<div class="field">
-<label>Phone</label>
-<div class="phone-row">
-<select id="regCountryCode"></select>
-<input id="regPhone" placeholder="Phone number" type="tel"/>
-</div>
-</div>
-<button class="btn-start" onclick="startTest()">Begin ACT Practice Test 1 →</button>
-<p id="regMsg"></p>
-</div>
-</div>
-<!-- ═══════════════════════════════════════════════
+    <div id="regScreen">
+        <div class="reg-card">
+            <h1>ACT Practice <span>Test 1</span></h1>
+            <p class="reg-sub">Full-length ACT simulation · 3 sections · 131 questions · 125 minutes</p>
+            <div class="reg-meta">
+                <div class="reg-meta-item">
+                    <div class="val">131</div>
+                    <div class="lbl">Questions</div>
+                </div>
+                <div class="reg-meta-item">
+                    <div class="val">125</div>
+                    <div class="lbl">Minutes</div>
+                </div>
+                <div class="reg-meta-item">
+                    <div class="val">3</div>
+                    <div class="lbl">Sections</div>
+                </div>
+                <div class="reg-meta-item">
+                    <div class="val">1–36</div>
+                    <div class="lbl">Score Range</div>
+                </div>
+            </div>
+            <div class="sections-preview">
+                <div class="sec-chip" style="background:rgba(26,86,219,0.15);color:#93c5fd">
+                    <div class="sec-name">📝 English</div>
+                    <div class="sec-detail">50 Qs · 35 min</div>
+                </div>
+                <div class="sec-chip" style="background:rgba(5,150,105,0.15);color:#6ee7b7">
+                    <div class="sec-name">🔢 Math</div>
+                    <div class="sec-detail">45 Qs · 50 min</div>
+                </div>
+                <div class="sec-chip" style="background:rgba(124,58,237,0.15);color:#c4b5fd">
+                    <div class="sec-name">📖 Reading</div>
+                    <div class="sec-detail">36 Qs · 40 min</div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Full Name</label>
+                <input id="regName" placeholder="Your full name" type="text" />
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input id="regEmail" placeholder="you@example.com" type="email" />
+            </div>
+            <div class="field">
+                <label>Phone</label>
+                <div class="phone-row">
+                    <select id="regCountryCode"></select>
+                    <input id="regPhone" placeholder="Phone number" type="tel" />
+                </div>
+            </div>
+            <button class="btn-start" onclick="startTest()">Begin ACT Practice Test 1 →</button>
+            <p id="regMsg"></p>
+        </div>
+    </div>
+    <!-- ═══════════════════════════════════════════════
      TEST SCREEN
 ════════════════════════════════════════════════ -->
-<div id="testScreen">
-<!-- Header -->
-<header class="test-hdr">
-<div class="hdr-brand">
-<span>📝</span><span>EduQuest</span>
-<span class="hdr-brand-pill">ACT</span>
-</div>
-<div class="hdr-section-info">
-<div class="section-badge" id="sectionBadge">English</div>
-<span class="q-counter" id="qCounter">Q 1 / 75</span>
-</div>
-<div class="timer-wrap">
-<span class="timer-label">Time Left</span>
-<span id="timerDisplay">45:00</span>
-</div>
-</header>
-<!-- Section tabs -->
-<div class="section-tabs" id="sectionTabs">
-<div class="sec-tab english active" onclick="goToSection('english')">
+    <div id="testScreen">
+        <!-- Header -->
+        <header class="test-hdr">
+            <div class="hdr-brand">
+                <span>📝</span><span>EduQuest</span>
+                <span class="hdr-brand-pill">ACT</span>
+            </div>
+            <div class="hdr-section-info">
+                <div class="section-badge" id="sectionBadge">English</div>
+                <span class="q-counter" id="qCounter">Q 1 / 75</span>
+            </div>
+            <a href="dashboard.html" class="hdr-exit-btn" style="color:rgba(255,255,255,0.7); font-size:0.8rem; font-weight:600; text-decoration:none; padding:5px 12px; border:1px solid rgba(255,255,255,0.18); border-radius:6px; margin-right:12px;">Exit to Dashboard ↵</a>
+            <div class="timer-wrap">
+                <span class="timer-label">Time Left</span>
+                <span id="timerDisplay">45:00</span>
+            </div>
+        </header>
+        <!-- Section tabs -->
+        <div class="section-tabs" id="sectionTabs">
+            <div class="sec-tab english active" onclick="goToSection('english')">
                 📝 English
                 <div class="tab-count" id="tabCount-english">0/75</div>
-</div>
-<div class="sec-tab math" onclick="goToSection('math')">
+            </div>
+            <div class="sec-tab math" onclick="goToSection('math')">
                 🔢 Math
                 <div class="tab-count" id="tabCount-math">0/60</div>
-</div>
-<div class="sec-tab reading" onclick="goToSection('reading')">
+            </div>
+            <div class="sec-tab reading" onclick="goToSection('reading')">
                 📖 Reading
                 <div class="tab-count" id="tabCount-reading">0/40</div>
-</div>
-</div>
-<!-- Body -->
-<div class="test-body">
-<!-- Question area -->
-<div class="q-area" id="qArea">
-<div class="q-num-label" id="qNumLabel">
+            </div>
+        </div>
+        <!-- Body -->
+        <div class="test-body">
+            <!-- Question area -->
+            <div class="q-area" id="qArea">
+                <div class="q-num-label" id="qNumLabel">
                     Question <span id="qNumSpan">1</span>
-<span class="q-topic-tag" id="qTopicTag"></span>
-</div>
-<div class="q-text" id="qText"></div>
-<div class="options" id="optionsWrap"></div>
-<div class="q-nav">
-<button class="btn-nav btn-prev" onclick="prevQ()">← Previous</button>
-<button class="btn-nav btn-next" id="btnNext" onclick="nextQ()">Next →</button>
-</div>
-</div>
-<!-- Palette -->
-<div class="palette-wrap">
-<div class="palette-title">Question Palette</div>
-<div id="paletteContent"></div>
-<div class="palette-legend">
-<div class="leg-item">
-<div class="leg-dot" style="background:rgba(26,86,219,0.4);border:1px solid #1a56db"></div>
+                    <span class="q-topic-tag" id="qTopicTag"></span>
+                </div>
+                <div class="q-text" id="qText"></div>
+                <div class="options" id="optionsWrap"></div>
+                <div class="q-nav">
+                    <button class="btn-nav btn-prev" onclick="prevQ()">← Previous</button>
+                    <button class="btn-nav btn-next" id="btnNext" onclick="nextQ()">Next →</button>
+                </div>
+            </div>
+            <!-- Palette -->
+            <div class="palette-wrap">
+                <div class="palette-title">Question Palette</div>
+                <div id="paletteContent"></div>
+                <div class="palette-legend">
+                    <div class="leg-item">
+                        <div class="leg-dot" style="background:rgba(26,86,219,0.4);border:1px solid #1a56db"></div>
                         Answered
                     </div>
-<div class="leg-item">
-<div class="leg-dot" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1)"></div>
+                    <div class="leg-item">
+                        <div class="leg-dot"
+                            style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1)"></div>
                         Unanswered
                     </div>
-</div>
-<button class="palette-submit" onclick="confirmSubmit()">Submit Test</button>
-</div>
-</div>
-</div>
-<!-- ═══════════════════════════════════════════════
+                </div>
+                <button class="palette-submit" onclick="confirmSubmit()">Submit Test</button>
+            </div>
+        </div>
+    </div>
+    <!-- ═══════════════════════════════════════════════
      RESULT SCREEN
 ════════════════════════════════════════════════ -->
-<div id="resultScreen">
-<div class="result-wrap">
-<div class="result-hero">
-<div class="composite-label">ACT Composite Score</div>
-<div class="composite-score" id="compositeScore">—</div>
-<div class="composite-max">out of 36</div>
-<div class="section-scores-row" id="sectionScoresRow"></div>
-</div>
-<div class="result-stats" id="resultStats"></div>
-<div class="topic-table-wrap">
-<div class="topic-table-hdr">
-<h3>📊 Topic-wise Performance</h3>
-</div>
-<table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Section</th>
-<th>Total</th>
-<th>Correct</th>
-<th>Wrong</th>
-<th>Accuracy</th>
-</tr>
-</thead>
-<tbody id="topicTableBody"></tbody>
-</table>
-</div>
-<div class="result-actions">
-<button class="btn-action-res btn-pdf" onclick="downloadPDF()">📥 Download PDF Report</button>
-<button class="btn-action-res btn-home" onclick="window.location.href='index.html'">← Back to
-                    Home</button>
-<button class="btn-action-res btn-home" onclick="showReviewModal()">📝 Review Questions</button>
-</div>
-</div>
-</div>
-<!-- Review Modal -->
-<div class="modal-overlay" id="reviewModal">
-<div class="modal-box">
-<button class="modal-close" onclick="closeReview()">✕</button>
-<h2 style="font-family:'Syne',sans-serif;font-size:1.6rem;margin-bottom:20px;text-align:center">Question
+    <div id="resultScreen">
+        <div class="result-wrap">
+            <div class="result-hero">
+                <div class="composite-label">ACT Composite Score</div>
+                <div class="composite-score" id="compositeScore">—</div>
+                <div class="composite-max">out of 36</div>
+                <div class="section-scores-row" id="sectionScoresRow"></div>
+            </div>
+            <div class="result-stats" id="resultStats"></div>
+            <div class="topic-table-wrap">
+                <div class="topic-table-hdr">
+                    <h3>📊 Topic-wise Performance</h3>
+                </div>
+                <table class="topic-table">
+                    <thead>
+                        <tr>
+                            <th>Topic</th>
+                            <th>Section</th>
+                            <th>Total</th>
+                            <th>Correct</th>
+                            <th>Wrong</th>
+                            <th>Accuracy</th>
+                        </tr>
+                    </thead>
+                    <tbody id="topicTableBody"></tbody>
+                </table>
+            </div>
+            <div class="result-actions" style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
+                <button class="btn-action-res btn-pdf" onclick="downloadPDF()">📥 Download PDF Report</button>
+                <button class="btn-action-res" style="background:#7c3aed; color:#fff;" onclick="showReviewModal()">📝 Review Questions</button>
+                <button class="btn-action-res btn-home" onclick="window.location.href='dashboard.html'">📊 Go to Dashboard</button>
+                <button class="btn-action-res btn-home" onclick="window.location.href='index.html'">🏠 Home</button>
+            </div>
+        </div>
+    </div>
+    <!-- Review Modal -->
+    <div class="modal-overlay" id="reviewModal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeReview()">✕</button>
+            <h2 style="font-family:'Syne',sans-serif;font-size:1.6rem;margin-bottom:20px;text-align:center">Question
                 Review</h2>
-<div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
-<button onclick="filterReview('all',this)" style="background:#1a56db;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">All</button>
-<button onclick="filterReview('correct',this)" style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Correct</button>
-<button onclick="filterReview('wrong',this)" style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Wrong</button>
-<button onclick="filterReview('unattempted',this)" style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Skipped</button>
-</div>
-<div id="reviewContent" style="display:flex;flex-direction:column;gap:14px;max-height:70vh;overflow-y:auto">
-</div>
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="countries.js"></script>
-<script src="supabase.js"></script>
-<script src="act_questions1.js"></script>
-<script src="act_report1.js"></script>
-<script src="access-check.js"></script>
-<script>
+            <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
+                <button onclick="filterReview('all',this)"
+                    style="background:#1a56db;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">All</button>
+                <button onclick="filterReview('correct',this)"
+                    style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Correct</button>
+                <button onclick="filterReview('wrong',this)"
+                    style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Wrong</button>
+                <button onclick="filterReview('unattempted',this)"
+                    style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Skipped</button>
+            </div>
+            <div id="reviewContent" style="display:flex;flex-direction:column;gap:14px;max-height:70vh;overflow-y:auto">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="countries.js"></script>
+    <script src="supabase.js"></script>
+    <script src="act_questions1.js"></script>
+    <script src="act_report1.js"></script>
+    <script src="access-check.js"></script>
+    <script>
 
-function formatLaTeX(str) {
-    if (!str || typeof str !== 'string') return str || '';
-    let res = str.replace(/\$([^\$]+)\$/g, (m, math) => {
-        if (window.katex) {
-            try {
-                return katex.renderToString(math, { throwOnError: false });
-            } catch(e) {}
+        function formatLaTeX(str) {
+            if (!str || typeof str !== 'string') return str || '';
+            let res = str.replace(/\$([^\$]+)\$/g, (m, math) => {
+                if (window.katex) {
+                    try {
+                        return katex.renderToString(math, { throwOnError: false });
+                    } catch (e) { }
+                }
+                return `<span class="latex-math">${formatMathCaret(math)}</span>`;
+            });
+            return formatMathCaret(res);
         }
-        return `<span class="latex-math">${formatMathCaret(math)}</span>`;
+
+        
+function formatPassageHTML(passage, qText) {
+    if (!passage || typeof passage !== 'string') return '';
+    let targetNum = null;
+    if (qText) {
+        const m = qText.match(/\[(\d+)\]/);
+        if (m) targetNum = m[1];
+    }
+
+    let html = passage.replace(/\[(\d+)\]/g, (match, num) => {
+        if (targetNum && num === targetNum) {
+            return `<span class="passage-tag active-tag" style="background:#f59e0b; color:#000; font-weight:800; font-size:0.85rem; padding:2px 8px; border-radius:4px; margin:0 4px; box-shadow:0 0 10px rgba(245,158,11,0.5);">[${num}]</span>`;
+        } else {
+            return `<span class="passage-tag" style="background:rgba(56,189,248,0.2); color:#38bdf8; border:1px solid rgba(56,189,248,0.4); font-weight:700; font-size:0.8rem; padding:1px 6px; border-radius:4px; margin:0 2px;">[${num}]</span>`;
+        }
     });
-    return formatMathCaret(res);
+
+    return `
+        <div class="passage-box" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:18px 20px; margin-bottom:20px; font-size:0.95rem; line-height:1.75; color:#e2e8f0; max-height:340px; overflow-y:auto; font-family:'IBM Plex Sans', sans-serif;">
+            <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#a78bfa; margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+                <span>📖 PASSAGE READING CONTEXT</span>
+            </div>
+            <div style="white-space:pre-wrap;">${formatLaTeX(html)}</div>
+        </div>
+    `;
 }
 
 function formatMathCaret(text) {
-    if (!text) return '';
-    return text.replace(/([A-Za-z0-9\)\}\]]+)\^(\(([^\)]+)\)|(\{([^\}]+)\})|(\-?[A-Za-z0-9\/]+))/g, (m, base, p2, p3, p4, p5, p6) => {
-        const exp = p3 || p5 || p6;
-        return `${base}<sup>${exp}</sup>`;
-    });
-}
+            if (!text) return '';
+            return text.replace(/([A-Za-z0-9\)\}\]]+)\^(\(([^\)]+)\)|(\{([^\}]+)\})|(\-?[A-Za-z0-9\/]+))/g, (m, base, p2, p3, p4, p5, p6) => {
+                const exp = p3 || p5 || p6;
+                return `${base}<sup>${exp}</sup>`;
+            });
+        }
 
 
         // ── State ─────────────────────────────────────────
@@ -1343,7 +1396,11 @@ function formatMathCaret(text) {
             document.getElementById('qCounter').textContent = `Q ${currentQIndex + 1} / ${qs.length}`;
 
             // Text
-            document.getElementById('qText').innerHTML = formatLaTeX(q.text);
+            let htmlContent = '';
+            const passageText = q.passage || (qs.find(item => item.passage && Math.abs((item.id || 0) - (q.id || 0)) <= 15) || {}).passage;
+            if (passageText) htmlContent += formatPassageHTML(passageText, q.text);
+            htmlContent += `<div class="q-main-prompt" style="font-size:1.05rem; font-weight:600; color:#fff; line-height:1.6;">${formatLaTeX(q.text)}</div>`;
+            document.getElementById('qText').innerHTML = htmlContent;
 
             // Options
             const LETTERS = ['A', 'B', 'C', 'D'];
@@ -1474,7 +1531,8 @@ function formatMathCaret(text) {
 
                 // Topic map
                 const tKey = `${q.section}::${q.topic}`;
-                if (!topicMap[tKey]) topicMap[tKey] = { section: q.section, topic: q.topic, total: 0, correct: 0, wrong: 0 };
+                if (!topicMap[tKey]) topicMap[tKey] = { section: q.section, topic: q.topic,
+                passage: q.passage || null, total: 0, correct: 0, wrong: 0 };
                 topicMap[tKey].total++;
                 if (status === 'correct') topicMap[tKey].correct++;
                 if (status === 'wrong') topicMap[tKey].wrong++;
@@ -1516,6 +1574,7 @@ function formatMathCaret(text) {
                 answer: q.answer,
                 status: q._status,
                 chosen: q._chosen !== undefined ? q._chosen : null,
+                explanation: q.explanation || q.solution || `Option (${['A', 'B', 'C', 'D'][q.answer]}) is the correct answer.`
             }));
 
             testResult = {
@@ -1536,13 +1595,22 @@ function formatMathCaret(text) {
             };
 
             // Save to Supabase & send email
-            saveACTResult(testResult);
-            if (typeof sendEmails === 'function') sendEmails({
-                ...testResult,
-                scaled: composite,
-                rwScore: null,
-                mathScore: null,
-            });
+            try {
+                saveACTResult(testResult);
+            } catch (e) {
+                console.error("saveACTResult error:", e);
+            }
+
+            try {
+                if (typeof sendEmails === 'function') sendEmails({
+                    ...testResult,
+                    scaled: composite,
+                    rwScore: null,
+                    mathScore: null,
+                });
+            } catch (e) {
+                console.error("sendEmails error:", e);
+            }
 
             showResultScreen(testResult);
         }
@@ -1663,4 +1731,5 @@ function formatMathCaret(text) {
         }
     </script>
 </body>
+
 </html>

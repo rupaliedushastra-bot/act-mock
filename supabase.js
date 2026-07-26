@@ -1,5 +1,54 @@
 console.log('⚡ Supabase script loaded (Version 2 - No attempted field)');
 
+// ── Global ACT Constants & Scoring Functions ───────
+window.SECTION_COLORS = window.SECTION_COLORS || {
+    english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd', science: '#fde68a'
+};
+window.SECTION_NAMES = window.SECTION_NAMES || {
+    english: '📝 English', math: '🔢 Math', reading: '📖 Reading', science: '🔬 Science'
+};
+
+if (typeof window.ACT_SCALE_TABLE === 'undefined') {
+    window.ACT_SCALE_TABLE = {
+        english: [
+            1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10, 10, 11, 12, 13, 14, 15, 16, 17, 17, 18, 18, 19, 20,
+            21, 21, 22, 23, 24, 24, 25, 25, 26, 27, 27, 28, 29, 29, 30, 30, 31, 31, 32, 32, 33, 33, 34, 34, 35, 35, 35, 36, 36, 36,
+            36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36
+        ],
+        math: [
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+            22, 22, 23, 24, 25, 26, 26, 27, 28, 28, 29, 30, 30, 31, 31, 32, 32, 33, 33, 34, 34, 35, 35, 35, 36, 36, 36, 36, 36, 36
+        ],
+        reading: [
+            1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+            27, 28, 29, 30, 31, 32, 33, 34, 35, 36
+        ]
+    };
+}
+
+if (typeof window.getACTSectionScore !== 'function') {
+    window.getACTSectionScore = function(sectionId, rawScore) {
+        const table = (window.ACT_SCALE_TABLE || {})[sectionId];
+        if (!table) return 1;
+        const idx = Math.min(rawScore, table.length - 1);
+        return table[idx] || 1;
+    };
+}
+
+if (typeof window.getACTCompositeScore !== 'function') {
+    window.getACTCompositeScore = function(sectionScores) {
+        if (!sectionScores) return 1;
+        const validKeys = ['english', 'math', 'reading'].filter(k => typeof sectionScores[k] === 'number' && !isNaN(sectionScores[k]));
+        if (validKeys.length > 0) {
+            const sum = validKeys.reduce((a, k) => a + sectionScores[k], 0);
+            return Math.round(sum / validKeys.length);
+        }
+        const scores = Object.values(sectionScores).filter(s => typeof s === 'number' && !isNaN(s));
+        if (scores.length === 0) return 1;
+        return Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+    };
+}
+
 const SUPABASE_CONFIG = {
     url: 'https://dyvvhmuegtzooijrtwyd.supabase.co', // e.g. https://xyzabc.supabase.co
     anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5dnZobXVlZ3R6b29panJ0d3lkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkwOTk5MTEsImV4cCI6MjA5NDY3NTkxMX0.pksVza66eu3WlM1_r_IGARkjd19BwUvbKntoUIwPhRY', // Settings > API > anon public key
@@ -55,10 +104,25 @@ async function saveToSupabase(result) {
         return;
     }
 
+    const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+    const enrichedDetails = (result.details || []).map(d => {
+        const answerIdx = (typeof d.answer === 'number') ? d.answer : (typeof d.correct_option === 'number' ? d.correct_option : null);
+        const ansLetter = answerIdx !== null && LETTERS[answerIdx] ? LETTERS[answerIdx] : (d.answer || d.correct_option || '–');
+        return {
+            id: d.id,
+            section: d.section || 'General',
+            topic: d.topic || 'General',
+            text: d.text || d.question || d.prompt || '',
+            options: d.options || [],
+            answer: d.answer !== undefined ? d.answer : d.correct_option,
+            chosen: d.chosen !== undefined ? d.chosen : d.chosen_option,
+            status: d.status || (d.chosen === d.answer ? 'correct' : (d.chosen !== null && d.chosen !== undefined ? 'wrong' : 'unattempted')),
+            explanation: d.explanation || d.solution || `Option (${ansLetter}) is the correct answer.`
+        };
+    });
+
     // Top weak topics (for quick view in dashboard)
-    const weakTopics = (result.topicAnalysis || []).filter(t => t.attempted > 0).sort((a, b) => a.acc - b.acc).slice(0, 3).map(t => `${t.name
-        } (${t.acc
-        }%)`).join(', ') || null;
+    const weakTopics = (result.topicAnalysis || []).filter(t => t.attempted > 0).sort((a, b) => a.acc - b.acc).slice(0, 3).map(t => `${t.name} (${t.acc}%)`).join(', ') || null;
 
     // Per-topic accuracy object (stored as JSON column)
     const topicScores = {};
@@ -70,6 +134,15 @@ async function saveToSupabase(result) {
             accuracy: t.acc
         };
     });
+
+    const studentAnswers = (result.details || []).map(d => ({
+        question_id: d.id,
+        section: d.section,
+        topic: d.topic,
+        status: d.status,
+        chosen_option: d.options ? (d.chosen !== undefined && d.chosen !== null ? ['A', 'B', 'C', 'D'][d.chosen] : null) : (d.chosen || null),
+        correct_option: d.options ? ['A', 'B', 'C', 'D'][d.answer] : d.fillAnswer
+    }));
 
     // Row to insert into sat_results table
     const row = {
@@ -91,19 +164,12 @@ async function saveToSupabase(result) {
         skipped: result.unattempted,
         total: result.total,
 
-        // Topic breakdown (stored as JSON)
+        // Topic breakdown & full details
         topic_scores: topicScores,
         weak_topics: weakTopics,
-
-        // Student's full answers detail (stored as JSON)
-        student_answers: (result.details || []).map(d => ({
-            question_id: d.id,
-            section: d.section,
-            topic: d.topic,
-            status: d.status, // 'correct', 'wrong', 'unattempted'
-            chosen_option: d.options ? (d.chosen !== undefined && d.chosen !== null ? ['A', 'B', 'C', 'D'][d.chosen] : null) : (d.chosen || null),
-            correct_option: d.options ? ['A', 'B', 'C', 'D'][d.answer] : d.fillAnswer
-        })),
+        details: enrichedDetails,
+        details_json: JSON.stringify(enrichedDetails),
+        student_answers: studentAnswers,
 
         // Exam name
         exam_name: result.examName || null,
@@ -114,14 +180,12 @@ async function saveToSupabase(result) {
     };
 
     try {
-        const res = await fetch(`${SUPABASE_CONFIG.url
-            }/rest/v1/sat_results`, {
+        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/sat_results`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'apikey': SUPABASE_CONFIG.anonKey,
-                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey
-                    }`,
+                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
                 'Prefer': 'return=minimal'
             },
             body: JSON.stringify(row)
@@ -165,15 +229,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 // act1.html mein supabase.js ke baad
 // =============================================
 
-// ── Save ACT result to Supabase ───────────────
-// act_results table mein data store hoga (SAT se alag)
+// ── Save ACT result to Supabase & LocalStorage ───────────────
 async function saveACTResult(result) {
-    if (SUPABASE_CONFIG.url === 'YOUR_SUPABASE_URL') {
-        console.warn('⚠️ Supabase not configured yet.');
-        return;
-    }
+    if (!result) return;
 
-    // Topic scores as JSON object
+    // 1. Build topic scores JSON
     const topicScores = {};
     (result.topicAnalysis || []).forEach(t => {
         const key = `${t.section}::${t.name}`;
@@ -187,7 +247,7 @@ async function saveACTResult(result) {
         };
     });
 
-    // Weak topics (bottom 3 by accuracy)
+    // 2. Weak topics (bottom 3 by accuracy)
     const weakTopics = (result.topicAnalysis || [])
         .filter(t => t.attempted > 0)
         .sort((a, b) => a.acc - b.acc)
@@ -195,76 +255,136 @@ async function saveACTResult(result) {
         .map(t => `${t.name} [${t.section}] (${t.acc}%)`)
         .join(', ') || null;
 
-    // Student answers JSON
+    const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+    const enrichedDetails = (result.details || []).map(d => {
+        const answerIdx = (typeof d.answer === 'number') ? d.answer : (typeof d.correct_option === 'number' ? d.correct_option : null);
+        const ansLetter = answerIdx !== null && LETTERS[answerIdx] ? LETTERS[answerIdx] : (d.answer || d.correct_option || '–');
+        return {
+            id: d.id,
+            section: d.section || 'General',
+            topic: d.topic || 'General',
+            text: d.text || d.question || d.prompt || '',
+            options: d.options || [],
+            answer: d.answer !== undefined ? d.answer : d.correct_option,
+            chosen: d.chosen !== undefined ? d.chosen : d.chosen_option,
+            status: d.status || (d.chosen === d.answer ? 'correct' : (d.chosen !== null && d.chosen !== undefined ? 'wrong' : 'unattempted')),
+            explanation: d.explanation || d.solution || `Option (${ansLetter}) is the correct answer.`
+        };
+    });
+
+    // 3. Simplified student answers JSON
     const studentAnswers = (result.details || []).map(d => ({
         question_id: d.id,
         section: d.section,
         topic: d.topic,
         status: d.status,   // 'correct', 'wrong', 'unattempted'
         chosen_option: d.chosen !== undefined && d.chosen !== null
-            ? ['A', 'B', 'C', 'D'][d.chosen]
+            ? (typeof d.chosen === 'number' ? ['A', 'B', 'C', 'D'][d.chosen] : d.chosen)
             : null,
-        correct_option: ['A', 'B', 'C', 'D'][d.answer]
+        correct_option: typeof d.answer === 'number' ? ['A', 'B', 'C', 'D'][d.answer] : d.answer
     }));
 
+    // 4. Try to get logged in user_id & session access token
+    let userId = null;
+    let authHeader = `Bearer ${SUPABASE_CONFIG.anonKey}`;
+    let supabaseClient = null;
+
+    if (window.supabase && SUPABASE_CONFIG.url && SUPABASE_CONFIG.url !== 'YOUR_SUPABASE_URL') {
+        try {
+            supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+            const { data: { session } } = await supabaseClient.auth.getSession();
+            if (session && session.user) {
+                userId = session.user.id;
+                authHeader = `Bearer ${session.access_token}`;
+            }
+        } catch (e) {
+            console.warn('Could not retrieve Supabase session:', e);
+        }
+    }
+
+    const isTopic = (result.level === 'Topic' || (result.examName && result.examName.toLowerCase().includes('topic')));
+    const levelVal = isTopic ? 'Topic' : (result.level || 'Diagnostic');
+
     const row = {
-        // Student info
-        student_name: result.student.name,
-        student_email: result.student.email,
-        student_phone: result.student.phone,
+        user_id: userId,
+        student_name: result.student?.name || 'Student',
+        student_email: result.student?.email || 'student@eduquest.com',
+        student_phone: result.student?.phone || '–',
 
-        // Exam info
-        exam_name: result.examName || 'ACT Practice Test 1',
-        level: result.level || 'Diagnostic',
-        test_type: result.level || 'Diagnostic',
+        exam_name: result.examName || 'ACT Practice Test',
+        level: levelVal,
+        test_type: levelVal,
 
-        // Composite + section scores
         composite_score: result.composite || null,
         english_score: result.sectionScores?.english || null,
         math_score: result.sectionScores?.math || null,
         reading_score: result.sectionScores?.reading || null,
-        science_score: result.sectionScores?.science || null,
+        science_score: null,
 
-        // Overall stats
-        percentage: result.pct,
-        grade: result.grade,
-        correct: result.correct,
-        wrong: result.wrong,
-        skipped: result.unattempted,
-        unattempted: result.unattempted,
-        total: result.total,
+        percentage: result.pct || 0,
+        grade: result.grade || 'B',
+        correct: result.correct || 0,
+        wrong: result.wrong || 0,
+        skipped: result.unattempted || 0,
+        unattempted: result.unattempted || 0,
+        total: result.total || 0,
 
-        // JSON columns
         topic_scores: topicScores,
-        section_scores: topicScores,
+        section_scores: result.sectionScores || topicScores,
         weak_topics: weakTopics,
-        student_answers: studentAnswers,
-        details: studentAnswers,
 
-        // Timestamps
-        submitted_at: result.submitTime,
+        details: enrichedDetails,
+        details_json: JSON.stringify(enrichedDetails),
+        student_answers: studentAnswers,
+
+        submitted_at: result.submitTime || new Date().toISOString(),
         created_at: new Date().toISOString()
     };
 
+    // 5. Always save to LocalStorage fallback
     try {
-        const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/act_results`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'apikey': SUPABASE_CONFIG.anonKey,
-                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
-                'Prefer': 'return=minimal'
-            },
-            body: JSON.stringify(row)
-        });
+        const historyStr = localStorage.getItem('act_results_history');
+        const history = historyStr ? JSON.parse(historyStr) : [];
+        history.unshift(row);
+        localStorage.setItem('act_results_history', JSON.stringify(history.slice(0, 50)));
+        console.log('✅ ACT Result saved to LocalStorage');
+    } catch (e) {
+        console.error('Failed to save to LocalStorage:', e);
+    }
 
-        if (res.ok || res.status === 201) {
-            console.log('✅ ACT Result saved to Supabase successfully');
-        } else {
-            const errText = await res.text();
-            console.error('❌ ACT Supabase save failed:', res.status, errText);
+    // 6. Save to Supabase table act_results
+    if (SUPABASE_CONFIG.url && SUPABASE_CONFIG.url !== 'YOUR_SUPABASE_URL') {
+        try {
+            if (supabaseClient) {
+                const { data, error } = await supabaseClient.from('act_results').insert([row]);
+                if (error) {
+                    console.error('❌ Supabase act_results insert error:', error);
+                } else {
+                    console.log('✅ ACT Result saved to Supabase successfully via SDK');
+                    return;
+                }
+            }
+
+            // Fallback REST fetch if SDK insert had issue
+            const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/act_results`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'apikey': SUPABASE_CONFIG.anonKey,
+                    'Authorization': authHeader,
+                    'Prefer': 'return=minimal'
+                },
+                body: JSON.stringify(row)
+            });
+
+            if (res.ok || res.status === 201) {
+                console.log('✅ ACT Result saved to Supabase via REST fetch');
+            } else {
+                const errText = await res.text();
+                console.error('❌ ACT Supabase REST save failed:', res.status, errText);
+            }
+        } catch (err) {
+            console.error('❌ ACT Supabase network error:', err);
         }
-    } catch (err) {
-        console.error('❌ ACT Supabase network error:', err);
     }
 }

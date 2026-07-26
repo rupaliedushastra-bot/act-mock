@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universal Super Admin Panel — EduQuest Portal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="supabase.js"></script>
+  <script src="report.js"></script>
+  <script src="act_report1.js"></script>
   <style>
     :root {
       --primary: #7c3aed;
@@ -22,15 +28,25 @@
       --font-body: 'IBM Plex Sans', sans-serif;
       --shadow-glow: 0 0 30px rgba(124, 58, 237, 0.2);
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: var(--font-body);
       background: var(--bg-dark);
       color: var(--text-main);
       min-height: 100vh;
     }
-    a { color: inherit; text-decoration: none; }
-    
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     .hdr {
       height: 64px;
       display: flex;
@@ -44,6 +60,7 @@
       top: 0;
       z-index: 100;
     }
+
     .brand {
       font-family: var(--font-brand);
       font-size: 1.25rem;
@@ -52,7 +69,11 @@
       align-items: center;
       gap: 10px;
     }
-    .brand-icon { font-size: 1.5rem; }
+
+    .brand-icon {
+      font-size: 1.5rem;
+    }
+
     .brand-pill {
       background: linear-gradient(135deg, #10b981, #059669);
       border-radius: 6px;
@@ -62,12 +83,14 @@
       text-transform: uppercase;
       color: #fff;
     }
+
     .auth-section {
       display: flex;
       align-items: center;
       gap: 16px;
       font-size: 0.88rem;
     }
+
     .btn-primary {
       background: linear-gradient(135deg, var(--primary), var(--primary-hover));
       color: #fff;
@@ -78,13 +101,18 @@
       cursor: pointer;
       transition: all 0.2s;
     }
-    .btn-primary:hover { transform: translateY(-1px); box-shadow: var(--shadow-glow); }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-glow);
+    }
 
     .admin-wrap {
       max-width: 1440px;
       margin: 0 auto;
       padding: 30px 24px 80px;
     }
+
     .admin-hdr {
       display: flex;
       justify-content: space-between;
@@ -98,14 +126,20 @@
       border: 1px solid var(--border-color);
       backdrop-filter: blur(12px);
     }
+
     .admin-title h1 {
       font-family: var(--font-brand);
       font-size: 2rem;
       font-weight: 800;
       color: #fff;
     }
-    .admin-title p { color: var(--text-muted); font-size: 0.95rem; margin-top: 4px; }
-    
+
+    .admin-title p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
     /* ── UNIVERSAL PORTAL SWITCHER ───────────────────────── */
     .portal-switcher {
       display: flex;
@@ -116,6 +150,7 @@
       border-bottom: 1px solid var(--border-color);
       flex-wrap: wrap;
     }
+
     .portal-btn {
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid var(--border-color);
@@ -132,18 +167,20 @@
       gap: 8px;
       white-space: nowrap;
     }
+
     .portal-btn:hover {
       background: rgba(255, 255, 255, 0.07);
       color: #fff;
       transform: translateY(-2px);
     }
+
     .portal-btn.active {
       background: linear-gradient(135deg, rgba(124, 58, 237, 0.35), rgba(91, 33, 182, 0.25));
       border-color: var(--primary);
       color: #fff;
       box-shadow: var(--shadow-glow);
     }
-    
+
     /* ── STATS BAR ───────────────────────────────────────── */
     .stats-bar {
       display: grid;
@@ -151,6 +188,7 @@
       gap: 16px;
       margin-bottom: 28px;
     }
+
     .stat-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -158,12 +196,14 @@
       padding: 20px;
       text-align: center;
     }
+
     .stat-val {
       font-family: var(--font-brand);
       font-size: 2.2rem;
       font-weight: 800;
       color: #a78bfa;
     }
+
     .stat-lbl {
       font-size: 0.8rem;
       color: var(--text-muted);
@@ -179,8 +219,9 @@
       margin-bottom: 24px;
       flex-wrap: wrap;
     }
+
     .sub-tab-btn {
-      background: rgba(255,255,255,0.02);
+      background: rgba(255, 255, 255, 0.02);
       border: 1px solid var(--border-color);
       color: var(--text-dim);
       padding: 10px 20px;
@@ -190,10 +231,11 @@
       cursor: pointer;
       transition: all 0.2s;
     }
+
     .sub-tab-btn.active {
-      background: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
       color: #fff;
-      border-color: rgba(255,255,255,0.3);
+      border-color: rgba(255, 255, 255, 0.3);
     }
 
     /* ── FILTERS & CONTROLS ──────────────────────────────── */
@@ -205,8 +247,9 @@
       flex-wrap: wrap;
       gap: 14px;
     }
+
     .search-box {
-      background: rgba(0,0,0,0.4);
+      background: rgba(0, 0, 0, 0.4);
       border: 1.5px solid var(--border-color);
       color: #fff;
       padding: 10px 16px;
@@ -215,14 +258,19 @@
       font-size: 0.9rem;
       outline: none;
     }
-    .search-box:focus { border-color: var(--primary); }
+
+    .search-box:focus {
+      border-color: var(--primary);
+    }
+
     .filter-pills {
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
     }
+
     .filter-pill {
-      background: rgba(255,255,255,0.03);
+      background: rgba(255, 255, 255, 0.03);
       border: 1px solid var(--border-color);
       color: var(--text-muted);
       padding: 8px 16px;
@@ -231,11 +279,13 @@
       cursor: pointer;
       transition: all 0.2s;
     }
+
     .filter-pill.active {
       background: var(--primary);
       color: #fff;
       border-color: transparent;
     }
+
     .btn-grant-all {
       background: linear-gradient(135deg, #10b981, #059669);
       color: #fff;
@@ -248,7 +298,11 @@
       transition: all 0.2s;
       box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
     }
-    .btn-grant-all:hover { opacity: 0.9; transform: translateY(-1px); }
+
+    .btn-grant-all:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
 
     /* ── USER CARDS (ACCEPT / REJECT PATTERN) ────────────── */
     .users-grid {
@@ -256,9 +310,13 @@
       grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
       gap: 16px;
     }
+
     @media (max-width: 900px) {
-      .users-grid { grid-template-columns: 1fr; }
+      .users-grid {
+        grid-template-columns: 1fr;
+      }
     }
+
     .user-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -270,24 +328,31 @@
       gap: 16px;
       transition: all 0.2s;
     }
-    .user-card:hover { border-color: rgba(255,255,255,0.2); }
+
+    .user-card:hover {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
     .user-card-hdr {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       gap: 10px;
     }
+
     .user-email {
       font-weight: 700;
       color: #fff;
       font-size: 1rem;
       word-break: break-all;
     }
+
     .user-meta {
       font-size: 0.82rem;
       color: var(--text-muted);
       margin-top: 4px;
     }
+
     .req-badge {
       background: rgba(245, 158, 11, 0.2);
       color: #fbbf24;
@@ -301,14 +366,24 @@
       gap: 4px;
       animation: pulse 2s infinite;
     }
+
     @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
-      70% { box-shadow: 0 0 0 6px rgba(245, 158, 11, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+      0% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+      }
+
+      70% {
+        box-shadow: 0 0 0 6px rgba(245, 158, 11, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+      }
     }
+
     .org-input {
-      background: rgba(0,0,0,0.3);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       color: #fff;
       padding: 8px 12px;
       border-radius: 8px;
@@ -317,16 +392,21 @@
       margin-top: 10px;
       outline: none;
     }
-    .org-input:focus { border-color: #60a5fa; }
+
+    .org-input:focus {
+      border-color: #60a5fa;
+    }
+
     .access-rows {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      background: rgba(0,0,0,0.25);
+      background: rgba(0, 0, 0, 0.25);
       padding: 14px;
       border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.04);
+      border: 1px solid rgba(255, 255, 255, 0.04);
     }
+
     .access-row {
       display: flex;
       justify-content: space-between;
@@ -334,6 +414,7 @@
       flex-wrap: wrap;
       gap: 10px;
     }
+
     .access-lbl {
       font-size: 0.88rem;
       font-weight: 600;
@@ -342,16 +423,28 @@
       align-items: center;
       gap: 8px;
     }
+
     .status-dot {
       width: 8px;
       height: 8px;
       border-radius: 50%;
     }
-    .status-dot.unlocked { background: #10b981; box-shadow: 0 0 6px #10b981; }
-    .status-dot.locked { background: #ef4444; }
-    
+
+    .status-dot.unlocked {
+      background: #10b981;
+      box-shadow: 0 0 6px #10b981;
+    }
+
+    .status-dot.locked {
+      background: #ef4444;
+    }
+
     /* ACCEPT & REJECT BUTTONS */
-    .btn-group { display: flex; gap: 6px; }
+    .btn-group {
+      display: flex;
+      gap: 6px;
+    }
+
     .btn-accept {
       background: rgba(16, 185, 129, 0.15);
       border: 1px solid rgba(16, 185, 129, 0.4);
@@ -363,7 +456,12 @@
       cursor: pointer;
       transition: all 0.2s;
     }
-    .btn-accept:hover { background: #10b981; color: #fff; }
+
+    .btn-accept:hover {
+      background: #10b981;
+      color: #fff;
+    }
+
     .btn-reject {
       background: rgba(239, 68, 68, 0.15);
       border: 1px solid rgba(239, 68, 68, 0.4);
@@ -375,7 +473,11 @@
       cursor: pointer;
       transition: all 0.2s;
     }
-    .btn-reject:hover { background: #ef4444; color: #fff; }
+
+    .btn-reject:hover {
+      background: #ef4444;
+      color: #fff;
+    }
 
     /* ── REPORT CARDS ────────────────────────────────────── */
     .student-report-card {
@@ -386,6 +488,7 @@
       overflow: hidden;
       transition: all 0.25s;
     }
+
     .src-header {
       padding: 18px 24px;
       display: flex;
@@ -398,51 +501,66 @@
       flex-wrap: wrap;
       gap: 12px;
     }
-    .src-header:hover { background: rgba(255, 255, 255, 0.05); }
+
+    .src-header:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
     .src-info .src-email {
       font-weight: 700;
       font-size: 1.05rem;
       color: #fff;
     }
+
     .src-info .src-meta {
       font-size: 0.85rem;
       color: var(--text-muted);
       margin-top: 4px;
     }
+
     .src-stats {
       display: flex;
       gap: 24px;
       align-items: center;
     }
-    .src-stat { text-align: center; }
+
+    .src-stat {
+      text-align: center;
+    }
+
     .src-stat .ss-num {
       font-family: var(--font-brand);
       font-size: 1.25rem;
       font-weight: 800;
       color: #a78bfa;
     }
+
     .src-stat .ss-lbl {
       font-size: 0.75rem;
       color: var(--text-muted);
       text-transform: uppercase;
     }
+
     .src-toggle {
       font-size: 1.1rem;
       color: var(--text-muted);
       transition: transform 0.25s;
     }
+
     .src-body {
       display: none;
       padding: 20px 24px;
       background: rgba(0, 0, 0, 0.25);
       border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
+
     .src-table {
       width: 100%;
       border-collapse: collapse;
       font-size: 0.9rem;
       text-align: left;
     }
+
     .src-table th {
       padding: 10px 12px;
       color: var(--text-muted);
@@ -451,15 +569,18 @@
       text-transform: uppercase;
       font-size: 0.78rem;
     }
+
     .src-table td {
       padding: 14px 12px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       color: #cbd5e1;
     }
+
     .src-table tr {
       cursor: pointer;
       transition: background 0.2s;
     }
+
     .src-table tr:hover td {
       background: rgba(167, 139, 250, 0.08);
       color: #fff;
@@ -468,7 +589,10 @@
     /* ── MODAL STYLES ────────────────────────────────────── */
     .modal-overlay {
       position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       background: rgba(0, 0, 0, 0.85);
       backdrop-filter: blur(8px);
       z-index: 9999;
@@ -477,7 +601,11 @@
       align-items: center;
       padding: 20px;
     }
-    .modal-overlay.open { display: flex; }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
     .modal-card {
       background: #13131f;
       border: 1px solid rgba(167, 139, 250, 0.3);
@@ -490,6 +618,7 @@
       position: relative;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
     }
+
     .modal-hdr {
       display: flex;
       justify-content: space-between;
@@ -498,17 +627,20 @@
       padding-bottom: 16px;
       margin-bottom: 20px;
     }
+
     .modal-hdr h3 {
       font-family: var(--font-brand);
       font-size: 1.4rem;
       color: #fff;
       margin: 0;
     }
+
     .modal-close {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.15);
       color: #fff;
-      width: 36px; height: 36px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       font-size: 1.1rem;
       cursor: pointer;
@@ -517,13 +649,19 @@
       justify-content: center;
       transition: all 0.2s;
     }
-    .modal-close:hover { background: var(--primary); border-color: transparent; }
+
+    .modal-close:hover {
+      background: var(--primary);
+      border-color: transparent;
+    }
+
     .modal-stats-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
       gap: 12px;
       margin: 20px 0;
     }
+
     .modal-stat-box {
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid rgba(255, 255, 255, 0.07);
@@ -531,17 +669,20 @@
       padding: 14px 10px;
       text-align: center;
     }
+
     .modal-stat-box .num {
       font-family: var(--font-brand);
       font-size: 1.4rem;
       font-weight: 800;
     }
+
     .modal-stat-box .lbl {
       font-size: 0.75rem;
       color: var(--text-muted);
       text-transform: uppercase;
       margin-top: 4px;
     }
+
     .q-review-card {
       background: rgba(255, 255, 255, 0.02);
       border: 1px solid rgba(255, 255, 255, 0.07);
@@ -549,6 +690,7 @@
       padding: 18px;
       margin-bottom: 16px;
     }
+
     .q-review-hdr {
       display: flex;
       justify-content: space-between;
@@ -557,28 +699,43 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       padding-bottom: 10px;
     }
+
     .q-status-badge {
       padding: 4px 10px;
       border-radius: 8px;
       font-size: 0.8rem;
       font-weight: 700;
     }
-    .q-status-correct { background: rgba(16, 185, 129, 0.15); color: #34d399; }
-    .q-status-wrong { background: rgba(239, 68, 68, 0.15); color: #f87171; }
-    .q-status-skipped { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
-    
+
+    .q-status-correct {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+    }
+
+    .q-status-wrong {
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+    }
+
+    .q-status-skipped {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+    }
+
     .q-text {
       font-size: 0.95rem;
       color: #fff;
       line-height: 1.5;
       margin-bottom: 14px;
     }
+
     .q-opt-list {
       display: flex;
       flex-direction: column;
       gap: 8px;
       margin-bottom: 14px;
     }
+
     .q-opt {
       padding: 10px 14px;
       border-radius: 10px;
@@ -589,18 +746,21 @@
       justify-content: space-between;
       align-items: center;
     }
+
     .q-opt.correct-ans {
       background: rgba(16, 185, 129, 0.15);
       border-color: #10b981;
       color: #34d399;
       font-weight: 600;
     }
+
     .q-opt.wrong-chosen {
       background: rgba(239, 68, 68, 0.15);
       border-color: #ef4444;
       color: #f87171;
       font-weight: 600;
     }
+
     .q-exp {
       background: rgba(96, 165, 250, 0.08);
       border-left: 3px solid #60a5fa;
@@ -610,8 +770,15 @@
       color: #cbd5e1;
       line-height: 1.5;
     }
-    .tab-section { display: none; }
-    .tab-section.active { display: block; }
+
+    .tab-section {
+      display: none;
+    }
+
+    .tab-section.active {
+      display: block;
+    }
+
     @media(max-width: 768px) {
       .hdr {
         height: auto;
@@ -621,15 +788,18 @@
         gap: 12px;
         justify-content: center;
       }
+
       .auth-section {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
         width: 100%;
       }
+
       .admin-wrap {
         padding: 20px 16px;
       }
+
       .src-header {
         flex-direction: column;
         align-items: flex-start;
@@ -638,10 +808,11 @@
     }
   </style>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 
 </head>
+
 <body>
 
   <!-- ── Header ─────────────────────────────────────────── -->
@@ -653,7 +824,8 @@
     </a>
     <div class="auth-section">
       <span style="color: #34d399; font-weight: 600;">👑 Admin Mode</span>
-      <button class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;" onclick="adminLogout()">Log Out</button>
+      <button class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;" onclick="adminLogout()">Log
+        Out</button>
     </div>
   </header>
 
@@ -699,8 +871,10 @@
 
     <!-- Sub Tabs -->
     <div class="sub-tabs">
-      <button class="sub-tab-btn active" id="subtab-users" onclick="switchSubTab('users')">👥 Student Access Management</button>
-      <button class="sub-tab-btn" id="subtab-reports" onclick="switchSubTab('reports')">📈 Test Reports &amp; Scores</button>
+      <button class="sub-tab-btn active" id="subtab-users" onclick="switchSubTab('users')">👥 Student Access
+        Management</button>
+      <button class="sub-tab-btn" id="subtab-reports" onclick="switchSubTab('reports')">📈 Test Reports &amp;
+        Scores</button>
     </div>
 
     <!-- ── VIEW 1: STUDENT ACCESS MANAGEMENT ────────────── -->
@@ -712,260 +886,406 @@
           <button class="filter-pill" id="pill-approved" onclick="setFilter('approved')">✓ Approved</button>
         </div>
         <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
-          <input type="text" class="search-box" id="search-input" placeholder="Search student email, name or org..." oninput="renderUsers()">
+          <input type="text" class="search-box" id="search-input" placeholder="Search student email, name or org..."
+            oninput="renderUsers()">
           <button class="btn-grant-all" onclick="acceptAllPending()">⚡ Accept All Pending Requests</button>
         </div>
       </div>
 
       <div class="users-grid" id="users-grid">
-        <div style="text-align: center; padding: 40px; color: var(--text-muted); grid-column: 1/-1;">Loading student accounts...</div>
+        <div style="text-align: center; padding: 40px; color: var(--text-muted); grid-column: 1/-1;">Loading student
+          accounts...</div>
       </div>
     </div>
 
     <!-- ── VIEW 2: TEST REPORTS & SCORES ────────────────── -->
     <div id="view-reports" class="tab-section">
       <div class="controls-row">
-        <input type="text" class="search-box" id="search-reports" placeholder="Search test reports by email or exam..." oninput="renderReports()">
+        <input type="text" class="search-box" id="search-reports" placeholder="Search test reports by email or exam..."
+          oninput="renderReports()">
       </div>
       <div id="reports-list">
         <div style="text-align: center; padding: 40px; color: var(--text-muted);">Loading test reports...</div>
       </div>
     </div>
+    </head>
 
-  </main>
+    <body>
 
-  <!-- ── Test Report Detail Modal ───────────────────────── -->
-  <div class="modal-overlay" id="reportModalOverlay" onclick="if(event.target===this) closeReportModal()">
-    <div class="modal-card" id="reportModalContent">
-      <!-- Dynamic modal content -->
-    </div>
-  </div>
+      <!-- ── Header ─────────────────────────────────────────── -->
+      <header class="hdr">
+        <a href="index.html" class="brand">
+          <div class="brand-icon">⚡</div>
+          <span>EduQuest</span>
+          <span class="brand-pill">Universal Super Admin</span>
+        </a>
+        <div class="auth-section">
+          <span style="color: #34d399; font-weight: 600;">👑 Admin Mode</span>
+          <button class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;" onclick="adminLogout()">Log
+            Out</button>
+        </div>
+      </header>
 
-  <script>
+      <!-- ── Main Content ───────────────────────────────────── -->
+      <main class="admin-wrap">
+        <div class="admin-hdr">
+          <div class="admin-title">
+            <h1>Universal Exam Authorization &amp; Analytics</h1>
+            <p>Manage student access approvals (Accept/Reject) and review practice reports across all EduQuest modules.
+            </p>
+          </div>
+        </div>
 
-function formatLaTeX(str) {
-    if (!str || typeof str !== 'string') return str || '';
-    let res = str.replace(/\$([^\$]+)\$/g, (m, math) => {
-        if (window.katex) {
-            try {
-                return katex.renderToString(math, { throwOnError: false });
-            } catch(e) {}
+        <!-- Universal Portal Switcher -->
+        <div class="portal-switcher">
+          <button class="portal-btn active" id="btn-portal-ssat" onclick="switchPortal('ssat')">🚀 SSAT</button>
+          <button class="portal-btn" id="btn-portal-mock" onclick="switchPortal('mock')">📝 SAT (Mock)</button>
+          <button class="portal-btn" id="btn-portal-topic" onclick="switchPortal('topic')">📖 SAT (Topic)</button>
+          <button class="portal-btn" id="btn-portal-tmua" onclick="switchPortal('tmua')">📐 TMUA</button>
+          <button class="portal-btn" id="btn-portal-ucat" onclick="switchPortal('ucat')">🩺 UCAT</button>
+          <button class="portal-btn" id="btn-portal-act" onclick="switchPortal('act')">📊 ACT</button>
+          <button class="portal-btn" id="btn-portal-ap" onclick="switchPortal('ap')">🎓 AP</button>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+          <div class="stat-card">
+            <div class="stat-val" id="stat-total-users">0</div>
+            <div class="stat-lbl">Total Registered Students</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-approved" style="color: #34d399;">0</div>
+            <div class="stat-lbl" id="stat-lbl-approved">Approved in Portal</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-pending" style="color: #fbbf24;">0</div>
+            <div class="stat-lbl">Pending Requests</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="stat-reports" style="color: #38bdf8;">0</div>
+            <div class="stat-lbl">Completed Test Reports</div>
+          </div>
+        </div>
+
+        <!-- Sub Tabs -->
+        <div class="sub-tabs">
+          <button class="sub-tab-btn active" id="subtab-users" onclick="switchSubTab('users')">👥 Student Access
+            Management</button>
+          <button class="sub-tab-btn" id="subtab-reports" onclick="switchSubTab('reports')">📈 Test Reports &amp;
+            Scores</button>
+        </div>
+
+        <!-- ── VIEW 1: STUDENT ACCESS MANAGEMENT ────────────── -->
+        <div id="view-users" class="tab-section active">
+          <div class="controls-row">
+            <div class="filter-pills">
+              <button class="filter-pill active" id="pill-all" onclick="setFilter('all')">All Students</button>
+              <button class="filter-pill" id="pill-pending" onclick="setFilter('pending')">⏳ Pending / Requested
+                🔔</button>
+              <button class="filter-pill" id="pill-approved" onclick="setFilter('approved')">✓ Approved</button>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+              <input type="text" class="search-box" id="search-input" placeholder="Search student email, name or org..."
+                oninput="renderUsers()">
+              <button class="btn-grant-all" onclick="acceptAllPending()">⚡ Accept All Pending Requests</button>
+            </div>
+          </div>
+
+          <div class="users-grid" id="users-grid">
+            <div style="text-align: center; padding: 40px; color: var(--text-muted); grid-column: 1/-1;">Loading student
+              accounts...</div>
+          </div>
+        </div>
+
+        <!-- ── VIEW 2: TEST REPORTS & SCORES ────────────────── -->
+        <div id="view-reports" class="tab-section">
+          <div class="controls-row">
+            <input type="text" class="search-box" id="search-reports"
+              placeholder="Search test reports by email or exam..." oninput="renderReports()">
+          </div>
+          <div id="reports-list">
+            <div style="text-align: center; padding: 40px; color: var(--text-muted);">Loading test reports...</div>
+          </div>
+        </div>
+
+      </main>
+
+      <!-- ── Test Report Detail Modal ───────────────────────── -->
+      <div class="modal-overlay" id="reportModalOverlay" onclick="if(event.target===this) closeReportModal()">
+        <div class="modal-card" id="reportModalContent">
+          <!-- Dynamic modal content -->
+        </div>
+      </div>
+
+      <script>
+
+function formatPassageHTML(passage, qText) {
+    if (!passage || typeof passage !== 'string') return '';
+    let targetNum = null;
+    if (qText) {
+        const m = qText.match(/\[(\d+)\]/);
+        if (m) targetNum = m[1];
+    }
+
+    let html = passage.replace(/\[(\d+)\]/g, (match, num) => {
+        if (targetNum && num === targetNum) {
+            return `<span class="passage-tag active-tag" style="background:#f59e0b; color:#000; font-weight:800; font-size:0.85rem; padding:2px 8px; border-radius:4px; margin:0 4px; box-shadow:0 0 10px rgba(245,158,11,0.5);">[${num}]</span>`;
+        } else {
+            return `<span class="passage-tag" style="background:rgba(56,189,248,0.2); color:#38bdf8; border:1px solid rgba(56,189,248,0.4); font-weight:700; font-size:0.8rem; padding:1px 6px; border-radius:4px; margin:0 2px;">[${num}]</span>`;
         }
-        return `<span class="latex-math">${formatMathCaret(math)}</span>`;
     });
-    return formatMathCaret(res);
-}
 
-function formatMathCaret(text) {
-    if (!text) return '';
-    return text.replace(/([A-Za-z0-9\)\}\]]+)\^(\(([^\)]+)\)|(\{([^\}]+)\})|(\-?[A-Za-z0-9\/]+))/g, (m, base, p2, p3, p4, p5, p6) => {
-        const exp = p3 || p5 || p6;
-        return `${base}<sup>${exp}</sup>`;
-    });
+    return `
+        <div class="passage-box" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:16px 18px; margin-bottom:14px; font-size:0.92rem; line-height:1.7; color:#e2e8f0; max-height:280px; overflow-y:auto; font-family:'IBM Plex Sans', sans-serif;">
+            <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#a78bfa; margin-bottom:8px;">📖 Passage Reading Context</div>
+            <div style="white-space:pre-wrap;">${formatLaTeX ? formatLaTeX(html) : html}</div>
+        </div>
+    `;
 }
-
 
     const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-    let allProfiles = [];
-    let allReports = { ssat: [], mock: [], topic: [], tmua: [], ucat: [], act: [], ap: [] };
-    let currentPortal = 'ssat';
-    let currentFilter = 'all';
+        let allProfiles = [];
+        let allReports = { ssat: [], mock: [], topic: [], tmua: [], ucat: [], act: [], ap: [] };
+        let currentPortal = 'ssat';
+        let currentFilter = 'all';
 
-    document.addEventListener('DOMContentLoaded', async () => {
-      const { data: { session } } = await client.auth.getSession();
-      if (!session || session.user.email !== 'rupali.eduquest@gmail.com') {
-        window.location.href = 'login.html?redirect=admin.html';
-        return;
-      }
-      loadData();
-    });
+        document.addEventListener('DOMContentLoaded', async () => {
+          const { data: { session } } = await client.auth.getSession();
+          if (!session || session.user.email !== 'rupali.eduquest@gmail.com') {
+            window.location.href = 'login.html?redirect=admin.html';
+            return;
+          }
+          loadData();
+        });
 
-    async function adminLogout() {
-      await client.auth.signOut();
-      window.location.href = 'login.html';
-    }
-
-    async function loadData() {
-      // 1. Fetch Profiles
-      const { data: profiles, error: errP } = await client.from('profiles').select('*').order('created_at', { ascending: false });
-      if (errP) console.error('Error loading profiles:', errP);
-      allProfiles = profiles || [];
-
-      // 2. Fetch Reports across all tables
-      try {
-        const { data: ssatR } = await client.from('ssat_report').select('*').order('submit_time', { ascending: false });
-        allReports.ssat = ssatR || [];
-        const { data: mockR } = await client.from('sat_results').select('*').order('submitted_at', { ascending: false });
-        allReports.mock = mockR || [];
-        const { data: topicR } = await client.from('sat_topic_report').select('*').order('submit_time', { ascending: false });
-        allReports.topic = topicR || [];
-        const { data: tmuaR } = await client.from('tmua_report').select('*').order('submit_time', { ascending: false });
-        allReports.tmua = tmuaR || [];
-        const { data: ucatR } = await client.from('Ucat_diagnosis').select('*').order('submit_time', { ascending: false });
-        allReports.ucat = ucatR || [];
-        const { data: actR } = await client.from('act_results').select('*').order('submitted_at', { ascending: false });
-        allReports.act = actR || [];
-        const { data: apR } = await client.from('ap_report').select('*').order('submit_time', { ascending: false });
-        allReports.ap = apR || [];
-      } catch (e) {
-        console.warn('Note: Some report tables may be empty or not created yet:', e);
-      }
-
-      updateStats();
-      renderUsers();
-      renderReports();
-    }
-
-    function switchPortal(portal) {
-      currentPortal = portal;
-      document.querySelectorAll('.portal-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById(`btn-portal-${portal}`).classList.add('active');
-      
-      const names = { ssat: 'SSAT', mock: 'SAT Mock', topic: 'SAT Topic', tmua: 'TMUA', ucat: 'UCAT', act: 'ACT', ap: 'AP' };
-      document.getElementById('stat-lbl-approved').textContent = `Approved in ${names[portal]}`;
-      
-      updateStats();
-      renderUsers();
-      renderReports();
-    }
-
-    function switchSubTab(tab) {
-      document.querySelectorAll('.sub-tab-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById(`subtab-${tab}`).classList.add('active');
-      
-      document.getElementById('view-users').style.display = tab === 'users' ? 'block' : 'none';
-      document.getElementById('view-reports').style.display = tab === 'reports' ? 'block' : 'none';
-    }
-
-    function setFilter(filter) {
-      currentFilter = filter;
-      document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
-      document.getElementById(`pill-${filter}`).classList.add('active');
-      renderUsers();
-    }
-
-    function updateStats() {
-      const total = allProfiles.length;
-      document.getElementById('stat-total-users').textContent = total;
-      
-      let approved = 0;
-      let pending = 0;
-
-      allProfiles.forEach(p => {
-        if (currentPortal === 'ssat') {
-          if (p.has_ssat_upper_access || p.has_ssat_middle_access || p.has_ssat_low_access) approved++;
-          if (p.ssat_upper_access_requested || p.ssat_middle_access_requested || p.ssat_low_access_requested) pending++;
-        } else if (currentPortal === 'mock') {
-          if (p.has_access) approved++;
-          if (p.sat_access_requested) pending++;
-        } else if (currentPortal === 'topic') {
-          if (p.has_topic_reading_access || p.has_topic_math_access || p.has_topic_class_test_access) approved++;
-          if (p.topic_access_requested) pending++;
-        } else if (currentPortal === 'tmua') {
-          if (p.has_tmua_diag_access || p.has_tmua_topic_access) approved++;
-          if (p.tmua_access_requested) pending++;
-        } else if (currentPortal === 'ucat') {
-          if (p.has_ucat_access) approved++;
-          if (p.ucat_access_requested) pending++;
-        } else if (currentPortal === 'act') {
-          if (p.has_act_diag_access || p.has_act_topic_access || p.has_act_access) approved++;
-          if (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested) pending++;
-        } else if (currentPortal === 'ap') {
-          if (p.has_ap_access) approved++;
-          if (p.ap_access_requested) pending++;
+        async function adminLogout() {
+          await client.auth.signOut();
+          window.location.href = 'login.html';
         }
-      });
 
-      document.getElementById('stat-approved').textContent = approved;
-      document.getElementById('stat-pending').textContent = pending;
-      document.getElementById('stat-reports').textContent = (allReports[currentPortal] || []).length;
-    }
+        async function loadData() {
+          // 1. Fetch Profiles safely
+          try {
+            const { data: profiles } = await client.from('profiles').select('*').order('created_at', { ascending: false });
+            allProfiles = profiles || [];
+          } catch (errP) {
+            console.warn('Profiles query warning:', errP);
+            allProfiles = [];
+          }
 
-    function renderUsers() {
-      const query = (document.getElementById('search-input').value || '').toLowerCase().trim();
-      const grid = document.getElementById('users-grid');
-      grid.innerHTML = '';
+          // 2. LocalStorage merge first (Instant local data for ACT)
+          allReports = { ssat: [], mock: [], topic: [], tmua: [], ucat: [], act: [], ap: [] };
+          try {
+            const actLocal = JSON.parse(localStorage.getItem('act_results_history') || '[]');
+            const topicLocal = JSON.parse(localStorage.getItem('act_topic_report') || '[]');
+            const combinedLocal = [...actLocal, ...topicLocal];
 
-      let list = allProfiles.filter(p => {
-        const matchQuery = !query || (p.email || '').toLowerCase().includes(query) || (p.name || '').toLowerCase().includes(query) || (p.organization || '').toLowerCase().includes(query);
-        if (!matchQuery) return false;
+            combinedLocal.forEach(r => {
+              const dateKey = r.submitted_at || r.created_at || r.submit_time || new Date().toISOString();
+              const examTitle = r.exam_name || r.exam_title || r.topic || 'ACT Practice Test';
+              allReports.act.push({ ...r, exam_name: examTitle, submitted_at: dateKey });
+            });
+          } catch (localErr) {
+            console.warn('LocalStorage merge warning in admin:', localErr);
+          }
 
-        if (currentFilter === 'all') return true;
-        
-        // Check pending/approved based on portal
-        if (currentPortal === 'ssat') {
-          const isApp = p.has_ssat_upper_access || p.has_ssat_middle_access || p.has_ssat_low_access;
-          const isReq = p.ssat_upper_access_requested || p.ssat_middle_access_requested || p.ssat_low_access_requested;
-          return currentFilter === 'approved' ? isApp : (isReq || !isApp);
-        } else if (currentPortal === 'mock') {
-          return currentFilter === 'approved' ? p.has_access : (p.sat_access_requested || !p.has_access);
-        } else if (currentPortal === 'topic') {
-          const isApp = p.has_topic_reading_access || p.has_topic_math_access || p.has_topic_class_test_access;
-          return currentFilter === 'approved' ? isApp : (p.topic_access_requested || !isApp);
-        } else if (currentPortal === 'tmua') {
-          const isApp = p.has_tmua_diag_access || p.has_tmua_topic_access;
-          return currentFilter === 'approved' ? isApp : (p.tmua_access_requested || !isApp);
-        } else if (currentPortal === 'ucat') {
-          return currentFilter === 'approved' ? p.has_ucat_access : (p.ucat_access_requested || !p.has_ucat_access);
-        } else if (currentPortal === 'act') {
-          const isApp = p.has_act_diag_access || p.has_act_topic_access || p.has_act_access;
-          return currentFilter === 'approved' ? isApp : (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested || !isApp);
-        } else if (currentPortal === 'ap') {
-          return currentFilter === 'approved' ? p.has_ap_access : (p.ap_access_requested || !p.has_ap_access);
+          updateStats();
+          renderUsers();
+          renderReports();
+
+          // 3. Fetch Remote Reports safely for each table
+          try { const { data: ssatR } = await client.from('ssat_report').select('*').order('submit_time', { ascending: false }); allReports.ssat = ssatR || []; } catch(e){}
+          try { const { data: mockR } = await client.from('sat_results').select('*').order('submitted_at', { ascending: false }); allReports.mock = mockR || []; } catch(e){}
+          try { const { data: topicR } = await client.from('sat_topic_report').select('*').order('submit_time', { ascending: false }); allReports.topic = topicR || []; } catch(e){}
+          try { const { data: tmuaR } = await client.from('tmua_report').select('*').order('submit_time', { ascending: false }); allReports.tmua = tmuaR || []; } catch(e){}
+          try { const { data: ucatR } = await client.from('Ucat_diagnosis').select('*').order('submit_time', { ascending: false }); allReports.ucat = ucatR || []; } catch(e){}
+          try {
+            const { data: actR } = await client.from('act_results').select('*').order('submitted_at', { ascending: false });
+            (actR || []).forEach(r => {
+              const dateKey = r.submitted_at || r.created_at || r.submit_time;
+              const examTitle = r.exam_name || r.exam_title || r.topic || 'ACT Practice Test';
+              const exists = allReports.act.some(e => (e.student_email === r.student_email || e.email === r.email) && (e.exam_name === examTitle || e.exam_title === examTitle) && Math.abs(new Date(e.submitted_at || 0) - new Date(dateKey)) < 10000);
+              if (!exists) allReports.act.unshift(r);
+            });
+          } catch(e){ console.warn('act_results query warning in admin:', e); }
+          try { const { data: apR } = await client.from('ap_report').select('*').order('submit_time', { ascending: false }); allReports.ap = apR || []; } catch(e){}
+
+          updateStats();
+          renderUsers();
+          renderReports();
         }
-        return true;
-      });
 
-      if (list.length === 0) {
-        grid.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted); grid-column:1/-1;">No students found matching filters.</div>`;
-        return;
-      }
+        function formatLaTeX(str) {
+          if (!str || typeof str !== 'string') return str || '';
+          let res = str.replace(/\$([^\$]+)\$/g, (m, math) => {
+            if (window.katex) {
+              try {
+                return katex.renderToString(math, { throwOnError: false });
+              } catch (e) { }
+            }
+            return `<span class="latex-math">${formatMathCaret(math)}</span>`;
+          });
+          return formatMathCaret(res);
+        }
 
-      list.forEach(p => {
-        let accessRowsHtml = '';
-        let hasReq = false;
+        function formatMathCaret(text) {
+          if (!text) return '';
+          return text.replace(/([A-Za-z0-9\)\}\]]+)\^(\(([^\)]+)\)|(\{([^\}]+)\})|(\-?[A-Za-z0-9\/]+))/g, (m, base, p2, p3, p4, p5, p6) => {
+            const exp = p3 || p5 || p6;
+            return `${base}<sup>${exp}</sup>`;
+          });
+        }
 
-        if (currentPortal === 'ssat') {
-          if (p.ssat_upper_access_requested || p.ssat_middle_access_requested || p.ssat_low_access_requested) hasReq = true;
-          accessRowsHtml = `
+        function switchPortal(portal) {
+          currentPortal = portal;
+          document.querySelectorAll('.portal-btn').forEach(b => b.classList.remove('active'));
+          document.getElementById(`btn-portal-${portal}`).classList.add('active');
+
+          const names = { ssat: 'SSAT', mock: 'SAT Mock', topic: 'SAT Topic', tmua: 'TMUA', ucat: 'UCAT', act: 'ACT', ap: 'AP' };
+          document.getElementById('stat-lbl-approved').textContent = `Approved in ${names[portal]}`;
+
+          updateStats();
+          renderUsers();
+          renderReports();
+        }
+
+        function switchSubTab(tab) {
+          document.querySelectorAll('.sub-tab-btn').forEach(b => b.classList.remove('active'));
+          document.getElementById(`subtab-${tab}`).classList.add('active');
+
+          document.getElementById('view-users').style.display = tab === 'users' ? 'block' : 'none';
+          document.getElementById('view-reports').style.display = tab === 'reports' ? 'block' : 'none';
+        }
+
+        function setFilter(filter) {
+          currentFilter = filter;
+          document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+          document.getElementById(`pill-${filter}`).classList.add('active');
+          renderUsers();
+        }
+
+        function updateStats() {
+          const total = allProfiles.length;
+          document.getElementById('stat-total-users').textContent = total;
+
+          let approved = 0;
+          let pending = 0;
+
+          allProfiles.forEach(p => {
+            if (currentPortal === 'ssat') {
+              if (p.has_ssat_upper_access || p.has_ssat_middle_access || p.has_ssat_low_access) approved++;
+              if (p.ssat_upper_access_requested || p.ssat_middle_access_requested || p.ssat_low_access_requested) pending++;
+            } else if (currentPortal === 'mock') {
+              if (p.has_access) approved++;
+              if (p.sat_access_requested) pending++;
+            } else if (currentPortal === 'topic') {
+              if (p.has_topic_reading_access || p.has_topic_math_access || p.has_topic_class_test_access) approved++;
+              if (p.topic_access_requested) pending++;
+            } else if (currentPortal === 'tmua') {
+              if (p.has_tmua_diag_access || p.has_tmua_topic_access) approved++;
+              if (p.tmua_access_requested) pending++;
+            } else if (currentPortal === 'ucat') {
+              if (p.has_ucat_access) approved++;
+              if (p.ucat_access_requested) pending++;
+            } else if (currentPortal === 'act') {
+              if (p.has_act_diag_access || p.has_act_topic_access || p.has_act_access) approved++;
+              if (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested) pending++;
+            } else if (currentPortal === 'ap') {
+              if (p.has_ap_access) approved++;
+              if (p.ap_access_requested) pending++;
+            }
+          });
+
+          document.getElementById('stat-approved').textContent = approved;
+          document.getElementById('stat-pending').textContent = pending;
+          document.getElementById('stat-reports').textContent = (allReports[currentPortal] || []).length;
+        }
+
+        function renderUsers() {
+          const query = (document.getElementById('search-input').value || '').toLowerCase().trim();
+          const grid = document.getElementById('users-grid');
+          grid.innerHTML = '';
+
+          let list = allProfiles.filter(p => {
+            const matchQuery = !query || (p.email || '').toLowerCase().includes(query) || (p.name || '').toLowerCase().includes(query) || (p.organization || '').toLowerCase().includes(query);
+            if (!matchQuery) return false;
+
+            if (currentFilter === 'all') return true;
+
+            // Check pending/approved based on portal
+            if (currentPortal === 'ssat') {
+              const isApp = p.has_ssat_upper_access || p.has_ssat_middle_access || p.has_ssat_low_access;
+              const isReq = p.ssat_upper_access_requested || p.ssat_middle_access_requested || p.ssat_low_access_requested;
+              return currentFilter === 'approved' ? isApp : (isReq || !isApp);
+            } else if (currentPortal === 'mock') {
+              return currentFilter === 'approved' ? p.has_access : (p.sat_access_requested || !p.has_access);
+            } else if (currentPortal === 'topic') {
+              const isApp = p.has_topic_reading_access || p.has_topic_math_access || p.has_topic_class_test_access;
+              return currentFilter === 'approved' ? isApp : (p.topic_access_requested || !isApp);
+            } else if (currentPortal === 'tmua') {
+              const isApp = p.has_tmua_diag_access || p.has_tmua_topic_access;
+              return currentFilter === 'approved' ? isApp : (p.tmua_access_requested || !isApp);
+            } else if (currentPortal === 'ucat') {
+              return currentFilter === 'approved' ? p.has_ucat_access : (p.ucat_access_requested || !p.has_ucat_access);
+            } else if (currentPortal === 'act') {
+              const isApp = p.has_act_diag_access || p.has_act_topic_access || p.has_act_access;
+              return currentFilter === 'approved' ? isApp : (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested || !isApp);
+            } else if (currentPortal === 'ap') {
+              return currentFilter === 'approved' ? p.has_ap_access : (p.ap_access_requested || !p.has_ap_access);
+            }
+            return true;
+          });
+
+          if (list.length === 0) {
+            grid.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted); grid-column:1/-1;">No students found matching filters.</div>`;
+            return;
+          }
+
+          list.forEach(p => {
+            let accessRowsHtml = '';
+            let hasReq = false;
+
+            if (currentPortal === 'ssat') {
+              if (p.ssat_upper_access_requested || p.ssat_middle_access_requested || p.ssat_low_access_requested) hasReq = true;
+              accessRowsHtml = `
             ${renderRow(p.id, '🚀 Upper Level', p.has_ssat_upper_access, p.ssat_upper_access_requested, 'has_ssat_upper_access', 'ssat_upper_access_requested')}
             ${renderRow(p.id, '📘 Middle Level', p.has_ssat_middle_access, p.ssat_middle_access_requested, 'has_ssat_middle_access', 'ssat_middle_access_requested')}
             ${renderRow(p.id, '🟢 Elementary Level', p.has_ssat_low_access, p.ssat_low_access_requested, 'has_ssat_low_access', 'ssat_low_access_requested')}
           `;
-        } else if (currentPortal === 'mock') {
-          if (p.sat_access_requested) hasReq = true;
-          accessRowsHtml = renderRow(p.id, '📝 SAT Mock Access', p.has_access, p.sat_access_requested, 'has_access', 'sat_access_requested');
-        } else if (currentPortal === 'topic') {
-          if (p.topic_access_requested) hasReq = true;
-          accessRowsHtml = `
+            } else if (currentPortal === 'mock') {
+              if (p.sat_access_requested) hasReq = true;
+              accessRowsHtml = renderRow(p.id, '📝 SAT Mock Access', p.has_access, p.sat_access_requested, 'has_access', 'sat_access_requested');
+            } else if (currentPortal === 'topic') {
+              if (p.topic_access_requested) hasReq = true;
+              accessRowsHtml = `
             ${renderRow(p.id, '📖 Reading & Writing Topic', p.has_topic_reading_access, p.topic_access_requested, 'has_topic_reading_access', 'topic_access_requested')}
             ${renderRow(p.id, '🔢 Math Topic', p.has_topic_math_access, p.topic_access_requested, 'has_topic_math_access', 'topic_access_requested')}
             ${renderRow(p.id, '🏫 R&W Class Test', p.has_topic_class_test_access, p.topic_access_requested, 'has_topic_class_test_access', 'topic_access_requested')}
           `;
-        } else if (currentPortal === 'tmua') {
-          if (p.tmua_access_requested) hasReq = true;
-          accessRowsHtml = `
+            } else if (currentPortal === 'tmua') {
+              if (p.tmua_access_requested) hasReq = true;
+              accessRowsHtml = `
             ${renderRow(p.id, '📐 TMUA Diagnostic', p.has_tmua_diag_access, p.tmua_access_requested, 'has_tmua_diag_access', 'tmua_access_requested')}
             ${renderRow(p.id, '📐 TMUA Topic Test', p.has_tmua_topic_access, p.tmua_access_requested, 'has_tmua_topic_access', 'tmua_access_requested')}
           `;
-        } else if (currentPortal === 'ucat') {
-          if (p.ucat_access_requested) hasReq = true;
-          accessRowsHtml = renderRow(p.id, '🩺 UCAT Practice Access', p.has_ucat_access, p.ucat_access_requested, 'has_ucat_access', 'ucat_access_requested');
-        } else if (currentPortal === 'act') {
-          if (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested) hasReq = true;
-          accessRowsHtml = `
+            } else if (currentPortal === 'ucat') {
+              if (p.ucat_access_requested) hasReq = true;
+              accessRowsHtml = renderRow(p.id, '🩺 UCAT Practice Access', p.has_ucat_access, p.ucat_access_requested, 'has_ucat_access', 'ucat_access_requested');
+            } else if (currentPortal === 'act') {
+              if (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested) hasReq = true;
+              accessRowsHtml = `
             ${renderRow(p.id, '🎯 ACT Practice Tests 4-8', p.has_act_diag_access || p.has_act_access, p.act_diag_access_requested || p.act_access_requested, 'has_act_diag_access', 'act_diag_access_requested')}
             ${renderRow(p.id, '📖 ACT Topic Test', p.has_act_topic_access || p.has_act_access, p.act_topic_access_requested, 'has_act_topic_access', 'act_topic_access_requested')}
           `;
-        } else if (currentPortal === 'ap') {
-          if (p.ap_access_requested) hasReq = true;
-          accessRowsHtml = renderRow(p.id, '🎓 AP Practice Access', p.has_ap_access, p.ap_access_requested, 'has_ap_access', 'ap_access_requested');
-        }
+            } else if (currentPortal === 'ap') {
+              if (p.ap_access_requested) hasReq = true;
+              accessRowsHtml = renderRow(p.id, '🎓 AP Practice Access', p.has_ap_access, p.ap_access_requested, 'has_ap_access', 'ap_access_requested');
+            }
 
-        const dateStr = p.created_at ? new Date(p.created_at).toLocaleDateString() : '–';
-        const card = document.createElement('div');
-        card.className = 'user-card';
-        card.innerHTML = `
+            const dateStr = p.created_at ? new Date(p.created_at).toLocaleDateString() : '–';
+            const card = document.createElement('div');
+            card.className = 'user-card';
+            card.innerHTML = `
           <div>
             <div class="user-card-hdr">
               <div>
@@ -980,35 +1300,35 @@ function formatMathCaret(text) {
             ${accessRowsHtml}
           </div>
         `;
-        grid.appendChild(card);
-      });
-    }
+            grid.appendChild(card);
+          });
+        }
 
-    function renderRow(userId, label, isGranted, isReq, fieldName, reqFieldName) {
-      let statusBadge = '';
-      let btnHtml = '';
+        function renderRow(userId, label, isGranted, isReq, fieldName, reqFieldName) {
+          let statusBadge = '';
+          let btnHtml = '';
 
-      if (isGranted) {
-        statusBadge = `<span style="background:rgba(52,211,153,0.15); color:#34d399; padding:2px 8px; border-radius:10px; font-size:0.75rem; font-weight:700; margin-left:8px; border:1px solid rgba(52,211,153,0.3); display:inline-flex; align-items:center; gap:4px;">✓ APPROVED</span>`;
-        btnHtml = `
+          if (isGranted) {
+            statusBadge = `<span style="background:rgba(52,211,153,0.15); color:#34d399; padding:2px 8px; border-radius:10px; font-size:0.75rem; font-weight:700; margin-left:8px; border:1px solid rgba(52,211,153,0.3); display:inline-flex; align-items:center; gap:4px;">✓ APPROVED</span>`;
+            btnHtml = `
           <button class="btn-accept" style="background:#059669; color:#fff; cursor:default; opacity:0.95; border:1px solid #34d399; font-weight:600;" disabled>✓ Approved</button>
           <button class="btn-reject" style="background:rgba(248,113,113,0.15); color:#f87171; border:1px solid rgba(248,113,113,0.3); font-weight:500;" onclick="toggleAccess('${userId}', '${fieldName}', '${reqFieldName}', false)">✕ Revoke Access</button>
         `;
-      } else if (isReq) {
-        statusBadge = `<span style="background:rgba(251,191,36,0.15); color:#fbbf24; padding:2px 8px; border-radius:10px; font-size:0.75rem; font-weight:700; margin-left:8px; border:1px solid rgba(251,191,36,0.3); display:inline-flex; align-items:center; gap:4px;">⏳ PENDING REQUEST</span>`;
-        btnHtml = `
+          } else if (isReq) {
+            statusBadge = `<span style="background:rgba(251,191,36,0.15); color:#fbbf24; padding:2px 8px; border-radius:10px; font-size:0.75rem; font-weight:700; margin-left:8px; border:1px solid rgba(251,191,36,0.3); display:inline-flex; align-items:center; gap:4px;">⏳ PENDING REQUEST</span>`;
+            btnHtml = `
           <button class="btn-accept" style="background:linear-gradient(135deg, #10b981, #059669); color:#fff; font-weight:700; box-shadow:0 2px 8px rgba(16,185,129,0.4); border:1px solid #34d399;" onclick="toggleAccess('${userId}', '${fieldName}', '${reqFieldName}', true)">✓ Approve Access</button>
           <button class="btn-reject" style="background:rgba(255,255,255,0.05); color:rgba(255,255,255,0.5); border:1px solid rgba(255,255,255,0.1); font-weight:500;" onclick="toggleAccess('${userId}', '${fieldName}', '${reqFieldName}', false)">✕ Reject</button>
         `;
-      } else {
-        statusBadge = `<span style="background:rgba(248,113,113,0.15); color:#f87171; padding:2px 8px; border-radius:10px; font-size:0.75rem; font-weight:700; margin-left:8px; border:1px solid rgba(248,113,113,0.3); display:inline-flex; align-items:center; gap:4px;">✕ NOT APPROVED</span>`;
-        btnHtml = `
+          } else {
+            statusBadge = `<span style="background:rgba(248,113,113,0.15); color:#f87171; padding:2px 8px; border-radius:10px; font-size:0.75rem; font-weight:700; margin-left:8px; border:1px solid rgba(248,113,113,0.3); display:inline-flex; align-items:center; gap:4px;">✕ NOT APPROVED</span>`;
+            btnHtml = `
           <button class="btn-accept" style="background:rgba(16,185,129,0.15); color:#34d399; border:1px solid rgba(16,185,129,0.3); font-weight:600;" onclick="toggleAccess('${userId}', '${fieldName}', '${reqFieldName}', true)">✓ Grant Access</button>
           <button class="btn-reject" style="background:rgba(248,113,113,0.2); color:#f87171; cursor:default; opacity:0.8; border:1px solid rgba(248,113,113,0.4); font-weight:600;" disabled>✕ Locked</button>
         `;
-      }
+          }
 
-      return `
+          return `
         <div class="access-row">
           <div class="access-lbl">
             <span class="status-dot ${isGranted ? 'unlocked' : 'locked'}"></span>
@@ -1020,116 +1340,116 @@ function formatMathCaret(text) {
           </div>
         </div>
       `;
-    }
-
-    async function toggleAccess(userId, fieldName, reqFieldName, grantValue) {
-      const updateObj = {};
-      updateObj[fieldName] = grantValue;
-      if (reqFieldName) updateObj[reqFieldName] = false; // Clear request flag on accept/reject
-
-      try {
-        await client.from('profiles').update(updateObj).eq('id', userId);
-        const p = allProfiles.find(x => x.id === userId);
-        if (p) {
-          p[fieldName] = grantValue;
-          if (reqFieldName) p[reqFieldName] = false;
-        }
-        updateStats();
-        renderUsers();
-      } catch (err) {
-        alert(`❌ Failed to update access: ${err.message}`);
-      }
-    }
-
-    async function acceptAllPending() {
-      if (!confirm(`Are you sure you want to Accept & Grant all pending access requests for ${currentPortal.toUpperCase()}?`)) return;
-      
-      let count = 0;
-      for (const p of allProfiles) {
-        const updateObj = {};
-        let needsUpdate = false;
-
-        if (currentPortal === 'ssat') {
-          if (p.ssat_upper_access_requested || !p.has_ssat_upper_access) { updateObj.has_ssat_upper_access = true; updateObj.ssat_upper_access_requested = false; needsUpdate = true; }
-          if (p.ssat_middle_access_requested || !p.has_ssat_middle_access) { updateObj.has_ssat_middle_access = true; updateObj.ssat_middle_access_requested = false; needsUpdate = true; }
-          if (p.ssat_low_access_requested || !p.has_ssat_low_access) { updateObj.has_ssat_low_access = true; updateObj.ssat_low_access_requested = false; needsUpdate = true; }
-        } else if (currentPortal === 'mock') {
-          if (p.sat_access_requested || !p.has_access) { updateObj.has_access = true; updateObj.sat_access_requested = false; needsUpdate = true; }
-        } else if (currentPortal === 'topic') {
-          if (p.topic_access_requested || !p.has_topic_reading_access || !p.has_topic_math_access || !p.has_topic_class_test_access) {
-            updateObj.has_topic_reading_access = true; updateObj.has_topic_math_access = true; updateObj.has_topic_class_test_access = true; updateObj.topic_access_requested = false; needsUpdate = true;
-          }
-        } else if (currentPortal === 'tmua') {
-          if (p.tmua_access_requested || !p.has_tmua_diag_access || !p.has_tmua_topic_access) {
-            updateObj.has_tmua_diag_access = true; updateObj.has_tmua_topic_access = true; updateObj.tmua_access_requested = false; needsUpdate = true;
-          }
-        } else if (currentPortal === 'ucat') {
-          if (p.ucat_access_requested || !p.has_ucat_access) { updateObj.has_ucat_access = true; updateObj.ucat_access_requested = false; needsUpdate = true; }
-        } else if (currentPortal === 'act') {
-          if (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested || !p.has_act_diag_access || !p.has_act_topic_access) {
-            updateObj.has_act_diag_access = true; updateObj.has_act_topic_access = true; updateObj.has_act_access = true;
-            updateObj.act_diag_access_requested = false; updateObj.act_topic_access_requested = false; updateObj.act_access_requested = false; needsUpdate = true;
-          }
-        } else if (currentPortal === 'ap') {
-          if (p.ap_access_requested || !p.has_ap_access) { updateObj.has_ap_access = true; updateObj.ap_access_requested = false; needsUpdate = true; }
         }
 
-        if (needsUpdate) {
-          await client.from('profiles').update(updateObj).eq('id', p.id);
-          Object.assign(p, updateObj);
-          count++;
+        async function toggleAccess(userId, fieldName, reqFieldName, grantValue) {
+          const updateObj = {};
+          updateObj[fieldName] = grantValue;
+          if (reqFieldName) updateObj[reqFieldName] = false; // Clear request flag on accept/reject
+
+          try {
+            await client.from('profiles').update(updateObj).eq('id', userId);
+            const p = allProfiles.find(x => x.id === userId);
+            if (p) {
+              p[fieldName] = grantValue;
+              if (reqFieldName) p[reqFieldName] = false;
+            }
+            updateStats();
+            renderUsers();
+          } catch (err) {
+            alert(`❌ Failed to update access: ${err.message}`);
+          }
         }
-      }
 
-      alert(`✅ Successfully granted access to ${count} student accounts!`);
-      updateStats();
-      renderUsers();
-    }
+        async function acceptAllPending() {
+          if (!confirm(`Are you sure you want to Accept & Grant all pending access requests for ${currentPortal.toUpperCase()}?`)) return;
 
-    async function updateOrg(userId, value) {
-      await client.from('profiles').update({ organization: value }).eq('id', userId);
-      const p = allProfiles.find(x => x.id === userId);
-      if (p) p.organization = value;
-    }
+          let count = 0;
+          for (const p of allProfiles) {
+            const updateObj = {};
+            let needsUpdate = false;
 
-    function renderReports() {
-      const query = (document.getElementById('search-reports').value || '').toLowerCase().trim();
-      const list = allReports[currentPortal] || [];
-      const container = document.getElementById('reports-list');
-      container.innerHTML = '';
+            if (currentPortal === 'ssat') {
+              if (p.ssat_upper_access_requested || !p.has_ssat_upper_access) { updateObj.has_ssat_upper_access = true; updateObj.ssat_upper_access_requested = false; needsUpdate = true; }
+              if (p.ssat_middle_access_requested || !p.has_ssat_middle_access) { updateObj.has_ssat_middle_access = true; updateObj.ssat_middle_access_requested = false; needsUpdate = true; }
+              if (p.ssat_low_access_requested || !p.has_ssat_low_access) { updateObj.has_ssat_low_access = true; updateObj.ssat_low_access_requested = false; needsUpdate = true; }
+            } else if (currentPortal === 'mock') {
+              if (p.sat_access_requested || !p.has_access) { updateObj.has_access = true; updateObj.sat_access_requested = false; needsUpdate = true; }
+            } else if (currentPortal === 'topic') {
+              if (p.topic_access_requested || !p.has_topic_reading_access || !p.has_topic_math_access || !p.has_topic_class_test_access) {
+                updateObj.has_topic_reading_access = true; updateObj.has_topic_math_access = true; updateObj.has_topic_class_test_access = true; updateObj.topic_access_requested = false; needsUpdate = true;
+              }
+            } else if (currentPortal === 'tmua') {
+              if (p.tmua_access_requested || !p.has_tmua_diag_access || !p.has_tmua_topic_access) {
+                updateObj.has_tmua_diag_access = true; updateObj.has_tmua_topic_access = true; updateObj.tmua_access_requested = false; needsUpdate = true;
+              }
+            } else if (currentPortal === 'ucat') {
+              if (p.ucat_access_requested || !p.has_ucat_access) { updateObj.has_ucat_access = true; updateObj.ucat_access_requested = false; needsUpdate = true; }
+            } else if (currentPortal === 'act') {
+              if (p.act_diag_access_requested || p.act_topic_access_requested || p.act_access_requested || !p.has_act_diag_access || !p.has_act_topic_access) {
+                updateObj.has_act_diag_access = true; updateObj.has_act_topic_access = true; updateObj.has_act_access = true;
+                updateObj.act_diag_access_requested = false; updateObj.act_topic_access_requested = false; updateObj.act_access_requested = false; needsUpdate = true;
+              }
+            } else if (currentPortal === 'ap') {
+              if (p.ap_access_requested || !p.has_ap_access) { updateObj.has_ap_access = true; updateObj.ap_access_requested = false; needsUpdate = true; }
+            }
 
-      const grouped = {};
-      list.forEach(r => {
-        const email = (r.student_email || r.email || 'anonymous@student.com').toLowerCase().trim();
-        const title = (r.exam_title || r.exam_name || r.topic || '').toLowerCase();
-        if (query && !email.includes(query) && !title.includes(query)) return;
-        if (!grouped[email]) grouped[email] = [];
-        grouped[email].push(r);
-      });
+            if (needsUpdate) {
+              await client.from('profiles').update(updateObj).eq('id', p.id);
+              Object.assign(p, updateObj);
+              count++;
+            }
+          }
 
-      window._currentGroupedReports = grouped;
-      const emails = Object.keys(grouped);
+          alert(`✅ Successfully granted access to ${count} student accounts!`);
+          updateStats();
+          renderUsers();
+        }
 
-      if (emails.length === 0) {
-        container.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted);">No completed test reports found for ${currentPortal.toUpperCase()}.</div>`;
-        return;
-      }
+        async function updateOrg(userId, value) {
+          await client.from('profiles').update({ organization: value }).eq('id', userId);
+          const p = allProfiles.find(x => x.id === userId);
+          if (p) p.organization = value;
+        }
 
-      emails.forEach(email => {
-        const tests = grouped[email];
-        const totalTests = tests.length;
-        const avgPct = Math.round(tests.reduce((s, t) => {
-          let p = t.percentage || t.pct || (t.correct_count !== undefined && t.total_questions ? Math.round((t.correct_count / t.total_questions) * 100) : 0);
-          return s + p;
-        }, 0) / totalTests);
-        
-        const avgScaled = Math.round(tests.reduce((s, t) => s + Number(t.scaled_score || t.composite_score || t.scaled || 0), 0) / totalTests) || '–';
-        const safeEmail = email.replace(/[^a-zA-Z0-9]/g, '_');
-        const studentName = tests[0].student_name || tests[0].name || 'Verified Student';
+        function renderReports() {
+          const query = (document.getElementById('search-reports').value || '').toLowerCase().trim();
+          const list = allReports[currentPortal] || [];
+          const container = document.getElementById('reports-list');
+          container.innerHTML = '';
 
-        const card = document.createElement('div');
-        card.className = 'student-report-card';
-        card.innerHTML = `
+          const grouped = {};
+          list.forEach(r => {
+            const email = (r.student_email || r.email || 'anonymous@student.com').toLowerCase().trim();
+            const title = (r.exam_title || r.exam_name || r.topic || '').toLowerCase();
+            if (query && !email.includes(query) && !title.includes(query)) return;
+            if (!grouped[email]) grouped[email] = [];
+            grouped[email].push(r);
+          });
+
+          window._currentGroupedReports = grouped;
+          const emails = Object.keys(grouped);
+
+          if (emails.length === 0) {
+            container.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted);">No completed test reports found for ${currentPortal.toUpperCase()}.</div>`;
+            return;
+          }
+
+          emails.forEach(email => {
+            const tests = grouped[email];
+            const totalTests = tests.length;
+            const avgPct = Math.round(tests.reduce((s, t) => {
+              let p = t.percentage || t.pct || (t.correct_count !== undefined && t.total_questions ? Math.round((t.correct_count / t.total_questions) * 100) : 0);
+              return s + p;
+            }, 0) / totalTests);
+
+            const avgScaled = Math.round(tests.reduce((s, t) => s + Number(t.scaled_score || t.composite_score || t.scaled || 0), 0) / totalTests) || '–';
+            const safeEmail = email.replace(/[^a-zA-Z0-9]/g, '_');
+            const studentName = tests[0].student_name || tests[0].name || 'Verified Student';
+
+            const card = document.createElement('div');
+            card.className = 'student-report-card';
+            card.innerHTML = `
           <div class="src-header" onclick="toggleReportCard('${safeEmail}')">
             <div class="src-info">
               <div class="src-email">${email}</div>
@@ -1152,167 +1472,264 @@ function formatMathCaret(text) {
                   <th>Date</th>
                   <th>Score % (Correct/Total)</th>
                   <th>Scaled / Composite</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
                 ${tests.map((t, idx) => {
-                  const title = t.exam_title || t.exam_name || t.topic || 'Practice Test';
-                  const dateStr = (t.submit_time || t.submitted_at) ? new Date(t.submit_time || t.submitted_at).toLocaleDateString() : '–';
-                  const correct = t.correct_count !== undefined ? t.correct_count : (t.correct || 0);
-                  const total = t.total_questions !== undefined ? t.total_questions : (t.total || 0);
-                  const pct = t.percentage || t.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
-                  const scaled = t.scaled_score || t.composite_score || t.scaled || '–';
-                  const level = t.level || t.test_type || 'Standard';
-                  return `
+              const title = t.exam_title || t.exam_name || t.topic || 'Practice Test';
+              const dateStr = (t.submit_time || t.submitted_at) ? new Date(t.submit_time || t.submitted_at).toLocaleDateString() : '–';
+              const correct = t.correct_count !== undefined ? t.correct_count : (t.correct || 0);
+              const total = t.total_questions !== undefined ? t.total_questions : (t.total || 0);
+              const pct = t.percentage || t.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
+              const scaled = t.scaled_score || t.composite_score || t.scaled || '–';
+              const level = t.level || t.test_type || 'Standard';
+              return `
                     <tr onclick="openReportModal('${email}', ${idx})" title="Click to view full report & question review">
                       <td style="font-weight:700; color:#fff;">${title}</td>
                       <td><span style="color:#a78bfa;">${level}</span></td>
                       <td style="color:var(--text-muted);">${dateStr}</td>
                       <td style="color:#34d399; font-weight:700;">${pct}% (${correct}/${total})</td>
                       <td style="color:#60a5fa; font-weight:700;">${scaled}</td>
+                      <td>
+                        <button class="btn-primary" style="padding:4px 10px; font-size:0.78rem; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2);" onclick="event.stopPropagation(); downloadAdminPDF('${email}', ${idx})">📄 PDF</button>
+                      </td>
                     </tr>
                   `;
-                }).join('')}
+            }).join('')}
               </tbody>
             </table>
           </div>
         `;
-        container.appendChild(card);
-      });
-    }
-
-    function toggleReportCard(safeEmail) {
-      const body = document.getElementById(`body-${safeEmail}`);
-      const toggle = document.getElementById(`toggle-${safeEmail}`);
-      if (body && body.style.display === 'block') {
-        body.style.display = 'none';
-        if (toggle) toggle.textContent = '▼';
-      } else if (body) {
-        body.style.display = 'block';
-        if (toggle) toggle.textContent = '▲';
-      }
-    }
-
-    let modalChartInst = null;
-    function openReportModal(email, idx) {
-      const t = window._currentGroupedReports?.[email]?.[idx];
-      if (!t) return;
-
-      const title = t.exam_title || t.exam_name || t.topic || 'Test Detail';
-      const dateStr = (t.submit_time || t.submitted_at) ? new Date(t.submit_time || t.submitted_at).toLocaleString() : '–';
-      const correct = t.correct_count !== undefined ? t.correct_count : (t.correct || 0);
-      const wrong = t.wrong !== undefined ? t.wrong : (t.total_questions ? t.total_questions - correct : 0);
-      const skipped = t.unattempted || 0;
-      const total = t.total_questions !== undefined ? t.total_questions : (t.total || (correct + wrong + skipped) || 0);
-      const pct = t.percentage || t.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
-      const scaled = t.scaled_score || t.composite_score || t.scaled || '–';
-      const grade = t.grade || (pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : 'D');
-
-      let details = [];
-      try { details = typeof t.details_json === 'string' ? JSON.parse(t.details_json) : (t.details_json || t.details || []); } catch(e) {}
-      if (details.length === 0 && t.student_answers) {
-        try { details = typeof t.student_answers === 'string' ? JSON.parse(t.student_answers) : t.student_answers; } catch(e) {}
-      }
-
-      const modal = document.getElementById('reportModalContent');
-      modal.innerHTML = `
-        <div class="modal-hdr">
-          <h3>${title}</h3>
-          <button class="modal-close" onclick="closeReportModal()">✕</button>
-        </div>
-        <div style="text-align:center; margin-bottom:12px;">
-          <div style="font-size:0.95rem; font-weight:600; color:rgba(255,255,255,0.6); margin-bottom:4px;">Student: ${email}</div>
-          <div style="font-family:'Syne'; font-size:2.4rem; font-weight:800; color:#a78bfa;">${scaled}</div>
-          <div style="font-size:0.82rem; color:rgba(255,255,255,0.4);">Score · ${dateStr}</div>
-        </div>
-
-        <div class="modal-stats-grid">
-          <div class="modal-stat-box"><div class="num" style="color:#34d399">${correct}</div><div class="lbl">Correct</div></div>
-          <div class="modal-stat-box"><div class="num" style="color:#f87171">${wrong}</div><div class="lbl">Wrong</div></div>
-          <div class="modal-stat-box"><div class="num" style="color:#fbbf24">${skipped}</div><div class="lbl">Skipped</div></div>
-          <div class="modal-stat-box"><div class="num" style="color:#60a5fa">${total}</div><div class="lbl">Total Qs</div></div>
-          <div class="modal-stat-box"><div class="num" style="color:#a78bfa">${pct}%</div><div class="lbl">Score %</div></div>
-          <div class="modal-stat-box"><div class="num" style="color:#34d399">${grade}</div><div class="lbl">Grade</div></div>
-        </div>
-
-        <div style="max-width:320px; margin:24px auto;"><canvas id="modalPieChart" height="200"></canvas></div>
-
-        <h4 style="color:#fff; font-family:var(--font-brand); margin:24px 0 16px; font-size:1.1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:8px;">
-          📋 Detailed Question Review (${details.length || total} questions)
-        </h4>
-
-        <div id="modalQuestionsContainer">
-          ${details && details.length > 0 ? details.map((d, i) => {
-            const qText = d.question || d.text || d.prompt || '';
-            const hasText = !!qText;
-            const status = d.status || (d.chosen === d.answer ? 'correct' : (d.chosen !== undefined && d.chosen !== 'None' ? 'wrong' : 'unattempted'));
-            const statusClass = status === 'correct' ? 'q-status-correct' : status === 'wrong' ? 'q-status-wrong' : 'q-status-skipped';
-            const statusText = status === 'correct' ? '✅ Correct' : status === 'wrong' ? '❌ Wrong' : '⏭ Skipped';
-            const exp = d.explanation || d.solution || 'No detailed explanation available for this question.';
-            const LETTERS = ['A', 'B', 'C', 'D', 'E'];
-
-            return `
-              <div class="q-review-card">
-                <div class="q-review-hdr">
-                  <span style="font-weight:700; font-size:0.95rem; color:#fff;">Question ${d.id || (i+1)}</span>
-                  <span class="q-status-badge ${statusClass}">${statusText}</span>
-                </div>
-                
-                ${hasText ? `<div class="q-text">${qText}</div>` : `<div class="q-text" style="opacity:0.6;">Question text not available for this topic.</div>`}
-
-                ${d.options && d.options.length > 0 ? `
-                  <div class="q-opt-list">
-                    ${d.options.map((opt, oIdx) => {
-                      const isAns = (oIdx === d.answer || opt === d.answer || LETTERS[oIdx] === d.answer);
-                      const isChosen = (oIdx === d.chosen || opt === d.chosen || LETTERS[oIdx] === d.chosen);
-                      let cls = '';
-                      let badge = '';
-                      if (isAns) { cls = 'correct-ans'; badge = ' <span style="margin-left:auto; font-weight:700; color:#10b981;">✓ Correct</span>'; }
-                      else if (isChosen && status === 'wrong') { cls = 'wrong-chosen'; badge = ' <span style="margin-left:auto; font-weight:700; color:#ef4444;">✗ Student Choice</span>'; }
-                      return `<div class="q-opt ${cls}"><span><strong>${LETTERS[oIdx] || ''}.</strong> ${opt}</span>${badge}</div>`;
-                    }).join('')}
-                  </div>
-                ` : `
-                  <div style="font-size:0.9rem; margin-bottom:12px; color:#cbd5e1;">
-                    ${status === 'wrong' ? `Student Answer: <strong style="color:#ef4444;">${d.chosen || 'None'}</strong> &middot; Correct: <strong style="color:#10b981;">${d.answer || '–'}</strong>` : `Correct Answer: <strong style="color:#10b981;">${d.answer || '–'}</strong>`}
-                  </div>
-                `}
-
-                <div class="q-exp">
-                  <strong style="color:#60a5fa; display:block; margin-bottom:4px;">💡 Explanation:</strong>
-                  ${exp}
-                </div>
-              </div>
-            `;
-          }).join('') : `<div style="text-align:center; padding:30px; color:var(--text-muted);">No detailed question breakdown available for this test submission.</div>`}
-        </div>
-      `;
-
-      document.getElementById('reportModalOverlay').classList.add('open');
-
-      if (modalChartInst) modalChartInst.destroy();
-      const ctx = document.getElementById('modalPieChart').getContext('2d');
-      modalChartInst = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: ['Correct', 'Wrong', 'Skipped'],
-          datasets: [{
-            data: [correct, wrong, skipped],
-            backgroundColor: ['#10b981', '#ef4444', '#f59e0b'],
-            borderWidth: 0
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { position: 'bottom', labels: { color: '#cbd5e1', font: { size: 12 } } } },
-          cutout: '65%'
+            container.appendChild(card);
+          });
         }
-      });
-    }
 
-    function closeReportModal() {
-      document.getElementById('reportModalOverlay').classList.remove('open');
-    }
-  </script>
-</body>
+        function toggleReportCard(safeEmail) {
+          const body = document.getElementById(`body-${safeEmail}`);
+          const toggle = document.getElementById(`toggle-${safeEmail}`);
+          if (body && body.style.display === 'block') {
+            body.style.display = 'none';
+            if (toggle) toggle.textContent = '▼';
+          } else if (body) {
+            body.style.display = 'block';
+            if (toggle) toggle.textContent = '▲';
+          }
+        }
+
+        let modalChartInst = null;
+        function openReportModal(email, idx) {
+          const t = window._currentGroupedReports?.[email]?.[idx];
+          if (!t) return;
+
+          const overlay = document.getElementById('reportModalOverlay');
+          if (overlay) overlay.classList.add('open');
+
+          try {
+            const title = t.exam_title || t.exam_name || t.topic || 'Test Detail';
+            const dateStr = (t.submit_time || t.submitted_at) ? new Date(t.submit_time || t.submitted_at).toLocaleString() : '–';
+            const correct = t.correct_count !== undefined ? t.correct_count : (t.correct || 0);
+            const wrong = t.wrong !== undefined ? t.wrong : (t.total_questions ? t.total_questions - correct : 0);
+            const skipped = t.unattempted || 0;
+            const total = t.total_questions !== undefined ? t.total_questions : (t.total || (correct + wrong + skipped) || 0);
+            const pct = t.percentage || t.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
+            const scaled = t.scaled_score || t.composite_score || t.scaled || '–';
+            const grade = t.grade || (pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : 'D');
+
+            function extractDetails(t) {
+              if (!t) return [];
+              let raw = t.details || t.details_json || t.student_answers || t.questions || [];
+              if (typeof raw === 'string') {
+                try { raw = JSON.parse(raw); } catch (e) { raw = []; }
+              }
+              return Array.isArray(raw) ? raw : [];
+            }
+
+            let details = extractDetails(t);
+
+            const modal = document.getElementById('reportModalContent');
+            if (!modal) return;
+
+            modal.innerHTML = `
+          <div class="modal-hdr">
+            <h3>${title}</h3>
+            <div style="display:flex; gap:10px; align-items:center;">
+              <button class="btn-primary" style="padding:6px 14px; font-size:0.85rem; background:linear-gradient(135deg, #7c3aed, #5b21b6);" onclick="downloadAdminPDF('${email}', ${idx})">📄 Download PDF Report</button>
+              <button class="modal-close" onclick="closeReportModal()">✕</button>
+            </div>
+          </div>
+          <div style="text-align:center; margin-bottom:12px;">
+            <div style="font-size:0.95rem; font-weight:600; color:rgba(255,255,255,0.6); margin-bottom:4px;">Student: ${email}</div>
+            <div style="font-family:'Syne'; font-size:2.4rem; font-weight:800; color:#a78bfa;">${scaled}</div>
+            <div style="font-size:0.82rem; color:rgba(255,255,255,0.4);">Score · ${dateStr}</div>
+          </div>
+
+          <div class="modal-stats-grid">
+            <div class="modal-stat-box"><div class="num" style="color:#34d399">${correct}</div><div class="lbl">Correct</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#f87171">${wrong}</div><div class="lbl">Wrong</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#fbbf24">${skipped}</div><div class="lbl">Skipped</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#60a5fa">${total}</div><div class="lbl">Total Qs</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#a78bfa">${pct}%</div><div class="lbl">Score %</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#34d399">${grade}</div><div class="lbl">Grade</div></div>
+          </div>
+
+          <div style="max-width:320px; margin:24px auto;"><canvas id="modalPieChart" height="200"></canvas></div>
+
+          <h4 style="color:#fff; font-family:var(--font-brand); margin:24px 0 16px; font-size:1.1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:8px;">
+            📋 Detailed Question Review (${details.length || total} questions)
+          </h4>
+
+          <div id="modalQuestionsContainer">
+            ${details && details.length > 0 ? details.map((d, i) => {
+              const qText = d.question || d.text || d.prompt || d.qText || '';
+              const hasText = !!qText;
+              const chosenVal = d.chosen !== undefined && d.chosen !== null ? d.chosen : (d.chosen_option !== undefined ? d.chosen_option : d.userAnswer);
+              const answerVal = d.answer !== undefined && d.answer !== null ? d.answer : (d.correct_option !== undefined ? d.correct_option : (d.correctAnswer !== undefined ? d.correctAnswer : d.fillAnswer));
+              
+              const status = d.status || (chosenVal === answerVal ? 'correct' : (chosenVal !== undefined && chosenVal !== 'None' && chosenVal !== '' ? 'wrong' : 'unattempted'));
+              const statusClass = status === 'correct' ? 'q-status-correct' : status === 'wrong' ? 'q-status-wrong' : 'q-status-skipped';
+              const statusText = status === 'correct' ? '✅ Correct' : status === 'wrong' ? '❌ Wrong' : '⏭ Skipped';
+              const exp = d.explanation || d.solution || 'No detailed explanation available for this question.';
+              const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+              const getOptText = (optVal) => {
+                if (optVal === null || optVal === undefined || optVal === '') return '';
+                if (Array.isArray(d.options) && d.options.length > 0) {
+                  if (typeof optVal === 'number' && d.options[optVal] !== undefined) return d.options[optVal];
+                  if (typeof optVal === 'string') {
+                    const num = parseInt(optVal, 10);
+                    if (!isNaN(num) && num >= 0 && num < d.options.length) return d.options[num];
+                    const idx = LETTERS.indexOf(optVal.toUpperCase());
+                    if (idx !== -1 && d.options[idx] !== undefined) return d.options[idx];
+                    return optVal;
+                  }
+                }
+                return String(optVal);
+              };
+
+              return `
+                <div class="q-review-card">
+                  <div class="q-review-hdr">
+                    <span style="font-weight:700; font-size:0.95rem; color:#fff;">Question ${d.id || (i + 1)}</span>
+                    <span class="q-status-badge ${statusClass}">${statusText}</span>
+                  </div>
+                  
+                  ${d.passage ? formatPassageHTML(d.passage, qText) : ''}
+                  ${hasText ? `<div class="q-text">${formatLaTeX(qText)}</div>` : `<div class="q-text" style="opacity:0.6;">Question text not available for this topic.</div>`}
+
+                  ${d.options && (Array.isArray(d.options) ? d.options.length > 0 : typeof d.options === 'object') ? `
+                    <div class="q-opt-list">
+                      ${(Array.isArray(d.options) ? d.options : Object.values(d.options)).map((opt, oIdx) => {
+                        const optKey = Array.isArray(d.options) ? oIdx : Object.keys(d.options)[oIdx];
+                        const isAns = (oIdx === answerVal || opt === answerVal || LETTERS[oIdx] === answerVal || optKey === answerVal);
+                        const isChosen = (oIdx === chosenVal || opt === chosenVal || LETTERS[oIdx] === chosenVal || optKey === chosenVal);
+                        let cls = '';
+                        let badge = '';
+                        if (isAns) { cls = 'correct-ans'; badge = ' <span style="margin-left:auto; font-weight:700; color:#10b981;">✓ Correct</span>'; }
+                        else if (isChosen && status === 'wrong') { cls = 'wrong-chosen'; badge = ' <span style="margin-left:auto; font-weight:700; color:#ef4444;">✗ Student Choice</span>'; }
+                        return `<div class="q-opt ${cls}"><span><strong>${LETTERS[oIdx] || optKey}.</strong> ${formatLaTeX(opt)}</span>${badge}</div>`;
+                      }).join('')}
+                    </div>
+                  ` : `
+                    <div style="font-size:0.9rem; margin-bottom:12px; color:#cbd5e1;">
+                      ${status === 'wrong' ? `Student Answer: <strong style="color:#ef4444;">${getOptText(chosenVal) || 'None'}</strong> &middot; Correct: <strong style="color:#10b981;">${getOptText(answerVal) || '–'}</strong>` : `Correct Answer: <strong style="color:#10b981;">${getOptText(answerVal) || '–'}</strong>`}
+                    </div>
+                  `}
+
+                  <div class="q-exp">
+                    <strong style="color:#60a5fa; display:block; margin-bottom:4px;">💡 Explanation:</strong>
+                    ${formatLaTeX(exp)}
+                  </div>
+                </div>
+              `;
+            }).join('') : `<div style="text-align:center; padding:30px; color:var(--text-muted);">Detailed question analysis for this test submission. Total Questions: ${total} &middot; Score: ${pct}%</div>`}
+          </div>
+        `;
+
+            try {
+              if (modalChartInst) modalChartInst.destroy();
+              const canvas = document.getElementById('modalPieChart');
+              if (canvas && typeof Chart !== 'undefined') {
+                const ctx = canvas.getContext('2d');
+                modalChartInst = new Chart(ctx, {
+                  type: 'doughnut',
+                  data: {
+                    labels: ['Correct', 'Wrong', 'Skipped'],
+                    datasets: [{
+                      data: [correct, wrong, skipped],
+                      backgroundColor: ['#10b981', '#ef4444', '#f59e0b'],
+                      borderWidth: 0
+                    }]
+                  },
+                  options: {
+                    responsive: true,
+                    plugins: { legend: { position: 'bottom', labels: { color: '#cbd5e1', font: { size: 12 } } } },
+                    cutout: '65%'
+                  }
+                });
+              }
+            } catch (chartErr) {
+              console.warn('Chart render note:', chartErr);
+            }
+          } catch (err) {
+            console.error('Error rendering admin review modal:', err);
+          }
+        }
+
+        function closeReportModal() {
+          document.getElementById('reportModalOverlay').classList.remove('open');
+        }
+
+        function downloadAdminPDF(email, idx) {
+          const t = window._currentGroupedReports?.[email]?.[idx];
+          if (!t) return;
+
+          let rawDetails = t.details || t.details_json || t.student_answers || t.questions || [];
+          let parsedDetails = [];
+          try {
+            if (typeof rawDetails === 'string') parsedDetails = JSON.parse(rawDetails);
+            else if (Array.isArray(rawDetails)) parsedDetails = rawDetails;
+          } catch (e) { }
+
+          const studentName = t.student_name || t.name || email.split('@')[0];
+          const studentPhone = t.student_phone || t.phone || '–';
+
+          if (currentPortal === 'act' && typeof window.generateACTPDFReport === 'function') {
+            const payload = {
+              student: { name: studentName, email: t.student_email || email, phone: studentPhone },
+              examName: t.exam_name || t.exam_title || 'ACT Practice Test',
+              submitTime: t.submitted_at || t.submit_time || t.created_at || new Date().toISOString(),
+              composite: t.composite_score || t.scaled_score || t.composite || 0,
+              sectionScores: t.section_scores || { english: t.english_score || 0, math: t.math_score || 0, reading: t.reading_score || 0, science: t.science_score || 0 },
+              correct: t.correct_count !== undefined ? t.correct_count : (t.correct || 0),
+              wrong: t.wrong || 0,
+              unattempted: t.unattempted || 0,
+              pct: t.percentage || t.pct || 0,
+              grade: t.grade || 'B',
+              topicAnalysis: typeof t.topic_scores === 'object' ? Object.values(t.topic_scores) : (t.topicAnalysis || []),
+              details: parsedDetails
+            };
+            window.generateACTPDFReport(payload, true);
+          } else if (typeof window.generatePDFReport === 'function') {
+            const payload = {
+              student: { name: studentName, email: t.student_email || email, phone: studentPhone },
+              examName: t.exam_title || t.exam_name || t.topic || 'Practice Test',
+              submitTime: t.submitted_at || t.submit_time || t.created_at || new Date().toISOString(),
+              scaled: t.scaled_score || t.composite_score || t.sat_score || 0,
+              correct: t.correct_count !== undefined ? t.correct_count : (t.correct || 0),
+              wrong: t.wrong || 0,
+              unattempted: t.unattempted || 0,
+              total: t.total_questions !== undefined ? t.total_questions : (t.total || 0),
+              pct: t.percentage || t.pct || 0,
+              grade: t.grade || 'B',
+              details: parsedDetails
+            };
+            window.generatePDFReport(payload, true);
+          } else {
+            alert('📄 Generating PDF Report...');
+          }
+        }
+      </script>
+    </body>
+
 </html>

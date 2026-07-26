@@ -1073,6 +1073,7 @@
                 <div class="section-badge" id="sectionBadge">English</div>
                 <span class="q-counter" id="qCounter">Q 1 / 75</span>
             </div>
+            <a href="../dashboard.html" class="hdr-exit-btn" style="color:rgba(255,255,255,0.7); font-size:0.8rem; font-weight:600; text-decoration:none; padding:5px 12px; border:1px solid rgba(255,255,255,0.18); border-radius:6px; margin-right:12px;">Exit to Dashboard ↵</a>
             <div class="timer-wrap">
                 <span class="timer-label">Time Left</span>
                 <span id="timerDisplay">45:00</span>
@@ -1219,6 +1220,33 @@ function formatLaTeX(str) {
     return formatMathCaret(res);
 }
 
+
+function formatPassageHTML(passage, qText) {
+    if (!passage || typeof passage !== 'string') return '';
+    let targetNum = null;
+    if (qText) {
+        const m = qText.match(/\[(\d+)\]/);
+        if (m) targetNum = m[1];
+    }
+
+    let html = passage.replace(/\[(\d+)\]/g, (match, num) => {
+        if (targetNum && num === targetNum) {
+            return `<span class="passage-tag active-tag" style="background:#f59e0b; color:#000; font-weight:800; font-size:0.85rem; padding:2px 8px; border-radius:4px; margin:0 4px; box-shadow:0 0 10px rgba(245,158,11,0.5);">[${num}]</span>`;
+        } else {
+            return `<span class="passage-tag" style="background:rgba(56,189,248,0.2); color:#38bdf8; border:1px solid rgba(56,189,248,0.4); font-weight:700; font-size:0.8rem; padding:1px 6px; border-radius:4px; margin:0 2px;">[${num}]</span>`;
+        }
+    });
+
+    return `
+        <div class="passage-box" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:18px 20px; margin-bottom:20px; font-size:0.95rem; line-height:1.75; color:#e2e8f0; max-height:340px; overflow-y:auto; font-family:'IBM Plex Sans', sans-serif;">
+            <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#a78bfa; margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+                <span>📖 PASSAGE READING CONTEXT</span>
+            </div>
+            <div style="white-space:pre-wrap;">${formatLaTeX(html)}</div>
+        </div>
+    `;
+}
+
 function formatMathCaret(text) {
     if (!text) return '';
     return text.replace(/([A-Za-z0-9\)\}\]]+)\^(\(([^\)]+)\)|(\{([^\}]+)\})|(\-?[A-Za-z0-9\/]+))/g, (m, base, p2, p3, p4, p5, p6) => {
@@ -1244,7 +1272,8 @@ function formatMathCaret(text) {
             math: ACT_QUESTIONS1.filter(q => q.section === 'math'),
             reading: ACT_QUESTIONS1.filter(q => q.section === 'reading')
         };
-        let currentSection = Object.keys(SECTION_QUESTIONS).find(sec => SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0) || 'english';
+        const activeSections = Object.keys(SECTION_QUESTIONS).filter(sec => SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0);
+        let currentSection = activeSections[0] || 'english';
 
         // Dynamic initialization
         window.addEventListener('DOMContentLoaded', () => {
@@ -1291,7 +1320,8 @@ function formatMathCaret(text) {
             `).join('');
             
             // Hide empty tabs
-            ['english', 'math', 'reading'].forEach(sec => {
+            /* Auto-hide empty section tabs */
+            ['english', 'math', 'reading', 'science'].forEach(sec => {
                 const count = SECTION_QUESTIONS[sec] ? SECTION_QUESTIONS[sec].length : 0;
                 const el = document.querySelector('.sec-tab.' + sec);
                 if (el) el.style.display = count === 0 ? 'none' : 'flex';
@@ -1404,7 +1434,11 @@ function formatMathCaret(text) {
             document.getElementById('qCounter').textContent = `Q ${currentQIndex + 1} / ${qs.length}`;
 
             // Text
-            document.getElementById('qText').innerHTML = formatLaTeX(q.text);
+            let htmlContent = '';
+            const passageText = q.passage || (qs.find(item => item.passage && Math.abs((item.id || 0) - (q.id || 0)) <= 15) || {}).passage;
+            if (passageText) htmlContent += formatPassageHTML(passageText, q.text);
+            htmlContent += `<div class="q-main-prompt" style="font-size:1.05rem; font-weight:600; color:#fff; line-height:1.6;">${formatLaTeX(q.text)}</div>`;
+            document.getElementById('qText').innerHTML = htmlContent;
 
             // Options
             const LETTERS = ['A', 'B', 'C', 'D'];
@@ -1538,7 +1572,8 @@ function formatMathCaret(text) {
 
                 // Topic map
                 const tKey = `${q.section}::${q.topic}`;
-                if (!topicMap[tKey]) topicMap[tKey] = { section: q.section, topic: q.topic, total: 0, correct: 0, wrong: 0 };
+                if (!topicMap[tKey]) topicMap[tKey] = { section: q.section, topic: q.topic,
+                passage: q.passage || null, total: 0, correct: 0, wrong: 0 };
                 topicMap[tKey].total++;
                 if (status === 'correct') topicMap[tKey].correct++;
                 if (status === 'wrong') topicMap[tKey].wrong++;
@@ -1580,6 +1615,7 @@ function formatMathCaret(text) {
                 answer: q.answer,
                 status: q._status,
                 chosen: q._chosen !== undefined ? q._chosen : null,
+                explanation: q.explanation || q.solution || "Option (" + (['A','B','C','D'][q.answer] || 'correct') + ") is the correct answer."
             }));
 
             testResult = {
@@ -1627,10 +1663,13 @@ function formatMathCaret(text) {
             const secRow = document.getElementById('sectionScoresRow');
             const secColors = { english: '#1a56db', math: '#059669', reading: '#7c3aed' };
             const secLabels = { english: 'English', math: 'Math', reading: 'Reading' };
-            secRow.innerHTML = Object.entries(r.sectionScores).map(([sec, score]) => `
+            const activeSecKeys = Object.keys(r.sectionScores || {}).filter(sec => {
+                return (SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0) || (r.details && r.details.some(d => d.section === sec));
+            });
+            secRow.innerHTML = activeSecKeys.map(sec => `
     <div class="sec-score-box" style="background:${secColors[sec]}22;border:1px solid ${secColors[sec]}44">
       <div class="s-label" style="color:${SECTION_COLORS[sec]}">${secLabels[sec]}</div>
-      <div class="s-val" style="color:${SECTION_COLORS[sec]}">${score}</div>
+      <div class="s-val" style="color:${SECTION_COLORS[sec]}">${r.sectionScores[sec]}</div>
       <div class="s-max" style="color:${SECTION_COLORS[sec]}aa">/ 36</div>
     </div>
   `).join('');

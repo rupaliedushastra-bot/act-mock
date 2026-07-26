@@ -757,6 +757,201 @@
           <div class="ac-status" id="status-box-ap"><span>Status:</span><span id="status-lbl-ap">Checking...</span></div>
           <button class="btn-req-access" id="btn-req-ap" onclick="requestAccess('ap_access_requested')">Request AP Access</button>
         </div>
+  </header>
+
+  <!-- ── Main Dashboard ─────────────────────────────────── -->
+  <main class="dash-wrap">
+    <!-- Welcome Banner -->
+    <div class="welcome-card">
+      <div class="welcome-text">
+        <h1 id="welcome-title">Welcome Back, Student!</h1>
+        <p>Track your practice exams, review question explanations, and manage your authorization access.</p>
+      </div>
+      <div>
+        <a href="index.html" class="btn-take-exam">🚀 Take New Practice Test</a>
+      </div>
+    </div>
+
+    <!-- Stats Bar (Hidden on Access tab) -->
+    <div class="stats-bar" id="stats-section">
+      <div class="stat-card">
+        <div class="stat-val" id="stat-total-exams">0</div>
+        <div class="stat-lbl">Exams Taken</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-avg-pct" style="color: #34d399;">0%</div>
+        <div class="stat-lbl">Average Score %</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-avg-scaled" style="color: #60a5fa;">–</div>
+        <div class="stat-lbl">Avg Scaled / Composite</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="stat-total-qs" style="color: #f59e0b;">0</div>
+        <div class="stat-lbl">Questions Attempted</div>
+      </div>
+    </div>
+
+    <!-- Filter Tabs (Includes all 8 tabs!) -->
+    <div class="filter-tabs">
+      <div class="filter-tab active" id="tab-all" onclick="setFilter('all')">📊 All Exams</div>
+      <div class="filter-tab" id="tab-act" onclick="setFilter('act')">🎯 ACT</div>
+      <div class="filter-tab" id="tab-sat" onclick="setFilter('sat')">📝 SAT (Mock)</div>
+      <div class="filter-tab" id="tab-topic" onclick="setFilter('topic')">📖 SAT (Topic)</div>
+      <div class="filter-tab" id="tab-ssat" onclick="setFilter('ssat')">🚀 SSAT</div>
+      <div class="filter-tab" id="tab-tmua" onclick="setFilter('tmua')">📐 TMUA</div>
+      <div class="filter-tab" id="tab-ucat" onclick="setFilter('ucat')">🩺 UCAT</div>
+      <div class="filter-tab" id="tab-ap" onclick="setFilter('ap')">🎓 AP</div>
+      <div class="filter-tab access-tab" id="tab-access" onclick="setFilter('access')">⚡ Access Permissions &amp; Requests</div>
+    </div>
+
+    <!-- ── VIEW 1: TEST HISTORY LIST ────────────────────── -->
+    <div id="view-history">
+      <div class="section-hdr">
+        <h2 id="history-title">Completed Practice Exams</h2>
+        <button class="btn-combined-pdf" onclick="generateCombinedPDF()">📄 Download Combined Report (PDF)</button>
+      </div>
+
+      <div id="sub-filter-act" style="display: none; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+        <button class="filter-tab active" id="act-sub-all" onclick="setActSubFilter('all')" style="padding: 8px 16px; font-size: 0.85rem;">All ACT Exams</button>
+        <button class="filter-tab" id="act-sub-diag" onclick="setActSubFilter('diag')" style="padding: 8px 16px; font-size: 0.85rem;">🎯 ACT Practice 4-8</button>
+        <button class="filter-tab" id="act-sub-topic" onclick="setActSubFilter('topic')" style="padding: 8px 16px; font-size: 0.85rem;">📖 ACT Topic</button>
+      </div>
+
+      <div class="history-list" id="history-list">
+        <div style="text-align: center; padding: 50px; color: var(--text-muted);">Loading your test reports...</div>
+      </div>
+    </div>
+
+    <!-- ── VIEW 2: ACCESS PERMISSIONS & REQUESTS (EXTRA TAB) -->
+    <div id="view-access" style="display: none;">
+      <div class="section-hdr">
+        <h2>⚡ Module Access Authorization &amp; Instant Requests</h2>
+      </div>
+      <p style="color: var(--text-muted); margin-bottom: 24px; line-height: 1.6;">
+        Below is your real-time authorization status for all EduQuest test modules. If a module is locked, click <strong style="color:#34d399;">Request Access</strong> to instantly notify your admin for approval.
+      </p>
+
+      <div class="access-grid">
+        <!-- ACT Diagnostic Access -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">🎯</div>
+              <div class="ac-title"><h3>ACT Practice 4-8 Access</h3><p>Full-length practice tests 4 to 8</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-act-diag"><span>Status:</span><span id="status-lbl-act-diag">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-act-diag" onclick="requestAccess('act_diag_access_requested')">Request Practice 4-8 Access</button>
+        </div>
+
+        <!-- ACT Topic Access -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">📖</div>
+              <div class="ac-title"><h3>ACT Topic Access</h3><p>Section-wise &amp; topic practice tests</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-act-topic"><span>Status:</span><span id="status-lbl-act-topic">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-act-topic" onclick="requestAccess('act_topic_access_requested')">Request Topic Access</button>
+        </div>
+
+        <!-- SAT Mock Access -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">📝</div>
+              <div class="ac-title"><h3>SAT Mock Access</h3><p>Digital SAT Practice Exams</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-sat"><span>Status:</span><span id="status-lbl-sat">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-sat" onclick="requestAccess('sat_access_requested')">Request SAT Mock Access</button>
+        </div>
+
+        <!-- SAT Topic Access -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">📖</div>
+              <div class="ac-title"><h3>SAT Topic &amp; Class Tests</h3><p>Reading, Writing &amp; Math topic drills</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-topic"><span>Status:</span><span id="status-lbl-topic">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-topic" onclick="requestAccess('topic_access_requested')">Request Topic Access</button>
+        </div>
+
+        <!-- SSAT Upper Level -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">🚀</div>
+              <div class="ac-title"><h3>SSAT Upper Level</h3><p>Grades 8–11 practice exams</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-ssat-upper"><span>Status:</span><span id="status-lbl-ssat-upper">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-ssat-upper" onclick="requestAccess('ssat_upper_access_requested')">Request Upper Level</button>
+        </div>
+
+        <!-- SSAT Middle Level -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">📘</div>
+              <div class="ac-title"><h3>SSAT Middle Level</h3><p>Grades 5–7 practice exams</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-ssat-middle"><span>Status:</span><span id="status-lbl-ssat-middle">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-ssat-middle" onclick="requestAccess('ssat_middle_access_requested')">Request Middle Level</button>
+        </div>
+
+        <!-- SSAT Elementary Level -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">🟢</div>
+              <div class="ac-title"><h3>SSAT Elementary Level</h3><p>Grades 3–4 practice exams</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-ssat-low"><span>Status:</span><span id="status-lbl-ssat-low">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-ssat-low" onclick="requestAccess('ssat_low_access_requested')">Request Elementary Level</button>
+        </div>
+
+        <!-- TMUA Practice -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">📐</div>
+              <div class="ac-title"><h3>TMUA Practice Access</h3><p>Math university admissions</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-tmua"><span>Status:</span><span id="status-lbl-tmua">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-tmua" onclick="requestAccess('tmua_access_requested')">Request TMUA Access</button>
+        </div>
+
+        <!-- UCAT Practice -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">🩺</div>
+              <div class="ac-title"><h3>UCAT Practice Access</h3><p>Medical clinical aptitude</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-ucat"><span>Status:</span><span id="status-lbl-ucat">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-ucat" onclick="requestAccess('ucat_access_requested')">Request UCAT Access</button>
+        </div>
+
+        <!-- AP Practice -->
+        <div class="access-card">
+          <div>
+            <div class="ac-hdr">
+              <div class="ac-icon">🎓</div>
+              <div class="ac-title"><h3>AP Practice Access</h3><p>Advanced Placement exams</p></div>
+            </div>
+          </div>
+          <div class="ac-status" id="status-box-ap"><span>Status:</span><span id="status-lbl-ap">Checking...</span></div>
+          <button class="btn-req-access" id="btn-req-ap" onclick="requestAccess('ap_access_requested')">Request AP Access</button>
+        </div>
       </div>
     </div>
   </main>
@@ -769,6 +964,36 @@
   </div>
 
   <script>
+
+    const client = window.supabase ? window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey) : null;
+    let currentUser = null;
+    let userProfile = {};
+    let allExams = [];
+    let currentFilter = 'all';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      // 1. Initial load from LocalStorage / stored email immediately
+      const savedEmail = localStorage.getItem('user_email') || localStorage.getItem('student_email') || '';
+      const emailDisplay = document.getElementById('user-email-display');
+      if (emailDisplay && savedEmail) emailDisplay.textContent = savedEmail;
+      
+      loadStudentData(savedEmail, 'local-user');
+
+      // 2. Fetch active Supabase session
+      if (client && client.auth) {
+        try {
+          const { data: { session } } = await client.auth.getSession();
+          if (session && session.user) {
+            currentUser = session.user;
+            if (emailDisplay) emailDisplay.textContent = session.user.email;
+            localStorage.setItem('user_email', session.user.email);
+            loadStudentData(session.user.email, session.user.id);
+          }
+        } catch (authErr) {
+          console.warn('Auth session check warning:', authErr);
+        }
+      }
+    });
 
 function formatLaTeX(str) {
     if (!str || typeof str !== 'string') return str || '';
@@ -791,74 +1016,425 @@ function formatMathCaret(text) {
     });
 }
 
-
-    const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-    let currentUser = null;
-    let userProfile = null;
-    let allExams = [];
-    let currentFilter = 'all';
-
-    document.addEventListener('DOMContentLoaded', async () => {
-      const { data: { session } } = await client.auth.getSession();
-      if (!session) {
-        window.location.href = 'login.html?redirect=dashboard.html';
-        return;
-      }
-      currentUser = session.user;
-      const email = currentUser.email || 'student@eduquest.com';
-      document.getElementById('user-email-display').textContent = email;
-      
-      const name = currentUser.user_metadata?.name || email.split('@')[0];
-      document.getElementById('welcome-title').textContent = `Welcome Back, ${name.charAt(0).toUpperCase() + name.slice(1)}!`;
-
-      await loadStudentData(email, currentUser.id);
-    });
-
-    async function studentLogout() {
-      await client.auth.signOut();
-      window.location.href = 'login.html';
+function formatPassageHTML(passage, qText) {
+    if (!passage || typeof passage !== 'string') return '';
+    let targetNum = null;
+    if (qText) {
+        const m = qText.match(/\[(\d+)\]/);
+        if (m) targetNum = m[1];
     }
 
+    let html = passage.replace(/\[(\d+)\]/g, (match, num) => {
+        if (targetNum && num === targetNum) {
+            return `<span class="passage-tag active-tag" style="background:#f59e0b; color:#000; font-weight:800; font-size:0.85rem; padding:2px 8px; border-radius:4px; margin:0 4px; box-shadow:0 0 10px rgba(245,158,11,0.5);">[${num}]</span>`;
+        } else {
+            return `<span class="passage-tag" style="background:rgba(56,189,248,0.2); color:#38bdf8; border:1px solid rgba(56,189,248,0.4); font-weight:700; font-size:0.8rem; padding:1px 6px; border-radius:4px; margin:0 2px;">[${num}]</span>`;
+        }
+    });
+
+    return `
+        <div class="passage-box" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:16px 18px; margin-bottom:14px; font-size:0.92rem; line-height:1.7; color:#e2e8f0; max-height:280px; overflow-y:auto; font-family:'IBM Plex Sans', sans-serif;">
+            <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#a78bfa; margin-bottom:8px;">📖 Passage Reading Context</div>
+            <div style="white-space:pre-wrap;">${formatLaTeX(html)}</div>
+        </div>
+    `;
+}
+
     async function loadStudentData(email, userId) {
-      const { data: profile } = await client.from('profiles').select('*').eq('id', userId).single();
-      userProfile = profile || {};
-      const isAdmin = email === 'rupali.eduquest@gmail.com';
-
-      updateAccessCards(isAdmin);
-
+      // 1. Load LocalStorage results first (Instant local data)
       allExams = [];
+      const userEmailNorm = (email || '').toLowerCase().trim();
+
       try {
-        const { data: actR } = await client.from('act_results').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
-        (actR || []).forEach(r => {
-          const isTopic = r.level === 'Topic' || r.test_type === 'Topic' || (r.exam_name || '').toLowerCase().includes('topic');
-          allExams.push({ ...r, _type: 'act', _subType: isTopic ? 'topic' : 'diag', _date: r.submitted_at || r.created_at || r.submit_time });
+        const actLocal = JSON.parse(localStorage.getItem('act_results_history') || '[]');
+        const topicLocal = JSON.parse(localStorage.getItem('act_topic_report') || '[]');
+        const combinedLocal = [...actLocal, ...topicLocal];
+
+        combinedLocal.forEach(r => {
+          const dateKey = r.submitted_at || r.created_at || r.submit_time || new Date().toISOString();
+          const examTitle = r.exam_name || r.exam_title || r.topic || 'ACT Practice Test';
+          const isTopic = r.level === 'Topic' || r.test_type === 'Topic' || examTitle.toLowerCase().includes('topic');
+          allExams.push({ ...r, _type: 'act', _subType: isTopic ? 'topic' : 'diag', _date: dateKey });
         });
-
-        const { data: satR } = await client.from('sat_results').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
-        (satR || []).forEach(r => allExams.push({ ...r, _type: 'sat', _date: r.submitted_at || r.created_at || r.submit_time }));
-
-        const { data: topicR } = await client.from('sat_topic_report').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
-        (topicR || []).forEach(r => allExams.push({ ...r, _type: 'topic', _date: r.submit_time || r.submitted_at }));
-
-        const { data: ssatR } = await client.from('ssat_report').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
-        (ssatR || []).forEach(r => allExams.push({ ...r, _type: 'ssat', _date: r.submit_time || r.submitted_at }));
-
-        const { data: tmuaR } = await client.from('tmua_report').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
-        (tmuaR || []).forEach(r => allExams.push({ ...r, _type: 'tmua', _date: r.submit_time || r.submitted_at }));
-
-        const { data: ucatR } = await client.from('Ucat_diagnosis').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
-        (ucatR || []).forEach(r => allExams.push({ ...r, _type: 'ucat', _date: r.submit_time || r.submitted_at }));
-
-        const { data: apR } = await client.from('ap_report').select('*').or(`user_id.eq.${userId},student_email.ilike.${email}`);
-        (apR || []).forEach(r => allExams.push({ ...r, _type: 'ap', _date: r.submit_time || r.submitted_at }));
-      } catch (e) {
-        console.warn('Note: Error fetching some report tables:', e);
+      } catch (localErr) {
+        console.warn('LocalStorage load warning:', localErr);
       }
 
+      // Render local data immediately so student never sees stuck loading
       allExams.sort((a, b) => new Date(b._date || 0) - new Date(a._date || 0));
-
       updateStats(allExams);
       renderHistory();
+
+      // 2. Fetch Profile safely
+      const isAdmin = userEmailNorm === 'rupali.eduquest@gmail.com';
+      try {
+        const { data: profile } = await client.from('profiles').select('*').eq('id', userId).single();
+        userProfile = profile || {};
+      } catch (pErr) {
+        console.warn('Profile fetch warning:', pErr);
+        userProfile = {};
+      }
+      updateAccessCards(isAdmin);
+
+      // 3. Fetch Remote Reports safely for each table
+      const mergeRemoteRecords = (records, type) => {
+        (records || []).forEach(r => {
+          const rEmail = (r.student_email || r.email || '').toLowerCase().trim();
+          if (!userEmailNorm || r.user_id === userId || rEmail === userEmailNorm) {
+            const dateKey = r.submitted_at || r.created_at || r.submit_time || new Date().toISOString();
+            const examTitle = r.exam_name || r.exam_title || r.topic || 'Practice Test';
+            const isTopic = r.level === 'Topic' || r.test_type === 'Topic' || examTitle.toLowerCase().includes('topic');
+
+            const exists = allExams.some(e => e._type === type && (e.exam_name === examTitle || e.exam_title === examTitle) && Math.abs(new Date(e._date || 0) - new Date(dateKey)) < 10000);
+            if (!exists) {
+              allExams.push({ ...r, _type: type, _subType: isTopic ? 'topic' : 'diag', _date: dateKey });
+            }
+          }
+        });
+      };
+
+      try {
+        const { data: actR } = await client.from('act_results').select('*');
+        mergeRemoteRecords(actR, 'act');
+      } catch (e) { console.warn('act_results query warning:', e); }
+
+      try {
+        const { data: satR } = await client.from('sat_results').select('*');
+        mergeRemoteRecords(satR, 'sat');
+      } catch (e) { console.warn('sat_results query warning:', e); }
+
+      try {
+        const { data: topicR } = await client.from('sat_topic_report').select('*');
+        mergeRemoteRecords(topicR, 'topic');
+      } catch (e) { console.warn('sat_topic_report query warning:', e); }
+
+      try {
+        const { data: ssatR } = await client.from('ssat_report').select('*');
+        mergeRemoteRecords(ssatR, 'ssat');
+      } catch (e) { console.warn('ssat_report query warning:', e); }
+
+      try {
+        const { data: tmuaR } = await client.from('tmua_report').select('*');
+        mergeRemoteRecords(tmuaR, 'tmua');
+      } catch (e) { console.warn('tmua_report query warning:', e); }
+
+      try {
+        const { data: ucatR } = await client.from('Ucat_diagnosis').select('*');
+        mergeRemoteRecords(ucatR, 'ucat');
+      } catch (e) { console.warn('ucat_diagnosis query warning:', e); }
+
+      try {
+        const { data: apR } = await client.from('ap_report').select('*');
+        mergeRemoteRecords(apR, 'ap');
+      } catch (e) { console.warn('ap_report query warning:', e); }
+
+      allExams.sort((a, b) => new Date(b._date || 0) - new Date(a._date || 0));
+      updateStats(allExams);
+      renderHistory();
+    }
+
+    function updateStats(list) {
+      const total = list.length;
+      document.getElementById('stat-total-exams').textContent = total;
+
+      if (total === 0) {
+        document.getElementById('stat-avg-pct').textContent = '0%';
+        document.getElementById('stat-avg-scaled').textContent = '–';
+        document.getElementById('stat-total-qs').textContent = '0';
+        return;
+      }
+
+      let totalPct = 0;
+      let totalScaled = 0;
+      let scaledCount = 0;
+      let totalQs = 0;
+
+      list.forEach(r => {
+        const correct = r.correct_count !== undefined ? r.correct_count : (r.correct || 0);
+        const totalQ = r.total_questions !== undefined ? r.total_questions : (r.total || 0);
+        const pct = r.percentage || r.pct || (totalQ > 0 ? Math.round((correct / totalQ) * 100) : 0);
+        totalPct += pct;
+
+        const scaled = Number(r.scaled_score || r.composite_score || r.scaled || 0);
+        if (scaled > 0) { totalScaled += scaled; scaledCount++; }
+
+        totalQs += totalQ;
+      });
+
+      document.getElementById('stat-avg-pct').textContent = `${Math.round(totalPct / total)}%`;
+      document.getElementById('stat-avg-scaled').textContent = scaledCount > 0 ? Math.round(totalScaled / scaledCount) : '–';
+      document.getElementById('stat-total-qs').textContent = totalQs;
+    }
+
+    function getFilteredExams() {
+      return allExams.filter(r => {
+        if (currentFilter === 'all') return true;
+        if (r._type !== currentFilter) return false;
+        if (currentFilter === 'act' && currentActSubFilter !== 'all') {
+          return r._subType === currentActSubFilter;
+        }
+        return true;
+      });
+    }
+
+    function extractDetails(t) {
+      if (!t) return [];
+      let raw = t.details || t.details_json || t.student_answers || t.questions || [];
+      if (typeof raw === 'string') {
+        try { raw = JSON.parse(raw); } catch (e) { raw = []; }
+      }
+      return Array.isArray(raw) ? raw : [];
+    }
+
+    function renderHistory() {
+      const container = document.getElementById('history-list');
+      container.innerHTML = '';
+
+      const filtered = getFilteredExams();
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding:50px; color:var(--text-muted); background:var(--bg-card); border-radius:18px; border:1px solid var(--border-color);">No practice exams completed for this filter yet. Start a test today!</div>`;
+        return;
+      }
+
+      const icons = { act: '🎯', sat: '📝', topic: '📖', ssat: '🚀', tmua: '📐', ucat: '🩺', ap: '🎓' };
+      const names = { act: 'ACT', sat: 'SAT Mock', topic: 'SAT Topic', ssat: 'SSAT', tmua: 'TMUA', ucat: 'UCAT', ap: 'AP' };
+
+      filtered.forEach((r, idx) => {
+        const title = r.exam_title || r.exam_name || r.topic || `${names[r._type] || 'Practice'} Test`;
+        const dateStr = r._date ? new Date(r._date).toLocaleDateString() : '–';
+        const correct = r.correct_count !== undefined ? r.correct_count : (r.correct || 0);
+        const total = r.total_questions !== undefined ? r.total_questions : (r.total || 0);
+        const pct = r.percentage || r.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
+        const scaled = r.scaled_score || r.composite_score || r.scaled || '–';
+        const level = r.level || r.test_type || names[r._type] || 'Standard';
+        const grade = r.grade || (pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : 'D');
+
+        const card = document.createElement('div');
+        card.className = 'test-card';
+        card.innerHTML = `
+          <div class="tc-left">
+            <div class="tc-icon">${icons[r._type] || '⚡'}</div>
+            <div class="tc-info">
+              <h3>${title}</h3>
+              <div class="tc-meta">
+                <span class="tc-tag">${level}</span>
+                <span>📅 ${dateStr}</span>
+                <span>✓ ${correct}/${total} Correct (${pct}%)</span>
+                <span>🏆 Grade ${grade}</span>
+              </div>
+            </div>
+          </div>
+          <div class="tc-right">
+            <div class="tc-score-box">
+              <div class="tc-score-val">${scaled}</div>
+              <div class="tc-score-lbl">Scaled / Comp</div>
+            </div>
+            <div class="tc-actions">
+              <button class="btn-pdf" onclick="downloadSinglePDF(${idx})">📄 PDF Report</button>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    let modalChartInst = null;
+    function openReviewModal(idx) {
+      const filtered = getFilteredExams();
+      const t = filtered[idx];
+      if (!t) return;
+
+      const overlay = document.getElementById('reportModalOverlay');
+      if (overlay) overlay.classList.add('open');
+
+      try {
+        const title = t.exam_title || t.exam_name || t.topic || 'Test Detail';
+        const dateStr = t._date ? new Date(t._date).toLocaleString() : '–';
+        const correct = t.correct_count !== undefined ? t.correct_count : (t.correct || 0);
+        const wrong = t.wrong !== undefined ? t.wrong : (t.total_questions ? t.total_questions - correct : 0);
+        const skipped = t.unattempted || 0;
+        const total = t.total_questions !== undefined ? t.total_questions : (t.total || (correct + wrong + skipped) || 0);
+        const pct = t.percentage || t.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
+        const scaled = t.scaled_score || t.composite_score || t.scaled || '–';
+        const grade = t.grade || (pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : 'D');
+
+        const details = extractDetails(t);
+
+        const modal = document.getElementById('reportModalContent');
+        if (!modal) return;
+
+        modal.innerHTML = `
+          <div class="modal-hdr">
+            <h3>${title}</h3>
+            <div style="display:flex; gap:10px; align-items:center;">
+              <button class="btn-pdf" onclick="downloadSinglePDF(${idx})" style="padding:6px 14px; font-size:0.85rem;">📄 Download PDF</button>
+              <button class="modal-close" onclick="closeReportModal()">✕</button>
+            </div>
+          </div>
+          <div style="text-align:center; margin-bottom:12px;">
+            <div style="font-size:0.95rem; font-weight:600; color:rgba(255,255,255,0.6); margin-bottom:4px;">Student: ${currentUser?.email || 'Student'}</div>
+            <div style="font-family:'Syne'; font-size:2.4rem; font-weight:800; color:#a78bfa;">${scaled}</div>
+            <div style="font-size:0.82rem; color:rgba(255,255,255,0.4);">Score · ${dateStr}</div>
+          </div>
+
+          <div class="modal-stats-grid">
+            <div class="modal-stat-box"><div class="num" style="color:#34d399">${correct}</div><div class="lbl">Correct</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#f87171">${wrong}</div><div class="lbl">Wrong</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#fbbf24">${skipped}</div><div class="lbl">Skipped</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#60a5fa">${total}</div><div class="lbl">Total Qs</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#a78bfa">${pct}%</div><div class="lbl">Score %</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#34d399">${grade}</div><div class="lbl">Grade</div></div>
+          </div>
+
+          <div style="max-width:320px; margin:24px auto;"><canvas id="modalPieChart" height="200"></canvas></div>
+
+          <h4 style="color:#fff; font-family:var(--font-brand); margin:24px 0 16px; font-size:1.1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:8px;">
+            📋 Detailed Question Review (${details.length || total} questions)
+          </h4>
+
+          <div id="modalQuestionsContainer">
+            ${details && details.length > 0 ? details.map((d, i) => {
+              const qText = d.question || d.text || d.prompt || d.qText || '';
+              const hasText = !!qText;
+              const chosenVal = d.chosen !== undefined && d.chosen !== null ? d.chosen : (d.chosen_option !== undefined ? d.chosen_option : d.userAnswer);
+              const answerVal = d.answer !== undefined && d.answer !== null ? d.answer : (d.correct_option !== undefined ? d.correct_option : (d.correctAnswer !== undefined ? d.correctAnswer : d.fillAnswer));
+              
+              const status = d.status || (chosenVal === answerVal ? 'correct' : (chosenVal !== undefined && chosenVal !== 'None' && chosenVal !== '' ? 'wrong' : 'unattempted'));
+              const statusClass = status === 'correct' ? 'q-status-correct' : status === 'wrong' ? 'q-status-wrong' : 'q-status-skipped';
+              const statusText = status === 'correct' ? '✅ Correct' : status === 'wrong' ? '❌ Wrong' : '⏭ Skipped';
+              const exp = d.explanation || d.solution || 'No detailed explanation available for this question.';
+              const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+              const getOptText = (optVal) => {
+                if (optVal === null || optVal === undefined || optVal === '') return '';
+                if (Array.isArray(d.options) && d.options.length > 0) {
+                  if (typeof optVal === 'number' && d.options[optVal] !== undefined) return d.options[optVal];
+                  if (typeof optVal === 'string') {
+                    const num = parseInt(optVal, 10);
+                    if (!isNaN(num) && num >= 0 && num < d.options.length) return d.options[num];
+                    const idx = LETTERS.indexOf(optVal.toUpperCase());
+                    if (idx !== -1 && d.options[idx] !== undefined) return d.options[idx];
+                    return optVal;
+                  }
+                }
+                return String(optVal);
+              };
+
+              return `
+                <div class="q-review-card">
+                  <div class="q-review-hdr">
+                    <span style="font-weight:700; font-size:0.95rem; color:#fff;">Question ${d.id || (i + 1)}</span>
+                    <span class="q-status-badge ${statusClass}">${statusText}</span>
+                  </div>
+                  
+                  ${d.passage ? formatPassageHTML(d.passage, qText) : ''}
+                  ${hasText ? `<div class="q-text">${formatLaTeX(qText)}</div>` : `<div class="q-text" style="opacity:0.6;">Question text not available for this topic.</div>`}
+
+                  ${d.options && (Array.isArray(d.options) ? d.options.length > 0 : typeof d.options === 'object') ? `
+                    <div class="q-opt-list">
+                      ${(Array.isArray(d.options) ? d.options : Object.values(d.options)).map((opt, oIdx) => {
+                        const optKey = Array.isArray(d.options) ? oIdx : Object.keys(d.options)[oIdx];
+                        const isAns = (oIdx === answerVal || opt === answerVal || LETTERS[oIdx] === answerVal || optKey === answerVal);
+                        const isChosen = (oIdx === chosenVal || opt === chosenVal || LETTERS[oIdx] === chosenVal || optKey === chosenVal);
+                        let cls = '';
+                        let badge = '';
+                        if (isAns) { cls = 'correct-ans'; badge = ' <span style="margin-left:auto; font-weight:700; color:#10b981;">✓ Correct</span>'; }
+                        else if (isChosen && status === 'wrong') { cls = 'wrong-chosen'; badge = ' <span style="margin-left:auto; font-weight:700; color:#ef4444;">✗ Student Choice</span>'; }
+                        return `<div class="q-opt ${cls}"><span><strong>${LETTERS[oIdx] || optKey}.</strong> ${formatLaTeX(opt)}</span>${badge}</div>`;
+                      }).join('')}
+                    </div>
+                  ` : `
+                    <div style="font-size:0.9rem; margin-bottom:12px; color:#cbd5e1;">
+                      ${status === 'wrong' ? `Student Answer: <strong style="color:#ef4444;">${getOptText(chosenVal) || 'None'}</strong> &middot; Correct: <strong style="color:#10b981;">${getOptText(answerVal) || '–'}</strong>` : `Correct Answer: <strong style="color:#10b981;">${getOptText(answerVal) || '–'}</strong>`}
+                    </div>
+                  `}
+
+                  <div class="q-exp">
+                    <strong style="color:#60a5fa; display:block; margin-bottom:4px;">💡 Explanation:</strong>
+                    ${formatLaTeX(exp)}
+                  </div>
+                </div>
+              `;
+            }).join('') : `<div style="text-align:center; padding:30px; color:var(--text-muted);">Detailed question analysis for this test submission. Total Questions: ${total} &middot; Score: ${pct}%</div>`}
+          </div>
+        `;
+
+        try {
+          if (modalChartInst) modalChartInst.destroy();
+          const canvas = document.getElementById('modalPieChart');
+          if (canvas && typeof Chart !== 'undefined') {
+            const ctx = canvas.getContext('2d');
+            modalChartInst = new Chart(ctx, {
+              type: 'doughnut',
+              data: {
+                labels: ['Correct', 'Wrong', 'Skipped'],
+                datasets: [{
+                  data: [correct, wrong, skipped],
+                  backgroundColor: ['#10b981', '#ef4444', '#f59e0b'],
+                  borderWidth: 0
+                }]
+              },
+              options: {
+                responsive: true,
+                plugins: { legend: { position: 'bottom', labels: { color: '#cbd5e1', font: { size: 12 } } } },
+                cutout: '65%'
+              }
+            });
+          }
+        } catch (chartErr) {
+          console.warn('Chart render note:', chartErr);
+        }
+      } catch (err) {
+        console.error('Error rendering review modal:', err);
+      }
+    }
+
+    function closeReportModal() {
+      document.getElementById('reportModalOverlay').classList.remove('open');
+    }
+
+    function downloadSinglePDF(idx) {
+      const filtered = getFilteredExams();
+      const t = filtered[idx];
+      if (!t) return;
+
+      const parsedDetails = extractDetails(t);
+
+      if (t._type === 'act' && typeof window.generateACTPDFReport === 'function') {
+        const payload = {
+          student: { name: t.student_name || currentUser?.email || 'Student', email: t.student_email || currentUser?.email || 'student@eduquest.com', phone: t.student_phone || t.phone || '–' },
+          examName: t.exam_name || t.exam_title || 'ACT Practice Test',
+          submitTime: t._date || new Date().toISOString(),
+          composite: t.composite_score || t.scaled_score || t.composite || 0,
+          sectionScores: t.section_scores || { english: t.english_score||0, math: t.math_score||0, reading: t.reading_score||0, science: t.science_score||0 },
+          correct: t.correct_count !== undefined ? t.correct_count : (t.correct || 0),
+          wrong: t.wrong || 0,
+          unattempted: t.unattempted || 0,
+          pct: t.percentage || t.pct || 0,
+          grade: t.grade || 'B',
+          topicAnalysis: typeof t.topic_scores === 'object' ? Object.values(t.topic_scores) : (t.topicAnalysis || []),
+          details: parsedDetails
+        };
+        window.generateACTPDFReport(payload, true);
+      } else if (typeof window.generatePDFReport === 'function') {
+        const payload = {
+          student: { name: t.student_name || currentUser?.email || 'Student', email: t.student_email || currentUser?.email || 'student@eduquest.com', phone: t.student_phone || t.phone || '–' },
+          examName: t.exam_title || t.exam_name || t.topic || 'Practice Test',
+          submitTime: t._date || new Date().toISOString(),
+          scaled: t.scaled_score || t.composite_score || t.sat_score || 0,
+          correct: t.correct_count !== undefined ? t.correct_count : (t.correct || 0),
+          wrong: t.wrong || 0,
+          unattempted: t.unattempted || 0,
+          total: t.total_questions !== undefined ? t.total_questions : (t.total || 0),
+          pct: t.percentage || t.pct || 0,
+          grade: t.grade || 'B',
+          details: parsedDetails
+        };
+        window.generatePDFReport(payload, true);
+      } else {
+        alert('📄 Generating standard PDF report...');
+      }
     }
 
     function updateAccessCards(isAdmin) {
@@ -909,6 +1485,11 @@ function formatMathCaret(text) {
       updateAccessCards(session.user.email === 'rupali.eduquest@gmail.com');
     }
 
+    async function studentLogout() {
+      await client.auth.signOut();
+      window.location.href = 'login.html';
+    }
+
     let currentActSubFilter = 'all';
     function setActSubFilter(sub) {
       currentActSubFilter = sub;
@@ -938,260 +1519,9 @@ function formatMathCaret(text) {
       }
     }
 
-    function updateStats(list) {
-      const total = list.length;
-      document.getElementById('stat-total-exams').textContent = total;
-
-      if (total === 0) {
-        document.getElementById('stat-avg-pct').textContent = '0%';
-        document.getElementById('stat-avg-scaled').textContent = '–';
-        document.getElementById('stat-total-qs').textContent = '0';
-        return;
-      }
-
-      let totalPct = 0;
-      let totalScaled = 0;
-      let scaledCount = 0;
-      let totalQs = 0;
-
-      list.forEach(r => {
-        const correct = r.correct_count !== undefined ? r.correct_count : (r.correct || 0);
-        const totalQ = r.total_questions !== undefined ? r.total_questions : (r.total || 0);
-        const pct = r.percentage || r.pct || (totalQ > 0 ? Math.round((correct / totalQ) * 100) : 0);
-        totalPct += pct;
-
-        const scaled = Number(r.scaled_score || r.composite_score || r.scaled || 0);
-        if (scaled > 0) { totalScaled += scaled; scaledCount++; }
-
-        totalQs += totalQ;
-      });
-
-      document.getElementById('stat-avg-pct').textContent = `${Math.round(totalPct / total)}%`;
-      document.getElementById('stat-avg-scaled').textContent = scaledCount > 0 ? Math.round(totalScaled / scaledCount) : '–';
-      document.getElementById('stat-total-qs').textContent = totalQs;
-    }
-
-    function renderHistory() {
-      const container = document.getElementById('history-list');
-      container.innerHTML = '';
-
-      const filtered = allExams.filter(r => {
-        if (currentFilter === 'all') return true;
-        if (r._type !== currentFilter) return false;
-        if (currentFilter === 'act' && currentActSubFilter !== 'all') {
-          return r._subType === currentActSubFilter;
-        }
-        return true;
-      });
-
-      if (filtered.length === 0) {
-        container.innerHTML = `<div style="text-align:center; padding:50px; color:var(--text-muted); background:var(--bg-card); border-radius:18px; border:1px solid var(--border-color);">No practice exams completed for this filter yet. Start a test today!</div>`;
-        return;
-      }
-
-      const icons = { act: '🎯', sat: '📝', topic: '📖', ssat: '🚀', tmua: '📐', ucat: '🩺', ap: '🎓' };
-      const names = { act: 'ACT', sat: 'SAT Mock', topic: 'SAT Topic', ssat: 'SSAT', tmua: 'TMUA', ucat: 'UCAT', ap: 'AP' };
-
-      filtered.forEach((r, idx) => {
-        const title = r.exam_title || r.exam_name || r.topic || `${names[r._type] || 'Practice'} Test`;
-        const dateStr = r._date ? new Date(r._date).toLocaleDateString() : '–';
-        const correct = r.correct_count !== undefined ? r.correct_count : (r.correct || 0);
-        const total = r.total_questions !== undefined ? r.total_questions : (r.total || 0);
-        const pct = r.percentage || r.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
-        const scaled = r.scaled_score || r.composite_score || r.scaled || '–';
-        const level = r.level || r.test_type || names[r._type] || 'Standard';
-        const grade = r.grade || (pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : 'D');
-
-        const card = document.createElement('div');
-        card.className = 'test-card';
-        card.innerHTML = `
-          <div class="tc-left">
-            <div class="tc-icon">${icons[r._type] || '⚡'}</div>
-            <div class="tc-info">
-              <h3>${title}</h3>
-              <div class="tc-meta">
-                <span class="tc-tag">${level}</span>
-                <span>📅 ${dateStr}</span>
-                <span>✓ ${correct}/${total} Correct (${pct}%)</span>
-                <span>🏆 Grade ${grade}</span>
-              </div>
-            </div>
-          </div>
-          <div class="tc-right">
-            <div class="tc-score-box">
-              <div class="tc-score-val">${scaled}</div>
-              <div class="tc-score-lbl">Scaled / Comp</div>
-            </div>
-            <div class="tc-actions">
-              <button class="btn-review" onclick="openReviewModal(${idx})">🔍 View Review</button>
-              <button class="btn-pdf" onclick="downloadSinglePDF(${idx})">📄 PDF Report</button>
-            </div>
-          </div>
-        `;
-        container.appendChild(card);
-      });
-    }
-
-    let modalChartInst = null;
-    function openReviewModal(idx) {
-      const filtered = allExams.filter(r => currentFilter === 'all' || r._type === currentFilter);
-      const t = filtered[idx];
-      if (!t) return;
-
-      const title = t.exam_title || t.exam_name || t.topic || 'Test Detail';
-      const dateStr = t._date ? new Date(t._date).toLocaleString() : '–';
-      const correct = t.correct_count !== undefined ? t.correct_count : (t.correct || 0);
-      const wrong = t.wrong !== undefined ? t.wrong : (t.total_questions ? t.total_questions - correct : 0);
-      const skipped = t.unattempted || 0;
-      const total = t.total_questions !== undefined ? t.total_questions : (t.total || (correct + wrong + skipped) || 0);
-      const pct = t.percentage || t.pct || (total > 0 ? Math.round((correct / total) * 100) : 0);
-      const scaled = t.scaled_score || t.composite_score || t.scaled || '–';
-      const grade = t.grade || (pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : 'D');
-
-      let details = [];
-      try { details = typeof t.details_json === 'string' ? JSON.parse(t.details_json) : (t.details_json || t.details || []); } catch(e) {}
-      if (details.length === 0 && t.student_answers) {
-        try { details = typeof t.student_answers === 'string' ? JSON.parse(t.student_answers) : t.student_answers; } catch(e) {}
-      }
-
-      const modal = document.getElementById('reportModalContent');
-      modal.innerHTML = `
-        <div class="modal-hdr">
-          <h3>${title}</h3>
-          <button class="modal-close" onclick="closeReportModal()">✕</button>
-        </div>
-        <div style="text-align:center; margin-bottom:12px;">
-          <div style="font-size:0.95rem; font-weight:600; color:rgba(255,255,255,0.6); margin-bottom:4px;">Student: ${currentUser?.email || 'Student'}</div>
-          <div style="font-family:'Syne'; font-size:2.4rem; font-weight:800; color:#a78bfa;">${scaled}</div>
-          <div style="font-size:0.82rem; color:rgba(255,255,255,0.4);">Score · ${dateStr}</div>
-        </div>
-
-        <div class="modal-stats-grid">
-          <div class="modal-stat-box"><div class="num" style="color:#34d399">${correct}</div><div class="lbl">Correct</div></div>
-          <div class="modal-stat-box"><div class="num" style="color:#f87171">${wrong}</div><div class="lbl">Wrong</div></div>
-          <div class="modal-stat-box"><div class="num" style="color:#fbbf24">${skipped}</div><div class="lbl">Skipped</div></div>
-          <div class="modal-stat-box"><div class="num" style="color:#60a5fa">${total}</div><div class="lbl">Total Qs</div></div>
-          <div class="modal-stat-box"><div class="num" style="color:#a78bfa">${pct}%</div><div class="lbl">Score %</div></div>
-          <div class="modal-stat-box"><div class="num" style="color:#34d399">${grade}</div><div class="lbl">Grade</div></div>
-        </div>
-
-        <div style="max-width:320px; margin:24px auto;"><canvas id="modalPieChart" height="200"></canvas></div>
-
-        <h4 style="color:#fff; font-family:var(--font-brand); margin:24px 0 16px; font-size:1.1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:8px;">
-          📋 Detailed Question Review (${details.length || total} questions)
-        </h4>
-
-        <div id="modalQuestionsContainer">
-          ${details && details.length > 0 ? details.map((d, i) => {
-            const qText = d.question || d.text || d.prompt || '';
-            const hasText = !!qText;
-            const status = d.status || (d.chosen === d.answer ? 'correct' : (d.chosen !== undefined && d.chosen !== 'None' ? 'wrong' : 'unattempted'));
-            const statusClass = status === 'correct' ? 'q-status-correct' : status === 'wrong' ? 'q-status-wrong' : 'q-status-skipped';
-            const statusText = status === 'correct' ? '✅ Correct' : status === 'wrong' ? '❌ Wrong' : '⏭ Skipped';
-            const exp = d.explanation || d.solution || 'No detailed explanation available for this question.';
-            const LETTERS = ['A', 'B', 'C', 'D', 'E'];
-
-            return `
-              <div class="q-review-card">
-                <div class="q-review-hdr">
-                  <span style="font-weight:700; font-size:0.95rem; color:#fff;">Question ${d.id || (i+1)}</span>
-                  <span class="q-status-badge ${statusClass}">${statusText}</span>
-                </div>
-                
-                ${hasText ? `<div class="q-text">${qText}</div>` : `<div class="q-text" style="opacity:0.6;">Question text not available for this topic.</div>`}
-
-                ${d.options && d.options.length > 0 ? `
-                  <div class="q-opt-list">
-                    ${d.options.map((opt, oIdx) => {
-                      const isAns = (oIdx === d.answer || opt === d.answer || LETTERS[oIdx] === d.answer);
-                      const isChosen = (oIdx === d.chosen || opt === d.chosen || LETTERS[oIdx] === d.chosen);
-                      let cls = '';
-                      let badge = '';
-                      if (isAns) { cls = 'correct-ans'; badge = ' <span style="margin-left:auto; font-weight:700; color:#10b981;">✓ Correct</span>'; }
-                      else if (isChosen && status === 'wrong') { cls = 'wrong-chosen'; badge = ' <span style="margin-left:auto; font-weight:700; color:#ef4444;">✗ Student Choice</span>'; }
-                      return `<div class="q-opt ${cls}"><span><strong>${LETTERS[oIdx] || ''}.</strong> ${opt}</span>${badge}</div>`;
-                    }).join('')}
-                  </div>
-                ` : `
-                  <div style="font-size:0.9rem; margin-bottom:12px; color:#cbd5e1;">
-                    ${status === 'wrong' ? `Student Answer: <strong style="color:#ef4444;">${d.chosen || 'None'}</strong> &middot; Correct: <strong style="color:#10b981;">${d.answer || '–'}</strong>` : `Correct Answer: <strong style="color:#10b981;">${d.answer || '–'}</strong>`}
-                  </div>
-                `}
-
-                <div class="q-exp">
-                  <strong style="color:#60a5fa; display:block; margin-bottom:4px;">💡 Explanation:</strong>
-                  ${exp}
-                </div>
-              </div>
-            `;
-          }).join('') : `<div style="text-align:center; padding:30px; color:var(--text-muted);">No detailed question breakdown available for this test submission.</div>`}
-        </div>
-      `;
-
-      document.getElementById('reportModalOverlay').classList.add('open');
-
-      if (modalChartInst) modalChartInst.destroy();
-      const ctx = document.getElementById('modalPieChart').getContext('2d');
-      modalChartInst = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: ['Correct', 'Wrong', 'Skipped'],
-          datasets: [{
-            data: [correct, wrong, skipped],
-            backgroundColor: ['#10b981', '#ef4444', '#f59e0b'],
-            borderWidth: 0
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { position: 'bottom', labels: { color: '#cbd5e1', font: { size: 12 } } } },
-          cutout: '65%'
-        }
-      });
-    }
-
-    function closeReportModal() {
-      document.getElementById('reportModalOverlay').classList.remove('open');
-    }
-
-    function downloadSinglePDF(idx) {
-      const filtered = allExams.filter(r => currentFilter === 'all' || r._type === currentFilter);
-      const t = filtered[idx];
-      if (!t) return;
-
-      if (t._type === 'act' && typeof window.generateACTPDFReport === 'function') {
-        const payload = {
-          student: { name: t.student_name || currentUser?.email || 'Student', email: t.student_email || currentUser?.email || 'student@eduquest.com', phone: t.phone || '–' },
-          examName: t.exam_name || 'ACT Practice Test',
-          submitTime: t._date || new Date().toISOString(),
-          composite: t.composite_score || t.scaled_score || 0,
-          sectionScores: t.section_scores || { english: t.english_score||0, math: t.math_score||0, reading: t.reading_score||0, science: t.science_score||0 },
-          correct: t.correct_count !== undefined ? t.correct_count : (t.correct || 0),
-          wrong: t.wrong || 0,
-          unattempted: t.unattempted || 0,
-          pct: t.percentage || t.pct || 0,
-          grade: t.grade || 'B',
-          details: typeof t.details_json === 'string' ? JSON.parse(t.details_json) : (t.details_json || t.details || [])
-        };
-        window.generateACTPDFReport(payload, true);
-      } else if (typeof window.generatePDFReport === 'function') {
-        const payload = {
-          student: { name: t.student_name || currentUser?.email || 'Student', email: t.student_email || currentUser?.email || 'student@eduquest.com', phone: t.phone || '–' },
-          examName: t.exam_title || t.exam_name || t.topic || 'Practice Test',
-          submitTime: t._date || new Date().toISOString(),
-          scaled: t.scaled_score || t.composite_score || t.sat_score || 0,
-          correct: t.correct_count !== undefined ? t.correct_count : (t.correct || 0),
-          wrong: t.wrong || 0,
-          unattempted: t.unattempted || 0,
-          total: t.total_questions !== undefined ? t.total_questions : (t.total || 0),
-          pct: t.percentage || t.pct || 0,
-          grade: t.grade || 'B',
-          details: typeof t.details_json === 'string' ? JSON.parse(t.details_json) : (t.details_json || t.details || [])
-        };
-        window.generatePDFReport(payload, true);
-      } else {
-        alert('📄 Generating standard PDF report... (jsPDF callback)');
-      }
+    async function studentLogout() {
+      await client.auth.signOut();
+      window.location.href = 'login.html';
     }
 
     function generateCombinedPDF() {
