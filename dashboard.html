@@ -970,30 +970,105 @@
     let userProfile = {};
     let allExams = [];
     let currentFilter = 'all';
+    let dataLoaded = false;
 
     document.addEventListener('DOMContentLoaded', async () => {
-      // 1. Initial load from LocalStorage / stored email immediately
       const savedEmail = localStorage.getItem('user_email') || localStorage.getItem('student_email') || '';
       const emailDisplay = document.getElementById('user-email-display');
       if (emailDisplay && savedEmail) emailDisplay.textContent = savedEmail;
-      
-      loadStudentData(savedEmail, 'local-user');
 
-      // 2. Fetch active Supabase session
+      // Try Supabase session first
+      let email = savedEmail;
+      let userId = 'local-user';
+
       if (client && client.auth) {
         try {
           const { data: { session } } = await client.auth.getSession();
           if (session && session.user) {
             currentUser = session.user;
-            if (emailDisplay) emailDisplay.textContent = session.user.email;
-            localStorage.setItem('user_email', session.user.email);
-            loadStudentData(session.user.email, session.user.id);
+            email = session.user.email;
+            userId = session.user.id;
+            if (emailDisplay) emailDisplay.textContent = email;
+            localStorage.setItem('user_email', email);
           }
         } catch (authErr) {
           console.warn('Auth session check warning:', authErr);
         }
       }
+
+      // Load all data once
+      await loadStudentData(email, userId);
+
+      // Setup Supabase Realtime for auto-refresh (no page reload needed)
+      if (client) {
+        try {
+          client.channel('dashboard-realtime')
+            .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'act_results' }, (payload) => {
+              console.log('🔄 New ACT result detected via Realtime');
+              handleRealtimeInsert(payload.new, 'act', email, userId);
+            })
+            .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'sat_results' }, (payload) => {
+              console.log('🔄 New SAT result detected via Realtime');
+              handleRealtimeInsert(payload.new, 'sat', email, userId);
+            })
+            .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'sat_topic_report' }, (payload) => {
+              handleRealtimeInsert(payload.new, 'topic', email, userId);
+            })
+            .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'ssat_report' }, (payload) => {
+              handleRealtimeInsert(payload.new, 'ssat', email, userId);
+            })
+            .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'tmua_report' }, (payload) => {
+              handleRealtimeInsert(payload.new, 'tmua', email, userId);
+            })
+            .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'Ucat_diagnosis' }, (payload) => {
+              handleRealtimeInsert(payload.new, 'ucat', email, userId);
+            })
+            .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'ap_report' }, (payload) => {
+              handleRealtimeInsert(payload.new, 'ap', email, userId);
+            })
+            .subscribe((status) => {
+              console.log('📡 Realtime subscription status:', status);
+            });
+        } catch (rtErr) {
+          console.warn('Realtime setup warning:', rtErr);
+        }
+      }
+
+      // Polling fallback: auto-refresh every 15 seconds from Supabase
+      // This ensures data updates even if Realtime isn't enabled on the project
+      setInterval(() => {
+        if (document.visibilityState === 'visible') {
+          console.log('🔄 Auto-refreshing dashboard data...');
+          loadStudentData(email, userId);
+        }
+      }, 15000);
     });
+
+    // Handle realtime insert - add new record to dashboard without refresh
+    function handleRealtimeInsert(record, type, email, userId) {
+      if (!record) return;
+      const userEmailNorm = (email || '').toLowerCase().trim();
+      const rEmail = (record.student_email || record.email || '').toLowerCase().trim();
+      const matchesEmail = !userEmailNorm || rEmail === userEmailNorm || rEmail === '' || rEmail === 'student@eduquest.com';
+      const matchesUser = (userId && userId !== 'local-user' && record.user_id === userId);
+
+      if (matchesUser || matchesEmail) {
+        const dateKey = record.submitted_at || record.created_at || record.submit_time || new Date().toISOString();
+        const examTitle = record.exam_name || record.exam_title || record.topic || 'Practice Test';
+        const isTopic = record.level === 'Topic' || record.test_type === 'Topic' || (examTitle && examTitle.toLowerCase().includes('topic'));
+        const uid = record.id ? `db_${record.id}` : `rt_${type}_${examTitle}_${dateKey}`;
+
+        // Check if this exact record already exists by unique id
+        const exists = allExams.some(e => e._uid === uid);
+        if (!exists) {
+          allExams.unshift({ ...record, _type: type, _subType: isTopic ? 'topic' : 'diag', _date: dateKey, _uid: uid });
+          allExams.sort((a, b) => new Date(b._date || 0) - new Date(a._date || 0));
+          updateStats(allExams);
+          renderHistory();
+          console.log('✅ Dashboard auto-updated with new ' + type.toUpperCase() + ' result (id: ' + (record.id || 'local') + ')');
+        }
+      }
+    }
 
 function formatLaTeX(str) {
     if (!str || typeof str !== 'string') return str || '';
@@ -1041,96 +1116,123 @@ function formatPassageHTML(passage, qText) {
 }
 
     async function loadStudentData(email, userId) {
-      // 1. Load LocalStorage results first (Instant local data)
+      const userEmailNorm = (email || localStorage.getItem('user_email') || localStorage.getItem('student_email') || '').toLowerCase().trim();
+      const isAdmin = userEmailNorm === 'rupali.eduquest@gmail.com';
+
+      // Build list of all known student emails for matching
+      const knownEmails = new Set();
+      if (userEmailNorm) knownEmails.add(userEmailNorm);
+      const ue = (localStorage.getItem('user_email') || '').toLowerCase().trim();
+      const se = (localStorage.getItem('student_email') || '').toLowerCase().trim();
+      if (ue) knownEmails.add(ue);
+      if (se) knownEmails.add(se);
+
+      // Helper: check if a record belongs to this student
+      const isMyRecord = (r) => {
+        if (isAdmin) return true;
+        if (knownEmails.size === 0) return true;
+        if (userId && userId !== 'local-user' && r.user_id === userId) return true;
+        const rEmail = (r.student_email || r.email || '').toLowerCase().trim();
+        if (!rEmail || rEmail === 'student@eduquest.com') return true;
+        return knownEmails.has(rEmail);
+      };
+
+      // Unique key for deduplication - use Supabase id if available, else fallback to composite key
+      const seenKeys = new Set();
+      const addRecord = (r, type) => {
+        const dateKey = r.submitted_at || r.created_at || r.submit_time || new Date().toISOString();
+        const examTitle = r.exam_name || r.exam_title || r.topic || 'Practice Test';
+        const isTopic = r.level === 'Topic' || r.test_type === 'Topic' || (examTitle && examTitle.toLowerCase().includes('topic'));
+
+        // Use Supabase row id for dedup (most reliable), fallback to email+type+timestamp
+        const uniqueId = r.id ? `db_${r.id}` : `local_${type}_${examTitle}_${dateKey}`;
+        if (seenKeys.has(uniqueId)) return;
+        seenKeys.add(uniqueId);
+
+        allExams.push({ ...r, _type: type, _subType: isTopic ? 'topic' : 'diag', _date: dateKey, _uid: uniqueId });
+      };
+
+      // ═══ STEP 1: Reset allExams fresh ═══
       allExams = [];
-      const userEmailNorm = (email || '').toLowerCase().trim();
 
+      // ═══ STEP 2: Fetch ALL rows from Supabase (PRIMARY source, NO row limit) ═══
+      let supabaseFetched = false;
+      if (client) {
+        try {
+          // .select('*').range(0, 9999) ensures we get ALL rows, not just default 1000
+          const [actRes, satRes, topicRes, ssatRes, tmuaRes, ucatRes, apRes] = await Promise.allSettled([
+            client.from('act_results').select('*').range(0, 9999).order('created_at', { ascending: false }),
+            client.from('sat_results').select('*').range(0, 9999).order('created_at', { ascending: false }),
+            client.from('sat_topic_report').select('*').range(0, 9999).order('created_at', { ascending: false }),
+            client.from('ssat_report').select('*').range(0, 9999).order('created_at', { ascending: false }),
+            client.from('tmua_report').select('*').range(0, 9999).order('created_at', { ascending: false }),
+            client.from('Ucat_diagnosis').select('*').range(0, 9999).order('created_at', { ascending: false }),
+            client.from('ap_report').select('*').range(0, 9999).order('created_at', { ascending: false })
+          ]);
+
+          const processResult = (res, type) => {
+            if (res.status === 'fulfilled' && res.value.data) {
+              console.log(`📦 ${type}: fetched ${res.value.data.length} rows from Supabase`);
+              res.value.data.forEach(r => { if (isMyRecord(r)) addRecord(r, type); });
+            } else if (res.status === 'fulfilled' && res.value.error) {
+              console.warn(`⚠️ ${type} table error:`, res.value.error.message);
+            }
+          };
+
+          processResult(actRes, 'act');
+          processResult(satRes, 'sat');
+          processResult(topicRes, 'topic');
+          processResult(ssatRes, 'ssat');
+          processResult(tmuaRes, 'tmua');
+          processResult(ucatRes, 'ucat');
+          processResult(apRes, 'ap');
+
+          supabaseFetched = true;
+          console.log('✅ Dashboard loaded ' + allExams.length + ' total results from Supabase');
+        } catch (fetchErr) {
+          console.warn('Supabase fetch error, falling back to localStorage:', fetchErr);
+        }
+      }
+
+      // ═══ STEP 3: Merge LocalStorage data (fills gaps / offline fallback) ═══
       try {
-        const actLocal = JSON.parse(localStorage.getItem('act_results_history') || '[]');
-        const topicLocal = JSON.parse(localStorage.getItem('act_topic_report') || '[]');
-        const combinedLocal = [...actLocal, ...topicLocal];
-
-        combinedLocal.forEach(r => {
-          const dateKey = r.submitted_at || r.created_at || r.submit_time || new Date().toISOString();
-          const examTitle = r.exam_name || r.exam_title || r.topic || 'ACT Practice Test';
-          const isTopic = r.level === 'Topic' || r.test_type === 'Topic' || examTitle.toLowerCase().includes('topic');
-          allExams.push({ ...r, _type: 'act', _subType: isTopic ? 'topic' : 'diag', _date: dateKey });
+        const localKeys = [
+          ['act_results_history', 'act'],
+          ['act_topic_report', 'act'],
+          ['sat_results_history', 'sat'],
+          ['sat_topic_report', 'topic'],
+          ['ssat_report', 'ssat'],
+          ['tmua_report', 'tmua'],
+          ['ucat_report', 'ucat'],
+          ['ap_report', 'ap']
+        ];
+        localKeys.forEach(([key, type]) => {
+          const items = JSON.parse(localStorage.getItem(key) || '[]');
+          (items || []).forEach(r => addRecord(r, type));
         });
       } catch (localErr) {
         console.warn('LocalStorage load warning:', localErr);
       }
 
-      // Render local data immediately so student never sees stuck loading
+      // ═══ STEP 4: Sort by date (newest first) and render ALL ═══
       allExams.sort((a, b) => new Date(b._date || 0) - new Date(a._date || 0));
+      console.log('📊 Total tests to display: ' + allExams.length);
       updateStats(allExams);
       renderHistory();
 
-      // 2. Fetch Profile safely
-      const isAdmin = userEmailNorm === 'rupali.eduquest@gmail.com';
-      try {
-        const { data: profile } = await client.from('profiles').select('*').eq('id', userId).single();
-        userProfile = profile || {};
-      } catch (pErr) {
-        console.warn('Profile fetch warning:', pErr);
-        userProfile = {};
+      // ═══ STEP 5: Fetch Profile ═══
+      if (client && userId && userId !== 'local-user') {
+        try {
+          const { data: profile } = await client.from('profiles').select('*').eq('id', userId).single();
+          userProfile = profile || {};
+        } catch (pErr) {
+          console.warn('Profile fetch warning:', pErr);
+          userProfile = {};
+        }
       }
       updateAccessCards(isAdmin);
 
-      // 3. Fetch Remote Reports safely for each table
-      const mergeRemoteRecords = (records, type) => {
-        (records || []).forEach(r => {
-          const rEmail = (r.student_email || r.email || '').toLowerCase().trim();
-          if (!userEmailNorm || r.user_id === userId || rEmail === userEmailNorm) {
-            const dateKey = r.submitted_at || r.created_at || r.submit_time || new Date().toISOString();
-            const examTitle = r.exam_name || r.exam_title || r.topic || 'Practice Test';
-            const isTopic = r.level === 'Topic' || r.test_type === 'Topic' || examTitle.toLowerCase().includes('topic');
-
-            const exists = allExams.some(e => e._type === type && (e.exam_name === examTitle || e.exam_title === examTitle) && Math.abs(new Date(e._date || 0) - new Date(dateKey)) < 10000);
-            if (!exists) {
-              allExams.push({ ...r, _type: type, _subType: isTopic ? 'topic' : 'diag', _date: dateKey });
-            }
-          }
-        });
-      };
-
-      try {
-        const { data: actR } = await client.from('act_results').select('*');
-        mergeRemoteRecords(actR, 'act');
-      } catch (e) { console.warn('act_results query warning:', e); }
-
-      try {
-        const { data: satR } = await client.from('sat_results').select('*');
-        mergeRemoteRecords(satR, 'sat');
-      } catch (e) { console.warn('sat_results query warning:', e); }
-
-      try {
-        const { data: topicR } = await client.from('sat_topic_report').select('*');
-        mergeRemoteRecords(topicR, 'topic');
-      } catch (e) { console.warn('sat_topic_report query warning:', e); }
-
-      try {
-        const { data: ssatR } = await client.from('ssat_report').select('*');
-        mergeRemoteRecords(ssatR, 'ssat');
-      } catch (e) { console.warn('ssat_report query warning:', e); }
-
-      try {
-        const { data: tmuaR } = await client.from('tmua_report').select('*');
-        mergeRemoteRecords(tmuaR, 'tmua');
-      } catch (e) { console.warn('tmua_report query warning:', e); }
-
-      try {
-        const { data: ucatR } = await client.from('Ucat_diagnosis').select('*');
-        mergeRemoteRecords(ucatR, 'ucat');
-      } catch (e) { console.warn('ucat_diagnosis query warning:', e); }
-
-      try {
-        const { data: apR } = await client.from('ap_report').select('*');
-        mergeRemoteRecords(apR, 'ap');
-      } catch (e) { console.warn('ap_report query warning:', e); }
-
-      allExams.sort((a, b) => new Date(b._date || 0) - new Date(a._date || 0));
-      updateStats(allExams);
-      renderHistory();
+      dataLoaded = true;
     }
 
     function updateStats(list) {

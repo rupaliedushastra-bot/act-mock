@@ -57,6 +57,15 @@ const SUPABASE_CONFIG = {
 // ── Save registration to Supabase ─────────────
 // Jab student form fill kare aur test start kare
 async function saveRegistration(studentData, examName) {
+    if (studentData && studentData.email) {
+        try {
+            localStorage.setItem('student_email', studentData.email);
+            if (!localStorage.getItem('user_email')) {
+                localStorage.setItem('user_email', studentData.email);
+            }
+        } catch (e) {}
+    }
+
     if (SUPABASE_CONFIG.url === 'YOUR_SUPABASE_URL') {
         console.warn('⚠️ Supabase not configured yet. Follow SUPABASE_SETUP_GUIDE.txt');
         return;
@@ -99,9 +108,37 @@ async function saveRegistration(studentData, examName) {
 // ── Save result to Supabase ───────────────────
 // Jab student test submit kare aur report generate ho
 async function saveToSupabase(result) {
+    if (!result) return;
+    if (result.student && result.student.email) {
+        try {
+            localStorage.setItem('student_email', result.student.email);
+            if (!localStorage.getItem('user_email')) {
+                localStorage.setItem('user_email', result.student.email);
+            }
+        } catch (e) {}
+    }
+
     if (SUPABASE_CONFIG.url === 'YOUR_SUPABASE_URL') {
         console.warn('⚠️ Supabase not configured yet. Follow SUPABASE_SETUP_GUIDE.txt');
         return;
+    }
+
+    // Try to get logged in user_id & session access token
+    let userId = null;
+    let authHeader = `Bearer ${SUPABASE_CONFIG.anonKey}`;
+    let supabaseClient = null;
+
+    if (window.supabase && SUPABASE_CONFIG.url && SUPABASE_CONFIG.url !== 'YOUR_SUPABASE_URL') {
+        try {
+            supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+            const { data: { session } } = await supabaseClient.auth.getSession();
+            if (session && session.user) {
+                userId = session.user.id;
+                authHeader = `Bearer ${session.access_token}`;
+            }
+        } catch (e) {
+            console.warn('Could not retrieve Supabase session:', e);
+        }
     }
 
     const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -146,6 +183,7 @@ async function saveToSupabase(result) {
 
     // Row to insert into sat_results table
     const row = {
+        user_id: userId,
         // Student info
         student_name: result.student.name,
         student_email: result.student.email,
@@ -179,13 +217,31 @@ async function saveToSupabase(result) {
         created_at: new Date().toISOString()
     };
 
+    // Save to LocalStorage fallback
     try {
+        const historyStr = localStorage.getItem('sat_results_history');
+        const history = historyStr ? JSON.parse(historyStr) : [];
+        history.unshift({ ...row, _type: 'sat', submitted_at: row.submitted_at });
+        localStorage.setItem('sat_results_history', JSON.stringify(history));
+        console.log('✅ SAT Result saved to LocalStorage');
+    } catch (e) {
+        console.error('Failed to save SAT to LocalStorage:', e);
+    }
+
+    try {
+        if (supabaseClient) {
+            const { data, error } = await supabaseClient.from('sat_results').insert([row]);
+            if (!error) {
+                console.log('✅ SAT Result saved to Supabase via SDK');
+                return;
+            }
+        }
         const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/sat_results`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'apikey': SUPABASE_CONFIG.anonKey,
-                'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
+                'Authorization': authHeader,
                 'Prefer': 'return=minimal'
             },
             body: JSON.stringify(row)
@@ -346,7 +402,21 @@ async function saveACTResult(result) {
         const historyStr = localStorage.getItem('act_results_history');
         const history = historyStr ? JSON.parse(historyStr) : [];
         history.unshift(row);
-        localStorage.setItem('act_results_history', JSON.stringify(history.slice(0, 50)));
+        localStorage.setItem('act_results_history', JSON.stringify(history));
+
+        if (isTopic) {
+            const topicStr = localStorage.getItem('act_topic_report');
+            const topicHist = topicStr ? JSON.parse(topicStr) : [];
+            topicHist.unshift(row);
+            localStorage.setItem('act_topic_report', JSON.stringify(topicHist));
+        }
+
+        if (row.student_email && row.student_email !== 'student@eduquest.com') {
+            localStorage.setItem('student_email', row.student_email);
+            if (!localStorage.getItem('user_email')) {
+                localStorage.setItem('user_email', row.student_email);
+            }
+        }
         console.log('✅ ACT Result saved to LocalStorage');
     } catch (e) {
         console.error('Failed to save to LocalStorage:', e);

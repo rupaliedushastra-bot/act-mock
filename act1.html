@@ -1307,8 +1307,19 @@ function formatMathCaret(text) {
             if (!name || !email || !phone) { msg.textContent = 'Please fill all fields.'; return; }
             if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.textContent = 'Enter a valid email.'; return; }
 
-            studentInfo = { name, email, phone: cc + phone };
-            testStartTime = new Date().toISOString();
+            studentInfo = { name, email, phone: cc + phone, startTime: new Date().toISOString() };
+            testStartTime = studentInfo.startTime;
+
+            try {
+                localStorage.setItem('student_email', email);
+                if (!localStorage.getItem('user_email')) {
+                    localStorage.setItem('user_email', email);
+                }
+            } catch (e) {}
+
+            if (typeof saveRegistration === 'function') {
+                saveRegistration(studentInfo, 'ACT Practice Test 1');
+            }
 
             document.getElementById('regScreen').style.display = 'none';
             document.getElementById('testScreen').style.display = 'flex';
