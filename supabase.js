@@ -7,6 +7,8 @@ window.SECTION_COLORS = window.SECTION_COLORS || {
 window.SECTION_NAMES = window.SECTION_NAMES || {
     english: '📝 English', math: '🔢 Math', reading: '📖 Reading', science: '🔬 Science'
 };
+var SECTION_COLORS = window.SECTION_COLORS;
+var SECTION_NAMES = window.SECTION_NAMES;
 
 if (typeof window.ACT_SCALE_TABLE === 'undefined') {
     window.ACT_SCALE_TABLE = {

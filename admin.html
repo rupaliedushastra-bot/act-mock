@@ -908,116 +908,17 @@
         <div style="text-align: center; padding: 40px; color: var(--text-muted);">Loading test reports...</div>
       </div>
     </div>
-    </head>
 
-    <body>
+  </main>
 
-      <!-- ── Header ─────────────────────────────────────────── -->
-      <header class="hdr">
-        <a href="index.html" class="brand">
-          <div class="brand-icon">⚡</div>
-          <span>EduQuest</span>
-          <span class="brand-pill">Universal Super Admin</span>
-        </a>
-        <div class="auth-section">
-          <span style="color: #34d399; font-weight: 600;">👑 Admin Mode</span>
-          <button class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;" onclick="adminLogout()">Log
-            Out</button>
-        </div>
-      </header>
+  <!-- ── Test Report Detail Modal ───────────────────────── -->
+  <div class="modal-overlay" id="reportModalOverlay" onclick="if(event.target===this) closeReportModal()">
+    <div class="modal-card" id="reportModalContent">
+      <!-- Dynamic modal content -->
+    </div>
+  </div>
 
-      <!-- ── Main Content ───────────────────────────────────── -->
-      <main class="admin-wrap">
-        <div class="admin-hdr">
-          <div class="admin-title">
-            <h1>Universal Exam Authorization &amp; Analytics</h1>
-            <p>Manage student access approvals (Accept/Reject) and review practice reports across all EduQuest modules.
-            </p>
-          </div>
-        </div>
-
-        <!-- Universal Portal Switcher -->
-        <div class="portal-switcher">
-          <button class="portal-btn active" id="btn-portal-ssat" onclick="switchPortal('ssat')">🚀 SSAT</button>
-          <button class="portal-btn" id="btn-portal-mock" onclick="switchPortal('mock')">📝 SAT (Mock)</button>
-          <button class="portal-btn" id="btn-portal-topic" onclick="switchPortal('topic')">📖 SAT (Topic)</button>
-          <button class="portal-btn" id="btn-portal-tmua" onclick="switchPortal('tmua')">📐 TMUA</button>
-          <button class="portal-btn" id="btn-portal-ucat" onclick="switchPortal('ucat')">🩺 UCAT</button>
-          <button class="portal-btn" id="btn-portal-act" onclick="switchPortal('act')">📊 ACT</button>
-          <button class="portal-btn" id="btn-portal-ap" onclick="switchPortal('ap')">🎓 AP</button>
-        </div>
-
-        <!-- Stats Bar -->
-        <div class="stats-bar">
-          <div class="stat-card">
-            <div class="stat-val" id="stat-total-users">0</div>
-            <div class="stat-lbl">Total Registered Students</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-val" id="stat-approved" style="color: #34d399;">0</div>
-            <div class="stat-lbl" id="stat-lbl-approved">Approved in Portal</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-val" id="stat-pending" style="color: #fbbf24;">0</div>
-            <div class="stat-lbl">Pending Requests</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-val" id="stat-reports" style="color: #38bdf8;">0</div>
-            <div class="stat-lbl">Completed Test Reports</div>
-          </div>
-        </div>
-
-        <!-- Sub Tabs -->
-        <div class="sub-tabs">
-          <button class="sub-tab-btn active" id="subtab-users" onclick="switchSubTab('users')">👥 Student Access
-            Management</button>
-          <button class="sub-tab-btn" id="subtab-reports" onclick="switchSubTab('reports')">📈 Test Reports &amp;
-            Scores</button>
-        </div>
-
-        <!-- ── VIEW 1: STUDENT ACCESS MANAGEMENT ────────────── -->
-        <div id="view-users" class="tab-section active">
-          <div class="controls-row">
-            <div class="filter-pills">
-              <button class="filter-pill active" id="pill-all" onclick="setFilter('all')">All Students</button>
-              <button class="filter-pill" id="pill-pending" onclick="setFilter('pending')">⏳ Pending / Requested
-                🔔</button>
-              <button class="filter-pill" id="pill-approved" onclick="setFilter('approved')">✓ Approved</button>
-            </div>
-            <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
-              <input type="text" class="search-box" id="search-input" placeholder="Search student email, name or org..."
-                oninput="renderUsers()">
-              <button class="btn-grant-all" onclick="acceptAllPending()">⚡ Accept All Pending Requests</button>
-            </div>
-          </div>
-
-          <div class="users-grid" id="users-grid">
-            <div style="text-align: center; padding: 40px; color: var(--text-muted); grid-column: 1/-1;">Loading student
-              accounts...</div>
-          </div>
-        </div>
-
-        <!-- ── VIEW 2: TEST REPORTS & SCORES ────────────────── -->
-        <div id="view-reports" class="tab-section">
-          <div class="controls-row">
-            <input type="text" class="search-box" id="search-reports"
-              placeholder="Search test reports by email or exam..." oninput="renderReports()">
-          </div>
-          <div id="reports-list">
-            <div style="text-align: center; padding: 40px; color: var(--text-muted);">Loading test reports...</div>
-          </div>
-        </div>
-
-      </main>
-
-      <!-- ── Test Report Detail Modal ───────────────────────── -->
-      <div class="modal-overlay" id="reportModalOverlay" onclick="if(event.target===this) closeReportModal()">
-        <div class="modal-card" id="reportModalContent">
-          <!-- Dynamic modal content -->
-        </div>
-      </div>
-
-      <script>
+  <script>
 
 function formatPassageHTML(passage, qText) {
     if (!passage || typeof passage !== 'string') return '';
@@ -1100,15 +1001,24 @@ function formatPassageHTML(passage, qText) {
           try { const { data: tmuaR } = await client.from('tmua_report').select('*').order('submit_time', { ascending: false }); allReports.tmua = tmuaR || []; } catch(e){}
           try { const { data: ucatR } = await client.from('Ucat_diagnosis').select('*').order('submit_time', { ascending: false }); allReports.ucat = ucatR || []; } catch(e){}
           try {
-            const { data: actR } = await client.from('act_results').select('*').order('submitted_at', { ascending: false });
+            const { data: actR } = await client.from('act_results').select('*').order('created_at', { ascending: false });
             (actR || []).forEach(r => {
               const dateKey = r.submitted_at || r.created_at || r.submit_time;
               const examTitle = r.exam_name || r.exam_title || r.topic || 'ACT Practice Test';
-              const exists = allReports.act.some(e => (e.student_email === r.student_email || e.email === r.email) && (e.exam_name === examTitle || e.exam_title === examTitle) && Math.abs(new Date(e.submitted_at || 0) - new Date(dateKey)) < 10000);
-              if (!exists) allReports.act.unshift(r);
+              const exists = allReports.act.some(e => (e.id && e.id === r.id) || ((e.student_email === r.student_email || e.email === r.email) && (e.exam_name === examTitle || e.exam_title === examTitle) && Math.abs(new Date(e.submitted_at || 0) - new Date(dateKey)) < 10000));
+              if (!exists) allReports.act.push(r);
             });
           } catch(e){ console.warn('act_results query warning in admin:', e); }
           try { const { data: apR } = await client.from('ap_report').select('*').order('submit_time', { ascending: false }); allReports.ap = apR || []; } catch(e){}
+
+          // Sort every portal array by timestamp descending (LATEST FIRST)
+          Object.keys(allReports).forEach(p => {
+            allReports[p].sort((a, b) => {
+              const dA = new Date(a.submitted_at || a.created_at || a.submit_time || 0).getTime();
+              const dB = new Date(b.submitted_at || b.created_at || b.submit_time || 0).getTime();
+              return dB - dA;
+            });
+          });
 
           updateStats();
           renderUsers();

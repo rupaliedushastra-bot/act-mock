@@ -1780,7 +1780,6 @@ function formatMathCaret(text) {
     });
 }
 
-
     const ADMIN_EMAIL = 'rupali.eduquest@gmail.com';
     const supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
 
@@ -1823,7 +1822,8 @@ function formatMathCaret(text) {
         hdrHtml += `<a href="dashboard.html" class="login-btn" style="background:rgba(5,150,105,0.15);border-color:rgba(5,150,105,0.3);margin-right:8px">🎓 Student Dashboard</a>`;
       }
       hdrHtml += `<button onclick="supabaseLogout()" class="login-btn" style="background:none;border-color:rgba(255,255,255,0.2);cursor:pointer">Logout</button>`;
-      document.getElementById('hdrRight').innerHTML = hdrHtml;
+      const hdrEl = document.getElementById('hdrRight');
+      if (hdrEl) hdrEl.innerHTML = hdrHtml;
 
       window.supabaseLogout = async function () {
         await supabaseClient.auth.signOut();
@@ -1842,15 +1842,17 @@ function formatMathCaret(text) {
         return;
       }
 
-      // Check student access
+      // Check student access (checking general, act, and diagnostic flags)
       try {
         const { data: profile, error } = await supabaseClient
           .from('profiles')
-          .select('has_access')
+          .select('has_access, has_act_access, has_act_diag_access, has_act_topic_access')
           .eq('id', session.user.id)
           .single();
 
-        if (error || !profile || !profile.has_access) {
+        const hasActAccess = profile && (profile.has_access || profile.has_act_access || profile.has_act_diag_access);
+
+        if (error || !profile || !hasActAccess) {
           if (btn2) {
             btn2.innerHTML = '🔒 Request Access →';
             btn2.href = 'act-2/act1.html';
@@ -1881,9 +1883,7 @@ function formatMathCaret(text) {
     }
 
     initIndex();
-  </script>
 
-  <script>
     function switchTab(tabId) {
       const diagWrap = document.getElementById('tab-diagnostic');
       const topicWrap = document.getElementById('tab-topics');

@@ -222,6 +222,9 @@
 </head>
 
 <body>
+</head>
+
+<body>
 
     <div class="card">
         <h2>Welcome</h2>
@@ -243,12 +246,12 @@
         <div class="form-section active" id="studentLogin">
             <div class="field">
                 <label>Email</label>
-                <input type="email" id="stuLoginEmail" placeholder="you@example.com">
+                <input type="email" id="stuLoginEmail" placeholder="you@example.com" autocomplete="off" value="">
             </div>
             <div class="field">
                 <label>Password</label>
                 <div class="password-wrapper">
-                    <input type="password" id="stuLoginPassword" placeholder="••••••••">
+                    <input type="password" id="stuLoginPassword" placeholder="••••••••" autocomplete="new-password" value="">
                     <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
                 </div>
             </div>
@@ -259,12 +262,12 @@
         <div class="form-section" id="studentSignup">
             <div class="field">
                 <label>Email</label>
-                <input type="email" id="stuSignupEmail" placeholder="you@example.com">
+                <input type="email" id="stuSignupEmail" placeholder="you@example.com" autocomplete="off" value="">
             </div>
             <div class="field">
                 <label>Password</label>
                 <div class="password-wrapper">
-                    <input type="password" id="stuSignupPassword" placeholder="At least 6 characters">
+                    <input type="password" id="stuSignupPassword" placeholder="At least 6 characters" autocomplete="new-password" value="">
                     <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
                 </div>
                 <p class="hint">After signup, an admin will need to approve your account before you can access locked exams.</p>
@@ -276,12 +279,12 @@
         <div class="form-section" id="adminLogin">
             <div class="field">
                 <label>Admin Email</label>
-                <input type="email" id="adminLoginEmail" placeholder="admin@email.com">
+                <input type="email" id="adminLoginEmail" placeholder="admin@email.com" autocomplete="off" value="">
             </div>
             <div class="field">
                 <label>Password</label>
                 <div class="password-wrapper">
-                    <input type="password" id="adminLoginPassword" placeholder="••••••••">
+                    <input type="password" id="adminLoginPassword" placeholder="••••••••" autocomplete="new-password" value="">
                     <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
                 </div>
             </div>
@@ -292,19 +295,19 @@
         <div class="form-section" id="adminSignup">
             <div class="field">
                 <label>Admin Email</label>
-                <input type="email" id="adminSignupEmail" placeholder="admin@email.com">
+                <input type="email" id="adminSignupEmail" placeholder="admin@email.com" autocomplete="off" value="">
             </div>
             <div class="field">
                 <label>Password</label>
                 <div class="password-wrapper">
-                    <input type="password" id="adminSignupPassword" placeholder="At least 6 characters">
+                    <input type="password" id="adminSignupPassword" placeholder="At least 6 characters" autocomplete="new-password" value="">
                     <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
                 </div>
             </div>
             <div class="field">
                 <label>Admin Access Code</label>
                 <div class="password-wrapper">
-                    <input type="password" id="adminAccessCode" placeholder="Secret access code">
+                    <input type="password" id="adminAccessCode" placeholder="Secret access code" autocomplete="new-password" value="">
                     <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
                 </div>
                 <p class="hint">Only people with the correct access code can create an admin account.</p>
@@ -406,8 +409,7 @@ function formatMathCaret(text) {
 
             const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
             if (error) { showMsg(error.message, 'error'); return; }
-
-            showMsg('Login successful! Redirecting...', 'success');
+            showMsg('Login successful! Redirecting...', 'success');
             setTimeout(() => window.location.href = getRedirect(), 600);
         }
 
@@ -456,7 +458,18 @@ function formatMathCaret(text) {
 
             showMsg('Admin account created! You can now login as admin. Make sure this email matches ADMIN_EMAIL in admin.html.', 'success');
         }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const clearFields = () => {
+                ['stuLoginEmail', 'stuLoginPassword', 'stuSignupEmail', 'stuSignupPassword', 'adminLoginEmail', 'adminLoginPassword', 'adminSignupEmail', 'adminSignupPassword', 'adminAccessCode'].forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) el.value = '';
+                });
+            };
+            clearFields();
+            setTimeout(clearFields, 100);
+            setTimeout(clearFields, 400);
+        });
     </script>
 </body>
-
 </html>

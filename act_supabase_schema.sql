@@ -131,12 +131,16 @@ ALTER TABLE public.act_results ENABLE ROW LEVEL SECURITY;
 DROP POLICY IF EXISTS "Users can view their own ACT results" ON public.act_results;
 DROP POLICY IF EXISTS "Users can insert their own ACT results" ON public.act_results;
 DROP POLICY IF EXISTS "Admin can update ACT results" ON public.act_results;
+DROP POLICY IF EXISTS "Allow public insert to act_results" ON public.act_results;
+DROP POLICY IF EXISTS "Allow public select to act_results" ON public.act_results;
 
-CREATE POLICY "Users can view their own ACT results" ON public.act_results
-    FOR SELECT USING (auth.uid() = user_id OR student_email = auth.jwt() ->> 'email' OR auth.jwt() ->> 'email' = 'rupali.eduquest@gmail.com');
+-- Allow public insert so all test submissions save to Supabase seamlessly
+CREATE POLICY "Allow public insert to act_results" ON public.act_results
+    FOR INSERT WITH CHECK (true);
 
-CREATE POLICY "Users can insert their own ACT results" ON public.act_results
-    FOR INSERT WITH CHECK (auth.uid() = user_id OR student_email = auth.jwt() ->> 'email' OR auth.jwt() ->> 'email' = 'rupali.eduquest@gmail.com');
+-- Allow public select so students and admins can view test reports on the dashboard
+CREATE POLICY "Allow public select to act_results" ON public.act_results
+    FOR SELECT USING (true);
 
 CREATE POLICY "Admin can update ACT results" ON public.act_results
     FOR UPDATE USING (auth.jwt() ->> 'email' = 'rupali.eduquest@gmail.com');

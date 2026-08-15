@@ -34,7 +34,7 @@ function generateACTPDFReport(result, shouldSave = true) {
         doc.setFillColor(r, g, b);
         doc.rect(0, 0, W * (i + 1) / 4, 2, 'F');
     });
-    txt(result.examName || 'ACT Practice Test 2', W / 2, 13, 15, true, [255, 255, 255], 'center');
+    txt(result.examName || 'ACT Practice Test 1', W / 2, 13, 15, true, [255, 255, 255], 'center');
     txt('Student Performance Report', W / 2, 21, 9, false, [160, 180, 255], 'center');
     txt('EduQuest · rupali.eduquest@gmail.com', W / 2, 27, 7, false, [120, 140, 220], 'center');
     y = 36;
@@ -55,15 +55,30 @@ function generateACTPDFReport(result, shouldSave = true) {
     rect(M, y, W - 2 * M, 28, ...gc);
     txt(String(result.composite), M + 16, y + 20, 32, true, [255, 255, 255]);
     txt('ACT Composite Score', M + 16, y + 26, 7, false, [200, 255, 220]);
-    // Section scores on right
-    const secData = [
-        ['English', result.sectionScores?.english || '-', [93, 197, 253]],
-        ['Math', result.sectionScores?.math || '-', [110, 231, 183]],
-        ['Reading', result.sectionScores?.reading || '-', [196, 181, 253]],
+    // Section scores on right (filtered for active sections in topic/diagnostic tests)
+    const allSecCandidates = [
+        ['english', 'English', result.sectionScores?.english, [93, 197, 253]],
+        ['math', 'Math', result.sectionScores?.math, [110, 231, 183]],
+        ['reading', 'Reading', result.sectionScores?.reading, [196, 181, 253]]
     ];
-    if (result.sectionScores?.science !== undefined) {
-        secData.push(['Science', result.sectionScores.science, [253, 230, 138]]);
+
+    const activeSecKeysInDetails = new Set((result.details || []).map(d => (d.section || '').toLowerCase()));
+    const hasSpecificDetails = activeSecKeysInDetails.size > 0;
+
+    let secData = allSecCandidates.filter(([secKey, name, score]) => {
+        if (score === undefined || score === null || score === '-') return false;
+        if (hasSpecificDetails && !activeSecKeysInDetails.has(secKey)) return false;
+        return true;
+    }).map(([secKey, name, score, color]) => [name, score, color]);
+
+    if (secData.length === 0) {
+        secData = [
+            ['English', result.sectionScores?.english || '-', [93, 197, 253]],
+            ['Math', result.sectionScores?.math || '-', [110, 231, 183]],
+            ['Reading', result.sectionScores?.reading || '-', [196, 181, 253]]
+        ];
     }
+
     const secBoxW = (W - 2 * M - 55) / secData.length;
     secData.forEach(([name, score, [r, g, b]], i) => {
         const sx = M + 52 + i * (secBoxW + 2);
@@ -101,7 +116,7 @@ function generateACTPDFReport(result, shouldSave = true) {
     y += 9;
     rect(M, y, W - 2 * M, 7, 230, 235, 255);
     doc.setDrawColor(190, 200, 240); doc.setLineWidth(0.3); doc.rect(M, y, W - 2 * M, 7, 'S');
-    [['Topic', M + 3], ['Section', M + 85], ['Total', M + 108], ['✓', M + 120], ['✗', M + 130], ['Accuracy', M + 140]].forEach(([h, x]) => {
+    [['Topic', M + 3], ['Section', M + 80], ['Total', M + 104], ['Correct', M + 117], ['Wrong', M + 130], ['Accuracy', M + 144]].forEach(([h, x]) => {
         txt(h, x, y + 5, 7, true, [26, 86, 219]);
     });
     y += 7;
@@ -116,24 +131,55 @@ function generateACTPDFReport(result, shouldSave = true) {
         doc.setDrawColor(220, 224, 240); doc.setLineWidth(0.2); doc.rect(M, y, W - 2 * M, 7, 'S');
         txt(t.name || '', M + 3, y + 5, 7.5);
         const sc = sectionColorMap[t.section] || [80, 80, 100];
-        txt(t.section.toUpperCase(), M + 88, y + 5, 7, true, sc);
-        txt(t.total, M + 111, y + 5, 7.5, false, [80, 80, 100], 'center');
-        txt(t.correct, M + 123, y + 5, 7.5, false, [5, 150, 105], 'center');
-        txt(t.wrong, M + 133, y + 5, 7.5, false, [220, 38, 38], 'center');
-        const bc = t.acc >= 70 ? [5, 150, 105] : t.acc >= 40 ? [180, 100, 0] : [220, 38, 38];
-        rect(M + 140, y + 2.5, 46, 2.5, 220, 224, 235);
-        if (t.acc > 0) rect(M + 140, y + 2.5, 46 * (t.acc / 100), 2.5, ...bc);
-        txt(`${t.acc}%`, M + 188, y + 5, 7, false, [80, 80, 100]);
+        txt(t.section ? t.section.toUpperCase() : 'GENERAL', M + 80, y + 5, 7, true, sc);
+        txt(t.total !== undefined ? t.total : '–', M + 108, y + 5, 7.5, false, [80, 80, 100], 'center');
+        txt(t.correct !== undefined ? t.correct : '–', M + 121, y + 5, 7.5, false, [5, 150, 105], 'center');
+        txt(t.wrong !== undefined ? t.wrong : '–', M + 133, y + 5, 7.5, false, [220, 38, 38], 'center');
+        const accVal = t.acc !== undefined ? t.acc : (t.accuracy !== undefined ? t.accuracy : 0);
+        const bc = accVal >= 70 ? [5, 150, 105] : accVal >= 40 ? [180, 100, 0] : [220, 38, 38];
+        rect(M + 144, y + 2.5, 30, 2.5, 220, 224, 235);
+        if (accVal > 0) rect(M + 144, y + 2.5, 30 * (accVal / 100), 2.5, ...bc);
+        txt(`${accVal}%`, M + 178, y + 5, 7, false, [80, 80, 100]);
         y += 7;
     });
     y += 4;
 
     // ── PAGE 2+: All Questions & Answers Review ─────
-    const LETTERS = ['A', 'B', 'C', 'D'];
+    const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
     const reviewQs = result.details || [];
     const clean = str => (str || '').replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, m =>
         ({ '&nbsp;': ' ', '&deg;': '°', '&rarr;': '→', '&larr;': '←', '&minus;': '−', '&sup2;': '²', '&sup3;': '³' }[m] || ' ')
     );
+
+    const getOptText = (q, val) => {
+        if (val === null || val === undefined || val === '') return '';
+        if (Array.isArray(q.options) && q.options.length > 0) {
+            if (typeof val === 'number' && q.options[val] !== undefined) return clean(q.options[val]);
+            if (typeof val === 'string') {
+                const num = parseInt(val, 10);
+                if (!isNaN(num) && num >= 0 && num < q.options.length) return clean(q.options[num]);
+                const idx = LETTERS.indexOf(val.toUpperCase());
+                if (idx !== -1 && q.options[idx] !== undefined) return clean(q.options[idx]);
+                return clean(val);
+            }
+        }
+        if (q.options && typeof q.options === 'object') {
+            if (typeof val === 'string' && q.options[val.toUpperCase()]) return clean(q.options[val.toUpperCase()]);
+            if (typeof val === 'number' && LETTERS[val] && q.options[LETTERS[val]]) return clean(q.options[LETTERS[val]]);
+        }
+        return clean(String(val));
+    };
+
+    const getLetter = (val) => {
+        if (val === null || val === undefined || val === '') return '';
+        if (typeof val === 'number') return LETTERS[val] || String(val);
+        if (typeof val === 'string') {
+            const num = parseInt(val, 10);
+            if (!isNaN(num) && LETTERS[num]) return LETTERS[num];
+            return val.length === 1 ? val.toUpperCase() : '';
+        }
+        return '';
+    };
 
     if (reviewQs.length > 0) {
         doc.addPage(); y = 20;
@@ -144,48 +190,70 @@ function generateACTPDFReport(result, shouldSave = true) {
 
         let lastSection = null;
         reviewQs.forEach(qObj => {
-            // Section divider
-            if (qObj.section !== lastSection) {
+            const secKey = (qObj.section || 'General').toLowerCase();
+            if (secKey !== lastSection) {
                 if (y > 260) { doc.addPage(); y = 20; }
-                const sc = sectionColorMap[qObj.section] || [80, 80, 100];
+                const sc = sectionColorMap[secKey] || [80, 80, 100];
                 rect(M, y, W - 2 * M, 6, ...sc);
-                txt({ english: 'ENGLISH', math: 'MATH', reading: 'READING', science: 'SCIENCE' }[qObj.section] || qObj.section.toUpperCase(),
+                txt({ english: 'ENGLISH', math: 'MATH', reading: 'READING', science: 'SCIENCE' }[secKey] || secKey.toUpperCase(),
                     M + 4, y + 4.5, 8, true, [255, 255, 255]);
                 y += 9;
-                lastSection = qObj.section;
+                lastSection = secKey;
             }
 
-            const qText = `Q${qObj.id} [${qObj.topic || ''}]: ${clean(qObj.text)}`;
+            const rawText = qObj.text || qObj.question || qObj.prompt || 'Question text unavailable';
+            const qText = `Q${qObj.id || ''} [${qObj.topic || ''}]: ${clean(rawText)}`;
             const qLines = doc.splitTextToSize(qText, W - 2 * M - 10);
+            
+            const chosenVal = qObj.chosen !== undefined && qObj.chosen !== null ? qObj.chosen : qObj.chosen_option;
+            const answerVal = qObj.answer !== undefined && qObj.answer !== null ? qObj.answer : qObj.correct_option;
+            const status = qObj.status || (chosenVal === answerVal ? 'correct' : (chosenVal !== null ? 'wrong' : 'unattempted'));
+
             let yAnsText = '';
-            if (qObj.status === 'unattempted') {
+            if (status === 'unattempted' || chosenVal === null) {
                 yAnsText = `➖ Your Answer: (Skipped)`;
-            } else if (qObj.status === 'correct') {
-                yAnsText = `✓ Your Answer: (${LETTERS[qObj.chosen]}) ${clean(qObj.options[qObj.chosen])}`;
+            } else if (status === 'correct') {
+                yAnsText = `✓ Your Answer: (${getLetter(chosenVal)}) ${getOptText(qObj, chosenVal)}`;
             } else {
-                yAnsText = `✗ Your Answer: (${LETTERS[qObj.chosen]}) ${clean(qObj.options[qObj.chosen])}`;
+                yAnsText = `✗ Your Answer: (${getLetter(chosenVal)}) ${getOptText(qObj, chosenVal)}`;
             }
             const yAns = doc.splitTextToSize(yAnsText, W - 2 * M - 14);
+            
             let cAns = [];
-            if (qObj.status !== 'correct') {
-                cAns = doc.splitTextToSize(`✓ Correct:     (${LETTERS[qObj.answer]}) ${clean(qObj.options[qObj.answer])}`, W - 2 * M - 14);
+            if (status !== 'correct' && answerVal !== null) {
+                cAns = doc.splitTextToSize(`✓ Correct:     (${getLetter(answerVal)}) ${getOptText(qObj, answerVal)}`, W - 2 * M - 14);
             }
-            const need = qLines.length * 4.5 + yAns.length * 4.2 + cAns.length * 4.2 + 10;
+
+            let expLines = [];
+            const expText = qObj.explanation || qObj.solution;
+            if (expText) {
+                expLines = doc.splitTextToSize(`💡 Explanation: ${clean(expText)}`, W - 2 * M - 14);
+            }
+
+            const need = qLines.length * 4.5 + yAns.length * 4.2 + cAns.length * 4.2 + expLines.length * 4 + 10;
             if (y + need > 275) { doc.addPage(); y = 20; }
 
-            const accentColor = qObj.status === 'correct' ? [5, 130, 80] : qObj.status === 'unattempted' ? [217, 119, 6] : [220, 38, 38];
+            const accentColor = status === 'correct' ? [5, 130, 80] : status === 'unattempted' ? [217, 119, 6] : [220, 38, 38];
             rect(M, y, 1.8, need - 3, ...accentColor);
 
             let iy = y + 1;
             doc.setFontSize(8.5); doc.setFont('helvetica', 'bold'); doc.setTextColor(30, 30, 30);
             qLines.forEach(l => { doc.text(l, M + 5, iy + 3.5); iy += 4.5; });
+            
             doc.setFontSize(8); doc.setFont('helvetica', 'normal');
-            doc.setTextColor(...(qObj.status === 'correct' ? [5, 130, 80] : qObj.status === 'unattempted' ? [217, 119, 6] : [200, 30, 30]));
+            doc.setTextColor(...(status === 'correct' ? [5, 130, 80] : status === 'unattempted' ? [217, 119, 6] : [200, 30, 30]));
             yAns.forEach(l => { doc.text(l, M + 8, iy + 3.2); iy += 4.2; });
-            if (qObj.status !== 'correct') {
+            
+            if (status !== 'correct' && cAns.length > 0) {
                 doc.setTextColor(5, 130, 80);
                 cAns.forEach(l => { doc.text(l, M + 8, iy + 3.2); iy += 4.2; });
             }
+
+            if (expLines.length > 0) {
+                doc.setTextColor(70, 90, 150);
+                expLines.forEach(l => { doc.text(l, M + 8, iy + 3.2); iy += 4.0; });
+            }
+
             y += need + 2;
         });
     }
@@ -195,7 +263,7 @@ function generateACTPDFReport(result, shouldSave = true) {
     for (let p = 1; p <= totalPages; p++) {
         doc.setPage(p);
         line(M, 285, W - M, 285, 180, 190, 220);
-        txt(`${result.examName || 'ACT Practice Test 2'} — EduQuest`, M, 290, 6.5, false, [140, 150, 180]);
+        txt(`${result.examName || 'ACT Practice Test 1'} — EduQuest`, M, 290, 6.5, false, [140, 150, 180]);
         txt(`Page ${p} of ${totalPages}`, W - M, 290, 6.5, false, [140, 150, 180], 'right');
         txt('rupali.eduquest@gmail.com', W / 2, 290, 6.5, false, [140, 150, 180], 'center');
     }

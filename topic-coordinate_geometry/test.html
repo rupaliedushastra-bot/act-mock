@@ -1165,6 +1165,23 @@
                 </table>
             </div>
 
+            
+            <!-- Inline Questions & Answers Review -->
+            <div class="inline-review-wrap" style="margin-top: 24px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom: 16px;">
+                    <h3 style="font-family:'Syne',sans-serif; font-size: 1.3rem; font-weight:700; margin:0; display:flex; align-items:center; gap:8px;">
+                        <span>📝 Detailed Question & Answer Review</span>
+                    </h3>
+                    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                        <button onclick="filterInlineReview('all', this)" style="background:#1a56db; color:#fff; border:none; padding:6px 14px; border-radius:6px; cursor:pointer; font-size:0.82rem; font-weight:600">All</button>
+                        <button onclick="filterInlineReview('correct', this)" style="background:rgba(255,255,255,0.08); color:#fff; border:1px solid rgba(255,255,255,0.15); padding:6px 14px; border-radius:6px; cursor:pointer; font-size:0.82rem; font-weight:600">Correct</button>
+                        <button onclick="filterInlineReview('wrong', this)" style="background:rgba(255,255,255,0.08); color:#fff; border:1px solid rgba(255,255,255,0.15); padding:6px 14px; border-radius:6px; cursor:pointer; font-size:0.82rem; font-weight:600">Wrong</button>
+                        <button onclick="filterInlineReview('unattempted', this)" style="background:rgba(255,255,255,0.08); color:#fff; border:1px solid rgba(255,255,255,0.15); padding:6px 14px; border-radius:6px; cursor:pointer; font-size:0.82rem; font-weight:600">Skipped</button>
+                    </div>
+                </div>
+                <div id="inlineReviewContent" style="display:flex; flex-direction:column; gap:14px;"></div>
+            </div>
+
             <div class="result-actions">
                 <button class="btn-action-res btn-pdf" onclick="downloadPDF()">📥 Download PDF Report</button>
                 <button class="btn-action-res btn-home" onclick="window.location.href='../index.html'">← Back to
@@ -1329,32 +1346,73 @@ function formatMathCaret(text) {
         });
     
 
-        const SECTION_COLORS = {
+        var SECTION_COLORS = window.SECTION_COLORS = window.SECTION_COLORS || {
             english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd'
         };
-        const SECTION_NAMES = { english: '📝 English', math: '🔢 Math', reading: '📖 Reading' };
+        var SECTION_NAMES = window.SECTION_NAMES = window.SECTION_NAMES || { english: '📝 English', math: '🔢 Math', reading: '📖 Reading' };
 
         // ── Start test ────────────────────────────────────
         function startTest() {
-            const name = document.getElementById('regName').value.trim();
-            const email = document.getElementById('regEmail').value.trim();
-            const cc = document.getElementById('regCountryCode').value;
-            const phone = document.getElementById('regPhone').value.trim();
-            const msg = document.getElementById('regMsg');
+            try {
+                const nameEl = document.getElementById('regName');
+                const emailEl = document.getElementById('regEmail');
+                const ccEl = document.getElementById('regCountryCode');
+                const phoneEl = document.getElementById('regPhone');
+                const msg = document.getElementById('regMsg');
 
-            if (!name || !email || !phone) { msg.textContent = 'Please fill all fields.'; return; }
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.textContent = 'Enter a valid email.'; return; }
+                const name = nameEl ? nameEl.value.trim() : '';
+                const email = emailEl ? emailEl.value.trim() : '';
+                const cc = ccEl ? ccEl.value : '';
+                const phone = phoneEl ? phoneEl.value.trim() : '';
 
-            studentInfo = { name, email, phone: cc + phone };
-            testStartTime = new Date().toISOString();
+                if (!name || !email || !phone) {
+                    if (msg) msg.textContent = 'Please fill all fields.';
+                    return;
+                }
+                if (!email || !email.includes('@')) {
+                    if (msg) msg.textContent = 'Enter a valid email.';
+                    return;
+                }
 
-            document.getElementById('regScreen').style.display = 'none';
-            document.getElementById('testScreen').style.display = 'flex';
-            document.getElementById('testScreen').style.flexDirection = 'column';
+                studentInfo = { name, email, phone: cc + phone, startTime: new Date().toISOString() };
+                testStartTime = studentInfo.startTime;
 
-            renderQuestion();
-            renderPalette();
-            startSectionTimer(currentSection);
+                try {
+                    localStorage.setItem('student_email', email);
+                    if (!localStorage.getItem('user_email')) {
+                        localStorage.setItem('user_email', email);
+                    }
+                } catch (e) {}
+
+                try {
+                    if (typeof saveRegistration === 'function') {
+                        saveRegistration(studentInfo, typeof EXAM_TITLE !== 'undefined' ? EXAM_TITLE : 'ACT Practice Test');
+                    }
+                } catch (e) {
+                    console.error("saveRegistration error:", e);
+                }
+
+                const regScreen = document.getElementById('regScreen');
+                const testScreen = document.getElementById('testScreen');
+                if (regScreen) regScreen.style.display = 'none';
+                if (testScreen) {
+                    testScreen.style.display = 'flex';
+                    testScreen.style.flexDirection = 'column';
+                }
+
+                if (typeof renderQuestion === 'function') renderQuestion();
+                if (typeof renderPalette === 'function') renderPalette();
+                if (typeof startSectionTimer === 'function') startSectionTimer(typeof currentSection !== 'undefined' ? currentSection : 'english');
+            } catch (err) {
+                console.error("startTest error:", err);
+                const regScreen = document.getElementById('regScreen');
+                const testScreen = document.getElementById('testScreen');
+                if (regScreen) regScreen.style.display = 'none';
+                if (testScreen) {
+                    testScreen.style.display = 'flex';
+                    testScreen.style.flexDirection = 'column';
+                }
+            }
         }
 
         // ── Timer ─────────────────────────────────────────
@@ -1453,14 +1511,22 @@ function formatMathCaret(text) {
             });
 
             // Next / Submit button
-            const activeSections = Object.keys(SECTION_QUESTIONS).filter(sec => SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0);
-            const isLastSection = currentSection === activeSections[activeSections.length - 1];
+            const activeSecs = Object.keys(SECTION_QUESTIONS).filter(sec => SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0);
+            const lastSec = activeSecs[activeSecs.length - 1] || currentSection;
+            const isLastSection = currentSection === lastSec;
             const isLastQ = currentQIndex === qs.length - 1;
             const btnNext = document.getElementById('btnNext');
+
             if (isLastSection && isLastQ) {
                 btnNext.textContent = 'Submit Test ✓';
                 btnNext.className = 'btn-nav btn-submit-test';
                 btnNext.onclick = confirmSubmit;
+            } else if (isLastQ) {
+                const nextIdx = activeSecs.indexOf(currentSection) + 1;
+                const nextSecName = activeSecs[nextIdx];
+                btnNext.textContent = `Next Section (${SECTION_NAMES[nextSecName] || 'Next'}) →`;
+                btnNext.className = 'btn-nav btn-next';
+                btnNext.onclick = () => goToSection(nextSecName);
             } else {
                 btnNext.textContent = 'Next →';
                 btnNext.className = 'btn-nav btn-next';
@@ -1530,9 +1596,8 @@ function formatMathCaret(text) {
         }
 
         function updateTabCounts() {
-            ['english', 'math', 'reading'].forEach(sec => {
-                const qs = SECTION_QUESTIONS[sec];
-                if (!qs) return;
+            ['english', 'math', 'reading', 'science'].forEach(sec => {
+                const qs = SECTION_QUESTIONS[sec] || [];
                 const answered = qs.filter(q => answers[q.id] !== undefined).length;
                 const el = document.getElementById(`tabCount-${sec}`);
                 if (el) el.textContent = `${answered}/${qs.length}`;
@@ -1709,9 +1774,80 @@ function formatMathCaret(text) {
       </tr>
     `;
             }).join('');
+        renderInlineReview('all');
         }
 
         // ── Review modal ──────────────────────────────────
+        
+        function filterInlineReview(status, btn) {
+            if (btn && btn.parentElement) {
+                btn.parentElement.querySelectorAll('button').forEach(b => {
+                    b.style.background = 'rgba(255,255,255,0.08)';
+                    b.style.border = '1px solid rgba(255,255,255,0.15)';
+                });
+                btn.style.background = '#1a56db';
+                btn.style.border = 'none';
+            }
+            renderInlineReview(status);
+        }
+
+        function renderInlineReview(filter) {
+            const LETTERS = ['A', 'B', 'C', 'D'];
+            const wrap = document.getElementById('inlineReviewContent');
+            if (!wrap || !testResult || !testResult.details) return;
+            const qs = testResult.details.filter(q => filter === 'all' || q.status === filter);
+            const secClrs = { english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd', science: '#fde68a' };
+
+            const getOptLabel = (q, idx) => {
+                if (idx === null || idx === undefined) return '';
+                if (typeof idx === 'number' && q.options && q.options[idx] !== undefined) return `(${LETTERS[idx] || idx}) ${q.options[idx]}`;
+                if (typeof idx === 'string') {
+                    const num = parseInt(idx, 10);
+                    if (!isNaN(num) && q.options && q.options[num] !== undefined) return `(${LETTERS[num] || num}) ${q.options[num]}`;
+                    return idx;
+                }
+                return String(idx);
+            };
+
+            wrap.innerHTML = qs.map(q => {
+                const secKey = (q.section || 'english').toLowerCase();
+                const chosenText = getOptLabel(q, q.chosen);
+                const correctText = getOptLabel(q, q.answer);
+                const statusBadge = q.status === 'correct' 
+                    ? `<span style="background:rgba(52,211,153,0.15);color:#34d399;border:1px solid rgba(52,211,153,0.3);padding:2px 8px;border-radius:6px;font-size:0.75rem;font-weight:600">✓ Correct</span>`
+                    : q.status === 'wrong'
+                    ? `<span style="background:rgba(248,113,113,0.15);color:#f87171;border:1px solid rgba(248,113,113,0.3);padding:2px 8px;border-radius:6px;font-size:0.75rem;font-weight:600">✕ Wrong</span>`
+                    : `<span style="background:rgba(251,191,36,0.15);color:#fbbf24;border:1px solid rgba(251,191,36,0.3);padding:2px 8px;border-radius:6px;font-size:0.75rem;font-weight:600">− Skipped</span>`;
+
+                const formattedText = typeof formatLaTeX === 'function' ? formatLaTeX(q.text) : q.text;
+                const formattedExp = q.explanation ? (typeof formatLaTeX === 'function' ? formatLaTeX(q.explanation) : q.explanation) : '';
+
+                return `
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px;font-size:0.9rem">
+      <div style="display:flex;justify-content:space-between;margin-bottom:10px;align-items:center;flex-wrap:wrap;gap:8px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-weight:700;color:${secClrs[secKey] || '#93c5fd'};font-size:0.95rem">Q${q.id}</span>
+          <span style="font-size:0.75rem;background:rgba(255,255,255,0.06);padding:3px 10px;border-radius:6px;color:rgba(255,255,255,0.7);font-weight:500">${q.topic || 'General'}</span>
+        </div>
+        <div>${statusBadge}</div>
+      </div>
+      <div style="line-height:1.6;color:#e2e8f0;margin-bottom:14px;white-space:pre-wrap;font-weight:400">${formattedText}</div>
+      <div style="background:rgba(0,0,0,0.25);border-radius:10px;padding:12px 16px;display:flex;flex-direction:column;gap:8px;border:1px solid rgba(255,255,255,0.04)">
+        ${q.status === 'unattempted' || q.chosen === null || q.chosen === undefined
+            ? `<div style="color:#fbbf24;font-weight:500;display:flex;align-items:center;gap:6px"><span>➖</span> <span>Your Answer: <em>Skipped</em></span></div>
+               <div style="color:#34d399;font-weight:500;display:flex;align-items:center;gap:6px"><span>✅</span> <span>Correct Answer: ${correctText}</span></div>`
+            : q.status === 'correct'
+            ? `<div style="color:#34d399;font-weight:500;display:flex;align-items:center;gap:6px"><span>✅</span> <span>Your Answer: ${chosenText} (Correct)</span></div>`
+            : `<div style="color:#f87171;font-weight:500;display:flex;align-items:center;gap:6px"><span>❌</span> <span>Your Answer: ${chosenText}</span></div>
+               <div style="color:#34d399;font-weight:500;display:flex;align-items:center;gap:6px"><span>✅</span> <span>Correct Answer: ${correctText}</span></div>`
+        }
+        ${formattedExp ? `<div style="margin-top:6px;padding-top:8px;border-top:1px dashed rgba(255,255,255,0.1);color:#94a3b8;font-size:0.85rem;line-height:1.5"><strong style="color:#cbd5e1">💡 Explanation:</strong> ${formattedExp}</div>` : ''}
+      </div>
+    </div>
+  `;
+            }).join('');
+        }
+
         function showReviewModal() {
             renderReviewContent('all');
             document.getElementById('reviewModal').style.display = 'block';
