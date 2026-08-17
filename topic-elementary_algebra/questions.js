@@ -49,7 +49,7 @@ const ACT_QUESTIONS1 = [
       "8",
       "10"
     ],
-    "answer": 2
+    "answer": 3
   },
   {
     "id": 5,
@@ -140,7 +140,7 @@ const ACT_QUESTIONS1 = [
       "24",
       "36"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "id": 12,
@@ -153,7 +153,7 @@ const ACT_QUESTIONS1 = [
       "18",
       "24"
     ],
-    "answer": 2
+    "answer": 3
   },
   {
     "id": 13,
@@ -218,7 +218,7 @@ const ACT_QUESTIONS1 = [
       "12",
       "18"
     ],
-    "answer": 3
+    "answer": 1
   },
   {
     "id": 18,

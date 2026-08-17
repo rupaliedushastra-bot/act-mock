@@ -688,7 +688,7 @@ const ACT_QUESTIONS1 = [
         "10",
         "12"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "id": 53,
@@ -1000,7 +1000,7 @@ const ACT_QUESTIONS1 = [
         "24",
         "36"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "id": 77,
