@@ -1,7 +1,7 @@
 // =============================================
 // act_questions1.js – ACT Practice Test 11
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
-// Total: 131 questions | Time: 125 minutes (2 hr 5 min)
+// Total: 131 questions | Time: 125 minutes
 // =============================================
 
 const ACT_QUESTIONS1 = [
@@ -9,7 +9,6 @@ const ACT_QUESTIONS1 = [
         "id": 1,
         "section": "english",
         "topic": "Punctuation",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Choose the best alternative for the underlined portion [1].",
         "options": [
             "NO CHANGE",
@@ -17,13 +16,13 @@ const ACT_QUESTIONS1 = [
             "hold, cities",
             "hold in cities"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"NO CHANGE\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
         "id": 2,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Choose the best alternative for the underlined portion [2].",
         "options": [
             "NO CHANGE",
@@ -31,13 +30,13 @@ const ACT_QUESTIONS1 = [
             "its'",
             "it is"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"its\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 3,
         "section": "english",
         "topic": "Style & Tone",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Choose the best alternative for the underlined portion [3].",
         "options": [
             "NO CHANGE",
@@ -45,13 +44,13 @@ const ACT_QUESTIONS1 = [
             "a novel thought or idea",
             "a novel idea"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"a novel idea\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 4,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Choose the best alternative for the underlined portion [4].",
         "options": [
             "NO CHANGE",
@@ -59,13 +58,13 @@ const ACT_QUESTIONS1 = [
             "are",
             "is"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"were\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 5,
         "section": "english",
         "topic": "Sentence Structure",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Choose the best alternative for the sentence marked [5].",
         "options": [
             "NO CHANGE",
@@ -73,13 +72,13 @@ const ACT_QUESTIONS1 = [
             "Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches.",
             "Some of the earliest vehicles were push carts for food distribution, popular in urban areas, like New York, where workers needed quick, cheap lunches in the city."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 6,
         "section": "english",
         "topic": "Sentence Structure",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Choose the best alternative for the underlined portion [6].",
         "options": [
             "NO CHANGE",
@@ -87,13 +86,13 @@ const ACT_QUESTIONS1 = [
             "As a result,",
             "Therefore,"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"However,\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 7,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Which alternative for the underlined portion [7] most effectively highlights one of the major differences between the push cart and the modern food truck?",
         "options": [
             "NO CHANGE",
@@ -101,13 +100,13 @@ const ACT_QUESTIONS1 = [
             "they were not equipped with the tools necessary to prepare the food.",
             "they often had the same people working in them all the time."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"they were not equipped with the tools necessary to prepare the food.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 8,
         "section": "english",
         "topic": "Punctuation",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Choose the best alternative for the underlined portion [8].",
         "options": [
             "NO CHANGE",
@@ -115,13 +114,13 @@ const ACT_QUESTIONS1 = [
             "chuckwagon, a covered wagon",
             "chuckwagon; a covered wagon"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"chuckwagon, a covered wagon\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"chuckwagon, a covered wagon\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
         "id": 9,
         "section": "english",
         "topic": "Sentence Structure",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Choose the best alternative for the underlined portion [9].",
         "options": [
             "NO CHANGE",
@@ -129,13 +128,13 @@ const ACT_QUESTIONS1 = [
             "In contrast,",
             "Consequently,"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"Consequently,\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 10,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "If the writer were to delete the sentence marked [10] ('The cooks, or \"cookies\"...'), the paragraph would primarily lose:",
         "options": [
             "details about how cooks on the cattle trails came to be called 'cookies.'",
@@ -143,13 +142,13 @@ const ACT_QUESTIONS1 = [
             "details about how the cooks made food on the chuckwagons.",
             "information about the meaning of the phrase mobile kitchen."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"details about how the cooks made food on the chuckwagons.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 11,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Upon reviewing the previous paragraph and realizing that some information had been left out, the writer composes the following sentence:\n'During the WWII era, mobile canteens popped up near Army bases to serve quick, easy meals to the troops.'\nThe most logical placement for this sentence would be at position [11]:",
         "options": [
             "before sentence 1 ('In the 1900s...')",
@@ -157,13 +156,13 @@ const ACT_QUESTIONS1 = [
             "before sentence 3 ('In the 1960s...')",
             "after sentence 3"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"before sentence 2 ('Ice cream trucks...')\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 12,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "The writer is considering deleting the words 'cheap' and 'grungy' from the sentence marked [12]. Should the writer make these deletions?",
         "options": [
             "Yes, because the words distract from the main idea of the sentence.",
@@ -171,13 +170,13 @@ const ACT_QUESTIONS1 = [
             "No, because the words provide insight into the origin of the term 'roach coach.'",
             "No, because they provide more information about early food trucks."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"Yes, because the words distract from the main idea of the sentence.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 13,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Choose the best alternative for the underlined portion [13].",
         "options": [
             "NO CHANGE",
@@ -185,13 +184,13 @@ const ACT_QUESTIONS1 = [
             "have flocked",
             "have been flocking"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"are flocking\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 14,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Which of the following choices for the underlined portion [14] would provide an ending most consistent with the statement made in the first sentence of the paragraph?",
         "options": [
             "NO CHANGE",
@@ -199,13 +198,13 @@ const ACT_QUESTIONS1 = [
             "but sometimes these areas can be busy.",
             "and people travel from all over the city, sometimes even farther, to try what they're offering."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"and people travel from all over the city, sometimes even farther, to try what they're offering.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 15,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE I: Food trucks\n\nAcross the United States, a new trend in dining has taken [1] hold. Cities like Austin, Portland, San Francisco, and Seattle are seeing a significant increase in one particular type of dining establishment\u2014the food truck. Though the modern food truck phenomenon is still in [2] its prime, mobile dining is in no way [3] a unique, novel idea: precursors to the modern food truck can be traced back as far as the 1800s.\n\nThe earliest predecessors to the modern food truck [4] were actually not trucks; in fact, they were not motorized at all. [5] Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches. [6] However, while these carts were mobile, [7] they were not equipped with the tools necessary to prepare the food.\n\nIn the late 1800s, two new inventions marked important milestones in the development of the modern food truck. In 1866, Charles Goodnight created the first [8] chuckwagon, a covered wagon that served as a mobile kitchen for cowmen who were herding cattle northward for sale. The cooks, or \"cookies,\" who traveled with the cowmen would wake early and prepare meals of beans, dried meats, and biscuits using the tools and ingredients on the chuckwagon. [9] Similarly, in 1872, a food vendor named Walter Scott conceived of the lunch wagon, from which he would serve sandwiches, coffee, and desserts to journalists outside a Providence, Rhode Island newspaper office. [10]\n\nIn the 1900s, mobile dining took even newer forms, as the invention of motorized transportation began to transform the industry. Ice cream trucks followed in the 1950s, serving children and adults alike cold treats on hot summer afternoons. In the 1960s, large food service trucks called \"roach coaches\" began to pop up near densely populated urban areas, often serving cheap meals from grungy kitchens. [11] [12]\n\nIn recent years, the food truck industry has transformed the mobile dining experience from one of convenience to one of excitement. Today, city dwellers and tourists [13] are flocking to food trucks not only for ease and affordability, but also for unique foods, new flavors, and fun experiences. In some places, whole streets or even neighborhoods are devoted to hosting these food trucks, [14] so you rarely run out of delicious options.",
         "text": "Suppose the writer had intended to write an essay on the historical development of the modern food truck. Would this essay successfully fulfill that goal?",
         "options": [
             "Yes, because it provides detailed information about the inventor who designed the first food truck.",
@@ -213,13 +212,13 @@ const ACT_QUESTIONS1 = [
             "No, because it is primarily a descriptive essay about the modern food truck trend and its followers.",
             "No, because it focuses primarily on the differences between modern food trucks and older forms of mobile food distribution."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"Yes, because it provides a brief overview of the trends and innovations that preceded the modern food truck.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 16,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Choose the best alternative for the underlined portion [16].",
         "options": [
             "NO CHANGE",
@@ -227,13 +226,13 @@ const ACT_QUESTIONS1 = [
             "lives,",
             "lives, but"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"lives, but\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 17,
         "section": "english",
         "topic": "Sentence Structure",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Choose the best alternative for the underlined portion [17].",
         "options": [
             "NO CHANGE",
@@ -241,13 +240,13 @@ const ACT_QUESTIONS1 = [
             "Having visited",
             "He visited"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 18,
         "section": "english",
         "topic": "Style & Tone",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Choose the best alternative for the underlined portion [18].",
         "options": [
             "NO CHANGE",
@@ -255,13 +254,13 @@ const ACT_QUESTIONS1 = [
             "more highly famous",
             "famous"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"most famous\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 19,
         "section": "english",
         "topic": "Style & Tone",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Which of the following alternatives to the underlined portion [19] would NOT be acceptable?",
         "options": [
             "on space",
@@ -269,13 +268,13 @@ const ACT_QUESTIONS1 = [
             "in space",
             "regarding space"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"in space\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 20,
         "section": "english",
         "topic": "Sentence Structure",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Choose the best alternative for the underlined portion [20].",
         "options": [
             "NO CHANGE",
@@ -283,13 +282,13 @@ const ACT_QUESTIONS1 = [
             "councils, these",
             "councils, which"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"councils, which\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 21,
         "section": "english",
         "topic": "Sentence Structure",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Choose the best alternative for the underlined portion [21].",
         "options": [
             "NO CHANGE",
@@ -297,13 +296,13 @@ const ACT_QUESTIONS1 = [
             "agenda formation, then, a third",
             "agenda formation; and a third"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"agenda formation. A third\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 22,
         "section": "english",
         "topic": "Punctuation",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Choose the best alternative for the underlined portion [22].",
         "options": [
             "NO CHANGE",
@@ -311,13 +310,13 @@ const ACT_QUESTIONS1 = [
             "to NASA's esteemed Advisory Council,",
             "to NASA's Advisory Council"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"to NASA's Advisory Council\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"to NASA's Advisory Council\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
         "id": 23,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Choose the best alternative for the underlined portion [23].",
         "options": [
             "NO CHANGE",
@@ -325,13 +324,13 @@ const ACT_QUESTIONS1 = [
             "but also",
             "but still"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"but also\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 24,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "The writer is considering adding the following phrase to the sentence marked [24] following a comma:\n'including Cosmos: A SpaceTime Odyssey, a series that was nominated for thirteen Emmy awards.'\nShould the writer add this phrase here?",
         "options": [
             "Yes, because it adds relevant information about the popularity of Tyson's documentary series.",
@@ -339,13 +338,13 @@ const ACT_QUESTIONS1 = [
             "No, because the show did not win any of the awards.",
             "No, because Tyson is an astrophysicist and not an entertainer."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"Yes, because it adds relevant information about the popularity of Tyson's documentary series.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 25,
         "section": "english",
         "topic": "Sentence Structure",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Which of the following alternatives to the underlined portion [25] would be LEAST acceptable?",
         "options": [
             "Additionally,",
@@ -353,13 +352,13 @@ const ACT_QUESTIONS1 = [
             "Also,",
             "On the other hand,"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"On the other hand,\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 26,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "If the writer were to delete the phrase 'to appeal to a diverse following' from the sentence marked [26], the paragraph would primarily lose:",
         "options": [
             "details about how Tyson chooses his celebrity guests.",
@@ -367,13 +366,13 @@ const ACT_QUESTIONS1 = [
             "a description of what listeners can expect on Tyson's radio show.",
             "nothing at all because it is not relevant information."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"information about the mission of Tyson's radio show.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 27,
         "section": "english",
         "topic": "Punctuation",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Choose the best alternative for the underlined portion [27].",
         "options": [
             "NO CHANGE",
@@ -381,13 +380,13 @@ const ACT_QUESTIONS1 = [
             "awards to citizens'",
             "awards to citizens"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"NO CHANGE\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
         "id": 28,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "The writer has decided to divide the paragraph marked [28] into two. The best place to add the paragraph break would be:",
         "options": [
             "after sentence 3, because the topic shifts from Tyson's film and television experience to his work on a radio show.",
@@ -395,13 +394,13 @@ const ACT_QUESTIONS1 = [
             "after sentence 4, because it signals a shift from a discussion of Tyson's work to a section about his honors and acknowledgments.",
             "nowhere. The paragraph should not be divided."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"after sentence 4, because it signals a shift from a discussion of Tyson's work to a section about his honors and acknowledgments.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 29,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Given that all of the following are true, which choice for [29] would best tie back to the beginning of the essay and explain why the job at the planetarium might be meaningful to Neil deGrasse Tyson?",
         "options": [
             "NO CHANGE",
@@ -409,13 +408,13 @@ const ACT_QUESTIONS1 = [
             "he works long hours almost every night.",
             "he hopes to work until he retires."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 30,
         "section": "english",
         "topic": "Style & Tone",
-        "passage": "PASSAGE II: Neil deGrasse Tyson\n\nMost people struggle to find what they want to do with their [16] lives, but Neil deGrasse Tyson knew when he was 9 years old. [17] While visiting the Hayden Planetarium in New York City for the first time, Tyson discovered that he was fascinated by outer space. From that moment on, he pursued his interest wholeheartedly and ultimately came to be one of the [18] most famous astrophysicists of our day: his career has undoubtedly shaped the public's thinking [19] regarding space and space exploration.\n\nSince the beginning of his professional career, Tyson has served on a number of important commissions and [20] councils, which have shaped the way the government and its agencies approach space exploration. Two commissions to which he was appointed by President George W. Bush served to guide the future of American space research and travel by influencing policy and [21] agenda formation. A third appointment, [22] to NASA's esteemed Advisory Council, allowed Tyson to contribute to deliberations on NASA's financial planning. In all, Tyson had a great deal of political clout when it came to discussions of America's future in space.\n\nStill, Tyson's political influence is often outshined by his popular influence. On top of his professional accomplishments, he has found fame by making astronomy not only interesting [23] but also accessible to the average citizen. In addition to writing a number of books for public consumption, Tyson has produced and hosted numerous popular documentaries and documentary series about space, [24] including Cosmos: A SpaceTime Odyssey.\n\nFurthermore, Tyson's radio show and podcast, called StarTalk Radio, combines science, comedy, and celebrity guests [25] to appeal to a diverse following. [26] Over the course of his career, Tyson has also earned a plethora of awards and acknowledgments for his unrelenting efforts at making space a bigger focus of public discourse. NASA awarded him the highest honor it [27] awards to citizens, the NASA Distinguished Public Service Medal, and the International Astronomical Union named an asteroid, 13123 Tyson, in his honor. [28]\n\nToday, Neil deGrasse Tyson works as the Director of the Hayden Planetarium in New York City, the same planetarium where [29] he first discovered his love of astronomy. Through his work at the planetarium, he continues to pursue his mission of making astronomy and space exploration more [30] accessible to the general public.",
         "text": "Which of the options for [30] would best reinforce the tone and main idea of the essay?",
         "options": [
             "NO CHANGE",
@@ -423,13 +422,13 @@ const ACT_QUESTIONS1 = [
             "important to policy makers.",
             "simple for young scientists."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 31,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Choose the best alternative for the sentence marked [31].",
         "options": [
             "NO CHANGE",
@@ -437,13 +436,13 @@ const ACT_QUESTIONS1 = [
             "My dad's job caused my family to move all around the world as a young child.",
             "When I was a young child, my family moved all around the world following my dad's job."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"When I was a young child, my family moved all around the world following my dad's job.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 32,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Choose the best alternative for the underlined portion [32].",
         "options": [
             "NO CHANGE",
@@ -451,13 +450,13 @@ const ACT_QUESTIONS1 = [
             "have attended",
             "will attend"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"would attend\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 33,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Choose the best alternative for the underlined portion [33].",
         "options": [
             "NO CHANGE",
@@ -465,13 +464,13 @@ const ACT_QUESTIONS1 = [
             "families whose students",
             "family's whose students'"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"families whose students\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 34,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Choose the best alternative for the underlined portion [34].",
         "options": [
             "NO CHANGE",
@@ -479,13 +478,13 @@ const ACT_QUESTIONS1 = [
             "moving",
             "will have moved"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 35,
         "section": "english",
         "topic": "Style & Tone",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Choose the best alternative for the underlined portion [35].",
         "options": [
             "NO CHANGE",
@@ -493,13 +492,13 @@ const ACT_QUESTIONS1 = [
             "a different location where they would live",
             "a new location with different surroundings"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 36,
         "section": "english",
         "topic": "Punctuation",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Choose the best alternative for the underlined portion [36].",
         "options": [
             "NO CHANGE",
@@ -507,13 +506,13 @@ const ACT_QUESTIONS1 = [
             "as well, fish",
             "as well, for example, fish"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"as well. Fish\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"as well. Fish\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
         "id": 37,
         "section": "english",
         "topic": "Sentence Structure",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Which of the following alternatives to the underlined portion [37] would be LEAST acceptable?",
         "options": [
             "cyclical in that it occurs",
@@ -521,13 +520,13 @@ const ACT_QUESTIONS1 = [
             "cyclical, meaning that it occurs",
             "cyclical, occurring"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"cyclical, being that it occurs\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 38,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "The writer is considering deleting the sentence marked [38] ('This type of migration...') from the essay. The sentence should NOT be deleted because:",
         "options": [
             "it is important that the reader be able to name at least one species that completes a cyclical migration.",
@@ -535,13 +534,13 @@ const ACT_QUESTIONS1 = [
             "it gives the reader information about how to avoid extreme temperatures.",
             "it provides a simple, illustrative example of how seasonal changes can drive animal behavior."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"it provides a simple, illustrative example of how seasonal changes can drive animal behavior.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 39,
         "section": "english",
         "topic": "Punctuation",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Choose the best alternative for the underlined portion [39].",
         "options": [
             "NO CHANGE",
@@ -549,13 +548,13 @@ const ACT_QUESTIONS1 = [
             "animals, including wildebeests, zebras, and gazelles,",
             "animals, including wildebeests zebras, and gazelles,"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"animals, including wildebeests, zebras, and gazelles,\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"animals, including wildebeests, zebras, and gazelles,\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
         "id": 40,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "At position [40], the writer is considering adding the following sentence:\n'Along the way, they must contend with dangerous temperatures, extreme exhaustion, and threatening predators.'\nShould the writer make this addition here?",
         "options": [
             "Yes, because it provides relevant information about why some animals do not survive migration.",
@@ -563,13 +562,13 @@ const ACT_QUESTIONS1 = [
             "No, because it misleads the reader about the purpose of migration.",
             "No, because it distracts from the main point of the paragraph."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"No, because it distracts from the main point of the paragraph.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 41,
         "section": "english",
         "topic": "Sentence Structure",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Which of the options for [41] provides the most effective transition for introducing the second kind of (irregular) migration?",
         "options": [
             "NO CHANGE",
@@ -577,13 +576,13 @@ const ACT_QUESTIONS1 = [
             "Nevertheless,",
             "Therefore,"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"On the other hand,\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 42,
         "section": "english",
         "topic": "Style & Tone",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Choose the best alternative for the underlined portion [42].",
         "options": [
             "NO CHANGE",
@@ -591,13 +590,13 @@ const ACT_QUESTIONS1 = [
             "unusual",
             "accidental"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 43,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Which of the options for [43] most effectively ties the subject of migration back to the narrator's personal experience?",
         "options": [
             "NO CHANGE",
@@ -605,13 +604,13 @@ const ACT_QUESTIONS1 = [
             "though sometimes it doesn't work out.",
             "no matter what their reason is for moving."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 44,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "For the sake of logic and coherence, Paragraph 5 should be placed:",
         "options": [
             "where it is now.",
@@ -619,13 +618,13 @@ const ACT_QUESTIONS1 = [
             "after paragraph 1.",
             "after paragraph 2."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"where it is now.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 45,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE III: Immigration\n\n[31] When I was a young child, my family moved all around the world following my dad's job. Usually, we would live in each new country for about a year, during which time I [32] would attend an international school. Like us, most of the [33] families whose students attended these international schools were immigrants, people who [34] had moved to the country from other countries. At one of my first international schools, when I was eight years old, my teacher taught a lesson about the word immigration. She told us that it comes from the word migrate, which means to move to and settle in [35] a new location, either temporarily or permanently.\n\nAs I got older, I learned that many animals migrate [36] as well. Fish, birds, mammals, reptiles, amphibians, and even insects will move to new locations in search of more hospitable conditions. Most animal migration is [37] cyclical, occurring at predictable times each year in response to seasonal changes. This type of migration occurs, for instance, when geese fly south to stay warm during the cold, inhospitable winter months and then return north during the summer when the weather is mild. [38]\n\nOne of the largest and most stunning examples of cyclical migration occurs in Africa's Serengeti National Park. This mass migration occurs over the course of a full year, during which time more than two million [39] animals, including wildebeests, zebras, and gazelles, move around the outskirts of the park in search of food, water, and a safe place to bear their children. [40]\n\n[41] On the other hand, sometimes animals must migrate for a specific reason in unique circumstances. For example, overpopulation in a concentrated area could lead to famine, causing portions of the population to move elsewhere in search of alternative food sources. Likewise, natural phenomena like wildfires or volcanic eruptions might make an area uninhabitable and force out the animals who were living there.\n\nHuman migration, like my family's trek around the world, most often occurs in this [42] irregular form. Some jobs or family situations might require regular, predictable movements between locations, but, like us, most people move with the knowledge that they will not be returning to the place they just left. Instead, they know that they will soon be settling down to start a new life in a new home, [43] even if it's just for a year. [44] [45]",
         "text": "Suppose the writer had intended to write a brief essay explaining a behavior that humans and animals share. Would this essay successfully fulfill that goal?",
         "options": [
             "Yes, because it gives the reader insight into how humans and animals can learn to coexist in different climates.",
@@ -633,13 +632,13 @@ const ACT_QUESTIONS1 = [
             "No, because it focuses on his own family's migration around the world.",
             "No, because it fails to provide relevant information about animal families."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"Yes, because it provides information about the migration behaviors of both humans and animals.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 46,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE IV: The Grand Canyon\n\nThe Grand Canyon is a landmark [46] whose enormity cannot truly be understood until it is experienced. The canyon, which was formed by millions of years of erosion by the Colorado River, is over one mile deep, nearly twenty miles wide, and over two hundred fifty feet long. It is located in northern Arizona and falls primarily inside Grand Canyon National Park, which [47] bisects the Kaibab National Forest.\n\nAdjacent to the park [48] are three Indian reservations\u2014the Hualapai, the Kaibab Paiute, and the Navajo. [49]\n\nManagement of this enormous landmark is achieved through the cooperation of many different groups. The tribal nations that [50] reside in the area work alongside governmental organizations to ensure that the lands are protected.",
         "text": "Choose the best alternative for the underlined portion [46].",
         "options": [
             "NO CHANGE",
@@ -647,13 +646,13 @@ const ACT_QUESTIONS1 = [
             "where",
             "whose"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"whose\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 47,
         "section": "english",
         "topic": "Style & Tone",
-        "passage": "PASSAGE IV: The Grand Canyon\n\nThe Grand Canyon is a landmark [46] whose enormity cannot truly be understood until it is experienced. The canyon, which was formed by millions of years of erosion by the Colorado River, is over one mile deep, nearly twenty miles wide, and over two hundred fifty feet long. It is located in northern Arizona and falls primarily inside Grand Canyon National Park, which [47] bisects the Kaibab National Forest.\n\nAdjacent to the park [48] are three Indian reservations\u2014the Hualapai, the Kaibab Paiute, and the Navajo. [49]\n\nManagement of this enormous landmark is achieved through the cooperation of many different groups. The tribal nations that [50] reside in the area work alongside governmental organizations to ensure that the lands are protected.",
         "text": "Which of the following alternatives to the underlined portion [47] would be LEAST acceptable?",
         "options": [
             "separates",
@@ -661,13 +660,13 @@ const ACT_QUESTIONS1 = [
             "intersects",
             "cuts across"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"separates\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 48,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE IV: The Grand Canyon\n\nThe Grand Canyon is a landmark [46] whose enormity cannot truly be understood until it is experienced. The canyon, which was formed by millions of years of erosion by the Colorado River, is over one mile deep, nearly twenty miles wide, and over two hundred fifty feet long. It is located in northern Arizona and falls primarily inside Grand Canyon National Park, which [47] bisects the Kaibab National Forest.\n\nAdjacent to the park [48] are three Indian reservations\u2014the Hualapai, the Kaibab Paiute, and the Navajo. [49]\n\nManagement of this enormous landmark is achieved through the cooperation of many different groups. The tribal nations that [50] reside in the area work alongside governmental organizations to ensure that the lands are protected.",
         "text": "Choose the best alternative for the underlined portion [48].",
         "options": [
             "NO CHANGE",
@@ -675,13 +674,13 @@ const ACT_QUESTIONS1 = [
             "were",
             "exists"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"are\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 49,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "passage": "PASSAGE IV: The Grand Canyon\n\nThe Grand Canyon is a landmark [46] whose enormity cannot truly be understood until it is experienced. The canyon, which was formed by millions of years of erosion by the Colorado River, is over one mile deep, nearly twenty miles wide, and over two hundred fifty feet long. It is located in northern Arizona and falls primarily inside Grand Canyon National Park, which [47] bisects the Kaibab National Forest.\n\nAdjacent to the park [48] are three Indian reservations\u2014the Hualapai, the Kaibab Paiute, and the Navajo. [49]\n\nManagement of this enormous landmark is achieved through the cooperation of many different groups. The tribal nations that [50] reside in the area work alongside governmental organizations to ensure that the lands are protected.",
         "text": "The writer is considering deleting the following phrase from the sentence marked [49], ending the sentence with a period after the word reservations:\n'the Hualapai, the Kaibab Paiute, and the Navajo'\nIf the writer were to make this deletion, the paragraph would primarily lose:",
         "options": [
             "information about the background of the Native American people who work in the canyon.",
@@ -689,13 +688,13 @@ const ACT_QUESTIONS1 = [
             "insight into the history of the Grand Canyon.",
             "nothing because the information is irrelevant."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"details about control over the land surrounding the Grand Canyon.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 50,
         "section": "english",
         "topic": "Grammar & Usage",
-        "passage": "PASSAGE IV: The Grand Canyon\n\nThe Grand Canyon is a landmark [46] whose enormity cannot truly be understood until it is experienced. The canyon, which was formed by millions of years of erosion by the Colorado River, is over one mile deep, nearly twenty miles wide, and over two hundred fifty feet long. It is located in northern Arizona and falls primarily inside Grand Canyon National Park, which [47] bisects the Kaibab National Forest.\n\nAdjacent to the park [48] are three Indian reservations\u2014the Hualapai, the Kaibab Paiute, and the Navajo. [49]\n\nManagement of this enormous landmark is achieved through the cooperation of many different groups. The tribal nations that [50] reside in the area work alongside governmental organizations to ensure that the lands are protected.",
         "text": "Choose the best alternative for the underlined portion [50].",
         "options": [
             "NO CHANGE",
@@ -703,7 +702,8 @@ const ACT_QUESTIONS1 = [
             "are residing",
             "reside"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"reside\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 51,
@@ -717,7 +717,8 @@ const ACT_QUESTIONS1 = [
             "4",
             "5"
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: 5. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 5."
     },
     {
         "id": 52,
@@ -731,7 +732,8 @@ const ACT_QUESTIONS1 = [
             "(3<i>x</i> + 7<i>y</i>)(3<i>x</i> &minus; 7)",
             "(3<i>x</i> + 7<i>y</i>)(3<i>x</i> &minus; 7<i>y</i>)"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: (3x + 7y)2. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that (3x + 7y)2 satisfies all conditions of the problem."
     },
     {
         "id": 53,
@@ -745,7 +747,8 @@ const ACT_QUESTIONS1 = [
             "7.2 joules",
             "9.0 joules"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 7.2 joules. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 7.2 joules."
     },
     {
         "id": 54,
@@ -759,7 +762,8 @@ const ACT_QUESTIONS1 = [
             "5",
             "16"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 0.75. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 0.75."
     },
     {
         "id": 55,
@@ -773,7 +777,8 @@ const ACT_QUESTIONS1 = [
             "135 rooms",
             "175 rooms"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 70 rooms. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 70 rooms."
     },
     {
         "id": 56,
@@ -787,7 +792,8 @@ const ACT_QUESTIONS1 = [
             "90&deg;",
             "120&deg;"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 70&deg;. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 70&deg;."
     },
     {
         "id": 57,
@@ -801,7 +807,8 @@ const ACT_QUESTIONS1 = [
             "2 hour, 43.6 minutes",
             "6 hour, 12 minutes"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 1 hour, 6.7 minutes. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 1 hour, 6.7 minutes."
     },
     {
         "id": 58,
@@ -815,7 +822,8 @@ const ACT_QUESTIONS1 = [
             "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">8</td><td style=\"padding:0 4px\">4</td><td style=\"padding:0 4px\">3</td></tr><tr><td style=\"padding:0 4px\">9</td><td style=\"padding:0 4px\">-2</td><td style=\"padding:0 4px\">-3</td></tr></table></div>",
             "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">8</td><td style=\"padding:0 4px\">4</td><td style=\"padding:0 4px\">3</td></tr><tr><td style=\"padding:0 4px\">11</td><td style=\"padding:0 4px\">-2</td><td style=\"padding:0 4px\">-3</td></tr></table></div>"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 84394-3. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 84394-3 satisfies all conditions of the problem."
     },
     {
         "id": 59,
@@ -829,7 +837,8 @@ const ACT_QUESTIONS1 = [
             "-2.5",
             "40.5"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: -3. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that -3 satisfies all conditions of the problem."
     },
     {
         "id": 60,
@@ -843,7 +852,8 @@ const ACT_QUESTIONS1 = [
             "<i>x</i> &lt; &minus;2, <i>x</i> &gt; 3",
             "<i>x</i> &lt; &minus;1, <i>x</i> &gt; 1.5"
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: x < &minus;1, x > 1.5. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x < &minus;1, x > 1.5 satisfies all conditions of the problem."
     },
     {
         "id": 61,
@@ -857,7 +867,8 @@ const ACT_QUESTIONS1 = [
             "3.64g",
             "3.88g"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 3.64g. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 3.64g."
     },
     {
         "id": 62,
@@ -871,7 +882,8 @@ const ACT_QUESTIONS1 = [
             "46.5%",
             "53.5%"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 23.5%. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 23.5%."
     },
     {
         "id": 63,
@@ -885,7 +897,8 @@ const ACT_QUESTIONS1 = [
             "52 minutes, 30 seconds",
             "52 minutes, 42 seconds"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 51 minutes, 16 seconds. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 51 minutes, 16 seconds."
     },
     {
         "id": 64,
@@ -899,7 +912,8 @@ const ACT_QUESTIONS1 = [
             "14",
             "13"
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: 13. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 13 satisfies all conditions of the problem."
     },
     {
         "id": 65,
@@ -913,7 +927,8 @@ const ACT_QUESTIONS1 = [
             "0.33",
             "0.4"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: -0.4. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields -0.4."
     },
     {
         "id": 66,
@@ -927,7 +942,8 @@ const ACT_QUESTIONS1 = [
             "34 minutes",
             "37 minutes"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 24 minutes. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 24 minutes."
     },
     {
         "id": 67,
@@ -941,7 +957,8 @@ const ACT_QUESTIONS1 = [
             "177.9 in<sup>3</sup>",
             "706.5 in<sup>3</sup>"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 176.7 in3. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 176.7 in3."
     },
     {
         "id": 68,
@@ -955,7 +972,8 @@ const ACT_QUESTIONS1 = [
             "x = 8",
             "x = 12.8"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: x = -8. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x = -8 satisfies all conditions of the problem."
     },
     {
         "id": 69,
@@ -969,7 +987,8 @@ const ACT_QUESTIONS1 = [
             "2 &lt; <i>x</i> &le; 23",
             "x &ge; 2"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 2 &le; x < 23. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 2 &le; x < 23 satisfies all conditions of the problem."
     },
     {
         "id": 70,
@@ -983,7 +1002,8 @@ const ACT_QUESTIONS1 = [
             "5.0 cm<sup>3</sup>",
             "24.3 cm<sup>3</sup>"
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: 24.3 cm3. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 24.3 cm3."
     },
     {
         "id": 71,
@@ -997,7 +1017,8 @@ const ACT_QUESTIONS1 = [
             "17.1 inches",
             "20.9 inches"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 14.6 inches. Step-by-step solution: Use fundamental trigonometric definitions (sin = opp/hyp, cos = adj/hyp, tan = opp/adj) or trigonometric identities to simplify the expression, arriving at 14.6 inches."
     },
     {
         "id": 72,
@@ -1011,7 +1032,8 @@ const ACT_QUESTIONS1 = [
             "(&mu; + <i>x</i>)<i>n</i>/(<i>n</i> + 1)",
             "&mu;<i>xn</i>/(<i>n</i> + 1)"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: (&mu;n + x)/(n + 1). Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of (&mu;n + x)/(n + 1)."
     },
     {
         "id": 73,
@@ -1025,7 +1047,8 @@ const ACT_QUESTIONS1 = [
             "5625 feet",
             "11,250 feet"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 300 feet. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 300 feet."
     },
     {
         "id": 74,
@@ -1039,7 +1062,8 @@ const ACT_QUESTIONS1 = [
             "72",
             "144"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 12. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 12 satisfies all conditions of the problem."
     },
     {
         "id": 75,
@@ -1053,7 +1077,8 @@ const ACT_QUESTIONS1 = [
             "9.2 in<sup>2</sup>",
             "17.4 in<sup>2</sup>"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 8.7 in2. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 8.7 in2."
     },
     {
         "id": 76,
@@ -1067,7 +1092,8 @@ const ACT_QUESTIONS1 = [
             "14 centimeters",
             "18 centimeters"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 12 centimeters. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 12 centimeters."
     },
     {
         "id": 77,
@@ -1081,7 +1107,8 @@ const ACT_QUESTIONS1 = [
             "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">85</td><td style=\"padding:0 4px\">34</td><td style=\"padding:0 4px\">68</td></tr></table></div>",
             "The matrices cannot be multiplied."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 48-1. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 48-1 satisfies all conditions of the problem."
     },
     {
         "id": 78,
@@ -1095,7 +1122,8 @@ const ACT_QUESTIONS1 = [
             "250 tickets",
             "500 tickets"
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: 500 tickets. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 500 tickets."
     },
     {
         "id": 79,
@@ -1109,7 +1137,8 @@ const ACT_QUESTIONS1 = [
             "8.0",
             "19.2"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 0.5. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 0.5 satisfies all conditions of the problem."
     },
     {
         "id": 80,
@@ -1123,7 +1152,8 @@ const ACT_QUESTIONS1 = [
             "241",
             "243"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 241. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 241 satisfies all conditions of the problem."
     },
     {
         "id": 81,
@@ -1137,7 +1167,8 @@ const ACT_QUESTIONS1 = [
             "x = 1, 4",
             "x = 4"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: x = -1/4. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x = -1/4 satisfies all conditions of the problem."
     },
     {
         "id": 82,
@@ -1151,7 +1182,8 @@ const ACT_QUESTIONS1 = [
             "9.9 centimeters",
             "10 centimeters"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 9.9 centimeters. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 9.9 centimeters."
     },
     {
         "id": 83,
@@ -1165,7 +1197,8 @@ const ACT_QUESTIONS1 = [
             "25 shirts : 1 pair shoes",
             "25 shirts : 2 pairs shoes"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 10 shirts : 1 pair shoes. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 10 shirts : 1 pair shoes."
     },
     {
         "id": 84,
@@ -1179,7 +1212,8 @@ const ACT_QUESTIONS1 = [
             "23.00 bags",
             "27.00 bags"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 23.00 bags. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 23.00 bags."
     },
     {
         "id": 85,
@@ -1193,7 +1227,8 @@ const ACT_QUESTIONS1 = [
             "16<i>x</i><sup>2</sup> / 2x",
             "8<i>x</i>(x + 1) &minus; <i>x</i><sup>2</sup>"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: (5x2 + 9x) &minus; (5x2 + x). Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that (5x2 + 9x) &minus; (5x2 + x) satisfies all conditions of the problem."
     },
     {
         "id": 86,
@@ -1207,7 +1242,8 @@ const ACT_QUESTIONS1 = [
             "8%",
             "10%"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 6%. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 6%."
     },
     {
         "id": 87,
@@ -1221,7 +1257,8 @@ const ACT_QUESTIONS1 = [
             "Joe by 5%",
             "There is not enough information."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: Joe by 0.5%. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of Joe by 0.5%."
     },
     {
         "id": 88,
@@ -1235,7 +1272,8 @@ const ACT_QUESTIONS1 = [
             "<i>x</i><sup>24</sup>",
             "<i>x</i><sup>2</sup>"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: x10. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x10 satisfies all conditions of the problem."
     },
     {
         "id": 89,
@@ -1249,7 +1287,8 @@ const ACT_QUESTIONS1 = [
             "$3.66",
             "$13.00"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: $2.77. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of $2.77."
     },
     {
         "id": 90,
@@ -1263,7 +1302,8 @@ const ACT_QUESTIONS1 = [
             "67.20 inches",
             "67.50 inches"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 66.30 inches. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 66.30 inches."
     },
     {
         "id": 91,
@@ -1277,7 +1317,8 @@ const ACT_QUESTIONS1 = [
             "179 meters per minute",
             "350 meters per minute"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 35 meters per minute. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 35 meters per minute."
     },
     {
         "id": 92,
@@ -1291,7 +1332,8 @@ const ACT_QUESTIONS1 = [
             "$184.87",
             "$641.70"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: $132.85. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of $132.85."
     },
     {
         "id": 93,
@@ -1305,7 +1347,8 @@ const ACT_QUESTIONS1 = [
             "8 cups",
             "8.5 cups"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 8 cups. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 8 cups."
     },
     {
         "id": 94,
@@ -1319,7 +1362,8 @@ const ACT_QUESTIONS1 = [
             "z(2<i>x</i> + 2<i>y</i>)",
             "2 / [z(<i>x</i> + <i>y</i>)]"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 1/z * (2x + 2y). Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 1/z * (2x + 2y) satisfies all conditions of the problem."
     },
     {
         "id": 95,
@@ -1333,13 +1377,13 @@ const ACT_QUESTIONS1 = [
             "4 yards",
             "28 yards"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 30 feet. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 30 feet."
     },
     {
         "id": 96,
         "section": "reading",
         "topic": "Literary Narrative",
-        "passage": "PASSAGE I: Literary Narrative\n\nEvery morning now brought its regular duties\u2014shops were to be visited; some new part of the town to be looked at; and the pump-room to be attended, where they paraded up and down for an hour, looking at everybody and speaking to no one. The wish of a numerous acquaintance in Bath was still uppermost with Mrs. Allen, and she repeated it after every fresh proof, which every morning brought, of her knowing nobody at all.\n\nThey made their appearance in the Lower Rooms; and here fortune was more favourable to our heroine. The master of the ceremonies introduced to her a very gentlemanlike young man as a partner; his name was Tilney. He seemed to be about four or five and twenty, was rather tall, had a pleasing countenance, a very intelligent and lively eye, and, if not quite handsome, was very near it. His address was good, and Catherine felt herself in high luck. There was little leisure for speaking while they danced; but when they were seated at tea, she found him as agreeable as she had already given him credit for being. He talked with fluency and spirit\u2014and there was an archness and pleasantry in his manner which interested, though it was hardly understood by her. After chatting some time on such matters as naturally arose from the objects around them, he suddenly addressed her with\u2014\"I have hitherto been very remiss, madam, in the proper attentions of a partner here; I have not yet asked you how long you have been in Bath; whether you were ever here before; whether you have been at the Upper Rooms, the theatre, and the concert; and how you like the place altogether. I have been very negligent\u2014but are you now at leisure to satisfy me in these particulars? If you are I will begin directly.\"\n\n\"You need not give yourself that trouble, sir.\"\n\n\"No trouble, I assure you, madam.\" Then forming his features into a set smile, and affectedly softening his voice, he added, with a simpering air, \"Have you been long in Bath, madam?\"\n\n\"About a week, sir,\" replied Catherine, trying not to laugh.\n\n\"Really!\" with affected astonishment.\n\n\"Why should you be surprised, sir?\"\n\n\"Why, indeed!\" said he, in his natural tone. \"But some emotion must appear to be raised by your reply, and surprise is more easily assumed, and not less reasonable than any other. Now let us go on. Were you never here before, madam?\"\n\n\"Never, sir.\"\n\n\"Indeed! Have you yet honoured the Upper Rooms?\"\n\n\"Yes, sir, I was there last Monday.\"\n\n\"Have you been to the theatre?\"\n\n\"Yes, sir, I was at the play on Tuesday.\"\n\n\"To the concert?\"\n\n\"Yes, sir, on Wednesday.\"\n\n\"And are you altogether pleased with Bath?\"\n\n\"Yes\u2014I like it very well.\"\n\n\"Now I must give one smirk, and then we may be rational again.\" Catherine turned away her head, not knowing whether she might venture to laugh. \"I see what you think of me,\" said he gravely\u2014\"I shall make but a poor figure in your journal tomorrow.\"\n\n\"My journal!\"\n\n\"Yes, I know exactly what you will say: Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings\u2014plain black shoes\u2014appeared to much advantage; but was strangely harassed by a queer, half-witted man, who would make me dance with him, and distressed me by his nonsense.\"\n\n\"Indeed I shall say no such thing.\"\n\n\"Shall I tell you what you ought to say?\"\n\n\"If you please.\"\n\n\"I danced with a very agreeable young man, introduced by Mr. King; had a great deal of conversation with him\u2014seems a most extraordinary genius\u2014hope I may know more of him. That, madam, is what you ought to say.\"\n\n\"But perhaps I keep no journal.\"\n\n\"Perhaps you are not sitting at this moment next to a partner who can read your thoughts.\"\n\n- Excerpt from Northanger Abbey by Jane Austen (1817)",
         "text": "The point of view from which the passage is told can best be described as:",
         "options": [
             "a young girl looking back fondly on the memories of her childhood.",
@@ -1347,13 +1391,13 @@ const ACT_QUESTIONS1 = [
             "an unidentified narrator telling the story of a young woman's experiences in English society.",
             "an unidentified narrator telling the story of a young man's first meeting of the girl he will marry."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"an unidentified narrator telling the story of a young woman's experiences in English society.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 97,
         "section": "reading",
         "topic": "Literary Narrative",
-        "passage": "PASSAGE I: Literary Narrative\n\nEvery morning now brought its regular duties\u2014shops were to be visited; some new part of the town to be looked at; and the pump-room to be attended, where they paraded up and down for an hour, looking at everybody and speaking to no one. The wish of a numerous acquaintance in Bath was still uppermost with Mrs. Allen, and she repeated it after every fresh proof, which every morning brought, of her knowing nobody at all.\n\nThey made their appearance in the Lower Rooms; and here fortune was more favourable to our heroine. The master of the ceremonies introduced to her a very gentlemanlike young man as a partner; his name was Tilney. He seemed to be about four or five and twenty, was rather tall, had a pleasing countenance, a very intelligent and lively eye, and, if not quite handsome, was very near it. His address was good, and Catherine felt herself in high luck. There was little leisure for speaking while they danced; but when they were seated at tea, she found him as agreeable as she had already given him credit for being. He talked with fluency and spirit\u2014and there was an archness and pleasantry in his manner which interested, though it was hardly understood by her. After chatting some time on such matters as naturally arose from the objects around them, he suddenly addressed her with\u2014\"I have hitherto been very remiss, madam, in the proper attentions of a partner here; I have not yet asked you how long you have been in Bath; whether you were ever here before; whether you have been at the Upper Rooms, the theatre, and the concert; and how you like the place altogether. I have been very negligent\u2014but are you now at leisure to satisfy me in these particulars? If you are I will begin directly.\"\n\n\"You need not give yourself that trouble, sir.\"\n\n\"No trouble, I assure you, madam.\" Then forming his features into a set smile, and affectedly softening his voice, he added, with a simpering air, \"Have you been long in Bath, madam?\"\n\n\"About a week, sir,\" replied Catherine, trying not to laugh.\n\n\"Really!\" with affected astonishment.\n\n\"Why should you be surprised, sir?\"\n\n\"Why, indeed!\" said he, in his natural tone. \"But some emotion must appear to be raised by your reply, and surprise is more easily assumed, and not less reasonable than any other. Now let us go on. Were you never here before, madam?\"\n\n\"Never, sir.\"\n\n\"Indeed! Have you yet honoured the Upper Rooms?\"\n\n\"Yes, sir, I was there last Monday.\"\n\n\"Have you been to the theatre?\"\n\n\"Yes, sir, I was at the play on Tuesday.\"\n\n\"To the concert?\"\n\n\"Yes, sir, on Wednesday.\"\n\n\"And are you altogether pleased with Bath?\"\n\n\"Yes\u2014I like it very well.\"\n\n\"Now I must give one smirk, and then we may be rational again.\" Catherine turned away her head, not knowing whether she might venture to laugh. \"I see what you think of me,\" said he gravely\u2014\"I shall make but a poor figure in your journal tomorrow.\"\n\n\"My journal!\"\n\n\"Yes, I know exactly what you will say: Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings\u2014plain black shoes\u2014appeared to much advantage; but was strangely harassed by a queer, half-witted man, who would make me dance with him, and distressed me by his nonsense.\"\n\n\"Indeed I shall say no such thing.\"\n\n\"Shall I tell you what you ought to say?\"\n\n\"If you please.\"\n\n\"I danced with a very agreeable young man, introduced by Mr. King; had a great deal of conversation with him\u2014seems a most extraordinary genius\u2014hope I may know more of him. That, madam, is what you ought to say.\"\n\n\"But perhaps I keep no journal.\"\n\n\"Perhaps you are not sitting at this moment next to a partner who can read your thoughts.\"\n\n- Excerpt from Northanger Abbey by Jane Austen (1817)",
         "text": "It can reasonably be inferred from the passage that which of the following represents a goal of Catherine Morland?",
         "options": [
             "joining good society in order to meet eligible young men.",
@@ -1361,13 +1405,13 @@ const ACT_QUESTIONS1 = [
             "representing her family's good name in diverse circumstances.",
             "making a favorable impression on Tilney and getting to know him better."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"joining good society in order to meet eligible young men.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 98,
         "section": "reading",
         "topic": "Literary Narrative",
-        "passage": "PASSAGE I: Literary Narrative\n\nEvery morning now brought its regular duties\u2014shops were to be visited; some new part of the town to be looked at; and the pump-room to be attended, where they paraded up and down for an hour, looking at everybody and speaking to no one. The wish of a numerous acquaintance in Bath was still uppermost with Mrs. Allen, and she repeated it after every fresh proof, which every morning brought, of her knowing nobody at all.\n\nThey made their appearance in the Lower Rooms; and here fortune was more favourable to our heroine. The master of the ceremonies introduced to her a very gentlemanlike young man as a partner; his name was Tilney. He seemed to be about four or five and twenty, was rather tall, had a pleasing countenance, a very intelligent and lively eye, and, if not quite handsome, was very near it. His address was good, and Catherine felt herself in high luck. There was little leisure for speaking while they danced; but when they were seated at tea, she found him as agreeable as she had already given him credit for being. He talked with fluency and spirit\u2014and there was an archness and pleasantry in his manner which interested, though it was hardly understood by her. After chatting some time on such matters as naturally arose from the objects around them, he suddenly addressed her with\u2014\"I have hitherto been very remiss, madam, in the proper attentions of a partner here; I have not yet asked you how long you have been in Bath; whether you were ever here before; whether you have been at the Upper Rooms, the theatre, and the concert; and how you like the place altogether. I have been very negligent\u2014but are you now at leisure to satisfy me in these particulars? If you are I will begin directly.\"\n\n\"You need not give yourself that trouble, sir.\"\n\n\"No trouble, I assure you, madam.\" Then forming his features into a set smile, and affectedly softening his voice, he added, with a simpering air, \"Have you been long in Bath, madam?\"\n\n\"About a week, sir,\" replied Catherine, trying not to laugh.\n\n\"Really!\" with affected astonishment.\n\n\"Why should you be surprised, sir?\"\n\n\"Why, indeed!\" said he, in his natural tone. \"But some emotion must appear to be raised by your reply, and surprise is more easily assumed, and not less reasonable than any other. Now let us go on. Were you never here before, madam?\"\n\n\"Never, sir.\"\n\n\"Indeed! Have you yet honoured the Upper Rooms?\"\n\n\"Yes, sir, I was there last Monday.\"\n\n\"Have you been to the theatre?\"\n\n\"Yes, sir, I was at the play on Tuesday.\"\n\n\"To the concert?\"\n\n\"Yes, sir, on Wednesday.\"\n\n\"And are you altogether pleased with Bath?\"\n\n\"Yes\u2014I like it very well.\"\n\n\"Now I must give one smirk, and then we may be rational again.\" Catherine turned away her head, not knowing whether she might venture to laugh. \"I see what you think of me,\" said he gravely\u2014\"I shall make but a poor figure in your journal tomorrow.\"\n\n\"My journal!\"\n\n\"Yes, I know exactly what you will say: Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings\u2014plain black shoes\u2014appeared to much advantage; but was strangely harassed by a queer, half-witted man, who would make me dance with him, and distressed me by his nonsense.\"\n\n\"Indeed I shall say no such thing.\"\n\n\"Shall I tell you what you ought to say?\"\n\n\"If you please.\"\n\n\"I danced with a very agreeable young man, introduced by Mr. King; had a great deal of conversation with him\u2014seems a most extraordinary genius\u2014hope I may know more of him. That, madam, is what you ought to say.\"\n\n\"But perhaps I keep no journal.\"\n\n\"Perhaps you are not sitting at this moment next to a partner who can read your thoughts.\"\n\n- Excerpt from Northanger Abbey by Jane Austen (1817)",
         "text": "It can reasonably be inferred from Mr. Tilney's manner at the end of the first paragraph that he could be characterized as:",
         "options": [
             "rude and inconsiderate of the people around him.",
@@ -1375,13 +1419,13 @@ const ACT_QUESTIONS1 = [
             "stuffy and unimaginative in his conversation.",
             "fanciful and imaginative about his partner's life."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"witty and self-confident about his own manner.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 99,
         "section": "reading",
         "topic": "Literary Narrative",
-        "passage": "PASSAGE I: Literary Narrative\n\nEvery morning now brought its regular duties\u2014shops were to be visited; some new part of the town to be looked at; and the pump-room to be attended, where they paraded up and down for an hour, looking at everybody and speaking to no one. The wish of a numerous acquaintance in Bath was still uppermost with Mrs. Allen, and she repeated it after every fresh proof, which every morning brought, of her knowing nobody at all.\n\nThey made their appearance in the Lower Rooms; and here fortune was more favourable to our heroine. The master of the ceremonies introduced to her a very gentlemanlike young man as a partner; his name was Tilney. He seemed to be about four or five and twenty, was rather tall, had a pleasing countenance, a very intelligent and lively eye, and, if not quite handsome, was very near it. His address was good, and Catherine felt herself in high luck. There was little leisure for speaking while they danced; but when they were seated at tea, she found him as agreeable as she had already given him credit for being. He talked with fluency and spirit\u2014and there was an archness and pleasantry in his manner which interested, though it was hardly understood by her. After chatting some time on such matters as naturally arose from the objects around them, he suddenly addressed her with\u2014\"I have hitherto been very remiss, madam, in the proper attentions of a partner here; I have not yet asked you how long you have been in Bath; whether you were ever here before; whether you have been at the Upper Rooms, the theatre, and the concert; and how you like the place altogether. I have been very negligent\u2014but are you now at leisure to satisfy me in these particulars? If you are I will begin directly.\"\n\n\"You need not give yourself that trouble, sir.\"\n\n\"No trouble, I assure you, madam.\" Then forming his features into a set smile, and affectedly softening his voice, he added, with a simpering air, \"Have you been long in Bath, madam?\"\n\n\"About a week, sir,\" replied Catherine, trying not to laugh.\n\n\"Really!\" with affected astonishment.\n\n\"Why should you be surprised, sir?\"\n\n\"Why, indeed!\" said he, in his natural tone. \"But some emotion must appear to be raised by your reply, and surprise is more easily assumed, and not less reasonable than any other. Now let us go on. Were you never here before, madam?\"\n\n\"Never, sir.\"\n\n\"Indeed! Have you yet honoured the Upper Rooms?\"\n\n\"Yes, sir, I was there last Monday.\"\n\n\"Have you been to the theatre?\"\n\n\"Yes, sir, I was at the play on Tuesday.\"\n\n\"To the concert?\"\n\n\"Yes, sir, on Wednesday.\"\n\n\"And are you altogether pleased with Bath?\"\n\n\"Yes\u2014I like it very well.\"\n\n\"Now I must give one smirk, and then we may be rational again.\" Catherine turned away her head, not knowing whether she might venture to laugh. \"I see what you think of me,\" said he gravely\u2014\"I shall make but a poor figure in your journal tomorrow.\"\n\n\"My journal!\"\n\n\"Yes, I know exactly what you will say: Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings\u2014plain black shoes\u2014appeared to much advantage; but was strangely harassed by a queer, half-witted man, who would make me dance with him, and distressed me by his nonsense.\"\n\n\"Indeed I shall say no such thing.\"\n\n\"Shall I tell you what you ought to say?\"\n\n\"If you please.\"\n\n\"I danced with a very agreeable young man, introduced by Mr. King; had a great deal of conversation with him\u2014seems a most extraordinary genius\u2014hope I may know more of him. That, madam, is what you ought to say.\"\n\n\"But perhaps I keep no journal.\"\n\n\"Perhaps you are not sitting at this moment next to a partner who can read your thoughts.\"\n\n- Excerpt from Northanger Abbey by Jane Austen (1817)",
         "text": "From the context, it can be inferred that the 'master of ceremonies' is responsible for which actions?",
         "options": [
             "choosing who will attend the Lower and Upper Rooms.",
@@ -1389,13 +1433,13 @@ const ACT_QUESTIONS1 = [
             "providing suitable dance partners for guests of the Rooms.",
             "planning refreshment for the guests of the Rooms."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"providing suitable dance partners for guests of the Rooms.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 100,
         "section": "reading",
         "topic": "Literary Narrative",
-        "passage": "PASSAGE I: Literary Narrative\n\nEvery morning now brought its regular duties\u2014shops were to be visited; some new part of the town to be looked at; and the pump-room to be attended, where they paraded up and down for an hour, looking at everybody and speaking to no one. The wish of a numerous acquaintance in Bath was still uppermost with Mrs. Allen, and she repeated it after every fresh proof, which every morning brought, of her knowing nobody at all.\n\nThey made their appearance in the Lower Rooms; and here fortune was more favourable to our heroine. The master of the ceremonies introduced to her a very gentlemanlike young man as a partner; his name was Tilney. He seemed to be about four or five and twenty, was rather tall, had a pleasing countenance, a very intelligent and lively eye, and, if not quite handsome, was very near it. His address was good, and Catherine felt herself in high luck. There was little leisure for speaking while they danced; but when they were seated at tea, she found him as agreeable as she had already given him credit for being. He talked with fluency and spirit\u2014and there was an archness and pleasantry in his manner which interested, though it was hardly understood by her. After chatting some time on such matters as naturally arose from the objects around them, he suddenly addressed her with\u2014\"I have hitherto been very remiss, madam, in the proper attentions of a partner here; I have not yet asked you how long you have been in Bath; whether you were ever here before; whether you have been at the Upper Rooms, the theatre, and the concert; and how you like the place altogether. I have been very negligent\u2014but are you now at leisure to satisfy me in these particulars? If you are I will begin directly.\"\n\n\"You need not give yourself that trouble, sir.\"\n\n\"No trouble, I assure you, madam.\" Then forming his features into a set smile, and affectedly softening his voice, he added, with a simpering air, \"Have you been long in Bath, madam?\"\n\n\"About a week, sir,\" replied Catherine, trying not to laugh.\n\n\"Really!\" with affected astonishment.\n\n\"Why should you be surprised, sir?\"\n\n\"Why, indeed!\" said he, in his natural tone. \"But some emotion must appear to be raised by your reply, and surprise is more easily assumed, and not less reasonable than any other. Now let us go on. Were you never here before, madam?\"\n\n\"Never, sir.\"\n\n\"Indeed! Have you yet honoured the Upper Rooms?\"\n\n\"Yes, sir, I was there last Monday.\"\n\n\"Have you been to the theatre?\"\n\n\"Yes, sir, I was at the play on Tuesday.\"\n\n\"To the concert?\"\n\n\"Yes, sir, on Wednesday.\"\n\n\"And are you altogether pleased with Bath?\"\n\n\"Yes\u2014I like it very well.\"\n\n\"Now I must give one smirk, and then we may be rational again.\" Catherine turned away her head, not knowing whether she might venture to laugh. \"I see what you think of me,\" said he gravely\u2014\"I shall make but a poor figure in your journal tomorrow.\"\n\n\"My journal!\"\n\n\"Yes, I know exactly what you will say: Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings\u2014plain black shoes\u2014appeared to much advantage; but was strangely harassed by a queer, half-witted man, who would make me dance with him, and distressed me by his nonsense.\"\n\n\"Indeed I shall say no such thing.\"\n\n\"Shall I tell you what you ought to say?\"\n\n\"If you please.\"\n\n\"I danced with a very agreeable young man, introduced by Mr. King; had a great deal of conversation with him\u2014seems a most extraordinary genius\u2014hope I may know more of him. That, madam, is what you ought to say.\"\n\n\"But perhaps I keep no journal.\"\n\n\"Perhaps you are not sitting at this moment next to a partner who can read your thoughts.\"\n\n- Excerpt from Northanger Abbey by Jane Austen (1817)",
         "text": "Which of the following is NOT one of the details of Catherine's hypothetical journal entry imagined by Mr. Tilney?",
         "options": [
             "Friday, went to the Lower Rooms",
@@ -1403,13 +1447,13 @@ const ACT_QUESTIONS1 = [
             "plain black shoes",
             "danced with a handsome young man who read her mind"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"danced with a handsome young man who read her mind\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 101,
         "section": "reading",
         "topic": "Literary Narrative",
-        "passage": "PASSAGE I: Literary Narrative\n\nEvery morning now brought its regular duties\u2014shops were to be visited; some new part of the town to be looked at; and the pump-room to be attended, where they paraded up and down for an hour, looking at everybody and speaking to no one. The wish of a numerous acquaintance in Bath was still uppermost with Mrs. Allen, and she repeated it after every fresh proof, which every morning brought, of her knowing nobody at all.\n\nThey made their appearance in the Lower Rooms; and here fortune was more favourable to our heroine. The master of the ceremonies introduced to her a very gentlemanlike young man as a partner; his name was Tilney. He seemed to be about four or five and twenty, was rather tall, had a pleasing countenance, a very intelligent and lively eye, and, if not quite handsome, was very near it. His address was good, and Catherine felt herself in high luck. There was little leisure for speaking while they danced; but when they were seated at tea, she found him as agreeable as she had already given him credit for being. He talked with fluency and spirit\u2014and there was an archness and pleasantry in his manner which interested, though it was hardly understood by her. After chatting some time on such matters as naturally arose from the objects around them, he suddenly addressed her with\u2014\"I have hitherto been very remiss, madam, in the proper attentions of a partner here; I have not yet asked you how long you have been in Bath; whether you were ever here before; whether you have been at the Upper Rooms, the theatre, and the concert; and how you like the place altogether. I have been very negligent\u2014but are you now at leisure to satisfy me in these particulars? If you are I will begin directly.\"\n\n\"You need not give yourself that trouble, sir.\"\n\n\"No trouble, I assure you, madam.\" Then forming his features into a set smile, and affectedly softening his voice, he added, with a simpering air, \"Have you been long in Bath, madam?\"\n\n\"About a week, sir,\" replied Catherine, trying not to laugh.\n\n\"Really!\" with affected astonishment.\n\n\"Why should you be surprised, sir?\"\n\n\"Why, indeed!\" said he, in his natural tone. \"But some emotion must appear to be raised by your reply, and surprise is more easily assumed, and not less reasonable than any other. Now let us go on. Were you never here before, madam?\"\n\n\"Never, sir.\"\n\n\"Indeed! Have you yet honoured the Upper Rooms?\"\n\n\"Yes, sir, I was there last Monday.\"\n\n\"Have you been to the theatre?\"\n\n\"Yes, sir, I was at the play on Tuesday.\"\n\n\"To the concert?\"\n\n\"Yes, sir, on Wednesday.\"\n\n\"And are you altogether pleased with Bath?\"\n\n\"Yes\u2014I like it very well.\"\n\n\"Now I must give one smirk, and then we may be rational again.\" Catherine turned away her head, not knowing whether she might venture to laugh. \"I see what you think of me,\" said he gravely\u2014\"I shall make but a poor figure in your journal tomorrow.\"\n\n\"My journal!\"\n\n\"Yes, I know exactly what you will say: Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings\u2014plain black shoes\u2014appeared to much advantage; but was strangely harassed by a queer, half-witted man, who would make me dance with him, and distressed me by his nonsense.\"\n\n\"Indeed I shall say no such thing.\"\n\n\"Shall I tell you what you ought to say?\"\n\n\"If you please.\"\n\n\"I danced with a very agreeable young man, introduced by Mr. King; had a great deal of conversation with him\u2014seems a most extraordinary genius\u2014hope I may know more of him. That, madam, is what you ought to say.\"\n\n\"But perhaps I keep no journal.\"\n\n\"Perhaps you are not sitting at this moment next to a partner who can read your thoughts.\"\n\n- Excerpt from Northanger Abbey by Jane Austen (1817)",
         "text": "The phrase 'rational again' in the third paragraph refers to a return to:",
         "options": [
             "normal, non-flirtatious conversation.",
@@ -1417,13 +1461,13 @@ const ACT_QUESTIONS1 = [
             "decorous behavior expected of guests.",
             "serious reflections on the nature of society."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"normal, non-flirtatious conversation.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 102,
         "section": "reading",
         "topic": "Literary Narrative",
-        "passage": "PASSAGE I: Literary Narrative\n\nEvery morning now brought its regular duties\u2014shops were to be visited; some new part of the town to be looked at; and the pump-room to be attended, where they paraded up and down for an hour, looking at everybody and speaking to no one. The wish of a numerous acquaintance in Bath was still uppermost with Mrs. Allen, and she repeated it after every fresh proof, which every morning brought, of her knowing nobody at all.\n\nThey made their appearance in the Lower Rooms; and here fortune was more favourable to our heroine. The master of the ceremonies introduced to her a very gentlemanlike young man as a partner; his name was Tilney. He seemed to be about four or five and twenty, was rather tall, had a pleasing countenance, a very intelligent and lively eye, and, if not quite handsome, was very near it. His address was good, and Catherine felt herself in high luck. There was little leisure for speaking while they danced; but when they were seated at tea, she found him as agreeable as she had already given him credit for being. He talked with fluency and spirit\u2014and there was an archness and pleasantry in his manner which interested, though it was hardly understood by her. After chatting some time on such matters as naturally arose from the objects around them, he suddenly addressed her with\u2014\"I have hitherto been very remiss, madam, in the proper attentions of a partner here; I have not yet asked you how long you have been in Bath; whether you were ever here before; whether you have been at the Upper Rooms, the theatre, and the concert; and how you like the place altogether. I have been very negligent\u2014but are you now at leisure to satisfy me in these particulars? If you are I will begin directly.\"\n\n\"You need not give yourself that trouble, sir.\"\n\n\"No trouble, I assure you, madam.\" Then forming his features into a set smile, and affectedly softening his voice, he added, with a simpering air, \"Have you been long in Bath, madam?\"\n\n\"About a week, sir,\" replied Catherine, trying not to laugh.\n\n\"Really!\" with affected astonishment.\n\n\"Why should you be surprised, sir?\"\n\n\"Why, indeed!\" said he, in his natural tone. \"But some emotion must appear to be raised by your reply, and surprise is more easily assumed, and not less reasonable than any other. Now let us go on. Were you never here before, madam?\"\n\n\"Never, sir.\"\n\n\"Indeed! Have you yet honoured the Upper Rooms?\"\n\n\"Yes, sir, I was there last Monday.\"\n\n\"Have you been to the theatre?\"\n\n\"Yes, sir, I was at the play on Tuesday.\"\n\n\"To the concert?\"\n\n\"Yes, sir, on Wednesday.\"\n\n\"And are you altogether pleased with Bath?\"\n\n\"Yes\u2014I like it very well.\"\n\n\"Now I must give one smirk, and then we may be rational again.\" Catherine turned away her head, not knowing whether she might venture to laugh. \"I see what you think of me,\" said he gravely\u2014\"I shall make but a poor figure in your journal tomorrow.\"\n\n\"My journal!\"\n\n\"Yes, I know exactly what you will say: Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings\u2014plain black shoes\u2014appeared to much advantage; but was strangely harassed by a queer, half-witted man, who would make me dance with him, and distressed me by his nonsense.\"\n\n\"Indeed I shall say no such thing.\"\n\n\"Shall I tell you what you ought to say?\"\n\n\"If you please.\"\n\n\"I danced with a very agreeable young man, introduced by Mr. King; had a great deal of conversation with him\u2014seems a most extraordinary genius\u2014hope I may know more of him. That, madam, is what you ought to say.\"\n\n\"But perhaps I keep no journal.\"\n\n\"Perhaps you are not sitting at this moment next to a partner who can read your thoughts.\"\n\n- Excerpt from Northanger Abbey by Jane Austen (1817)",
         "text": "In the passage, Catherine responds to Mr. Tilney's description of her journal with:",
         "options": [
             "delight and amusement.",
@@ -1431,13 +1475,13 @@ const ACT_QUESTIONS1 = [
             "polite but firm denial.",
             "embarrassment and confusion."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"embarrassment and confusion.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 103,
         "section": "reading",
         "topic": "Literary Narrative",
-        "passage": "PASSAGE I: Literary Narrative\n\nEvery morning now brought its regular duties\u2014shops were to be visited; some new part of the town to be looked at; and the pump-room to be attended, where they paraded up and down for an hour, looking at everybody and speaking to no one. The wish of a numerous acquaintance in Bath was still uppermost with Mrs. Allen, and she repeated it after every fresh proof, which every morning brought, of her knowing nobody at all.\n\nThey made their appearance in the Lower Rooms; and here fortune was more favourable to our heroine. The master of the ceremonies introduced to her a very gentlemanlike young man as a partner; his name was Tilney. He seemed to be about four or five and twenty, was rather tall, had a pleasing countenance, a very intelligent and lively eye, and, if not quite handsome, was very near it. His address was good, and Catherine felt herself in high luck. There was little leisure for speaking while they danced; but when they were seated at tea, she found him as agreeable as she had already given him credit for being. He talked with fluency and spirit\u2014and there was an archness and pleasantry in his manner which interested, though it was hardly understood by her. After chatting some time on such matters as naturally arose from the objects around them, he suddenly addressed her with\u2014\"I have hitherto been very remiss, madam, in the proper attentions of a partner here; I have not yet asked you how long you have been in Bath; whether you were ever here before; whether you have been at the Upper Rooms, the theatre, and the concert; and how you like the place altogether. I have been very negligent\u2014but are you now at leisure to satisfy me in these particulars? If you are I will begin directly.\"\n\n\"You need not give yourself that trouble, sir.\"\n\n\"No trouble, I assure you, madam.\" Then forming his features into a set smile, and affectedly softening his voice, he added, with a simpering air, \"Have you been long in Bath, madam?\"\n\n\"About a week, sir,\" replied Catherine, trying not to laugh.\n\n\"Really!\" with affected astonishment.\n\n\"Why should you be surprised, sir?\"\n\n\"Why, indeed!\" said he, in his natural tone. \"But some emotion must appear to be raised by your reply, and surprise is more easily assumed, and not less reasonable than any other. Now let us go on. Were you never here before, madam?\"\n\n\"Never, sir.\"\n\n\"Indeed! Have you yet honoured the Upper Rooms?\"\n\n\"Yes, sir, I was there last Monday.\"\n\n\"Have you been to the theatre?\"\n\n\"Yes, sir, I was at the play on Tuesday.\"\n\n\"To the concert?\"\n\n\"Yes, sir, on Wednesday.\"\n\n\"And are you altogether pleased with Bath?\"\n\n\"Yes\u2014I like it very well.\"\n\n\"Now I must give one smirk, and then we may be rational again.\" Catherine turned away her head, not knowing whether she might venture to laugh. \"I see what you think of me,\" said he gravely\u2014\"I shall make but a poor figure in your journal tomorrow.\"\n\n\"My journal!\"\n\n\"Yes, I know exactly what you will say: Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings\u2014plain black shoes\u2014appeared to much advantage; but was strangely harassed by a queer, half-witted man, who would make me dance with him, and distressed me by his nonsense.\"\n\n\"Indeed I shall say no such thing.\"\n\n\"Shall I tell you what you ought to say?\"\n\n\"If you please.\"\n\n\"I danced with a very agreeable young man, introduced by Mr. King; had a great deal of conversation with him\u2014seems a most extraordinary genius\u2014hope I may know more of him. That, madam, is what you ought to say.\"\n\n\"But perhaps I keep no journal.\"\n\n\"Perhaps you are not sitting at this moment next to a partner who can read your thoughts.\"\n\n- Excerpt from Northanger Abbey by Jane Austen (1817)",
         "text": "It can be inferred from the dialogue that Mr. Tilney believes journals are primarily used to:",
         "options": [
             "record accurate historical events.",
@@ -1445,13 +1489,13 @@ const ACT_QUESTIONS1 = [
             "record personal impressions and details of social events.",
             "improve writing and descriptive skills."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"express deep philosophical thoughts.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 104,
         "section": "reading",
         "topic": "Literary Narrative",
-        "passage": "PASSAGE I: Literary Narrative\n\nEvery morning now brought its regular duties\u2014shops were to be visited; some new part of the town to be looked at; and the pump-room to be attended, where they paraded up and down for an hour, looking at everybody and speaking to no one. The wish of a numerous acquaintance in Bath was still uppermost with Mrs. Allen, and she repeated it after every fresh proof, which every morning brought, of her knowing nobody at all.\n\nThey made their appearance in the Lower Rooms; and here fortune was more favourable to our heroine. The master of the ceremonies introduced to her a very gentlemanlike young man as a partner; his name was Tilney. He seemed to be about four or five and twenty, was rather tall, had a pleasing countenance, a very intelligent and lively eye, and, if not quite handsome, was very near it. His address was good, and Catherine felt herself in high luck. There was little leisure for speaking while they danced; but when they were seated at tea, she found him as agreeable as she had already given him credit for being. He talked with fluency and spirit\u2014and there was an archness and pleasantry in his manner which interested, though it was hardly understood by her. After chatting some time on such matters as naturally arose from the objects around them, he suddenly addressed her with\u2014\"I have hitherto been very remiss, madam, in the proper attentions of a partner here; I have not yet asked you how long you have been in Bath; whether you were ever here before; whether you have been at the Upper Rooms, the theatre, and the concert; and how you like the place altogether. I have been very negligent\u2014but are you now at leisure to satisfy me in these particulars? If you are I will begin directly.\"\n\n\"You need not give yourself that trouble, sir.\"\n\n\"No trouble, I assure you, madam.\" Then forming his features into a set smile, and affectedly softening his voice, he added, with a simpering air, \"Have you been long in Bath, madam?\"\n\n\"About a week, sir,\" replied Catherine, trying not to laugh.\n\n\"Really!\" with affected astonishment.\n\n\"Why should you be surprised, sir?\"\n\n\"Why, indeed!\" said he, in his natural tone. \"But some emotion must appear to be raised by your reply, and surprise is more easily assumed, and not less reasonable than any other. Now let us go on. Were you never here before, madam?\"\n\n\"Never, sir.\"\n\n\"Indeed! Have you yet honoured the Upper Rooms?\"\n\n\"Yes, sir, I was there last Monday.\"\n\n\"Have you been to the theatre?\"\n\n\"Yes, sir, I was at the play on Tuesday.\"\n\n\"To the concert?\"\n\n\"Yes, sir, on Wednesday.\"\n\n\"And are you altogether pleased with Bath?\"\n\n\"Yes\u2014I like it very well.\"\n\n\"Now I must give one smirk, and then we may be rational again.\" Catherine turned away her head, not knowing whether she might venture to laugh. \"I see what you think of me,\" said he gravely\u2014\"I shall make but a poor figure in your journal tomorrow.\"\n\n\"My journal!\"\n\n\"Yes, I know exactly what you will say: Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings\u2014plain black shoes\u2014appeared to much advantage; but was strangely harassed by a queer, half-witted man, who would make me dance with him, and distressed me by his nonsense.\"\n\n\"Indeed I shall say no such thing.\"\n\n\"Shall I tell you what you ought to say?\"\n\n\"If you please.\"\n\n\"I danced with a very agreeable young man, introduced by Mr. King; had a great deal of conversation with him\u2014seems a most extraordinary genius\u2014hope I may know more of him. That, madam, is what you ought to say.\"\n\n\"But perhaps I keep no journal.\"\n\n\"Perhaps you are not sitting at this moment next to a partner who can read your thoughts.\"\n\n- Excerpt from Northanger Abbey by Jane Austen (1817)",
         "text": "Catherine's reaction to Mr. Tilney's teasing can best be described as:",
         "options": [
             "openly critical and dismissive.",
@@ -1459,13 +1503,13 @@ const ACT_QUESTIONS1 = [
             "confused and uncomprehending.",
             "amused and trying to maintain decorum."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"amused and trying to maintain decorum.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 105,
         "section": "reading",
         "topic": "Social Science",
-        "passage": "PASSAGE II: Social Science\n\nThe state of Ch'in had never been so closely associated with the feudal communities of the rest of China as the other feudal states. A great part of its population, including the ruling class, was not purely Chinese but contained an admixture of Turks and Tibetans. The other Chinese even called Ch'in a \"barbarian state\", and the foreign influence was, indeed, unceasing. This was a favourable soil for the overcoming of feudalism, and the process was furthered by factors which were leading to a change in the social structure of China. Especially the recruitment of the whole population, including the peasantry, for war was entirely in the interest of the influential nomad fighting peoples within the state. About 250 B.C., Ch'in was not only one of the economically strongest among the feudal states, but had already made an end of its own feudal system.\n\nEvery feudal system harbours some seeds of a bureaucratic system of administration: feudal lords have their personal servants who are not recruited from the nobility, but who by their easy access to the lord can easily gain importance. They may, for instance, be put in charge of estates, workshops, and other properties of the lord and thus acquire experience in administration and an efficiency which are obviously of advantage to the lord. When Chinese lords of the preceding period, with the help of these administrative helpers, had succeeded in expanding their power, they went a step further: they placed the newly won territories not in the hands of new feudal lords, but under the administration of their own officials.\n\nIn Ch'in, this process was carried out systematically. There was another factor: Ch'in was a country with relatively low population, and it could absorb many thousands of peasants from other states. These immigrated peasants were given land, which they held as free property, paying taxes directly to the state. In this way, Ch'in built up a free peasantry, which was not subject to any feudal lord. This was a severe blow to the feudal nobility, but it brought large revenues to the state, and it also created a large class of free soldiers.\n\nWith this new socio-economic organization, Ch'in grew increasingly powerful. The other feudal states began to fear the expansionist ambitions of Ch'in, which eventually led to the unification of China under the first Emperor of the Ch'in Dynasty.\n\n- Historical Analysis of the State of Ch'in",
         "text": "The main idea of the passage is that Ch'in:",
         "options": [
             "was a barbarian state that failed to adopt Chinese culture.",
@@ -1473,27 +1517,27 @@ const ACT_QUESTIONS1 = [
             "developed a unique socio-economic organization that allowed it to overcome feudalism and grow powerful.",
             "retained a strict feudal system longer than any other Chinese state."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"was a barbarian state that failed to adopt Chinese culture.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 106,
         "section": "reading",
         "topic": "Social Science",
-        "passage": "PASSAGE II: Social Science\n\nThe state of Ch'in had never been so closely associated with the feudal communities of the rest of China as the other feudal states. A great part of its population, including the ruling class, was not purely Chinese but contained an admixture of Turks and Tibetans. The other Chinese even called Ch'in a \"barbarian state\", and the foreign influence was, indeed, unceasing. This was a favourable soil for the overcoming of feudalism, and the process was furthered by factors which were leading to a change in the social structure of China. Especially the recruitment of the whole population, including the peasantry, for war was entirely in the interest of the influential nomad fighting peoples within the state. About 250 B.C., Ch'in was not only one of the economically strongest among the feudal states, but had already made an end of its own feudal system.\n\nEvery feudal system harbours some seeds of a bureaucratic system of administration: feudal lords have their personal servants who are not recruited from the nobility, but who by their easy access to the lord can easily gain importance. They may, for instance, be put in charge of estates, workshops, and other properties of the lord and thus acquire experience in administration and an efficiency which are obviously of advantage to the lord. When Chinese lords of the preceding period, with the help of these administrative helpers, had succeeded in expanding their power, they went a step further: they placed the newly won territories not in the hands of new feudal lords, but under the administration of their own officials.\n\nIn Ch'in, this process was carried out systematically. There was another factor: Ch'in was a country with relatively low population, and it could absorb many thousands of peasants from other states. These immigrated peasants were given land, which they held as free property, paying taxes directly to the state. In this way, Ch'in built up a free peasantry, which was not subject to any feudal lord. This was a severe blow to the feudal nobility, but it brought large revenues to the state, and it also created a large class of free soldiers.\n\nWith this new socio-economic organization, Ch'in grew increasingly powerful. The other feudal states began to fear the expansionist ambitions of Ch'in, which eventually led to the unification of China under the first Emperor of the Ch'in Dynasty.\n\n- Historical Analysis of the State of Ch'in",
-        "text": "It can be inferred from the passage that Li Pu-wei brought his prot\u00e9g\u00e9 to Ch'in because:",
+        "text": "It can be inferred from the passage that Li Pu-wei brought his protégé to Ch'in because:",
         "options": [
             "the state of Ch'in was a key leader in the change from feudal to bureaucratic system.",
             "he felt that the state of Ch'in would be a favorable environment for his political ambitions.",
             "he was exiled from Chou and had no other choice.",
             "he wanted to help the nomadic tribes in Ch'in."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"the state of Ch'in was a key leader in the change from feudal to bureaucratic system.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 107,
         "section": "reading",
         "topic": "Social Science",
-        "passage": "PASSAGE II: Social Science\n\nThe state of Ch'in had never been so closely associated with the feudal communities of the rest of China as the other feudal states. A great part of its population, including the ruling class, was not purely Chinese but contained an admixture of Turks and Tibetans. The other Chinese even called Ch'in a \"barbarian state\", and the foreign influence was, indeed, unceasing. This was a favourable soil for the overcoming of feudalism, and the process was furthered by factors which were leading to a change in the social structure of China. Especially the recruitment of the whole population, including the peasantry, for war was entirely in the interest of the influential nomad fighting peoples within the state. About 250 B.C., Ch'in was not only one of the economically strongest among the feudal states, but had already made an end of its own feudal system.\n\nEvery feudal system harbours some seeds of a bureaucratic system of administration: feudal lords have their personal servants who are not recruited from the nobility, but who by their easy access to the lord can easily gain importance. They may, for instance, be put in charge of estates, workshops, and other properties of the lord and thus acquire experience in administration and an efficiency which are obviously of advantage to the lord. When Chinese lords of the preceding period, with the help of these administrative helpers, had succeeded in expanding their power, they went a step further: they placed the newly won territories not in the hands of new feudal lords, but under the administration of their own officials.\n\nIn Ch'in, this process was carried out systematically. There was another factor: Ch'in was a country with relatively low population, and it could absorb many thousands of peasants from other states. These immigrated peasants were given land, which they held as free property, paying taxes directly to the state. In this way, Ch'in built up a free peasantry, which was not subject to any feudal lord. This was a severe blow to the feudal nobility, but it brought large revenues to the state, and it also created a large class of free soldiers.\n\nWith this new socio-economic organization, Ch'in grew increasingly powerful. The other feudal states began to fear the expansionist ambitions of Ch'in, which eventually led to the unification of China under the first Emperor of the Ch'in Dynasty.\n\n- Historical Analysis of the State of Ch'in",
         "text": "The passage suggests that the recruitment of the peasantry for war was in the interest of:",
         "options": [
             "the feudal nobility who wanted to protect their estates.",
@@ -1501,13 +1545,13 @@ const ACT_QUESTIONS1 = [
             "the nomadic fighting peoples within the state who held influence.",
             "the emperors of the Han dynasty."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"the nomadic fighting peoples within the state who held influence.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 108,
         "section": "reading",
         "topic": "Social Science",
-        "passage": "PASSAGE II: Social Science\n\nThe state of Ch'in had never been so closely associated with the feudal communities of the rest of China as the other feudal states. A great part of its population, including the ruling class, was not purely Chinese but contained an admixture of Turks and Tibetans. The other Chinese even called Ch'in a \"barbarian state\", and the foreign influence was, indeed, unceasing. This was a favourable soil for the overcoming of feudalism, and the process was furthered by factors which were leading to a change in the social structure of China. Especially the recruitment of the whole population, including the peasantry, for war was entirely in the interest of the influential nomad fighting peoples within the state. About 250 B.C., Ch'in was not only one of the economically strongest among the feudal states, but had already made an end of its own feudal system.\n\nEvery feudal system harbours some seeds of a bureaucratic system of administration: feudal lords have their personal servants who are not recruited from the nobility, but who by their easy access to the lord can easily gain importance. They may, for instance, be put in charge of estates, workshops, and other properties of the lord and thus acquire experience in administration and an efficiency which are obviously of advantage to the lord. When Chinese lords of the preceding period, with the help of these administrative helpers, had succeeded in expanding their power, they went a step further: they placed the newly won territories not in the hands of new feudal lords, but under the administration of their own officials.\n\nIn Ch'in, this process was carried out systematically. There was another factor: Ch'in was a country with relatively low population, and it could absorb many thousands of peasants from other states. These immigrated peasants were given land, which they held as free property, paying taxes directly to the state. In this way, Ch'in built up a free peasantry, which was not subject to any feudal lord. This was a severe blow to the feudal nobility, but it brought large revenues to the state, and it also created a large class of free soldiers.\n\nWith this new socio-economic organization, Ch'in grew increasingly powerful. The other feudal states began to fear the expansionist ambitions of Ch'in, which eventually led to the unification of China under the first Emperor of the Ch'in Dynasty.\n\n- Historical Analysis of the State of Ch'in",
         "text": "Which of the following best describes the 'seeds of a bureaucratic system' mentioned in the second paragraph?",
         "options": [
             "the establishment of free peasant property.",
@@ -1515,13 +1559,13 @@ const ACT_QUESTIONS1 = [
             "the use of personal servants of non-noble origin in administration.",
             "the creation of tax laws by the feudal lords."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"the creation of tax laws by the feudal lords.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 109,
         "section": "reading",
         "topic": "Social Science",
-        "passage": "PASSAGE II: Social Science\n\nThe state of Ch'in had never been so closely associated with the feudal communities of the rest of China as the other feudal states. A great part of its population, including the ruling class, was not purely Chinese but contained an admixture of Turks and Tibetans. The other Chinese even called Ch'in a \"barbarian state\", and the foreign influence was, indeed, unceasing. This was a favourable soil for the overcoming of feudalism, and the process was furthered by factors which were leading to a change in the social structure of China. Especially the recruitment of the whole population, including the peasantry, for war was entirely in the interest of the influential nomad fighting peoples within the state. About 250 B.C., Ch'in was not only one of the economically strongest among the feudal states, but had already made an end of its own feudal system.\n\nEvery feudal system harbours some seeds of a bureaucratic system of administration: feudal lords have their personal servants who are not recruited from the nobility, but who by their easy access to the lord can easily gain importance. They may, for instance, be put in charge of estates, workshops, and other properties of the lord and thus acquire experience in administration and an efficiency which are obviously of advantage to the lord. When Chinese lords of the preceding period, with the help of these administrative helpers, had succeeded in expanding their power, they went a step further: they placed the newly won territories not in the hands of new feudal lords, but under the administration of their own officials.\n\nIn Ch'in, this process was carried out systematically. There was another factor: Ch'in was a country with relatively low population, and it could absorb many thousands of peasants from other states. These immigrated peasants were given land, which they held as free property, paying taxes directly to the state. In this way, Ch'in built up a free peasantry, which was not subject to any feudal lord. This was a severe blow to the feudal nobility, but it brought large revenues to the state, and it also created a large class of free soldiers.\n\nWith this new socio-economic organization, Ch'in grew increasingly powerful. The other feudal states began to fear the expansionist ambitions of Ch'in, which eventually led to the unification of China under the first Emperor of the Ch'in Dynasty.\n\n- Historical Analysis of the State of Ch'in",
         "text": "The passage indicates that Ch'in was able to attract peasants from other states because:",
         "options": [
             "other states were suffering from severe overpopulation.",
@@ -1529,13 +1573,13 @@ const ACT_QUESTIONS1 = [
             "Ch'in was a country with a relatively low population and land was available.",
             "Ch'in conquered those states and forced the peasants to move."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"other states were suffering from severe overpopulation.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 110,
         "section": "reading",
         "topic": "Social Science",
-        "passage": "PASSAGE II: Social Science\n\nThe state of Ch'in had never been so closely associated with the feudal communities of the rest of China as the other feudal states. A great part of its population, including the ruling class, was not purely Chinese but contained an admixture of Turks and Tibetans. The other Chinese even called Ch'in a \"barbarian state\", and the foreign influence was, indeed, unceasing. This was a favourable soil for the overcoming of feudalism, and the process was furthered by factors which were leading to a change in the social structure of China. Especially the recruitment of the whole population, including the peasantry, for war was entirely in the interest of the influential nomad fighting peoples within the state. About 250 B.C., Ch'in was not only one of the economically strongest among the feudal states, but had already made an end of its own feudal system.\n\nEvery feudal system harbours some seeds of a bureaucratic system of administration: feudal lords have their personal servants who are not recruited from the nobility, but who by their easy access to the lord can easily gain importance. They may, for instance, be put in charge of estates, workshops, and other properties of the lord and thus acquire experience in administration and an efficiency which are obviously of advantage to the lord. When Chinese lords of the preceding period, with the help of these administrative helpers, had succeeded in expanding their power, they went a step further: they placed the newly won territories not in the hands of new feudal lords, but under the administration of their own officials.\n\nIn Ch'in, this process was carried out systematically. There was another factor: Ch'in was a country with relatively low population, and it could absorb many thousands of peasants from other states. These immigrated peasants were given land, which they held as free property, paying taxes directly to the state. In this way, Ch'in built up a free peasantry, which was not subject to any feudal lord. This was a severe blow to the feudal nobility, but it brought large revenues to the state, and it also created a large class of free soldiers.\n\nWith this new socio-economic organization, Ch'in grew increasingly powerful. The other feudal states began to fear the expansionist ambitions of Ch'in, which eventually led to the unification of China under the first Emperor of the Ch'in Dynasty.\n\n- Historical Analysis of the State of Ch'in",
         "text": "The creation of a free peasantry in Ch'in had which of the following effects?",
         "options": [
             "It strengthened the power of the feudal nobility.",
@@ -1543,13 +1587,13 @@ const ACT_QUESTIONS1 = [
             "It dealt a severe blow to the feudal nobility and increased state revenues.",
             "It led to a decrease in the number of soldiers."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"It decreased the tax revenues of the state.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 111,
         "section": "reading",
         "topic": "Social Science",
-        "passage": "PASSAGE II: Social Science\n\nThe state of Ch'in had never been so closely associated with the feudal communities of the rest of China as the other feudal states. A great part of its population, including the ruling class, was not purely Chinese but contained an admixture of Turks and Tibetans. The other Chinese even called Ch'in a \"barbarian state\", and the foreign influence was, indeed, unceasing. This was a favourable soil for the overcoming of feudalism, and the process was furthered by factors which were leading to a change in the social structure of China. Especially the recruitment of the whole population, including the peasantry, for war was entirely in the interest of the influential nomad fighting peoples within the state. About 250 B.C., Ch'in was not only one of the economically strongest among the feudal states, but had already made an end of its own feudal system.\n\nEvery feudal system harbours some seeds of a bureaucratic system of administration: feudal lords have their personal servants who are not recruited from the nobility, but who by their easy access to the lord can easily gain importance. They may, for instance, be put in charge of estates, workshops, and other properties of the lord and thus acquire experience in administration and an efficiency which are obviously of advantage to the lord. When Chinese lords of the preceding period, with the help of these administrative helpers, had succeeded in expanding their power, they went a step further: they placed the newly won territories not in the hands of new feudal lords, but under the administration of their own officials.\n\nIn Ch'in, this process was carried out systematically. There was another factor: Ch'in was a country with relatively low population, and it could absorb many thousands of peasants from other states. These immigrated peasants were given land, which they held as free property, paying taxes directly to the state. In this way, Ch'in built up a free peasantry, which was not subject to any feudal lord. This was a severe blow to the feudal nobility, but it brought large revenues to the state, and it also created a large class of free soldiers.\n\nWith this new socio-economic organization, Ch'in grew increasingly powerful. The other feudal states began to fear the expansionist ambitions of Ch'in, which eventually led to the unification of China under the first Emperor of the Ch'in Dynasty.\n\n- Historical Analysis of the State of Ch'in",
         "text": "According to the passage, the ruling class of Ch'in:",
         "options": [
             "was purely Chinese in origin.",
@@ -1557,13 +1601,13 @@ const ACT_QUESTIONS1 = [
             "was composed entirely of nomadic invaders.",
             "was recruited from the free peasantry."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"was composed entirely of nomadic invaders.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 112,
         "section": "reading",
         "topic": "Social Science",
-        "passage": "PASSAGE II: Social Science\n\nThe state of Ch'in had never been so closely associated with the feudal communities of the rest of China as the other feudal states. A great part of its population, including the ruling class, was not purely Chinese but contained an admixture of Turks and Tibetans. The other Chinese even called Ch'in a \"barbarian state\", and the foreign influence was, indeed, unceasing. This was a favourable soil for the overcoming of feudalism, and the process was furthered by factors which were leading to a change in the social structure of China. Especially the recruitment of the whole population, including the peasantry, for war was entirely in the interest of the influential nomad fighting peoples within the state. About 250 B.C., Ch'in was not only one of the economically strongest among the feudal states, but had already made an end of its own feudal system.\n\nEvery feudal system harbours some seeds of a bureaucratic system of administration: feudal lords have their personal servants who are not recruited from the nobility, but who by their easy access to the lord can easily gain importance. They may, for instance, be put in charge of estates, workshops, and other properties of the lord and thus acquire experience in administration and an efficiency which are obviously of advantage to the lord. When Chinese lords of the preceding period, with the help of these administrative helpers, had succeeded in expanding their power, they went a step further: they placed the newly won territories not in the hands of new feudal lords, but under the administration of their own officials.\n\nIn Ch'in, this process was carried out systematically. There was another factor: Ch'in was a country with relatively low population, and it could absorb many thousands of peasants from other states. These immigrated peasants were given land, which they held as free property, paying taxes directly to the state. In this way, Ch'in built up a free peasantry, which was not subject to any feudal lord. This was a severe blow to the feudal nobility, but it brought large revenues to the state, and it also created a large class of free soldiers.\n\nWith this new socio-economic organization, Ch'in grew increasingly powerful. The other feudal states began to fear the expansionist ambitions of Ch'in, which eventually led to the unification of China under the first Emperor of the Ch'in Dynasty.\n\n- Historical Analysis of the State of Ch'in",
         "text": "The phrase 'barbarian state' was used by other Chinese to describe Ch'in because:",
         "options": [
             "Ch'in had no written language.",
@@ -1571,13 +1615,13 @@ const ACT_QUESTIONS1 = [
             "Ch'in's population and ruling class had foreign, non-Chinese admixtures.",
             "Ch'in's soldiers were exceptionally cruel in war."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"Ch'in refused to pay taxes to the emperor.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 113,
         "section": "reading",
         "topic": "Social Science",
-        "passage": "PASSAGE II: Social Science\n\nThe state of Ch'in had never been so closely associated with the feudal communities of the rest of China as the other feudal states. A great part of its population, including the ruling class, was not purely Chinese but contained an admixture of Turks and Tibetans. The other Chinese even called Ch'in a \"barbarian state\", and the foreign influence was, indeed, unceasing. This was a favourable soil for the overcoming of feudalism, and the process was furthered by factors which were leading to a change in the social structure of China. Especially the recruitment of the whole population, including the peasantry, for war was entirely in the interest of the influential nomad fighting peoples within the state. About 250 B.C., Ch'in was not only one of the economically strongest among the feudal states, but had already made an end of its own feudal system.\n\nEvery feudal system harbours some seeds of a bureaucratic system of administration: feudal lords have their personal servants who are not recruited from the nobility, but who by their easy access to the lord can easily gain importance. They may, for instance, be put in charge of estates, workshops, and other properties of the lord and thus acquire experience in administration and an efficiency which are obviously of advantage to the lord. When Chinese lords of the preceding period, with the help of these administrative helpers, had succeeded in expanding their power, they went a step further: they placed the newly won territories not in the hands of new feudal lords, but under the administration of their own officials.\n\nIn Ch'in, this process was carried out systematically. There was another factor: Ch'in was a country with relatively low population, and it could absorb many thousands of peasants from other states. These immigrated peasants were given land, which they held as free property, paying taxes directly to the state. In this way, Ch'in built up a free peasantry, which was not subject to any feudal lord. This was a severe blow to the feudal nobility, but it brought large revenues to the state, and it also created a large class of free soldiers.\n\nWith this new socio-economic organization, Ch'in grew increasingly powerful. The other feudal states began to fear the expansionist ambitions of Ch'in, which eventually led to the unification of China under the first Emperor of the Ch'in Dynasty.\n\n- Historical Analysis of the State of Ch'in",
         "text": "The passage implies that the transition away from feudalism in China was:",
         "options": [
             "a sudden event that occurred in 250 B.C.",
@@ -1585,13 +1629,13 @@ const ACT_QUESTIONS1 = [
             "aided by social changes, peasant recruitment, and administrative innovations.",
             "completed without the influence of foreign populations."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"completed without the influence of foreign populations.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 114,
         "section": "reading",
         "topic": "Humanities",
-        "passage": "PASSAGE III: Humanities\n\nA great dramatist, as Shakespeare was, could not but have felt very much hampered at being obliged continually to interrupt the progress of a play in order to send on someone to explain to the audience that the scene was to be changed to a particular place on the entrance of a particular character, and after his exit to somewhere else; that the stage was to represent the deck of a ship in a storm, or the interior of a Greek temple, or the streets of a certain town, to all of which inartistic devices Shakespeare is reduced, and for which he always amply apologizes.\n\nBesides this clumsy method, Shakespeare had two other substitutes for scenery\u2014the hanging out of a placard, and his descriptions. The first of these could hardly have satisfied his passion for picturesqueness and his feeling for beauty, and certainly did not satisfy the dramatic critic of his day. But as regards the description, to those of us who look on Shakespeare not merely as a playwright but as a poet, and who find in his plays some of the most beautiful poetry in the language, these descriptions are a source of constant delight.\n\nThey are, indeed, images which he desires the audience to see, and which he places before them with all the power of his poetic genius. He does not merely tell them that it is morning or evening; he makes them feel the morning air and see the evening shadows. In Romeo and Juliet, the dawn is not merely described; it is felt: \"Look, love, what envious streaks / Do lace the severing clouds in yonder east: / Night's candles are burnt out, and jocund day / Stands tiptoe on the misty mountain tops.\"\n\nThis is not the description of a scene-painter; it is the vision of a poet. And it is because Shakespeare's plays are filled with such visions that they have survived and will survive when all the scenery of the modern stage has been forgotten.\n\n- Shakespeare's Scenery and Poetic Vision",
         "text": "Which of the following best summarizes the main problems the author sees for Shakespeare's scenery?",
         "options": [
             "Actors were not always adept at delivering Shakespeare's descriptive lines and stages were too small to support large sets.",
@@ -1599,13 +1643,13 @@ const ACT_QUESTIONS1 = [
             "Theater-goers did not appreciate elaborate sets and actors were not trained to perform with scenery.",
             "Shakespeare was forced to use inartistic devices, like sending on an actor to explain scene changes or using placards."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"Theater-goers did not appreciate elaborate sets and actors were not trained to perform with scenery.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 115,
         "section": "reading",
         "topic": "Humanities",
-        "passage": "PASSAGE III: Humanities\n\nA great dramatist, as Shakespeare was, could not but have felt very much hampered at being obliged continually to interrupt the progress of a play in order to send on someone to explain to the audience that the scene was to be changed to a particular place on the entrance of a particular character, and after his exit to somewhere else; that the stage was to represent the deck of a ship in a storm, or the interior of a Greek temple, or the streets of a certain town, to all of which inartistic devices Shakespeare is reduced, and for which he always amply apologizes.\n\nBesides this clumsy method, Shakespeare had two other substitutes for scenery\u2014the hanging out of a placard, and his descriptions. The first of these could hardly have satisfied his passion for picturesqueness and his feeling for beauty, and certainly did not satisfy the dramatic critic of his day. But as regards the description, to those of us who look on Shakespeare not merely as a playwright but as a poet, and who find in his plays some of the most beautiful poetry in the language, these descriptions are a source of constant delight.\n\nThey are, indeed, images which he desires the audience to see, and which he places before them with all the power of his poetic genius. He does not merely tell them that it is morning or evening; he makes them feel the morning air and see the evening shadows. In Romeo and Juliet, the dawn is not merely described; it is felt: \"Look, love, what envious streaks / Do lace the severing clouds in yonder east: / Night's candles are burnt out, and jocund day / Stands tiptoe on the misty mountain tops.\"\n\nThis is not the description of a scene-painter; it is the vision of a poet. And it is because Shakespeare's plays are filled with such visions that they have survived and will survive when all the scenery of the modern stage has been forgotten.\n\n- Shakespeare's Scenery and Poetic Vision",
         "text": "It can be inferred from the passage that the author believes Shakespeare's descriptions:",
         "options": [
             "were a poor substitute for real scenery.",
@@ -1613,13 +1657,13 @@ const ACT_QUESTIONS1 = [
             "were not appreciated by the critics of his own day.",
             "distract from the dramatic action of the plays."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"were a poor substitute for real scenery.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 116,
         "section": "reading",
         "topic": "Humanities",
-        "passage": "PASSAGE III: Humanities\n\nA great dramatist, as Shakespeare was, could not but have felt very much hampered at being obliged continually to interrupt the progress of a play in order to send on someone to explain to the audience that the scene was to be changed to a particular place on the entrance of a particular character, and after his exit to somewhere else; that the stage was to represent the deck of a ship in a storm, or the interior of a Greek temple, or the streets of a certain town, to all of which inartistic devices Shakespeare is reduced, and for which he always amply apologizes.\n\nBesides this clumsy method, Shakespeare had two other substitutes for scenery\u2014the hanging out of a placard, and his descriptions. The first of these could hardly have satisfied his passion for picturesqueness and his feeling for beauty, and certainly did not satisfy the dramatic critic of his day. But as regards the description, to those of us who look on Shakespeare not merely as a playwright but as a poet, and who find in his plays some of the most beautiful poetry in the language, these descriptions are a source of constant delight.\n\nThey are, indeed, images which he desires the audience to see, and which he places before them with all the power of his poetic genius. He does not merely tell them that it is morning or evening; he makes them feel the morning air and see the evening shadows. In Romeo and Juliet, the dawn is not merely described; it is felt: \"Look, love, what envious streaks / Do lace the severing clouds in yonder east: / Night's candles are burnt out, and jocund day / Stands tiptoe on the misty mountain tops.\"\n\nThis is not the description of a scene-painter; it is the vision of a poet. And it is because Shakespeare's plays are filled with such visions that they have survived and will survive when all the scenery of the modern stage has been forgotten.\n\n- Shakespeare's Scenery and Poetic Vision",
         "text": "The author quotes the lines from Romeo and Juliet to demonstrate that Shakespeare's poetry:",
         "options": [
             "describes the scene in a realistic, scientific manner.",
@@ -1627,13 +1671,13 @@ const ACT_QUESTIONS1 = [
             "was written primarily to please the dramatic critics.",
             "is too elaborate for the modern stage."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"makes the audience feel the mood and see the scene through poetic vision.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 117,
         "section": "reading",
         "topic": "Humanities",
-        "passage": "PASSAGE III: Humanities\n\nA great dramatist, as Shakespeare was, could not but have felt very much hampered at being obliged continually to interrupt the progress of a play in order to send on someone to explain to the audience that the scene was to be changed to a particular place on the entrance of a particular character, and after his exit to somewhere else; that the stage was to represent the deck of a ship in a storm, or the interior of a Greek temple, or the streets of a certain town, to all of which inartistic devices Shakespeare is reduced, and for which he always amply apologizes.\n\nBesides this clumsy method, Shakespeare had two other substitutes for scenery\u2014the hanging out of a placard, and his descriptions. The first of these could hardly have satisfied his passion for picturesqueness and his feeling for beauty, and certainly did not satisfy the dramatic critic of his day. But as regards the description, to those of us who look on Shakespeare not merely as a playwright but as a poet, and who find in his plays some of the most beautiful poetry in the language, these descriptions are a source of constant delight.\n\nThey are, indeed, images which he desires the audience to see, and which he places before them with all the power of his poetic genius. He does not merely tell them that it is morning or evening; he makes them feel the morning air and see the evening shadows. In Romeo and Juliet, the dawn is not merely described; it is felt: \"Look, love, what envious streaks / Do lace the severing clouds in yonder east: / Night's candles are burnt out, and jocund day / Stands tiptoe on the misty mountain tops.\"\n\nThis is not the description of a scene-painter; it is the vision of a poet. And it is because Shakespeare's plays are filled with such visions that they have survived and will survive when all the scenery of the modern stage has been forgotten.\n\n- Shakespeare's Scenery and Poetic Vision",
         "text": "Which of the following best describes the author's attitude toward modern stage scenery?",
         "options": [
             "It is superior to the methods used in Shakespeare's day.",
@@ -1641,13 +1685,13 @@ const ACT_QUESTIONS1 = [
             "It is less important and less durable than the poetic vision of a great playwright.",
             "It is necessary for a modern audience to understand the plays."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"It is necessary for a modern audience to understand the plays.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 118,
         "section": "reading",
         "topic": "Humanities",
-        "passage": "PASSAGE III: Humanities\n\nA great dramatist, as Shakespeare was, could not but have felt very much hampered at being obliged continually to interrupt the progress of a play in order to send on someone to explain to the audience that the scene was to be changed to a particular place on the entrance of a particular character, and after his exit to somewhere else; that the stage was to represent the deck of a ship in a storm, or the interior of a Greek temple, or the streets of a certain town, to all of which inartistic devices Shakespeare is reduced, and for which he always amply apologizes.\n\nBesides this clumsy method, Shakespeare had two other substitutes for scenery\u2014the hanging out of a placard, and his descriptions. The first of these could hardly have satisfied his passion for picturesqueness and his feeling for beauty, and certainly did not satisfy the dramatic critic of his day. But as regards the description, to those of us who look on Shakespeare not merely as a playwright but as a poet, and who find in his plays some of the most beautiful poetry in the language, these descriptions are a source of constant delight.\n\nThey are, indeed, images which he desires the audience to see, and which he places before them with all the power of his poetic genius. He does not merely tell them that it is morning or evening; he makes them feel the morning air and see the evening shadows. In Romeo and Juliet, the dawn is not merely described; it is felt: \"Look, love, what envious streaks / Do lace the severing clouds in yonder east: / Night's candles are burnt out, and jocund day / Stands tiptoe on the misty mountain tops.\"\n\nThis is not the description of a scene-painter; it is the vision of a poet. And it is because Shakespeare's plays are filled with such visions that they have survived and will survive when all the scenery of the modern stage has been forgotten.\n\n- Shakespeare's Scenery and Poetic Vision",
         "text": "The term 'placard' in the second paragraph refers to a:",
         "options": [
             "type of costume worn by actors.",
@@ -1655,13 +1699,13 @@ const ACT_QUESTIONS1 = [
             "painted backdrop representing scenery.",
             "critique written by a dramatic critic."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"written sign indicating the location of the scene.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 119,
         "section": "reading",
         "topic": "Humanities",
-        "passage": "PASSAGE III: Humanities\n\nA great dramatist, as Shakespeare was, could not but have felt very much hampered at being obliged continually to interrupt the progress of a play in order to send on someone to explain to the audience that the scene was to be changed to a particular place on the entrance of a particular character, and after his exit to somewhere else; that the stage was to represent the deck of a ship in a storm, or the interior of a Greek temple, or the streets of a certain town, to all of which inartistic devices Shakespeare is reduced, and for which he always amply apologizes.\n\nBesides this clumsy method, Shakespeare had two other substitutes for scenery\u2014the hanging out of a placard, and his descriptions. The first of these could hardly have satisfied his passion for picturesqueness and his feeling for beauty, and certainly did not satisfy the dramatic critic of his day. But as regards the description, to those of us who look on Shakespeare not merely as a playwright but as a poet, and who find in his plays some of the most beautiful poetry in the language, these descriptions are a source of constant delight.\n\nThey are, indeed, images which he desires the audience to see, and which he places before them with all the power of his poetic genius. He does not merely tell them that it is morning or evening; he makes them feel the morning air and see the evening shadows. In Romeo and Juliet, the dawn is not merely described; it is felt: \"Look, love, what envious streaks / Do lace the severing clouds in yonder east: / Night's candles are burnt out, and jocund day / Stands tiptoe on the misty mountain tops.\"\n\nThis is not the description of a scene-painter; it is the vision of a poet. And it is because Shakespeare's plays are filled with such visions that they have survived and will survive when all the scenery of the modern stage has been forgotten.\n\n- Shakespeare's Scenery and Poetic Vision",
         "text": "The passage implies that the dramatic critics of Shakespeare's day:",
         "options": [
             "were not satisfied with the use of placards.",
@@ -1669,13 +1713,13 @@ const ACT_QUESTIONS1 = [
             "believed that Shakespeare was a poor poet.",
             "demanded that all plays have realistic scenery."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"believed that Shakespeare was a poor poet.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 120,
         "section": "reading",
         "topic": "Humanities",
-        "passage": "PASSAGE III: Humanities\n\nA great dramatist, as Shakespeare was, could not but have felt very much hampered at being obliged continually to interrupt the progress of a play in order to send on someone to explain to the audience that the scene was to be changed to a particular place on the entrance of a particular character, and after his exit to somewhere else; that the stage was to represent the deck of a ship in a storm, or the interior of a Greek temple, or the streets of a certain town, to all of which inartistic devices Shakespeare is reduced, and for which he always amply apologizes.\n\nBesides this clumsy method, Shakespeare had two other substitutes for scenery\u2014the hanging out of a placard, and his descriptions. The first of these could hardly have satisfied his passion for picturesqueness and his feeling for beauty, and certainly did not satisfy the dramatic critic of his day. But as regards the description, to those of us who look on Shakespeare not merely as a playwright but as a poet, and who find in his plays some of the most beautiful poetry in the language, these descriptions are a source of constant delight.\n\nThey are, indeed, images which he desires the audience to see, and which he places before them with all the power of his poetic genius. He does not merely tell them that it is morning or evening; he makes them feel the morning air and see the evening shadows. In Romeo and Juliet, the dawn is not merely described; it is felt: \"Look, love, what envious streaks / Do lace the severing clouds in yonder east: / Night's candles are burnt out, and jocund day / Stands tiptoe on the misty mountain tops.\"\n\nThis is not the description of a scene-painter; it is the vision of a poet. And it is because Shakespeare's plays are filled with such visions that they have survived and will survive when all the scenery of the modern stage has been forgotten.\n\n- Shakespeare's Scenery and Poetic Vision",
         "text": "The author claims that Shakespeare's plays have survived because they:",
         "options": [
             "were written in a simple, easy-to-understand language.",
@@ -1683,13 +1727,13 @@ const ACT_QUESTIONS1 = [
             "have been regularly performed on the modern stage with scenery.",
             "were supported by the royal court of his day."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"were written in a simple, easy-to-understand language.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 121,
         "section": "reading",
         "topic": "Humanities",
-        "passage": "PASSAGE III: Humanities\n\nA great dramatist, as Shakespeare was, could not but have felt very much hampered at being obliged continually to interrupt the progress of a play in order to send on someone to explain to the audience that the scene was to be changed to a particular place on the entrance of a particular character, and after his exit to somewhere else; that the stage was to represent the deck of a ship in a storm, or the interior of a Greek temple, or the streets of a certain town, to all of which inartistic devices Shakespeare is reduced, and for which he always amply apologizes.\n\nBesides this clumsy method, Shakespeare had two other substitutes for scenery\u2014the hanging out of a placard, and his descriptions. The first of these could hardly have satisfied his passion for picturesqueness and his feeling for beauty, and certainly did not satisfy the dramatic critic of his day. But as regards the description, to those of us who look on Shakespeare not merely as a playwright but as a poet, and who find in his plays some of the most beautiful poetry in the language, these descriptions are a source of constant delight.\n\nThey are, indeed, images which he desires the audience to see, and which he places before them with all the power of his poetic genius. He does not merely tell them that it is morning or evening; he makes them feel the morning air and see the evening shadows. In Romeo and Juliet, the dawn is not merely described; it is felt: \"Look, love, what envious streaks / Do lace the severing clouds in yonder east: / Night's candles are burnt out, and jocund day / Stands tiptoe on the misty mountain tops.\"\n\nThis is not the description of a scene-painter; it is the vision of a poet. And it is because Shakespeare's plays are filled with such visions that they have survived and will survive when all the scenery of the modern stage has been forgotten.\n\n- Shakespeare's Scenery and Poetic Vision",
         "text": "The quote 'jocund day / Stands tiptoe on the misty mountain tops' is an example of:",
         "options": [
             "personification.",
@@ -1697,13 +1741,13 @@ const ACT_QUESTIONS1 = [
             "scientific observation.",
             "alliteration."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"scientific observation.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 122,
         "section": "reading",
         "topic": "Humanities",
-        "passage": "PASSAGE III: Humanities\n\nA great dramatist, as Shakespeare was, could not but have felt very much hampered at being obliged continually to interrupt the progress of a play in order to send on someone to explain to the audience that the scene was to be changed to a particular place on the entrance of a particular character, and after his exit to somewhere else; that the stage was to represent the deck of a ship in a storm, or the interior of a Greek temple, or the streets of a certain town, to all of which inartistic devices Shakespeare is reduced, and for which he always amply apologizes.\n\nBesides this clumsy method, Shakespeare had two other substitutes for scenery\u2014the hanging out of a placard, and his descriptions. The first of these could hardly have satisfied his passion for picturesqueness and his feeling for beauty, and certainly did not satisfy the dramatic critic of his day. But as regards the description, to those of us who look on Shakespeare not merely as a playwright but as a poet, and who find in his plays some of the most beautiful poetry in the language, these descriptions are a source of constant delight.\n\nThey are, indeed, images which he desires the audience to see, and which he places before them with all the power of his poetic genius. He does not merely tell them that it is morning or evening; he makes them feel the morning air and see the evening shadows. In Romeo and Juliet, the dawn is not merely described; it is felt: \"Look, love, what envious streaks / Do lace the severing clouds in yonder east: / Night's candles are burnt out, and jocund day / Stands tiptoe on the misty mountain tops.\"\n\nThis is not the description of a scene-painter; it is the vision of a poet. And it is because Shakespeare's plays are filled with such visions that they have survived and will survive when all the scenery of the modern stage has been forgotten.\n\n- Shakespeare's Scenery and Poetic Vision",
         "text": "The author's distinction between a 'scene-painter' and a 'poet' is that:",
         "options": [
             "the poet creates a deeper, emotional vision while the scene-painter merely represents physical reality.",
@@ -1711,13 +1755,13 @@ const ACT_QUESTIONS1 = [
             "the poet is more restricted by the limitations of the stage.",
             "the scene-painter requires more training and skill."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"the poet creates a deeper, emotional vision while the scene-painter merely represents physical reality.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 123,
         "section": "reading",
         "topic": "Natural Science",
-        "passage": "PASSAGE IV: Natural Science\n\nLaughter is spontaneous, that is to say, the movements are not designed or directed by the conscious will. But in mankind, in proportion as individuals are trained in self-control, it is more or less completely under command, and in spite of the most urgent tendency of the automatic mechanism to enter upon the progressive series of movements which we distinguish as (1) smile, (2) broad smile or grin, (3) laugh, (4) loud laughter, (5) paroxysms of uncontrolled laughter, a man or woman can prevent all indication by muscular movement of a desire to laugh or even to smile.\n\nUsually laughter is excited by certain pleasurable emotions, and is to be regarded as an \"expression\" of such emotion just as certain movements and the flow of tears are an \"expression\" of the painful emotion of grief and physical suffering. It is interesting to see how far we can account for the strange movements of laughter as part of the inherited automatic mechanism of man. Why do we laugh? What is the advantage to the individual or the species of \"laughing\"? Why do we \"express\" our pleasurable emotion and why in this particular way?\n\nLaughter is primarily a social phenomenon. The example of the Veddas serves to reinforce the idea that joyful emotion is a primary cause of laughter. The Veddas are a primitive people of Ceylon who are said to be almost entirely devoid of laughter. When they do laugh, it is in response to some sudden, unexpected pleasure, such as a gift of food or a successful hunt.\n\nLaughter is also a physiological release. Being tickled should be considered an exception when discussing the primary causes of laughter because it is a direct physical stimulation of the nervous system rather than an emotional response. The physiological mechanism of tickling is still not fully understood, but it is clear that it is an automatic, reflex action.\n\n- Laughter as a Physiological and Social Phenomenon",
         "text": "Which of the following best describes the main purpose of this passage?",
         "options": [
             "to describe the social and physiological aspects of laughter.",
@@ -1725,13 +1769,13 @@ const ACT_QUESTIONS1 = [
             "to give a physical description of the process of laughing.",
             "to offer a philosophical reasoning for why we laugh."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"to offer a philosophical reasoning for why we laugh.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 124,
         "section": "reading",
         "topic": "Natural Science",
-        "passage": "PASSAGE IV: Natural Science\n\nLaughter is spontaneous, that is to say, the movements are not designed or directed by the conscious will. But in mankind, in proportion as individuals are trained in self-control, it is more or less completely under command, and in spite of the most urgent tendency of the automatic mechanism to enter upon the progressive series of movements which we distinguish as (1) smile, (2) broad smile or grin, (3) laugh, (4) loud laughter, (5) paroxysms of uncontrolled laughter, a man or woman can prevent all indication by muscular movement of a desire to laugh or even to smile.\n\nUsually laughter is excited by certain pleasurable emotions, and is to be regarded as an \"expression\" of such emotion just as certain movements and the flow of tears are an \"expression\" of the painful emotion of grief and physical suffering. It is interesting to see how far we can account for the strange movements of laughter as part of the inherited automatic mechanism of man. Why do we laugh? What is the advantage to the individual or the species of \"laughing\"? Why do we \"express\" our pleasurable emotion and why in this particular way?\n\nLaughter is primarily a social phenomenon. The example of the Veddas serves to reinforce the idea that joyful emotion is a primary cause of laughter. The Veddas are a primitive people of Ceylon who are said to be almost entirely devoid of laughter. When they do laugh, it is in response to some sudden, unexpected pleasure, such as a gift of food or a successful hunt.\n\nLaughter is also a physiological release. Being tickled should be considered an exception when discussing the primary causes of laughter because it is a direct physical stimulation of the nervous system rather than an emotional response. The physiological mechanism of tickling is still not fully understood, but it is clear that it is an automatic, reflex action.\n\n- Laughter as a Physiological and Social Phenomenon",
         "text": "The main idea of the first paragraph is that laughter:",
         "options": [
             "is entirely under conscious control at all times.",
@@ -1739,13 +1783,13 @@ const ACT_QUESTIONS1 = [
             "progresses directly from a smile to uncontrolled paroxysms.",
             "is more common in animals than in humans."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"is an involuntary, automatic mechanism that can, however, be suppressed through self-control.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 125,
         "section": "reading",
         "topic": "Natural Science",
-        "passage": "PASSAGE IV: Natural Science\n\nLaughter is spontaneous, that is to say, the movements are not designed or directed by the conscious will. But in mankind, in proportion as individuals are trained in self-control, it is more or less completely under command, and in spite of the most urgent tendency of the automatic mechanism to enter upon the progressive series of movements which we distinguish as (1) smile, (2) broad smile or grin, (3) laugh, (4) loud laughter, (5) paroxysms of uncontrolled laughter, a man or woman can prevent all indication by muscular movement of a desire to laugh or even to smile.\n\nUsually laughter is excited by certain pleasurable emotions, and is to be regarded as an \"expression\" of such emotion just as certain movements and the flow of tears are an \"expression\" of the painful emotion of grief and physical suffering. It is interesting to see how far we can account for the strange movements of laughter as part of the inherited automatic mechanism of man. Why do we laugh? What is the advantage to the individual or the species of \"laughing\"? Why do we \"express\" our pleasurable emotion and why in this particular way?\n\nLaughter is primarily a social phenomenon. The example of the Veddas serves to reinforce the idea that joyful emotion is a primary cause of laughter. The Veddas are a primitive people of Ceylon who are said to be almost entirely devoid of laughter. When they do laugh, it is in response to some sudden, unexpected pleasure, such as a gift of food or a successful hunt.\n\nLaughter is also a physiological release. Being tickled should be considered an exception when discussing the primary causes of laughter because it is a direct physical stimulation of the nervous system rather than an emotional response. The physiological mechanism of tickling is still not fully understood, but it is clear that it is an automatic, reflex action.\n\n- Laughter as a Physiological and Social Phenomenon",
         "text": "Usually, laughter is regarded as an expression of:",
         "options": [
             "pain and physical suffering.",
@@ -1753,13 +1797,13 @@ const ACT_QUESTIONS1 = [
             "anger and fear.",
             "self-control and restraint."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"pain and physical suffering.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 126,
         "section": "reading",
         "topic": "Natural Science",
-        "passage": "PASSAGE IV: Natural Science\n\nLaughter is spontaneous, that is to say, the movements are not designed or directed by the conscious will. But in mankind, in proportion as individuals are trained in self-control, it is more or less completely under command, and in spite of the most urgent tendency of the automatic mechanism to enter upon the progressive series of movements which we distinguish as (1) smile, (2) broad smile or grin, (3) laugh, (4) loud laughter, (5) paroxysms of uncontrolled laughter, a man or woman can prevent all indication by muscular movement of a desire to laugh or even to smile.\n\nUsually laughter is excited by certain pleasurable emotions, and is to be regarded as an \"expression\" of such emotion just as certain movements and the flow of tears are an \"expression\" of the painful emotion of grief and physical suffering. It is interesting to see how far we can account for the strange movements of laughter as part of the inherited automatic mechanism of man. Why do we laugh? What is the advantage to the individual or the species of \"laughing\"? Why do we \"express\" our pleasurable emotion and why in this particular way?\n\nLaughter is primarily a social phenomenon. The example of the Veddas serves to reinforce the idea that joyful emotion is a primary cause of laughter. The Veddas are a primitive people of Ceylon who are said to be almost entirely devoid of laughter. When they do laugh, it is in response to some sudden, unexpected pleasure, such as a gift of food or a successful hunt.\n\nLaughter is also a physiological release. Being tickled should be considered an exception when discussing the primary causes of laughter because it is a direct physical stimulation of the nervous system rather than an emotional response. The physiological mechanism of tickling is still not fully understood, but it is clear that it is an automatic, reflex action.\n\n- Laughter as a Physiological and Social Phenomenon",
         "text": "The example of the Veddas serves to reinforce the idea that:",
         "options": [
             "laughter is an involuntary action.",
@@ -1767,13 +1811,13 @@ const ACT_QUESTIONS1 = [
             "there is little in life to laugh about.",
             "no two people laugh about the same things."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"there is little in life to laugh about.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 127,
         "section": "reading",
         "topic": "Natural Science",
-        "passage": "PASSAGE IV: Natural Science\n\nLaughter is spontaneous, that is to say, the movements are not designed or directed by the conscious will. But in mankind, in proportion as individuals are trained in self-control, it is more or less completely under command, and in spite of the most urgent tendency of the automatic mechanism to enter upon the progressive series of movements which we distinguish as (1) smile, (2) broad smile or grin, (3) laugh, (4) loud laughter, (5) paroxysms of uncontrolled laughter, a man or woman can prevent all indication by muscular movement of a desire to laugh or even to smile.\n\nUsually laughter is excited by certain pleasurable emotions, and is to be regarded as an \"expression\" of such emotion just as certain movements and the flow of tears are an \"expression\" of the painful emotion of grief and physical suffering. It is interesting to see how far we can account for the strange movements of laughter as part of the inherited automatic mechanism of man. Why do we laugh? What is the advantage to the individual or the species of \"laughing\"? Why do we \"express\" our pleasurable emotion and why in this particular way?\n\nLaughter is primarily a social phenomenon. The example of the Veddas serves to reinforce the idea that joyful emotion is a primary cause of laughter. The Veddas are a primitive people of Ceylon who are said to be almost entirely devoid of laughter. When they do laugh, it is in response to some sudden, unexpected pleasure, such as a gift of food or a successful hunt.\n\nLaughter is also a physiological release. Being tickled should be considered an exception when discussing the primary causes of laughter because it is a direct physical stimulation of the nervous system rather than an emotional response. The physiological mechanism of tickling is still not fully understood, but it is clear that it is an automatic, reflex action.\n\n- Laughter as a Physiological and Social Phenomenon",
         "text": "Which of the following explains why being tickled should be considered an exception when discussing the primary causes of laughter?",
         "options": [
             "It is a social phenomenon rather than a physiological one.",
@@ -1781,13 +1825,13 @@ const ACT_QUESTIONS1 = [
             "It is a direct physical stimulation of the nervous system rather than an emotional response.",
             "It can be easily controlled by conscious will."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"It is a social phenomenon rather than a physiological one.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 128,
         "section": "reading",
         "topic": "Natural Science",
-        "passage": "PASSAGE IV: Natural Science\n\nLaughter is spontaneous, that is to say, the movements are not designed or directed by the conscious will. But in mankind, in proportion as individuals are trained in self-control, it is more or less completely under command, and in spite of the most urgent tendency of the automatic mechanism to enter upon the progressive series of movements which we distinguish as (1) smile, (2) broad smile or grin, (3) laugh, (4) loud laughter, (5) paroxysms of uncontrolled laughter, a man or woman can prevent all indication by muscular movement of a desire to laugh or even to smile.\n\nUsually laughter is excited by certain pleasurable emotions, and is to be regarded as an \"expression\" of such emotion just as certain movements and the flow of tears are an \"expression\" of the painful emotion of grief and physical suffering. It is interesting to see how far we can account for the strange movements of laughter as part of the inherited automatic mechanism of man. Why do we laugh? What is the advantage to the individual or the species of \"laughing\"? Why do we \"express\" our pleasurable emotion and why in this particular way?\n\nLaughter is primarily a social phenomenon. The example of the Veddas serves to reinforce the idea that joyful emotion is a primary cause of laughter. The Veddas are a primitive people of Ceylon who are said to be almost entirely devoid of laughter. When they do laugh, it is in response to some sudden, unexpected pleasure, such as a gift of food or a successful hunt.\n\nLaughter is also a physiological release. Being tickled should be considered an exception when discussing the primary causes of laughter because it is a direct physical stimulation of the nervous system rather than an emotional response. The physiological mechanism of tickling is still not fully understood, but it is clear that it is an automatic, reflex action.\n\n- Laughter as a Physiological and Social Phenomenon",
         "text": "According to the passage, the progressive series of movements in laughter begins with a:",
         "options": [
             "smile.",
@@ -1795,13 +1839,13 @@ const ACT_QUESTIONS1 = [
             "grin.",
             "laugh."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"broad smile.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 129,
         "section": "reading",
         "topic": "Natural Science",
-        "passage": "PASSAGE IV: Natural Science\n\nLaughter is spontaneous, that is to say, the movements are not designed or directed by the conscious will. But in mankind, in proportion as individuals are trained in self-control, it is more or less completely under command, and in spite of the most urgent tendency of the automatic mechanism to enter upon the progressive series of movements which we distinguish as (1) smile, (2) broad smile or grin, (3) laugh, (4) loud laughter, (5) paroxysms of uncontrolled laughter, a man or woman can prevent all indication by muscular movement of a desire to laugh or even to smile.\n\nUsually laughter is excited by certain pleasurable emotions, and is to be regarded as an \"expression\" of such emotion just as certain movements and the flow of tears are an \"expression\" of the painful emotion of grief and physical suffering. It is interesting to see how far we can account for the strange movements of laughter as part of the inherited automatic mechanism of man. Why do we laugh? What is the advantage to the individual or the species of \"laughing\"? Why do we \"express\" our pleasurable emotion and why in this particular way?\n\nLaughter is primarily a social phenomenon. The example of the Veddas serves to reinforce the idea that joyful emotion is a primary cause of laughter. The Veddas are a primitive people of Ceylon who are said to be almost entirely devoid of laughter. When they do laugh, it is in response to some sudden, unexpected pleasure, such as a gift of food or a successful hunt.\n\nLaughter is also a physiological release. Being tickled should be considered an exception when discussing the primary causes of laughter because it is a direct physical stimulation of the nervous system rather than an emotional response. The physiological mechanism of tickling is still not fully understood, but it is clear that it is an automatic, reflex action.\n\n- Laughter as a Physiological and Social Phenomenon",
         "text": "The Veddas are a primitive people of:",
         "options": [
             "India.",
@@ -1809,13 +1853,13 @@ const ACT_QUESTIONS1 = [
             "Africa.",
             "Australia."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"Australia.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 130,
         "section": "reading",
         "topic": "Natural Science",
-        "passage": "PASSAGE IV: Natural Science\n\nLaughter is spontaneous, that is to say, the movements are not designed or directed by the conscious will. But in mankind, in proportion as individuals are trained in self-control, it is more or less completely under command, and in spite of the most urgent tendency of the automatic mechanism to enter upon the progressive series of movements which we distinguish as (1) smile, (2) broad smile or grin, (3) laugh, (4) loud laughter, (5) paroxysms of uncontrolled laughter, a man or woman can prevent all indication by muscular movement of a desire to laugh or even to smile.\n\nUsually laughter is excited by certain pleasurable emotions, and is to be regarded as an \"expression\" of such emotion just as certain movements and the flow of tears are an \"expression\" of the painful emotion of grief and physical suffering. It is interesting to see how far we can account for the strange movements of laughter as part of the inherited automatic mechanism of man. Why do we laugh? What is the advantage to the individual or the species of \"laughing\"? Why do we \"express\" our pleasurable emotion and why in this particular way?\n\nLaughter is primarily a social phenomenon. The example of the Veddas serves to reinforce the idea that joyful emotion is a primary cause of laughter. The Veddas are a primitive people of Ceylon who are said to be almost entirely devoid of laughter. When they do laugh, it is in response to some sudden, unexpected pleasure, such as a gift of food or a successful hunt.\n\nLaughter is also a physiological release. Being tickled should be considered an exception when discussing the primary causes of laughter because it is a direct physical stimulation of the nervous system rather than an emotional response. The physiological mechanism of tickling is still not fully understood, but it is clear that it is an automatic, reflex action.\n\n- Laughter as a Physiological and Social Phenomenon",
         "text": "The passage implies that self-control allows humans to:",
         "options": [
             "experience more pleasurable emotions.",
@@ -1823,13 +1867,13 @@ const ACT_QUESTIONS1 = [
             "laugh more loudly and frequently.",
             "avoid being tickled."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"laugh more loudly and frequently.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 131,
         "section": "reading",
         "topic": "Natural Science",
-        "passage": "PASSAGE IV: Natural Science\n\nLaughter is spontaneous, that is to say, the movements are not designed or directed by the conscious will. But in mankind, in proportion as individuals are trained in self-control, it is more or less completely under command, and in spite of the most urgent tendency of the automatic mechanism to enter upon the progressive series of movements which we distinguish as (1) smile, (2) broad smile or grin, (3) laugh, (4) loud laughter, (5) paroxysms of uncontrolled laughter, a man or woman can prevent all indication by muscular movement of a desire to laugh or even to smile.\n\nUsually laughter is excited by certain pleasurable emotions, and is to be regarded as an \"expression\" of such emotion just as certain movements and the flow of tears are an \"expression\" of the painful emotion of grief and physical suffering. It is interesting to see how far we can account for the strange movements of laughter as part of the inherited automatic mechanism of man. Why do we laugh? What is the advantage to the individual or the species of \"laughing\"? Why do we \"express\" our pleasurable emotion and why in this particular way?\n\nLaughter is primarily a social phenomenon. The example of the Veddas serves to reinforce the idea that joyful emotion is a primary cause of laughter. The Veddas are a primitive people of Ceylon who are said to be almost entirely devoid of laughter. When they do laugh, it is in response to some sudden, unexpected pleasure, such as a gift of food or a successful hunt.\n\nLaughter is also a physiological release. Being tickled should be considered an exception when discussing the primary causes of laughter because it is a direct physical stimulation of the nervous system rather than an emotional response. The physiological mechanism of tickling is still not fully understood, but it is clear that it is an automatic, reflex action.\n\n- Laughter as a Physiological and Social Phenomenon",
         "text": "Laughter is primarily described by the author as being:",
         "options": [
             "a purely rational action.",
@@ -1837,6 +1881,7 @@ const ACT_QUESTIONS1 = [
             "harmful to the physical health of the individual.",
             "unique to the Veddas of Ceylon."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"unique to the Veddas of Ceylon.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     }
 ];

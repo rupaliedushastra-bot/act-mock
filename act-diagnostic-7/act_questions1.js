@@ -1,12 +1,12 @@
 // =============================================
 // act_questions1.js – ACT Practice Test 10
-// Shuffled & Value-Altered EPUB Practice Test
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
-// Total: 131 questions | Time: 125 minutes (2 hr 5 min)
+// Total: 131 questions | Time: 125 minutes
 // =============================================
 
 const ACT_QUESTIONS1 = [
     {
+        "id": 1,
         "section": "english",
         "topic": "Style & Tone",
         "text": "Choose the word that is closest in meaning to \"cautious.\"",
@@ -17,9 +17,10 @@ const ACT_QUESTIONS1 = [
             "Impulsive"
         ],
         "answer": 1,
-        "id": 1
+        "explanation": "Correct Answer: \"Careful\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
+        "id": 2,
         "section": "english",
         "topic": "Style & Tone",
         "text": "Identify the word that best matches the meaning of \"elaborate.\"",
@@ -30,9 +31,10 @@ const ACT_QUESTIONS1 = [
             "Unfinished"
         ],
         "answer": 1,
-        "id": 2
+        "explanation": "Correct Answer: \"Detailed\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
+        "id": 3,
         "section": "english",
         "topic": "Style & Tone",
         "text": "Select the word that is most similar in meaning to \"innovative.\"",
@@ -43,9 +45,10 @@ const ACT_QUESTIONS1 = [
             "Routine"
         ],
         "answer": 1,
-        "id": 3
+        "explanation": "Correct Answer: \"Original\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
+        "id": 4,
         "section": "english",
         "topic": "Style & Tone",
         "text": "Choose the word that best expresses a similar meaning to \"diminish.\"",
@@ -56,9 +59,10 @@ const ACT_QUESTIONS1 = [
             "Enlarge"
         ],
         "answer": 1,
-        "id": 4
+        "explanation": "Correct Answer: \"Reduce\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
+        "id": 5,
         "section": "english",
         "topic": "Style & Tone",
         "text": "Identify the word that is most similar in meaning to \"fragile.\"",
@@ -69,9 +73,10 @@ const ACT_QUESTIONS1 = [
             "Robust"
         ],
         "answer": 2,
-        "id": 5
+        "explanation": "Correct Answer: \"Delicate\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
+        "id": 6,
         "section": "english",
         "topic": "Style & Tone",
         "text": "Select the word that best matches the meaning of \"meticulous.\"",
@@ -82,9 +87,10 @@ const ACT_QUESTIONS1 = [
             "Haphazard"
         ],
         "answer": 2,
-        "id": 6
+        "explanation": "Correct Answer: \"Thorough\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
+        "id": 7,
         "section": "english",
         "topic": "Style & Tone",
         "text": "Choose the word that is most similar in meaning to \"ambiguous.\"",
@@ -95,9 +101,10 @@ const ACT_QUESTIONS1 = [
             "Explicit"
         ],
         "answer": 1,
-        "id": 7
+        "explanation": "Correct Answer: \"Vague\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
+        "id": 8,
         "section": "english",
         "topic": "Style & Tone",
         "text": "Identify the word that best matches the meaning of \"proficient.\"",
@@ -108,9 +115,10 @@ const ACT_QUESTIONS1 = [
             "Clumsy"
         ],
         "answer": 1,
-        "id": 8
+        "explanation": "Correct Answer: \"Skilled\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
+        "id": 9,
         "section": "english",
         "topic": "Style & Tone",
         "text": "Select the word that is most similar in meaning to \"resilient.\"",
@@ -121,9 +129,10 @@ const ACT_QUESTIONS1 = [
             "Weak"
         ],
         "answer": 1,
-        "id": 9
+        "explanation": "Correct Answer: \"Sturdy\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
+        "id": 10,
         "section": "english",
         "topic": "Style & Tone",
         "text": "Choose the word that best expresses a similar meaning to \"tedious.\"",
@@ -134,9 +143,10 @@ const ACT_QUESTIONS1 = [
             "Engaging"
         ],
         "answer": 1,
-        "id": 10
+        "explanation": "Correct Answer: \"Boring\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
+        "id": 11,
         "section": "english",
         "topic": "Sentence Structure",
         "text": "Choose the correct verb form to complete the sentence below. *The committee, along with its members, ___ responsible for the final decision.*",
@@ -147,9 +157,10 @@ const ACT_QUESTIONS1 = [
             "be"
         ],
         "answer": 1,
-        "id": 11
+        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
+        "id": 12,
         "section": "english",
         "topic": "Sentence Structure",
         "text": "Choose the correct verb form to complete the sentence below. *The team of experts, including Dr. Smith, ___ leading the research project.*",
@@ -160,9 +171,10 @@ const ACT_QUESTIONS1 = [
             "be"
         ],
         "answer": 1,
-        "id": 12
+        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
+        "id": 13,
         "section": "english",
         "topic": "Sentence Structure",
         "text": "Choose the correct verb form to complete the sentence below. *The bouquet of roses, placed on the table, ___ a beautiful centerpiece.*",
@@ -173,9 +185,10 @@ const ACT_QUESTIONS1 = [
             "made"
         ],
         "answer": 1,
-        "id": 13
+        "explanation": "Correct Answer: \"makes\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
+        "id": 14,
         "section": "english",
         "topic": "Sentence Structure",
         "text": "Choose the correct verb form to complete the sentence below. *Neither the students nor the teacher ___ prepared for the exam.*",
@@ -186,9 +199,10 @@ const ACT_QUESTIONS1 = [
             "being"
         ],
         "answer": 1,
-        "id": 14
+        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
+        "id": 15,
         "section": "english",
         "topic": "Sentence Structure",
         "text": "Choose the correct verb form to complete the sentence below. *The pair of shoes, along with the handbag, ___ on the floor.*",
@@ -199,9 +213,10 @@ const ACT_QUESTIONS1 = [
             "be"
         ],
         "answer": 1,
-        "id": 15
+        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
+        "id": 16,
         "section": "english",
         "topic": "Sentence Structure",
         "text": "Choose the correct verb form to complete the sentence below. *The scent of jasmine and rose ___ filling the room gracefully.*",
@@ -212,9 +227,10 @@ const ACT_QUESTIONS1 = [
             "were"
         ],
         "answer": 0,
-        "id": 16
+        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
+        "id": 17,
         "section": "english",
         "topic": "Sentence Structure",
         "text": "Choose the correct verb form to complete the sentence below. *The series of lectures, featuring various guest speakers, ___ highly informative.*",
@@ -225,9 +241,10 @@ const ACT_QUESTIONS1 = [
             "being"
         ],
         "answer": 1,
-        "id": 17
+        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
+        "id": 18,
         "section": "english",
         "topic": "Sentence Structure",
         "text": "Choose the correct verb form to complete the sentence below. *Both the manager and the employees ___ involved in the new initiative.*",
@@ -238,9 +255,10 @@ const ACT_QUESTIONS1 = [
             "be"
         ],
         "answer": 1,
-        "id": 18
+        "explanation": "Correct Answer: \"are\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
+        "id": 19,
         "section": "english",
         "topic": "Sentence Structure",
         "text": "Choose the correct verb form to complete the sentence below. *The bouquet of lilies, along with several orchids, ___ arranged beautifully in the vase.*",
@@ -251,9 +269,10 @@ const ACT_QUESTIONS1 = [
             "has"
         ],
         "answer": 1,
-        "id": 19
+        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
+        "id": 20,
         "section": "english",
         "topic": "Sentence Structure",
         "text": "Choose the correct verb form to complete the sentence below. *Each of the players, despite their fatigue, ___ giving their best performance.*",
@@ -264,9 +283,10 @@ const ACT_QUESTIONS1 = [
             "be"
         ],
         "answer": 1,
-        "id": 20
+        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
+        "id": 21,
         "section": "english",
         "topic": "Grammar & Usage",
         "text": "Choose the sentence that uses subject-verb agreement correctly.",
@@ -277,9 +297,10 @@ const ACT_QUESTIONS1 = [
             "The flock of birds have migrated south for the winter."
         ],
         "answer": 2,
-        "id": 21
+        "explanation": "Correct Answer: \"The team of doctors is examining the patient.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
+        "id": 22,
         "section": "english",
         "topic": "Grammar & Usage",
         "text": "Choose the sentence that uses subject-verb agreement correctly.",
@@ -290,9 +311,10 @@ const ACT_QUESTIONS1 = [
             "The series of lectures were postponed due to scheduling conflicts."
         ],
         "answer": 1,
-        "id": 22
+        "explanation": "Correct Answer: \"The jury is divided in its opinions about the case.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
+        "id": 23,
         "section": "english",
         "topic": "Grammar & Usage",
         "text": "Choose the sentence that uses subject-verb agreement correctly.",
@@ -303,9 +325,10 @@ const ACT_QUESTIONS1 = [
             "The team has announced its new captain."
         ],
         "answer": 3,
-        "id": 23
+        "explanation": "Correct Answer: \"The team has announced its new captain.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
+        "id": 24,
         "section": "english",
         "topic": "Grammar & Usage",
         "text": "Choose the sentence that uses subject-verb agreement correctly.",
@@ -316,9 +339,10 @@ const ACT_QUESTIONS1 = [
             "The swarm of bees was attacking the flowers aggressively."
         ],
         "answer": 3,
-        "id": 24
+        "explanation": "Correct Answer: \"The swarm of bees was attacking the flowers aggressively.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
+        "id": 25,
         "section": "english",
         "topic": "Grammar & Usage",
         "text": "Choose the sentence that uses subject-verb agreement correctly.",
@@ -329,9 +353,10 @@ const ACT_QUESTIONS1 = [
             "Each of the dogs need to be fed twice a day."
         ],
         "answer": 2,
-        "id": 25
+        "explanation": "Correct Answer: \"The group of friends is planning a trip together.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
+        "id": 26,
         "section": "english",
         "topic": "Grammar & Usage",
         "text": "Choose the sentence that uses subject-verb agreement correctly.",
@@ -342,9 +367,10 @@ const ACT_QUESTIONS1 = [
             "The committee disagree on the terms of the contract."
         ],
         "answer": 1,
-        "id": 26
+        "explanation": "Correct Answer: \"The fleet of ships sails around the globe annually.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
+        "id": 27,
         "section": "english",
         "topic": "Grammar & Usage",
         "text": "Choose the sentence that uses subject-verb agreement correctly.",
@@ -355,9 +381,10 @@ const ACT_QUESTIONS1 = [
             "Many of the books has been read by the students."
         ],
         "answer": 2,
-        "id": 27
+        "explanation": "Correct Answer: \"The bouquet of roses smells sweet.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
+        "id": 28,
         "section": "english",
         "topic": "Grammar & Usage",
         "text": "Choose the sentence that uses subject-verb agreement correctly.",
@@ -368,9 +395,10 @@ const ACT_QUESTIONS1 = [
             "The herd of cattle was grazing peacefully in the field."
         ],
         "answer": 3,
-        "id": 28
+        "explanation": "Correct Answer: \"The herd of cattle was grazing peacefully in the field.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
+        "id": 29,
         "section": "english",
         "topic": "Grammar & Usage",
         "text": "Choose the sentence that uses subject-verb agreement correctly.",
@@ -381,9 +409,10 @@ const ACT_QUESTIONS1 = [
             "Both of the laptops are functioning properly."
         ],
         "answer": 3,
-        "id": 29
+        "explanation": "Correct Answer: \"Both of the laptops are functioning properly.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
+        "id": 30,
         "section": "english",
         "topic": "Grammar & Usage",
         "text": "Choose the sentence that uses subject-verb agreement correctly.",
@@ -394,9 +423,10 @@ const ACT_QUESTIONS1 = [
             "Each of the books has its own unique story."
         ],
         "answer": 3,
-        "id": 30
+        "explanation": "Correct Answer: \"Each of the books has its own unique story.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
+        "id": 31,
         "section": "english",
         "topic": "Rhetorical Skills",
         "text": "Fill in the blank with the most appropriate word using context clues. Despite the ______ weather, the festival continued as planned.",
@@ -407,9 +437,10 @@ const ACT_QUESTIONS1 = [
             "temperate"
         ],
         "answer": 1,
-        "id": 31
+        "explanation": "Correct Answer: \"inclement\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
+        "id": 32,
         "section": "english",
         "topic": "Rhetorical Skills",
         "text": "Fill in the blank with the most appropriate word using context clues. The CEO's decision was both ______ and unexpected, leaving employees confused about the future.",
@@ -420,9 +451,10 @@ const ACT_QUESTIONS1 = [
             "deliberate"
         ],
         "answer": 1,
-        "id": 32
+        "explanation": "Correct Answer: \"abrupt\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
+        "id": 33,
         "section": "english",
         "topic": "Rhetorical Skills",
         "text": "Fill in the blank with the most appropriate word using context clues. After the intense debate, the committee reached a ______ decision that satisfied all parties involved.",
@@ -433,9 +465,10 @@ const ACT_QUESTIONS1 = [
             "conflicted"
         ],
         "answer": 0,
-        "id": 33
+        "explanation": "Correct Answer: \"unanimous\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
+        "id": 34,
         "section": "english",
         "topic": "Rhetorical Skills",
         "text": "Fill in the blank with the most appropriate word using context clues. The scientist's ______ analysis provided clear evidence supporting her hypothesis.",
@@ -446,9 +479,10 @@ const ACT_QUESTIONS1 = [
             "vague"
         ],
         "answer": 1,
-        "id": 34
+        "explanation": "Correct Answer: \"thorough\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
+        "id": 35,
         "section": "english",
         "topic": "Rhetorical Skills",
         "text": "Fill in the blank with the most appropriate word using context clues. The ancient manuscript was ______ and required careful preservation.",
@@ -459,9 +493,10 @@ const ACT_QUESTIONS1 = [
             "robust"
         ],
         "answer": 2,
-        "id": 35
+        "explanation": "Correct Answer: \"fragile\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
+        "id": 36,
         "section": "english",
         "topic": "Rhetorical Skills",
         "text": "Fill in the blank with the most appropriate word using context clues. Her arguments were ______ and persuaded many to adopt her viewpoint.",
@@ -472,9 +507,10 @@ const ACT_QUESTIONS1 = [
             "flawed"
         ],
         "answer": 1,
-        "id": 36
+        "explanation": "Correct Answer: \"compelling\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
+        "id": 37,
         "section": "english",
         "topic": "Rhetorical Skills",
         "text": "Fill in the blank with the most appropriate word using context clues. The manager's ______ approach to problem-solving led to innovative solutions.",
@@ -485,9 +521,10 @@ const ACT_QUESTIONS1 = [
             "indifferent"
         ],
         "answer": 2,
-        "id": 37
+        "explanation": "Correct Answer: \"creative\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
+        "id": 38,
         "section": "english",
         "topic": "Rhetorical Skills",
         "text": "Fill in the blank with the most appropriate word using context clues. The ______ conditions of the desert require plants to conserve water efficiently.",
@@ -498,9 +535,10 @@ const ACT_QUESTIONS1 = [
             "lush"
         ],
         "answer": 1,
-        "id": 38
+        "explanation": "Correct Answer: \"arid\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
+        "id": 39,
         "section": "english",
         "topic": "Rhetorical Skills",
         "text": "Fill in the blank with the most appropriate word using context clues. The young prodigy's ______ talent amazed everyone at the competition.",
@@ -511,9 +549,10 @@ const ACT_QUESTIONS1 = [
             "poor"
         ],
         "answer": 1,
-        "id": 39
+        "explanation": "Correct Answer: \"exceptional\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
+        "id": 40,
         "section": "english",
         "topic": "Rhetorical Skills",
         "text": "Fill in the blank with the most appropriate word using context clues. The detective's ______ instincts led him to the correct conclusion faster than his peers.",
@@ -524,9 +563,10 @@ const ACT_QUESTIONS1 = [
             "indifferent"
         ],
         "answer": 2,
-        "id": 40
+        "explanation": "Correct Answer: \"keen\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
+        "id": 41,
         "section": "english",
         "topic": "Punctuation",
         "text": "Choose the sentence that contains a subject-verb agreement error.",
@@ -537,9 +577,10 @@ const ACT_QUESTIONS1 = [
             "Neither the teachers nor the principal has arrived."
         ],
         "answer": 1,
-        "id": 41
+        "explanation": "Correct Answer: \"The group of students are excited about the trip.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"The group of students are excited about the trip.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
+        "id": 42,
         "section": "english",
         "topic": "Punctuation",
         "text": "Identify the sentence with the correct subject-verb agreement.",
@@ -550,9 +591,10 @@ const ACT_QUESTIONS1 = [
             "The data was inconclusive."
         ],
         "answer": 2,
-        "id": 42
+        "explanation": "Correct Answer: \"Each of the players has a unique skill.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"Each of the players has a unique skill.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
+        "id": 43,
         "section": "english",
         "topic": "Punctuation",
         "text": "Choose the sentence that correctly matches the subject with the appropriate verb form.",
@@ -563,9 +605,10 @@ const ACT_QUESTIONS1 = [
             "The number of participants were higher than expected."
         ],
         "answer": 1,
-        "id": 43
+        "explanation": "Correct Answer: \"Either the manager or the employees has to attend the meeting.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"Either the manager or the employees has to attend the meeting.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
+        "id": 44,
         "section": "english",
         "topic": "Punctuation",
         "text": "Choose the sentence with no subject-verb agreement error.",
@@ -576,9 +619,10 @@ const ACT_QUESTIONS1 = [
             "The fleet of ships were lost at sea."
         ],
         "answer": 1,
-        "id": 44
+        "explanation": "Correct Answer: \"The data indicates a rising trend in sales.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"The data indicates a rising trend in sales.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
+        "id": 45,
         "section": "english",
         "topic": "Punctuation",
         "text": "Select the sentence that correctly uses subject-verb agreement.",
@@ -589,9 +633,10 @@ const ACT_QUESTIONS1 = [
             "Neither of the choices was correct."
         ],
         "answer": 2,
-        "id": 45
+        "explanation": "Correct Answer: \"A number of students were absent today.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"A number of students were absent today.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
+        "id": 46,
         "section": "english",
         "topic": "Punctuation",
         "text": "Choose the sentence with the correct subject-verb agreement.",
@@ -602,9 +647,10 @@ const ACT_QUESTIONS1 = [
             "The group of friends are planning a trip together."
         ],
         "answer": 2,
-        "id": 46
+        "explanation": "Correct Answer: \"Either the teachers or the principal is attending the meeting.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"Either the teachers or the principal is attending the meeting.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
+        "id": 47,
         "section": "english",
         "topic": "Punctuation",
         "text": "Identify the sentence that contains no subject-verb agreement error.",
@@ -615,9 +661,10 @@ const ACT_QUESTIONS1 = [
             "Each of the participants have received a gift."
         ],
         "answer": 2,
-        "id": 47
+        "explanation": "Correct Answer: \"The number of cars on the road is increasing.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"The number of cars on the road is increasing.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
+        "id": 48,
         "section": "english",
         "topic": "Punctuation",
         "text": "Choose the sentence that is grammatically correct.",
@@ -628,9 +675,10 @@ const ACT_QUESTIONS1 = [
             "The team of analysts have finished their report."
         ],
         "answer": 2,
-        "id": 48
+        "explanation": "Correct Answer: \"Each of the books has a unique cover.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"Each of the books has a unique cover.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
+        "id": 49,
         "section": "english",
         "topic": "Punctuation",
         "text": "The data presented in the report ___ concerning trends over the past year.",
@@ -641,9 +689,10 @@ const ACT_QUESTIONS1 = [
             "have"
         ],
         "answer": 0,
-        "id": 49
+        "explanation": "Correct Answer: \"are\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"are\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
+        "id": 50,
         "section": "english",
         "topic": "Punctuation",
         "text": "Choose the sentence with the correct subject-verb agreement.",
@@ -654,9 +703,10 @@ const ACT_QUESTIONS1 = [
             "Either the cats or the dog are responsible for the mess."
         ],
         "answer": 2,
-        "id": 50
+        "explanation": "Correct Answer: \"Neither the manager nor the employees has the authority to make that decision.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"Neither the manager nor the employees has the authority to make that decision.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
     },
     {
+        "id": 51,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "A right triangular ramp has a base of 8 feet and a height of 15 feet. What is the length of the ramp?",
@@ -667,9 +717,10 @@ const ACT_QUESTIONS1 = [
             "19 feet"
         ],
         "answer": 2,
-        "id": 51
+        "explanation": "Correct Answer: 17 feet. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 17 feet."
     },
     {
+        "id": 52,
         "section": "math",
         "topic": "Intermediate Algebra",
         "text": "Given the quadratic function <img alt=\"\" src=\"images/image_rsrc6U0.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, which of the following correctly identifies the vertex of the parabola?",
@@ -681,9 +732,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" id=\"page_156\" src=\"images/image_rsrc6U5.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 52
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 53,
         "section": "math",
         "topic": "Intermediate Algebra",
         "text": "What is the product of <img alt=\"\" src=\"images/image_rsrc6US.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6UT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
@@ -694,9 +746,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6UX.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 53
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 54,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "For which integer <img alt=\"\" src=\"images/image_rsrc6M6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> does the expression <img alt=\"\" src=\"images/image_rsrc6M7.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> result in an even integer?",
@@ -708,9 +761,10 @@ const ACT_QUESTIONS1 = [
             "Cannot be determined."
         ],
         "answer": 0,
-        "id": 54
+        "explanation": "Correct Answer: All integers .. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of All integers .."
     },
     {
+        "id": 55,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "What is the least common multiple (LCM) of 15 and 20?",
@@ -721,9 +775,10 @@ const ACT_QUESTIONS1 = [
             "90"
         ],
         "answer": 2,
-        "id": 55
+        "explanation": "Correct Answer: 60. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 60."
     },
     {
+        "id": 56,
         "section": "math",
         "topic": "Plane Geometry",
         "text": "Calculate the area of a regular hexagon with a side length of 6 inches.",
@@ -734,9 +789,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6Y4.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> square inches"
         ],
         "answer": 2,
-        "id": 56
+        "explanation": "Correct Answer:  square inches. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields  square inches."
     },
     {
+        "id": 57,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "What is the value of the algebraic expression 3<i>x</i>² − 5<i>x</i> + 2 when <i>x</i> = −2?",
@@ -747,9 +803,10 @@ const ACT_QUESTIONS1 = [
             "28"
         ],
         "answer": 2,
-        "id": 57
+        "explanation": "Correct Answer: 24. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 24 satisfies all conditions of the problem."
     },
     {
+        "id": 58,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6ME.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -760,9 +817,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6MJ.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 2,
-        "id": 58
+        "explanation": "Correct Answer: . Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of ."
     },
     {
+        "id": 59,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6SK.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -773,9 +831,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6SR.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 1,
-        "id": 59
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 60,
         "section": "math",
         "topic": "Plane Geometry",
         "text": "In right triangle ABC, angle C is the right angle. If the lengths of sides AC and BC are 5 units and 12 units respectively, what is the length of the hypotenuse AB?",
@@ -786,9 +845,10 @@ const ACT_QUESTIONS1 = [
             "17 units"
         ],
         "answer": 1,
-        "id": 60
+        "explanation": "Correct Answer: 13 units. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 13 units."
     },
     {
+        "id": 61,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6PA.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -799,9 +859,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6PE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 61
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 62,
         "section": "math",
         "topic": "Plane Geometry",
         "text": "Which of the following linear equations is parallel to <img alt=\"\" src=\"images/image_rsrc6S4.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
@@ -812,9 +873,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6S8.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 1,
-        "id": 62
+        "explanation": "Correct Answer: . Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields ."
     },
     {
+        "id": 63,
         "section": "math",
         "topic": "Trigonometry",
         "text": "What is the sine of <img alt=\"\" src=\"images/image_rsrc6Z2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> based on the unit circle?",
@@ -825,9 +887,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6Z6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 2,
-        "id": 63
+        "explanation": "Correct Answer: . Step-by-step solution: Use fundamental trigonometric definitions (sin = opp/hyp, cos = adj/hyp, tan = opp/adj) or trigonometric identities to simplify the expression, arriving at ."
     },
     {
+        "id": 64,
         "section": "math",
         "topic": "Plane Geometry",
         "text": "In the figure below, lines <img alt=\"\" src=\"images/image_rsrc6XS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6H2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> are parallel, and line <img alt=\"\" src=\"images/image_rsrc6XT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> is a transversal intersecting them. If angle <img alt=\"\" src=\"images/image_rsrc6XU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> measures <img alt=\"\" src=\"images/image_rsrc6XD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, what is the measure of angle <img alt=\"\" src=\"images/image_rsrc6XV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>? [Insert Diagram Here: Two parallel lines <img alt=\"\" src=\"images/image_rsrc6XS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6H2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> are cut by a transversal <img alt=\"\" src=\"images/image_rsrc6XT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>. Angle <img alt=\"\" src=\"images/image_rsrc6XU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> is formed at the intersection of <img alt=\"\" src=\"images/image_rsrc6XT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6XS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and measures <img alt=\"\" src=\"images/image_rsrc6XD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>. Angle <img alt=\"\" src=\"images/image_rsrc6XV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> is formed at the intersection of <img alt=\"\" src=\"images/image_rsrc6XT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6H2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.]",
@@ -838,9 +901,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6XX.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 1,
-        "id": 64
+        "explanation": "Correct Answer: . Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields ."
     },
     {
+        "id": 65,
         "section": "math",
         "topic": "Intermediate Algebra",
         "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6WK.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -852,9 +916,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6WS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 65
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 66,
         "section": "math",
         "topic": "Intermediate Algebra",
         "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6V6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -866,9 +931,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6VB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 3,
-        "id": 66
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 67,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "If 4 pounds of apples cost $12.80 and 7 pounds of apples cost $22.40, what is the unit rate in dollars per pound?",
@@ -879,9 +945,10 @@ const ACT_QUESTIONS1 = [
             "$3.50 per pound"
         ],
         "answer": 2,
-        "id": 67
+        "explanation": "Correct Answer: $3.20 per pound. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of $3.20 per pound."
     },
     {
+        "id": 68,
         "section": "math",
         "topic": "Intermediate Algebra",
         "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6TG.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -893,9 +960,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6MU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> of the above"
         ],
         "answer": 0,
-        "id": 68
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 69,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "What is the greatest common factor (GCF) of 72 and 108?",
@@ -906,9 +974,10 @@ const ACT_QUESTIONS1 = [
             "72"
         ],
         "answer": 2,
-        "id": 69
+        "explanation": "Correct Answer: 36. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 36."
     },
     {
+        "id": 70,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "Solve for <i>x</i>: 5(<i>x</i> − 3) = 2<i>x</i> + 6",
@@ -919,9 +988,10 @@ const ACT_QUESTIONS1 = [
             "8"
         ],
         "answer": 2,
-        "id": 70
+        "explanation": "Correct Answer: 7. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 7 satisfies all conditions of the problem."
     },
     {
+        "id": 71,
         "section": "math",
         "topic": "Coordinate Geometry",
         "text": "If the point <img alt=\"\" src=\"images/image_rsrc712.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> is dilated by a scale factor of 2 about the origin and then reflected over the y-axis, what are the coordinates of the image?",
@@ -932,9 +1002,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc716.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 71
+        "explanation": "Correct Answer: . Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields ."
     },
     {
+        "id": 72,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "Solve for <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> in the equation <img alt=\"\" src=\"images/image_rsrc6MR.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -946,9 +1017,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6MU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> of the above"
         ],
         "answer": 1,
-        "id": 72
+        "explanation": "Correct Answer: . Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of ."
     },
     {
+        "id": 73,
         "section": "math",
         "topic": "Intermediate Algebra",
         "text": "Solve the polynomial equation <img alt=\"\" src=\"images/image_rsrc6WW.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>. What is the value of <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
@@ -960,9 +1032,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6WY.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 3,
-        "id": 73
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 74,
         "section": "math",
         "topic": "Plane Geometry",
         "text": "Which of the following pairs of triangles are congruent by the Side-Angle-Side (SAS) criterion?",
@@ -973,9 +1046,10 @@ const ACT_QUESTIONS1 = [
             "Triangle <img alt=\"\" src=\"images/image_rsrc70G.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> with sides <img alt=\"\" src=\"images/image_rsrc70H.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, <img alt=\"\" src=\"images/image_rsrc70J.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, and angle <img alt=\"\" src=\"images/image_rsrc70K.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>; Triangle <img alt=\"\" src=\"images/image_rsrc70M.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> with sides <img alt=\"\" src=\"images/image_rsrc70N.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, <img alt=\"\" src=\"images/image_rsrc70P.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, and angle <img alt=\"\" src=\"images/image_rsrc70R.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>."
         ],
         "answer": 0,
-        "id": 74
+        "explanation": "Correct Answer: Triangle  with sides , , and angle ; Triangle  with sides , , and angle .. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields Triangle  with sides , , and angle ; Triangle  with sides , , and angle .."
     },
     {
+        "id": 75,
         "section": "math",
         "topic": "Trigonometry",
         "text": "In right triangle ABC, angle B is the right angle. If side AB = 4 units and side BC = 3 units, what is the value of sin(A)?",
@@ -986,9 +1060,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6YR.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 3,
-        "id": 75
+        "explanation": "Correct Answer: . Step-by-step solution: Use fundamental trigonometric definitions (sin = opp/hyp, cos = adj/hyp, tan = opp/adj) or trigonometric identities to simplify the expression, arriving at ."
     },
     {
+        "id": 76,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "Factor the polynomial <img alt=\"\" src=\"images/image_rsrc6PH.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -999,9 +1074,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6SZ.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 2,
-        "id": 76
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 77,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "If the greatest common factor (GCF) of two numbers is 6 and their least common multiple (LCM) is 90, what is the product of the two numbers?",
@@ -1012,9 +1088,10 @@ const ACT_QUESTIONS1 = [
             "540"
         ],
         "answer": 3,
-        "id": 77
+        "explanation": "Correct Answer: 540. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 540."
     },
     {
+        "id": 78,
         "section": "math",
         "topic": "Plane Geometry",
         "text": "In circle <img alt=\"\" src=\"images/image_rsrc6XC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, two chords <img alt=\"\" src=\"images/image_rsrc6Y9.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6YA.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> intersect at point <img alt=\"\" src=\"images/image_rsrc6YB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> inside the circle. If <img alt=\"\" src=\"images/image_rsrc6YC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> units, <img alt=\"\" src=\"images/image_rsrc6YD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> units, and <img alt=\"\" src=\"images/image_rsrc6YE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> units, what is the length of <img alt=\"\" src=\"images/image_rsrc6YF.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
@@ -1025,9 +1102,10 @@ const ACT_QUESTIONS1 = [
             "4 units"
         ],
         "answer": 3,
-        "id": 78
+        "explanation": "Correct Answer: 4 units. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 4 units."
     },
     {
+        "id": 79,
         "section": "math",
         "topic": "Intermediate Algebra",
         "text": "Which of the following is the vertex of the parabola represented by the equation <img alt=\"\" src=\"images/image_rsrc6UB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
@@ -1039,9 +1117,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6UG.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 79
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 80,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "Solve the system of equations: What is the value of <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
@@ -1053,9 +1132,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6PU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 1,
-        "id": 80
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 81,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "A store is offering a 15% discount on all items. If the original price of a jacket is $120, what is the sale price?",
@@ -1066,9 +1146,10 @@ const ACT_QUESTIONS1 = [
             "$108"
         ],
         "answer": 2,
-        "id": 81
+        "explanation": "Correct Answer: $102. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of $102."
     },
     {
+        "id": 82,
         "section": "math",
         "topic": "Intermediate Algebra",
         "text": "Solve for <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> in the equation <img alt=\"\" src=\"images/image_rsrc6HB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -1080,9 +1161,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6HD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6PV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 82
+        "explanation": "Correct Answer:  and . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  and  satisfies all conditions of the problem."
     },
     {
+        "id": 83,
         "section": "math",
         "topic": "Coordinate Geometry",
         "text": "What is the midpoint of the segment connecting (−2, 5) and (4, −1) on a standard coordinate plane?",
@@ -1093,9 +1175,10 @@ const ACT_QUESTIONS1 = [
             "(2, 3)"
         ],
         "answer": 0,
-        "id": 83
+        "explanation": "Correct Answer: (1, 2). Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields (1, 2)."
     },
     {
+        "id": 84,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "What is the value of <img alt=\"\" src=\"images/image_rsrc6N8.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
@@ -1106,9 +1189,10 @@ const ACT_QUESTIONS1 = [
             "1.00"
         ],
         "answer": 0,
-        "id": 84
+        "explanation": "Correct Answer: 1.50. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 1.50."
     },
     {
+        "id": 85,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "Solve for <i>x</i> in the equation 3(<i>x</i> + 3) − 2<i>x</i> = 3<i>x</i> + 1.",
@@ -1119,9 +1203,10 @@ const ACT_QUESTIONS1 = [
             "<i>x</i> = 8"
         ],
         "answer": 1,
-        "id": 85
+        "explanation": "Correct Answer: x = 4. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x = 4 satisfies all conditions of the problem."
     },
     {
+        "id": 86,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "Factor the polynomial <img alt=\"\" src=\"images/image_rsrc6PH.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -1132,9 +1217,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" id=\"page_142\" src=\"images/image_rsrc6PN.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 86
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 87,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "Solve the inequality <img alt=\"\" src=\"images/image_rsrc6RR.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>. What is the range of possible values for <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
@@ -1145,9 +1231,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6RV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 2,
-        "id": 87
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 88,
         "section": "math",
         "topic": "Pre-Algebra",
         "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6N2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -1158,9 +1245,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6N6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 88
+        "explanation": "Correct Answer: . Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of ."
     },
     {
+        "id": 89,
         "section": "math",
         "topic": "Intermediate Algebra",
         "text": "Solve for <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> in the equation <img alt=\"\" src=\"images/image_rsrc6VU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -1172,9 +1260,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" id=\"page_161\" src=\"images/image_rsrc6TV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 3,
-        "id": 89
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 90,
         "section": "math",
         "topic": "Intermediate Algebra",
         "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6T8.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -1185,9 +1274,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6TC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 90
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 91,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "Solve the quadratic equation <img alt=\"\" src=\"images/image_rsrc6PT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -1199,9 +1289,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6GG.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" id=\"page_143\" src=\"images/image_rsrc6HD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 91
+        "explanation": "Correct Answer:  and . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  and  satisfies all conditions of the problem."
     },
     {
+        "id": 92,
         "section": "math",
         "topic": "Plane Geometry",
         "text": "In triangle <img alt=\"\" src=\"images/image_rsrc6X9.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, angle <img alt=\"\" src=\"images/image_rsrc6XA.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> measures <img alt=\"\" src=\"images/image_rsrc6JH.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and angle <img alt=\"\" src=\"images/image_rsrc6XB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> measures <img alt=\"\" src=\"images/image_rsrc6HX.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>. What is the measure of angle <img alt=\"\" src=\"images/image_rsrc6XC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
@@ -1213,9 +1304,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6XH.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 0,
-        "id": 92
+        "explanation": "Correct Answer: . Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields ."
     },
     {
+        "id": 93,
         "section": "math",
         "topic": "Coordinate Geometry",
         "text": "What is the slope and y-intercept of the line represented by the equation <img alt=\"\" src=\"images/image_rsrc6SD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
@@ -1226,9 +1318,10 @@ const ACT_QUESTIONS1 = [
             "Slope: -2, y-intercept: 0.5"
         ],
         "answer": 0,
-        "id": 93
+        "explanation": "Correct Answer: Slope: 0.5, y-intercept: -2. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields Slope: 0.5, y-intercept: -2."
     },
     {
+        "id": 94,
         "section": "math",
         "topic": "Elementary Algebra",
         "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6R3.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
@@ -1239,9 +1332,10 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"\" src=\"images/image_rsrc6R7.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
         ],
         "answer": 2,
-        "id": 94
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
+        "id": 95,
         "section": "math",
         "topic": "Trigonometry",
         "text": "Given the function <img alt=\"\" src=\"images/image_rsrc6ZA.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, determine its amplitude, period, and vertical shift.",
@@ -1252,9 +1346,10 @@ const ACT_QUESTIONS1 = [
             "Amplitude: 3, Period: <img alt=\"\" src=\"images/image_rsrc6ZD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, Vertical Shift: -2"
         ],
         "answer": 0,
-        "id": 95
+        "explanation": "Correct Answer: Amplitude: 3, Period: 6, Vertical Shift: -2. Step-by-step solution: Use fundamental trigonometric definitions (sin = opp/hyp, cos = adj/hyp, tan = opp/adj) or trigonometric identities to simplify the expression, arriving at Amplitude: 3, Period: 6, Vertical Shift: -2."
     },
     {
+        "id": 96,
         "section": "reading",
         "topic": "Natural Science",
         "text": "What is the main idea of the following passage? *Passage:* *Photosynthesis is a fundamental biological process through which green plants, algae, and certain bacteria convert light energy into chemical energy. This process not only fuels the growth and maintenance of the organisms themselves but also produces oxygen, which is essential for the respiration of most living creatures on Earth.*",
@@ -1265,9 +1360,10 @@ const ACT_QUESTIONS1 = [
             "Photosynthesis occurs only in green plants and algae under specific conditions."
         ],
         "answer": 2,
-        "id": 96
+        "explanation": "Correct Answer: \"Photosynthesis is vital for both the growth of organisms and the production of oxygen necessary for life.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 97,
         "section": "reading",
         "topic": "Natural Science",
         "text": "Based on the passage below, what is the primary focus of the study mentioned? *Passage:* *Recent research has focused on the impact of microplastics on marine ecosystems. Scientists have discovered that these tiny plastic particles are ingested by a wide range of marine life, from plankton to large fish, leading to physical and chemical stress on these organisms. The study aims to understand the long-term effects of microplastic accumulation in the food chain.*",
@@ -1278,9 +1374,10 @@ const ACT_QUESTIONS1 = [
             "The economic effects of microplastic pollution on fishing industries."
         ],
         "answer": 1,
-        "id": 97
+        "explanation": "Correct Answer: \"The impact of microplastics on various marine species and the food chain.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 98,
         "section": "reading",
         "topic": "Natural Science",
         "text": "What is the central theme of the following excerpt? *Passage:* *Climate change has led to significant alterations in global weather patterns, resulting in more frequent and severe storms. These extreme weather events not only cause immediate damage to infrastructure but also have long-term economic and social repercussions for affected communities.*",
@@ -1291,9 +1388,10 @@ const ACT_QUESTIONS1 = [
             "The technological advancements in predicting storms."
         ],
         "answer": 2,
-        "id": 98
+        "explanation": "Correct Answer: \"The immediate and long-term impacts of extreme weather events caused by climate change.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 99,
         "section": "reading",
         "topic": "Natural Science",
         "text": "In the passage below, what is the primary conclusion drawn by the researchers? *Passage:* *Through a series of controlled experiments, researchers have found that increasing the concentration of carbon dioxide in terrestrial ecosystems significantly enhances plant growth. However, this boost in growth is accompanied by a decrease in plant nutrient content, which may have implications for herbivores and the broader food web.*",
@@ -1304,9 +1402,10 @@ const ACT_QUESTIONS1 = [
             "Terrestrial ecosystems are not affected by changes in carbon dioxide levels."
         ],
         "answer": 2,
-        "id": 99
+        "explanation": "Correct Answer: \"Elevated carbon dioxide enhances plant growth but may reduce nutritional quality, affecting the food web.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 100,
         "section": "reading",
         "topic": "Natural Science",
         "text": "What is the main focus of the following passage? *Passage:* *Renewable energy sources, such as solar and wind power, have become increasingly cost-effective and efficient. Advances in technology have led to greater energy output and reduced reliance on fossil fuels, contributing to a decrease in greenhouse gas emissions and promoting environmental sustainability.*",
@@ -1317,9 +1416,10 @@ const ACT_QUESTIONS1 = [
             "The economic challenges of transitioning to renewable energy."
         ],
         "answer": 2,
-        "id": 100
+        "explanation": "Correct Answer: \"The technological advancements that have made renewable energy more effective and environmentally friendly.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 101,
         "section": "reading",
         "topic": "Natural Science",
         "text": "Based on the passage below, what can be inferred about the relationship between deforestation and biodiversity? *Passage:* *Deforestation, the large-scale removal of forest cover, has been linked to a significant loss in biodiversity. As trees are cut down, habitats for countless species are destroyed, leading to a decline in wildlife populations and the extinction of vulnerable species.*",
@@ -1330,9 +1430,10 @@ const ACT_QUESTIONS1 = [
             "Biodiversity drives deforestation in certain regions."
         ],
         "answer": 2,
-        "id": 101
+        "explanation": "Correct Answer: \"Deforestation decreases biodiversity by destroying habitats and causing species extinction.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 102,
         "section": "reading",
         "topic": "Natural Science",
         "text": "What is the primary objective of the study mentioned in the following passage? *Passage:* *The study examines the effects of urbanization on local bird populations. By comparing bird diversity and abundance in urban parks with those in nearby natural reserves, researchers aim to determine how city expansion influences avian species richness and ecosystem health.*",
@@ -1343,9 +1444,10 @@ const ACT_QUESTIONS1 = [
             "To compare migratory patterns of birds in different habitats."
         ],
         "answer": 1,
-        "id": 102
+        "explanation": "Correct Answer: \"To understand how urbanization affects bird diversity and ecosystem health.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 103,
         "section": "reading",
         "topic": "Natural Science",
         "text": "Based on the passage below, what can be inferred about the role of wetlands in maintaining ecological balance? *Passage:* *Wetlands act as natural water filters, removing pollutants and excess nutrients from water before it enters larger bodies of water. They also provide critical habitats for a variety of species, support flood control by absorbing excess rainfall, and contribute to carbon sequestration, helping mitigate climate change.*",
@@ -1356,9 +1458,10 @@ const ACT_QUESTIONS1 = [
             "Wetlands only provide habitats for aquatic species."
         ],
         "answer": 2,
-        "id": 103
+        "explanation": "Correct Answer: \"Wetlands play a multifaceted role in water purification, habitat provision, flood control, and carbon sequestration.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 104,
         "section": "reading",
         "topic": "Natural Science",
         "text": "What is the main argument presented in the following passage? *Passage:* *The integration of artificial intelligence (AI) in healthcare systems has the potential to revolutionize patient care. AI can assist in diagnosing diseases more accurately, personalizing treatment plans, and managing patient data efficiently. However, ethical considerations regarding data privacy and the potential for job displacement among healthcare professionals must be addressed to ensure responsible implementation.*",
@@ -1369,9 +1472,10 @@ const ACT_QUESTIONS1 = [
             "Data privacy is the only concern with implementing AI in healthcare."
         ],
         "answer": 1,
-        "id": 104
+        "explanation": "Correct Answer: \"AI has the potential to significantly improve healthcare, but ethical issues must be managed.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 105,
         "section": "reading",
         "topic": "Literary Narrative",
         "text": "What is the primary theme conveyed in a story where the protagonist overcomes numerous obstacles to achieve personal growth and self-discovery?",
@@ -1382,9 +1486,10 @@ const ACT_QUESTIONS1 = [
             "The dangers of unchecked ambition."
         ],
         "answer": 1,
-        "id": 105
+        "explanation": "Correct Answer: \"The journey towards self-improvement.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 106,
         "section": "reading",
         "topic": "Literary Narrative",
         "text": "In a narrative where a character learns to forgive others despite past grievances, what is the main idea of the story?",
@@ -1395,9 +1500,10 @@ const ACT_QUESTIONS1 = [
             "Revenge is a satisfying response."
         ],
         "answer": 0,
-        "id": 106
+        "explanation": "Correct Answer: \"Forgiveness leads to personal peace.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 107,
         "section": "reading",
         "topic": "Literary Narrative",
         "text": "A story depicts a city's residents uniting to save a local park from development. What is the central message of this tale?",
@@ -1408,9 +1514,10 @@ const ACT_QUESTIONS1 = [
             "Individual action has no impact on larger issues."
         ],
         "answer": 1,
-        "id": 107
+        "explanation": "Correct Answer: \"Community effort can protect common resources.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 108,
         "section": "reading",
         "topic": "Literary Narrative",
         "text": "In a novel, the protagonist struggles with identity while navigating cultural expectations. What is the primary concept explored in this story?",
@@ -1421,9 +1528,10 @@ const ACT_QUESTIONS1 = [
             "The irrelevance of culture in personal development."
         ],
         "answer": 0,
-        "id": 108
+        "explanation": "Correct Answer: \"The conflict between personal desires and societal norms.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 109,
         "section": "reading",
         "topic": "Literary Narrative",
         "text": "A story revolves around a scientist who sacrifices personal relationships for career success. What is the key idea presented in this narrative?",
@@ -1434,9 +1542,10 @@ const ACT_QUESTIONS1 = [
             "Career success always harms personal life."
         ],
         "answer": 1,
-        "id": 109
+        "explanation": "Correct Answer: \"Personal sacrifices can lead to professional achievements.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 110,
         "section": "reading",
         "topic": "Literary Narrative",
         "text": "In a story where an immigrant family maintains their traditions while integrating into a new society, what is the central idea?",
@@ -1447,9 +1556,10 @@ const ACT_QUESTIONS1 = [
             "Immigrants should fully adopt the new culture."
         ],
         "answer": 1,
-        "id": 110
+        "explanation": "Correct Answer: \"Cultural preservation and integration can coexist.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 111,
         "section": "reading",
         "topic": "Literary Narrative",
         "text": "A narrative follows a young artist who learns to express emotions through their work after experiencing loss. What is the main idea?",
@@ -1460,9 +1570,10 @@ const ACT_QUESTIONS1 = [
             "Only sorrowful experiences foster creativity."
         ],
         "answer": 2,
-        "id": 111
+        "explanation": "Correct Answer: \"Artistic expression can aid in emotional healing.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 112,
         "section": "reading",
         "topic": "Literary Narrative",
         "text": "In a narrative where technology threatens traditional lifestyles, the characters must find a balance between progress and heritage. What is the central message?",
@@ -1473,9 +1584,10 @@ const ACT_QUESTIONS1 = [
             "Traditional lifestyles are obsolete in the modern world."
         ],
         "answer": 1,
-        "id": 112
+        "explanation": "Correct Answer: \"Progress and heritage can coexist with mindful integration.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 113,
         "section": "reading",
         "topic": "Literary Narrative",
         "text": "A story details the protagonist's journey through self-doubt to confidence by overcoming numerous challenges. What is the main theme?",
@@ -1486,9 +1598,10 @@ const ACT_QUESTIONS1 = [
             "Challenges only lead to more self-doubt."
         ],
         "answer": 2,
-        "id": 113
+        "explanation": "Correct Answer: \"Overcoming challenges leads to self-confidence.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 114,
         "section": "reading",
         "topic": "Humanities",
         "text": "*\"As the storm clouds gathered on the horizon, Maya stood at the window, watching the lightning illuminate the darkened streets. She thought about the journey she had taken to reach this point, realizing that every challenge had taught her resilience and inner strength.\"* What literary theme is most evident in this passage?",
@@ -1499,9 +1612,10 @@ const ACT_QUESTIONS1 = [
             "The decline of urban life."
         ],
         "answer": 2,
-        "id": 114
+        "explanation": "Correct Answer: \"Personal growth through adversity.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 115,
         "section": "reading",
         "topic": "Humanities",
         "text": "A passage discusses the implementation of the New Deal policies during the Great Depression, highlighting government intervention in various industries to stimulate economic recovery. What historical context does this detail primarily illustrate?",
@@ -1512,9 +1626,10 @@ const ACT_QUESTIONS1 = [
             "The impact of World War II on the U.S. economy"
         ],
         "answer": 1,
-        "id": 115
+        "explanation": "Correct Answer: \"The role of government in economic stabilization during crises\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 116,
         "section": "reading",
         "topic": "Humanities",
         "text": "Read the following excerpt: *\"Organic farming is the only legitimate way to cultivate crops, as conventional farming methods are harmful to both the environment and human health. Anyone who supports the use of pesticides and genetically modified organisms is oblivious to the true costs of their actions.\"* What type of bias is most evident in the passage above?",
@@ -1525,9 +1640,10 @@ const ACT_QUESTIONS1 = [
             "Selection Bias"
         ],
         "answer": 1,
-        "id": 116
+        "explanation": "Correct Answer: \"Slant Bias\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 117,
         "section": "reading",
         "topic": "Humanities",
         "text": "In an essay analyzing a novel, the author asserts that the protagonist's actions are solely driven by ambition. However, the essay only references scenes where the protagonist pursues personal gain and overlooks instances where the protagonist makes sacrifices for others. What is the primary flaw in the author's argument?",
@@ -1538,9 +1654,10 @@ const ACT_QUESTIONS1 = [
             "The argument is enhanced by including the protagonist's sacrifices to others."
         ],
         "answer": 2,
-        "id": 117
+        "explanation": "Correct Answer: \"The essay demonstrates confirmation bias by selectively citing evidence that supports the thesis while ignoring contradictory examples.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 118,
         "section": "reading",
         "topic": "Humanities",
         "text": "In the short story, the persistent storm serves as a symbol for:",
@@ -1551,9 +1668,10 @@ const ACT_QUESTIONS1 = [
             "The inevitable change and progress in society."
         ],
         "answer": 0,
-        "id": 118
+        "explanation": "Correct Answer: \"The characters' internal conflicts and unresolved emotions.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 119,
         "section": "reading",
         "topic": "Humanities",
         "text": "After reading the short passage below, what is the author's primary intent? *\"The autumn leaves, with their rich hues of red and gold, paint a breathtaking portrait of the changing seasons. As they gently fall to the ground, they remind us of the beauty inherent in transformation and the inevitable passage of time.\"*",
@@ -1564,9 +1682,10 @@ const ACT_QUESTIONS1 = [
             "To inform readers about different types of trees."
         ],
         "answer": 2,
-        "id": 119
+        "explanation": "Correct Answer: \"To explore the symbolic meaning of seasonal changes.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 120,
         "section": "reading",
         "topic": "Humanities",
         "text": "In the following sentence, what does the word \"ambivalent\" most nearly mean? \"Maria felt ambivalent about moving to the bustling city; she was excited for new opportunities but saddened by leaving her close-knit community.\"",
@@ -1577,9 +1696,10 @@ const ACT_QUESTIONS1 = [
             "Highly enthusiastic"
         ],
         "answer": 1,
-        "id": 120
+        "explanation": "Correct Answer: \"Mixed or contradictory feelings\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 121,
         "section": "reading",
         "topic": "Humanities",
         "text": "\"At the beginning of the novel, Alex is portrayed as timid and hesitant, often avoiding conflicts and choosing the safe route in life. However, after a series of challenging events, including the loss of a close friend and facing a critical decision that could affect his community, Alex transforms into a confident and assertive leader. His newfound courage not only helps him overcome personal fears but also inspires those around him to take action.\" How does Alex's character develop throughout the novel?",
@@ -1590,9 +1710,10 @@ const ACT_QUESTIONS1 = [
             "He becomes indifferent to the challenges facing his community."
         ],
         "answer": 2,
-        "id": 121
+        "explanation": "Correct Answer: \"He transforms into a confident leader who inspires others.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 122,
         "section": "reading",
         "topic": "Humanities",
         "text": "\"In her essay, the author explores the significance of cultural heritage in shaping personal identity. She argues that traditions and ancestral stories play a crucial role in understanding oneself and maintaining a sense of continuity across generations.\" What is the main idea of this passage?",
@@ -1603,9 +1724,10 @@ const ACT_QUESTIONS1 = [
             "The importance of historical education in schools."
         ],
         "answer": 1,
-        "id": 122
+        "explanation": "Correct Answer: \"The role of cultural heritage in personal identity.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 123,
         "section": "reading",
         "topic": "Social Science",
         "text": "In a passage describing the industrial revolution, the author mentions \"factories belching smoke into the once clear skies.\" What does this detail primarily illustrate about the historical context?",
@@ -1616,9 +1738,10 @@ const ACT_QUESTIONS1 = [
             "The migration of people to urban areas."
         ],
         "answer": 1,
-        "id": 123
+        "explanation": "Correct Answer: \"The environmental impact of industrialization.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 124,
         "section": "reading",
         "topic": "Social Science",
         "text": "A historical text refers to the \"tight-knit communities in rural villages\" during the 19th century. What aspect of that time period is the author emphasizing?",
@@ -1629,9 +1752,10 @@ const ACT_QUESTIONS1 = [
             "The economic challenges faced by farmers."
         ],
         "answer": 1,
-        "id": 124
+        "explanation": "Correct Answer: \"The social structure and community bonds.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 125,
         "section": "reading",
         "topic": "Social Science",
         "text": "In discussing the causes of World War I, an author notes the \"complex web of alliances.\" What is the historical significance of this detail?",
@@ -1642,9 +1766,10 @@ const ACT_QUESTIONS1 = [
             "It describes the technological advancements used in the war."
         ],
         "answer": 2,
-        "id": 125
+        "explanation": "Correct Answer: \"It highlights how interconnections between nations contributed to the conflict.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 126,
         "section": "reading",
         "topic": "Social Science",
         "text": "A passage about the Great Depression mentions \"bank closures and mass unemployment.\" What does this detail convey about the period?",
@@ -1655,9 +1780,10 @@ const ACT_QUESTIONS1 = [
             "The cultural changes in society."
         ],
         "answer": 1,
-        "id": 126
+        "explanation": "Correct Answer: \"The economic hardships and financial instability.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 127,
         "section": "reading",
         "topic": "Social Science",
         "text": "An author describing the Cold War states, \"The world stood divided by an invisible line of ideology.\" What does this metaphor primarily represent?",
@@ -1668,9 +1794,10 @@ const ACT_QUESTIONS1 = [
             "The economic disparities worldwide."
         ],
         "answer": 2,
-        "id": 127
+        "explanation": "Correct Answer: \"The ideological and political conflict between the USA and USSR.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 128,
         "section": "reading",
         "topic": "Social Science",
         "text": "In a discussion about the Suffragette movement, the author highlights \"marches and public demonstrations.\" What does this emphasize about the movement's strategies?",
@@ -1681,9 +1808,10 @@ const ACT_QUESTIONS1 = [
             "Their collaboration with government officials."
         ],
         "answer": 2,
-        "id": 128
+        "explanation": "Correct Answer: \"Their use of public, non-violent activism to gain attention and support.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 129,
         "section": "reading",
         "topic": "Social Science",
         "text": "A text about the Renaissance period mentions \"revival of classical philosophy and arts.\" What is the significance of this detail in understanding the historical context?",
@@ -1694,9 +1822,10 @@ const ACT_QUESTIONS1 = [
             "It explains the political changes in Europe."
         ],
         "answer": 1,
-        "id": 129
+        "explanation": "Correct Answer: \"It indicates a renewed interest in ancient Greek and Roman culture, influencing art and thought.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 130,
         "section": "reading",
         "topic": "Social Science",
         "text": "In describing the Transatlantic Slave Trade, an author notes \"the forced migration of millions of Africans to the Americas.\" What aspect of the historical context is being highlighted?",
@@ -1707,9 +1836,10 @@ const ACT_QUESTIONS1 = [
             "The technological advancements in shipping."
         ],
         "answer": 2,
-        "id": 130
+        "explanation": "Correct Answer: \"The human cost and exploitation involved in the trade.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
+        "id": 131,
         "section": "reading",
         "topic": "Social Science",
         "text": "A passage about the Enlightenment period states, \"Reason and individualism became the cornerstone of societal progress.\" What does this suggest about the values of that era?",
@@ -1720,6 +1850,6 @@ const ACT_QUESTIONS1 = [
             "The decline of scientific inquiry."
         ],
         "answer": 2,
-        "id": 131
+        "explanation": "Correct Answer: \"A focus on logical reasoning and the importance of the individual in driving progress.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     }
 ];

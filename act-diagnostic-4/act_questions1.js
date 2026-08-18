@@ -1,8 +1,7 @@
 // =============================================
 // act_questions1.js – ACT Practice Test 7
-// (Extracted from Kaplan ACT Prep Plus 2024 Practice Test 1)
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
-// Total: 131 questions | Time: 125 minutes (2 hr 5 min)
+// Total: 131 questions | Time: 125 minutes
 // =============================================
 
 const ACT_QUESTIONS1 = [
@@ -17,7 +16,8 @@ const ACT_QUESTIONS1 = [
             "ways having a",
             "ways, and still has a"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 2,
@@ -30,7 +30,8 @@ const ACT_QUESTIONS1 = [
             "tells us that,",
             "tells us that"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"tells us that\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 3,
@@ -43,7 +44,8 @@ const ACT_QUESTIONS1 = [
             "runs",
             "ran"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"runs\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 4,
@@ -56,7 +58,8 @@ const ACT_QUESTIONS1 = [
             "be able to see right away that not very much has changed since.",
             "not change very much."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 5,
@@ -69,7 +72,8 @@ const ACT_QUESTIONS1 = [
             "inventory, which he writes down by hand.",
             "inventory of goods on the shelves and in the storeroom."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"inventory, refusing to consider a more current method.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 6,
@@ -82,7 +86,8 @@ const ACT_QUESTIONS1 = [
             "years, and besides that, his filing cabinets",
             "years and since his filing cabinets"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"years; his filing cabinets\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 7,
@@ -95,7 +100,8 @@ const ACT_QUESTIONS1 = [
             "know, however, that",
             "know, beyond that,"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"know, however, that\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 8,
@@ -108,7 +114,8 @@ const ACT_QUESTIONS1 = [
             "my sister and I",
             "my sister and I,"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"my sister and I\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 9,
@@ -121,7 +128,8 @@ const ACT_QUESTIONS1 = [
             "In addition",
             "Rather,"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 10,
@@ -134,7 +142,8 @@ const ACT_QUESTIONS1 = [
             "accounts and,",
             "accounts, we"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"accounts and\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 11,
@@ -147,7 +156,8 @@ const ACT_QUESTIONS1 = [
             "add an interesting detail to set the scene.",
             "foreshadow an event that occurs later in the story."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"suggest that the father’s reasons not to update his technology are ill-founded.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 12,
@@ -160,7 +170,8 @@ const ACT_QUESTIONS1 = [
             "after Sentence 4",
             "after Sentence 5"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"after Sentence 1\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 13,
@@ -173,7 +184,8 @@ const ACT_QUESTIONS1 = [
             "Sooner or later,",
             "As soon as later,"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"Sooner or later,\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 14,
@@ -186,7 +198,8 @@ const ACT_QUESTIONS1 = [
             "In the disorganized depths of the office, the computer will soon be joined by the cell phone my mom gave him a few years ago.",
             "The computer will join the cell phone my mom gave him a few years back in the disorganized depths of that office."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 15,
@@ -199,7 +212,8 @@ const ACT_QUESTIONS1 = [
             "We have no idea who might be calling.",
             "Maybe one day I will try to find it and answer it."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"We tell my father it’s a reminder that he can’t hide from the future forever.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 16,
@@ -212,7 +226,8 @@ const ACT_QUESTIONS1 = [
             "from the most farthest",
             "from farther"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 17,
@@ -225,7 +240,8 @@ const ACT_QUESTIONS1 = [
             "a symbol for equality among races.",
             "for equality among races a symbol."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"a symbol for equality among races.\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 18,
@@ -238,7 +254,8 @@ const ACT_QUESTIONS1 = [
             "from participating",
             "to participation"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"from participating\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 19,
@@ -251,7 +268,8 @@ const ACT_QUESTIONS1 = [
             "No, because the names of the organizations are not important.",
             "No, because it is inconsistent with the style of the essay to provide specific historical data."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"Yes, because it helps clarify the development the author traces.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 20,
@@ -264,7 +282,8 @@ const ACT_QUESTIONS1 = [
             "had any “colored persons”",
             "had any “colored persons,”"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"had any “colored persons”\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 21,
@@ -277,7 +296,8 @@ const ACT_QUESTIONS1 = [
             "from",
             "about"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"of\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 22,
@@ -290,7 +310,8 @@ const ACT_QUESTIONS1 = [
             "No, because the information shows that white players did not object to integration.",
             "No, because the statement provides a smooth transition to the specific information about early African American players in the next paragraph."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"No, because the statement provides a smooth transition to the specific information about early African American players in the next paragraph.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 23,
@@ -303,7 +324,8 @@ const ACT_QUESTIONS1 = [
             "Walker, a catcher",
             "Walker who was a catcher"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 24,
@@ -316,7 +338,8 @@ const ACT_QUESTIONS1 = [
             "who would include",
             "including among them"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 25,
@@ -329,7 +352,8 @@ const ACT_QUESTIONS1 = [
             "were to join him",
             "will join him"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"joined him\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 26,
@@ -342,7 +366,8 @@ const ACT_QUESTIONS1 = [
             "Sentence 3.",
             "Sentence 4."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"Sentence 3.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 27,
@@ -355,7 +380,8 @@ const ACT_QUESTIONS1 = [
             "while",
             "when the time came that"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"when\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 28,
@@ -368,7 +394,8 @@ const ACT_QUESTIONS1 = [
             "forever recognize",
             "be admired by a lot of people for being"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 29,
@@ -381,7 +408,8 @@ const ACT_QUESTIONS1 = [
             "The stance he took against",
             "His collaboration in the face of"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"The path that he blazed through\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 30,
@@ -394,7 +422,8 @@ const ACT_QUESTIONS1 = [
             "No, because people played baseball before 1868.",
             "No, because the focus of this essay is on one particular aspect of baseball history."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"No, because the focus of this essay is on one particular aspect of baseball history.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 31,
@@ -407,7 +436,8 @@ const ACT_QUESTIONS1 = [
             "1924. It",
             "1924 and it"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 32,
@@ -420,7 +450,8 @@ const ACT_QUESTIONS1 = [
             "it was",
             "it were"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"it was\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 33,
@@ -433,7 +464,8 @@ const ACT_QUESTIONS1 = [
             "was authorized",
             "would authorize"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"authorized\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 34,
@@ -446,7 +478,8 @@ const ACT_QUESTIONS1 = [
             "construct and maintain",
             "construct, and maintain"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"construct and maintain\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 35,
@@ -459,7 +492,8 @@ const ACT_QUESTIONS1 = [
             "of Howard Baird and, George Hodge",
             "of, Howard Baird and George Hodge"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 36,
@@ -472,7 +506,8 @@ const ACT_QUESTIONS1 = [
             "add a detail contributing to the reader’s understanding of the magnitude of the project.",
             "provide an explanation of how the group raised money to invest in the bridge."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"add a detail contributing to the reader’s understanding of the magnitude of the project.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 37,
@@ -485,7 +520,8 @@ const ACT_QUESTIONS1 = [
             "a company",
             "a company that had been"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"a company that had been\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 38,
@@ -498,7 +534,8 @@ const ACT_QUESTIONS1 = [
             "crucial information about the duration of the project.",
             "a necessary transition between Paragraphs 3 and 4."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"a necessary transition between Paragraphs 3 and 4.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 39,
@@ -511,7 +548,8 @@ const ACT_QUESTIONS1 = [
             "At the same time, the",
             "The"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"The\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 40,
@@ -524,7 +562,8 @@ const ACT_QUESTIONS1 = [
             "in total length.",
             "lengthy."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"long.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 41,
@@ -537,7 +576,8 @@ const ACT_QUESTIONS1 = [
             "side, lying",
             "side; and it lies"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"side, lying\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 42,
@@ -550,7 +590,8 @@ const ACT_QUESTIONS1 = [
             "opened: the BMHBC charged",
             "opened; the BMHBC charged"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 43,
@@ -563,7 +604,8 @@ const ACT_QUESTIONS1 = [
             "Besides that fact,",
             "Today,"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"Today,\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 44,
@@ -576,7 +618,8 @@ const ACT_QUESTIONS1 = [
             "even more than",
             "a higher amount than"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 45,
@@ -589,7 +632,8 @@ const ACT_QUESTIONS1 = [
             "No, because it focuses on only one bridge.",
             "No, because the essay is primarily concerned with the financial aspects of building and maintaining the bridge."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"No, because it focuses on only one bridge.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 46,
@@ -602,7 +646,8 @@ const ACT_QUESTIONS1 = [
             "rose slowly",
             "continued to rise"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"rose slowly\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 47,
@@ -615,7 +660,8 @@ const ACT_QUESTIONS1 = [
             "everything would be different.",
             "the tranquility would be unbroken."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
     },
     {
         "id": 48,
@@ -628,7 +674,8 @@ const ACT_QUESTIONS1 = [
             "at",
             "all because of"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"at\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
     },
     {
         "id": 49,
@@ -641,7 +688,8 @@ const ACT_QUESTIONS1 = [
             "traveled to the other side of",
             "traveled across"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"traveled across\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
     },
     {
         "id": 50,
@@ -654,7 +702,8 @@ const ACT_QUESTIONS1 = [
             "The morning sun climbed into the sky,",
             "As the sun rose,"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"The morning sun climbed into the sky,\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
     },
     {
         "id": 51,
@@ -668,7 +717,8 @@ const ACT_QUESTIONS1 = [
             "28",
             "32"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 28. Step-by-step solution: Calculate the statistical parameter (mean, median, mode, range) or determine the probability using P(E) = (number of favorable outcomes) / (total possible outcomes). The result simplifies to 28."
     },
     {
         "id": 52,
@@ -682,7 +732,8 @@ const ACT_QUESTIONS1 = [
             "28",
             "31"
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: 31. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 31."
     },
     {
         "id": 53,
@@ -696,7 +747,8 @@ const ACT_QUESTIONS1 = [
             "12",
             "20"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 5. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 5 satisfies all conditions of the problem."
     },
     {
         "id": 54,
@@ -710,7 +762,8 @@ const ACT_QUESTIONS1 = [
             "164",
             "216"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 96. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 96."
     },
     {
         "id": 55,
@@ -724,7 +777,8 @@ const ACT_QUESTIONS1 = [
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>16</mn><mrow><mn>9</mn></mrow></mfrac></mrow></math>",
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>16</mn><mrow><mn>3</mn></mrow></mfrac></mrow></math>"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 34. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 34."
     },
     {
         "id": 56,
@@ -738,7 +792,8 @@ const ACT_QUESTIONS1 = [
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>1</mn><mrow><mroot><mn>4</mn><mn>3</mn></mroot></mrow></mfrac></mrow></math>",
             "64"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 164. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 164 satisfies all conditions of the problem."
     },
     {
         "id": 57,
@@ -752,7 +807,8 @@ const ACT_QUESTIONS1 = [
             "24.5",
             "49"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 7. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 7 satisfies all conditions of the problem."
     },
     {
         "id": 58,
@@ -766,7 +822,8 @@ const ACT_QUESTIONS1 = [
             "8",
             "12"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: −2. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in −2."
     },
     {
         "id": 59,
@@ -780,7 +837,8 @@ const ACT_QUESTIONS1 = [
             "350",
             "425"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 75. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 75."
     },
     {
         "id": 60,
@@ -794,7 +852,8 @@ const ACT_QUESTIONS1 = [
             "140.608",
             "186.848"
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: 186.848. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 186.848."
     },
     {
         "id": 61,
@@ -808,7 +867,8 @@ const ACT_QUESTIONS1 = [
             "$40 more than it should.",
             "$80 more than it should."
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: $80 more than it should.. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in $80 more than it should.."
     },
     {
         "id": 62,
@@ -822,7 +882,8 @@ const ACT_QUESTIONS1 = [
             "12",
             "15"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 9. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 9."
     },
     {
         "id": 63,
@@ -836,7 +897,8 @@ const ACT_QUESTIONS1 = [
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><mi>&#x0024;</mi><mn>0.24</mn></mrow><mi>x</mi></mfrac><mo>+</mo><mfrac><mrow><mi>&#x0024;</mi><mn>0.38</mn></mrow><mi>y</mi></mfrac></mrow></math>",
             "$0.38<i>x</i> + $0.24<i>y</i>"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: $0.24x + $0.38y. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that $0.24x + $0.38y satisfies all conditions of the problem."
     },
     {
         "id": 64,
@@ -850,7 +912,8 @@ const ACT_QUESTIONS1 = [
             "50",
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mn>66</mn><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math>"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 3313. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 3313."
     },
     {
         "id": 65,
@@ -864,7 +927,8 @@ const ACT_QUESTIONS1 = [
             "147",
             "152"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 105. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 105."
     },
     {
         "id": 66,
@@ -878,7 +942,8 @@ const ACT_QUESTIONS1 = [
             "94",
             "96"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 94. Step-by-step solution: Calculate the statistical parameter (mean, median, mode, range) or determine the probability using P(E) = (number of favorable outcomes) / (total possible outcomes). The result simplifies to 94."
     },
     {
         "id": 67,
@@ -892,7 +957,8 @@ const ACT_QUESTIONS1 = [
             "<i>x</i> > 3",
             "<i>x</i> ≥ 11"
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: x ≥ 11. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x ≥ 11 satisfies all conditions of the problem."
     },
     {
         "id": 68,
@@ -906,7 +972,8 @@ const ACT_QUESTIONS1 = [
             "64",
             "72"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 64. Step-by-step solution: Calculate the statistical parameter (mean, median, mode, range) or determine the probability using P(E) = (number of favorable outcomes) / (total possible outcomes). The result simplifies to 64."
     },
     {
         "id": 69,
@@ -920,7 +987,8 @@ const ACT_QUESTIONS1 = [
             "16",
             "28"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 16. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 16 satisfies all conditions of the problem."
     },
     {
         "id": 70,
@@ -934,7 +1002,8 @@ const ACT_QUESTIONS1 = [
             "2 hours, 30 minutes",
             "3 hours"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 1 hour, 15 minutes. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 1 hour, 15 minutes."
     },
     {
         "id": 71,
@@ -948,7 +1017,8 @@ const ACT_QUESTIONS1 = [
             "112°",
             "292°"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 112°. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 112°."
     },
     {
         "id": 72,
@@ -962,7 +1032,8 @@ const ACT_QUESTIONS1 = [
             "1,000",
             "1,200"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 1,000. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 1,000."
     },
     {
         "id": 73,
@@ -976,7 +1047,8 @@ const ACT_QUESTIONS1 = [
             "13",
             "14"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 13. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 13."
     },
     {
         "id": 74,
@@ -990,7 +1062,8 @@ const ACT_QUESTIONS1 = [
             "80°",
             "125°"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 55°. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 55°."
     },
     {
         "id": 75,
@@ -1004,7 +1077,8 @@ const ACT_QUESTIONS1 = [
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>5</mn><mn>3</mn></mfrac></mrow></math>",
             "0"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: &#x2212;35. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that &#x2212;35 satisfies all conditions of the problem."
     },
     {
         "id": 76,
@@ -1018,7 +1092,8 @@ const ACT_QUESTIONS1 = [
             "3<i>x</i><sup>2</sup> + 2<i>x</i> − 20",
             "3<i>x</i><sup>2</sup> + 2<i>x</i> + 20"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 3x2 − 2x − 20. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 3x2 − 2x − 20 satisfies all conditions of the problem."
     },
     {
         "id": 77,
@@ -1032,7 +1107,8 @@ const ACT_QUESTIONS1 = [
             "13",
             "15"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 13. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 13."
     },
     {
         "id": 78,
@@ -1046,7 +1122,8 @@ const ACT_QUESTIONS1 = [
             "60",
             "70"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 40. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 40."
     },
     {
         "id": 79,
@@ -1060,7 +1137,8 @@ const ACT_QUESTIONS1 = [
             "42",
             "44"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 40. Step-by-step solution: Calculate the statistical parameter (mean, median, mode, range) or determine the probability using P(E) = (number of favorable outcomes) / (total possible outcomes). The result simplifies to 40."
     },
     {
         "id": 80,
@@ -1074,7 +1152,8 @@ const ACT_QUESTIONS1 = [
             "The total is always equal to <i>n</i><sup>2</sup>.",
             "There is no consistent pattern for the total."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: The total is always equal to n2.. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that The total is always equal to n2. satisfies all conditions of the problem."
     },
     {
         "id": 81,
@@ -1088,7 +1167,8 @@ const ACT_QUESTIONS1 = [
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mrow><mo>[</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></mtd></mtr></mtable></mrow><mo>]</mo></mrow></mrow></math>",
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mrow><mo>[</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></mtd></mtr></mtable></mrow><mo>]</mo></mrow></mrow></math>"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: [&#x2212;4&#x2212;4]. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in [&#x2212;4&#x2212;4]."
     },
     {
         "id": 82,
@@ -1102,7 +1182,8 @@ const ACT_QUESTIONS1 = [
             "21<i>x</i>",
             "21"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 10x + 21. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 10x + 21."
     },
     {
         "id": 83,
@@ -1116,7 +1197,8 @@ const ACT_QUESTIONS1 = [
             "−<i>n</i> − <i>m</i>",
             "<i>n</i> − <i>m</i>"
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: n − m. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in n − m."
     },
     {
         "id": 84,
@@ -1130,7 +1212,8 @@ const ACT_QUESTIONS1 = [
             "(2,5.5)",
             "(5,20)"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: (−7,−13). Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields (−7,−13)."
     },
     {
         "id": 85,
@@ -1144,7 +1227,8 @@ const ACT_QUESTIONS1 = [
             "144",
             "372"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 84. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 84 satisfies all conditions of the problem."
     },
     {
         "id": 86,
@@ -1158,7 +1242,8 @@ const ACT_QUESTIONS1 = [
             "6",
             "7"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 4. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 4."
     },
     {
         "id": 87,
@@ -1172,7 +1257,8 @@ const ACT_QUESTIONS1 = [
             "<i>x</i><sup>2</sup> + 2<i>x</i> + 25",
             "<i>x</i><sup>2</sup> + 2<i>x</i> + 54"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: x2 + 2x + 17. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x2 + 2x + 17 satisfies all conditions of the problem."
     },
     {
         "id": 88,
@@ -1186,7 +1272,8 @@ const ACT_QUESTIONS1 = [
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>y</mi><mo>=</mo><mo>&#x2212;</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>x</mi><mo>&#x2212;</mo><mn>9</mn></mrow></math>",
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>y</mi><mo>=</mo><mo>&#x2212;</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>9</mn></mrow></math>"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: y=&#x2212;32x+3. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that y=&#x2212;32x+3 satisfies all conditions of the problem."
     },
     {
         "id": 89,
@@ -1200,7 +1287,8 @@ const ACT_QUESTIONS1 = [
             "203°F",
             "207°F"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 203°F. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 203°F satisfies all conditions of the problem."
     },
     {
         "id": 90,
@@ -1214,7 +1302,8 @@ const ACT_QUESTIONS1 = [
             "<img alt=\"image\" src=\"images/p914-12.jpg\"/>",
             "<img alt=\"image\" src=\"images/p914-13.jpg\"/>"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
     },
     {
         "id": 91,
@@ -1228,7 +1317,8 @@ const ACT_QUESTIONS1 = [
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></math>",
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mn>5</mn><msqrt><mn>2</mn></msqrt></mrow></math>"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: 22. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 22."
     },
     {
         "id": 92,
@@ -1242,7 +1332,8 @@ const ACT_QUESTIONS1 = [
             "5:7",
             "4:15"
         ],
-        "answer": 4
+        "answer": 4,
+        "explanation": "Correct Answer: 4:15. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 4:15."
     },
     {
         "id": 93,
@@ -1256,7 +1347,8 @@ const ACT_QUESTIONS1 = [
             "36π",
             "288π"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: 36π. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 36π."
     },
     {
         "id": 94,
@@ -1270,7 +1362,8 @@ const ACT_QUESTIONS1 = [
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><mn>2</mn><mi>x</mi><mo>&#x00A0;</mo><mo>&#x2212;</mo><mo>&#x00A0;</mo><mn>5</mn></mrow><mrow><mi>x</mi><mo>&#x00A0;</mo><mo>+</mo><mo>&#x00A0;</mo><mn>1</mn></mrow></mfrac></mrow></math>",
             "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><msup><mi>x</mi><mrow><mn>2</mn><mo>&#x00A0;</mo></mrow></msup><mo>&#x2212;</mo><mo>&#x00A0;</mo><mn>4</mn><mi>x</mi><mo>&#x00A0;</mo><mo>&#x2212;</mo><mo>&#x00A0;</mo><mn>5</mn></mrow><mrow><mi>x</mi><mo>&#x00A0;</mo><mo>+</mo><mo>&#x00A0;</mo><mn>1</mn></mrow></mfrac></mrow></math>"
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: 2x − 5. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 2x − 5 satisfies all conditions of the problem."
     },
     {
         "id": 95,
@@ -1284,7 +1377,8 @@ const ACT_QUESTIONS1 = [
             "180<i>a</i><sup>3</sup><i>b</i><sup>2</sup>",
             "180<i>a</i><sup>5</sup><i>b</i><sup>3</sup>"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: 15a2b. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 15a2b satisfies all conditions of the problem."
     },
     {
         "id": 96,
@@ -1297,7 +1391,8 @@ const ACT_QUESTIONS1 = [
             "Traveling",
             "Adopting children"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"Traveling\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 97,
@@ -1310,7 +1405,8 @@ const ACT_QUESTIONS1 = [
             "It is often based on unrealistic expectations.",
             "It is snobbish but occasionally accepting of less common behavior."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"It is snobbish but occasionally accepting of less common behavior.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 98,
@@ -1323,7 +1419,8 @@ const ACT_QUESTIONS1 = [
             "Ellen resented the incoherent education she received from her aunt.",
             "receiving help from her niece would interfere with Medora’s desire to be eccentric."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"Ellen was no longer wealthy, since her own marriage had failed.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 99,
@@ -1336,7 +1433,8 @@ const ACT_QUESTIONS1 = [
             "disinterested but fair.",
             "stylish and gregarious."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"reflective and nonjudgmental.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 100,
@@ -1349,7 +1447,8 @@ const ACT_QUESTIONS1 = [
             "kind and loyal.",
             "precocious and pretty."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"eccentric and peripatetic.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 101,
@@ -1362,7 +1461,8 @@ const ACT_QUESTIONS1 = [
             "disregard.",
             "float."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"disregard.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 102,
@@ -1375,7 +1475,8 @@ const ACT_QUESTIONS1 = [
             "Non-conformity",
             "Orthodoxy"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"Non-conformity\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 103,
@@ -1388,7 +1489,8 @@ const ACT_QUESTIONS1 = [
             "Medora Manson",
             "Count Olenska"
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"Ellen Mingott\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 104,
@@ -1401,7 +1503,8 @@ const ACT_QUESTIONS1 = [
             "she was the perfect person to raise Ellen.",
             "she was a wanderer."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"her eccentricities were not surprising.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 105,
@@ -1414,7 +1517,8 @@ const ACT_QUESTIONS1 = [
             "were both disappointed with New York society.",
             "had just met, but were immediately attracted to each other."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"had not seen each other for some time.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 106,
@@ -1427,7 +1531,8 @@ const ACT_QUESTIONS1 = [
             "argue for the implementation of unorthodox means of combating climate change.",
             "explain the varied ways in which climate change can impact people’s lives."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"discuss the threats climate change poses to Florida and how to address them.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 107,
@@ -1440,7 +1545,8 @@ const ACT_QUESTIONS1 = [
             "It demonstrated to scientists how damaging rising sea levels could be.",
             "It caused more economic damage to Florida than any other hurricane."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"It caused more economic damage to Florida than any other hurricane.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 108,
@@ -1453,7 +1559,8 @@ const ACT_QUESTIONS1 = [
             "is more vulnerable to extreme weather than North Florida.",
             "is central to agricultural production in Florida."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"is a major source of tourism revenue for the state.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 109,
@@ -1466,7 +1573,8 @@ const ACT_QUESTIONS1 = [
             "habitat destruction; extreme weather will degrade the park’s lush vegetation.",
             "isolation; changes to the landscape will cut the park off from visitors."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"submersion; rising sea levels will put lands at low elevations under water.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 110,
@@ -1479,7 +1587,8 @@ const ACT_QUESTIONS1 = [
             "open a discussion about their long-term implications for Florida.",
             "add support for the paragraph’s claims from authoritative sources."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"add support for the paragraph’s claims from authoritative sources.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 111,
@@ -1492,7 +1601,8 @@ const ACT_QUESTIONS1 = [
             "exports more products.",
             "generates less income."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"generates less income.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 112,
@@ -1505,7 +1615,8 @@ const ACT_QUESTIONS1 = [
             "Animals exposed to poor weather would be more likely to become ill.",
             "Water shortages would cause the animals to become dehydrated."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"Higher temperatures would put a strain on the animals’ bodies.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 113,
@@ -1518,7 +1629,8 @@ const ACT_QUESTIONS1 = [
             "It explains some of the ways Floridians are planning to address problems caused by climate change.",
             "It examines how to best direct water supplies in order to compensate for imbalances in rainfall."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"It explains some of the ways Floridians are planning to address problems caused by climate change.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 114,
@@ -1531,7 +1643,8 @@ const ACT_QUESTIONS1 = [
             "Farms are integrating crops and livestock to improve production of both.",
             "Farmers are stepping up vaccinations of livestock to combat the spread of disease."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"Farms are integrating crops and livestock to improve production of both.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 115,
@@ -1544,7 +1657,8 @@ const ACT_QUESTIONS1 = [
             "explain why expanding Florida’s international trade is likely to be effective.",
             "emphasize the benefits of diversifying Florida’s economy."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"explain why expanding Florida’s international trade is likely to be effective.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 116,
@@ -1557,7 +1671,8 @@ const ACT_QUESTIONS1 = [
             "jazz.",
             "cowboy songs."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"jazz.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 117,
@@ -1570,7 +1685,8 @@ const ACT_QUESTIONS1 = [
             "The Appalachian backcountry",
             "The Grand Ole Opry"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"The Grand Ole Opry\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 118,
@@ -1583,7 +1699,8 @@ const ACT_QUESTIONS1 = [
             "disparaging.",
             "mountain dwelling."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"disparaging.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 119,
@@ -1596,7 +1713,8 @@ const ACT_QUESTIONS1 = [
             "jazz.",
             "hillbilly."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"bluegrass.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 120,
@@ -1609,7 +1727,8 @@ const ACT_QUESTIONS1 = [
             "made famous by the piece “Dueling Banjos.”",
             "restricted to those used in the Ozarks."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"both typical and unusual.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 121,
@@ -1622,7 +1741,8 @@ const ACT_QUESTIONS1 = [
             "is characterized by musicians commonly playing the same melodies together.",
             "is played on instruments such as the banjo and guitar."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"features harmonies sung by bass and tenor voices.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 122,
@@ -1635,7 +1755,8 @@ const ACT_QUESTIONS1 = [
             "songs sung by Shania Twain.",
             "hillbilly music."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"the challenges of American life.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 123,
@@ -1648,7 +1769,8 @@ const ACT_QUESTIONS1 = [
             "charming.",
             "unconventional."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"representative.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 124,
@@ -1661,7 +1783,8 @@ const ACT_QUESTIONS1 = [
             "“Lester Flatt, a bluegrass guitarist and mandolinist, and Earl Scruggs, known for his three-finger banjo picking style, are widely considered the foremost artists on their instruments.”",
             "“A style of music closely related to country is the similarly indigenous music known as bluegrass . . .”"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"“Lester Flatt, a bluegrass guitarist and mandolinist, and Earl Scruggs, known for his three-finger banjo picking style, are widely considered the foremost artists on their instruments.”\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 125,
@@ -1674,7 +1797,8 @@ const ACT_QUESTIONS1 = [
             "music genres can evolve.",
             "country and bluegrass music are gaining in acceptance."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"music genres can evolve.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 126,
@@ -1687,7 +1811,8 @@ const ACT_QUESTIONS1 = [
             "Disillusioned frustration",
             "Enthusiastic anticipation"
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"Enthusiastic anticipation\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 127,
@@ -1700,7 +1825,8 @@ const ACT_QUESTIONS1 = [
             "CalPoly and Stanford researchers",
             "NASA scientists and engineers"
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"CalPoly and Stanford researchers\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 128,
@@ -1713,7 +1839,8 @@ const ACT_QUESTIONS1 = [
             "primitive and organic.",
             "profoundly innovative."
         ],
-        "answer": 3
+        "answer": 3,
+        "explanation": "Correct Answer: \"profoundly innovative.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 129,
@@ -1726,7 +1853,8 @@ const ACT_QUESTIONS1 = [
             "Its off-the-shelf components made it much less expensive than other radios.",
             "The radios were unusually space-efficient, being the size of softballs."
         ],
-        "answer": 0
+        "answer": 0,
+        "explanation": "Correct Answer: \"It transmitted landing data over seven times faster than the previous technology.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 130,
@@ -1739,7 +1867,8 @@ const ACT_QUESTIONS1 = [
             "provided more helpful information to improve future Mars landings.",
             "are able to land more effectively in difficult Martian conditions."
         ],
-        "answer": 2
+        "answer": 2,
+        "explanation": "Correct Answer: \"provided more helpful information to improve future Mars landings.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     },
     {
         "id": 131,
@@ -1752,68 +1881,7 @@ const ACT_QUESTIONS1 = [
             "describe the many reasons why the MarCO project was less expensive than comparable satellite projects.",
             "praise the superiority of the images the MarCO satellites sent back from Mars."
         ],
-        "answer": 1
+        "answer": 1,
+        "explanation": "Correct Answer: \"explain how innovative choices in technology led to significant cost reductions for the MarCO satellites.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
     }
 ];
-
-// ── ACT Section Configuration ─────────────────────
-const ACT_SECTIONS = [
-    {
-        id: 'english',
-        label: 'English',
-        questionCount: 50,
-        timeMinutes: 35,
-        color: '#1a56db',
-        colorLight: 'rgba(26, 86, 219, 0.15)',
-        description: 'Grammar, Punctuation, Rhetorical Skills'
-    },
-    {
-        id: 'math',
-        label: 'Math',
-        questionCount: 45,
-        timeMinutes: 50,
-        color: '#059669',
-        colorLight: 'rgba(5, 150, 105, 0.15)',
-        description: 'Algebra, Geometry, Trigonometry'
-    },
-    {
-        id: 'reading',
-        label: 'Reading',
-        questionCount: 36,
-        timeMinutes: 40,
-        color: '#7c3aed',
-        colorLight: 'rgba(124, 58, 237, 0.15)',
-        description: 'Literary Narrative, Social Science, Humanities, Natural Science'
-    }
-];
-
-// ── ACT Scoring Table (Raw Score → Scale Score 1-36) ─────────────
-const ACT_SCALE_TABLE = {
-    english: [
-        1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10, 10, 11, 12, 13, 14, 15, 16, 17, 17, 18, 18, 19, 20,
-        21, 21, 22, 23, 24, 24, 25, 25, 26, 27, 27, 28, 29, 29, 30, 30, 31, 31, 32, 32, 33, 33, 34, 34, 35, 35, 35, 36, 36, 36,
-        36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36
-    ],
-    math: [
-        1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-        22, 22, 23, 24, 25, 26, 26, 27, 28, 28, 29, 30, 30, 31, 31, 32, 32, 33, 33, 34, 34, 35, 35, 35, 36, 36, 36, 36, 36, 36
-    ],
-    reading: [
-        1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
-        27, 28, 29, 30, 31, 32, 33, 34, 35, 36
-    ]
-};
-
-function getACTSectionScore(sectionId, rawScore) {
-    const table = ACT_SCALE_TABLE[sectionId];
-    if (!table) return 1;
-    const idx = Math.min(rawScore, table.length - 1);
-    return table[idx] || 1;
-}
-
-function getACTCompositeScore(sectionScores) {
-    const scores = Object.values(sectionScores).filter(s => typeof s === 'number' && !isNaN(s));
-    if (scores.length === 0) return 1;
-    const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
-    return Math.round(avg);
-}

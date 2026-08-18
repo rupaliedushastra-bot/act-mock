@@ -1,262 +1,287 @@
+// =============================================
+// questions.js – Topic: transitions
+// ACT Topic Test
+// =============================================
+
 const ACT_QUESTIONS1 = [
-  {
-    "id": 1,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Choose the best transition word to complete the sentence:\n\n'She studied for twelve hours; _____, she still failed the exam.'",
-    "options": [
-      "therefore",
-      "furthermore",
-      "however",
-      "for example"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 2,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Select the transition that best shows a cause-and-effect relationship:\n\n'The road was covered in ice; _____, the school was cancelled.'",
-    "options": [
-      "however",
-      "as a result",
-      "in contrast",
-      "for instance"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 3,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition best introduces an example?\n\n'Many foods are high in antioxidants; _____, blueberries contain exceptionally high levels.'",
-    "options": [
-      "consequently",
-      "on the other hand",
-      "for example",
-      "likewise"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 4,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition best connects two similar ideas?\n\n'Dogs make loyal companions. _____, cats can also form deep bonds with their owners.'",
-    "options": [
-      "However",
-      "Likewise",
-      "Therefore",
-      "Consequently"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 5,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Choose the transition that best shows contrast:\n\n'The first season of the show received rave reviews. _____, the second season disappointed fans.'",
-    "options": [
-      "Furthermore",
-      "As a result",
-      "In addition",
-      "However"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 6,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition indicates a sequence of events?\n\n'First, dissolve the sugar in hot water. _____, allow the mixture to cool completely.'",
-    "options": [
-      "However",
-      "For example",
-      "Therefore",
-      "Then"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 7,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Choose the best transition to show a logical conclusion:\n\n'The team won every game this season. _____, they were named champions.'",
-    "options": [
-      "Nevertheless",
-      "In contrast",
-      "Therefore",
-      "For instance"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 8,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition best introduces an opposing viewpoint?\n\n'Many scientists support the theory. _____, a number of experts have raised concerns about the methodology.'",
-    "options": [
-      "As a result",
-      "Likewise",
-      "On the other hand",
-      "Subsequently"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 9,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition best connects two ideas happening at the same time?\n\n'The children played in the park _____ their parents chatted on the bench.'",
-    "options": [
-      "consequently",
-      "while",
-      "therefore",
-      "because"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 10,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition shows an addition of information?\n\n'The new library offers an extensive collection of books. _____, it provides free access to online academic databases.'",
-    "options": [
-      "However",
-      "On the contrary",
-      "Furthermore",
-      "As a result"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 11,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition is most appropriate to introduce a final point in an argument?\n\n'_____, the policy change will benefit all residents of the district.'",
-    "options": [
-      "For example",
-      "In contrast",
-      "In conclusion",
-      "Subsequently"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 12,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Select the best transition for this sentence:\n\n'The experiment produced unexpected results; _____, researchers decided to repeat the trial.'",
-    "options": [
-      "likewise",
-      "therefore",
-      "despite",
-      "for instance"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 13,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition best shows that one event caused another?\n\n'Heavy rain fell throughout the night. _____, the basement flooded by morning.'",
-    "options": [
-      "Nevertheless",
-      "In addition",
-      "Consequently",
-      "Meanwhile"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 14,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which pair of transitions correctly matches a contrast relationship?",
-    "options": [
-      "because / so",
-      "first / then",
-      "however / although",
-      "also / furthermore"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 15,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition correctly signals a concession or acknowledgment before a counterargument?\n\n'_____ the plan has some drawbacks, the overall benefits far outweigh them.'",
-    "options": [
-      "Because",
-      "Therefore",
-      "Although",
-      "Subsequently"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 16,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition best fits this sentence?\n\n'She was exhausted from the long drive; _____, she decided to rest before unpacking.'",
-    "options": [
-      "for instance",
-      "in contrast",
-      "as a result",
-      "likewise"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 17,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Choose the correct transition to show time order:\n\n'_____ baking the cake, let it cool for at least thirty minutes before frosting it.'",
-    "options": [
-      "Instead of",
-      "After",
-      "However",
-      "Moreover"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 18,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition is a CAUSE AND EFFECT transition?",
-    "options": [
-      "on the other hand",
-      "similarly",
-      "for instance",
-      "due to"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 19,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "A student writes: 'Many people prefer remote work. _____, they report higher job satisfaction.' Which transition makes the most logical sense?",
-    "options": [
-      "On the contrary",
-      "Despite this",
-      "In fact",
-      "However"
-    ],
-    "answer": 2
-  },
-  {
-    "id": 20,
-    "section": "english",
-    "topic": "Transitions",
-    "text": "Which transition correctly shows similarity between two things?\n\n'The Atlantic Ocean is home to the loggerhead sea turtle. _____, the Pacific Ocean supports a thriving population of leatherback sea turtles.'",
-    "options": [
-      "Consequently",
-      "Although",
-      "Similarly",
-      "As a result"
-    ],
-    "answer": 2
-  }
+    {
+        "id": 1,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "Electric vehicles produce zero direct tailpipe emissions. ______, manufacturing their batteries requires significant energy and rare earth minerals.\n\nWhich transition word best connects these sentences?",
+        "options": [
+            "However",
+            "Furthermore",
+            "Therefore",
+            "Similarly"
+        ],
+        "answer": 0,
+        "explanation": "'However' correctly establishes the contrast between the environmental benefit of zero emissions and the environmental cost of battery production."
+    },
+    {
+        "id": 2,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The student studied diligently every evening for three months. ______, she achieved the highest score in the statewide competition.\n\nWhich transition best expresses this relationship?",
+        "options": [
+            "Consequently",
+            "In contrast",
+            "Nevertheless",
+            "Otherwise"
+        ],
+        "answer": 0,
+        "explanation": "'Consequently' signals a direct cause-and-effect outcome: diligent studying led directly to the top test score."
+    },
+    {
+        "id": 3,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The museum offers free admission on the first Sunday of every month. ______, it provides complimentary audio guides to all visitors.\n\nWhich transition word best adds information?",
+        "options": [
+            "In addition",
+            "Instead",
+            "Conversely",
+            "On the other hand"
+        ],
+        "answer": 0,
+        "explanation": "'In addition' appropriately adds another complementary benefit (free audio guides) to the initial perk (free admission)."
+    },
+    {
+        "id": 4,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "Heavy fog rolled into the valley, reducing visibility to less than fifty feet. ______, airport officials grounded all departing flights.\n\nWhich transition word is most logical?",
+        "options": [
+            "As a result",
+            "Meanwhile",
+            "Nonetheless",
+            "Conversely"
+        ],
+        "answer": 0,
+        "explanation": "Grounding the flights was the direct result of the dense fog, so the causal transition 'As a result' is logically necessary."
+    },
+    {
+        "id": 5,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "Ancient Greek democracy allowed citizens to vote directly on legislation. Roman republicanism, ______, relied on elected representatives to govern.",
+        "options": [
+            "in contrast",
+            "for instance",
+            "furthermore",
+            "likewise"
+        ],
+        "answer": 0,
+        "explanation": "'In contrast' highlights the fundamental structural difference between direct democracy (Greek) and representative republicanism (Roman)."
+    },
+    {
+        "id": 6,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The new library features thousands of print volumes. ______, it houses state-of-the-art digital media labs and study pods.\n\nWhich transition provides continuation?",
+        "options": [
+            "Moreover",
+            "Despite this",
+            "Nevertheless",
+            "Regardless"
+        ],
+        "answer": 0,
+        "explanation": "'Moreover' adds an additional technological enhancement that complements the library's traditional book collection."
+    },
+    {
+        "id": 7,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The forecast called for clear skies all weekend. ______, an unexpected coastal squall dumped three inches of rain on the festival.",
+        "options": [
+            "Nevertheless",
+            "Thus",
+            "In other words",
+            "Therefore"
+        ],
+        "answer": 0,
+        "explanation": "'Nevertheless' conveys a concession/contrast between the sunny forecast and the surprising torrential rain."
+    },
+    {
+        "id": 8,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The chef recommends using fresh herbs whenever possible. ______, dried herbs can be substituted if fresh ones are unavailable.",
+        "options": [
+            "However",
+            "Therefore",
+            "In fact",
+            "Accordingly"
+        ],
+        "answer": 0,
+        "explanation": "'However' introduces the alternative concession that dried herbs can be used if the ideal choice (fresh herbs) is not on hand."
+    },
+    {
+        "id": 9,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "Many nocturnal animals rely on senses other than sight. Bats, ______, navigate through echolocation.",
+        "options": [
+            "for example",
+            "however",
+            "consequently",
+            "nevertheless"
+        ],
+        "answer": 0,
+        "explanation": "'For example' introduces bats as a specific, illustrative case of an animal using non-visual senses."
+    },
+    {
+        "id": 10,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "Regular aerobic exercise strengthens the cardiovascular system. ______, it has been shown to reduce anxiety and elevate mood.",
+        "options": [
+            "Additionally",
+            "On the contrary",
+            "Otherwise",
+            "Instead"
+        ],
+        "answer": 0,
+        "explanation": "'Additionally' introduces another distinct health benefit of exercise (mental/emotional health) alongside cardiovascular fitness."
+    },
+    {
+        "id": 11,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The company failed to innovate in response to digital technology. ______, it was forced to declare bankruptcy after eighty years in business.",
+        "options": [
+            "Ultimately",
+            "Conversely",
+            "Meanwhile",
+            "In contrast"
+        ],
+        "answer": 0,
+        "explanation": "'Ultimately' denotes the final cumulative outcome of the company's long-term failure to innovate."
+    },
+    {
+        "id": 12,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "A balanced diet provides essential vitamins and minerals. ______, it supplies the energy necessary for daily physical and cognitive activities.",
+        "options": [
+            "Furthermore",
+            "Nevertheless",
+            "Even so",
+            "In contrast"
+        ],
+        "answer": 0,
+        "explanation": "'Furthermore' connects two additive benefits of maintaining a balanced diet."
+    },
+    {
+        "id": 13,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The experiment yielded inconclusive data during the first trial. The research team, ______, refined their methodology and repeated the protocol.",
+        "options": [
+            "therefore",
+            "however",
+            "nevertheless",
+            "instead"
+        ],
+        "answer": 0,
+        "explanation": "'Therefore' logically links the inconclusive initial outcome to the researchers' rational response of refining and repeating the experiment."
+    },
+    {
+        "id": 14,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "Some desert plants store water in thick fleshy stems. Other desert flora, ______, develop extensive root systems to reach deep groundwater.",
+        "options": [
+            "by comparison",
+            "in conclusion",
+            "for instance",
+            "as a result"
+        ],
+        "answer": 0,
+        "explanation": "'By comparison' highlights the alternative survival strategy used by other desert flora."
+    },
+    {
+        "id": 15,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The hike to the summit was steep and exhausting. The panoramic view from the peak, ______, made every step worthwhile.",
+        "options": [
+            "however",
+            "furthermore",
+            "similarly",
+            "therefore"
+        ],
+        "answer": 0,
+        "explanation": "'However' contrasts the fatigue of the difficult climb with the rewarding beauty of the final summit view."
+    },
+    {
+        "id": 16,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "Volunteering at the animal shelter requires a weekly commitment. ______, volunteers must complete a mandatory orientation workshop.",
+        "options": [
+            "Additionally",
+            "Consequently",
+            "Otherwise",
+            "Instead"
+        ],
+        "answer": 0,
+        "explanation": "'Additionally' introduces another prerequisite requirement for prospective volunteers."
+    },
+    {
+        "id": 17,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The city council voted against the proposed shopping mall. ______, they approved funds to create a municipal nature preserve on the property.",
+        "options": [
+            "Instead",
+            "Therefore",
+            "Likewise",
+            "For example"
+        ],
+        "answer": 0,
+        "explanation": "'Instead' signals the alternative zoning decision adopted in place of the rejected shopping mall."
+    },
+    {
+        "id": 18,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "Proper hydration enhances athletic endurance. ______, it facilitates muscle recovery and reduces post-workout soreness.",
+        "options": [
+            "Moreover",
+            "Regardless",
+            "In spite of this",
+            "Conversely"
+        ],
+        "answer": 0,
+        "explanation": "'Moreover' adds another physiological advantage of proper hydration during athletic training."
+    },
+    {
+        "id": 19,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The archaeological artifacts were extremely fragile. ______, excavators handled them exclusively with specialized tools and padded containers.",
+        "options": [
+            "For this reason",
+            "Nevertheless",
+            "Conversely",
+            "On the other hand"
+        ],
+        "answer": 0,
+        "explanation": "'For this reason' directly explains why the excavators exercised such delicate care when handling the fragile artifacts."
+    },
+    {
+        "id": 20,
+        "section": "english",
+        "topic": "Transitions",
+        "text": "The violin requires years of dedicated practice to master. ______, the cello demands rigorous physical and technical discipline.",
+        "options": [
+            "Similarly",
+            "On the contrary",
+            "However",
+            "In contrast"
+        ],
+        "answer": 0,
+        "explanation": "'Similarly' compares two string instruments that share the requirement of rigorous discipline and long-term practice."
+    }
 ];
