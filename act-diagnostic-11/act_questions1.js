@@ -1,5 +1,5 @@
 // =============================================
-// act_questions1.js – ACT Practice Test 14
+// act_questions1.js – ACT Practice Test
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
 // Total: 131 questions | Time: 125 minutes
 // =============================================
@@ -1287,8 +1287,8 @@ const ACT_QUESTIONS1 = [
             "&radic;2",
             "0.75"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 0.75. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 0.75."
+        "answer": 3,
+        "explanation": "Correct Answer: &radic;2. Step-by-step solution: An irrational number is a real number that cannot be expressed as a simple fraction a/b where a and b are integers. The square root of 2 (√2) is non-repeating and non-terminating (approximately 1.4142135...), making it irrational. In contrast, integers (5, 16) and terminating decimals (1.085, 0.75) are all rational."
     },
     {
         "id": 90,
