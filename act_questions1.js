@@ -1,7 +1,7 @@
 // =============================================
 // act_questions1.js – ACT Practice Test 1
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
-// Total: 131 questions | Time: 125 minutes
+// Total: 131 questions
 // =============================================
 
 const ACT_QUESTIONS1 = [
@@ -148,44 +148,44 @@ const ACT_QUESTIONS1 = [
     {
         "id": 11,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "The committee members, who had been meeting for three hours finally reached a consensus on the proposed budget.\n\nWhich choice best corrects the punctuation error?",
+        "topic": "Sentence Structure",
+        "text": "Although the archival research took over five months to complete, the historian uncovered previously lost letters from the treaty negotiations.\n\nWhich of the following best describes the structural function of the underlined introductory clause?",
         "options": [
-            "The committee members, who had been meeting for three hours, finally reached a consensus on the proposed budget.",
-            "The committee members who had been meeting for three hours, finally reached a consensus on the proposed budget.",
-            "The committee members, who had been meeting for three hours finally, reached a consensus on the proposed budget.",
-            "The committee members who had been meeting, for three hours finally reached a consensus on the proposed budget."
+            "It serves as a dependent clause that establishes context for the independent main clause.",
+            "It functions as an independent clause that can stand alone as a complete sentence.",
+            "It is a misplaced modifier that incorrectly modifies the treaty.",
+            "It forms a comma splice when joined with the main clause."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"The committee members, who had been meeting for three hours, finally reached a consensus on the proposed budget.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"The committee members, who had been meeting for three hours, finally reached a consensus on the proposed budget.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "explanation": "Correct Answer: \"It serves as a dependent clause that establishes context for the independent main clause.\". The clause begins with the subordinating conjunction 'Although' and contains a subject and verb, making it a dependent clause properly joined by a comma to the main clause."
     },
     {
         "id": 12,
         "section": "english",
         "topic": "Grammar & Usage",
-        "text": "Neither the manager nor the employees was informed about the sudden change in policy.\n\nWhich correction should be made to the underlined verb \"was\"?",
+        "text": "Neither the principal nor the teachers ______ able to resolve the schedule conflict before the assembly.\n\nWhich verb choice correctly completes the sentence?",
         "options": [
             "were",
-            "has been",
+            "was",
             "is",
-            "No change is needed"
+            "has been"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"were\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "explanation": "Correct Answer: \"were\". When subject elements are joined by 'neither... nor', the verb agrees in number with the closer subject noun ('teachers', which is plural)."
     },
     {
         "id": 13,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Running through the park early in the morning, the sunrise was breathtaking to Maria.\n\nWhich revision corrects the dangling modifier?",
+        "topic": "Transitions",
+        "text": "The architectural team completed the structural foundation ahead of schedule; ______, subsequent material supply delays postponed the grand opening by two weeks.\n\nWhich transition word best connects the two clauses?",
         "options": [
-            "Running through the park early in the morning, Maria found the sunrise breathtaking.",
-            "Maria, running through the park early in the morning, the sunrise was breathtaking.",
-            "The sunrise was breathtaking to Maria, running through the park early in the morning.",
-            "Early in the morning, running through the park, the sunrise was breathtaking to Maria."
+            "nevertheless,",
+            "similarly,",
+            "for instance,",
+            "in addition,"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"Running through the park early in the morning, Maria found the sunrise breathtaking.\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "explanation": "Correct Answer: \"nevertheless,\". The second clause introduces an unexpected contrast/setback to the earlier success. 'Nevertheless' accurately conveys this contrasting relationship."
     },
     {
         "id": 14,
@@ -848,86 +848,86 @@ const ACT_QUESTIONS1 = [
     {
         "id": 61,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "A store is offering a 25% discount on all items. If a jacket originally costs $80, what is the sale price?",
+        "topic": "Coordinate Geometry",
+        "text": "What is the midpoint of the line segment with endpoints $(-4, 6)$ and $(8, -2)$ in the standard $(x, y)$ coordinate plane?",
         "options": [
-            "$20",
-            "$40",
-            "$60",
-            "$70"
+            "(2, 2)",
+            "(4, 4)",
+            "(6, 2)",
+            "(2, 4)"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: $60. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of $60."
+        "answer": 0,
+        "explanation": "Correct Answer: \"(2, 2)\". The midpoint formula is $M = (\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}) = (\\frac{-4 + 8}{2}, \\frac{6 + (-2)}{2}) = (\\frac{4}{2}, \\frac{4}{2}) = (2, 2)$."
     },
     {
         "id": 62,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "If 3x + 7 = 22, what is the value of x?",
+        "topic": "Pre-Algebra",
+        "text": "A car travels 240 miles in 4 hours. At this constant rate, how many miles will it travel in 7 hours?",
         "options": [
-            "3",
-            "5",
-            "7",
-            "9"
+            "420",
+            "400",
+            "380",
+            "440"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 5. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 5 satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "Correct Answer: \"420\". The speed is $240 / 4 = 60$ mph. In 7 hours, the distance traveled is $60 \\times 7 = 420$ miles."
     },
     {
         "id": 63,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "What are the solutions to the equation x² – 5x + 6 = 0?",
+        "topic": "Elementary Algebra",
+        "text": "If $4(2y - 3) = 5y + 6$, what is the value of $y$?",
         "options": [
-            "x = 2 and x = 3",
-            "x = –2 and x = –3",
-            "x = 1 and x = 6",
-            "x = –1 and x = –6"
+            "6",
+            "4",
+            "8",
+            "5"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: x = 2 and x = 3. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x = 2 and x = 3 satisfies all conditions of the problem."
+        "explanation": "Correct Answer: \"6\". Expanding gives $8y - 12 = 5y + 6 \\Rightarrow 3y = 18 \\Rightarrow y = 6$."
     },
     {
         "id": 64,
         "section": "math",
-        "topic": "Coordinate Geometry",
-        "text": "What is the slope of the line passing through the points (2, 5) and (6, 13)?",
+        "topic": "Plane Geometry",
+        "text": "A circle has a circumference of $16\\pi$ cm. What is the area of the circle, in square centimeters?",
         "options": [
-            "1",
-            "2",
-            "3",
-            "4"
+            "64\\pi",
+            "32\\pi",
+            "16\\pi",
+            "256\\pi"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 2. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 2."
+        "answer": 0,
+        "explanation": "Correct Answer: \"64\\pi\". Circumference $C = 2\\pi r = 16\\pi \\Rightarrow r = 8$. Area $A = \\pi r^2 = \\pi (8^2) = 64\\pi$ square centimeters."
     },
     {
         "id": 65,
         "section": "math",
-        "topic": "Plane Geometry",
-        "text": "A rectangle has a length of 12 cm and a width of 8 cm. What is the area of the rectangle?",
+        "topic": "Intermediate Algebra",
+        "text": "What are the real solutions to the equation $2x^2 - 7x + 3 = 0$?",
         "options": [
-            "40 cm²",
-            "80 cm²",
-            "96 cm²",
-            "120 cm²"
+            "x = 3 and x = 1/2",
+            "x = -3 and x = -1/2",
+            "x = 3 and x = -1/2",
+            "x = 7 and x = 3"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 96 cm². Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 96 cm²."
+        "answer": 0,
+        "explanation": "Correct Answer: \"x = 3 and x = 1/2\". Factoring gives $(2x - 1)(x - 3) = 0 \\Rightarrow x = 1/2$ or $x = 3$."
     },
     {
         "id": 66,
         "section": "math",
         "topic": "Trigonometry",
-        "text": "In a right triangle, if sin(θ) = 3/5, what is cos(θ)?",
+        "text": "In a right triangle with acute angle $\\theta$, $\\tan(\\theta) = 3/4$. What is the value of $\\sin(\\theta)$?",
         "options": [
-            "3/4",
+            "3/5",
             "4/5",
-            "4/3",
+            "3/4",
             "5/3"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 4/5. Step-by-step solution: Use fundamental trigonometric definitions (sin = opp/hyp, cos = adj/hyp, tan = opp/adj) or trigonometric identities to simplify the expression, arriving at 4/5."
+        "answer": 0,
+        "explanation": "Correct Answer: \"3/5\". If opposite = 3 and adjacent = 4, the hypotenuse is $\\sqrt{3^2 + 4^2} = 5$. Thus $\\sin(\\theta) = 3/5$."
     },
     {
         "id": 67,
@@ -1347,7 +1347,8 @@ const ACT_QUESTIONS1 = [
             "Nostalgic but not regretful"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"More successful but somehow diminished\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"More successful but somehow diminished\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 97,
@@ -1361,7 +1362,8 @@ const ACT_QUESTIONS1 = [
             "Should have been prevented to preserve traditional ways of life"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Led to both opportunities and disruptions in community bonds\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Led to both opportunities and disruptions in community bonds\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 98,
@@ -1375,7 +1377,8 @@ const ACT_QUESTIONS1 = [
             "Storing glucose for later energy use"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Absorbing sunlight to power the conversion of CO₂ into glucose\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Absorbing sunlight to power the conversion of CO₂ into glucose\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 99,
@@ -1389,7 +1392,8 @@ const ACT_QUESTIONS1 = [
             "The Church remained the sole patron of all significant artwork"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"Humanist ideas placed greater emphasis on individual achievement and experience\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Humanist ideas placed greater emphasis on individual achievement and experience\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
     },
     {
         "id": 100,
@@ -1403,7 +1407,8 @@ const ACT_QUESTIONS1 = [
             "She is afraid she will no longer recognize her family."
         ],
         "answer": 1,
-        "explanation": "The mention of anxiety clicking like the board combined with stepping into an 'old photograph' indicates a blend of apprehension and nostalgic reflection."
+        "explanation": "The mention of anxiety clicking like the board combined with stepping into an 'old photograph' indicates a blend of apprehension and nostalgic reflection.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 101,
@@ -1417,7 +1422,8 @@ const ACT_QUESTIONS1 = [
             "High-income households spend less on transit as a percentage of income."
         ],
         "answer": 0,
-        "explanation": "A direct increase in employment following transit expansion strongly supports the claim that public transportation access boosts employment."
+        "explanation": "A direct increase in employment following transit expansion strongly supports the claim that public transportation access boosts employment.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 102,
@@ -1431,7 +1437,8 @@ const ACT_QUESTIONS1 = [
             "Gravitational tidal energy from lunar movement"
         ],
         "answer": 1,
-        "explanation": "Hydrothermal vent communities rely on chemosynthesis, where microbes convert mineral compounds into chemical energy in total darkness."
+        "explanation": "Hydrothermal vent communities rely on chemosynthesis, where microbes convert mineral compounds into chemical energy in total darkness.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 103,
@@ -1445,63 +1452,68 @@ const ACT_QUESTIONS1 = [
             "Eliminating rhythm instruments from orchestral performances"
         ],
         "answer": 2,
-        "explanation": "The text highlights how jazz introduced improvisation to interact dynamically with structured ensemble accompaniment."
+        "explanation": "The text highlights how jazz introduced improvisation to interact dynamically with structured ensemble accompaniment.",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
     },
     {
         "id": 104,
         "section": "reading",
         "topic": "Literary Narrative",
-        "text": "Read the following passage and answer the question.\n\n\"Priya had always felt most at home in her grandmother's kitchen, where the scent of cardamom and cloves hung in the air like old memories. As she stirred the chai, she thought about how much had changed since she left her hometown—the city had made her efficient, ambitious, and somehow smaller.\"\n\nBased on the passage, the city has made Priya feel:",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind.",
+        "text": "The author's grandmother primarily gauges her cooking by:",
         "options": [
-            "More connected to her cultural roots",
-            "More successful but somehow diminished",
-            "Happier and more fulfilled",
-            "Nostalgic but not regretful"
+            "Sensory experience and hands-on intuition",
+            "Precise mechanical timers and scale measurements",
+            "Written recipes passed down in formal manuscripts",
+            "Modern kitchen appliances and electronic gadgets"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"More successful but somehow diminished\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Sensory experience and hands-on intuition\". The passage describes how the grandmother measured turmeric in the palm of her hand and watched the milk with undivided attention rather than using measuring spoons or timers."
     },
     {
         "id": 105,
         "section": "reading",
         "topic": "Social Science",
-        "text": "A passage discusses how urbanization in the 20th century changed social structures. The author would most likely agree that urbanization:",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure.",
+        "text": "According to the passage, spatial mismatch occurs when:",
         "options": [
-            "Had no significant effect on family structures",
-            "Led to both opportunities and disruptions in community bonds",
-            "Was entirely beneficial for economic development",
-            "Should have been prevented to preserve traditional ways of life"
+            "Affordable housing is located far from areas of job growth with inadequate transit",
+            "Cities build too many roads and eliminate all pedestrian zones",
+            "Workers choose to live exclusively in city center high-rises",
+            "Public transit fares are subsidized by local governments"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Led to both opportunities and disruptions in community bonds\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Affordable housing is located far from areas of job growth with inadequate transit\". The passage states that spatial mismatch happens when transit is fragmented and workers cannot easily reach job growth centers from affordable residential areas."
     },
     {
         "id": 106,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "According to a passage about photosynthesis, which of the following is the primary function of chlorophyll in plants?",
+        "topic": "Humanities",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In the passage, classical European musical performance is contrasted with jazz in that classical traditions:",
         "options": [
-            "Transporting water from roots to leaves",
-            "Absorbing sunlight to power the conversion of CO₂ into glucose",
-            "Releasing oxygen as a byproduct of respiration",
-            "Storing glucose for later energy use"
+            "Emphasized strict fidelity to the composer's written score",
+            "Rejected all formal harmonic structures and notation",
+            "Relied entirely on spontaneous audience participation",
+            "Were created exclusively for solo percussionists"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Absorbing sunlight to power the conversion of CO₂ into glucose\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Emphasized strict fidelity to the composer's written score\". The author explains that in classical tradition, the written score was treated as an immutable blueprint, whereas jazz prioritized spontaneous improvisation."
     },
     {
         "id": 107,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "A passage about Renaissance art argues that the period represented a fundamental shift in how humans perceived themselves. The central claim of this passage is that:",
+        "topic": "Natural Science",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe.",
+        "text": "The discovery of hydrothermal vent ecosystems was revolutionary because it demonstrated that:",
         "options": [
-            "Religious themes disappeared from art entirely during this period",
-            "Renaissance artists copied Greek and Roman styles without innovation",
-            "Humanist ideas placed greater emphasis on individual achievement and experience",
-            "The Church remained the sole patron of all significant artwork"
+            "Complex ecosystems could thrive without solar energy via chemosynthesis",
+            "All marine life requires direct sunlight to survive",
+            "Volcanic activity eliminates all biological organisms in the ocean",
+            "Photosynthesis is the only known method for creating organic matter"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Humanist ideas placed greater emphasis on individual achievement and experience\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Complex ecosystems could thrive without solar energy via chemosynthesis\". The passage highlights that finding life powered by chemosynthetic bacteria overturned the belief that all living organisms depended on solar radiation."
     },
     {
         "id": 108,
@@ -1515,7 +1527,8 @@ const ACT_QUESTIONS1 = [
             "Is new to fishing"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Possesses a practiced expertise despite physical wear\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Possesses a practiced expertise despite physical wear\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 109,
@@ -1529,7 +1542,8 @@ const ACT_QUESTIONS1 = [
             "Replace the need for a clear thesis"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Support the argument with concrete evidence\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Support the argument with concrete evidence\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 110,
@@ -1543,7 +1557,8 @@ const ACT_QUESTIONS1 = [
             "Earthquakes only occur near coastlines"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Multiple tectonic plate boundaries converge in that region\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Multiple tectonic plate boundaries converge in that region\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 111,
@@ -1557,7 +1572,8 @@ const ACT_QUESTIONS1 = [
             "Hostile"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Appreciative\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Appreciative\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
     },
     {
         "id": 112,
@@ -1571,7 +1587,8 @@ const ACT_QUESTIONS1 = [
             "Eager to leave immediately"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Apprehensive about a personal change\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Apprehensive about a personal change\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 113,
@@ -1585,7 +1602,8 @@ const ACT_QUESTIONS1 = [
             "Made commuting more popular than before"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Changed how companies define productivity and presence\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Changed how companies define productivity and presence\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 114,
@@ -1599,7 +1617,8 @@ const ACT_QUESTIONS1 = [
             "A surplus of nutrients"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"Increased water temperatures\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Increased water temperatures\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 115,
@@ -1613,7 +1632,8 @@ const ACT_QUESTIONS1 = [
             "Describe the physical mechanics of a printing press"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Explain a historical cause-and-effect relationship\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Explain a historical cause-and-effect relationship\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
     },
     {
         "id": 116,
@@ -1627,7 +1647,8 @@ const ACT_QUESTIONS1 = [
             "Dislikes the person who told the joke"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Is masking her true feelings\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Is masking her true feelings\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 117,
@@ -1641,7 +1662,8 @@ const ACT_QUESTIONS1 = [
             "Focusing solely on one individual's spending habits"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Presenting a chronological before-and-after comparison\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Presenting a chronological before-and-after comparison\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 118,
@@ -1655,7 +1677,8 @@ const ACT_QUESTIONS1 = [
             "Limited only to nocturnal species"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"An innate biological sense\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"An innate biological sense\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 119,
@@ -1669,7 +1692,8 @@ const ACT_QUESTIONS1 = [
             "Confuse foreign visitors"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"Achieve a sense of visual harmony and balance\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Achieve a sense of visual harmony and balance\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
     },
     {
         "id": 120,
@@ -1683,7 +1707,8 @@ const ACT_QUESTIONS1 = [
             "A gift from a stranger"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"A significant, emotionally weighted symbol\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"A significant, emotionally weighted symbol\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 121,
@@ -1697,7 +1722,8 @@ const ACT_QUESTIONS1 = [
             "Polarization existed only before social media"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Algorithms can reinforce existing beliefs by limiting exposure to differing views\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Algorithms can reinforce existing beliefs by limiting exposure to differing views\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 122,
@@ -1711,7 +1737,8 @@ const ACT_QUESTIONS1 = [
             "A decrease in bacterial reproduction rates"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Natural selection favoring resistant bacterial strains\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Natural selection favoring resistant bacterial strains\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 123,
@@ -1725,7 +1752,8 @@ const ACT_QUESTIONS1 = [
             "A modern invention"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"A legitimate and valuable historical record\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"A legitimate and valuable historical record\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
     },
     {
         "id": 124,
@@ -1739,7 +1767,8 @@ const ACT_QUESTIONS1 = [
             "The character's arrival at a brand-new home"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Neglect and the passage of time\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Neglect and the passage of time\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 125,
@@ -1753,7 +1782,8 @@ const ACT_QUESTIONS1 = [
             "Focus exclusively on historical manufacturing methods"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Weigh both the job losses and new opportunities created by automation\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Weigh both the job losses and new opportunities created by automation\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 126,
@@ -1767,7 +1797,8 @@ const ACT_QUESTIONS1 = [
             "Unrelated to global temperature changes"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"A feedback loop that accelerates further melting\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"A feedback loop that accelerates further melting\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 127,
@@ -1781,7 +1812,8 @@ const ACT_QUESTIONS1 = [
             "Indifferent"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Approving\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Approving\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
     },
     {
         "id": 128,
@@ -1795,7 +1827,8 @@ const ACT_QUESTIONS1 = [
             "Angry at the person asking questions"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Being deliberate and cautious in conversation\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Being deliberate and cautious in conversation\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 129,
@@ -1809,7 +1842,8 @@ const ACT_QUESTIONS1 = [
             "A purely historical topic with no modern relevance"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"A complex issue with competing perspectives and trade-offs\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"A complex issue with competing perspectives and trade-offs\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 130,
@@ -1823,12 +1857,13 @@ const ACT_QUESTIONS1 = [
             "Preventing the immune system from functioning"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"Introducing a harmless form or piece of the pathogen\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Introducing a harmless form or piece of the pathogen\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 131,
         "section": "reading",
-        "topic": "Humanities",
+        "topic": "Social Science",
         "text": "An essay on film history argues that the transition from silent films to \"talkies\" changed acting styles dramatically. The author supports this claim primarily by:",
         "options": [
             "Describing specific changes in performance technique",
@@ -1837,6 +1872,7 @@ const ACT_QUESTIONS1 = [
             "Arguing that acting styles never changed"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"Describing specific changes in performance technique\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage."
+        "explanation": "Correct Answer: \"Describing specific changes in performance technique\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     }
 ];

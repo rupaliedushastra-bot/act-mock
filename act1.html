@@ -1380,8 +1380,10 @@ function formatMathCaret(text) {
             const m = Math.floor(sectionTimerRemaining / 60);
             const s = sectionTimerRemaining % 60;
             const el = document.getElementById('timerDisplay');
-            el.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-            el.className = sectionTimerRemaining <= 300 ? (sectionTimerRemaining <= 60 ? 'danger' : 'warn') : '';
+            if (el) {
+                el.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+                el.className = sectionTimerRemaining <= 300 ? (sectionTimerRemaining <= 60 ? 'danger' : 'warn') : '';
+            }
         }
 
         function autoAdvanceSection() {
@@ -1409,8 +1411,10 @@ function formatMathCaret(text) {
             });
             // Update section badge
             const badge = document.getElementById('sectionBadge');
-            badge.className = `section-badge ${section}`;
-            badge.textContent = SECTION_NAMES[section];
+            if (badge) {
+                badge.className = `section-badge ${section}`;
+                badge.textContent = SECTION_NAMES[section];
+            }
 
             renderQuestion();
             renderPalette();
@@ -1438,7 +1442,7 @@ function formatMathCaret(text) {
 
             // Text
             let htmlContent = '';
-            const passageText = q.passage || (qs.find(item => item.passage && Math.abs((item.id || 0) - (q.id || 0)) <= 15) || {}).passage;
+            const passageText = q.passage || null;
             if (passageText) htmlContent += formatPassageHTML(passageText, q.text);
             htmlContent += `<div class="q-main-prompt" style="font-size:1.05rem; font-weight:600; color:#fff; line-height:1.6;">${formatLaTeX(q.text)}</div>`;
             document.getElementById('qText').innerHTML = htmlContent;
@@ -1594,9 +1598,9 @@ function formatMathCaret(text) {
 
             // Section scaled scores
             const sectionScores = {
-                english: getACTSectionScore('english', sectionRaw.english),
-                math: getACTSectionScore('math', sectionRaw.math),
-                reading: getACTSectionScore('reading', sectionRaw.reading)
+                english: getACTSectionScore('english', sectionRaw.english, SECTION_QUESTIONS.english?.length),
+                math: getACTSectionScore('math', sectionRaw.math, SECTION_QUESTIONS.math?.length),
+                reading: getACTSectionScore('reading', sectionRaw.reading, SECTION_QUESTIONS.reading?.length)
             };
             const composite = getACTCompositeScore(sectionScores);
 

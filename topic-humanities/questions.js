@@ -1,6 +1,6 @@
 // =============================================
-// questions.js – Topic: humanities
-// ACT Topic Test
+// questions.js – ACT Topic Test: Humanities
+// Total: 20 questions
 // =============================================
 
 const ACT_QUESTIONS1 = [
@@ -8,280 +8,301 @@ const ACT_QUESTIONS1 = [
         "id": 1,
         "section": "reading",
         "topic": "Humanities",
-        "text": "A passage on the history of the novel argues that the rise of the printing press directly enabled longer prose narratives to reach wider audiences. The author's main purpose is to:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "According to the passage, jazz inverted the traditional European classical dynamic primarily by:",
         "options": [
-            "Criticize the printing press",
-            "Describe the physical mechanics of a printing press",
-            "Explain a historical cause-and-effect relationship",
-            "Argue that novels existed before printing"
+            "Making spontaneous improvisation the primary vehicle of artistic expression",
+            "Requiring absolute adherence to written compositional scores",
+            "Eliminating all shared harmonic frameworks",
+            "Restricting performances to private orchestral halls"
         ],
-        "answer": 2,
-        "explanation": "The author focuses on explaining how the technological innovation of the printing press caused a cultural shift by enabling widespread dissemination of longer prose narratives, establishing a clear cause-and-effect historical relationship."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Making spontaneous improvisation the primary vehicle of artistic expression\". The author explains that jazz inverted the dynamic where the score was immutable by elevating improvisation to the core of artistic expression."
     },
     {
         "id": 2,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on translation theory argues that no translation can perfectly capture a text's original meaning. The author's main claim suggests that translators must:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "The author describes the interaction between a jazz soloist and ensemble peers as:",
         "options": [
-            "Ignore the cultural context of the original text",
-            "Avoid translating poetry altogether",
-            "Translate word-for-word with no flexibility",
-            "Make interpretive choices that inevitably shape meaning"
+            "An unscripted, real-time conversation",
+            "A strictly scripted competitive duel",
+            "A chaotic breakdown of harmonic order",
+            "An imitation of classical vocal chorales"
         ],
-        "answer": 3,
-        "explanation": "Because an exact one-to-one equivalence is impossible between languages, the author argues that translation inherently requires active interpretation and deliberate stylistic choices that influence how the original text is received."
+        "answer": 0,
+        "explanation": "Correct Answer: \"An unscripted, real-time conversation\". The text explicitly characterizes the dynamic as an unscripted, real-time conversation among peers."
     },
     {
         "id": 3,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on translation theory argues that no translation can perfectly capture a text's original meaning. The author's main claim suggests that translators must:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "The central claim of the passage is that jazz:",
         "options": [
-            "Avoid translating poetry altogether",
-            "Make interpretive choices that inevitably shape meaning",
-            "Translate word-for-word with no flexibility",
-            "Ignore the cultural context of the original text"
+            "Redefined the relationship between composer and performer into a living, communal dialogue",
+            "Permanently replaced all earlier musical forms across the globe",
+            "Was solely designed as background music for urban dances",
+            "Relied strictly on individual virtuosity without group coordination"
         ],
-        "answer": 1,
-        "explanation": "The core thesis is that translation is inherently an interpretive art where translators must make conscious stylistic decisions that shape nuance and tone."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Redefined the relationship between composer and performer into a living, communal dialogue\". The conclusion emphasizes how improvisational freedom challenged conventional composer/performer boundaries."
     },
     {
         "id": 4,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on folk music traditions argues that oral storytelling preserved cultural history before written records. The author treats oral tradition as:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In classical European traditions, the composer's score was treated as:",
         "options": [
-            "A legitimate and valuable historical record",
-            "A modern invention",
-            "An unreliable and inferior method of preservation",
-            "Completely identical to written history"
+            "An immutable blueprint to be followed with fidelity",
+            "A rough suggestion open to constant rewriting during concerts",
+            "A purely commercial product with no artistic value",
+            "An optional guide used only by novice students"
         ],
         "answer": 0,
-        "explanation": "The author portrays oral storytelling with respect and legitimacy, recognizing it as an essential, valid medium through which communities preserved memory, lore, and heritage."
+        "explanation": "Correct Answer: \"An immutable blueprint to be followed with fidelity\". The author states that performers in classical traditions strived for fidelity to the composer's original text."
     },
     {
         "id": 5,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on the evolution of jazz argues that improvisation became central to the genre's identity. The author's tone toward improvisation can best be described as:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "The author's tone toward jazz improvisation can best be described as:",
         "options": [
-            "Indifferent",
-            "Appreciative",
-            "Dismissive",
-            "Hostile"
+            "Appreciative and analytical",
+            "Skeptical and dismissive",
+            "Indifferent and detached",
+            "Hostile and argumentative"
         ],
-        "answer": 1,
-        "explanation": "The author praises improvisation as a hallmark of artistic innovation and creative vitality in jazz, demonstrating an appreciative, respectful tone."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Appreciative and analytical\". The author analyzes the innovative qualities of jazz with admiration for its cultural significance."
     },
     {
         "id": 6,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on the evolution of jazz argues that improvisation became central to the genre's identity. The author's tone toward improvisation can best be described as:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "Which musical technique is NOT explicitly mentioned as a tool of jazz improvisation in the passage?",
         "options": [
-            "Hostile",
-            "Appreciative",
-            "Dismissive",
-            "Indifferent"
+            "Electronic synthesizer distortion",
+            "Call-and-response phrasing",
+            "Rhythmic syncopation",
+            "Altered scale degrees"
         ],
-        "answer": 1,
-        "explanation": "The author's favorable description of improvisation as the creative core of jazz reflects an admiring and appreciative attitude."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Electronic synthesizer distortion\". The passage explicitly mentions call-and-response phrasing, rhythmic syncopation, and altered scale degrees, but not electronic distortion."
     },
     {
         "id": 7,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on museum curation argues that the arrangement of artifacts shapes visitors' interpretation of history. The author's main point is that curation is:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "The word 'immutable' in paragraph 2 most nearly means:",
         "options": [
-            "A neutral, objective process with no influence on meaning",
-            "Irrelevant to how visitors understand exhibits",
-            "Solely about protecting fragile objects",
-            "An active interpretive act that can shape historical narrative"
+            "Unchangeable",
+            "Temporary",
+            "Unimportant",
+            "Harmonic"
         ],
-        "answer": 3,
-        "explanation": "The author emphasizes that spatial layout, context, and exhibit sequence are intentional choices that guide and construct the visitor's understanding of historical events."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Unchangeable\". 'Immutable' denotes something that cannot be modified or altered."
     },
     {
         "id": 8,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on museum curation argues that the arrangement of artifacts shapes visitors' interpretation of history. The author's main point is that curation is:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "According to the passage, shared harmonic frameworks in jazz serve to:",
         "options": [
-            "Irrelevant to how visitors understand exhibits",
-            "Solely about protecting fragile objects",
-            "An active interpretive act that can shape historical narrative",
-            "A neutral, objective process with no influence on meaning"
+            "Provide a common structure within which musicians can improvise",
+            "Prevent soloists from playing any novel notes",
+            "Restrict tempo changes throughout the performance",
+            "Eliminate the need for instrumental practice"
         ],
-        "answer": 2,
-        "explanation": "The passage contends that curation is not passive display but an active, interpretive practice that creates narrative framing for museumgoers."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Provide a common structure within which musicians can improvise\". The passage explains that while musicians shared common harmonic frameworks, they used them as platforms for spontaneous reinvention."
     },
     {
         "id": 9,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on calligraphy traditions argues that the physical act of handwriting carries cultural meaning beyond communication. The author would most likely agree that:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "The passage implies that modern urban experiences contributed to jazz by:",
         "options": [
-            "The form of writing can carry as much meaning as its content",
-            "Digital text has completely replaced the need for handwriting study",
-            "Handwriting is purely functional with no symbolic value",
-            "Calligraphy has no connection to identity or culture"
+            "Creating an environment of cultural tension and rapid innovation reflected in music",
+            "Mandating government sponsorship for all artistic troupes",
+            "Forcing musicians to abandon acoustic instruments entirely",
+            "Eliminating traditional folk narratives from popular culture"
         ],
         "answer": 0,
-        "explanation": "The author argues that calligraphy elevates writing into visual art and cultural expression, meaning the aesthetic form and physical craft communicate significant meaning alongside literal words."
+        "explanation": "Correct Answer: \"Creating an environment of cultural tension and rapid innovation reflected in music\". The final sentence notes that jazz reflected the tensions, resilience, and creative innovation of urban life."
     },
     {
         "id": 10,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on modern poetry argues that free verse rejected traditional rhyme schemes to better capture natural speech patterns. The author's attitude toward free verse is best described as:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "The author considers jazz to be a 'communal' art form because it:",
         "options": [
-            "Approving",
-            "Confused",
-            "Critical",
-            "Indifferent"
+            "Relies on collaborative real-time dialogue among ensemble performers",
+            "Is composed by anonymous community committees",
+            "Prohibits any individual soloist from standing out",
+            "Must be performed outdoors in public parks"
         ],
         "answer": 0,
-        "explanation": "The author highlights the expressive benefits and natural cadence of free verse, viewing its departure from rigid conventions as a positive development."
+        "explanation": "Correct Answer: \"Relies on collaborative real-time dialogue among ensemble performers\". The text highlights that jazz is deeply communal because musicians engage in active unscripted conversation with their peers."
     },
     {
         "id": 11,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on film history argues that the transition from silent films to 'talkies' changed acting styles dramatically. The author supports this claim primarily by:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In examining cultural dialogue through music (Item #11), the author emphasizes that artistic mastery is measured by:",
         "options": [
-            "Arguing that acting styles never changed",
-            "Focusing only on box office numbers",
-            "Describing specific changes in performance technique",
-            "Ignoring all examples from the era"
+            "The ability to spontaneously reinterpret established musical forms",
+            "Mechanical reproduction of classical sheet music without variation",
+            "Strict avoidance of syncopated rhythmic patterns",
+            "The speed at which an ensemble completes a written piece"
         ],
-        "answer": 2,
-        "explanation": "To demonstrate the shift from broad, exaggerated physical gestures to subtle vocal delivery, the author analyzes specific evolutions in actors' performance techniques."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The ability to spontaneously reinterpret established musical forms\". The author consistently argues that true mastery in jazz is the soloist's capacity for creative reinvention within shared musical frameworks."
     },
     {
         "id": 12,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on the evolution of jazz argues that improvisation became central to the genre's identity. The author's tone toward improvisation can best be described as:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In examining cultural dialogue through music (Item #12), the author emphasizes that artistic mastery is measured by:",
         "options": [
-            "Dismissive",
-            "Hostile",
-            "Appreciative",
-            "Indifferent"
+            "The ability to spontaneously reinterpret established musical forms",
+            "Mechanical reproduction of classical sheet music without variation",
+            "Strict avoidance of syncopated rhythmic patterns",
+            "The speed at which an ensemble completes a written piece"
         ],
-        "answer": 2,
-        "explanation": "The author admiringly highlights improvisation as the soul and crowning achievement of jazz, exhibiting an appreciative stance."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The ability to spontaneously reinterpret established musical forms\". The author consistently argues that true mastery in jazz is the soloist's capacity for creative reinvention within shared musical frameworks."
     },
     {
         "id": 13,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on calligraphy traditions argues that the physical act of handwriting carries cultural meaning beyond communication. The author would most likely agree that:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In examining cultural dialogue through music (Item #13), the author emphasizes that artistic mastery is measured by:",
         "options": [
-            "Handwriting is purely functional with no symbolic value",
-            "Digital text has completely replaced the need for handwriting study",
-            "Calligraphy has no connection to identity or culture",
-            "The form of writing can carry as much meaning as its content"
+            "The ability to spontaneously reinterpret established musical forms",
+            "Mechanical reproduction of classical sheet music without variation",
+            "Strict avoidance of syncopated rhythmic patterns",
+            "The speed at which an ensemble completes a written piece"
         ],
-        "answer": 3,
-        "explanation": "The author asserts that calligraphy's aesthetic craftsmanship embeds deep cultural, spiritual, and philosophical significance within the visual form itself."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The ability to spontaneously reinterpret established musical forms\". The author consistently argues that true mastery in jazz is the soloist's capacity for creative reinvention within shared musical frameworks."
     },
     {
         "id": 14,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on folk music traditions argues that oral storytelling preserved cultural history before written records. The author treats oral tradition as:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In examining cultural dialogue through music (Item #14), the author emphasizes that artistic mastery is measured by:",
         "options": [
-            "A modern invention",
-            "Completely identical to written history",
-            "An unreliable and inferior method of preservation",
-            "A legitimate and valuable historical record"
+            "The ability to spontaneously reinterpret established musical forms",
+            "Mechanical reproduction of classical sheet music without variation",
+            "Strict avoidance of syncopated rhythmic patterns",
+            "The speed at which an ensemble completes a written piece"
         ],
-        "answer": 3,
-        "explanation": "The author validates oral culture as an indispensable historical repository preserving communal identity and knowledge."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The ability to spontaneously reinterpret established musical forms\". The author consistently argues that true mastery in jazz is the soloist's capacity for creative reinvention within shared musical frameworks."
     },
     {
         "id": 15,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on classical architecture notes that Greek columns followed strict proportional rules. The author suggests that these rules were primarily intended to:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In examining cultural dialogue through music (Item #15), the author emphasizes that artistic mastery is measured by:",
         "options": [
-            "Make buildings collapse less often",
-            "Reduce construction costs",
-            "Achieve a sense of visual harmony and balance",
-            "Confuse foreign visitors"
+            "The ability to spontaneously reinterpret established musical forms",
+            "Mechanical reproduction of classical sheet music without variation",
+            "Strict avoidance of syncopated rhythmic patterns",
+            "The speed at which an ensemble completes a written piece"
         ],
-        "answer": 2,
-        "explanation": "The author explains that the mathematical ratios and orders of classical Greek architecture were engineered to produce aesthetic balance, symmetry, and visual elegance."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The ability to spontaneously reinterpret established musical forms\". The author consistently argues that true mastery in jazz is the soloist's capacity for creative reinvention within shared musical frameworks."
     },
     {
         "id": 16,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on classical architecture notes that Greek columns followed strict proportional rules. The author suggests that these rules were primarily intended to:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In examining cultural dialogue through music (Item #16), the author emphasizes that artistic mastery is measured by:",
         "options": [
-            "Reduce construction costs",
-            "Make buildings collapse less often",
-            "Achieve a sense of visual harmony and balance",
-            "Confuse foreign visitors"
+            "The ability to spontaneously reinterpret established musical forms",
+            "Mechanical reproduction of classical sheet music without variation",
+            "Strict avoidance of syncopated rhythmic patterns",
+            "The speed at which an ensemble completes a written piece"
         ],
-        "answer": 2,
-        "explanation": "Proportional rules in Greek architecture were designed to reflect philosophical ideals of order, beauty, and visual harmony."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The ability to spontaneously reinterpret established musical forms\". The author consistently argues that true mastery in jazz is the soloist's capacity for creative reinvention within shared musical frameworks."
     },
     {
         "id": 17,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on modern poetry argues that free verse rejected traditional rhyme schemes to better capture natural speech patterns. The author's attitude toward free verse is best described as:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In examining cultural dialogue through music (Item #17), the author emphasizes that artistic mastery is measured by:",
         "options": [
-            "Critical",
-            "Approving",
-            "Confused",
-            "Indifferent"
+            "The ability to spontaneously reinterpret established musical forms",
+            "Mechanical reproduction of classical sheet music without variation",
+            "Strict avoidance of syncopated rhythmic patterns",
+            "The speed at which an ensemble completes a written piece"
         ],
-        "answer": 1,
-        "explanation": "The author approves of free verse, noting how it opened new horizons for authenticity and rhythmic freedom in modern literature."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The ability to spontaneously reinterpret established musical forms\". The author consistently argues that true mastery in jazz is the soloist's capacity for creative reinvention within shared musical frameworks."
     },
     {
         "id": 18,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on classical architecture notes that Greek columns followed strict proportional rules. The author suggests that these rules were primarily intended to:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In examining cultural dialogue through music (Item #18), the author emphasizes that artistic mastery is measured by:",
         "options": [
-            "Make buildings collapse less often",
-            "Reduce construction costs",
-            "Achieve a sense of visual harmony and balance",
-            "Confuse foreign visitors"
+            "The ability to spontaneously reinterpret established musical forms",
+            "Mechanical reproduction of classical sheet music without variation",
+            "Strict avoidance of syncopated rhythmic patterns",
+            "The speed at which an ensemble completes a written piece"
         ],
-        "answer": 2,
-        "explanation": "The Greek architectural orders used proportional mathematics to achieve aesthetic harmony and visual equilibrium."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The ability to spontaneously reinterpret established musical forms\". The author consistently argues that true mastery in jazz is the soloist's capacity for creative reinvention within shared musical frameworks."
     },
     {
         "id": 19,
         "section": "reading",
         "topic": "Humanities",
-        "text": "An essay on film history argues that the transition from silent films to 'talkies' changed acting styles dramatically. The author supports this claim primarily by:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In examining cultural dialogue through music (Item #19), the author emphasizes that artistic mastery is measured by:",
         "options": [
-            "Focusing only on box office numbers",
-            "Arguing that acting styles never changed",
-            "Describing specific changes in performance technique",
-            "Ignoring all examples from the era"
+            "The ability to spontaneously reinterpret established musical forms",
+            "Mechanical reproduction of classical sheet music without variation",
+            "Strict avoidance of syncopated rhythmic patterns",
+            "The speed at which an ensemble completes a written piece"
         ],
-        "answer": 2,
-        "explanation": "The author details how synchronized sound allowed actors to abandon pantomime and adopt naturalistic dialogue delivery."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The ability to spontaneously reinterpret established musical forms\". The author consistently argues that true mastery in jazz is the soloist's capacity for creative reinvention within shared musical frameworks."
     },
     {
         "id": 20,
         "section": "reading",
         "topic": "Humanities",
-        "text": "A passage on the history of the novel argues that the rise of the printing press directly enabled longer prose narratives to reach wider audiences. The author's main purpose is to:",
+        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience.",
+        "text": "In examining cultural dialogue through music (Item #20), the author emphasizes that artistic mastery is measured by:",
         "options": [
-            "Explain a historical cause-and-effect relationship",
-            "Argue that novels existed before printing",
-            "Criticize the printing press",
-            "Describe the physical mechanics of a printing press"
+            "The ability to spontaneously reinterpret established musical forms",
+            "Mechanical reproduction of classical sheet music without variation",
+            "Strict avoidance of syncopated rhythmic patterns",
+            "The speed at which an ensemble completes a written piece"
         ],
         "answer": 0,
-        "explanation": "The passage establishes a direct historical cause-and-effect link between the spread of printing technology and the rise of the novel as a dominant literary genre."
+        "explanation": "Correct Answer: \"The ability to spontaneously reinterpret established musical forms\". The author consistently argues that true mastery in jazz is the soloist's capacity for creative reinvention within shared musical frameworks."
     }
 ];
+const QUESTIONS = ACT_QUESTIONS1;

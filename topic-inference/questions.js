@@ -1,6 +1,6 @@
 // =============================================
-// questions.js – Topic: inference
-// ACT Topic Test
+// questions.js – ACT Topic Test: Inference
+// Total: 20 questions
 // =============================================
 
 const ACT_QUESTIONS1 = [
@@ -16,7 +16,8 @@ const ACT_QUESTIONS1 = [
             "The weather was completely calm throughout the entire expedition"
         ],
         "answer": 1,
-        "explanation": "The passage notes that the wind died down 'unexpectedly' and created an 'eerie silence that no one had anticipated,' directly implying that strong winds had been constantly present and expected during the ascent."
+        "explanation": "The passage notes that the wind died down 'unexpectedly' and created an 'eerie silence that no one had anticipated,' directly implying that strong winds had been constantly present and expected during the ascent.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 2,
@@ -30,7 +31,8 @@ const ACT_QUESTIONS1 = [
             "The author's early works were completely ignored by readers"
         ],
         "answer": 0,
-        "explanation": "Contrasting earlier celebration with later 'muted melancholy' directly indicates that the author's perspective on industrialization shifted toward skepticism, critique, or sorrow over time."
+        "explanation": "Contrasting earlier celebration with later 'muted melancholy' directly indicates that the author's perspective on industrialization shifted toward skepticism, critique, or sorrow over time.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 3,
@@ -44,7 +46,8 @@ const ACT_QUESTIONS1 = [
             "Economic turnaround was entirely fabricated by media"
         ],
         "answer": 1,
-        "explanation": "Because consumer confidence started improving six months before any policy implementation, the turnaround began prior to the policies, indicating the recovery was driven by independent economic factors."
+        "explanation": "Because consumer confidence started improving six months before any policy implementation, the turnaround began prior to the policies, indicating the recovery was driven by independent economic factors.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 4,
@@ -58,7 +61,8 @@ const ACT_QUESTIONS1 = [
             "Dr. Rivera decided to abandon the research project"
         ],
         "answer": 0,
-        "explanation": "The fact that results were promising in the initial trials but inconclusive at lower temperatures demonstrates that temperature is a critical controlling variable influencing the outcome."
+        "explanation": "The fact that results were promising in the initial trials but inconclusive at lower temperatures demonstrates that temperature is a critical controlling variable influencing the outcome.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 5,
@@ -72,7 +76,8 @@ const ACT_QUESTIONS1 = [
             "The commercial development was completed ahead of schedule"
         ],
         "answer": 1,
-        "explanation": "The council approved the renovation 'only after' a 2,000-signature citizen protest against commercial development, showing that grassroots community activism directly influenced the policy change."
+        "explanation": "The council approved the renovation 'only after' a 2,000-signature citizen protest against commercial development, showing that grassroots community activism directly influenced the policy change.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 6,
@@ -86,7 +91,8 @@ const ACT_QUESTIONS1 = [
             "The artifacts were accidentally dropped by modern tourists"
         ],
         "answer": 0,
-        "explanation": "Finding aquatic tools and fish remains far from water bodies indicates that inland settlers acquired marine goods through trade networks or travel to coastal/riverine regions."
+        "explanation": "Finding aquatic tools and fish remains far from water bodies indicates that inland settlers acquired marine goods through trade networks or travel to coastal/riverine regions.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 7,
@@ -100,7 +106,8 @@ const ACT_QUESTIONS1 = [
             "She altered her musical style to please critics"
         ],
         "answer": 0,
-        "explanation": "The transition from early dismissal as 'simplistic' to modern praise as 'pioneering precursors' demonstrates a significant positive shift in how scholars evaluate her work."
+        "explanation": "The transition from early dismissal as 'simplistic' to modern praise as 'pioneering precursors' demonstrates a significant positive shift in how scholars evaluate her work.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 8,
@@ -114,7 +121,8 @@ const ACT_QUESTIONS1 = [
             "Hunt exclusively during midday hours"
         ],
         "answer": 0,
-        "explanation": "Large eyes and rod-dominated retinas are biological adaptations specifically evolved to maximize light capture for night vision in nocturnal species."
+        "explanation": "Large eyes and rod-dominated retinas are biological adaptations specifically evolved to maximize light capture for night vision in nocturnal species.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 9,
@@ -128,7 +136,8 @@ const ACT_QUESTIONS1 = [
             "Gasoline-powered vehicles are completely obsolete"
         ],
         "answer": 0,
-        "explanation": "The correlation between policy incentives (rebates, charging networks) and increased EV sales demonstrates that affordability and convenience motivate consumer adoption."
+        "explanation": "The correlation between policy incentives (rebates, charging networks) and increased EV sales demonstrates that affordability and convenience motivate consumer adoption.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 10,
@@ -142,7 +151,8 @@ const ACT_QUESTIONS1 = [
             "Commuters completely stopped driving after the bridge opened"
         ],
         "answer": 0,
-        "explanation": "The unexpected rise in congestion despite added capacity reflects the phenomenon of induced demand, where new infrastructure attracts more total vehicular volume."
+        "explanation": "The unexpected rise in congestion despite added capacity reflects the phenomenon of induced demand, where new infrastructure attracts more total vehicular volume.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 11,
@@ -156,7 +166,8 @@ const ACT_QUESTIONS1 = [
             "The letters were intended for public publication"
         ],
         "answer": 0,
-        "explanation": "The clear contrast between formal private letters and lively public memoirs implies the writer deliberately adapted stylistic tone based on purpose and audience."
+        "explanation": "The clear contrast between formal private letters and lively public memoirs implies the writer deliberately adapted stylistic tone based on purpose and audience.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 12,
@@ -170,7 +181,8 @@ const ACT_QUESTIONS1 = [
             "Rapid expansion of forest boundaries"
         ],
         "answer": 0,
-        "explanation": "Narrow tree rings indicate minimal cambium growth during stressful environmental conditions, such as severe droughts, prolonged cold, or adverse climate anomalies."
+        "explanation": "Narrow tree rings indicate minimal cambium growth during stressful environmental conditions, such as severe droughts, prolonged cold, or adverse climate anomalies.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 13,
@@ -184,7 +196,8 @@ const ACT_QUESTIONS1 = [
             "Enterprise clients were eager to keep the new features"
         ],
         "answer": 0,
-        "explanation": "A swift rollback following severe database synchronization failures indicates that the release contained critical defects that interfered with essential workflows."
+        "explanation": "A swift rollback following severe database synchronization failures indicates that the release contained critical defects that interfered with essential workflows.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 14,
@@ -198,7 +211,8 @@ const ACT_QUESTIONS1 = [
             "The pottery was created by native wildlife"
         ],
         "answer": 0,
-        "explanation": "The presence of human-made agricultural terracing and ancient pottery on an empty island proves it was inhabited by human populations in the past before being abandoned."
+        "explanation": "The presence of human-made agricultural terracing and ancient pottery on an empty island proves it was inhabited by human populations in the past before being abandoned.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 15,
@@ -212,7 +226,8 @@ const ACT_QUESTIONS1 = [
             "Pollinators avoid flowers that produce sweeter nectar"
         ],
         "answer": 0,
-        "explanation": "A rapid increase in sugar concentration triggered by pollinator sound playback indicates an active, real-time physiological response to sound waves."
+        "explanation": "A rapid increase in sugar concentration triggered by pollinator sound playback indicates an active, real-time physiological response to sound waves.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 16,
@@ -226,7 +241,8 @@ const ACT_QUESTIONS1 = [
             "The empire had no agricultural economy"
         ],
         "answer": 0,
-        "explanation": "By connecting the collapse to newly discovered megadrought data, the author suggests ecological hardship weakened the empire and contributed substantially to its decline."
+        "explanation": "By connecting the collapse to newly discovered megadrought data, the author suggests ecological hardship weakened the empire and contributed substantially to its decline.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 17,
@@ -240,7 +256,8 @@ const ACT_QUESTIONS1 = [
             "Prefers public speaking to private conversations"
         ],
         "answer": 0,
-        "explanation": "Hesitation in public paired with eloquence in intimate family settings reveals that his conversational ease depends on emotional comfort and familiar surroundings."
+        "explanation": "Hesitation in public paired with eloquence in intimate family settings reveals that his conversational ease depends on emotional comfort and familiar surroundings.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 18,
@@ -254,7 +271,8 @@ const ACT_QUESTIONS1 = [
             "Incandescent bulbs consumed less electricity than LEDs"
         ],
         "answer": 0,
-        "explanation": "The manufacturer's shift occurred 'only after' state bans took effect, indicating legislative mandates forced the transition away from incandescent lighting."
+        "explanation": "The manufacturer's shift occurred 'only after' state bans took effect, indicating legislative mandates forced the transition away from incandescent lighting.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 19,
@@ -268,7 +286,8 @@ const ACT_QUESTIONS1 = [
             "Sunlight easily penetrates to the deepest ocean trenches"
         ],
         "answer": 0,
-        "explanation": "Thriving hydrothermal vent ecosystems reliant on mineral fluids prove that chemosynthesis can sustain biological communities completely independent of sunlight."
+        "explanation": "Thriving hydrothermal vent ecosystems reliant on mineral fluids prove that chemosynthesis can sustain biological communities completely independent of sunlight.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     },
     {
         "id": 20,
@@ -282,6 +301,8 @@ const ACT_QUESTIONS1 = [
             "Disown the artwork completely"
         ],
         "answer": 0,
-        "explanation": "Placing the signature on the back stretcher bars keeps the visual composition unblemished by text or markings, prioritizing the integrity of the artwork itself."
+        "explanation": "Placing the signature on the back stretcher bars keeps the visual composition unblemished by text or markings, prioritizing the integrity of the artwork itself.",
+        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
     }
 ];
+const QUESTIONS = ACT_QUESTIONS1;

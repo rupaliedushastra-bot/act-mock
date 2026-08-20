@@ -1,6 +1,6 @@
 // =============================================
-// questions.js – Topic: natural_science
-// ACT Topic Test
+// questions.js – ACT Topic Test: Natural Science
+// Total: 20 questions
 // =============================================
 
 const ACT_QUESTIONS1 = [
@@ -16,7 +16,8 @@ const ACT_QUESTIONS1 = [
             "Preventing the immune system from functioning normally"
         ],
         "answer": 0,
-        "explanation": "Vaccines expose the adaptive immune system to weakened, inactivated, or subunit antigens, allowing it to produce antibodies and memory cells without causing illness."
+        "explanation": "Vaccines expose the adaptive immune system to weakened, inactivated, or subunit antigens, allowing it to produce antibodies and memory cells without causing illness.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 2,
@@ -30,7 +31,8 @@ const ACT_QUESTIONS1 = [
             "To convert sunlight directly into DNA"
         ],
         "answer": 0,
-        "explanation": "Cellular respiration oxidizes biochemical nutrients (glucose) in mitochondria to generate usable adenosine triphosphate (ATP), the primary energy currency of cells."
+        "explanation": "Cellular respiration oxidizes biochemical nutrients (glucose) in mitochondria to generate usable adenosine triphosphate (ATP), the primary energy currency of cells.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 3,
@@ -44,7 +46,8 @@ const ACT_QUESTIONS1 = [
             "Mountains are compressed into high-altitude plateaus"
         ],
         "answer": 0,
-        "explanation": "At divergent oceanic boundaries, upwelling magma emerges at mid-ocean ridges, cooling upon contact with seawater to continually generate new oceanic lithosphere."
+        "explanation": "At divergent oceanic boundaries, upwelling magma emerges at mid-ocean ridges, cooling upon contact with seawater to continually generate new oceanic lithosphere.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 4,
@@ -58,7 +61,8 @@ const ACT_QUESTIONS1 = [
             "Random fragments from unrelated chromosomes"
         ],
         "answer": 0,
-        "explanation": "In semiconservative replication, the parent DNA double helix unzips, and each original strand serves as a template for synthesizing a new complementary daughter strand."
+        "explanation": "In semiconservative replication, the parent DNA double helix unzips, and each original strand serves as a template for synthesizing a new complementary daughter strand.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 5,
@@ -72,7 +76,8 @@ const ACT_QUESTIONS1 = [
             "Prevents any heat from entering the Earth's atmosphere"
         ],
         "answer": 0,
-        "explanation": "Greenhouse gases absorb outgoing longwave infrared radiation and re-emit it, warming the troposphere to temperatures necessary for sustaining liquid water and life."
+        "explanation": "Greenhouse gases absorb outgoing longwave infrared radiation and re-emit it, warming the troposphere to temperatures necessary for sustaining liquid water and life.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 6,
@@ -86,7 +91,8 @@ const ACT_QUESTIONS1 = [
             "Changing the overall equilibrium constant of the reaction"
         ],
         "answer": 0,
-        "explanation": "Enzymes act as biological catalysts by stabilizing the transition state, which significantly lowers the activation energy barrier without being consumed in the process."
+        "explanation": "Enzymes act as biological catalysts by stabilizing the transition state, which significantly lowers the activation energy barrier without being consumed in the process.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 7,
@@ -100,7 +106,8 @@ const ACT_QUESTIONS1 = [
             "Underwater volcanic eruptions"
         ],
         "answer": 0,
-        "explanation": "Thermohaline circulation ('ocean conveyor belt') is driven by density gradients caused by variations in temperature ('thermo') and salt concentration ('haline')."
+        "explanation": "Thermohaline circulation ('ocean conveyor belt') is driven by density gradients caused by variations in temperature ('thermo') and salt concentration ('haline').",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 8,
@@ -114,7 +121,8 @@ const ACT_QUESTIONS1 = [
             "Radioactive decay of heavy elements like uranium"
         ],
         "answer": 0,
-        "explanation": "Main-sequence stars generate immense radiant energy via nuclear fusion (proton-proton chain or CNO cycle), fusing hydrogen nuclei into helium under extreme core pressure and temperature."
+        "explanation": "Main-sequence stars generate immense radiant energy via nuclear fusion (proton-proton chain or CNO cycle), fusing hydrogen nuclei into helium under extreme core pressure and temperature.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 9,
@@ -128,7 +136,8 @@ const ACT_QUESTIONS1 = [
             "Polarization"
         ],
         "answer": 0,
-        "explanation": "When a celestial light source recedes from an observer, its emitted electromagnetic wavelengths stretch toward the longer, redder end of the spectrum, called redshift."
+        "explanation": "When a celestial light source recedes from an observer, its emitted electromagnetic wavelengths stretch toward the longer, redder end of the spectrum, called redshift.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 10,
@@ -142,7 +151,8 @@ const ACT_QUESTIONS1 = [
             "Absorb water directly from atmospheric humidity"
         ],
         "answer": 0,
-        "explanation": "During dehydration or water stress, plant hormone signaling (ABA) triggers guard cells to release ions, losing water and turgor, which closes the stomatal aperture to minimize water loss."
+        "explanation": "During dehydration or water stress, plant hormone signaling (ABA) triggers guard cells to release ions, losing water and turgor, which closes the stomatal aperture to minimize water loss.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 11,
@@ -156,7 +166,8 @@ const ACT_QUESTIONS1 = [
             "Solid ice sublimes directly into gaseous water vapor"
         ],
         "answer": 0,
-        "explanation": "Transpiration is the biological evaporation of water from plant tissues into the atmosphere, predominantly occurring through microscopic leaf pores called stomata."
+        "explanation": "Transpiration is the biological evaporation of water from plant tissues into the atmosphere, predominantly occurring through microscopic leaf pores called stomata.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 12,
@@ -170,7 +181,8 @@ const ACT_QUESTIONS1 = [
             "Acquired non-heritable traits gained during an individual's lifetime"
         ],
         "answer": 0,
-        "explanation": "Natural selection acts on observable phenotypic traits in a population; individuals with favorable heritable phenotypes exhibit differential survival and reproductive fitness."
+        "explanation": "Natural selection acts on observable phenotypic traits in a population; individuals with favorable heritable phenotypes exhibit differential survival and reproductive fitness.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 13,
@@ -184,7 +196,8 @@ const ACT_QUESTIONS1 = [
             "Destroy infected host cells using cytotoxic enzymes"
         ],
         "answer": 0,
-        "explanation": "Memory B cells persist in lymphoid tissue after an initial infection, rapidly proliferating into antibody-secreting plasma cells upon secondary exposure to neutralize pathogens quickly."
+        "explanation": "Memory B cells persist in lymphoid tissue after an initial infection, rapidly proliferating into antibody-secreting plasma cells upon secondary exposure to neutralize pathogens quickly.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 14,
@@ -198,7 +211,8 @@ const ACT_QUESTIONS1 = [
             "Converts sunlight directly into electrical currents"
         ],
         "answer": 0,
-        "explanation": "Stratospheric ozone (O₃) absorbs shortwave solar UV-B and UV-C radiation, shielding biological organisms on Earth's surface from mutagenic cellular damage."
+        "explanation": "Stratospheric ozone (O₃) absorbs shortwave solar UV-B and UV-C radiation, shielding biological organisms on Earth's surface from mutagenic cellular damage.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 15,
@@ -212,7 +226,8 @@ const ACT_QUESTIONS1 = [
             "Quarks, altering their nuclear charge"
         ],
         "answer": 0,
-        "explanation": "Isotopes are atoms of the same chemical element (identical number of protons and atomic number) that possess different numbers of neutrons, resulting in different isotopic masses."
+        "explanation": "Isotopes are atoms of the same chemical element (identical number of protons and atomic number) that possess different numbers of neutrons, resulting in different isotopic masses.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 16,
@@ -226,7 +241,8 @@ const ACT_QUESTIONS1 = [
             "Both species are actively harmed by competing for resources"
         ],
         "answer": 0,
-        "explanation": "Mutualism is defined in ecology as an interspecific symbiotic interaction where both participating organisms gain nutritional, protective, or reproductive benefits (+/+ interaction)."
+        "explanation": "Mutualism is defined in ecology as an interspecific symbiotic interaction where both participating organisms gain nutritional, protective, or reproductive benefits (+/+ interaction).",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 17,
@@ -240,7 +256,8 @@ const ACT_QUESTIONS1 = [
             "Chemical crystallization directly from evaporation of seawater"
         ],
         "answer": 0,
-        "explanation": "Metamorphism alters existing sedimentary, igneous, or older metamorphic rocks through extreme lithostatic pressure and elevated temperatures without reaching melting points."
+        "explanation": "Metamorphism alters existing sedimentary, igneous, or older metamorphic rocks through extreme lithostatic pressure and elevated temperatures without reaching melting points.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 18,
@@ -254,7 +271,8 @@ const ACT_QUESTIONS1 = [
             "Solids absorb sound energy more effectively than liquids"
         ],
         "answer": 0,
-        "explanation": "Sound is a mechanical longitudinal wave; denser, tightly bound atomic lattices in solids possess high elastic moduli that transmit vibrations much faster than loosely packed fluids or gases."
+        "explanation": "Sound is a mechanical longitudinal wave; denser, tightly bound atomic lattices in solids possess high elastic moduli that transmit vibrations much faster than loosely packed fluids or gases.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 19,
@@ -268,7 +286,8 @@ const ACT_QUESTIONS1 = [
             "A decrease in electrical resistance inside the synapse"
         ],
         "answer": 0,
-        "explanation": "Myelin sheaths act as electrical insulators, allowing the depolarization wavefront to jump rapidly between unmyelinated nodes of Ranvier (saltatory conduction)."
+        "explanation": "Myelin sheaths act as electrical insulators, allowing the depolarization wavefront to jump rapidly between unmyelinated nodes of Ranvier (saltatory conduction).",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {
         "id": 20,
@@ -282,6 +301,8 @@ const ACT_QUESTIONS1 = [
             "Product mass is always greater than reactant mass in exothermic reactions"
         ],
         "answer": 0,
-        "explanation": "In any closed chemical reaction, atoms are merely rearranged rather than created or destroyed, ensuring total mass remains constant between reactants and products."
+        "explanation": "In any closed chemical reaction, atoms are merely rearranged rather than created or destroyed, ensuring total mass remains constant between reactants and products.",
+        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     }
 ];
+const QUESTIONS = ACT_QUESTIONS1;

@@ -14,26 +14,57 @@ if (typeof window.ACT_SCALE_TABLE === 'undefined') {
     window.ACT_SCALE_TABLE = {
         english: [
             1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10, 10, 11, 12, 13, 14, 15, 16, 17, 17, 18, 18, 19, 20,
-            21, 21, 22, 23, 24, 24, 25, 25, 26, 27, 27, 28, 29, 29, 30, 30, 31, 31, 32, 32, 33, 33, 34, 34, 35, 35, 35, 36, 36, 36,
-            36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36
+            21, 21, 22, 23, 24, 24, 25, 25, 26, 27, 27, 28, 29, 29, 30, 30, 31, 31, 32, 32, 33, 33, 34, 34, 35, 35,
+            35, 35, 35, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36
         ],
         math: [
             1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-            22, 22, 23, 24, 25, 26, 26, 27, 28, 28, 29, 30, 30, 31, 31, 32, 32, 33, 33, 34, 34, 35, 35, 35, 36, 36, 36, 36, 36, 36
+            22, 22, 23, 24, 25, 26, 26, 27, 28, 28, 29, 30, 30, 31, 31, 32, 32, 33, 33, 34, 34, 35, 35, 35, 35, 36,
+            36, 36, 36, 36, 36
         ],
         reading: [
             1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
-            27, 28, 29, 30, 31, 32, 33, 34, 35, 36
+            27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 36
+        ],
+        science: [
+            1, 1, 1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,
+            28, 29, 30, 31, 32, 33, 34, 35, 35, 36, 36
         ]
     };
 }
 
 if (typeof window.getACTSectionScore !== 'function') {
-    window.getACTSectionScore = function(sectionId, rawScore) {
-        const table = (window.ACT_SCALE_TABLE || {})[sectionId];
-        if (!table) return 1;
-        const idx = Math.min(rawScore, table.length - 1);
-        return table[idx] || 1;
+    window.getACTSectionScore = function(sectionId, rawScore, totalQuestions) {
+        const sec = (sectionId || '').toLowerCase();
+        const table = (window.ACT_SCALE_TABLE || {})[sec];
+        if (!table || table.length === 0) return 1;
+
+        // Auto-detect total questions for section if not provided
+        let total = totalQuestions;
+        if (!total || typeof total !== 'number' || total <= 0) {
+            if (typeof SECTION_QUESTIONS !== 'undefined' && SECTION_QUESTIONS[sec] && Array.isArray(SECTION_QUESTIONS[sec])) {
+                total = SECTION_QUESTIONS[sec].length;
+            } else if (typeof ACT_QUESTIONS1 !== 'undefined' && Array.isArray(ACT_QUESTIONS1)) {
+                total = ACT_QUESTIONS1.filter(q => (q.section || '').toLowerCase() === sec).length;
+            } else if (typeof QUESTIONS !== 'undefined' && Array.isArray(QUESTIONS)) {
+                total = QUESTIONS.filter(q => (q.section || '').toLowerCase() === sec).length;
+            }
+        }
+
+        if (!total || total <= 0) {
+            total = table.length - 1;
+        }
+
+        const raw = typeof rawScore === 'number' && !isNaN(rawScore) ? rawScore : 0;
+        if (raw <= 0) return 1;
+        if (raw >= total) return 36; // 0 wrong answers guarantees 36/36
+
+        // Normalize raw score proportion onto standard ACT scoring curve
+        const fraction = Math.max(0, Math.min(1, raw / total));
+        const tableMaxIdx = table.length - 1;
+        const idx = Math.min(tableMaxIdx, Math.max(0, Math.round(fraction * tableMaxIdx)));
+        const score = table[idx] || 1;
+        return Math.min(36, Math.max(1, score));
     };
 }
 
@@ -261,22 +292,24 @@ async function saveToSupabase(result) {
 }
 
 // Prefill email if user is logged in
-document.addEventListener('DOMContentLoaded', async () => {
-    if (window.supabase && typeof SUPABASE_CONFIG !== 'undefined') {
-        try {
-            const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
-            const { data: { session } } = await client.auth.getSession();
-            if (session && session.user && session.user.email) {
-                const regEmail = document.getElementById('regEmail');
-                if (regEmail && !regEmail.value) {
-                    regEmail.value = session.user.email;
+if (typeof document !== 'undefined') {
+    document.addEventListener('DOMContentLoaded', async () => {
+        if (window.supabase && typeof SUPABASE_CONFIG !== 'undefined') {
+            try {
+                const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+                const { data: { session } } = await client.auth.getSession();
+                if (session && session.user && session.user.email) {
+                    const regEmail = document.getElementById('regEmail');
+                    if (regEmail && !regEmail.value) {
+                        regEmail.value = session.user.email;
+                    }
                 }
+            } catch (e) {
+                console.error('Error prefilling email:', e);
             }
-        } catch (e) {
-            console.error('Error prefilling email:', e);
         }
-    }
-});
+    });
+}
 
 
 
@@ -459,4 +492,14 @@ async function saveACTResult(result) {
             console.error('❌ ACT Supabase network error:', err);
         }
     }
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        getACTSectionScore: window.getACTSectionScore,
+        getACTCompositeScore: window.getACTCompositeScore,
+        ACT_SCALE_TABLE: window.ACT_SCALE_TABLE,
+        SECTION_COLORS: window.SECTION_COLORS,
+        SECTION_NAMES: window.SECTION_NAMES
+    };
 }

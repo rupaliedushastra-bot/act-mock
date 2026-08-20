@@ -1,6 +1,6 @@
 // =============================================
-// questions.js – Topic: social_science
-// ACT Topic Test
+// questions.js – ACT Topic Test: Social Science
+// Total: 20 questions
 // =============================================
 
 const ACT_QUESTIONS1 = [
@@ -16,7 +16,8 @@ const ACT_QUESTIONS1 = [
             "Describe the technical mechanics of steam engines"
         ],
         "answer": 0,
-        "explanation": "The author juxtaposes the rise in nominal wages with the decline in sanitary conditions and public health, presenting a balanced, nuanced historical evaluation."
+        "explanation": "The author juxtaposes the rise in nominal wages with the decline in sanitary conditions and public health, presenting a balanced, nuanced historical evaluation.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 2,
@@ -30,7 +31,8 @@ const ACT_QUESTIONS1 = [
             "Criticize women for borrowing money"
         ],
         "answer": 0,
-        "explanation": "A high repayment rate (95%) is statistical evidence proving that microloan programs are financially sustainable and that borrowers are creditworthy."
+        "explanation": "A high repayment rate (95%) is statistical evidence proving that microloan programs are financially sustainable and that borrowers are creditworthy.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 3,
@@ -44,7 +46,8 @@ const ACT_QUESTIONS1 = [
             "Elections are always decided by non-voters"
         ],
         "answer": 0,
-        "explanation": "The correlation between simplified administrative voting procedures and higher turnout demonstrates that removing logistical obstacles increases voter engagement."
+        "explanation": "The correlation between simplified administrative voting procedures and higher turnout demonstrates that removing logistical obstacles increases voter engagement.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 4,
@@ -58,7 +61,8 @@ const ACT_QUESTIONS1 = [
             "Companies should immediately mandate 100% in-office attendance"
         ],
         "answer": 0,
-        "explanation": "The passage balances the benefit of autonomy with the emotional challenge of isolation, showing the dual nature of remote workplace dynamics."
+        "explanation": "The passage balances the benefit of autonomy with the emotional challenge of isolation, showing the dual nature of remote workplace dynamics.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 5,
@@ -72,7 +76,8 @@ const ACT_QUESTIONS1 = [
             "Past expenses can be fully recovered by working harder"
         ],
         "answer": 0,
-        "explanation": "The sunk cost fallacy is a prime example of cognitive bias demonstrating how past non-recoverable investments distort rational cost-benefit analysis."
+        "explanation": "The sunk cost fallacy is a prime example of cognitive bias demonstrating how past non-recoverable investments distort rational cost-benefit analysis.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 6,
@@ -86,7 +91,8 @@ const ACT_QUESTIONS1 = [
             "A temporary trend that will disappear"
         ],
         "answer": 0,
-        "explanation": "The author shows that globalization does not simply erase local traditions; it sparks an active resurgence and reinvention of regional identity."
+        "explanation": "The author shows that globalization does not simply erase local traditions; it sparks an active resurgence and reinvention of regional identity.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 7,
@@ -100,7 +106,8 @@ const ACT_QUESTIONS1 = [
             "The Great Depression was unrelated to government policy"
         ],
         "answer": 0,
-        "explanation": "The author argues that the New Deal fundamentally transformed the state's role by institutionalizing government support for citizen welfare and economic safety nets."
+        "explanation": "The author argues that the New Deal fundamentally transformed the state's role by institutionalizing government support for citizen welfare and economic safety nets.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 8,
@@ -114,7 +121,8 @@ const ACT_QUESTIONS1 = [
             "The immediate extinction of urban cities"
         ],
         "answer": 0,
-        "explanation": "An aging demographic profile strains social security, increases medical expenditure, and reduces the tax-paying labor base, creating major fiscal challenges."
+        "explanation": "An aging demographic profile strains social security, increases medical expenditure, and reduces the tax-paying labor base, creating major fiscal challenges.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 9,
@@ -128,7 +136,8 @@ const ACT_QUESTIONS1 = [
             "Detention centers eliminate all criminal behavior"
         ],
         "answer": 0,
-        "explanation": "Lower recidivism from mediation demonstrates that addressing root causes and encouraging accountability through restorative practices improves outcomes."
+        "explanation": "Lower recidivism from mediation demonstrates that addressing root causes and encouraging accountability through restorative practices improves outcomes.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 10,
@@ -142,7 +151,8 @@ const ACT_QUESTIONS1 = [
             "Prove that neighborhood geography has no effect on wealth"
         ],
         "answer": 0,
-        "explanation": "The text traces how institutional redlining denied mortgage capital to minority neighborhoods, cementing intergenerational wealth gaps that persist today."
+        "explanation": "The text traces how institutional redlining denied mortgage capital to minority neighborhoods, cementing intergenerational wealth gaps that persist today.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 11,
@@ -156,7 +166,8 @@ const ACT_QUESTIONS1 = [
             "Progressive taxes eliminate the business cycle entirely"
         ],
         "answer": 0,
-        "explanation": "In a progressive system, declining incomes push taxpayers into lower brackets, cushioning disposable income and stabilizing aggregate consumer demand."
+        "explanation": "In a progressive system, declining incomes push taxpayers into lower brackets, cushioning disposable income and stabilizing aggregate consumer demand.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 12,
@@ -170,7 +181,8 @@ const ACT_QUESTIONS1 = [
             "Critical of community-led educational initiatives"
         ],
         "answer": 0,
-        "explanation": "The author warmly champions indigenous language preservation as an essential foundation for community healing, dignity, and cultural continuity."
+        "explanation": "The author warmly champions indigenous language preservation as an essential foundation for community healing, dignity, and cultural continuity.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 13,
@@ -184,7 +196,8 @@ const ACT_QUESTIONS1 = [
             "That criminal laws are uniformly applied in every jurisdiction"
         ],
         "answer": 0,
-        "explanation": "Decision fatigue and physiological hunger impair cognitive stamina, demonstrating how biological factors unconsciously influence legal decisions."
+        "explanation": "Decision fatigue and physiological hunger impair cognitive stamina, demonstrating how biological factors unconsciously influence legal decisions.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 14,
@@ -198,7 +211,8 @@ const ACT_QUESTIONS1 = [
             "An initiative that failed to attract readers"
         ],
         "answer": 0,
-        "explanation": "The author portrays Carnegie's library grants as a transformative civic investment that established universal access to knowledge across American towns."
+        "explanation": "The author portrays Carnegie's library grants as a transformative civic investment that established universal access to knowledge across American towns.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 15,
@@ -212,7 +226,8 @@ const ACT_QUESTIONS1 = [
             "Why cattle ranching is the only cause of environmental degradation"
         ],
         "answer": 0,
-        "explanation": "The tragedy of the commons is a foundational economic concept showing how unmanaged open-access resources are overexploited by rational individuals."
+        "explanation": "The tragedy of the commons is a foundational economic concept showing how unmanaged open-access resources are overexploited by rational individuals.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 16,
@@ -226,7 +241,8 @@ const ACT_QUESTIONS1 = [
             "Rural students prefer paper textbooks in all subjects"
         ],
         "answer": 0,
-        "explanation": "The author establishes broadband internet as a fundamental educational necessity, linking disparities in connectivity to broader academic inequalities."
+        "explanation": "The author establishes broadband internet as a fundamental educational necessity, linking disparities in connectivity to broader academic inequalities.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 17,
@@ -240,7 +256,8 @@ const ACT_QUESTIONS1 = [
             "Scientific experiments on humans produce perfectly invariant data"
         ],
         "answer": 0,
-        "explanation": "The Hawthorne effect describes how awareness of observation alters subject behavior, highlighting a key methodological consideration in social science."
+        "explanation": "The Hawthorne effect describes how awareness of observation alters subject behavior, highlighting a key methodological consideration in social science.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 18,
@@ -254,7 +271,8 @@ const ACT_QUESTIONS1 = [
             "Western Europe rebuilt its economy without any external financial assistance"
         ],
         "answer": 0,
-        "explanation": "The author shows that the Marshall Plan combined strategic self-interest with humanitarian reconstruction, stabilizing postwar European democracies and economies."
+        "explanation": "The author shows that the Marshall Plan combined strategic self-interest with humanitarian reconstruction, stabilizing postwar European democracies and economies.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 19,
@@ -268,7 +286,8 @@ const ACT_QUESTIONS1 = [
             "Believing that property values have no relationship to rent prices"
         ],
         "answer": 0,
-        "explanation": "The author presents an objective analysis of gentrification's dual nature: neighborhood investment and amenities accompanied by rising costs and displacement."
+        "explanation": "The author presents an objective analysis of gentrification's dual nature: neighborhood investment and amenities accompanied by rising costs and displacement.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     },
     {
         "id": 20,
@@ -282,6 +301,8 @@ const ACT_QUESTIONS1 = [
             "Charismatic leaders are completely irrelevant to social causes"
         ],
         "answer": 0,
-        "explanation": "The author demonstrates that inspirational leadership generates momentum, but durable institutional structures are necessary to translate energy into lasting reform."
+        "explanation": "The author demonstrates that inspirational leadership generates momentum, but durable institutional structures are necessary to translate energy into lasting reform.",
+        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
     }
 ];
+const QUESTIONS = ACT_QUESTIONS1;

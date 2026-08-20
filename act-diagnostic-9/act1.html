@@ -1420,7 +1420,7 @@ function formatMathCaret(text) {
 
             // Text
             let htmlContent = '';
-            const passageText = q.passage || (qs.find(item => item.passage && Math.abs((item.id || 0) - (q.id || 0)) <= 15) || {}).passage;
+            const passageText = q.passage || null;
             if (passageText) htmlContent += formatPassageHTML(passageText, q.text);
             htmlContent += `<div class="q-main-prompt" style="font-size:1.05rem; font-weight:600; color:#fff; line-height:1.6;">${formatLaTeX(q.text)}</div>`;
             document.getElementById('qText').innerHTML = htmlContent;
@@ -1576,9 +1576,9 @@ function formatMathCaret(text) {
 
             // Section scaled scores
             const sectionScores = {
-                english: getACTSectionScore('english', sectionRaw.english),
-                math: getACTSectionScore('math', sectionRaw.math),
-                reading: getACTSectionScore('reading', sectionRaw.reading)
+                english: getACTSectionScore('english', sectionRaw.english, (typeof SECTION_QUESTIONS !== 'undefined' && SECTION_QUESTIONS.english) ? SECTION_QUESTIONS.english.length : 50),
+                math: getACTSectionScore('math', sectionRaw.math, (typeof SECTION_QUESTIONS !== 'undefined' && SECTION_QUESTIONS.math) ? SECTION_QUESTIONS.math.length : 45),
+                reading: getACTSectionScore('reading', sectionRaw.reading, (typeof SECTION_QUESTIONS !== 'undefined' && SECTION_QUESTIONS.reading) ? SECTION_QUESTIONS.reading.length : 36)
             };
             const composite = getACTCompositeScore(sectionScores);
 
