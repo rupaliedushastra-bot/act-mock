@@ -25,7 +25,7 @@ module.exports = async (req, res) => {
   }
 
   const adminEmail = process.env.ADMIN_EMAIL || process.env.SMTP_USER || "rupali.eduquest@gmail.com";
-  const fromName = "EduQuest SAT Portal";
+  const fromName = "EduQuest ACT Portal";
   const fromEmail = process.env.SMTP_USER || "rupali.eduquest@gmail.com";
 
   try {
@@ -60,7 +60,7 @@ module.exports = async (req, res) => {
               You can approve their exam access from the Admin Dashboard.
             </div>
             <hr style="border-color:rgba(255,255,255,.08);margin:20px 0 12px"/>
-            <p style="color:rgba(241,245,255,.25);font-size:11px;text-align:center;margin:0;">EduQuest SAT Practice Portal · rupali.eduquest@gmail.com</p>
+            <p style="color:rgba(241,245,255,.25);font-size:11px;text-align:center;margin:0;">EduQuest ACT Practice Portal · rupali.eduquest@gmail.com</p>
           </div>
         `,
       });
@@ -78,7 +78,12 @@ module.exports = async (req, res) => {
         timeStyle: "short",
       });
 
-      const scoreColor = r.pct >= 70 ? "#059669" : r.pct >= 50 ? "#d97706" : "#dc2626";
+      const compositeScore = r.composite || r.scaled || Math.round((r.correct / r.total) * 36) || 1;
+      const scoreColor = compositeScore >= 28 ? "#059669" : compositeScore >= 20 ? "#d97706" : "#dc2626";
+
+      const engScore = r.sectionScores?.english || "—";
+      const mathScore = r.sectionScores?.math || "—";
+      const readScore = r.sectionScores?.reading || "—";
 
       const weakTopics = (r.topicAnalysis || [])
         .filter(t => t.attempted > 0)
@@ -91,54 +96,35 @@ module.exports = async (req, res) => {
         const color = t.acc >= 70 ? "#059669" : t.acc >= 40 ? "#d97706" : "#dc2626";
         return `
           <tr style="border-bottom:1px solid rgba(255,255,255,.08);">
-            <td style="padding:8px 0;font-size:13px;">${t.name}</td>
-            <td style="padding:8px 0;text-align:center;font-size:13px;">${t.total}</td>
-            <td style="padding:8px 0;text-align:center;font-size:13px;color:#059669;font-weight:600;">${t.correct}</td>
-            <td style="padding:8px 0;text-align:center;font-size:13px;color:#dc2626;font-weight:600;">${t.wrong}</td>
-            <td style="padding:8px 0;text-align:center;font-size:13px;color:${color};font-weight:700;">${t.acc}%</td>
+            <td style="padding:8px 10px;font-size:13px;">${t.name}</td>
+            <td style="padding:8px 6px;text-align:center;font-size:13px;">${t.total}</td>
+            <td style="padding:8px 6px;text-align:center;font-size:13px;color:#059669;font-weight:600;">${t.correct}</td>
+            <td style="padding:8px 6px;text-align:center;font-size:13px;color:#dc2626;font-weight:600;">${t.wrong}</td>
+            <td style="padding:8px 6px;text-align:center;font-size:13px;color:${color};font-weight:700;">${t.acc}%</td>
           </tr>`;
       }).join("");
 
-      // Determine score display
-      let scoreBlock = "";
-      if (r.scaled != null) {
-        scoreBlock = `
-          <div style="font-size:12px;color:rgba(241,245,255,.4);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px;">Estimated SAT Score</div>
-          <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">${r.scaled}</div>
-          <div style="font-size:13px;color:rgba(241,245,255,.4);margin-top:4px;">out of 1600</div>`;
-      } else if (r.rwScore != null && r.mathScore != null) {
-        const calc = Math.round(400 + (r.correct / r.total) * 1200);
-        scoreBlock = `
-          <div style="font-size:12px;color:rgba(241,245,255,.4);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px;">Estimated SAT Score</div>
-          <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">${calc}</div>
-          <div style="font-size:13px;color:rgba(241,245,255,.4);margin-top:4px;">out of 1600</div>`;
-      } else if (r.rwScore != null) {
-        scoreBlock = `
-          <div style="font-size:12px;color:rgba(241,245,255,.4);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px;">Reading & Writing Score</div>
-          <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">${r.rwScore}</div>
-          <div style="font-size:13px;color:rgba(241,245,255,.4);margin-top:4px;">out of 800</div>`;
-      } else {
-        scoreBlock = `
-          <div style="font-size:12px;color:rgba(241,245,255,.4);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px;">Score</div>
-          <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">${r.pct}%</div>`;
-      }
+      const scoreBlock = `
+        <div style="font-size:12px;color:rgba(241,245,255,.4);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px;">ACT Composite Score</div>
+        <div style="font-size:52px;font-weight:800;color:${scoreColor};line-height:1;">${compositeScore}</div>
+        <div style="font-size:13px;color:rgba(241,245,255,.4);margin-top:4px;">out of 36</div>`;
 
       const infoRows = [
-        ["Name", r.student.name],
-        ["Email", r.student.email],
-        ["Phone", r.student.phone || "—"],
+        ["Name", r.student?.name || "Student"],
+        ["Email", r.student?.email || "—"],
+        ["Phone", r.student?.phone || "—"],
         ["Submitted", submitTime + " IST"],
       ];
 
       await transport.sendMail({
         from: `"${fromName}" <${fromEmail}>`,
         to: adminEmail,
-        subject: `📝 ${r.examName || "SAT"} Result: ${r.student.name} — ${r.scaled || r.rwScore || r.pct + "%"}`,
+        subject: `📝 ACT Result: ${r.student?.name || "Student"} — Score ${compositeScore}/36 (${r.examName || "ACT Practice"})`,
         html: `
           <div style="font-family:sans-serif;max-width:620px;margin:0 auto;padding:28px;background:#0B1C3D;color:#f1f5ff;border-radius:16px;">
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
               <h2 style="color:#00C9B1;margin:0;">📝 New Test Submission</h2>
-              <span style="background:#1a56db22;border:1px solid #1a56db55;color:#60a5fa;padding:3px 10px;border-radius:50px;font-size:11px;font-weight:700;">${r.examName || "SAT PRACTICE"}</span>
+              <span style="background:#1a56db22;border:1px solid #1a56db55;color:#60a5fa;padding:3px 10px;border-radius:50px;font-size:11px;font-weight:700;">${r.examName || "ACT PRACTICE"}</span>
             </div>
             <hr style="border-color:rgba(255,255,255,.1);margin-bottom:20px"/>
 
@@ -156,13 +142,20 @@ module.exports = async (req, res) => {
               ${scoreBlock}
               <table style="width:100%;margin-top:16px;border-collapse:collapse;">
                 <tr>
-                  <td style="text-align:center;border-right:1px solid rgba(255,255,255,.1);">
-                    <div style="font-size:11px;color:rgba(241,245,255,.4);text-transform:uppercase;letter-spacing:.1em;">R&W</div>
-                    <div style="font-size:22px;font-weight:700;color:#60a5fa;">${r.rwScore || "—"}</div>
+                  <td style="text-align:center;border-right:1px solid rgba(255,255,255,.1);padding:6px;">
+                    <div style="font-size:11px;color:rgba(241,245,255,.4);text-transform:uppercase;letter-spacing:.1em;">English</div>
+                    <div style="font-size:22px;font-weight:700;color:#93c5fd;">${engScore}</div>
+                    <div style="font-size:10px;color:rgba(241,245,255,.3);">/ 36</div>
                   </td>
-                  <td style="text-align:center;">
+                  <td style="text-align:center;border-right:1px solid rgba(255,255,255,.1);padding:6px;">
                     <div style="font-size:11px;color:rgba(241,245,255,.4);text-transform:uppercase;letter-spacing:.1em;">Math</div>
-                    <div style="font-size:22px;font-weight:700;color:#34d399;">${r.mathScore || "—"}</div>
+                    <div style="font-size:22px;font-weight:700;color:#6ee7b7;">${mathScore}</div>
+                    <div style="font-size:10px;color:rgba(241,245,255,.3);">/ 36</div>
+                  </td>
+                  <td style="text-align:center;padding:6px;">
+                    <div style="font-size:11px;color:rgba(241,245,255,.4);text-transform:uppercase;letter-spacing:.1em;">Reading</div>
+                    <div style="font-size:22px;font-weight:700;color:#c4b5fd;">${readScore}</div>
+                    <div style="font-size:10px;color:rgba(241,245,255,.3);">/ 36</div>
                   </td>
                 </tr>
               </table>
@@ -188,7 +181,7 @@ module.exports = async (req, res) => {
                 <td style="width:8px;"></td>
                 <td style="text-align:center;padding:12px 4px;background:rgba(26,86,219,.08);border-radius:8px;">
                   <div style="font-size:22px;font-weight:800;color:#60a5fa;">${r.pct}%</div>
-                  <div style="font-size:10px;color:rgba(241,245,255,.4);text-transform:uppercase;letter-spacing:.1em;margin-top:2px;">Score</div>
+                  <div style="font-size:10px;color:rgba(241,245,255,.4);text-transform:uppercase;letter-spacing:.1em;margin-top:2px;">Accuracy</div>
                 </td>
               </tr>
             </table>
@@ -213,7 +206,7 @@ module.exports = async (req, res) => {
             </table>
 
             <hr style="border-color:rgba(255,255,255,.08);margin:24px 0 12px"/>
-            <p style="color:rgba(241,245,255,.25);font-size:11px;text-align:center;margin:0;">EduQuest SAT Practice Portal · rupali.eduquest@gmail.com</p>
+            <p style="color:rgba(241,245,255,.25);font-size:11px;text-align:center;margin:0;">EduQuest ACT Practice Portal · rupali.eduquest@gmail.com</p>
           </div>
         `,
       });

@@ -410,7 +410,7 @@ async function saveACTResult(result) {
         english_score: result.sectionScores?.english || null,
         math_score: result.sectionScores?.math || null,
         reading_score: result.sectionScores?.reading || null,
-        science_score: null,
+        science_score: result.sectionScores?.science || null,
 
         percentage: result.pct || 0,
         grade: result.grade || 'B',

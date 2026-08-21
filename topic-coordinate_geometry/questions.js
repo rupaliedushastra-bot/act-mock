@@ -36,21 +36,21 @@ const ACT_QUESTIONS1 = [
         "id": 3,
         "section": "math",
         "topic": "Coordinate Geometry",
-        "text": "What is the distance between the points (1, 2) and (4, 6)?",
+        "text": "What is the distance between the points (2, 3) and (8, 11)?",
         "options": [
-            "4",
-            "3",
-            "7",
-            "5"
+            "8",
+            "6",
+            "14",
+            "10"
         ],
         "answer": 3,
-        "explanation": "Using the distance formula d = √[(x₂ – x₁)² + (y₂ – y₁)²]: d = √[(4 – 1)² + (6 – 2)²] = √[3² + 4²] = √[9 + 16] = √25 = 5."
+        "explanation": "Using the distance formula d = √[(x₂ – x₁)² + (y₂ – y₁)²]: d = √[(8 – 2)² + (11 – 3)²] = √[6² + 8²] = √[36 + 64] = √100 = 10."
     },
     {
         "id": 4,
         "section": "math",
         "topic": "Coordinate Geometry",
-        "text": "What is the midpoint of the segment connecting (–2, 4) and (6, –8)?",
+        "text": "What is the midpoint of the segment connecting (–4, 6) and (8, –10)?",
         "options": [
             "(4, –4)",
             "(2, 2)",
@@ -58,7 +58,7 @@ const ACT_QUESTIONS1 = [
             "(2, –2)"
         ],
         "answer": 3,
-        "explanation": "Using the midpoint formula M = ((x₁ + x₂)/2, (y₁ + y₂)/2): M = ((–2 + 6)/2, (4 + (–8))/2) = (4/2, –4/2) = (2, –2)."
+        "explanation": "Using the midpoint formula M = ((x₁ + x₂)/2, (y₁ + y₂)/2): M = ((–4 + 8)/2, (6 + (–10))/2) = (4/2, –4/2) = (2, –2)."
     },
     {
         "id": 5,

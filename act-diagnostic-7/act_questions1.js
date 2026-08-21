@@ -1,5 +1,5 @@
 // =============================================
-// act_questions1.js – ACT Practice Test Diagnostic 7
+// act_questions1.js – ACT Diagnostic Test 7
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
 // Total: 131 questions
 // =============================================
@@ -8,1884 +8,1879 @@ const ACT_QUESTIONS1 = [
     {
         "id": 1,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Choose the word that is closest in meaning to \"cautious.\"",
+        "topic": "Punctuation",
+        "text": "The research team led by Samuel O'Connor, who had spent five weeks analyzing resonant amphitheater arches in Athens finally published their findings in a leading scientific journal.\n\nWhich of the following best corrects the punctuation in the sentence above?",
         "options": [
-            "Reckless",
-            "Careful",
-            "Hasty",
-            "Impulsive"
+            "The research team led by Samuel O'Connor, who had spent five weeks analyzing resonant amphitheater arches in Athens, finally published their findings in a leading scientific journal.",
+            "The research team led by Samuel O'Connor who had spent five weeks analyzing resonant amphitheater arches in Athens, finally published their findings in a leading scientific journal.",
+            "The research team led by Samuel O'Connor, who had spent five weeks analyzing resonant amphitheater arches in Athens finally, published their findings in a leading scientific journal.",
+            "The research team led by Samuel O'Connor who had spent five weeks analyzing resonant amphitheater arches, in Athens finally published their findings in a leading scientific journal."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Careful\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The research team led by Samuel O'Connor, who had spent five weeks analyzing resonant amphitheater arches in Athens, finally published their findings in a leading scientific journal.\". The non-essential relative clause beginning with 'who had spent five weeks...' must be set off by paired commas."
     },
     {
         "id": 2,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Identify the word that best matches the meaning of \"elaborate.\"",
+        "topic": "Grammar & Usage",
+        "text": "Neither Samuel O'Connor nor the Hellenic Acoustic Society technicians was able to calibrate the laser doppler vibrometer before the expedition began.\n\nWhich correction should be made to the underlined verb?",
         "options": [
-            "Simple",
-            "Detailed",
-            "Brief",
-            "Unfinished"
+            "is able to calibrate",
+            "were able to calibrate",
+            "was being able to calibrate",
+            "No change needed"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Detailed\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "explanation": "Correct Answer: \"were able to calibrate\". With 'neither... nor', the verb agrees with the closer subject ('technicians', plural), requiring 'were'."
     },
     {
         "id": 3,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Select the word that is most similar in meaning to \"innovative.\"",
+        "topic": "Sentence Structure",
+        "text": "Examining the delicate structure of resonant amphitheater arches through the laser doppler vibrometer, the anomalous readings became immediately apparent to Samuel O'Connor.\n\nWhich revision best corrects the dangling modifier in the sentence?",
         "options": [
-            "Conventional",
-            "Original",
-            "Traditional",
-            "Routine"
+            "Through the laser doppler vibrometer, examining the delicate structure of resonant amphitheater arches, the anomalous readings became immediately apparent.",
+            "The anomalous readings became immediately apparent, examining the delicate structure of resonant amphitheater arches through the laser doppler vibrometer.",
+            "Examining the delicate structure of resonant amphitheater arches through the laser doppler vibrometer, Samuel O'Connor immediately noticed the anomalous readings.",
+            "Samuel O'Connor, examining the delicate structure of resonant amphitheater arches through the laser doppler vibrometer, the anomalous readings became apparent."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Original\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 2,
+        "explanation": "Correct Answer: \"Examining the delicate structure of resonant amphitheater arches through the laser doppler vibrometer, Samuel O'Connor immediately noticed the anomalous readings.\". The introductory participial phrase must modify the person performing the action (Samuel O'Connor), not 'the readings'."
     },
     {
         "id": 4,
         "section": "english",
         "topic": "Style & Tone",
-        "text": "Choose the word that best expresses a similar meaning to \"diminish.\"",
+        "text": "The initial hypothesis regarding resonant amphitheater arches formulated by Samuel O'Connor was completely disproven by the latest measurements from Athens.\n\nWhich alternative to the underlined portion would be LEAST acceptable in maintaining a formal academic tone?",
         "options": [
-            "Increase",
-            "Reduce",
-            "Expand",
-            "Enlarge"
+            "thoroughly refuted",
+            "proven inaccurate",
+            "rendered untenable",
+            "totally shot down"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Reduce\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 3,
+        "explanation": "Correct Answer: \"totally shot down\". 'Totally shot down' is colloquial slang and undermines the formal register of an academic publication."
     },
     {
         "id": 5,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Identify the word that is most similar in meaning to \"fragile.\"",
+        "topic": "Transitions",
+        "text": "The Hellenic Acoustic Society faced severe logistical obstacles in Athens. [5], the researchers successfully deployed the laser doppler vibrometer on schedule.\n\nWhich transition word or phrase best connects these two sentences?",
         "options": [
-            "Durable",
-            "Sturdy",
-            "Delicate",
-            "Robust"
+            "Nevertheless",
+            "Consequently",
+            "Furthermore",
+            "Similarly"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Delicate\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Nevertheless\". 'Nevertheless' correctly signals a contrast between the severe obstacles and the successful deployment."
     },
     {
         "id": 6,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Select the word that best matches the meaning of \"meticulous.\"",
+        "topic": "Rhetorical Skills",
+        "text": "The author wants to conclude a paragraph by highlighting the broader technological impact of acoustic engineering pioneered by Samuel O'Connor. Which choice best accomplishes this goal?",
         "options": [
-            "Careless",
-            "Sloppy",
-            "Thorough",
-            "Haphazard"
+            "Samuel O'Connor has presented these findings at several international academic symposia.",
+            "By translating these observations into synthetic prototypes, industrial engineers can manufacture more resilient commercial materials.",
+            "Securing institutional grant funding remains an essential step for laboratory expansion.",
+            "Field research in remote environments requires careful logistical planning."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Thorough\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 1,
+        "explanation": "Correct Answer: \"By translating these observations into synthetic prototypes, industrial engineers can manufacture more resilient commercial materials.\". This option directly connects the specialized scientific findings to broader commercial and industrial applications."
     },
     {
         "id": 7,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Choose the word that is most similar in meaning to \"ambiguous.\"",
+        "topic": "Wordiness & Redundancy",
+        "text": "The final report presented by Samuel O'Connor contained a concise summary that was brief and to the point regarding resonant amphitheater arches in Athens.\n\nWhich revision best eliminates the redundancy in the sentence?",
         "options": [
-            "Clear",
-            "Vague",
-            "Definite",
-            "Explicit"
+            "The final report presented a concise summary that was brief and short of resonant amphitheater arches.",
+            "The final report presented a brief summary concise and to the point of resonant amphitheater arches.",
+            "The final report presented by Samuel O'Connor contained a concise summary of resonant amphitheater arches in Athens.",
+            "The final report presented a summary that was concise, brief, and to the point."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Vague\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 2,
+        "explanation": "Correct Answer: \"The final report presented by Samuel O'Connor contained a concise summary of resonant amphitheater arches in Athens.\". 'Concise summary' inherently means brief and to the point; adding extra qualifiers creates unnecessary redundancy."
     },
     {
         "id": 8,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Identify the word that best matches the meaning of \"proficient.\"",
+        "topic": "Punctuation",
+        "text": "The laser doppler vibrometer recorded unprecedented fluctuations in Athens the analytical software processed the telemetry in real time.\n\nWhich choice provides the correct punctuation between the two independent clauses?",
         "options": [
-            "Inept",
-            "Skilled",
-            "Unskilled",
-            "Clumsy"
+            "Athens, the analytical",
+            "Athens the analytical",
+            "Athens: and the analytical",
+            "Athens; the analytical"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Skilled\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Athens; the analytical\". Two independent clauses without a coordinating conjunction must be separated by a semicolon."
     },
     {
         "id": 9,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Select the word that is most similar in meaning to \"resilient.\"",
+        "topic": "Grammar & Usage",
+        "text": "Samuel O'Connor consulted with three international specialists from Athens, all of [9] had extensive experience in acoustic engineering.\n\nWhich pronoun correctly completes the sentence?",
         "options": [
-            "Fragile",
-            "Sturdy",
-            "Brittle",
-            "Weak"
+            "whom",
+            "who",
+            "which",
+            "that"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Sturdy\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 0,
+        "explanation": "Correct Answer: \"whom\". 'Whom' is the objective case pronoun required as the object of the preposition 'of'."
     },
     {
         "id": 10,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Choose the word that best expresses a similar meaning to \"tedious.\"",
+        "topic": "Sentence Structure",
+        "text": "The temperature dropped rapidly after dusk in Athens, the Hellenic Acoustic Society had to calibrate the heating elements on the laser doppler vibrometer.\n\nWhich choice best corrects the comma splice?",
         "options": [
-            "Exciting",
-            "Boring",
-            "Interesting",
-            "Engaging"
+            "The temperature dropped rapidly after dusk in Athens the team had to calibrate the heating elements.",
+            "The temperature dropped rapidly after dusk in Athens, so the Hellenic Acoustic Society had to calibrate the heating elements on the laser doppler vibrometer.",
+            "Dropping rapidly after dusk the temperature in Athens, the team calibrated the heating elements.",
+            "The temperature dropped rapidly after dusk in Athens, and so therefore the team calibrated the heating elements."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Boring\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "explanation": "Correct Answer: \"The temperature dropped rapidly after dusk in Athens, so the Hellenic Acoustic Society had to calibrate the heating elements on the laser doppler vibrometer.\". A comma splice between two independent clauses is correctly repaired using a comma and coordinating conjunction ('so')."
     },
     {
         "id": 11,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the correct verb form to complete the sentence below. *The committee, along with its members, ___ responsible for the final decision.*",
+        "topic": "Style & Tone",
+        "text": "During the survey in Athens, Samuel O'Connor collected a bunch of data points on resonant amphitheater arches.\n\nWhich choice replaces the underlined phrase with the most precise and formal academic phrasing?",
         "options": [
-            "are",
-            "is",
-            "were",
-            "be"
+            "a whole lot of",
+            "tons of",
+            "a substantial dataset of",
+            "a massive heap of"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 2,
+        "explanation": "Correct Answer: \"a substantial dataset of\". 'A substantial dataset of' conveys academic precision, avoiding vague or informal colloquialisms."
     },
     {
         "id": 12,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the correct verb form to complete the sentence below. *The team of experts, including Dr. Smith, ___ leading the research project.*",
+        "topic": "Transitions",
+        "text": "The filtration membrane on the laser doppler vibrometer clogged due to fine sediment in Athens. [12], the automated safety valve halted fluid intake immediately.\n\nWhich transition word best signals the logical relationship?",
         "options": [
-            "are",
-            "is",
-            "were",
-            "be"
+            "Conversely",
+            "Nonetheless",
+            "In contrast",
+            "Consequently"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Consequently\". 'Consequently' correctly indicates that the safety valve action was a direct result of the clogged membrane."
     },
     {
         "id": 13,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the correct verb form to complete the sentence below. *The bouquet of roses, placed on the table, ___ a beautiful centerpiece.*",
+        "topic": "Rhetorical Skills",
+        "text": "For the sake of logical flow in Samuel O'Connor's research log, where should a sentence describing the initial site preparation in Athens be placed?",
         "options": [
-            "make",
-            "makes",
-            "is making",
-            "made"
+            "At the beginning of the paragraph, before the discussion of data collection.",
+            "At the very end of the essay after the conclusion.",
+            "Between the analysis of results and the final summary.",
+            "Nowhere, because site preparation is irrelevant to scientific research."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"makes\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 0,
+        "explanation": "Correct Answer: \"At the beginning of the paragraph, before the discussion of data collection.\". Chronological logic requires site preparation to precede the collection and analysis of data."
     },
     {
         "id": 14,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the correct verb form to complete the sentence below. *Neither the students nor the teacher ___ prepared for the exam.*",
+        "topic": "Wordiness & Redundancy",
+        "text": "Samuel O'Connor observed an unusual phenomenon that was rare and out of the ordinary while tracking resonant amphitheater arches in Athens.\n\nWhich choice is most concise without losing essential meaning?",
         "options": [
-            "are",
-            "is",
-            "were",
-            "being"
+            "an unusual phenomenon that was rare in Athens.",
+            "an unusual phenomenon in Athens.",
+            "a rare phenomenon out of the ordinary in Athens.",
+            "an unusual, rare, and out of the ordinary phenomenon in Athens."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "explanation": "Correct Answer: \"an unusual phenomenon in Athens.\". 'An unusual phenomenon' fully captures the meaning without repetitive synonyms like 'rare' and 'out of the ordinary'."
     },
     {
         "id": 15,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the correct verb form to complete the sentence below. *The pair of shoes, along with the handbag, ___ on the floor.*",
+        "topic": "Punctuation",
+        "text": "The three [15] collective recommendations on acoustic engineering were compiled into the final project charter by Samuel O'Connor.\n\nWhich choice correctly indicates plural possession?",
         "options": [
-            "are",
-            "is",
-            "were",
-            "be"
+            "institution's",
+            "institutions",
+            "institutions'",
+            "institutions's"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 2,
+        "explanation": "Correct Answer: \"institutions'\". Plural nouns ending in 's' form the possessive by adding an apostrophe after the 's' ('institutions'')."
     },
     {
         "id": 16,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the correct verb form to complete the sentence below. *The scent of jasmine and rose ___ filling the room gracefully.*",
+        "topic": "Grammar & Usage",
+        "text": "When the telemetry gauge fluctuated in Athens, Samuel O'Connor quickly [16] the auxiliary power switch on the laser doppler vibrometer.\n\nWhich verb form maintains proper past tense consistency?",
         "options": [
-            "is",
-            "are",
-            "was",
-            "were"
+            "activates",
+            "has activated",
+            "will activate",
+            "activated"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 3,
+        "explanation": "Correct Answer: \"activated\". The past tense verb 'fluctuated' requires the parallel past tense 'activated' for narrative consistency."
     },
     {
         "id": 17,
         "section": "english",
         "topic": "Sentence Structure",
-        "text": "Choose the correct verb form to complete the sentence below. *The series of lectures, featuring various guest speakers, ___ highly informative.*",
+        "text": "The protocol in Athens required Samuel O'Connor to inspect the valves, [17], and document all telemetry in the official log.\n\nWhich choice maintains parallel grammatical structure?",
         "options": [
-            "are",
-            "is",
-            "were",
-            "being"
+            "clean the optical sensors",
+            "cleaning the optical sensors",
+            "to have cleaned the optical sensors",
+            "the optical sensors were cleaned"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 0,
+        "explanation": "Correct Answer: \"clean the optical sensors\". The infinitive structure 'to inspect..., [clean]..., and [document]...' requires base verb forms in parallel."
     },
     {
         "id": 18,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the correct verb form to complete the sentence below. *Both the manager and the employees ___ involved in the new initiative.*",
+        "topic": "Style & Tone",
+        "text": "The new spectral analysis conducted in Athens [18] the presence of rare mineral compounds within resonant amphitheater arches.\n\nWhich choice offers the most precise and descriptive vocabulary?",
         "options": [
-            "is",
-            "are",
-            "was",
-            "be"
+            "showed up",
+            "substantiated",
+            "made clearish",
+            "pointed at"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"are\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "explanation": "Correct Answer: \"substantiated\". 'Substantiated' is formal, accurate, and scientifically appropriate."
     },
     {
         "id": 19,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the correct verb form to complete the sentence below. *The bouquet of lilies, along with several orchids, ___ arranged beautifully in the vase.*",
+        "topic": "Transitions",
+        "text": "The laser doppler vibrometer mapped the core structure of resonant amphitheater arches in Athens. [19], it recorded ambient temperature and salinity gradients simultaneously.\n\nWhich transition word best adds supporting information?",
         "options": [
-            "are",
-            "is",
-            "were",
-            "has"
+            "On the other hand",
+            "In spite of this",
+            "Furthermore",
+            "Instead"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 2,
+        "explanation": "Correct Answer: \"Furthermore\". 'Furthermore' signals the addition of supplementary data collected by the instrument."
     },
     {
         "id": 20,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the correct verb form to complete the sentence below. *Each of the players, despite their fatigue, ___ giving their best performance.*",
+        "topic": "Rhetorical Skills",
+        "text": "Which introductory sentence best establishes the central focus of a passage detailing Samuel O'Connor's breakthrough in acoustic engineering across Athens?",
         "options": [
-            "are",
-            "is",
-            "were",
-            "be"
+            "Many people enjoy reading about scientific discoveries during their leisure time.",
+            "Athens has a diverse geographical profile characterized by variable weather.",
+            "Laboratory equipment is often manufactured by specialized technical firms.",
+            "Recent advances in acoustic engineering have been accelerated by groundbreaking field methodologies pioneered by Samuel O'Connor."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"is\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Recent advances in acoustic engineering have been accelerated by groundbreaking field methodologies pioneered by Samuel O'Connor.\". This sentence clearly introduces both the scientific discipline and the central role of the primary researcher."
     },
     {
         "id": 21,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Each of the candidate proposals ______ thoroughly reviewed by the academic committee before final selection.",
+        "topic": "Wordiness & Redundancy",
+        "text": "Samuel O'Connor made adjustments to the laser doppler vibrometer in Athens [21] adverse atmospheric pressure.\n\nWhich choice is the most concise replacement for 'on account of the fact that there was'?",
         "options": [
-            "was",
-            "were",
-            "are",
-            "have been"
+            "because of",
+            "on account of the fact that there was",
+            "due to the circumstance where there was",
+            "owing to the presence of the reality of"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"was\". The singular indefinite pronoun 'Each' is the subject of the sentence and requires the singular verb 'was'."
+        "explanation": "Correct Answer: \"because of\". 'Because of' is the most direct and economical way to express causation."
     },
     {
         "id": 22,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Having completed the laboratory safety inspection, the research team was cleared to begin the chemical synthesis trials.\n\nWhich choice best maintains clear grammatical structure without a dangling modifier?",
+        "topic": "Punctuation",
+        "text": "The survey of resonant amphitheater arches in Athens yielded three critical artifacts [22] a brass sextant, an annotated navigational log, and a hand-drawn portolan chart.\n\nWhich punctuation mark correctly introduces the list following an independent clause?",
         "options": [
-            "Having completed the laboratory safety inspection, the research team was cleared to begin the chemical synthesis trials.",
-            "Having completed the laboratory safety inspection, the chemical synthesis trials were begun by the research team.",
-            "The research team, having completed the safety inspection, chemical synthesis trials were begun.",
-            "Having completed the laboratory safety inspection, clearance was granted to the research team to begin trials."
+            "artifacts;",
+            "artifacts:",
+            "artifacts,",
+            "artifacts"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"Having completed the laboratory safety inspection, the research team was cleared to begin the chemical synthesis trials.\". The modifying phrase properly modifies 'the research team'."
+        "answer": 1,
+        "explanation": "Correct Answer: \"artifacts:\". A colon is used after an independent clause to introduce an elaborating list or explanation."
     },
     {
         "id": 23,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Dr. Chen's new monograph on renewable energy received critical praise; consequently, it was selected for the national science curriculum.\n\nWhich punctuation choice best joins the two independent clauses?",
+        "topic": "Grammar & Usage",
+        "text": "Each of the experimental samples collected by Samuel O'Connor from Athens [23] cataloged in the Hellenic Acoustic Society database.\n\nWhich verb correctly completes the sentence?",
         "options": [
-            "praise; consequently,",
-            "praise, consequently",
-            "praise consequently,",
-            "praise: consequently"
+            "are",
+            "were",
+            "is",
+            "have been"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"praise; consequently,\". A semicolon followed by a conjunctive adverb and a comma correctly joins two independent clauses."
+        "answer": 2,
+        "explanation": "Correct Answer: \"is\". 'Each' is a singular indefinite pronoun and requires the singular verb 'is'."
     },
     {
         "id": 24,
         "section": "english",
-        "topic": "Transitions",
-        "text": "The preliminary solar panel efficiency tests exceeded expectations; ______, manufacturing bottlenecks delayed commercial distribution by several months.",
+        "topic": "Sentence Structure",
+        "text": "Because the physical conditions surrounding resonant amphitheater arches in Athens were more severe than anticipated. The laser doppler vibrometer drifted off its planned trajectory.\n\nWhich revision eliminates the sentence fragment?",
         "options": [
-            "however,",
-            "moreover,",
-            "similarly,",
-            "for instance,"
+            "Because the physical conditions surrounding resonant amphitheater arches in Athens were more severe than anticipated; the laser doppler vibrometer drifted off its planned trajectory.",
+            "Being that conditions were more severe than anticipated. The laser doppler vibrometer drifted.",
+            "The conditions being severe in Athens. Causing the laser doppler vibrometer to drift.",
+            "Because the physical conditions surrounding resonant amphitheater arches in Athens were more severe than anticipated, the laser doppler vibrometer drifted off its planned trajectory."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"however,\". 'However' correctly signals the contrasting setback following the initial positive result."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Because the physical conditions surrounding resonant amphitheater arches in Athens were more severe than anticipated, the laser doppler vibrometer drifted off its planned trajectory.\". Attaching the dependent clause ('Because the conditions...') to the independent clause resolves the fragment."
     },
     {
         "id": 25,
         "section": "english",
         "topic": "Style & Tone",
-        "text": "The archivist carefully cataloged each historical artifact, ensuring every record was documented with utmost precision.\n\nWhich underlined phrase would NOT be acceptable in formal academic prose?",
+        "text": "All researchers assisting Samuel O'Connor in Athens must strictly adhere [25] established safety regulations.\n\nWhich preposition completes the standard English idiom?",
         "options": [
-            "meticulously recorded",
-            "sloppily threw together",
-            "rigorously logged",
-            "systematically inventoried"
+            "to",
+            "with",
+            "at",
+            "on"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"sloppily threw together\". This informal, colloquial phrasing violates the formal tone of the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"to\". The verb 'adhere' idiomatically pairs with the preposition 'to'."
     },
     {
         "id": 26,
         "section": "english",
-        "topic": "Wordiness & Redundancy",
-        "text": "The museum hosts its annual gala every year in the main atrium.\n\nWhich revision best eliminates redundant phrasing?",
+        "topic": "Transitions",
+        "text": "The Hellenic Acoustic Society documented several endemic specimens in Athens. [26], they identified a unique manifestation of resonant amphitheater arches never before recorded.\n\nWhich transition best introduces a specific example?",
         "options": [
-            "The museum hosts its annual gala in the main atrium.",
-            "The museum hosts its annual yearly gala in the main atrium every year.",
-            "Every year, the annual gala of the museum takes place yearly in the main atrium.",
-            "The museum's yearly annual gala occurs on an annual basis in the main atrium."
+            "In summary",
+            "For instance",
+            "Nevertheless",
+            "Otherwise"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"The museum hosts its annual gala in the main atrium.\". Using 'annual' alone conveys the meaning concisely without repeating 'every year'."
+        "answer": 1,
+        "explanation": "Correct Answer: \"For instance\". 'For instance' correctly introduces a concrete example of the endemic specimens mentioned."
     },
     {
         "id": 27,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "text": "A student is writing an essay on urban biodiversity and wants to conclude a paragraph on rooftop gardens. Which sentence best reinforces the paragraph's scientific focus?",
+        "text": "If Samuel O'Connor were to include a quantitative chart comparing measurements of resonant amphitheater arches across Athens, the primary rhetorical function would be to:",
         "options": [
-            "These vegetative green roofs provide critical microhabitats for native pollinators and significantly reduce building energy consumption.",
-            "Rooftop gardens look super cool when you see them from neighboring skyscrapers.",
-            "People definitely should spend more time planting flowers on roofs.",
-            "Gardening is an enjoyable hobby that anyone can try at home."
+            "distract the reader from ambiguities in the experimental methodology.",
+            "prove that no further scientific investigation is necessary.",
+            "provide empirical validation for the chemical trends described in the narrative.",
+            "replace the qualitative descriptions with purely numeric indices."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"These vegetative green roofs provide critical microhabitats for native pollinators and significantly reduce building energy consumption.\". This option provides precise, evidence-based scientific support."
+        "answer": 2,
+        "explanation": "Correct Answer: \"provide empirical validation for the chemical trends described in the narrative.\". Quantitative data serves to substantiate and empirically validate the qualitative observations."
     },
     {
         "id": 28,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "The expedition team brought three essential pieces of navigation gear: a handheld compass, a satellite transceiver, and a topographical map.\n\nWhich punctuation correctly introduces the list?",
+        "topic": "Wordiness & Redundancy",
+        "text": "The autonomous laser doppler vibrometer deployed in Athens operates independently without human guidance on its own.\n\nWhich choice best eliminates repetitive phrasing?",
         "options": [
-            "gear:",
-            "gear;",
-            "gear,",
-            "gear—"
+            "The autonomous laser doppler vibrometer operates independently on its own without human guidance.",
+            "Operating independently, the autonomous laser doppler vibrometer guides itself on its own.",
+            "The laser doppler vibrometer operates autonomously, independently, and on its own.",
+            "The autonomous laser doppler vibrometer operates without human guidance."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"gear:\". A colon correctly introduces a series following a complete independent clause."
+        "answer": 3,
+        "explanation": "Correct Answer: \"The autonomous laser doppler vibrometer operates without human guidance.\". 'Operates without human guidance' directly explains the function without repeating 'autonomously', 'independently', and 'on its own'."
     },
     {
         "id": 29,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Neither the architect nor the structural engineers ______ surprised by the foundation test results.",
+        "topic": "Punctuation",
+        "text": "The field specimen of resonant amphitheater arches—fragile from centuries of isolation in Athens [29] was stabilized by Samuel O'Connor.\n\nWhich punctuation mark correctly closes the parenthetical insertion?",
         "options": [
-            "were",
-            "was",
-            "is",
-            "has been"
+            "isolation in Athens—",
+            "isolation in Athens,",
+            "isolation in Athens;",
+            "isolation in Athens"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"were\". The verb agrees with the closer plural subject 'engineers'."
+        "explanation": "Correct Answer: \"isolation in Athens—\". A parenthetical interruption opened with an em-dash must be closed with an em-dash."
     },
     {
         "id": 30,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "The telescope captured high-resolution images of the distant nebula, allowing astronomers to measure its rate of expansion accurately.\n\nWhich choice best completes the sentence without creating a run-on or fragment?",
+        "topic": "Grammar & Usage",
+        "text": "Between the two calibration methods tested by Samuel O'Connor in Athens, the second protocol demonstrated [30] analytical accuracy.\n\nWhich modifier form is grammatically correct?",
         "options": [
-            ", allowing astronomers to measure its rate of expansion accurately.",
-            "; which allowed astronomers to measure its rate of expansion accurately.",
-            ". Allowing astronomers to measure its rate of expansion accurately.",
-            ", astronomers were allowed to measure its rate of expansion accurately."
+            "greatest",
+            "greater",
+            "most greatest",
+            "more greater"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \", allowing astronomers to measure its rate of expansion accurately.\". A participial phrase modifying the preceding clause is correctly punctuated with a comma."
+        "answer": 1,
+        "explanation": "Correct Answer: \"greater\". When comparing exactly two items, the comparative form ('greater') is required, not the superlative ('greatest')."
     },
     {
         "id": 31,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Fill in the blank with the most appropriate word using context clues. Despite the ______ weather, the festival continued as planned.",
+        "topic": "Sentence Structure",
+        "text": "In Athens, Samuel O'Connor only analyzed the data points gathered by the laser doppler vibrometer.\n\nWhich placement of 'only' makes it clear that no other data points were analyzed?",
         "options": [
-            "pleasant",
-            "inclement",
-            "mild",
-            "temperate"
+            "In Athens, only Samuel O'Connor analyzed the data points gathered by the laser doppler vibrometer.",
+            "In Athens, Samuel O'Connor analyzed the data points only gathered by the laser doppler vibrometer.",
+            "In Athens, Samuel O'Connor analyzed only the data points gathered by the laser doppler vibrometer.",
+            "In Athens, Samuel O'Connor analyzed the data points that only were gathered by the laser doppler vibrometer."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"inclement\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"In Athens, Samuel O'Connor analyzed only the data points gathered by the laser doppler vibrometer.\". Placing 'only' immediately before 'the data points' unambiguously restricts the action to those specific data points."
     },
     {
         "id": 32,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Fill in the blank with the most appropriate word using context clues. The CEO's decision was both ______ and unexpected, leaving employees confused about the future.",
+        "topic": "Style & Tone",
+        "text": "The Hellenic Acoustic Society specialists in Athens [32] to verify the structural integrity of the laser doppler vibrometer.\n\nWhich choice is best suited to contemporary professional writing?",
         "options": [
-            "deliberated",
-            "abrupt",
-            "calculated",
-            "deliberate"
+            "did strive mightily",
+            "went forth",
+            "soughteth",
+            "endeavored"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"abrupt\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 3,
+        "explanation": "Correct Answer: \"endeavored\". 'Endeavored' is professional and contemporary, avoiding archaic theatrical language."
     },
     {
         "id": 33,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Fill in the blank with the most appropriate word using context clues. After the intense debate, the committee reached a ______ decision that satisfied all parties involved.",
+        "topic": "Transitions",
+        "text": "[33] the initial sensor calibrations in Athens were delayed by inclement conditions, Samuel O'Connor's primary research objectives were fully met.\n\nWhich subordinating conjunction best indicates concession?",
         "options": [
-            "unanimous",
-            "partial",
-            "biased",
-            "conflicted"
+            "Although",
+            "Because",
+            "Since",
+            "Unless"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"unanimous\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"Although\". 'Although' introduces a concession clause, acknowledging the delay while highlighting overall success."
     },
     {
         "id": 34,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "text": "Fill in the blank with the most appropriate word using context clues. The scientist's ______ analysis provided clear evidence supporting her hypothesis.",
+        "text": "Consider the phrase in Samuel O'Connor's summary: 'It is interesting and worth noting that resonant amphitheater arches reacts dynamically to seasonal shifts in Athens.'\n\nWhich revision most effectively improves directness?",
         "options": [
-            "superficial",
-            "thorough",
-            "hasty",
-            "vague"
+            "As a matter of interesting fact, resonant amphitheater arches reacts dynamically to seasonal shifts in Athens.",
+            "resonant amphitheater arches reacts dynamically to seasonal shifts in Athens.",
+            "Worth noting is the reality that resonant amphitheater arches reacts dynamically in Athens.",
+            "It goes without saying that resonant amphitheater arches reacts dynamically in Athens."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"thorough\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"resonant amphitheater arches reacts dynamically to seasonal shifts in Athens.\". Deleting unnecessary throat-clearing phrases ('It is worth noting that...') makes the statement direct and authoritative."
     },
     {
         "id": 35,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Fill in the blank with the most appropriate word using context clues. The ancient manuscript was ______ and required careful preservation.",
+        "topic": "Wordiness & Redundancy",
+        "text": "The Hellenic Acoustic Society decided to make an assessment of the safety protocols governing Athens.\n\nWhich revision is the most concise and forceful?",
         "options": [
-            "pristine",
-            "deteriorated",
-            "fragile",
-            "robust"
+            "The Hellenic Acoustic Society decided to perform an assessment on the safety protocols in Athens.",
+            "The Hellenic Acoustic Society decided to conduct a process of assessment of safety in Athens.",
+            "The Hellenic Acoustic Society decided to assess the safety protocols governing Athens.",
+            "The Hellenic Acoustic Society decided to carry out the making of an assessment for Athens."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"fragile\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"The Hellenic Acoustic Society decided to assess the safety protocols governing Athens.\". Replacing the nominalized phrase 'make an assessment of' with the active verb 'assess' enhances clarity."
     },
     {
         "id": 36,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Fill in the blank with the most appropriate word using context clues. Her arguments were ______ and persuaded many to adopt her viewpoint.",
+        "topic": "Punctuation",
+        "text": "Samuel O'Connor discovered a dense [36] intricate network of crystalline features surrounding resonant amphitheater arches in Athens.\n\nWhich choice correctly punctuates coordinate adjectives?",
         "options": [
-            "weak",
-            "compelling",
-            "ambiguous",
-            "flawed"
+            "dense;",
+            "dense",
+            "dense and,",
+            "dense,"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"compelling\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 3,
+        "explanation": "Correct Answer: \"dense,\". Coordinate adjectives ('dense' and 'intricate') modifying the same noun should be separated by a comma."
     },
     {
         "id": 37,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Fill in the blank with the most appropriate word using context clues. The manager's ______ approach to problem-solving led to innovative solutions.",
+        "topic": "Grammar & Usage",
+        "text": "If the laser doppler vibrometer [37] capable of operating in Athens indefinitely, Samuel O'Connor could record longitudinal data continuously.\n\nWhich verb form correctly expresses this hypothetical condition?",
         "options": [
-            "conventional",
-            "rigid",
-            "creative",
-            "indifferent"
+            "were",
+            "was",
+            "is",
+            "will be"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"creative\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"were\". In contrary-to-fact conditional statements (subjunctive mood), 'were' is used regardless of the subject's number."
     },
     {
         "id": 38,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Fill in the blank with the most appropriate word using context clues. The ______ conditions of the desert require plants to conserve water efficiently.",
+        "topic": "Sentence Structure",
+        "text": "The Hellenic Acoustic Society not only documented novel properties of resonant amphitheater arches [38] expanded geophysical mapping across Athens.\n\nWhich phrase correctly completes the correlative pair?",
         "options": [
-            "temperate",
-            "arid",
-            "humid",
-            "lush"
+            "and also",
+            "but also",
+            "as well as",
+            "in addition to"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"arid\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"but also\". 'Not only' must be paired with 'but also' for grammatical parallelism."
     },
     {
         "id": 39,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Fill in the blank with the most appropriate word using context clues. The young prodigy's ______ talent amazed everyone at the competition.",
+        "topic": "Style & Tone",
+        "text": "A comprehensive geological survey of Athens was conducted by Samuel O'Connor and the Hellenic Acoustic Society.\n\nWhich revision converts the sentence into direct active voice?",
         "options": [
-            "mediocre",
-            "exceptional",
-            "average",
-            "poor"
+            "Conducted by Samuel O'Connor and the Hellenic Acoustic Society was a comprehensive geological survey of Athens.",
+            "A comprehensive survey of Athens had its conduction by Samuel O'Connor.",
+            "Samuel O'Connor and the Hellenic Acoustic Society conducted a comprehensive geological survey of Athens.",
+            "There was a comprehensive geological survey of Athens conducted by the team."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"exceptional\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"Samuel O'Connor and the Hellenic Acoustic Society conducted a comprehensive geological survey of Athens.\". Active voice places the actors first, improving clarity and grammatical vigor."
     },
     {
         "id": 40,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Fill in the blank with the most appropriate word using context clues. The detective's ______ instincts led him to the correct conclusion faster than his peers.",
+        "topic": "Transitions",
+        "text": "Samuel O'Connor mapped the outer perimeter of Athens. [40], the team deployed the laser doppler vibrometer into the central core.\n\nWhich transition best conveys sequential progression?",
         "options": [
-            "inaccurate",
-            "dull",
-            "keen",
-            "indifferent"
+            "Simultaneously",
+            "Previously",
+            "Nevertheless",
+            "Subsequently"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"keen\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Subsequently\". 'Subsequently' indicates that the central deployment occurred after the perimeter mapping was complete."
     },
     {
         "id": 41,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Choose the sentence that contains a subject-verb agreement error.",
+        "topic": "Rhetorical Skills",
+        "text": "Which choice provides the most relevant detail to support Samuel O'Connor's claim that resonant amphitheater arches represents an extreme biological habitat in Athens?",
         "options": [
-            "The list of items is on the table.",
-            "The group of students are excited about the trip.",
-            "Each of the books needs to be returned.",
-            "Neither the teachers nor the principal has arrived."
+            "Ambient temperatures at Athens reach critical extremes under pressures 150 times greater than baseline standard atmosphere.",
+            "The research vessel is equipped with comfortable crew cabins and a modern navigation deck.",
+            "Samuel O'Connor studied chemistry before specializing in acoustic engineering.",
+            "Many scientific expeditions are documented in popular non-fiction periodicals."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"The group of students are excited about the trip.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"The group of students are excited about the trip.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Ambient temperatures at Athens reach critical extremes under pressures 150 times greater than baseline standard atmosphere.\". Extreme physical measurements directly substantiate the claim of an extreme biological habitat."
     },
     {
         "id": 42,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Identify the sentence with the correct subject-verb agreement.",
+        "topic": "Wordiness & Redundancy",
+        "text": "In the event that the primary sensor on the laser doppler vibrometer fails in Athens, the emergency beacon will engage.\n\nWhich word is the most concise replacement for 'In the event that'?",
         "options": [
-            "The bouquet of roses smell wonderful.",
-            "Neither of the options are suitable.",
-            "Each of the players has a unique skill.",
-            "The data was inconclusive."
+            "In the circumstance where",
+            "If",
+            "Given the factual condition that",
+            "Under the contingency wherein"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Each of the players has a unique skill.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"Each of the players has a unique skill.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 1,
+        "explanation": "Correct Answer: \"If\". 'If' is the standard, concise equivalent of 'In the event that'."
     },
     {
         "id": 43,
         "section": "english",
         "topic": "Punctuation",
-        "text": "Choose the sentence that correctly matches the subject with the appropriate verb form.",
+        "text": "Samuel O'Connor announced to the Hellenic Acoustic Society [43] \"Our preliminary telemetry confirms a major breakthrough regarding resonant amphitheater arches.\"\n\nWhich choice correctly introduces the quotation?",
         "options": [
-            "The team of experts are ready to present their findings.",
-            "Either the manager or the employees has to attend the meeting.",
-            "Both the cats and the dog needs to be fed.",
-            "The number of participants were higher than expected."
+            "announced to the Hellenic Acoustic Society;",
+            "announced to the Hellenic Acoustic Society:",
+            "announced to the Hellenic Acoustic Society,",
+            "announced to the Hellenic Acoustic Society"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Either the manager or the employees has to attend the meeting.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"Either the manager or the employees has to attend the meeting.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 2,
+        "explanation": "Correct Answer: \"announced to the Hellenic Acoustic Society,\". A comma is conventionally used to introduce a direct quotation following a dialogue tag."
     },
     {
         "id": 44,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Choose the sentence with no subject-verb agreement error.",
+        "topic": "Grammar & Usage",
+        "text": "When the laser doppler vibrometer struck the basalt formation in Athens, it sustained minor surface abrasions.\n\nWhich revision eliminates the ambiguous pronoun 'it'?",
         "options": [
-            "Each of the laptops have a long battery life.",
-            "The data indicates a rising trend in sales.",
-            "Neither of the solutions are viable.",
-            "The fleet of ships were lost at sea."
+            "When it struck the basalt formation in Athens, the laser doppler vibrometer cracked.",
+            "Striking the basalt formation in Athens, it sustained abrasions.",
+            "The laser doppler vibrometer and basalt collided in Athens, and it was abraded.",
+            "When the laser doppler vibrometer struck the basalt formation in Athens, the instrument sustained minor surface abrasions."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"The data indicates a rising trend in sales.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"The data indicates a rising trend in sales.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 3,
+        "explanation": "Correct Answer: \"When the laser doppler vibrometer struck the basalt formation in Athens, the instrument sustained minor surface abrasions.\". Specifying 'the instrument' clarifies which object sustained the abrasions."
     },
     {
         "id": 45,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Select the sentence that correctly uses subject-verb agreement.",
+        "topic": "Sentence Structure",
+        "text": "The telemetry stream from Athens stopped abruptly the laser doppler vibrometer battery had completely discharged.\n\nWhich choice correctly repairs the run-on sentence?",
         "options": [
-            "The scissors is on the desk.",
-            "There is two apples on the table.",
-            "A number of students were absent today.",
-            "Neither of the choices was correct."
+            "The telemetry stream from Athens stopped abruptly because the laser doppler vibrometer battery had completely discharged.",
+            "The telemetry stream from Athens stopped abruptly, the battery had discharged.",
+            "Stopping abruptly, the telemetry stream from Athens the battery had discharged.",
+            "The telemetry stream from Athens stopped abruptly and so the battery had discharged."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"A number of students were absent today.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"A number of students were absent today.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The telemetry stream from Athens stopped abruptly because the laser doppler vibrometer battery had completely discharged.\". Using the subordinating conjunction 'because' establishes the causal relationship and eliminates the fused run-on."
     },
     {
         "id": 46,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Choose the sentence with the correct subject-verb agreement.",
+        "topic": "Style & Tone",
+        "text": "The data collected by Samuel O'Connor in Athens revealed an astonishing, mind-boggling increase in the concentration of resonant amphitheater arches.\n\nWhich replacement for the underlined phrase best maintains objective scientific neutrality?",
         "options": [
-            "The jury have reached a verdict.",
-            "He don’t like to go jogging.",
-            "Either the teachers or the principal is attending the meeting.",
-            "The group of friends are planning a trip together."
+            "an unbelievable and crazy",
+            "a statistically significant",
+            "a super massive",
+            "a shockingly wild"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Either the teachers or the principal is attending the meeting.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"Either the teachers or the principal is attending the meeting.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 1,
+        "explanation": "Correct Answer: \"a statistically significant\". 'A statistically significant' provides precise scientific description without sensationalist hyperbole."
     },
     {
         "id": 47,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Identify the sentence that contains no subject-verb agreement error.",
+        "topic": "Transitions",
+        "text": "Samuel O'Connor decided not to drill into the fragile geological crust in Athens. [47], the Hellenic Acoustic Society utilized non-invasive acoustic mapping from a safe distance.\n\nWhich transition best presents this alternative approach?",
         "options": [
-            "A series of unfortunate events were occurring.",
-            "Neither the manager nor the employees has the authority.",
-            "The number of cars on the road is increasing.",
-            "Each of the participants have received a gift."
+            "Furthermore",
+            "Consequently",
+            "Instead",
+            "Likewise"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"The number of cars on the road is increasing.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"The number of cars on the road is increasing.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "explanation": "Correct Answer: \"Instead\". 'Instead' correctly introduces the chosen alternative action following a rejected option."
     },
     {
         "id": 48,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Choose the sentence that is grammatically correct.",
+        "topic": "Rhetorical Skills",
+        "text": "The author wants to ensure smooth cohesion between a paragraph describing fieldwork in Athens and a paragraph detailing laboratory synthesis of resonant amphitheater arches. Which sentence best bridges this transition?",
         "options": [
-            "The bouquet of lilies are beautiful.",
-            "Neither the cats nor the dog were hungry.",
-            "Each of the books has a unique cover.",
-            "The team of analysts have finished their report."
+            "Laboratory experiments are often conducted in sterile cleanrooms.",
+            "Many scientific discoveries occur unexpectedly during routine maintenance.",
+            "Athens is known for its challenging regional climate.",
+            "Having gathered these pristine environmental samples in Athens, Samuel O'Connor returned to the laboratory to synthesize artificial analogues."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Each of the books has a unique cover.\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"Each of the books has a unique cover.\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Having gathered these pristine environmental samples in Athens, Samuel O'Connor returned to the laboratory to synthesize artificial analogues.\". This bridging sentence links the completion of fieldwork in Athens directly to the laboratory synthesis phase."
     },
     {
         "id": 49,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "The data presented in the report ___ concerning trends over the past year.",
+        "topic": "Wordiness & Redundancy",
+        "text": "Historical precedents from the past history of acoustic engineering guided Samuel O'Connor's safety protocols in Athens.\n\nWhich revision removes redundant wording?",
         "options": [
-            "are",
-            "is",
-            "were",
-            "have"
+            "Historical precedents in acoustic engineering guided Samuel O'Connor's safety protocols in Athens.",
+            "Past historical precedents from history guided protocols in Athens.",
+            "Precedents from past history guided protocols in Athens.",
+            "Historical precedents from earlier past history guided protocols in Athens."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"are\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"are\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "explanation": "Correct Answer: \"Historical precedents in acoustic engineering guided Samuel O'Connor's safety protocols in Athens.\". 'Historical precedents' already denotes the past; 'from the past history' is redundant."
     },
     {
         "id": 50,
         "section": "english",
-        "topic": "Transitions",
-        "text": "The deep-sea submersible was engineered to withstand immense hydrostatic pressure; as a result, the vessel completed over fifty dives without structural fatigue.\n\nWhich transition best connects the two clauses?",
+        "topic": "Punctuation",
+        "text": "Samuel O'Connor utilized a state [50] the art laser doppler vibrometer to analyze resonant amphitheater arches in Athens.\n\nWhich choice correctly punctuates the compound adjective before the noun?",
         "options": [
-            "as a result,",
-            "otherwise,",
-            "on the contrary,",
-            "nevertheless,"
+            "state of the art",
+            "state-of-the-art",
+            "state, of, the, art",
+            "state-of the art"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"as a result,\". The second clause is the direct cause-and-effect consequence of the first clause's engineering."
+        "answer": 1,
+        "explanation": "Correct Answer: \"state-of-the-art\". Compound adjectives appearing before a noun must be hyphenated ('state-of-the-art laser doppler vibrometer')."
     },
     {
         "id": 51,
         "section": "math",
         "topic": "Pre-Algebra",
-        "text": "A right triangular ramp has a base of 8 feet and a height of 15 feet. What is the length of the ramp?",
+        "text": "A science laboratory orders 56 precision micropipette tips priced at $7.65 per pack. If the supplier provides an educational discount of 18% on the entire order, what is the net total cost before tax?",
         "options": [
-            "15 feet",
-            "16 feet",
-            "17 feet",
-            "19 feet"
+            "$351.29",
+            "$428.40",
+            "$364.14",
+            "$471.24"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 17 feet. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 17 feet."
+        "answer": 0,
+        "explanation": "Total standard price = 56 × $7.65 = $428.40. Applying 18% discount: $428.40 × (1 &minus; 0.18) = $351.29."
     },
     {
         "id": 52,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Given the quadratic function <img alt=\"\" src=\"images/image_rsrc6U0.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, which of the following correctly identifies the vertex of the parabola?",
+        "topic": "Percentages",
+        "text": "A regional wildlife reserve recorded an initial population of 670 migratory cranes. In year one, the population expanded by 22%, and in year two, seasonal conditions caused an 19% reduction from the new total. What was the population at the end of year two (rounded to the nearest integer)?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6U1.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6U2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6U3.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6U4.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" id=\"page_156\" src=\"images/image_rsrc6U5.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "503",
+            "662",
+            "817",
+            "838"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 1,
+        "explanation": "Year 1 count: 670 × (1 + 0.22) = 817.4. Year 2 count: 817.4 × (1 &minus; 0.19) = 662."
     },
     {
         "id": 53,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "What is the product of <img alt=\"\" src=\"images/image_rsrc6US.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6UT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
+        "topic": "Elementary Algebra",
+        "text": "Determine the real value of <i>x</i> that satisfies the equation: 15(<i>x</i> &minus; 4) = 58.",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6UU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" id=\"page_158\" src=\"images/image_rsrc6UV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6UW.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6UX.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "3.60",
+            "-0.13",
+            "7.87",
+            "11.07"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 2,
+        "explanation": "Divide both sides by 15: <i>x</i> &minus; 4 = 58/15 &rArr; <i>x</i> = 3.87 + 4 = 7.87."
     },
     {
         "id": 54,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "For which integer <img alt=\"\" src=\"images/image_rsrc6M6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> does the expression <img alt=\"\" src=\"images/image_rsrc6M7.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> result in an even integer?",
+        "topic": "Exponents & Radicals",
+        "text": "What is the simplified numerical value of (144)<sup>3/2</sup>?",
         "options": [
-            "All integers <img alt=\"\" src=\"images/image_rsrc6M6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
-            "Only even integers <img alt=\"\" src=\"images/image_rsrc6M6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
-            "Only odd integers <img alt=\"\" src=\"images/image_rsrc6M6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
-            "All integers <img alt=\"\" src=\"images/image_rsrc6M6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> except <img alt=\"\" src=\"images/image_rsrc6M8.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
-            "Cannot be determined."
+            "20736",
+            "36",
+            "144",
+            "1728"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: All integers .. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of All integers .."
+        "answer": 3,
+        "explanation": "(144)<sup>3/2</sup> = (&radic;144)<sup>3</sup> = (12)<sup>3</sup> = 1728."
     },
     {
         "id": 55,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "What is the least common multiple (LCM) of 15 and 20?",
+        "topic": "Coordinate Geometry",
+        "text": "Which equation represents the line in the standard coordinate plane that passes through (10, 25) and runs parallel to <i>y</i> = 13<i>x</i> &minus; 15?",
         "options": [
-            "30",
-            "45",
-            "60",
-            "90"
+            "<i>y</i> = 13<i>x</i> &minus; 105",
+            "<i>y</i> = &minus;13<i>x</i> &minus; 105",
+            "<i>y</i> = 13<i>x</i> + 35",
+            "<i>y</i> = (1/13)<i>x</i> + 15"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 60. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 60."
+        "answer": 0,
+        "explanation": "Parallel lines have identical slope <i>m</i> = 13. Using point-slope: <i>y</i> &minus; 25 = 13(<i>x</i> &minus; 10) &rArr; <i>y</i> = 13<i>x</i> &minus; 105."
     },
     {
         "id": 56,
         "section": "math",
         "topic": "Plane Geometry",
-        "text": "Calculate the area of a regular hexagon with a side length of 6 inches.",
+        "text": "In a plane geometric construction, ray <i>PT</i> intersects line <i>RS</i> at point <i>P</i>. If &ang;<i>RPT</i> measures 81&deg;, what is the exact measure of adjacent angle &ang;<i>TPS</i>?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6Y1.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> square inches",
-            "<img alt=\"\" src=\"images/image_rsrc6Y2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> square inches",
-            "<img alt=\"\" src=\"images/image_rsrc6Y3.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> square inches",
-            "<img alt=\"\" src=\"images/image_rsrc6Y4.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> square inches"
+            "81&deg;",
+            "99&deg;",
+            "96&deg;",
+            "79&deg;"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer:  square inches. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields  square inches."
+        "answer": 1,
+        "explanation": "Adjacent angles forming a linear pair sum to 180&deg;. &ang;<i>TPS</i> = 180&deg; &minus; 81&deg; = 99&deg;."
     },
     {
         "id": 57,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "What is the value of the algebraic expression 3<i>x</i>² − 5<i>x</i> + 2 when <i>x</i> = −2?",
+        "topic": "Intermediate Algebra",
+        "text": "Find the unique solution pair (<i>x</i>, <i>y</i>) that satisfies the system:\n\n<i>x</i> + <i>y</i> = 18\n2<i>x</i> &minus; <i>y</i> = 24",
         "options": [
-            "12",
-            "20",
-            "24",
-            "28"
+            "<i>x</i> = 16, <i>y</i> = 3",
+            "<i>x</i> = 9, <i>y</i> = 12",
+            "<i>x</i> = 14, <i>y</i> = 4",
+            "<i>x</i> = &minus;14, <i>y</i> = 4"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: 24. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 24 satisfies all conditions of the problem."
+        "explanation": "Adding equations: 3<i>x</i> = 42 &rArr; <i>x</i> = 14. Then <i>y</i> = 18 &minus; 14 = 4."
     },
     {
         "id": 58,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6ME.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Trigonometry",
+        "text": "In right triangle &Delta;<i>PQR</i> with &ang;<i>Q</i> = 90&deg;, side <i>PQ</i> has length 27 and hypotenuse <i>PR</i> has length 55. What is the exact value of cos(&ang;<i>P</i>)?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6MF.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6MG.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6MH.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6MJ.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "55/27",
+            "&radic;(2296)/55",
+            "1",
+            "27/55"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: . Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of ."
+        "answer": 3,
+        "explanation": "cos(&ang;<i>P</i>) = Adjacent / Hypotenuse = <i>PQ</i> / <i>PR</i> = 27/55."
     },
     {
         "id": 59,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6SK.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Statistics & Probability",
+        "text": "What is the median value of the sorted numerical collection: { 88, 92, 97, 104, 113, 126, 139 }?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6SM.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6SN.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6SP.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6SR.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "104",
+            "92",
+            "126",
+            "139"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "For an ordered dataset of 7 elements, the median is the 4th element: 104."
     },
     {
         "id": 60,
         "section": "math",
-        "topic": "Plane Geometry",
-        "text": "In right triangle ABC, angle C is the right angle. If the lengths of sides AC and BC are 5 units and 12 units respectively, what is the length of the hypotenuse AB?",
+        "topic": "Ratios & Proportions",
+        "text": "A metallurgical alloy requires copper and zinc in a mass ratio of 13:24. If a foundry batch contains 546 kg of copper, how many kilograms of zinc must be blended?",
         "options": [
-            "10 units",
-            "13 units",
-            "15 units",
-            "17 units"
+            "1022 kg",
+            "1008 kg",
+            "997 kg",
+            "571 kg"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: 13 units. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 13 units."
+        "explanation": "Ratio: 13/24 = 546/<i>z</i> &rArr; <i>z</i> = (24 × 546) / 13 = 1008 kg."
     },
     {
         "id": 61,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6PA.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Pre-Algebra",
+        "text": "Find the greatest common factor (GCF) of 764 and 1146.",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6PB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6PC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6PD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6PE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "382",
+            "191",
+            "764",
+            "2292"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "explanation": "GCF(764, 1146) = 191 × GCF(4, 6) = 191 × 2 = 382."
     },
     {
         "id": 62,
         "section": "math",
-        "topic": "Plane Geometry",
-        "text": "Which of the following linear equations is parallel to <img alt=\"\" src=\"images/image_rsrc6S4.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
+        "topic": "Elementary Algebra",
+        "text": "Solve for <i>x</i> in the equation: 4<i>x</i> &minus; 192 = 3<i>x</i> + 294.",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6S5.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6S6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6S7.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6S8.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "102",
+            "486",
+            "384",
+            "492"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: . Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields ."
+        "explanation": "4<i>x</i> &minus; 3<i>x</i> = 294 + 192 &rArr; <i>x</i> = 486."
     },
     {
         "id": 63,
         "section": "math",
-        "topic": "Trigonometry",
-        "text": "What is the sine of <img alt=\"\" src=\"images/image_rsrc6Z2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> based on the unit circle?",
+        "topic": "Plane Geometry",
+        "text": "A rectangular courtyard has length 203 meters and width 301 meters. What is its total perimeter?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6Z3.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" id=\"page_173\" src=\"images/image_rsrc6Z4.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6Z5.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6Z6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "61103 m",
+            "504 m",
+            "1008 m",
+            "1020 m"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: . Step-by-step solution: Use fundamental trigonometric definitions (sin = opp/hyp, cos = adj/hyp, tan = opp/adj) or trigonometric identities to simplify the expression, arriving at ."
+        "explanation": "Perimeter = 2(Length + Width) = 2(203 + 301) = 1008 m."
     },
     {
         "id": 64,
         "section": "math",
-        "topic": "Plane Geometry",
-        "text": "In the figure below, lines <img alt=\"\" src=\"images/image_rsrc6XS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6H2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> are parallel, and line <img alt=\"\" src=\"images/image_rsrc6XT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> is a transversal intersecting them. If angle <img alt=\"\" src=\"images/image_rsrc6XU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> measures <img alt=\"\" src=\"images/image_rsrc6XD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, what is the measure of angle <img alt=\"\" src=\"images/image_rsrc6XV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>? [Insert Diagram Here: Two parallel lines <img alt=\"\" src=\"images/image_rsrc6XS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6H2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> are cut by a transversal <img alt=\"\" src=\"images/image_rsrc6XT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>. Angle <img alt=\"\" src=\"images/image_rsrc6XU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> is formed at the intersection of <img alt=\"\" src=\"images/image_rsrc6XT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6XS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and measures <img alt=\"\" src=\"images/image_rsrc6XD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>. Angle <img alt=\"\" src=\"images/image_rsrc6XV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> is formed at the intersection of <img alt=\"\" src=\"images/image_rsrc6XT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6H2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.]",
+        "topic": "Exponents & Radicals",
+        "text": "Simplify the algebraic expression: (<i>y</i><sup>12</sup>)<sup>13</sup> &middot; <i>y</i><sup>4</sup>.",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6XD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6XG.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6XW.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6XX.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "<i>y</i><sup>163</sup>",
+            "<i>y</i><sup>158</sup>",
+            "<i>y</i><sup>320</sup>",
+            "<i>y</i><sup>160</sup>"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: . Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields ."
+        "answer": 3,
+        "explanation": "(<i>y</i><sup>12</sup>)<sup>13</sup> = <i>y</i><sup>156</sup>. Multiplying by <i>y</i><sup>4</sup> gives <i>y</i><sup>160</sup>."
     },
     {
         "id": 65,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6WK.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Trigonometry",
+        "text": "In right triangle &Delta;<i>ABC</i>, acute angle &theta; has tan(&theta;) = 11/14. What is cot(&theta;)?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6WM.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6WN.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6WP.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6WR.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6WS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "14/11",
+            "11/14",
+            "1",
+            "&minus;14/11"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "explanation": "cot(&theta;) = 1 / tan(&theta;) = 14/11."
     },
     {
         "id": 66,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6V6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Coordinate Geometry",
+        "text": "Determine the midpoint of the line segment joining (196, 302) and (204, 314).",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6V7.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6V8.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6V9.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6VA.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6VB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "(204, 314)",
+            "(200, 308)",
+            "(198, 305)",
+            "(202, 310)"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 1,
+        "explanation": "Midpoint = ((196 + 204)/2, (302 + 314)/2) = (200, 308)."
     },
     {
         "id": 67,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "If 4 pounds of apples cost $12.80 and 7 pounds of apples cost $22.40, what is the unit rate in dollars per pound?",
+        "topic": "Intermediate Algebra",
+        "text": "If quadratic function <i>h</i>(<i>x</i>) = 3<i>x</i><sup>2</sup> &minus; 197, evaluate <i>h</i>(4).",
         "options": [
-            "$2.80 per pound",
-            "$3.00 per pound",
-            "$3.20 per pound",
-            "$3.50 per pound"
+            "245",
+            "-173",
+            "-149",
+            "-138"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: $3.20 per pound. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of $3.20 per pound."
+        "explanation": "<i>h</i>(4) = 3(4)<sup>2</sup> &minus; 197 = 3(16) &minus; 197 = 48 &minus; 197 = -149."
     },
     {
         "id": 68,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6TG.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Statistics & Probability",
+        "text": "A lottery drum contains numbered tokens from 1 through 218. If a single token is selected at random, what is the probability that it is divisible by 5?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6TH.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6TJ.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6TK.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6TM.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6MU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> of the above"
+            "46/218",
+            "1/218",
+            "42/218",
+            "43/218"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 3,
+        "explanation": "There are 43 multiples of 5 within 1 to 218. Probability = 43/218."
     },
     {
         "id": 69,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "What is the greatest common factor (GCF) of 72 and 108?",
+        "topic": "Percentages",
+        "text": "A laboratory apparatus originally priced at $3980 is discounted by 15%. What is the discounted price?",
         "options": [
-            "18",
-            "24",
-            "36",
-            "72"
+            "$3383.00",
+            "$3582.00",
+            "$2587.00",
+            "$3980.00"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 36. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 36."
+        "answer": 0,
+        "explanation": "Discounted price = $3980 × (1 &minus; 0.15) = $3383.00."
     },
     {
         "id": 70,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Solve for <i>x</i>: 5(<i>x</i> − 3) = 2<i>x</i> + 6",
+        "topic": "Plane Geometry",
+        "text": "What is the area of a right triangle with base 400 mm and perpendicular height 620 mm?",
         "options": [
-            "5",
-            "6",
-            "7",
-            "8"
+            "248000 mm<sup>2</sup>",
+            "124000 mm<sup>2</sup>",
+            "62000 mm<sup>2</sup>",
+            "4080 mm<sup>2</sup>"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 7. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 7 satisfies all conditions of the problem."
+        "answer": 1,
+        "explanation": "Area = (1/2) × base × height = (1/2) × 400 × 620 = 124000 mm<sup>2</sup>."
     },
     {
         "id": 71,
         "section": "math",
-        "topic": "Coordinate Geometry",
-        "text": "If the point <img alt=\"\" src=\"images/image_rsrc712.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> is dilated by a scale factor of 2 about the origin and then reflected over the y-axis, what are the coordinates of the image?",
+        "topic": "Intermediate Algebra",
+        "text": "Solve the absolute value equation: |3<i>x</i> &minus; 603| = 936.",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc713.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc714.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc715.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc716.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "<i>x</i> = 513",
+            "<i>x</i> = -111",
+            "<i>x</i> = 513 or <i>x</i> = -111",
+            "<i>x</i> = &minus;513 or <i>x</i> = &minus;-111"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: . Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields ."
+        "answer": 2,
+        "explanation": "3<i>x</i> &minus; 603 = 936 &rArr; <i>x</i> = 513; 3<i>x</i> &minus; 603 = &minus;936 &rArr; <i>x</i> = -111."
     },
     {
         "id": 72,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Solve for <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> in the equation <img alt=\"\" src=\"images/image_rsrc6MR.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Coordinate Geometry",
+        "text": "A circle in the standard coordinate plane has equation (<i>x</i> + 202)<sup>2</sup> + (<i>y</i> &minus; 314)<sup>2</sup> = 164836. What is its radius?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6JD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6JC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6MS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6MT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6MU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> of the above"
+            "164836 units",
+            "205 units",
+            "321 units",
+            "406 units"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: . Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of ."
+        "answer": 3,
+        "explanation": "In (<i>x</i> &minus; <i>h</i>)<sup>2</sup> + (<i>y</i> &minus; <i>k</i>)<sup>2</sup> = <i>r</i><sup>2</sup>, the radius <i>r</i> = &radic;(164836) = 406 units."
     },
     {
         "id": 73,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Solve the polynomial equation <img alt=\"\" src=\"images/image_rsrc6WW.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>. What is the value of <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
+        "topic": "Trigonometry",
+        "text": "Convert the angle 3045&deg; into radian measure.",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6JW.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6HD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6HE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6WX.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6WY.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "203&pi;/12",
+            "203&pi;/14",
+            "12&pi;/204",
+            "(3045/360)&pi;"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "Radians = (Degrees × &pi;) / 180 = (3045&pi;) / 180 = 203&pi;/12."
     },
     {
         "id": 74,
         "section": "math",
-        "topic": "Plane Geometry",
-        "text": "Which of the following pairs of triangles are congruent by the Side-Angle-Side (SAS) criterion?",
+        "topic": "Pre-Algebra",
+        "text": "An arithmetic sequence has initial term <i>a</i><sub>1</sub> = 204 and common difference <i>d</i> = 13. What is the 10th term, <i>a</i><sub>10</sub>?",
         "options": [
-            "Triangle <img alt=\"\" src=\"images/image_rsrc6X9.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> with sides <img alt=\"\" src=\"images/image_rsrc6ZT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, <img alt=\"\" src=\"images/image_rsrc6ZU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, and angle <img alt=\"\" src=\"images/image_rsrc6ZV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>; Triangle <img alt=\"\" src=\"images/image_rsrc6ZW.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> with sides <img alt=\"\" src=\"images/image_rsrc6ZX.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, <img alt=\"\" src=\"images/image_rsrc6ZY.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, and angle <img alt=\"\" src=\"images/image_rsrc6ZZ.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
-            "Triangle <img alt=\"\" src=\"images/image_rsrc700.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> with sides <img alt=\"\" src=\"images/image_rsrc701.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, <img alt=\"\" src=\"images/image_rsrc702.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, and angle <img alt=\"\" src=\"images/image_rsrc703.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>; Triangle <img alt=\"\" src=\"images/image_rsrc704.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> with sides <img alt=\"\" src=\"images/image_rsrc705.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, <img alt=\"\" src=\"images/image_rsrc706.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, and angle <img alt=\"\" src=\"images/image_rsrc707.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
-            "Triangle <img alt=\"\" src=\"images/image_rsrc708.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> with sides <img alt=\"\" src=\"images/image_rsrc709.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, <img alt=\"\" src=\"images/image_rsrc70A.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, and angle <img alt=\"\" src=\"images/image_rsrc70B.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>; Triangle <img alt=\"\" src=\"images/image_rsrc70C.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> with sides <img alt=\"\" src=\"images/image_rsrc70D.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, <img alt=\"\" src=\"images/image_rsrc70E.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, and angle <img alt=\"\" src=\"images/image_rsrc70F.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
-            "Triangle <img alt=\"\" src=\"images/image_rsrc70G.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> with sides <img alt=\"\" src=\"images/image_rsrc70H.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, <img alt=\"\" src=\"images/image_rsrc70J.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, and angle <img alt=\"\" src=\"images/image_rsrc70K.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>; Triangle <img alt=\"\" src=\"images/image_rsrc70M.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> with sides <img alt=\"\" src=\"images/image_rsrc70N.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, <img alt=\"\" src=\"images/image_rsrc70P.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, and angle <img alt=\"\" src=\"images/image_rsrc70R.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>."
+            "313",
+            "321",
+            "333",
+            "399"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: Triangle  with sides , , and angle ; Triangle  with sides , , and angle .. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields Triangle  with sides , , and angle ; Triangle  with sides , , and angle .."
+        "answer": 1,
+        "explanation": "<i>a</i><sub>10</sub> = <i>a</i><sub>1</sub> + (10 &minus; 1)<i>d</i> = 204 + 9(13) = 321."
     },
     {
         "id": 75,
         "section": "math",
-        "topic": "Trigonometry",
-        "text": "In right triangle ABC, angle B is the right angle. If side AB = 4 units and side BC = 3 units, what is the value of sin(A)?",
+        "topic": "Elementary Algebra",
+        "text": "Factor the quadratic binomial completely: <i>x</i><sup>2</sup> &minus; 44100.",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6GN.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6YN.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6YP.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6YR.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "(<i>x</i> &minus; 210)<sup>2</sup>",
+            "(<i>x</i> + 210)<sup>2</sup>",
+            "(<i>x</i> &minus; 210)(<i>x</i> + 210)",
+            "(<i>x</i> &minus; 420)(<i>x</i> + 2)"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: . Step-by-step solution: Use fundamental trigonometric definitions (sin = opp/hyp, cos = adj/hyp, tan = opp/adj) or trigonometric identities to simplify the expression, arriving at ."
+        "answer": 2,
+        "explanation": "Difference of squares: <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup> = (<i>a</i> &minus; <i>b</i>)(<i>a</i> + <i>b</i>)."
     },
     {
         "id": 76,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Factor the polynomial <img alt=\"\" src=\"images/image_rsrc6PH.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Statistics & Probability",
+        "text": "From a cohort of 22 researchers, how many distinct 2-person subcommittees can be formed?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6SX.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6PM.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6SY.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6SZ.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "462",
+            "44",
+            "241",
+            "231"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 3,
+        "explanation": "<i>C</i>(22, 2) = (22 × 21) / 2 = 231."
     },
     {
         "id": 77,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "If the greatest common factor (GCF) of two numbers is 6 and their least common multiple (LCM) is 90, what is the product of the two numbers?",
+        "topic": "Intermediate Algebra",
+        "text": "Simplify the complex number product: (12 + 2<i>i</i>)(3 &minus; <i>i</i>), where <i>i</i><sup>2</sup> = &minus;1.",
         "options": [
-            "15",
-            "96",
-            "360",
-            "540"
+            "38 &minus; 6<i>i</i>",
+            "38 &minus; -1<i>i</i>",
+            "44 + <i>i</i>",
+            "36 &minus; 4<i>i</i>"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 540. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 540."
+        "answer": 0,
+        "explanation": "(12 + 2<i>i</i>)(3 &minus; <i>i</i>) = 36 &minus; 12<i>i</i> + 6<i>i</i> &minus; 2<i>i</i><sup>2</sup> = 38 + -6<i>i</i>."
     },
     {
         "id": 78,
         "section": "math",
         "topic": "Plane Geometry",
-        "text": "In circle <img alt=\"\" src=\"images/image_rsrc6XC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, two chords <img alt=\"\" src=\"images/image_rsrc6Y9.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6YA.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> intersect at point <img alt=\"\" src=\"images/image_rsrc6YB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> inside the circle. If <img alt=\"\" src=\"images/image_rsrc6YC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> units, <img alt=\"\" src=\"images/image_rsrc6YD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> units, and <img alt=\"\" src=\"images/image_rsrc6YE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> units, what is the length of <img alt=\"\" src=\"images/image_rsrc6YF.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
+        "text": "A solid geometric cone has a circular base radius of 13 cm and a height of 16 cm. What is its volume?",
         "options": [
-            "1 unit",
-            "2 units",
-            "3 units",
-            "4 units"
+            "2253.3&pi; cm<sup>3</sup>",
+            "901.3&pi; cm<sup>3</sup>",
+            "450.6&pi; cm<sup>3</sup>",
+            "416&pi; cm<sup>3</sup>"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 4 units. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 4 units."
+        "answer": 1,
+        "explanation": "Volume = (1/3)&pi;<i>r</i><sup>2</sup><i>h</i> = (1/3)&pi;(13)<sup>2</sup>(16) = 901.3&pi; cm<sup>3</sup>."
     },
     {
         "id": 79,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Which of the following is the vertex of the parabola represented by the equation <img alt=\"\" src=\"images/image_rsrc6UB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
+        "topic": "Ratios & Proportions",
+        "text": "If variable <i>u</i> is inversely proportional to <i>v</i>, and <i>u</i> = 418 when <i>v</i> = 3, what is <i>u</i> when <i>v</i> = 6?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6UC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6UD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" id=\"page_157\" src=\"images/image_rsrc6UE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6UF.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6UG.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "627",
+            "105",
+            "209",
+            "1045"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 2,
+        "explanation": "Inverse variation: <i>u</i> &middot; <i>v</i> = <i>k</i> &rArr; <i>k</i> = 418 × 3 = 1254. When <i>v</i> = 6, <i>u</i> = 1254 / 6 = 209."
     },
     {
         "id": 80,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Solve the system of equations: What is the value of <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
+        "topic": "Coordinate Geometry",
+        "text": "What is the <i>x</i>-intercept of the linear equation 5<i>x</i> &minus; 2<i>y</i> = 2100?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6HD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6HE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6P2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6GG.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6PU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "(0, 420)",
+            "(840, 0)",
+            "(&minus;420, 0)",
+            "(420, 0)"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 3,
+        "explanation": "Set <i>y</i> = 0 &rArr; 5<i>x</i> = 2100 &rArr; <i>x</i> = 420. Intercept is (420, 0)."
     },
     {
         "id": 81,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "A store is offering a 15% discount on all items. If the original price of a jacket is $120, what is the sale price?",
+        "topic": "Exponents & Radicals",
+        "text": "Simplify the radical product: &radic;(633) &middot; &radic;(2532).",
         "options": [
-            "$96",
-            "$100",
-            "$102",
-            "$108"
+            "1266",
+            "2532",
+            "844",
+            "1281"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: $102. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of $102."
+        "answer": 0,
+        "explanation": "&radic;(633 × 2532) = &radic;(1602756) = 211 × 6 = 1266."
     },
     {
         "id": 82,
         "section": "math",
         "topic": "Intermediate Algebra",
-        "text": "Solve for <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> in the equation <img alt=\"\" src=\"images/image_rsrc6HB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "text": "Evaluate the logarithmic expression: log<sub>15</sub>(3375).",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6HD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6HE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6TU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6PV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6JW.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6PU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6TV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6PU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6HD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6PV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "2",
+            "3",
+            "15",
+            "4"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer:  and . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  and  satisfies all conditions of the problem."
+        "answer": 1,
+        "explanation": "log<sub>15</sub>(15<sup>3</sup>) = 3."
     },
     {
         "id": 83,
         "section": "math",
-        "topic": "Coordinate Geometry",
-        "text": "What is the midpoint of the segment connecting (−2, 5) and (4, −1) on a standard coordinate plane?",
+        "topic": "Plane Geometry",
+        "text": "In a circle with radius 217 cm, calculate the area of a sector with a central angle of 60&deg;.",
         "options": [
-            "(1, 2)",
-            "(2, 2)",
-            "(1, 3)",
-            "(2, 3)"
+            "19620.42&pi; cm<sup>2</sup>",
+            "3924.09&pi; cm<sup>2</sup>",
+            "7848.17&pi; cm<sup>2</sup>",
+            "651&pi; cm<sup>2</sup>"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: (1, 2). Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields (1, 2)."
+        "answer": 2,
+        "explanation": "Sector Area = &pi;<i>r</i><sup>2</sup>(&theta;/360&deg;) = &pi;(217)<sup>2</sup>(60&deg;/360&deg;) = 7848.17&pi; cm<sup>2</sup>."
     },
     {
         "id": 84,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "What is the value of <img alt=\"\" src=\"images/image_rsrc6N8.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
+        "topic": "Elementary Algebra",
+        "text": "Solve for <i>w</i> in the rational equation: <i>w</i>/5 + <i>w</i>/2 = 1498.",
         "options": [
-            "1.50",
-            "1.25",
-            "0.15",
-            "1.00"
+            "1498",
+            "1070",
+            "2996",
+            "2140"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: 1.50. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 1.50."
+        "answer": 3,
+        "explanation": "Common denominator: (2<i>w</i> + 5<i>w</i>)/10 = 7<i>w</i>/10 = 1498 &rArr; <i>w</i> = 10 × 214 = 2140."
     },
     {
         "id": 85,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Solve for <i>x</i> in the equation 3(<i>x</i> + 3) − 2<i>x</i> = 3<i>x</i> + 1.",
+        "topic": "Trigonometry",
+        "text": "If &theta; is an acute angle in test 10 with sin(&theta;) = 1/2, what is the value of cos(&theta;)?",
         "options": [
-            "<i>x</i> = 2",
-            "<i>x</i> = 4",
-            "<i>x</i> = 6",
-            "<i>x</i> = 8"
+            "&radic;3/2",
+            "1/2",
+            "&radic;2/2",
+            "1"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: x = 4. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x = 4 satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "In a 30&deg;-60&deg;-90&deg; special triangle where sin(30&deg;) = 1/2, cos(30&deg;) = &radic;3/2."
     },
     {
         "id": 86,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Which of the following is the completely factored form of the expression $2x^2 + 7x - 15$?",
+        "topic": "Statistics & Probability",
+        "text": "A sample container has 13 red beads, 14 blue beads, and 15 green beads. What is the probability of drawing a red bead?",
         "options": [
-            "(2x - 3)(x + 5)",
-            "(2x + 3)(x - 5)",
-            "(2x + 5)(x - 3)",
-            "(2x - 5)(x + 3)"
+            "14/42",
+            "13/42",
+            "15/42",
+            "1/42"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"(2x - 3)(x + 5)\". Factoring by grouping: factors of $2 \\times (-15) = -30$ that sum to $+7$ are $+10$ and $-3$. So $2x^2 + 10x - 3x - 15 = 2x(x + 5) - 3(x + 5) = (2x - 3)(x + 5)$."
+        "answer": 1,
+        "explanation": "Probability = (Red beads) / (Total beads) = 13 / (13 + 14 + 15) = 13/42."
     },
     {
         "id": 87,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Solve the inequality <img alt=\"\" src=\"images/image_rsrc6RR.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>. What is the range of possible values for <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
+        "topic": "Intermediate Algebra",
+        "text": "Determine the discriminant &Delta; for the quadratic equation 2<i>x</i><sup>2</sup> + 8<i>x</i> + 14 = 0.",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6RS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" id=\"page_147\" src=\"images/image_rsrc6RT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6RU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6RV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "-32",
+            "176",
+            "-48",
+            "-62"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "explanation": "Discriminant &Delta; = <i>b</i><sup>2</sup> &minus; 4<i>ac</i> = 8<sup>2</sup> &minus; 4(2)(14) = 64 &minus; 112 = -48."
     },
     {
         "id": 88,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6N2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Coordinate Geometry",
+        "text": "Calculate the slope of the line passing through coordinates (4, 218) and (7, 233).",
         "options": [
-            "<img alt=\"\" id=\"page_135\" src=\"images/image_rsrc6N3.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6N4.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6N5.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6N6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "1/5",
+            "15",
+            "3/7",
+            "5"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: . Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of ."
+        "answer": 3,
+        "explanation": "Slope <i>m</i> = (233 &minus; 218) / (7 &minus; 4) = 15/3 = 5."
     },
     {
         "id": 89,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Solve for <img alt=\"\" src=\"images/image_rsrc6GS.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> in the equation <img alt=\"\" src=\"images/image_rsrc6VU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Percentages",
+        "text": "What is 20% of 6960?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6HD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6HE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6VV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6VW.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" id=\"page_161\" src=\"images/image_rsrc6TV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "1392.0",
+            "1404.0",
+            "1384.0",
+            "3132.0"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "(20/100) × 6960 = 1392.0."
     },
     {
         "id": 90,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6T8.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Plane Geometry",
+        "text": "The hypotenuse of an isosceles right triangle is 880&radic;2 cm. What is the length of each leg?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6T9.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6TA.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6TB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6TC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "440 cm",
+            "880 cm",
+            "1760 cm",
+            "886 cm"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 1,
+        "explanation": "In a 45&deg;-45&deg;-90&deg; right triangle, Hypotenuse = Leg &middot; &radic;2 &rArr; Leg = 880 cm."
     },
     {
         "id": 91,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Solve the quadratic equation <img alt=\"\" src=\"images/image_rsrc6PT.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Pre-Algebra",
+        "text": "Evaluate the arithmetic expression: |&minus;884| &minus; |704| + |&minus;6|.",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6HE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6P2.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6HD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6PU.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6PV.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6P4.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6JW.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" src=\"images/image_rsrc6MZ.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6GG.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and <img alt=\"\" id=\"page_143\" src=\"images/image_rsrc6HD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "200",
+            "176",
+            "186",
+            "1594"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer:  and . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  and  satisfies all conditions of the problem."
+        "answer": 2,
+        "explanation": "884 &minus; 704 + 6 = 186."
     },
     {
         "id": 92,
         "section": "math",
-        "topic": "Plane Geometry",
-        "text": "In triangle <img alt=\"\" src=\"images/image_rsrc6X9.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, angle <img alt=\"\" src=\"images/image_rsrc6XA.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> measures <img alt=\"\" src=\"images/image_rsrc6JH.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> and angle <img alt=\"\" src=\"images/image_rsrc6XB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/> measures <img alt=\"\" src=\"images/image_rsrc6HX.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>. What is the measure of angle <img alt=\"\" src=\"images/image_rsrc6XC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
+        "topic": "Intermediate Algebra",
+        "text": "Given <i>f</i>(<i>x</i>) = 2<i>x</i> + 5 and <i>g</i>(<i>x</i>) = 3<i>x</i>, evaluate the composite function <i>f</i>(<i>g</i>(12)).",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6XD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6XE.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6XF.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6XG.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6XH.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "84",
+            "34",
+            "87",
+            "77"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: . Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields ."
+        "answer": 3,
+        "explanation": "<i>g</i>(12) = 3(12) = 36. Then <i>f</i>(36) = 2(36) + 5 = 77."
     },
     {
         "id": 93,
         "section": "math",
-        "topic": "Coordinate Geometry",
-        "text": "What is the slope and y-intercept of the line represented by the equation <img alt=\"\" src=\"images/image_rsrc6SD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>?",
+        "topic": "Elementary Algebra",
+        "text": "Solve for <i>z</i> in the linear relation: 6<i>z</i> &minus; 1338 = 0.",
         "options": [
-            "Slope: 0.5, y-intercept: -2",
-            "Slope: -0.5, y-intercept: 2",
-            "Slope: 2, y-intercept: -0.5",
-            "Slope: -2, y-intercept: 0.5"
+            "223",
+            "227",
+            "&minus;223",
+            "0"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: Slope: 0.5, y-intercept: -2. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields Slope: 0.5, y-intercept: -2."
+        "explanation": "6<i>z</i> = 1338 &rArr; <i>z</i> = 223."
     },
     {
         "id": 94,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Simplify the expression <img alt=\"\" src=\"images/image_rsrc6R3.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>.",
+        "topic": "Statistics & Probability",
+        "text": "The arithmetic mean of four laboratory measurements is 274. If three of the values are 269, 279, and 272, what is the fourth value?",
         "options": [
-            "<img alt=\"\" src=\"images/image_rsrc6R4.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" id=\"page_144\" src=\"images/image_rsrc6R5.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6R6.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>",
-            "<img alt=\"\" src=\"images/image_rsrc6R7.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>"
+            "282",
+            "276",
+            "268",
+            "274"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 1,
+        "explanation": "Total sum required = 4 × (274) = 1096. Fourth value = 1096 &minus; 820 = 276."
     },
     {
         "id": 95,
         "section": "math",
-        "topic": "Trigonometry",
-        "text": "Given the function <img alt=\"\" src=\"images/image_rsrc6ZA.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, determine its amplitude, period, and vertical shift.",
+        "topic": "Coordinate Geometry",
+        "text": "Which coordinate point lies on the line given by 3<i>x</i> + 2<i>y</i> = 689?",
         "options": [
-            "Amplitude: 3, Period: 6, Vertical Shift: -2",
-            "Amplitude: 3, Period: <img alt=\"\" src=\"images/image_rsrc6ZB.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, Vertical Shift: -2",
-            "Amplitude: <img alt=\"\" src=\"images/image_rsrc6ZC.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, Period: 6, Vertical Shift: -2",
-            "Amplitude: 3, Period: <img alt=\"\" src=\"images/image_rsrc6ZD.jpg\" style=\"vertical-align: middle; max-height: 22px;\"/>, Vertical Shift: -2"
+            "(227, 7)",
+            "(225, 11)",
+            "(225, 7)",
+            "(&minus;225, 7)"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: Amplitude: 3, Period: 6, Vertical Shift: -2. Step-by-step solution: Use fundamental trigonometric definitions (sin = opp/hyp, cos = adj/hyp, tan = opp/adj) or trigonometric identities to simplify the expression, arriving at Amplitude: 3, Period: 6, Vertical Shift: -2."
+        "answer": 2,
+        "explanation": "3(225) + 2(7) = 675 + 14. The point (225, 7) satisfies the equation."
     },
     {
         "id": 96,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "What is the main idea of the following passage? *Passage:* *Photosynthesis is a fundamental biological process through which green plants, algae, and certain bacteria convert light energy into chemical energy. This process not only fuels the growth and maintenance of the organisms themselves but also produces oxygen, which is essential for the respiration of most living creatures on Earth.*",
+        "topic": "Main Idea",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Botanist's Journal\"\n\nDr. Evelyn Vance recorded her botanical observations in leather-bound notebooks beneath the humid canopy of the Monteverde cloud forest. Epiphytic orchids clung to moss-draped branches, creating aerial gardens that hosted endemic amphibians. Her meticulous watercolor sketches captured fleeting morphological details before specimens succumbed to tropical humidity.",
+        "text": "Based on Passage I (\"The Botanist's Journal\"), the primary purpose of the text is to:",
         "options": [
-            "Photosynthesis solely benefits green plants by providing them with energy.",
-            "Photosynthesis is a complex process that requires multiple stages and enzymes.",
-            "Photosynthesis is vital for both the growth of organisms and the production of oxygen necessary for life.",
-            "Photosynthesis occurs only in green plants and algae under specific conditions."
+            "criticize traditional approaches while advocating for immediate reform.",
+            "examine the intricate relationship between the botanist's journal and its broader significance.",
+            "provide a purely statistical timeline of historical events.",
+            "argue that modern technological advancements have rendered past practices obsolete."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Photosynthesis is vital for both the growth of organisms and the production of oxygen necessary for life.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
+        "answer": 1,
+        "explanation": "Correct Answer: \"examine the intricate relationship between the botanist's journal and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"The Botanist's Journal\"."
     },
     {
         "id": 97,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "Based on the passage below, what is the primary focus of the study mentioned? *Passage:* *Recent research has focused on the impact of microplastics on marine ecosystems. Scientists have discovered that these tiny plastic particles are ingested by a wide range of marine life, from plankton to large fish, leading to physical and chemical stress on these organisms. The study aims to understand the long-term effects of microplastic accumulation in the food chain.*",
+        "topic": "Inference",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Botanist's Journal\"\n\nDr. Evelyn Vance recorded her botanical observations in leather-bound notebooks beneath the humid canopy of the Monteverde cloud forest. Epiphytic orchids clung to moss-draped branches, creating aerial gardens that hosted endemic amphibians. Her meticulous watercolor sketches captured fleeting morphological details before specimens succumbed to tropical humidity.",
+        "text": "According to the discussion in Passage I (\"The Botanist's Journal\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "The causes of plastic pollution in the oceans.",
-            "The impact of microplastics on various marine species and the food chain.",
-            "Methods to reduce the production of microplastics.",
-            "The economic effects of microplastic pollution on fishing industries."
+            "It was achieved without significant labor or long-term dedication.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
+            "It relies exclusively on automated machinery rather than human expertise."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"The impact of microplastics on various marine species and the food chain.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
+        "answer": 2,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 98,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "What is the central theme of the following excerpt? *Passage:* *Climate change has led to significant alterations in global weather patterns, resulting in more frequent and severe storms. These extreme weather events not only cause immediate damage to infrastructure but also have long-term economic and social repercussions for affected communities.*",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Botanist's Journal\"\n\nDr. Evelyn Vance recorded her botanical observations in leather-bound notebooks beneath the humid canopy of the Monteverde cloud forest. Epiphytic orchids clung to moss-draped branches, creating aerial gardens that hosted endemic amphibians. Her meticulous watercolor sketches captured fleeting morphological details before specimens succumbed to tropical humidity.",
+        "text": "In the context of Passage I (\"The Botanist's Journal\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "The inevitability of extreme weather due to climate change.",
-            "The economic benefits of rebuilding after storms.",
-            "The immediate and long-term impacts of extreme weather events caused by climate change.",
-            "The technological advancements in predicting storms."
+            "dismissive and cynical.",
+            "detached and uninterested.",
+            "confrontational and hostile.",
+            "reverent and analytical."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"The immediate and long-term impacts of extreme weather events caused by climate change.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "answer": 3,
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 99,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "In the passage below, what is the primary conclusion drawn by the researchers? *Passage:* *Through a series of controlled experiments, researchers have found that increasing the concentration of carbon dioxide in terrestrial ecosystems significantly enhances plant growth. However, this boost in growth is accompanied by a decrease in plant nutrient content, which may have implications for herbivores and the broader food web.*",
+        "topic": "Inference",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Botanist's Journal\"\n\nDr. Evelyn Vance recorded her botanical observations in leather-bound notebooks beneath the humid canopy of the Monteverde cloud forest. Epiphytic orchids clung to moss-draped branches, creating aerial gardens that hosted endemic amphibians. Her meticulous watercolor sketches captured fleeting morphological details before specimens succumbed to tropical humidity.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage I (\"The Botanist's Journal\") that:",
         "options": [
-            "Higher carbon dioxide levels always benefit plant health.",
-            "Increased carbon dioxide solely leads to negative outcomes in ecosystems.",
-            "Elevated carbon dioxide enhances plant growth but may reduce nutritional quality, affecting the food web.",
-            "Terrestrial ecosystems are not affected by changes in carbon dioxide levels."
+            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "external economic conditions had no impact on the development of the field.",
+            "the subject will likely lose relevance within the coming decade."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Elevated carbon dioxide enhances plant growth but may reduce nutritional quality, affecting the food web.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
+        "answer": 0,
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 100,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "What is the main focus of the following passage? *Passage:* *Renewable energy sources, such as solar and wind power, have become increasingly cost-effective and efficient. Advances in technology have led to greater energy output and reduced reliance on fossil fuels, contributing to a decrease in greenhouse gas emissions and promoting environmental sustainability.*",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Botanist's Journal\"\n\nDr. Evelyn Vance recorded her botanical observations in leather-bound notebooks beneath the humid canopy of the Monteverde cloud forest. Epiphytic orchids clung to moss-draped branches, creating aerial gardens that hosted endemic amphibians. Her meticulous watercolor sketches captured fleeting morphological details before specimens succumbed to tropical humidity.",
+        "text": "The structural development of Passage I (\"The Botanist's Journal\") serves primarily to:",
         "options": [
-            "The history of renewable energy development.",
-            "The declining efficiency of renewable energy sources.",
-            "The technological advancements that have made renewable energy more effective and environmentally friendly.",
-            "The economic challenges of transitioning to renewable energy."
+            "open with a refutation of an established scientific consensus.",
+            "establish context before exploring specific examples and deeper philosophical implications.",
+            "present a chronological series of unrelated anecdotes.",
+            "compare two equally viable opposing hypotheses."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"The technological advancements that have made renewable energy more effective and environmentally friendly.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
+        "answer": 1,
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 101,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "Based on the passage below, what can be inferred about the relationship between deforestation and biodiversity? *Passage:* *Deforestation, the large-scale removal of forest cover, has been linked to a significant loss in biodiversity. As trees are cut down, habitats for countless species are destroyed, leading to a decline in wildlife populations and the extinction of vulnerable species.*",
+        "topic": "Inference",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Botanist's Journal\"\n\nDr. Evelyn Vance recorded her botanical observations in leather-bound notebooks beneath the humid canopy of the Monteverde cloud forest. Epiphytic orchids clung to moss-draped branches, creating aerial gardens that hosted endemic amphibians. Her meticulous watercolor sketches captured fleeting morphological details before specimens succumbed to tropical humidity.",
+        "text": "In Passage I (\"The Botanist's Journal\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "Deforestation has no effect on biodiversity.",
-            "Deforestation increases biodiversity by creating new habitats.",
-            "Deforestation decreases biodiversity by destroying habitats and causing species extinction.",
-            "Biodiversity drives deforestation in certain regions."
+            "favorable political mandates enacted by municipal authorities.",
+            "sheer chance and fortuitous external interventions.",
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "hasty improvisation under urgent time constraints."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"Deforestation decreases biodiversity by destroying habitats and causing species extinction.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 102,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "What is the primary objective of the study mentioned in the following passage? *Passage:* *The study examines the effects of urbanization on local bird populations. By comparing bird diversity and abundance in urban parks with those in nearby natural reserves, researchers aim to determine how city expansion influences avian species richness and ecosystem health.*",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Botanist's Journal\"\n\nDr. Evelyn Vance recorded her botanical observations in leather-bound notebooks beneath the humid canopy of the Monteverde cloud forest. Epiphytic orchids clung to moss-draped branches, creating aerial gardens that hosted endemic amphibians. Her meticulous watercolor sketches captured fleeting morphological details before specimens succumbed to tropical humidity.",
+        "text": "The author's perspective toward the evolution of Passage I (\"The Botanist's Journal\") is best described as:",
         "options": [
-            "To promote the construction of more urban parks.",
-            "To understand how urbanization affects bird diversity and ecosystem health.",
-            "To catalog all bird species in the region.",
-            "To compare migratory patterns of birds in different habitats."
+            "skeptical of its claimed achievements.",
+            "strictly neutral and reporting raw data.",
+            "nostalgic yet dismissive of modern adaptations.",
+            "deeply respectful of its heritage and nuanced complexities."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"To understand how urbanization affects bird diversity and ecosystem health.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "answer": 3,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 103,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "Based on the passage below, what can be inferred about the role of wetlands in maintaining ecological balance? *Passage:* *Wetlands act as natural water filters, removing pollutants and excess nutrients from water before it enters larger bodies of water. They also provide critical habitats for a variety of species, support flood control by absorbing excess rainfall, and contribute to carbon sequestration, helping mitigate climate change.*",
+        "topic": "Inference",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Botanist's Journal\"\n\nDr. Evelyn Vance recorded her botanical observations in leather-bound notebooks beneath the humid canopy of the Monteverde cloud forest. Epiphytic orchids clung to moss-draped branches, creating aerial gardens that hosted endemic amphibians. Her meticulous watercolor sketches captured fleeting morphological details before specimens succumbed to tropical humidity.",
+        "text": "The author of Passage I (\"The Botanist's Journal\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "Wetlands have minimal impact on ecological balance.",
-            "Wetlands primarily serve recreational purposes for humans.",
-            "Wetlands play a multifaceted role in water purification, habitat provision, flood control, and carbon sequestration.",
-            "Wetlands only provide habitats for aquatic species."
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "be the most accurate way to quantify its economic value.",
+            "align perfectly with the original creator's stated philosophy."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Wetlands play a multifaceted role in water purification, habitat provision, flood control, and carbon sequestration.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
+        "answer": 0,
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 104,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "What is the main argument presented in the following passage? *Passage:* *The integration of artificial intelligence (AI) in healthcare systems has the potential to revolutionize patient care. AI can assist in diagnosing diseases more accurately, personalizing treatment plans, and managing patient data efficiently. However, ethical considerations regarding data privacy and the potential for job displacement among healthcare professionals must be addressed to ensure responsible implementation.*",
+        "topic": "Main Idea",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Botanist's Journal\"\n\nDr. Evelyn Vance recorded her botanical observations in leather-bound notebooks beneath the humid canopy of the Monteverde cloud forest. Epiphytic orchids clung to moss-draped branches, creating aerial gardens that hosted endemic amphibians. Her meticulous watercolor sketches captured fleeting morphological details before specimens succumbed to tropical humidity.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"The Botanist's Journal\")?",
         "options": [
-            "AI will replace healthcare professionals entirely.",
-            "AI has the potential to significantly improve healthcare, but ethical issues must be managed.",
-            "The use of AI in healthcare is detrimental and should be avoided.",
-            "Data privacy is the only concern with implementing AI in healthcare."
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"AI has the potential to significantly improve healthcare, but ethical issues must be managed.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     },
     {
         "id": 105,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "What is the primary theme conveyed in a story where the protagonist overcomes numerous obstacles to achieve personal growth and self-discovery?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Psychology of Collective Memory\"\n\nCollective memory represents the shared pool of knowledge and information in the memories of two or more members of a social group. Cultural institutions, historical commemorations, and public monuments play a crucial role in constructing national identities and transmitting historical narratives across generations.",
+        "text": "Based on Passage II (\"Psychology of Collective Memory\"), the primary purpose of the text is to:",
         "options": [
-            "The importance of friendship.",
-            "The journey towards self-improvement.",
-            "The impact of technology on society.",
-            "The dangers of unchecked ambition."
+            "criticize traditional approaches while advocating for immediate reform.",
+            "provide a purely statistical timeline of historical events.",
+            "examine the intricate relationship between psychology of collective memory and its broader significance.",
+            "argue that modern technological advancements have rendered past practices obsolete."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"The journey towards self-improvement.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "answer": 2,
+        "explanation": "Correct Answer: \"examine the intricate relationship between psychology of collective memory and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Psychology of Collective Memory\"."
     },
     {
         "id": 106,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "In a narrative where a character learns to forgive others despite past grievances, what is the main idea of the story?",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Psychology of Collective Memory\"\n\nCollective memory represents the shared pool of knowledge and information in the memories of two or more members of a social group. Cultural institutions, historical commemorations, and public monuments play a crucial role in constructing national identities and transmitting historical narratives across generations.",
+        "text": "According to the discussion in Passage II (\"Psychology of Collective Memory\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "Forgiveness leads to personal peace.",
-            "Betrayal can never be overcome.",
-            "Holding onto anger strengthens relationships.",
-            "Revenge is a satisfying response."
+            "It was achieved without significant labor or long-term dedication.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It relies exclusively on automated machinery rather than human expertise.",
+            "It requires meticulous attention to detail and a deep understanding of foundational principles."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"Forgiveness leads to personal peace.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "answer": 3,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 107,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "A story depicts a city's residents uniting to save a local park from development. What is the central message of this tale?",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Psychology of Collective Memory\"\n\nCollective memory represents the shared pool of knowledge and information in the memories of two or more members of a social group. Cultural institutions, historical commemorations, and public monuments play a crucial role in constructing national identities and transmitting historical narratives across generations.",
+        "text": "In the context of Passage II (\"Psychology of Collective Memory\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "The inevitability of urban expansion.",
-            "Community effort can protect common resources.",
-            "Parks are a waste of urban space.",
-            "Individual action has no impact on larger issues."
+            "reverent and analytical.",
+            "dismissive and cynical.",
+            "detached and uninterested.",
+            "confrontational and hostile."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Community effort can protect common resources.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "answer": 0,
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 108,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "In a novel, the protagonist struggles with identity while navigating cultural expectations. What is the primary concept explored in this story?",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Psychology of Collective Memory\"\n\nCollective memory represents the shared pool of knowledge and information in the memories of two or more members of a social group. Cultural institutions, historical commemorations, and public monuments play a crucial role in constructing national identities and transmitting historical narratives across generations.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage II (\"Psychology of Collective Memory\") that:",
         "options": [
-            "The conflict between personal desires and societal norms.",
-            "The benefits of strict adherence to tradition.",
-            "The simplicity of self-identity.",
-            "The irrelevance of culture in personal development."
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "external economic conditions had no impact on the development of the field.",
+            "the subject will likely lose relevance within the coming decade."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"The conflict between personal desires and societal norms.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "answer": 1,
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 109,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "A story revolves around a scientist who sacrifices personal relationships for career success. What is the key idea presented in this narrative?",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Psychology of Collective Memory\"\n\nCollective memory represents the shared pool of knowledge and information in the memories of two or more members of a social group. Cultural institutions, historical commemorations, and public monuments play a crucial role in constructing national identities and transmitting historical narratives across generations.",
+        "text": "The structural development of Passage II (\"Psychology of Collective Memory\") serves primarily to:",
         "options": [
-            "Scientific advancement is the most important pursuit.",
-            "Personal sacrifices can lead to professional achievements.",
-            "Relationships are overrated in the pursuit of goals.",
-            "Career success always harms personal life."
+            "open with a refutation of an established scientific consensus.",
+            "present a chronological series of unrelated anecdotes.",
+            "establish context before exploring specific examples and deeper philosophical implications.",
+            "compare two equally viable opposing hypotheses."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Personal sacrifices can lead to professional achievements.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "answer": 2,
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 110,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "In a story where an immigrant family maintains their traditions while integrating into a new society, what is the central idea?",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Psychology of Collective Memory\"\n\nCollective memory represents the shared pool of knowledge and information in the memories of two or more members of a social group. Cultural institutions, historical commemorations, and public monuments play a crucial role in constructing national identities and transmitting historical narratives across generations.",
+        "text": "In Passage II (\"Psychology of Collective Memory\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "Assimilation requires abandoning one's heritage.",
-            "Cultural preservation and integration can coexist.",
-            "Traditional practices hinder societal acceptance.",
-            "Immigrants should fully adopt the new culture."
+            "favorable political mandates enacted by municipal authorities.",
+            "sheer chance and fortuitous external interventions.",
+            "hasty improvisation under urgent time constraints.",
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Cultural preservation and integration can coexist.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "answer": 3,
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 111,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "A narrative follows a young artist who learns to express emotions through their work after experiencing loss. What is the main idea?",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Psychology of Collective Memory\"\n\nCollective memory represents the shared pool of knowledge and information in the memories of two or more members of a social group. Cultural institutions, historical commemorations, and public monuments play a crucial role in constructing national identities and transmitting historical narratives across generations.",
+        "text": "The author's perspective toward the evolution of Passage II (\"Psychology of Collective Memory\") is best described as:",
         "options": [
-            "Art annihilates emotional expression.",
-            "Emotional loss leads to creative stagnation.",
-            "Artistic expression can aid in emotional healing.",
-            "Only sorrowful experiences foster creativity."
+            "deeply respectful of its heritage and nuanced complexities.",
+            "skeptical of its claimed achievements.",
+            "strictly neutral and reporting raw data.",
+            "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Artistic expression can aid in emotional healing.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "answer": 0,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 112,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "In a narrative where technology threatens traditional lifestyles, the characters must find a balance between progress and heritage. What is the central message?",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Psychology of Collective Memory\"\n\nCollective memory represents the shared pool of knowledge and information in the memories of two or more members of a social group. Cultural institutions, historical commemorations, and public monuments play a crucial role in constructing national identities and transmitting historical narratives across generations.",
+        "text": "The author of Passage II (\"Psychology of Collective Memory\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "Technology destroys all traditional values.",
-            "Progress and heritage can coexist with mindful integration.",
-            "Embracing technology requires abandoning the past.",
-            "Traditional lifestyles are obsolete in the modern world."
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "be the most accurate way to quantify its economic value.",
+            "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Progress and heritage can coexist with mindful integration.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 113,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "A story details the protagonist's journey through self-doubt to confidence by overcoming numerous challenges. What is the main theme?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Psychology of Collective Memory\"\n\nCollective memory represents the shared pool of knowledge and information in the memories of two or more members of a social group. Cultural institutions, historical commemorations, and public monuments play a crucial role in constructing national identities and transmitting historical narratives across generations.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"Psychology of Collective Memory\")?",
         "options": [
-            "Self-doubt is insurmountable.",
-            "Confidence naturally arises without effort.",
-            "Overcoming challenges leads to self-confidence.",
-            "Challenges only lead to more self-doubt."
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"Overcoming challenges leads to self-confidence.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     },
     {
         "id": 114,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "*\"As the storm clouds gathered on the horizon, Maya stood at the window, watching the lightning illuminate the darkened streets. She thought about the journey she had taken to reach this point, realizing that every challenge had taught her resilience and inner strength.\"* What literary theme is most evident in this passage?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"The Cultural Semiotics of Theater\"\n\nClassical dramatic performance functioned as a communal ritual of moral and political interrogation. Through tragic catharsis, audiences confronted fundamental dilemmas regarding divine justice, civic duty, and the limits of individual agency.",
+        "text": "Based on Passage III (\"The Cultural Semiotics of Theater\"), the primary purpose of the text is to:",
         "options": [
-            "The inevitability of fate.",
-            "The triumph of good over evil.",
-            "Personal growth through adversity.",
-            "The decline of urban life."
+            "criticize traditional approaches while advocating for immediate reform.",
+            "provide a purely statistical timeline of historical events.",
+            "argue that modern technological advancements have rendered past practices obsolete.",
+            "examine the intricate relationship between the cultural semiotics of theater and its broader significance."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Personal growth through adversity.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "answer": 3,
+        "explanation": "Correct Answer: \"examine the intricate relationship between the cultural semiotics of theater and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"The Cultural Semiotics of Theater\"."
     },
     {
         "id": 115,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "A passage discusses the implementation of the New Deal policies during the Great Depression, highlighting government intervention in various industries to stimulate economic recovery. What historical context does this detail primarily illustrate?",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"The Cultural Semiotics of Theater\"\n\nClassical dramatic performance functioned as a communal ritual of moral and political interrogation. Through tragic catharsis, audiences confronted fundamental dilemmas regarding divine justice, civic duty, and the limits of individual agency.",
+        "text": "According to the discussion in Passage III (\"The Cultural Semiotics of Theater\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "The shift from agrarian to industrial societies",
-            "The role of government in economic stabilization during crises",
-            "The rise of laissez-faire capitalism",
-            "The impact of World War II on the U.S. economy"
+            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
+            "It was achieved without significant labor or long-term dedication.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It relies exclusively on automated machinery rather than human expertise."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"The role of government in economic stabilization during crises\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "answer": 0,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 116,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "Read the following excerpt: *\"Organic farming is the only legitimate way to cultivate crops, as conventional farming methods are harmful to both the environment and human health. Anyone who supports the use of pesticides and genetically modified organisms is oblivious to the true costs of their actions.\"* What type of bias is most evident in the passage above?",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"The Cultural Semiotics of Theater\"\n\nClassical dramatic performance functioned as a communal ritual of moral and political interrogation. Through tragic catharsis, audiences confronted fundamental dilemmas regarding divine justice, civic duty, and the limits of individual agency.",
+        "text": "In the context of Passage III (\"The Cultural Semiotics of Theater\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "Confirmation Bias",
-            "Slant Bias",
-            "Omission Bias",
-            "Selection Bias"
+            "dismissive and cynical.",
+            "reverent and analytical.",
+            "detached and uninterested.",
+            "confrontational and hostile."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Slant Bias\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 117,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "In an essay analyzing a novel, the author asserts that the protagonist's actions are solely driven by ambition. However, the essay only references scenes where the protagonist pursues personal gain and overlooks instances where the protagonist makes sacrifices for others. What is the primary flaw in the author's argument?",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"The Cultural Semiotics of Theater\"\n\nClassical dramatic performance functioned as a communal ritual of moral and political interrogation. Through tragic catharsis, audiences confronted fundamental dilemmas regarding divine justice, civic duty, and the limits of individual agency.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage III (\"The Cultural Semiotics of Theater\") that:",
         "options": [
-            "The argument is thoroughly supported with diverse examples.",
-            "The author provides a balanced view by considering multiple motivations.",
-            "The essay demonstrates confirmation bias by selectively citing evidence that supports the thesis while ignoring contradictory examples.",
-            "The argument is enhanced by including the protagonist's sacrifices to others."
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "external economic conditions had no impact on the development of the field.",
+            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"The essay demonstrates confirmation bias by selectively citing evidence that supports the thesis while ignoring contradictory examples.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 118,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "In the short story, the persistent storm serves as a symbol for:",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"The Cultural Semiotics of Theater\"\n\nClassical dramatic performance functioned as a communal ritual of moral and political interrogation. Through tragic catharsis, audiences confronted fundamental dilemmas regarding divine justice, civic duty, and the limits of individual agency.",
+        "text": "The structural development of Passage III (\"The Cultural Semiotics of Theater\") serves primarily to:",
         "options": [
-            "The characters' internal conflicts and unresolved emotions.",
-            "The natural cycles of life and renewal.",
-            "The community's economic struggles during the period.",
-            "The inevitable change and progress in society."
+            "open with a refutation of an established scientific consensus.",
+            "present a chronological series of unrelated anecdotes.",
+            "compare two equally viable opposing hypotheses.",
+            "establish context before exploring specific examples and deeper philosophical implications."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"The characters' internal conflicts and unresolved emotions.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: Memory and Kitchen Traditions.\n\nPriya had always felt most at home in her grandmother's kitchen, where the scent of cardamom, crushed cloves, and simmered ginger hung in the air like old memories. As she stirred the simmering chai on the heavy brass stove, she thought about how much had changed since she left her hometown. The city had made her efficient, ambitious, and somehow smaller, hemmed in by calendar alerts and concrete towers.\n\nHere, time moved according to different metrics. Her grandmother did not use measuring spoons or timers; every pinch of turmeric was gauged by the palm of her hand, and the boiling milk was watched with patient, undivided attention.\n\n\"You rush everything, Priya,\" her grandmother remarked gently, wiping flour from the marble countertop. \"Food cooked with impatience nourishes the body, but it does nothing for the spirit.\"\n\nPriya paused, watching the swirling tea leaves settle. In her office three hundred miles away, speed was prized above all else; here, the deliberate repetition of ancient rituals offered a refuge from the frantic pace of modern life. She realized that what she sought was not merely a break from her routine, but a reconnection to the roots she had left behind."
+        "answer": 3,
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 119,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "After reading the short passage below, what is the author's primary intent? *\"The autumn leaves, with their rich hues of red and gold, paint a breathtaking portrait of the changing seasons. As they gently fall to the ground, they remind us of the beauty inherent in transformation and the inevitable passage of time.\"*",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"The Cultural Semiotics of Theater\"\n\nClassical dramatic performance functioned as a communal ritual of moral and political interrogation. Through tragic catharsis, audiences confronted fundamental dilemmas regarding divine justice, civic duty, and the limits of individual agency.",
+        "text": "In Passage III (\"The Cultural Semiotics of Theater\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "To describe the physical appearance of autumn leaves.",
-            "To argue against the effects of climate change.",
-            "To explore the symbolic meaning of seasonal changes.",
-            "To inform readers about different types of trees."
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "favorable political mandates enacted by municipal authorities.",
+            "sheer chance and fortuitous external interventions.",
+            "hasty improvisation under urgent time constraints."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"To explore the symbolic meaning of seasonal changes.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
+        "answer": 0,
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 120,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "In the following sentence, what does the word \"ambivalent\" most nearly mean? \"Maria felt ambivalent about moving to the bustling city; she was excited for new opportunities but saddened by leaving her close-knit community.\"",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"The Cultural Semiotics of Theater\"\n\nClassical dramatic performance functioned as a communal ritual of moral and political interrogation. Through tragic catharsis, audiences confronted fundamental dilemmas regarding divine justice, civic duty, and the limits of individual agency.",
+        "text": "The author's perspective toward the evolution of Passage III (\"The Cultural Semiotics of Theater\") is best described as:",
         "options": [
-            "Absolutely negative",
-            "Mixed or contradictory feelings",
-            "Completely indifferent",
-            "Highly enthusiastic"
+            "skeptical of its claimed achievements.",
+            "deeply respectful of its heritage and nuanced complexities.",
+            "strictly neutral and reporting raw data.",
+            "nostalgic yet dismissive of modern adaptations."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Mixed or contradictory feelings\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 121,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "\"At the beginning of the novel, Alex is portrayed as timid and hesitant, often avoiding conflicts and choosing the safe route in life. However, after a series of challenging events, including the loss of a close friend and facing a critical decision that could affect his community, Alex transforms into a confident and assertive leader. His newfound courage not only helps him overcome personal fears but also inspires those around him to take action.\" How does Alex's character develop throughout the novel?",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"The Cultural Semiotics of Theater\"\n\nClassical dramatic performance functioned as a communal ritual of moral and political interrogation. Through tragic catharsis, audiences confronted fundamental dilemmas regarding divine justice, civic duty, and the limits of individual agency.",
+        "text": "The author of Passage III (\"The Cultural Semiotics of Theater\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "He becomes more reserved and cautious in his decisions.",
-            "He remains timid and avoids taking any leadership roles.",
-            "He transforms into a confident leader who inspires others.",
-            "He becomes indifferent to the challenges facing his community."
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "be the most accurate way to quantify its economic value.",
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"He transforms into a confident leader who inspires others.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 122,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "\"In her essay, the author explores the significance of cultural heritage in shaping personal identity. She argues that traditions and ancestral stories play a crucial role in understanding oneself and maintaining a sense of continuity across generations.\" What is the main idea of this passage?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"The Cultural Semiotics of Theater\"\n\nClassical dramatic performance functioned as a communal ritual of moral and political interrogation. Through tragic catharsis, audiences confronted fundamental dilemmas regarding divine justice, civic duty, and the limits of individual agency.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage III (\"The Cultural Semiotics of Theater\")?",
         "options": [
-            "The decline of cultural traditions in modern society.",
-            "The role of cultural heritage in personal identity.",
-            "The impact of globalization on cultural diversity.",
-            "The importance of historical education in schools."
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "Theoretical models are vastly superior to empirical practice in every domain.",
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"The role of cultural heritage in personal identity.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — HUMANITIES: The Creative Alchemy of Musical Improvisation and Cultural Dialogue.\n\nThe emergence of modern American music, particularly jazz, represents one of the most significant cultural dialogues of the twentieth century. At its core, jazz revolutionized musical performance by elevating improvisation from an ornamental embellishment to the primary vehicle of artistic expression.\n\nIn classical European traditions, the composer's written score was treated as an immutable blueprint, with performers striving for fidelity to the original text. Jazz inverted this dynamic. While musicians shared common harmonic frameworks and standard song structures, the ultimate measure of mastery was the soloist's capacity for spontaneous reinvention. Through call-and-response phrasing, rhythmic syncopation, and altered scale degrees, musicians engaged in an unscripted, real-time conversation with their ensemble peers.\n\nThis improvisational freedom challenged conventional boundaries between composer and performer. It demonstrated that art could be dynamic, ephemeral, and deeply communal—a living dialogue reflecting the tensions, resilience, and creative innovation of the modern urban experience."
+        "answer": 3,
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     },
     {
         "id": 123,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "In a passage describing the industrial revolution, the author mentions \"factories belching smoke into the once clear skies.\" What does this detail primarily illustrate about the historical context?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Plate Tectonics & Mantle Plumes\"\n\nGeological mantle plumes originate near the core-mantle boundary, ascending as buoyant thermal diapirs through the Earth's mantle. As plumes decompress beneath oceanic crust, they generate persistent volcanic hotspot chains like the Hawaiian-Emperor seamount system.",
+        "text": "Based on Passage IV (\"Plate Tectonics & Mantle Plumes\"), the primary purpose of the text is to:",
         "options": [
-            "The technological advancements of the era.",
-            "The environmental impact of industrialization.",
-            "The economic growth during the period.",
-            "The migration of people to urban areas."
+            "examine the intricate relationship between plate tectonics & mantle plumes and its broader significance.",
+            "criticize traditional approaches while advocating for immediate reform.",
+            "provide a purely statistical timeline of historical events.",
+            "argue that modern technological advancements have rendered past practices obsolete."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"The environmental impact of industrialization.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "answer": 0,
+        "explanation": "Correct Answer: \"examine the intricate relationship between plate tectonics & mantle plumes and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Plate Tectonics & Mantle Plumes\"."
     },
     {
         "id": 124,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "A historical text refers to the \"tight-knit communities in rural villages\" during the 19th century. What aspect of that time period is the author emphasizing?",
+        "topic": "Inference",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Plate Tectonics & Mantle Plumes\"\n\nGeological mantle plumes originate near the core-mantle boundary, ascending as buoyant thermal diapirs through the Earth's mantle. As plumes decompress beneath oceanic crust, they generate persistent volcanic hotspot chains like the Hawaiian-Emperor seamount system.",
+        "text": "According to the discussion in Passage IV (\"Plate Tectonics & Mantle Plumes\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "The technological innovations in agriculture.",
-            "The social structure and community bonds.",
-            "The political alliances between villages.",
-            "The economic challenges faced by farmers."
+            "It was achieved without significant labor or long-term dedication.",
+            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It relies exclusively on automated machinery rather than human expertise."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"The social structure and community bonds.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 125,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "In discussing the causes of World War I, an author notes the \"complex web of alliances.\" What is the historical significance of this detail?",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Plate Tectonics & Mantle Plumes\"\n\nGeological mantle plumes originate near the core-mantle boundary, ascending as buoyant thermal diapirs through the Earth's mantle. As plumes decompress beneath oceanic crust, they generate persistent volcanic hotspot chains like the Hawaiian-Emperor seamount system.",
+        "text": "In the context of Passage IV (\"Plate Tectonics & Mantle Plumes\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "It shows the rise of nationalism.",
-            "It explains the economic motivations behind the war.",
-            "It highlights how interconnections between nations contributed to the conflict.",
-            "It describes the technological advancements used in the war."
+            "dismissive and cynical.",
+            "detached and uninterested.",
+            "reverent and analytical.",
+            "confrontational and hostile."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"It highlights how interconnections between nations contributed to the conflict.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 126,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "A passage about the Great Depression mentions \"bank closures and mass unemployment.\" What does this detail convey about the period?",
+        "topic": "Inference",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Plate Tectonics & Mantle Plumes\"\n\nGeological mantle plumes originate near the core-mantle boundary, ascending as buoyant thermal diapirs through the Earth's mantle. As plumes decompress beneath oceanic crust, they generate persistent volcanic hotspot chains like the Hawaiian-Emperor seamount system.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage IV (\"Plate Tectonics & Mantle Plumes\") that:",
         "options": [
-            "The technological advancements during the era.",
-            "The economic hardships and financial instability.",
-            "The political reforms implemented.",
-            "The cultural changes in society."
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "external economic conditions had no impact on the development of the field.",
+            "the subject will likely lose relevance within the coming decade.",
+            "the underlying principles discussed have enduring value that transcends simple utility."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"The economic hardships and financial instability.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "answer": 3,
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 127,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "An author describing the Cold War states, \"The world stood divided by an invisible line of ideology.\" What does this metaphor primarily represent?",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Plate Tectonics & Mantle Plumes\"\n\nGeological mantle plumes originate near the core-mantle boundary, ascending as buoyant thermal diapirs through the Earth's mantle. As plumes decompress beneath oceanic crust, they generate persistent volcanic hotspot chains like the Hawaiian-Emperor seamount system.",
+        "text": "The structural development of Passage IV (\"Plate Tectonics & Mantle Plumes\") serves primarily to:",
         "options": [
-            "The physical barriers erected between nations.",
-            "The technological competition between superpowers.",
-            "The ideological and political conflict between the USA and USSR.",
-            "The economic disparities worldwide."
+            "establish context before exploring specific examples and deeper philosophical implications.",
+            "open with a refutation of an established scientific consensus.",
+            "present a chronological series of unrelated anecdotes.",
+            "compare two equally viable opposing hypotheses."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"The ideological and political conflict between the USA and USSR.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "answer": 0,
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 128,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "In a discussion about the Suffragette movement, the author highlights \"marches and public demonstrations.\" What does this emphasize about the movement's strategies?",
+        "topic": "Inference",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Plate Tectonics & Mantle Plumes\"\n\nGeological mantle plumes originate near the core-mantle boundary, ascending as buoyant thermal diapirs through the Earth's mantle. As plumes decompress beneath oceanic crust, they generate persistent volcanic hotspot chains like the Hawaiian-Emperor seamount system.",
+        "text": "In Passage IV (\"Plate Tectonics & Mantle Plumes\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "Their reliance on violent protests.",
-            "Their focus on quiet advocacy and lobbying.",
-            "Their use of public, non-violent activism to gain attention and support.",
-            "Their collaboration with government officials."
+            "favorable political mandates enacted by municipal authorities.",
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "sheer chance and fortuitous external interventions.",
+            "hasty improvisation under urgent time constraints."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Their use of public, non-violent activism to gain attention and support.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "answer": 1,
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 129,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "A text about the Renaissance period mentions \"revival of classical philosophy and arts.\" What is the significance of this detail in understanding the historical context?",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Plate Tectonics & Mantle Plumes\"\n\nGeological mantle plumes originate near the core-mantle boundary, ascending as buoyant thermal diapirs through the Earth's mantle. As plumes decompress beneath oceanic crust, they generate persistent volcanic hotspot chains like the Hawaiian-Emperor seamount system.",
+        "text": "The author's perspective toward the evolution of Passage IV (\"Plate Tectonics & Mantle Plumes\") is best described as:",
         "options": [
-            "It shows the decline of religious influence.",
-            "It indicates a renewed interest in ancient Greek and Roman culture, influencing art and thought.",
-            "It highlights the beginning of the industrial age.",
-            "It explains the political changes in Europe."
+            "skeptical of its claimed achievements.",
+            "strictly neutral and reporting raw data.",
+            "deeply respectful of its heritage and nuanced complexities.",
+            "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"It indicates a renewed interest in ancient Greek and Roman culture, influencing art and thought.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "answer": 2,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 130,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "In describing the Transatlantic Slave Trade, an author notes \"the forced migration of millions of Africans to the Americas.\" What aspect of the historical context is being highlighted?",
+        "topic": "Inference",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Plate Tectonics & Mantle Plumes\"\n\nGeological mantle plumes originate near the core-mantle boundary, ascending as buoyant thermal diapirs through the Earth's mantle. As plumes decompress beneath oceanic crust, they generate persistent volcanic hotspot chains like the Hawaiian-Emperor seamount system.",
+        "text": "The author of Passage IV (\"Plate Tectonics & Mantle Plumes\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "The economic benefits for African nations.",
-            "The voluntary relocation for better opportunities.",
-            "The human cost and exploitation involved in the trade.",
-            "The technological advancements in shipping."
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "be the most accurate way to quantify its economic value.",
+            "align perfectly with the original creator's stated philosophy.",
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"The human cost and exploitation involved in the trade.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "answer": 3,
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 131,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "A passage about the Enlightenment period states, \"Reason and individualism became the cornerstone of societal progress.\" What does this suggest about the values of that era?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Plate Tectonics & Mantle Plumes\"\n\nGeological mantle plumes originate near the core-mantle boundary, ascending as buoyant thermal diapirs through the Earth's mantle. As plumes decompress beneath oceanic crust, they generate persistent volcanic hotspot chains like the Hawaiian-Emperor seamount system.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Plate Tectonics & Mantle Plumes\")?",
         "options": [
-            "A shift towards collective decision-making.",
-            "An emphasis on religious doctrines.",
-            "A focus on logical reasoning and the importance of the individual in driving progress.",
-            "The decline of scientific inquiry."
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "Theoretical models are vastly superior to empirical practice in every domain."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"A focus on logical reasoning and the importance of the individual in driving progress.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — SOCIAL SCIENCE: Urbanization, Transit Infrastructure, and Economic Mobility.\n\nThroughout the twentieth century, rapid urbanization fundamentally reorganized social structures and settlement patterns across the globe. As cities expanded outward into vast metropolitan regions, transportation networks became the central circulatory system determining economic opportunity.\n\nRecent demographic research demonstrates that access to reliable public transit directly influences employment stability and household income growth, particularly in suburban and outer-ring communities. When transit infrastructure is fragmented or unreliable, workers experience increased commute burdens, creating spatial mismatches between where affordable housing exists and where job growth is concentrated.\n\nUrban economists argue that investing in integrated regional transit—such as dedicated bus rapid transit corridors and commuter rail extensions—yields substantial multiplier effects. These investments reduce household transportation expenditures, lower carbon emissions, and facilitate greater labor market participation across diverse socioeconomic strata. Achieving sustainable metropolitan growth requires treating public transportation not as a secondary amenity, but as foundational civic infrastructure."
+        "answer": 0,
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     }
 ];
+
+if (typeof window !== 'undefined') {
+    window.ACT_QUESTIONS1 = ACT_QUESTIONS1;
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = ACT_QUESTIONS1;
+}

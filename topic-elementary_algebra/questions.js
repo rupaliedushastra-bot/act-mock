@@ -50,15 +50,15 @@ const ACT_QUESTIONS1 = [
         "id": 4,
         "section": "math",
         "topic": "Elementary Algebra",
-        "text": "Factor completely: x² – 9",
+        "text": "Factor completely: x² – 49",
         "options": [
-            "(x – 3)²",
-            "(x + 3)(x – 3)",
-            "(x + 9)(x – 1)",
-            "(x – 9)(x + 1)"
+            "(x – 7)²",
+            "(x + 7)(x – 7)",
+            "(x + 49)(x – 1)",
+            "(x – 49)(x + 1)"
         ],
         "answer": 1,
-        "explanation": "The expression x² – 9 is a difference of two squares, a² – b² = (a + b)(a – b). Here a = x and b = 3, so x² – 9 = (x + 3)(x – 3)."
+        "explanation": "The expression x² – 49 is a difference of two squares, a² – b² = (a + b)(a – b). Here a = x and b = 7, so x² – 49 = (x + 7)(x – 7)."
     },
     {
         "id": 5,

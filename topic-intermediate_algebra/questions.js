@@ -22,15 +22,15 @@ const ACT_QUESTIONS1 = [
         "id": 2,
         "section": "math",
         "topic": "Intermediate Algebra",
-        "text": "If f(x) = 2x² – 3x + 1, what is f(–2)?",
+        "text": "If f(x) = 3x² – 4x + 2, what is f(–2)?",
         "options": [
-            "3",
-            "15",
-            "–1",
-            "7"
+            "22",
+            "18",
+            "–6",
+            "14"
         ],
-        "answer": 1,
-        "explanation": "Evaluate f(–2) = 2(–2)² – 3(–2) + 1 = 2(4) + 6 + 1 = 8 + 6 + 1 = 15."
+        "answer": 0,
+        "explanation": "Evaluate f(–2) = 3(–2)² – 4(–2) + 2 = 3(4) + 8 + 2 = 12 + 8 + 2 = 22."
     },
     {
         "id": 3,

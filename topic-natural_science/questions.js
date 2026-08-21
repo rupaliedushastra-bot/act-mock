@@ -8,15 +8,15 @@ const ACT_QUESTIONS1 = [
         "id": 1,
         "section": "reading",
         "topic": "Natural Science",
-        "text": "A passage explains that vaccines work by training the immune system to recognize specific pathogens. According to the passage, this training primarily involves:",
+        "text": "Based on the passage regarding hydrothermal vent ecosystems, chemosynthetic bacteria serve as the primary trophic foundation by:",
         "options": [
-            "Introducing a harmless form or piece of the pathogen to stimulate antibody production",
-            "Removing the immune system's memory of past infections",
-            "Directly killing all bacteria in the human body",
-            "Preventing the immune system from functioning normally"
+            "oxidizing hydrogen sulfide and dissolved geothermal minerals to synthesize organic matter",
+            "absorbing ambient solar radiation penetrating the abyssal photic zone",
+            "relying entirely on organic detritus falling from the upper ocean layers",
+            "generating oxygen through traditional chlorophyll-based photosynthesis"
         ],
         "answer": 0,
-        "explanation": "Vaccines expose the adaptive immune system to weakened, inactivated, or subunit antigens, allowing it to produce antibodies and memory cells without causing illness.",
+        "explanation": "Chemosynthetic bacteria convert chemical energy from geothermal hydrogen sulfide and methane into organic compounds, forming the primary trophic base of hydrothermal vent ecosystems.",
         "passage": "PASSAGE IV — NATURAL SCIENCE: Deep-Sea Hydrothermal Vent Ecosystems and Chemosynthesis.\n\nUntil the late 1970s, marine biologists believed that all living organisms ultimately depended on solar radiation and photosynthesis to sustain life. The discovery of hydrothermal vent systems along the volcanic spreading ridges of the ocean floor overturned this fundamental paradigm.\n\nLocated thousands of meters beneath the ocean surface in complete darkness, hydrothermal vents emit superheated mineral-rich fluids produced by subsurface magma. In the absence of sunlight, the foundation of these unique ecosystems is chemosynthetic bacteria. These specialized microbes oxidize toxic hydrogen sulfide, methane, and other dissolved minerals, converting geothermal chemical energy into organic matter.\n\nA diverse array of specialized organisms thrives in these extreme environments, including giant tube worms (Riftia pachyptila), vent crabs, and blind shrimp. The tube worms possess no mouth, digestive tract, or gut; instead, they host billions of symbiotic chemosynthetic bacteria within a specialized vascular organ called a trophosome. The study of hydrothermal vent ecology has profound implications for astrobiology, expanding our understanding of the extreme physical conditions under which life can arise and persist throughout the universe."
     },
     {

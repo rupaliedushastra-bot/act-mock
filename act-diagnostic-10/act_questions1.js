@@ -1,5 +1,5 @@
 // =============================================
-// act_questions1.js – ACT Practice Test Diagnostic 10
+// act_questions1.js – ACT Diagnostic Test 10
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
 // Total: 131 questions
 // =============================================
@@ -8,1916 +8,1879 @@ const ACT_QUESTIONS1 = [
     {
         "id": 1,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Suppose the writer had intended to write an essay on the historical development of the modern food truck. Would this essay successfully fulfill that goal?",
+        "topic": "Punctuation",
+        "text": "The research team led by Amina Al-Mansoor, who had spent five weeks analyzing ancient subterranean qanats in Oman finally published their findings in a leading scientific journal.\n\nWhich of the following best corrects the punctuation in the sentence above?",
         "options": [
-            "Yes, because it provides a brief overview of the trends and innovations that preceded the modern food truck.",
-            "No, because it is primarily a descriptive essay about the modern food truck trend and its followers.",
-            "No, because it focuses primarily on the differences between modern food trucks and older forms of mobile food distribution.",
-            "Yes, because it provides detailed information about the inventor who designed the first food truck."
+            "The research team led by Amina Al-Mansoor who had spent five weeks analyzing ancient subterranean qanats in Oman, finally published their findings in a leading scientific journal.",
+            "The research team led by Amina Al-Mansoor, who had spent five weeks analyzing ancient subterranean qanats in Oman, finally published their findings in a leading scientific journal.",
+            "The research team led by Amina Al-Mansoor, who had spent five weeks analyzing ancient subterranean qanats in Oman finally, published their findings in a leading scientific journal.",
+            "The research team led by Amina Al-Mansoor who had spent five weeks analyzing ancient subterranean qanats, in Oman finally published their findings in a leading scientific journal."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"Yes, because it provides a brief overview of the trends and innovations that preceded the modern food truck.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 1,
+        "explanation": "Correct Answer: \"The research team led by Amina Al-Mansoor, who had spent five weeks analyzing ancient subterranean qanats in Oman, finally published their findings in a leading scientific journal.\". The non-essential relative clause beginning with 'who had spent five weeks...' must be set off by paired commas."
     },
     {
         "id": 2,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the best alternative for the underlined portion [9].",
+        "topic": "Grammar & Usage",
+        "text": "Neither Amina Al-Mansoor nor the Arabian Hydro-Heritage Team technicians was able to calibrate the ground-penetrating radar before the expedition began.\n\nWhich correction should be made to the underlined verb?",
         "options": [
-            "Consequently,",
-            "In contrast,",
-            "NO CHANGE",
-            "Instead,"
+            "is able to calibrate",
+            "was being able to calibrate",
+            "were able to calibrate",
+            "No change needed"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"Consequently,\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 2,
+        "explanation": "Correct Answer: \"were able to calibrate\". With 'neither... nor', the verb agrees with the closer subject ('technicians', plural), requiring 'were'."
     },
     {
         "id": 3,
         "section": "english",
         "topic": "Sentence Structure",
-        "text": "Choose the best alternative for the underlined portion [6].",
+        "text": "Examining the delicate structure of ancient subterranean qanats through the ground-penetrating radar, the anomalous readings became immediately apparent to Amina Al-Mansoor.\n\nWhich revision best corrects the dangling modifier in the sentence?",
         "options": [
-            "However,",
-            "Therefore,",
-            "As a result,",
-            "NO CHANGE"
+            "Through the ground-penetrating radar, examining the delicate structure of ancient subterranean qanats, the anomalous readings became immediately apparent.",
+            "The anomalous readings became immediately apparent, examining the delicate structure of ancient subterranean qanats through the ground-penetrating radar.",
+            "Amina Al-Mansoor, examining the delicate structure of ancient subterranean qanats through the ground-penetrating radar, the anomalous readings became apparent.",
+            "Examining the delicate structure of ancient subterranean qanats through the ground-penetrating radar, Amina Al-Mansoor immediately noticed the anomalous readings."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"However,\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Examining the delicate structure of ancient subterranean qanats through the ground-penetrating radar, Amina Al-Mansoor immediately noticed the anomalous readings.\". The introductory participial phrase must modify the person performing the action (Amina Al-Mansoor), not 'the readings'."
     },
     {
         "id": 4,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the best alternative for the sentence marked [5].",
+        "topic": "Style & Tone",
+        "text": "The initial hypothesis regarding ancient subterranean qanats formulated by Amina Al-Mansoor was completely disproven by the latest measurements from Oman.\n\nWhich alternative to the underlined portion would be LEAST acceptable in maintaining a formal academic tone?",
         "options": [
-            "Popular in urban areas like New York City, some of the earliest vehicles for mobile food distribution were push carts, which were located wherever workers needed access to quick, cheap lunches.",
-            "Push carts were some of the earliest vehicles for mobile food distribution, popular in urban areas where workers needed access to quick, cheap lunches like New York City.",
-            "NO CHANGE",
-            "Some of the earliest vehicles were push carts for food distribution, popular in urban areas, like New York, where workers needed quick, cheap lunches in the city."
+            "totally shot down",
+            "thoroughly refuted",
+            "proven inaccurate",
+            "rendered untenable"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 0,
+        "explanation": "Correct Answer: \"totally shot down\". 'Totally shot down' is colloquial slang and undermines the formal register of an academic publication."
     },
     {
         "id": 5,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Which alternative for the underlined portion [7] most effectively highlights one of the major differences between the push cart and the modern food truck?",
+        "topic": "Transitions",
+        "text": "The Arabian Hydro-Heritage Team faced severe logistical obstacles in Oman. [5], the researchers successfully deployed the ground-penetrating radar on schedule.\n\nWhich transition word or phrase best connects these two sentences?",
         "options": [
-            "they sometimes stayed in one place for long periods of time.",
-            "they often had the same people working in them all the time.",
-            "they were not equipped with the tools necessary to prepare the food.",
-            "NO CHANGE"
+            "Consequently",
+            "Nevertheless",
+            "Furthermore",
+            "Similarly"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"they were not equipped with the tools necessary to prepare the food.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Nevertheless\". 'Nevertheless' correctly signals a contrast between the severe obstacles and the successful deployment."
     },
     {
         "id": 6,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "text": "Upon reviewing the previous paragraph and realizing that some information had been left out, the writer composes the following sentence:\n'During the WWII era, mobile canteens popped up near Army bases to serve quick, easy meals to the troops.'\nThe most logical placement for this sentence would be at position [11]:",
+        "text": "The author wants to conclude a paragraph by highlighting the broader technological impact of desert hydrology pioneered by Amina Al-Mansoor. Which choice best accomplishes this goal?",
         "options": [
-            "after sentence 3",
-            "before sentence 1 ('In the 1900s...')",
-            "before sentence 2 ('Ice cream trucks...')",
-            "before sentence 3 ('In the 1960s...')"
+            "Amina Al-Mansoor has presented these findings at several international academic symposia.",
+            "Securing institutional grant funding remains an essential step for laboratory expansion.",
+            "By translating these observations into synthetic prototypes, industrial engineers can manufacture more resilient commercial materials.",
+            "Field research in remote environments requires careful logistical planning."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"before sentence 2 ('Ice cream trucks...')\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"By translating these observations into synthetic prototypes, industrial engineers can manufacture more resilient commercial materials.\". This option directly connects the specialized scientific findings to broader commercial and industrial applications."
     },
     {
         "id": 7,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Choose the best alternative for the underlined portion [3].",
+        "topic": "Wordiness & Redundancy",
+        "text": "The final report presented by Amina Al-Mansoor contained a concise summary that was brief and to the point regarding ancient subterranean qanats in Oman.\n\nWhich revision best eliminates the redundancy in the sentence?",
         "options": [
-            "NO CHANGE",
-            "a new or novel idea",
-            "a novel thought or idea",
-            "a novel idea"
+            "The final report presented a concise summary that was brief and short of ancient subterranean qanats.",
+            "The final report presented a brief summary concise and to the point of ancient subterranean qanats.",
+            "The final report presented a summary that was concise, brief, and to the point.",
+            "The final report presented by Amina Al-Mansoor contained a concise summary of ancient subterranean qanats in Oman."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"a novel idea\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "explanation": "Correct Answer: \"The final report presented by Amina Al-Mansoor contained a concise summary of ancient subterranean qanats in Oman.\". 'Concise summary' inherently means brief and to the point; adding extra qualifiers creates unnecessary redundancy."
     },
     {
         "id": 8,
         "section": "english",
         "topic": "Punctuation",
-        "text": "Choose the best alternative for the underlined portion [1].",
+        "text": "The ground-penetrating radar recorded unprecedented fluctuations in Oman the analytical software processed the telemetry in real time.\n\nWhich choice provides the correct punctuation between the two independent clauses?",
         "options": [
-            "hold, cities",
-            "NO CHANGE",
-            "hold of cities",
-            "hold in cities"
+            "Oman; the analytical",
+            "Oman, the analytical",
+            "Oman the analytical",
+            "Oman: and the analytical"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"NO CHANGE\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"NO CHANGE\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Oman; the analytical\". Two independent clauses without a coordinating conjunction must be separated by a semicolon."
     },
     {
         "id": 9,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "If the writer were to delete the sentence marked [10] ('The cooks, or \"cookies\"...'), the paragraph would primarily lose:",
+        "topic": "Grammar & Usage",
+        "text": "Amina Al-Mansoor consulted with three international specialists from Oman, all of [9] had extensive experience in desert hydrology.\n\nWhich pronoun correctly completes the sentence?",
         "options": [
-            "details about how the cooks made food on the chuckwagons.",
-            "details about how cooks on the cattle trails came to be called 'cookies.'",
-            "a transition between two points in the paragraph.",
-            "information about the meaning of the phrase mobile kitchen."
+            "who",
+            "whom",
+            "which",
+            "that"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"details about how the cooks made food on the chuckwagons.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 1,
+        "explanation": "Correct Answer: \"whom\". 'Whom' is the objective case pronoun required as the object of the preposition 'of'."
     },
     {
         "id": 10,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [2].",
+        "topic": "Sentence Structure",
+        "text": "The temperature dropped rapidly after dusk in Oman, the Arabian Hydro-Heritage Team had to calibrate the heating elements on the ground-penetrating radar.\n\nWhich choice best corrects the comma splice?",
         "options": [
-            "NO CHANGE",
-            "its",
-            "its'",
-            "it is"
+            "The temperature dropped rapidly after dusk in Oman the team had to calibrate the heating elements.",
+            "Dropping rapidly after dusk the temperature in Oman, the team calibrated the heating elements.",
+            "The temperature dropped rapidly after dusk in Oman, so the Arabian Hydro-Heritage Team had to calibrate the heating elements on the ground-penetrating radar.",
+            "The temperature dropped rapidly after dusk in Oman, and so therefore the team calibrated the heating elements."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"its\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 2,
+        "explanation": "Correct Answer: \"The temperature dropped rapidly after dusk in Oman, so the Arabian Hydro-Heritage Team had to calibrate the heating elements on the ground-penetrating radar.\". A comma splice between two independent clauses is correctly repaired using a comma and coordinating conjunction ('so')."
     },
     {
         "id": 11,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [4].",
+        "topic": "Style & Tone",
+        "text": "During the survey in Oman, Amina Al-Mansoor collected a bunch of data points on ancient subterranean qanats.\n\nWhich choice replaces the underlined phrase with the most precise and formal academic phrasing?",
         "options": [
-            "is",
-            "NO CHANGE",
-            "are",
-            "were"
+            "a whole lot of",
+            "tons of",
+            "a massive heap of",
+            "a substantial dataset of"
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"were\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "explanation": "Correct Answer: \"a substantial dataset of\". 'A substantial dataset of' conveys academic precision, avoiding vague or informal colloquialisms."
     },
     {
         "id": 12,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Choose the best alternative for the underlined portion [8].",
+        "topic": "Transitions",
+        "text": "The filtration membrane on the ground-penetrating radar clogged due to fine sediment in Oman. [12], the automated safety valve halted fluid intake immediately.\n\nWhich transition word best signals the logical relationship?",
         "options": [
-            "chuckwagon, a covered wagon",
-            "chuckwagon, and a covered wagon",
-            "chuckwagon; a covered wagon",
-            "NO CHANGE"
+            "Consequently",
+            "Conversely",
+            "Nonetheless",
+            "In contrast"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"chuckwagon, a covered wagon\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"chuckwagon, a covered wagon\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "explanation": "Correct Answer: \"Consequently\". 'Consequently' correctly indicates that the safety valve action was a direct result of the clogged membrane."
     },
     {
         "id": 13,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "text": "The writer is considering deleting the words 'cheap' and 'grungy' from the sentence marked [12]. Should the writer make these deletions?",
+        "text": "For the sake of logical flow in Amina Al-Mansoor's research log, where should a sentence describing the initial site preparation in Oman be placed?",
         "options": [
-            "Yes, because the words distract from the main idea of the sentence.",
-            "Yes, because the words are offensive to people who like food trucks.",
-            "No, because the words provide insight into the origin of the term 'roach coach.'",
-            "No, because they provide more information about early food trucks."
+            "At the very end of the essay after the conclusion.",
+            "At the beginning of the paragraph, before the discussion of data collection.",
+            "Between the analysis of results and the final summary.",
+            "Nowhere, because site preparation is irrelevant to scientific research."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"Yes, because the words distract from the main idea of the sentence.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 1,
+        "explanation": "Correct Answer: \"At the beginning of the paragraph, before the discussion of data collection.\". Chronological logic requires site preparation to precede the collection and analysis of data."
     },
     {
         "id": 14,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Which of the following choices for the underlined portion [14] would provide an ending most consistent with the statement made in the first sentence of the paragraph?",
+        "topic": "Wordiness & Redundancy",
+        "text": "Amina Al-Mansoor observed an unusual phenomenon that was rare and out of the ordinary while tracking ancient subterranean qanats in Oman.\n\nWhich choice is most concise without losing essential meaning?",
         "options": [
-            "NO CHANGE",
-            "but sometimes these areas can be busy.",
-            "and people travel from all over the city, sometimes even farther, to try what they're offering.",
-            "so you rarely run out of delicious options."
+            "an unusual phenomenon that was rare in Oman.",
+            "a rare phenomenon out of the ordinary in Oman.",
+            "an unusual phenomenon in Oman.",
+            "an unusual, rare, and out of the ordinary phenomenon in Oman."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"and people travel from all over the city, sometimes even farther, to try what they're offering.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"an unusual phenomenon in Oman.\". 'An unusual phenomenon' fully captures the meaning without repetitive synonyms like 'rare' and 'out of the ordinary'."
     },
     {
         "id": 15,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [13].",
+        "topic": "Punctuation",
+        "text": "The three [15] collective recommendations on desert hydrology were compiled into the final project charter by Amina Al-Mansoor.\n\nWhich choice correctly indicates plural possession?",
         "options": [
-            "have flocked",
-            "NO CHANGE",
-            "are flocking",
-            "have been flocking"
+            "institution's",
+            "institutions",
+            "institutions's",
+            "institutions'"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"are flocking\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 3,
+        "explanation": "Correct Answer: \"institutions'\". Plural nouns ending in 's' form the possessive by adding an apostrophe after the 's' ('institutions'')."
     },
     {
         "id": 16,
         "section": "english",
         "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [32].",
+        "text": "When the telemetry gauge fluctuated in Oman, Amina Al-Mansoor quickly [16] the auxiliary power switch on the ground-penetrating radar.\n\nWhich verb form maintains proper past tense consistency?",
         "options": [
-            "have attended",
-            "will attend",
-            "NO CHANGE",
-            "would attend"
+            "activated",
+            "activates",
+            "has activated",
+            "will activate"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"would attend\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 0,
+        "explanation": "Correct Answer: \"activated\". The past tense verb 'fluctuated' requires the parallel past tense 'activated' for narrative consistency."
     },
     {
         "id": 17,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "At position [40], the writer is considering adding the following sentence:\n'Along the way, they must contend with dangerous temperatures, extreme exhaustion, and threatening predators.'\nShould the writer make this addition here?",
+        "topic": "Sentence Structure",
+        "text": "The protocol in Oman required Amina Al-Mansoor to inspect the valves, [17], and document all telemetry in the official log.\n\nWhich choice maintains parallel grammatical structure?",
         "options": [
-            "Yes, because it gives the reader details about how migrations can influence the size of a population.",
-            "Yes, because it provides relevant information about why some animals do not survive migration.",
-            "No, because it misleads the reader about the purpose of migration.",
-            "No, because it distracts from the main point of the paragraph."
+            "cleaning the optical sensors",
+            "clean the optical sensors",
+            "to have cleaned the optical sensors",
+            "the optical sensors were cleaned"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"No, because it distracts from the main point of the paragraph.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 1,
+        "explanation": "Correct Answer: \"clean the optical sensors\". The infinitive structure 'to inspect..., [clean]..., and [document]...' requires base verb forms in parallel."
     },
     {
         "id": 18,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Suppose the writer had intended to write a brief essay explaining a behavior that humans and animals share. Would this essay successfully fulfill that goal?",
+        "topic": "Style & Tone",
+        "text": "The new spectral analysis conducted in Oman [18] the presence of rare mineral compounds within ancient subterranean qanats.\n\nWhich choice offers the most precise and descriptive vocabulary?",
         "options": [
-            "No, because it fails to provide relevant information about animal families.",
-            "Yes, because it gives the reader insight into how humans and animals can learn to coexist in different climates.",
-            "No, because it focuses on his own family's migration around the world.",
-            "Yes, because it provides information about the migration behaviors of both humans and animals."
+            "showed up",
+            "made clearish",
+            "substantiated",
+            "pointed at"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"Yes, because it provides information about the migration behaviors of both humans and animals.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"substantiated\". 'Substantiated' is formal, accurate, and scientifically appropriate."
     },
     {
         "id": 19,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "Which of the options for [43] most effectively ties the subject of migration back to the narrator's personal experience?",
+        "topic": "Transitions",
+        "text": "The ground-penetrating radar mapped the core structure of ancient subterranean qanats in Oman. [19], it recorded ambient temperature and salinity gradients simultaneously.\n\nWhich transition word best adds supporting information?",
         "options": [
-            "and hopefully they will be happy.",
-            "though sometimes it doesn't work out.",
-            "no matter what their reason is for moving.",
-            "NO CHANGE"
+            "On the other hand",
+            "In spite of this",
+            "Instead",
+            "Furthermore"
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"Furthermore\". 'Furthermore' signals the addition of supplementary data collected by the instrument."
     },
     {
         "id": 20,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Choose the best alternative for the underlined portion [35].",
+        "topic": "Rhetorical Skills",
+        "text": "Which introductory sentence best establishes the central focus of a passage detailing Amina Al-Mansoor's breakthrough in desert hydrology across Oman?",
         "options": [
-            "a different location where they would live",
-            "a new and different location",
-            "a new location with different surroundings",
-            "NO CHANGE"
+            "Recent advances in desert hydrology have been accelerated by groundbreaking field methodologies pioneered by Amina Al-Mansoor.",
+            "Many people enjoy reading about scientific discoveries during their leisure time.",
+            "Oman has a diverse geographical profile characterized by variable weather.",
+            "Laboratory equipment is often manufactured by specialized technical firms."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"NO CHANGE\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Recent advances in desert hydrology have been accelerated by groundbreaking field methodologies pioneered by Amina Al-Mansoor.\". This sentence clearly introduces both the scientific discipline and the central role of the primary researcher."
     },
     {
         "id": 21,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [33].",
+        "topic": "Wordiness & Redundancy",
+        "text": "Amina Al-Mansoor made adjustments to the ground-penetrating radar in Oman [21] adverse atmospheric pressure.\n\nWhich choice is the most concise replacement for 'on account of the fact that there was'?",
         "options": [
-            "families whose students",
-            "NO CHANGE",
-            "families who's students",
-            "family's whose students'"
+            "on account of the fact that there was",
+            "because of",
+            "due to the circumstance where there was",
+            "owing to the presence of the reality of"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"families whose students\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 1,
+        "explanation": "Correct Answer: \"because of\". 'Because of' is the most direct and economical way to express causation."
     },
     {
         "id": 22,
         "section": "english",
         "topic": "Punctuation",
-        "text": "Choose the best alternative for the underlined portion [36].",
+        "text": "The survey of ancient subterranean qanats in Oman yielded three critical artifacts [22] a brass sextant, an annotated navigational log, and a hand-drawn portolan chart.\n\nWhich punctuation mark correctly introduces the list following an independent clause?",
         "options": [
-            "as well, for example, fish",
-            "as well, fish",
-            "as well. Fish",
-            "NO CHANGE"
+            "artifacts;",
+            "artifacts,",
+            "artifacts:",
+            "artifacts"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"as well. Fish\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"as well. Fish\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "explanation": "Correct Answer: \"artifacts:\". A colon is used after an independent clause to introduce an elaborating list or explanation."
     },
     {
         "id": 23,
         "section": "english",
         "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the sentence marked [31].",
+        "text": "Each of the experimental samples collected by Amina Al-Mansoor from Oman [23] cataloged in the Arabian Hydro-Heritage Team database.\n\nWhich verb correctly completes the sentence?",
         "options": [
-            "When I was a young child, my family moved all around the world following my dad's job.",
-            "My dad's job caused my family to move all around the world as a young child.",
-            "My family moved all around the world when I was a young child for my dad's job.",
-            "NO CHANGE"
+            "are",
+            "were",
+            "have been",
+            "is"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"When I was a young child, my family moved all around the world following my dad's job.\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 3,
+        "explanation": "Correct Answer: \"is\". 'Each' is a singular indefinite pronoun and requires the singular verb 'is'."
     },
     {
         "id": 24,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "For the sake of logic and coherence, Paragraph 5 should be placed:",
+        "topic": "Sentence Structure",
+        "text": "Because the physical conditions surrounding ancient subterranean qanats in Oman were more severe than anticipated. The ground-penetrating radar drifted off its planned trajectory.\n\nWhich revision eliminates the sentence fragment?",
         "options": [
-            "after paragraph 1.",
-            "after paragraph 2.",
-            "before paragraph 1.",
-            "where it is now."
+            "Because the physical conditions surrounding ancient subterranean qanats in Oman were more severe than anticipated, the ground-penetrating radar drifted off its planned trajectory.",
+            "Because the physical conditions surrounding ancient subterranean qanats in Oman were more severe than anticipated; the ground-penetrating radar drifted off its planned trajectory.",
+            "Being that conditions were more severe than anticipated. The ground-penetrating radar drifted.",
+            "The conditions being severe in Oman. Causing the ground-penetrating radar to drift."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"where it is now.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Because the physical conditions surrounding ancient subterranean qanats in Oman were more severe than anticipated, the ground-penetrating radar drifted off its planned trajectory.\". Attaching the dependent clause ('Because the conditions...') to the independent clause resolves the fragment."
     },
     {
         "id": 25,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [34].",
+        "topic": "Style & Tone",
+        "text": "All researchers assisting Amina Al-Mansoor in Oman must strictly adhere [25] established safety regulations.\n\nWhich preposition completes the standard English idiom?",
         "options": [
-            "have moved",
-            "NO CHANGE",
-            "moving",
-            "will have moved"
+            "with",
+            "to",
+            "at",
+            "on"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"NO CHANGE\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "explanation": "Correct Answer: \"to\". The verb 'adhere' idiomatically pairs with the preposition 'to'."
     },
     {
         "id": 26,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "The writer is considering deleting the sentence marked [38] ('This type of migration...') from the essay. The sentence should NOT be deleted because:",
+        "topic": "Transitions",
+        "text": "The Arabian Hydro-Heritage Team documented several endemic specimens in Oman. [26], they identified a unique manifestation of ancient subterranean qanats never before recorded.\n\nWhich transition best introduces a specific example?",
         "options": [
-            "it gives the reader information about how to avoid extreme temperatures.",
-            "it provides a simple, illustrative example of how seasonal changes can drive animal behavior.",
-            "it is important that the reader be able to name at least one species that completes a cyclical migration.",
-            "it describes how some animals do not have a permanent home."
+            "In summary",
+            "Nevertheless",
+            "For instance",
+            "Otherwise"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"it provides a simple, illustrative example of how seasonal changes can drive animal behavior.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"For instance\". 'For instance' correctly introduces a concrete example of the endemic specimens mentioned."
     },
     {
         "id": 27,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Which of the options for [41] provides the most effective transition for introducing the second kind of (irregular) migration?",
+        "topic": "Rhetorical Skills",
+        "text": "If Amina Al-Mansoor were to include a quantitative chart comparing measurements of ancient subterranean qanats across Oman, the primary rhetorical function would be to:",
         "options": [
-            "NO CHANGE",
-            "Therefore,",
-            "Nevertheless,",
-            "On the other hand,"
+            "distract the reader from ambiguities in the experimental methodology.",
+            "prove that no further scientific investigation is necessary.",
+            "replace the qualitative descriptions with purely numeric indices.",
+            "provide empirical validation for the chemical trends described in the narrative."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"On the other hand,\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "explanation": "Correct Answer: \"provide empirical validation for the chemical trends described in the narrative.\". Quantitative data serves to substantiate and empirically validate the qualitative observations."
     },
     {
         "id": 28,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Which of the following alternatives to the underlined portion [37] would be LEAST acceptable?",
+        "topic": "Wordiness & Redundancy",
+        "text": "The autonomous ground-penetrating radar deployed in Oman operates independently without human guidance on its own.\n\nWhich choice best eliminates repetitive phrasing?",
         "options": [
-            "cyclical, being that it occurs",
-            "cyclical in that it occurs",
-            "cyclical, occurring",
-            "cyclical, meaning that it occurs"
+            "The autonomous ground-penetrating radar operates without human guidance.",
+            "The autonomous ground-penetrating radar operates independently on its own without human guidance.",
+            "Operating independently, the autonomous ground-penetrating radar guides itself on its own.",
+            "The ground-penetrating radar operates autonomously, independently, and on its own."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"cyclical, being that it occurs\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "explanation": "Correct Answer: \"The autonomous ground-penetrating radar operates without human guidance.\". 'Operates without human guidance' directly explains the function without repeating 'autonomously', 'independently', and 'on its own'."
     },
     {
         "id": 29,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Choose the best alternative for the underlined portion [42].",
+        "topic": "Punctuation",
+        "text": "The field specimen of ancient subterranean qanats—fragile from centuries of isolation in Oman [29] was stabilized by Amina Al-Mansoor.\n\nWhich punctuation mark correctly closes the parenthetical insertion?",
         "options": [
-            "unexpected",
-            "accidental",
-            "NO CHANGE",
-            "unusual"
+            "isolation in Oman,",
+            "isolation in Oman—",
+            "isolation in Oman;",
+            "isolation in Oman"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"NO CHANGE\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 1,
+        "explanation": "Correct Answer: \"isolation in Oman—\". A parenthetical interruption opened with an em-dash must be closed with an em-dash."
     },
     {
         "id": 30,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Choose the best alternative for the underlined portion [39].",
+        "topic": "Grammar & Usage",
+        "text": "Between the two calibration methods tested by Amina Al-Mansoor in Oman, the second protocol demonstrated [30] analytical accuracy.\n\nWhich modifier form is grammatically correct?",
         "options": [
-            "animals, including wildebeests, zebras, and gazelles",
-            "animals, including wildebeests, zebras, and gazelles,",
-            "animals, including wildebeests zebras, and gazelles,",
-            "NO CHANGE"
+            "greatest",
+            "most greatest",
+            "greater",
+            "more greater"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"animals, including wildebeests, zebras, and gazelles,\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"animals, including wildebeests, zebras, and gazelles,\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 2,
+        "explanation": "Correct Answer: \"greater\". When comparing exactly two items, the comparative form ('greater') is required, not the superlative ('greatest')."
     },
     {
         "id": 31,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Choose the best alternative for the underlined portion [22].",
+        "topic": "Sentence Structure",
+        "text": "In Oman, Amina Al-Mansoor only analyzed the data points gathered by the ground-penetrating radar.\n\nWhich placement of 'only' makes it clear that no other data points were analyzed?",
         "options": [
-            "to NASA's Advisory Council;",
-            "NO CHANGE",
-            "to NASA's Advisory Council",
-            "to NASA's esteemed Advisory Council,"
+            "In Oman, only Amina Al-Mansoor analyzed the data points gathered by the ground-penetrating radar.",
+            "In Oman, Amina Al-Mansoor analyzed the data points only gathered by the ground-penetrating radar.",
+            "In Oman, Amina Al-Mansoor analyzed the data points that only were gathered by the ground-penetrating radar.",
+            "In Oman, Amina Al-Mansoor analyzed only the data points gathered by the ground-penetrating radar."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"to NASA's Advisory Council\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"to NASA's Advisory Council\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 3,
+        "explanation": "Correct Answer: \"In Oman, Amina Al-Mansoor analyzed only the data points gathered by the ground-penetrating radar.\". Placing 'only' immediately before 'the data points' unambiguously restricts the action to those specific data points."
     },
     {
         "id": 32,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Which of the following alternatives to the underlined portion [25] would be LEAST acceptable?",
+        "topic": "Style & Tone",
+        "text": "The Arabian Hydro-Heritage Team specialists in Oman [32] to verify the structural integrity of the ground-penetrating radar.\n\nWhich choice is best suited to contemporary professional writing?",
         "options": [
-            "Additionally,",
-            "On the other hand,",
-            "Moreover,",
-            "Also,"
+            "endeavored",
+            "did strive mightily",
+            "went forth",
+            "soughteth"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"On the other hand,\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 0,
+        "explanation": "Correct Answer: \"endeavored\". 'Endeavored' is professional and contemporary, avoiding archaic theatrical language."
     },
     {
         "id": 33,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Which of the options for [30] would best reinforce the tone and main idea of the essay?",
+        "topic": "Transitions",
+        "text": "[33] the initial sensor calibrations in Oman were delayed by inclement conditions, Amina Al-Mansoor's primary research objectives were fully met.\n\nWhich subordinating conjunction best indicates concession?",
         "options": [
-            "interesting to us regular folk.",
-            "NO CHANGE",
-            "important to policy makers.",
-            "simple for young scientists."
+            "Because",
+            "Although",
+            "Since",
+            "Unless"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"NO CHANGE\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "explanation": "Correct Answer: \"Although\". 'Although' introduces a concession clause, acknowledging the delay while highlighting overall success."
     },
     {
         "id": 34,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "text": "Given that all of the following are true, which choice for [29] would best tie back to the beginning of the essay and explain why the job at the planetarium might be meaningful to Neil deGrasse Tyson?",
+        "text": "Consider the phrase in Amina Al-Mansoor's summary: 'It is interesting and worth noting that ancient subterranean qanats reacts dynamically to seasonal shifts in Oman.'\n\nWhich revision most effectively improves directness?",
         "options": [
-            "he works long hours almost every night.",
-            "NO CHANGE",
-            "he hopes to work until he retires.",
-            "he continues to conduct research."
+            "As a matter of interesting fact, ancient subterranean qanats reacts dynamically to seasonal shifts in Oman.",
+            "Worth noting is the reality that ancient subterranean qanats reacts dynamically in Oman.",
+            "ancient subterranean qanats reacts dynamically to seasonal shifts in Oman.",
+            "It goes without saying that ancient subterranean qanats reacts dynamically in Oman."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"ancient subterranean qanats reacts dynamically to seasonal shifts in Oman.\". Deleting unnecessary throat-clearing phrases ('It is worth noting that...') makes the statement direct and authoritative."
     },
     {
         "id": 35,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [16].",
+        "topic": "Wordiness & Redundancy",
+        "text": "The Arabian Hydro-Heritage Team decided to make an assessment of the safety protocols governing Oman.\n\nWhich revision is the most concise and forceful?",
         "options": [
-            "lives,",
-            "NO CHANGE",
-            "lives, however,",
-            "lives, but"
+            "The Arabian Hydro-Heritage Team decided to perform an assessment on the safety protocols in Oman.",
+            "The Arabian Hydro-Heritage Team decided to conduct a process of assessment of safety in Oman.",
+            "The Arabian Hydro-Heritage Team decided to carry out the making of an assessment for Oman.",
+            "The Arabian Hydro-Heritage Team decided to assess the safety protocols governing Oman."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"lives, but\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "explanation": "Correct Answer: \"The Arabian Hydro-Heritage Team decided to assess the safety protocols governing Oman.\". Replacing the nominalized phrase 'make an assessment of' with the active verb 'assess' enhances clarity."
     },
     {
         "id": 36,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the best alternative for the underlined portion [17].",
+        "topic": "Punctuation",
+        "text": "Amina Al-Mansoor discovered a dense [36] intricate network of crystalline features surrounding ancient subterranean qanats in Oman.\n\nWhich choice correctly punctuates coordinate adjectives?",
         "options": [
-            "Because of his visiting",
-            "He visited",
-            "NO CHANGE",
-            "Having visited"
+            "dense,",
+            "dense;",
+            "dense",
+            "dense and,"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 0,
+        "explanation": "Correct Answer: \"dense,\". Coordinate adjectives ('dense' and 'intricate') modifying the same noun should be separated by a comma."
     },
     {
         "id": 37,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the best alternative for the underlined portion [21].",
+        "topic": "Grammar & Usage",
+        "text": "If the ground-penetrating radar [37] capable of operating in Oman indefinitely, Amina Al-Mansoor could record longitudinal data continuously.\n\nWhich verb form correctly expresses this hypothetical condition?",
         "options": [
-            "agenda formation, then, a third",
-            "NO CHANGE",
-            "agenda formation; and a third",
-            "agenda formation. A third"
+            "was",
+            "were",
+            "is",
+            "will be"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"agenda formation. A third\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 1,
+        "explanation": "Correct Answer: \"were\". In contrary-to-fact conditional statements (subjunctive mood), 'were' is used regardless of the subject's number."
     },
     {
         "id": 38,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Choose the best alternative for the underlined portion [18].",
+        "topic": "Sentence Structure",
+        "text": "The Arabian Hydro-Heritage Team not only documented novel properties of ancient subterranean qanats [38] expanded geophysical mapping across Oman.\n\nWhich phrase correctly completes the correlative pair?",
         "options": [
-            "famous",
-            "NO CHANGE",
-            "most famous",
-            "more highly famous"
+            "and also",
+            "as well as",
+            "but also",
+            "in addition to"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"most famous\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "explanation": "Correct Answer: \"but also\". 'Not only' must be paired with 'but also' for grammatical parallelism."
     },
     {
         "id": 39,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [23].",
+        "topic": "Style & Tone",
+        "text": "A comprehensive geological survey of Oman was conducted by Amina Al-Mansoor and the Arabian Hydro-Heritage Team.\n\nWhich revision converts the sentence into direct active voice?",
         "options": [
-            "and still",
-            "NO CHANGE",
-            "but also",
-            "but still"
+            "Conducted by Amina Al-Mansoor and the Arabian Hydro-Heritage Team was a comprehensive geological survey of Oman.",
+            "A comprehensive survey of Oman had its conduction by Amina Al-Mansoor.",
+            "There was a comprehensive geological survey of Oman conducted by the team.",
+            "Amina Al-Mansoor and the Arabian Hydro-Heritage Team conducted a comprehensive geological survey of Oman."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"but also\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Amina Al-Mansoor and the Arabian Hydro-Heritage Team conducted a comprehensive geological survey of Oman.\". Active voice places the actors first, improving clarity and grammatical vigor."
     },
     {
         "id": 40,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Choose the best alternative for the underlined portion [20].",
+        "topic": "Transitions",
+        "text": "Amina Al-Mansoor mapped the outer perimeter of Oman. [40], the team deployed the ground-penetrating radar into the central core.\n\nWhich transition best conveys sequential progression?",
         "options": [
-            "councils, which",
-            "councils, these",
-            "councils; which",
-            "NO CHANGE"
+            "Subsequently",
+            "Simultaneously",
+            "Previously",
+            "Nevertheless"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"councils, which\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "explanation": "Correct Answer: \"Subsequently\". 'Subsequently' indicates that the central deployment occurred after the perimeter mapping was complete."
     },
     {
         "id": 41,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Which of the following alternatives to the underlined portion [19] would NOT be acceptable?",
+        "topic": "Rhetorical Skills",
+        "text": "Which choice provides the most relevant detail to support Amina Al-Mansoor's claim that ancient subterranean qanats represents an extreme biological habitat in Oman?",
         "options": [
-            "in space",
-            "regarding space",
-            "when it comes to space",
-            "on space"
+            "The research vessel is equipped with comfortable crew cabins and a modern navigation deck.",
+            "Ambient temperatures at Oman reach critical extremes under pressures 150 times greater than baseline standard atmosphere.",
+            "Amina Al-Mansoor studied chemistry before specializing in desert hydrology.",
+            "Many scientific expeditions are documented in popular non-fiction periodicals."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"in space\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Ambient temperatures at Oman reach critical extremes under pressures 150 times greater than baseline standard atmosphere.\". Extreme physical measurements directly substantiate the claim of an extreme biological habitat."
     },
     {
         "id": 42,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "Choose the best alternative for the underlined portion [27].",
+        "topic": "Wordiness & Redundancy",
+        "text": "In the event that the primary sensor on the ground-penetrating radar fails in Oman, the emergency beacon will engage.\n\nWhich word is the most concise replacement for 'In the event that'?",
         "options": [
-            "awards to citizen's",
-            "NO CHANGE",
-            "awards to citizens'",
-            "awards to citizens"
+            "In the circumstance where",
+            "Given the factual condition that",
+            "If",
+            "Under the contingency wherein"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"NO CHANGE\". Standard English punctuation requires non-essential or parenthetical elements to be enclosed by paired punctuation (commas or dashes), while essential restrictive elements must not be separated. Choice \"NO CHANGE\" provides grammatically correct clause boundaries and eliminates unnecessary or misplaced punctuation."
+        "answer": 2,
+        "explanation": "Correct Answer: \"If\". 'If' is the standard, concise equivalent of 'In the event that'."
     },
     {
         "id": 43,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "The writer is considering adding the following phrase to the sentence marked [24] following a comma:\n'including Cosmos: A SpaceTime Odyssey, a series that was nominated for thirteen Emmy awards.'\nShould the writer add this phrase here?",
+        "topic": "Punctuation",
+        "text": "Amina Al-Mansoor announced to the Arabian Hydro-Heritage Team [43] \"Our preliminary telemetry confirms a major breakthrough regarding ancient subterranean qanats.\"\n\nWhich choice correctly introduces the quotation?",
         "options": [
-            "No, because Tyson is an astrophysicist and not an entertainer.",
-            "No, because the show did not win any of the awards.",
-            "Yes, because it is unusual for an astrophysicist to win Emmy awards.",
-            "Yes, because it adds relevant information about the popularity of Tyson's documentary series."
+            "announced to the Arabian Hydro-Heritage Team;",
+            "announced to the Arabian Hydro-Heritage Team:",
+            "announced to the Arabian Hydro-Heritage Team",
+            "announced to the Arabian Hydro-Heritage Team,"
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"Yes, because it adds relevant information about the popularity of Tyson's documentary series.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"announced to the Arabian Hydro-Heritage Team,\". A comma is conventionally used to introduce a direct quotation following a dialogue tag."
     },
     {
         "id": 44,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "The writer has decided to divide the paragraph marked [28] into two. The best place to add the paragraph break would be:",
+        "topic": "Grammar & Usage",
+        "text": "When the ground-penetrating radar struck the basalt formation in Oman, it sustained minor surface abrasions.\n\nWhich revision eliminates the ambiguous pronoun 'it'?",
         "options": [
-            "after sentence 4, because it signals a shift from a discussion of Tyson's work to a section about his honors and acknowledgments.",
-            "after sentence 2, because it would indicate that the writer is going to discuss more detail about Tyson's accomplishments.",
-            "nowhere. The paragraph should not be divided.",
-            "after sentence 3, because the topic shifts from Tyson's film and television experience to his work on a radio show."
+            "When the ground-penetrating radar struck the basalt formation in Oman, the instrument sustained minor surface abrasions.",
+            "When it struck the basalt formation in Oman, the ground-penetrating radar cracked.",
+            "Striking the basalt formation in Oman, it sustained abrasions.",
+            "The ground-penetrating radar and basalt collided in Oman, and it was abraded."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"after sentence 4, because it signals a shift from a discussion of Tyson's work to a section about his honors and acknowledgments.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"When the ground-penetrating radar struck the basalt formation in Oman, the instrument sustained minor surface abrasions.\". Specifying 'the instrument' clarifies which object sustained the abrasions."
     },
     {
         "id": 45,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "If the writer were to delete the phrase 'to appeal to a diverse following' from the sentence marked [26], the paragraph would primarily lose:",
+        "topic": "Sentence Structure",
+        "text": "The telemetry stream from Oman stopped abruptly the ground-penetrating radar battery had completely discharged.\n\nWhich choice correctly repairs the run-on sentence?",
         "options": [
-            "a description of what listeners can expect on Tyson's radio show.",
-            "information about the mission of Tyson's radio show.",
-            "nothing at all because it is not relevant information.",
-            "details about how Tyson chooses his celebrity guests."
+            "The telemetry stream from Oman stopped abruptly, the battery had discharged.",
+            "The telemetry stream from Oman stopped abruptly because the ground-penetrating radar battery had completely discharged.",
+            "Stopping abruptly, the telemetry stream from Oman the battery had discharged.",
+            "The telemetry stream from Oman stopped abruptly and so the battery had discharged."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"information about the mission of Tyson's radio show.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"The telemetry stream from Oman stopped abruptly because the ground-penetrating radar battery had completely discharged.\". Using the subordinating conjunction 'because' establishes the causal relationship and eliminates the fused run-on."
     },
     {
         "id": 46,
         "section": "english",
-        "topic": "Rhetorical Skills",
-        "text": "The writer is considering deleting the following phrase from the sentence marked [49], ending the sentence with a period after the word reservations:\n'the Hualapai, the Kaibab Paiute, and the Navajo'\nIf the writer were to make this deletion, the paragraph would primarily lose:",
+        "topic": "Style & Tone",
+        "text": "The data collected by Amina Al-Mansoor in Oman revealed an astonishing, mind-boggling increase in the concentration of ancient subterranean qanats.\n\nWhich replacement for the underlined phrase best maintains objective scientific neutrality?",
         "options": [
-            "insight into the history of the Grand Canyon.",
-            "nothing because the information is irrelevant.",
-            "information about the background of the Native American people who work in the canyon.",
-            "details about control over the land surrounding the Grand Canyon."
+            "an unbelievable and crazy",
+            "a super massive",
+            "a statistically significant",
+            "a shockingly wild"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"details about control over the land surrounding the Grand Canyon.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"a statistically significant\". 'A statistically significant' provides precise scientific description without sensationalist hyperbole."
     },
     {
         "id": 47,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [46].",
+        "topic": "Transitions",
+        "text": "Amina Al-Mansoor decided not to drill into the fragile geological crust in Oman. [47], the Arabian Hydro-Heritage Team utilized non-invasive acoustic mapping from a safe distance.\n\nWhich transition best presents this alternative approach?",
         "options": [
-            "whose",
-            "of which its",
-            "NO CHANGE",
-            "where"
+            "Furthermore",
+            "Consequently",
+            "Likewise",
+            "Instead"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"whose\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Instead\". 'Instead' correctly introduces the chosen alternative action following a rejected option."
     },
     {
         "id": 48,
         "section": "english",
-        "topic": "Style & Tone",
-        "text": "Which of the following alternatives to the underlined portion [47] would be LEAST acceptable?",
+        "topic": "Rhetorical Skills",
+        "text": "The author wants to ensure smooth cohesion between a paragraph describing fieldwork in Oman and a paragraph detailing laboratory synthesis of ancient subterranean qanats. Which sentence best bridges this transition?",
         "options": [
-            "intersects",
-            "separates",
-            "cuts across",
-            "crosses"
+            "Having gathered these pristine environmental samples in Oman, Amina Al-Mansoor returned to the laboratory to synthesize artificial analogues.",
+            "Laboratory experiments are often conducted in sterile cleanrooms.",
+            "Many scientific discoveries occur unexpectedly during routine maintenance.",
+            "Oman is known for its challenging regional climate."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"separates\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Having gathered these pristine environmental samples in Oman, Amina Al-Mansoor returned to the laboratory to synthesize artificial analogues.\". This bridging sentence links the completion of fieldwork in Oman directly to the laboratory synthesis phase."
     },
     {
         "id": 49,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [50].",
+        "topic": "Wordiness & Redundancy",
+        "text": "Historical precedents from the past history of desert hydrology guided Amina Al-Mansoor's safety protocols in Oman.\n\nWhich revision removes redundant wording?",
         "options": [
-            "had resided",
-            "reside",
-            "are residing",
-            "NO CHANGE"
+            "Past historical precedents from history guided protocols in Oman.",
+            "Historical precedents in desert hydrology guided Amina Al-Mansoor's safety protocols in Oman.",
+            "Precedents from past history guided protocols in Oman.",
+            "Historical precedents from earlier past history guided protocols in Oman."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"reside\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "explanation": "Correct Answer: \"Historical precedents in desert hydrology guided Amina Al-Mansoor's safety protocols in Oman.\". 'Historical precedents' already denotes the past; 'from the past history' is redundant."
     },
     {
         "id": 50,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Choose the best alternative for the underlined portion [48].",
+        "topic": "Punctuation",
+        "text": "Amina Al-Mansoor utilized a state [50] the art ground-penetrating radar to analyze ancient subterranean qanats in Oman.\n\nWhich choice correctly punctuates the compound adjective before the noun?",
         "options": [
-            "exists",
-            "were",
-            "are",
-            "NO CHANGE"
+            "state of the art",
+            "state, of, the, art",
+            "state-of-the-art",
+            "state-of the art"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"are\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "explanation": "Correct Answer: \"state-of-the-art\". Compound adjectives appearing before a noun must be hyphenated ('state-of-the-art ground-penetrating radar')."
     },
     {
         "id": 51,
         "section": "math",
         "topic": "Pre-Algebra",
-        "text": "Jess and Joe both took a math exam. Jess answered 7/8 of the questions correctly. Joe answered 88% correctly. Who scored higher on the exam and by how much?",
+        "text": "A science laboratory orders 68 precision micropipette tips priced at $9.00 per pack. If the supplier provides an educational discount of 21% on the entire order, what is the net total cost before tax?",
         "options": [
-            "Jess by 5%",
-            "Joe by 0.5%",
-            "Jess by 0.5%",
-            "Joe by 5%",
-            "There is not enough information."
+            "$612.00",
+            "$520.20",
+            "$673.20",
+            "$483.48"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: Joe by 0.5%. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of Joe by 0.5%."
+        "answer": 3,
+        "explanation": "Total standard price = 68 × $9.00 = $612.00. Applying 21% discount: $612.00 × (1 &minus; 0.21) = $483.48."
     },
     {
         "id": 52,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "If <i>f</i>(<i>x</i>) = 3<sup><i>x</i></sup> &minus; 2, evaluate <i>f</i>(5).",
+        "topic": "Percentages",
+        "text": "A regional wildlife reserve recorded an initial population of 775 migratory cranes. In year one, the population expanded by 25%, and in year two, seasonal conditions caused an 19% reduction from the new total. What was the population at the end of year two (rounded to the nearest integer)?",
         "options": [
-            "81",
-            "15",
-            "13",
-            "241",
-            "243"
+            "785",
+            "581",
+            "969",
+            "788"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 241. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 241 satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "Year 1 count: 775 × (1 + 0.25) = 968.8. Year 2 count: 968.8 × (1 &minus; 0.19) = 785."
     },
     {
         "id": 53,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Simplify the matrix addition:<br><br><div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">2</td><td style=\"padding:0 4px\">-3</td><td style=\"padding:0 4px\">12</td></tr><tr><td style=\"padding:0 4px\">10</td><td style=\"padding:0 4px\">1</td><td style=\"padding:0 4px\">-8</td></tr></table></div> + <div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">6</td><td style=\"padding:0 4px\">7</td><td style=\"padding:0 4px\">-9</td></tr><tr><td style=\"padding:0 4px\">-1</td><td style=\"padding:0 4px\">3</td><td style=\"padding:0 4px\">5</td></tr></table></div>",
+        "topic": "Elementary Algebra",
+        "text": "Determine the real value of <i>x</i> that satisfies the equation: 18(<i>x</i> &minus; 3) = 67.",
         "options": [
-            "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">8</td><td style=\"padding:0 4px\">4</td><td style=\"padding:0 4px\">3</td></tr><tr><td style=\"padding:0 4px\">9</td><td style=\"padding:0 4px\">-2</td><td style=\"padding:0 4px\">-3</td></tr></table></div>",
-            "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">8</td><td style=\"padding:0 4px\">4</td><td style=\"padding:0 4px\">3</td></tr><tr><td style=\"padding:0 4px\">9</td><td style=\"padding:0 4px\">4</td><td style=\"padding:0 4px\">-3</td></tr></table></div>",
-            "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">8</td><td style=\"padding:0 4px\">4</td><td style=\"padding:0 4px\">3</td></tr><tr><td style=\"padding:0 4px\">11</td><td style=\"padding:0 4px\">4</td><td style=\"padding:0 4px\">-13</td></tr></table></div>",
-            "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">8</td><td style=\"padding:0 4px\">-10</td><td style=\"padding:0 4px\">21</td></tr><tr><td style=\"padding:0 4px\">9</td><td style=\"padding:0 4px\">4</td><td style=\"padding:0 4px\">-13</td></tr></table></div>",
-            "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">8</td><td style=\"padding:0 4px\">4</td><td style=\"padding:0 4px\">3</td></tr><tr><td style=\"padding:0 4px\">11</td><td style=\"padding:0 4px\">-2</td><td style=\"padding:0 4px\">-3</td></tr></table></div>"
+            "3.56",
+            "6.72",
+            "0.72",
+            "9.92"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: 84394-3. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 84394-3 satisfies all conditions of the problem."
+        "explanation": "Divide both sides by 18: <i>x</i> &minus; 3 = 67/18 &rArr; <i>x</i> = 3.72 + 3 = 6.72."
     },
     {
         "id": 54,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Julian is throwing a party. He needs to purchase 120 cans of soda and 4 veggie platters. Soda cans are purchased in sets of 6 at a price of $2.50 per pack. Veggie platters are sold in sets of 2 for $15.00. How much will he spend?",
+        "topic": "Exponents & Radicals",
+        "text": "What is the simplified numerical value of (225)<sup>3/2</sup>?",
         "options": [
-            "$70.00",
-            "$60.00",
-            "$90.00",
-            "$100.00",
-            "$80.00"
+            "50625",
+            "45",
+            "3375",
+            "225"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: $80.00. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of $80.00."
+        "answer": 2,
+        "explanation": "(225)<sup>3/2</sup> = (&radic;225)<sup>3</sup> = (15)<sup>3</sup> = 3375."
     },
     {
         "id": 55,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "The volume, <i>V</i>, of a cone with radius <i>r</i> and height <i>h</i> can be found using the formula <i>V</i> = <sup>1</sup>&frasl;<sub>3</sub>&pi;<i>r</i><sup>2</sup><i>h</i>. A particular hourglass is made from 2 cones. The diameter of the base of each cone is 3 centimeters, and the height of the 2 cones combined is 12 centimeters. If the hourglass holds 4 cubic centimeters of sand, how much empty space remains inside the hourglass?",
+        "topic": "Coordinate Geometry",
+        "text": "Which equation represents the line in the standard coordinate plane that passes through (13, 31) and runs parallel to <i>y</i> = 16<i>x</i> &minus; 15?",
         "options": [
-            "4.5 cm<sup>3</sup>",
-            "0.23 cm<sup>3</sup>",
-            "24.3 cm<sup>3</sup>",
-            "5.0 cm<sup>3</sup>",
-            "0.5 cm<sup>3</sup>"
+            "<i>y</i> = &minus;16<i>x</i> &minus; 177",
+            "<i>y</i> = 16<i>x</i> + 41",
+            "<i>y</i> = (1/16)<i>x</i> + 18",
+            "<i>y</i> = 16<i>x</i> &minus; 177"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 24.3 cm3. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 24.3 cm3."
+        "answer": 3,
+        "explanation": "Parallel lines have identical slope <i>m</i> = 16. Using point-slope: <i>y</i> &minus; 31 = 16(<i>x</i> &minus; 13) &rArr; <i>y</i> = 16<i>x</i> &minus; 177."
     },
     {
         "id": 56,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "If <i>f</i>(<i>x</i>) = <i>x</i><sup>2</sup> + 3 and <i>g</i>(<i>x</i>) = 3<i>x</i> &minus; 12, then <i>f</i>(<i>g</i>(5)) =",
+        "topic": "Plane Geometry",
+        "text": "In a plane geometric construction, ray <i>PT</i> intersects line <i>RS</i> at point <i>P</i>. If &ang;<i>RPT</i> measures 93&deg;, what is the exact measure of adjacent angle &ang;<i>TPS</i>?",
         "options": [
-            "3",
-            "144",
-            "72",
-            "12",
-            "28"
+            "87&deg;",
+            "93&deg;",
+            "108&deg;",
+            "67&deg;"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 12. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 12 satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "Adjacent angles forming a linear pair sum to 180&deg;. &ang;<i>TPS</i> = 180&deg; &minus; 93&deg; = 87&deg;."
     },
     {
         "id": 57,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Angie purchases a pair of running shoes on clearance for $48.00. If the shoes originally cost $80.00, what was her total discount percentage?",
+        "topic": "Intermediate Algebra",
+        "text": "Find the unique solution pair (<i>x</i>, <i>y</i>) that satisfies the system:\n\n<i>x</i> + <i>y</i> = 21\n2<i>x</i> &minus; <i>y</i> = 30",
         "options": [
-            "40%",
-            "60%",
-            "45%",
-            "30%",
-            "50%"
+            "<i>x</i> = 19, <i>y</i> = 3",
+            "<i>x</i> = 17, <i>y</i> = 4",
+            "<i>x</i> = 9, <i>y</i> = 15",
+            "<i>x</i> = &minus;17, <i>y</i> = 4"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: 40%. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 40%."
+        "answer": 1,
+        "explanation": "Adding equations: 3<i>x</i> = 51 &rArr; <i>x</i> = 17. Then <i>y</i> = 21 &minus; 17 = 4."
     },
     {
         "id": 58,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "If <i>A</i> = [ &minus;5 &nbsp; 2 &nbsp; 4 ] and <i>B</i> = <div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">0</td><td style=\"padding:0 4px\">-3</td></tr><tr><td style=\"padding:0 4px\">10</td><td style=\"padding:0 4px\">-6</td></tr><tr><td style=\"padding:0 4px\">7</td><td style=\"padding:0 4px\">-1</td></tr></table></div>, what is <i>AB</i>?",
+        "topic": "Trigonometry",
+        "text": "In right triangle &Delta;<i>PQR</i> with &ang;<i>Q</i> = 90&deg;, side <i>PQ</i> has length 33 and hypotenuse <i>PR</i> has length 64. What is the exact value of cos(&ang;<i>P</i>)?",
         "options": [
-            "The matrices cannot be multiplied.",
-            "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">15</td></tr><tr><td style=\"padding:0 4px\">8</td></tr><tr><td style=\"padding:0 4px\">24</td></tr></table></div>",
-            "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">48</td><td style=\"padding:0 4px\">-1</td></tr></table></div>",
-            "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">85</td><td style=\"padding:0 4px\">34</td><td style=\"padding:0 4px\">68</td></tr></table></div>",
-            "<div style=\"display:inline-flex;align-items:center;border-left:2px solid;border-right:2px solid;border-radius:4px;padding:0 4px;margin:0 4px\"><table style=\"text-align:center;border-spacing:8px 4px\"><tr><td style=\"padding:0 4px\">40</td><td style=\"padding:0 4px\">0</td></tr></table></div>"
+            "64/33",
+            "&radic;(3007)/64",
+            "33/64",
+            "1"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: 48-1. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 48-1 satisfies all conditions of the problem."
+        "explanation": "cos(&ang;<i>P</i>) = Adjacent / Hypotenuse = <i>PQ</i> / <i>PR</i> = 33/64."
     },
     {
         "id": 59,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Patrick is coming home from vacation and wants to fill one of his suitcases with bags of coffee. The weight limit for his suitcase is 20 kilograms, and the suitcase itself weighs 2.0 kilograms. If each bag of coffee weighs 600 grams, how many bags can he bring without going over the limit?",
+        "topic": "Statistics & Probability",
+        "text": "What is the median value of the sorted numerical collection: { 109, 113, 118, 125, 134, 147, 160 }?",
         "options": [
-            "30 bags",
-            "40 bags",
-            "10 bags",
-            "20 bags",
-            "15 bags"
+            "113",
+            "147",
+            "160",
+            "125"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: 30 bags. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 30 bags."
+        "answer": 3,
+        "explanation": "For an ordered dataset of 7 elements, the median is the 4th element: 125."
     },
     {
         "id": 60,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Which of the following is an irrational number?",
+        "topic": "Ratios & Proportions",
+        "text": "A metallurgical alloy requires copper and zinc in a mass ratio of 16:30. If a foundry batch contains 816 kg of copper, how many kilograms of zinc must be blended?",
         "options": [
-            "5",
-            "16",
-            "&radic;2",
-            "0.75",
-            "1.085"
+            "1530 kg",
+            "1544 kg",
+            "1519 kg",
+            "841 kg"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: &radic;2. Step-by-step solution: An irrational number is a real number that cannot be expressed as a simple fraction a/b where a and b are integers. The square root of 2 (√2) is non-repeating and non-terminating (approximately 1.4142135...), making it irrational. In contrast, integers (5, 16) and terminating decimals (1.085, 0.75) are all rational."
+        "answer": 0,
+        "explanation": "Ratio: 16/30 = 816/<i>z</i> &rArr; <i>z</i> = (30 × 816) / 16 = 1530 kg."
     },
     {
         "id": 61,
         "section": "math",
         "topic": "Pre-Algebra",
-        "text": "A pizza has a diameter of 10 inches. If you cut a slice with a central angle of 40&deg;, what will be the surface area of the pizza slice?",
+        "text": "Find the greatest common factor (GCF) of 920 and 1380.",
         "options": [
-            "3.5 in<sup>2</sup>",
-            "10.0 in<sup>2</sup>",
-            "17.4 in<sup>2</sup>",
-            "9.2 in<sup>2</sup>",
-            "8.7 in<sup>2</sup>"
+            "230",
+            "920",
+            "2760",
+            "460"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 8.7 in2. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 8.7 in2."
+        "answer": 3,
+        "explanation": "GCF(920, 1380) = 230 × GCF(4, 6) = 230 × 2 = 460."
     },
     {
         "id": 62,
         "section": "math",
-        "topic": "Plane Geometry",
-        "text": "Points B and C are on a circle, and a chord is formed by line segment BC. If the distance from the center of the circle to point B is 5 centimeters, and the distance from the center of the circle to line segment BC is 3 centimeters, what is the length of line segment BC?",
+        "topic": "Elementary Algebra",
+        "text": "Solve for <i>x</i> in the equation: 4<i>x</i> &minus; 231 = 3<i>x</i> + 345.",
         "options": [
-            "3 centimeters",
-            "8 centimeters",
-            "6 centimeters",
-            "10 centimeters",
-            "4 centimeters"
+            "576",
+            "114",
+            "462",
+            "582"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 8 centimeters. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 8 centimeters."
+        "answer": 0,
+        "explanation": "4<i>x</i> &minus; 3<i>x</i> = 345 + 231 &rArr; <i>x</i> = 576."
     },
     {
         "id": 63,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "The volume, <i>V</i>, of a cylinder with radius <i>r</i> and height <i>h</i> can be found using the formula <i>V</i> = &pi;<i>r</i><sup>2</sup><i>h</i>. If a cylindrical canister is 9 inches high and has a diameter of 5 inches, what is the maximum volume this canister can hold?",
+        "topic": "Plane Geometry",
+        "text": "A rectangular courtyard has length 242 meters and width 352 meters. What is its total perimeter?",
         "options": [
-            "141.4 in<sup>3</sup>",
-            "45&pi; in<sup>3</sup>",
-            "176.7 in<sup>3</sup>",
-            "706.5 in<sup>3</sup>",
-            "177.9 in<sup>3</sup>"
+            "85184 m",
+            "1188 m",
+            "594 m",
+            "1200 m"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 176.7 in3. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 176.7 in3."
+        "answer": 1,
+        "explanation": "Perimeter = 2(Length + Width) = 2(242 + 352) = 1188 m."
     },
     {
         "id": 64,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Consider the equations |3<i>x</i> &minus; 5| = 23 and |10 + 4<i>y</i>| = 12. If <i>x</i> and <i>y</i> are both negative numbers, what is |<i>y</i> &minus; <i>x</i>|?",
+        "topic": "Exponents & Radicals",
+        "text": "Simplify the algebraic expression: (<i>y</i><sup>15</sup>)<sup>16</sup> &middot; <i>y</i><sup>4</sup>.",
         "options": [
-            "5.5",
-            "8.0",
-            "4.0",
-            "19.2",
-            "0.5"
+            "<i>y</i><sup>247</sup>",
+            "<i>y</i><sup>242</sup>",
+            "<i>y</i><sup>244</sup>",
+            "<i>y</i><sup>488</sup>"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 0.5. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 0.5 satisfies all conditions of the problem."
+        "answer": 2,
+        "explanation": "(<i>y</i><sup>15</sup>)<sup>16</sup> = <i>y</i><sup>240</sup>. Multiplying by <i>y</i><sup>4</sup> gives <i>y</i><sup>244</sup>."
     },
     {
         "id": 65,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "In a particular raffle, a single ticket will be randomly drawn from a bag containing all the purchased tickets. If someone who buys 2 tickets has a 0.4% chance of winning, how many tickets were bought in total?",
+        "topic": "Trigonometry",
+        "text": "In right triangle &Delta;<i>ABC</i>, acute angle &theta; has tan(&theta;) = 14/17. What is cot(&theta;)?",
         "options": [
-            "250 tickets",
-            "25 tickets",
-            "8 tickets",
-            "50 tickets",
-            "500 tickets"
+            "14/17",
+            "1",
+            "&minus;17/14",
+            "17/14"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 500 tickets. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 500 tickets."
+        "answer": 3,
+        "explanation": "cot(&theta;) = 1 / tan(&theta;) = 17/14."
     },
     {
         "id": 66,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Solve for <i>x</i>: 8(<i>x</i> + 5) = &minus;3<i>x</i> &minus; 48",
+        "topic": "Coordinate Geometry",
+        "text": "Determine the midpoint of the line segment joining (235, 353) and (243, 365).",
         "options": [
-            "x = 8",
-            "x = -0.625",
-            "x = 12.8",
-            "x = 0.625",
-            "x = -8"
+            "(239, 359)",
+            "(243, 365)",
+            "(237, 356)",
+            "(241, 361)"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: x = -8. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x = -8 satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "Midpoint = ((235 + 243)/2, (353 + 365)/2) = (239, 359)."
     },
     {
         "id": 67,
         "section": "math",
-        "topic": "Plane Geometry",
-        "text": "The area of a right triangle is 18 square centimeters. If one of its angles measures 45&deg;, what is the length of its hypotenuse?",
+        "topic": "Intermediate Algebra",
+        "text": "If quadratic function <i>h</i>(<i>x</i>) = 3<i>x</i><sup>2</sup> &minus; 236, evaluate <i>h</i>(4).",
         "options": [
-            "12 centimeters",
-            "4.2 centimeters",
-            "8.5 centimeters",
-            "9.8 centimeters",
-            "6 centimeters"
+            "284",
+            "-188",
+            "-212",
+            "-177"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 8.5 centimeters. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 8.5 centimeters."
+        "answer": 1,
+        "explanation": "<i>h</i>(4) = 3(4)<sup>2</sup> &minus; 236 = 3(16) &minus; 236 = 48 &minus; 236 = -188."
     },
     {
         "id": 68,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "The number of college applicants increased in 2015 by 8%. This is 20% larger than the percentage increase in 2014. What was the percentage increase in college applicants in 2014?",
+        "topic": "Statistics & Probability",
+        "text": "A lottery drum contains numbered tokens from 1 through 257. If a single token is selected at random, what is the probability that it is divisible by 5?",
         "options": [
-            "7.5%",
-            "2%",
-            "4%",
-            "6.67%",
-            "5%"
+            "54/257",
+            "1/257",
+            "51/257",
+            "50/257"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 6.67%. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 6.67%."
+        "answer": 2,
+        "explanation": "There are 51 multiples of 5 within 1 to 257. Probability = 51/257."
     },
     {
         "id": 69,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Some of a hotel's 200 rooms have 2 full beds and the rest have 1 queen bed. If the probability of getting a room with 2 full beds is 65%, how many rooms have 1 queen bed?",
+        "topic": "Percentages",
+        "text": "A laboratory apparatus originally priced at $4760 is discounted by 18%. What is the discounted price?",
         "options": [
-            "135 rooms",
-            "70 rooms",
-            "50 rooms",
-            "130 rooms",
-            "175 rooms"
+            "$4284.00",
+            "$3094.00",
+            "$4760.00",
+            "$3903.20"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 70 rooms. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 70 rooms."
+        "answer": 3,
+        "explanation": "Discounted price = $4760 × (1 &minus; 0.18) = $3903.20."
     },
     {
         "id": 70,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Which of the following mathematical expressions is equivalent to 2(<i>x</i> + <i>y</i>) / <i>z</i>?",
+        "topic": "Plane Geometry",
+        "text": "What is the area of a right triangle with base 478 mm and perpendicular height 722 mm?",
         "options": [
-            "2 / [z(<i>x</i> + <i>y</i>)]",
-            "(<i>x</i> + <i>y</i>)/<i>z</i> * 1/2",
-            "1/<i>z</i> * (2<i>x</i> + 2<i>y</i>)",
-            "z(2<i>x</i> + 2<i>y</i>)",
-            "2/<i>z</i> + (<i>x</i> + <i>y</i>)/<i>z</i>"
+            "172558 mm<sup>2</sup>",
+            "345116 mm<sup>2</sup>",
+            "86279 mm<sup>2</sup>",
+            "4800 mm<sup>2</sup>"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 1/z * (2x + 2y). Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 1/z * (2x + 2y) satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "Area = (1/2) × base × height = (1/2) × 478 × 722 = 172558 mm<sup>2</sup>."
     },
     {
         "id": 71,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Andy needs to make a pie and some cupcakes. He uses half of his butter to make the pie, and then uses half of the remaining butter to make the cupcakes. If he has 3 cups of butter left, how much did he have before he made the pie?",
+        "topic": "Intermediate Algebra",
+        "text": "Solve the absolute value equation: |3<i>x</i> &minus; 720| = 1089.",
         "options": [
-            "8 cups",
-            "6 cups",
-            "12 cups",
-            "16 cups",
-            "10 cups"
+            "<i>x</i> = 603",
+            "<i>x</i> = 603 or <i>x</i> = -123",
+            "<i>x</i> = -123",
+            "<i>x</i> = &minus;603 or <i>x</i> = &minus;-123"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 12 cups. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 12 cups."
+        "answer": 1,
+        "explanation": "3<i>x</i> &minus; 720 = 1089 &rArr; <i>x</i> = 603; 3<i>x</i> &minus; 720 = &minus;1089 &rArr; <i>x</i> = -123."
     },
     {
         "id": 72,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "A plane makes a trip of 246 miles. For some amount of time, the plane's speed is 115 miles per hour. For the remainder of the trip, the plane's speed is 250 miles per hour. If the total trip time is 72 minutes, how long did the plane fly at 115 miles per hour?",
+        "topic": "Coordinate Geometry",
+        "text": "A circle in the standard coordinate plane has equation (<i>x</i> + 241)<sup>2</sup> + (<i>y</i> &minus; 365)<sup>2</sup> = 214369. What is its radius?",
         "options": [
-            "37 minutes",
-            "34 minutes",
-            "23 minutes",
-            "18 minutes",
-            "24 minutes"
+            "214369 units",
+            "244 units",
+            "463 units",
+            "372 units"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 24 minutes. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 24 minutes."
+        "answer": 2,
+        "explanation": "In (<i>x</i> &minus; <i>h</i>)<sup>2</sup> + (<i>y</i> &minus; <i>k</i>)<sup>2</sup> = <i>r</i><sup>2</sup>, the radius <i>r</i> = &radic;(214369) = 463 units."
     },
     {
         "id": 73,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "A data set contains <i>n</i> points with a mean of &mu;. If a new data point with the value <i>x</i> is included in the data set, which of the following expressions is equal to the new mean?",
+        "topic": "Trigonometry",
+        "text": "Convert the angle 3630&deg; into radian measure.",
         "options": [
-            "&mu;<i>xn</i>/(<i>n</i> + 1)",
-            "(&mu;<i>n</i> + <i>x</i>)/(<i>n</i> + 1)",
-            "(&mu; + <i>x</i>)<i>n</i>/(<i>n</i> + 1)",
-            "(&mu; + <i>x</i>)/<i>n</i>",
-            "(&mu;<i>n</i> + <i>x</i>)/<i>n</i>"
+            "121&pi;/8",
+            "6&pi;/122",
+            "(3630/360)&pi;",
+            "121&pi;/6"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: (&mu;n + x)/(n + 1). Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of (&mu;n + x)/(n + 1)."
+        "answer": 3,
+        "explanation": "Radians = (Degrees × &pi;) / 180 = (3630&pi;) / 180 = 121&pi;/6."
     },
     {
         "id": 74,
         "section": "math",
-        "topic": "Trigonometry",
-        "text": "Right triangle <i>ABC</i> has leg <i>AB</i> = 15 inches. If angle <i>BAC</i> = 35&deg;, find hypotenuse <i>AC</i>.",
+        "topic": "Pre-Algebra",
+        "text": "An arithmetic sequence has initial term <i>a</i><sub>1</sub> = 243 and common difference <i>d</i> = 16. What is the 10th term, <i>a</i><sub>10</sub>?",
         "options": [
-            "12.3 inches",
-            "18.3 inches",
-            "15.0 inches",
-            "21.4 inches",
-            "26.1 inches"
+            "387",
+            "379",
+            "399",
+            "483"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 18.3 inches. Step-by-step solution: Use fundamental trigonometric definitions (sin = opp/hyp, cos = adj/hyp, tan = opp/adj) or trigonometric identities to simplify the expression, arriving at 18.3 inches."
+        "answer": 0,
+        "explanation": "<i>a</i><sub>10</sub> = <i>a</i><sub>1</sub> + (10 &minus; 1)<i>d</i> = 243 + 9(16) = 387."
     },
     {
         "id": 75,
         "section": "math",
         "topic": "Elementary Algebra",
-        "text": "Solve for <i>x</i>: 16<i>x</i><sup>2</sup> + 8<i>x</i> + 1 = 0",
+        "text": "Factor the quadratic binomial completely: <i>x</i><sup>2</sup> &minus; 62001.",
         "options": [
-            "x = 1, 4",
-            "x = -4",
-            "x = 4",
-            "x = -1/4",
-            "x = -4, 4"
+            "(<i>x</i> &minus; 249)<sup>2</sup>",
+            "(<i>x</i> &minus; 249)(<i>x</i> + 249)",
+            "(<i>x</i> + 249)<sup>2</sup>",
+            "(<i>x</i> &minus; 498)(<i>x</i> + 2)"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: x = -1/4. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x = -1/4 satisfies all conditions of the problem."
+        "answer": 1,
+        "explanation": "Difference of squares: <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup> = (<i>a</i> &minus; <i>b</i>)(<i>a</i> + <i>b</i>)."
     },
     {
         "id": 76,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "A material's specific heat capacity is the amount of energy needed to increase the temperature of 1 gram of that material by 1 degree Celsius. If the specific heat capacity of aluminum is 0.900 J/(g&middot;&deg;C), how many joules of energy does it take to increase the temperature of 2 grams of aluminum by 4 degrees Celsius?",
+        "topic": "Statistics & Probability",
+        "text": "From a cohort of 25 researchers, how many distinct 2-person subcommittees can be formed?",
         "options": [
-            "7.2 joules",
-            "5.6 joules",
-            "3.6 joules",
-            "0.1 joules",
-            "9.0 joules"
+            "600",
+            "50",
+            "300",
+            "310"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: 7.2 joules. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 7.2 joules."
+        "answer": 2,
+        "explanation": "<i>C</i>(25, 2) = (25 × 24) / 2 = 300."
     },
     {
         "id": 77,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Simplify the algebraic expression: (<i>x</i><sup>2</sup>)<sup>3</sup> &middot; <i>x</i><sup>4</sup>",
+        "topic": "Intermediate Algebra",
+        "text": "Simplify the complex number product: (15 + 2<i>i</i>)(3 &minus; <i>i</i>), where <i>i</i><sup>2</sup> = &minus;1.",
         "options": [
-            "<i>x</i><sup>10</sup>",
-            "<i>x</i><sup>5</sup>",
-            "<i>x</i><sup>9</sup>",
-            "<i>x</i><sup>24</sup>",
-            "<i>x</i><sup>2</sup>"
+            "47 &minus; -4<i>i</i>",
+            "53 + <i>i</i>",
+            "45 &minus; 4<i>i</i>",
+            "47 &minus; 9<i>i</i>"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: x10. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x10 satisfies all conditions of the problem."
+        "answer": 3,
+        "explanation": "(15 + 2<i>i</i>)(3 &minus; <i>i</i>) = 45 &minus; 15<i>i</i> + 6<i>i</i> &minus; 2<i>i</i><sup>2</sup> = 47 + -9<i>i</i>."
     },
     {
         "id": 78,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Rafael and Marco are repainting their garage. If Rafael can paint 1/6 of the garage in 20 minutes, and Marco can paint 1/5 of the garage in 30 minutes, how long will it take them to paint the entire garage if they work together?",
+        "topic": "Plane Geometry",
+        "text": "A solid geometric cone has a circular base radius of 16 cm and a height of 19 cm. What is its volume?",
         "options": [
-            "2 hour, 43.6 minutes",
-            "1 hour, 6.7 minutes",
-            "0 hour, 54 minutes",
-            "0 hour, 18 minutes",
-            "6 hour, 12 minutes"
+            "1621.3&pi; cm<sup>3</sup>",
+            "4053.3&pi; cm<sup>3</sup>",
+            "810.6&pi; cm<sup>3</sup>",
+            "608&pi; cm<sup>3</sup>"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 1 hour, 6.7 minutes. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 1 hour, 6.7 minutes."
+        "answer": 0,
+        "explanation": "Volume = (1/3)&pi;<i>r</i><sup>2</sup><i>h</i> = (1/3)&pi;(16)<sup>2</sup>(19) = 1621.3&pi; cm<sup>3</sup>."
     },
     {
         "id": 79,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Find all possible values of <i>x</i> that satisfy the following system of inequalities: 16 &minus; <i>x</i> &le; 7<i>x</i> and 2<i>x</i> &minus; 40 &lt; 6.",
+        "topic": "Ratios & Proportions",
+        "text": "If variable <i>u</i> is inversely proportional to <i>v</i>, and <i>u</i> = 496 when <i>v</i> = 3, what is <i>u</i> when <i>v</i> = 6?",
         "options": [
-            "2 &lt; <i>x</i> &le; 23",
-            "2 &le; <i>x</i> &lt; 23",
-            "2 &le; <i>x</i> &le; 23",
-            "x &ge; 2",
-            "2 &lt; <i>x</i> &lt; 23"
+            "744",
+            "248",
+            "124",
+            "1240"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: 2 &le; x < 23. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 2 &le; x < 23 satisfies all conditions of the problem."
+        "explanation": "Inverse variation: <i>u</i> &middot; <i>v</i> = <i>k</i> &rArr; <i>k</i> = 496 × 3 = 1488. When <i>v</i> = 6, <i>u</i> = 1488 / 6 = 248."
     },
     {
         "id": 80,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Which of the following expressions can be simplified to 8<i>x</i>?",
+        "topic": "Coordinate Geometry",
+        "text": "What is the <i>x</i>-intercept of the linear equation 5<i>x</i> &minus; 2<i>y</i> = 2490?",
         "options": [
-            "(5<i>x</i><sup>2</sup> + 9<i>x</i>) &minus; (5<i>x</i><sup>2</sup> + <i>x</i>)",
-            "10 &minus; 2(x + 4) + 1",
-            "(5<i>x</i><sup>2</sup> + 9<i>x</i>) &minus; (5<i>x</i><sup>2</sup> + 6<i>x</i>)",
-            "8<i>x</i>(x + 1) &minus; <i>x</i><sup>2</sup>",
-            "16<i>x</i><sup>2</sup> / 2x"
+            "(0, 498)",
+            "(996, 0)",
+            "(498, 0)",
+            "(&minus;498, 0)"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: (5x2 + 9x) &minus; (5x2 + x). Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that (5x2 + 9x) &minus; (5x2 + x) satisfies all conditions of the problem."
+        "answer": 2,
+        "explanation": "Set <i>y</i> = 0 &rArr; 5<i>x</i> = 2490 &rArr; <i>x</i> = 498. Intercept is (498, 0)."
     },
     {
         "id": 81,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "A bag contains twice as many red marbles as blue marbles, and the number of blue marbles is 60% of the number of green marbles. If <i>g</i> represents the number of green marbles, which of the following expressions represents the total number of marbles in the bag?",
+        "topic": "Exponents & Radicals",
+        "text": "Simplify the radical product: &radic;(750) &middot; &radic;(3000).",
         "options": [
-            "2.00g",
-            "2.60g",
-            "3.00g",
-            "2.80g",
-            "2.20g"
+            "3000",
+            "1000",
+            "1515",
+            "1500"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 2.20g. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 2.20g."
+        "answer": 3,
+        "explanation": "&radic;(750 × 3000) = &radic;(2250000) = 250 × 6 = 1500."
     },
     {
         "id": 82,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Evaluate the expression |3<i>x</i> &minus; <i>y</i>| + |2<i>y</i> &minus; <i>x</i>| if <i>x</i> = &minus;4 and <i>y</i> = &minus;1.",
+        "topic": "Intermediate Algebra",
+        "text": "Evaluate the logarithmic expression: log<sub>18</sub>(5832).",
         "options": [
-            "11",
-            "12",
-            "10",
-            "13",
-            "14"
+            "3",
+            "2",
+            "18",
+            "4"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 13. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 13 satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "log<sub>18</sub>(18<sup>3</sup>) = 3."
     },
     {
         "id": 83,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Ashley has been training for a 10 kilometer race. Her average training pace is 8 minutes and 15 seconds per mile. If she maintains this pace during the race, what will be her finishing time? (1 mile = 5280 feet; 1 foot = 0.3048 meters)",
+        "topic": "Plane Geometry",
+        "text": "In a circle with radius 256 cm, calculate the area of a sector with a central angle of 60&deg;.",
         "options": [
-            "50 minutes, 53 seconds",
-            "52 minutes, 42 seconds",
-            "52 minutes, 30 seconds",
-            "51 minutes, 16 seconds",
-            "51 minutes, 23 seconds"
+            "27306.67&pi; cm<sup>2</sup>",
+            "10922.67&pi; cm<sup>2</sup>",
+            "5461.34&pi; cm<sup>2</sup>",
+            "768&pi; cm<sup>2</sup>"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 51 minutes, 16 seconds. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 51 minutes, 16 seconds."
+        "answer": 1,
+        "explanation": "Sector Area = &pi;<i>r</i><sup>2</sup>(&theta;/360&deg;) = &pi;(256)<sup>2</sup>(60&deg;/360&deg;) = 10922.67&pi; cm<sup>2</sup>."
     },
     {
         "id": 84,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Melissa is ordering fencing to enclose a square area of 2500 square feet. How many feet of fencing does she need?",
+        "topic": "Elementary Algebra",
+        "text": "Solve for <i>w</i> in the rational equation: <i>w</i>/5 + <i>w</i>/2 = 1771.",
         "options": [
-            "200 feet",
-            "50 feet",
-            "5000 feet",
-            "2500 feet",
-            "100 feet"
+            "1771",
+            "1265",
+            "2530",
+            "3542"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: 200 feet. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 200 feet."
+        "answer": 2,
+        "explanation": "Common denominator: (2<i>w</i> + 5<i>w</i>)/10 = 7<i>w</i>/10 = 1771 &rArr; <i>w</i> = 10 × 253 = 2530."
     },
     {
         "id": 85,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "The average height of female students in a class is 63 inches, and the average height of male students in the class is 68 inches. If there are 1.5 times as many female students as male students, what is the average height for the entire class?",
+        "topic": "Trigonometry",
+        "text": "If &theta; is an acute angle in test 13 with sin(&theta;) = 1/2, what is the value of cos(&theta;)?",
         "options": [
-            "65.5 inches",
-            "64.5 inches",
-            "65.0 inches",
-            "66.0 inches",
-            "66.5 inches"
+            "1/2",
+            "&radic;2/2",
+            "1",
+            "&radic;3/2"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 65.0 inches. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 65.0 inches."
+        "answer": 3,
+        "explanation": "In a 30&deg;-60&deg;-90&deg; special triangle where sin(30&deg;) = 1/2, cos(30&deg;) = &radic;3/2."
     },
     {
         "id": 86,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Solve for <i>x</i>: 4<i>x</i><sup>2</sup> &minus; 2<i>x</i> &gt; 6",
+        "topic": "Statistics & Probability",
+        "text": "A sample container has 16 red beads, 17 blue beads, and 18 green beads. What is the probability of drawing a red bead?",
         "options": [
-            "&minus;3 &lt; <i>x</i> &lt; 2",
-            "<i>x</i> &lt; &minus;1, <i>x</i> &gt; 1.5",
-            "&minus;1 &lt; <i>x</i> &lt; 1.5",
-            "&minus;2 &lt; <i>x</i> &lt; 3",
-            "<i>x</i> &lt; &minus;2, <i>x</i> &gt; 3"
+            "16/51",
+            "17/51",
+            "18/51",
+            "1/51"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: x < &minus;1, x > 1.5. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x < &minus;1, x > 1.5 satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "Probability = (Red beads) / (Total beads) = 16 / (16 + 17 + 18) = 16/51."
     },
     {
         "id": 87,
         "section": "math",
-        "topic": "Elementary Algebra",
-        "text": "Which expression is equivalent to 9<i>x</i><sup>2</sup> + 42<i>xy</i> + 49<i>y</i><sup>2</sup>?",
+        "topic": "Intermediate Algebra",
+        "text": "Determine the discriminant &Delta; for the quadratic equation 2<i>x</i><sup>2</sup> + 8<i>x</i> + 17 = 0.",
         "options": [
-            "(3<i>x</i> + 7<i>y</i>)(3<i>x</i> &minus; 7)",
-            "(3<i>x</i> + 7)(<i>x</i> + <i>y</i>)",
-            "(3<i>x</i> + 7<i>y</i>)(3<i>x</i> &minus; 7<i>y</i>)",
-            "(3<i>x</i> + 7<i>y</i>)<sup>2</sup>",
-            "(3<i>x</i> &minus; 7<i>y</i>)<sup>2</sup>"
+            "-56",
+            "-72",
+            "200",
+            "-86"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: (3x + 7y)2. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that (3x + 7y)2 satisfies all conditions of the problem."
+        "answer": 1,
+        "explanation": "Discriminant &Delta; = <i>b</i><sup>2</sup> &minus; 4<i>ac</i> = 8<sup>2</sup> &minus; 4(2)(17) = 64 &minus; 136 = -72."
     },
     {
         "id": 88,
         "section": "math",
-        "topic": "Plane Geometry",
-        "text": "If a rectangular field has a perimeter of 60 yards and a length of 54 feet, what is the field's width?",
+        "topic": "Coordinate Geometry",
+        "text": "Calculate the slope of the line passing through coordinates (4, 257) and (7, 272).",
         "options": [
-            "6 yards",
-            "36 feet",
-            "24 feet",
-            "30 yards",
-            "48 feet"
+            "1/5",
+            "15",
+            "5",
+            "3/7"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 36 feet. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 36 feet."
+        "answer": 2,
+        "explanation": "Slope <i>m</i> = (272 &minus; 257) / (7 &minus; 4) = 15/3 = 5."
     },
     {
         "id": 89,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "A swimmer is swimming 50 meter sprints. If he swims 2 sprints in 3 minutes, 4 more sprints in 5 minutes, and then 2 final sprints in 2 minutes, what was his average speed during his sprints?",
+        "topic": "Percentages",
+        "text": "What is 23% of 7980?",
         "options": [
-            "40 meters per minute",
-            "60 meters per minute",
-            "50 meters per minute",
-            "20 meters per minute",
-            "80 meters per minute"
+            "1847.4",
+            "1827.4",
+            "3591.0",
+            "1835.4"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: 40 meters per minute. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 40 meters per minute."
+        "answer": 3,
+        "explanation": "(23/100) × 7980 = 1835.4."
     },
     {
         "id": 90,
         "section": "math",
-        "topic": "Coordinate Geometry",
-        "text": "If line <i>l</i><sub>1</sub> is perpendicular to line <i>l</i><sub>2</sub> and the equation of <i>l</i><sub>1</sub> is <i>y</i> = 2.5<i>x</i> &minus; 3, what is the slope of the line <i>l</i><sub>2</sub>?",
+        "topic": "Plane Geometry",
+        "text": "The hypotenuse of an isosceles right triangle is 1036&radic;2 cm. What is the length of each leg?",
         "options": [
-            "0.4",
-            "-0.2",
-            "-2.5",
-            "-0.4",
-            "0.33"
+            "1036 cm",
+            "518 cm",
+            "2072 cm",
+            "1042 cm"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: -0.4. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields -0.4."
+        "answer": 0,
+        "explanation": "In a 45&deg;-45&deg;-90&deg; right triangle, Hypotenuse = Leg &middot; &radic;2 &rArr; Leg = 1036 cm."
     },
     {
         "id": 91,
         "section": "math",
         "topic": "Pre-Algebra",
-        "text": "If <i>f</i>(<i>x</i>) = 0.5<sup><i>x</i></sup> + 1, evaluate <i>f</i>(&minus;2).",
+        "text": "Evaluate the arithmetic expression: |&minus;1040| &minus; |806| + |&minus;6|.",
         "options": [
-            "4",
-            "0.75",
-            "1.25",
-            "2",
-            "5"
+            "254",
+            "240",
+            "230",
+            "1852"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 5. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 5."
+        "answer": 1,
+        "explanation": "1040 &minus; 806 + 6 = 240."
     },
     {
         "id": 92,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "Adam owns 4 times as many shirts as he has pairs of pants, and he has 5 pairs of pants for every 2 pairs of shoes. What is the ratio of Adam's shirts to Adam's shoes?",
+        "topic": "Intermediate Algebra",
+        "text": "Given <i>f</i>(<i>x</i>) = 2<i>x</i> + 5 and <i>g</i>(<i>x</i>) = 3<i>x</i>, evaluate the composite function <i>f</i>(<i>g</i>(15)).",
         "options": [
-            "25 shirts : 1 pair shoes",
-            "25 shirts : 2 pairs shoes",
-            "15 shirts : 2 pairs shoes",
-            "20 shirts : 1 pair shoes",
-            "10 shirts : 1 pair shoes"
+            "102",
+            "40",
+            "95",
+            "105"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 10 shirts : 1 pair shoes. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of 10 shirts : 1 pair shoes."
+        "answer": 2,
+        "explanation": "<i>g</i>(15) = 3(15) = 45. Then <i>f</i>(45) = 2(45) + 5 = 95."
     },
     {
         "id": 93,
         "section": "math",
-        "topic": "Intermediate Algebra",
-        "text": "Find the common ratio for a geometric sequence with terms <i>a</i><sub>1</sub> = &minus;2 and <i>a</i><sub>6</sub> = 486.",
+        "topic": "Elementary Algebra",
+        "text": "Solve for <i>z</i> in the linear relation: 6<i>z</i> &minus; 1572 = 0.",
         "options": [
-            "-3",
-            "-6",
-            "40.5",
-            "-243",
-            "-2.5"
+            "266",
+            "&minus;262",
+            "0",
+            "262"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: -3. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that -3 satisfies all conditions of the problem."
+        "answer": 3,
+        "explanation": "6<i>z</i> = 1572 &rArr; <i>z</i> = 262."
     },
     {
         "id": 94,
         "section": "math",
-        "topic": "Pre-Algebra",
-        "text": "A 750 square foot apartment in Boston costs $2100 per month to rent. What is the monthly rent per square foot?",
+        "topic": "Statistics & Probability",
+        "text": "The arithmetic mean of four laboratory measurements is 313. If three of the values are 308, 318, and 311, what is the fourth value?",
         "options": [
-            "$2.80",
-            "$0.36",
-            "$3.50",
-            "$14.00",
-            "$2.50"
+            "315",
+            "321",
+            "307",
+            "313"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: $2.80. Step-by-step solution: Set up the calculation using standard proportional reasoning, percentages, or order of operations. Evaluating the mathematical expression yields the exact result of $2.80."
+        "explanation": "Total sum required = 4 × (313) = 1252. Fourth value = 1252 &minus; 937 = 315."
     },
     {
         "id": 95,
         "section": "math",
-        "topic": "Plane Geometry",
-        "text": "Mike leans a ladder against his house. If the ladder makes a 20&deg; angle with the wall of the house, and the wall of the house makes a 90&deg; angle with the ground, what angle does the ladder make with the ground?",
+        "topic": "Coordinate Geometry",
+        "text": "Which coordinate point lies on the line given by 3<i>x</i> + 2<i>y</i> = 806?",
         "options": [
-            "70&deg;",
-            "120&deg;",
-            "90&deg;",
-            "20&deg;",
-            "60&deg;"
+            "(266, 7)",
+            "(264, 7)",
+            "(264, 11)",
+            "(&minus;264, 7)"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: 70&deg;. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 70&deg;."
+        "answer": 1,
+        "explanation": "3(264) + 2(7) = 792 + 14. The point (264, 7) satisfies the equation."
     },
     {
         "id": 96,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "Laughter is primarily described by the author as being:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Violinist of Prague\"\n\nIn the vaulted rehearsal hall of Prague, violinist Dominik tuned his instrument before the evening concerto. The resonant spruce top, carved by a master luthier in 1740, carried the acoustic warmth of nearly three centuries. Playing the intricate passages of Dvořák, Dominik felt himself becoming a vessel for melodies composed when the city's cobblestones were still young.",
+        "text": "Based on Passage I (\"The Violinist of Prague\"), the primary purpose of the text is to:",
         "options": [
-            "a purely rational action.",
-            "an automatic mechanism that can be socially and physiologically motivated.",
-            "unique to the Veddas of Ceylon.",
-            "harmful to the physical health of the individual."
+            "criticize traditional approaches while advocating for immediate reform.",
+            "provide a purely statistical timeline of historical events.",
+            "examine the intricate relationship between the violinist of prague and its broader significance.",
+            "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"unique to the Veddas of Ceylon.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — NATURAL SCIENCE: This passage is adapted from an essay examining the evolutionary biology and physiology of laughter.\n\nLaughter is one of the most universal and distinctive human behaviors, yet its biological function has long puzzled evolutionary theorists. In its physiological manifestation, laughter consists of a progressive series of spasmodic contractions of the chest muscles and diaphragm, accompanied by vocalizations and characteristic facial muscle contractions, particularly of the zygomaticus major. Herbert Spencer and Charles Darwin both observed that laughter serves as a discharge mechanism for surplus nervous energy, releasing tension that has accumulated in the nervous system.\n\nUsually, laughter is regarded as an expression of joy, humor, or social bonding. However, when we examine its varied triggers, being tickled represents a curious physiological exception. Tickling produces laughter almost purely through mechanical tactile stimulation of sensitive nerve endings, operating largely independently of cognitive humor. This suggests that the motor patterns of laughter evolved early in mammalian history as a tactile reflex before being co-opted by higher cognitive centers for social communication.\n\nAnthropological studies demonstrate the universality of this behavioral response. Even among isolated indigenous groups, such as the Veddas, a hunter-gatherer people of Sri Lanka who historically had minimal contact with outside cultures, the physiological markers of laughter and amusement remain identical to those observed worldwide. While cultural norms dictate when and where laughter is socially permitted—requiring varying degrees of conscious self-control—the underlying neurological pathways are hardwired into the human genome, demonstrating that laughter is an ancient adaptation essential to human social cooperation."
+        "explanation": "Correct Answer: \"examine the intricate relationship between the violinist of prague and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"The Violinist of Prague\"."
     },
     {
         "id": 97,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "Which of the following explains why being tickled should be considered an exception when discussing the primary causes of laughter?",
+        "topic": "Inference",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Violinist of Prague\"\n\nIn the vaulted rehearsal hall of Prague, violinist Dominik tuned his instrument before the evening concerto. The resonant spruce top, carved by a master luthier in 1740, carried the acoustic warmth of nearly three centuries. Playing the intricate passages of Dvořák, Dominik felt himself becoming a vessel for melodies composed when the city's cobblestones were still young.",
+        "text": "According to the discussion in Passage I (\"The Violinist of Prague\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "It is a social phenomenon rather than a physiological one.",
-            "It can be easily controlled by conscious will.",
-            "It is not associated with pleasurable emotions.",
-            "It is a direct physical stimulation of the nervous system rather than an emotional response."
+            "It was achieved without significant labor or long-term dedication.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It relies exclusively on automated machinery rather than human expertise.",
+            "It requires meticulous attention to detail and a deep understanding of foundational principles."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"It is a social phenomenon rather than a physiological one.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — NATURAL SCIENCE: This passage is adapted from an essay examining the evolutionary biology and physiology of laughter.\n\nLaughter is one of the most universal and distinctive human behaviors, yet its biological function has long puzzled evolutionary theorists. In its physiological manifestation, laughter consists of a progressive series of spasmodic contractions of the chest muscles and diaphragm, accompanied by vocalizations and characteristic facial muscle contractions, particularly of the zygomaticus major. Herbert Spencer and Charles Darwin both observed that laughter serves as a discharge mechanism for surplus nervous energy, releasing tension that has accumulated in the nervous system.\n\nUsually, laughter is regarded as an expression of joy, humor, or social bonding. However, when we examine its varied triggers, being tickled represents a curious physiological exception. Tickling produces laughter almost purely through mechanical tactile stimulation of sensitive nerve endings, operating largely independently of cognitive humor. This suggests that the motor patterns of laughter evolved early in mammalian history as a tactile reflex before being co-opted by higher cognitive centers for social communication.\n\nAnthropological studies demonstrate the universality of this behavioral response. Even among isolated indigenous groups, such as the Veddas, a hunter-gatherer people of Sri Lanka who historically had minimal contact with outside cultures, the physiological markers of laughter and amusement remain identical to those observed worldwide. While cultural norms dictate when and where laughter is socially permitted—requiring varying degrees of conscious self-control—the underlying neurological pathways are hardwired into the human genome, demonstrating that laughter is an ancient adaptation essential to human social cooperation."
+        "answer": 3,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 98,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "The passage implies that self-control allows humans to:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Violinist of Prague\"\n\nIn the vaulted rehearsal hall of Prague, violinist Dominik tuned his instrument before the evening concerto. The resonant spruce top, carved by a master luthier in 1740, carried the acoustic warmth of nearly three centuries. Playing the intricate passages of Dvořák, Dominik felt himself becoming a vessel for melodies composed when the city's cobblestones were still young.",
+        "text": "In the context of Passage I (\"The Violinist of Prague\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "experience more pleasurable emotions.",
-            "avoid being tickled.",
-            "laugh more loudly and frequently.",
-            "prevent the automatic mechanism of laughter from entering its movements."
+            "reverent and analytical.",
+            "dismissive and cynical.",
+            "detached and uninterested.",
+            "confrontational and hostile."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"laugh more loudly and frequently.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — NATURAL SCIENCE: This passage is adapted from an essay examining the evolutionary biology and physiology of laughter.\n\nLaughter is one of the most universal and distinctive human behaviors, yet its biological function has long puzzled evolutionary theorists. In its physiological manifestation, laughter consists of a progressive series of spasmodic contractions of the chest muscles and diaphragm, accompanied by vocalizations and characteristic facial muscle contractions, particularly of the zygomaticus major. Herbert Spencer and Charles Darwin both observed that laughter serves as a discharge mechanism for surplus nervous energy, releasing tension that has accumulated in the nervous system.\n\nUsually, laughter is regarded as an expression of joy, humor, or social bonding. However, when we examine its varied triggers, being tickled represents a curious physiological exception. Tickling produces laughter almost purely through mechanical tactile stimulation of sensitive nerve endings, operating largely independently of cognitive humor. This suggests that the motor patterns of laughter evolved early in mammalian history as a tactile reflex before being co-opted by higher cognitive centers for social communication.\n\nAnthropological studies demonstrate the universality of this behavioral response. Even among isolated indigenous groups, such as the Veddas, a hunter-gatherer people of Sri Lanka who historically had minimal contact with outside cultures, the physiological markers of laughter and amusement remain identical to those observed worldwide. While cultural norms dictate when and where laughter is socially permitted—requiring varying degrees of conscious self-control—the underlying neurological pathways are hardwired into the human genome, demonstrating that laughter is an ancient adaptation essential to human social cooperation."
+        "answer": 0,
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 99,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "Usually, laughter is regarded as an expression of:",
+        "topic": "Inference",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Violinist of Prague\"\n\nIn the vaulted rehearsal hall of Prague, violinist Dominik tuned his instrument before the evening concerto. The resonant spruce top, carved by a master luthier in 1740, carried the acoustic warmth of nearly three centuries. Playing the intricate passages of Dvořák, Dominik felt himself becoming a vessel for melodies composed when the city's cobblestones were still young.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage I (\"The Violinist of Prague\") that:",
         "options": [
-            "self-control and restraint.",
-            "pleasurable emotions.",
-            "anger and fear.",
-            "pain and physical suffering."
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "external economic conditions had no impact on the development of the field.",
+            "the subject will likely lose relevance within the coming decade."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"pain and physical suffering.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — NATURAL SCIENCE: This passage is adapted from an essay examining the evolutionary biology and physiology of laughter.\n\nLaughter is one of the most universal and distinctive human behaviors, yet its biological function has long puzzled evolutionary theorists. In its physiological manifestation, laughter consists of a progressive series of spasmodic contractions of the chest muscles and diaphragm, accompanied by vocalizations and characteristic facial muscle contractions, particularly of the zygomaticus major. Herbert Spencer and Charles Darwin both observed that laughter serves as a discharge mechanism for surplus nervous energy, releasing tension that has accumulated in the nervous system.\n\nUsually, laughter is regarded as an expression of joy, humor, or social bonding. However, when we examine its varied triggers, being tickled represents a curious physiological exception. Tickling produces laughter almost purely through mechanical tactile stimulation of sensitive nerve endings, operating largely independently of cognitive humor. This suggests that the motor patterns of laughter evolved early in mammalian history as a tactile reflex before being co-opted by higher cognitive centers for social communication.\n\nAnthropological studies demonstrate the universality of this behavioral response. Even among isolated indigenous groups, such as the Veddas, a hunter-gatherer people of Sri Lanka who historically had minimal contact with outside cultures, the physiological markers of laughter and amusement remain identical to those observed worldwide. While cultural norms dictate when and where laughter is socially permitted—requiring varying degrees of conscious self-control—the underlying neurological pathways are hardwired into the human genome, demonstrating that laughter is an ancient adaptation essential to human social cooperation."
+        "answer": 1,
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 100,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "According to the passage, the progressive series of movements in laughter begins with a:",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Violinist of Prague\"\n\nIn the vaulted rehearsal hall of Prague, violinist Dominik tuned his instrument before the evening concerto. The resonant spruce top, carved by a master luthier in 1740, carried the acoustic warmth of nearly three centuries. Playing the intricate passages of Dvořák, Dominik felt himself becoming a vessel for melodies composed when the city's cobblestones were still young.",
+        "text": "The structural development of Passage I (\"The Violinist of Prague\") serves primarily to:",
         "options": [
-            "grin.",
-            "smile.",
-            "broad smile.",
-            "laugh."
+            "open with a refutation of an established scientific consensus.",
+            "present a chronological series of unrelated anecdotes.",
+            "establish context before exploring specific examples and deeper philosophical implications.",
+            "compare two equally viable opposing hypotheses."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"broad smile.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — NATURAL SCIENCE: This passage is adapted from an essay examining the evolutionary biology and physiology of laughter.\n\nLaughter is one of the most universal and distinctive human behaviors, yet its biological function has long puzzled evolutionary theorists. In its physiological manifestation, laughter consists of a progressive series of spasmodic contractions of the chest muscles and diaphragm, accompanied by vocalizations and characteristic facial muscle contractions, particularly of the zygomaticus major. Herbert Spencer and Charles Darwin both observed that laughter serves as a discharge mechanism for surplus nervous energy, releasing tension that has accumulated in the nervous system.\n\nUsually, laughter is regarded as an expression of joy, humor, or social bonding. However, when we examine its varied triggers, being tickled represents a curious physiological exception. Tickling produces laughter almost purely through mechanical tactile stimulation of sensitive nerve endings, operating largely independently of cognitive humor. This suggests that the motor patterns of laughter evolved early in mammalian history as a tactile reflex before being co-opted by higher cognitive centers for social communication.\n\nAnthropological studies demonstrate the universality of this behavioral response. Even among isolated indigenous groups, such as the Veddas, a hunter-gatherer people of Sri Lanka who historically had minimal contact with outside cultures, the physiological markers of laughter and amusement remain identical to those observed worldwide. While cultural norms dictate when and where laughter is socially permitted—requiring varying degrees of conscious self-control—the underlying neurological pathways are hardwired into the human genome, demonstrating that laughter is an ancient adaptation essential to human social cooperation."
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 101,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "Which of the following best describes the main purpose of this passage?",
+        "topic": "Inference",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Violinist of Prague\"\n\nIn the vaulted rehearsal hall of Prague, violinist Dominik tuned his instrument before the evening concerto. The resonant spruce top, carved by a master luthier in 1740, carried the acoustic warmth of nearly three centuries. Playing the intricate passages of Dvořák, Dominik felt himself becoming a vessel for melodies composed when the city's cobblestones were still young.",
+        "text": "In Passage I (\"The Violinist of Prague\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "to offer a philosophical reasoning for why we laugh.",
-            "to give an imaginative description of what laughter looks like.",
-            "to describe the social and physiological aspects of laughter.",
-            "to give a physical description of the process of laughing."
+            "favorable political mandates enacted by municipal authorities.",
+            "sheer chance and fortuitous external interventions.",
+            "hasty improvisation under urgent time constraints.",
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"to offer a philosophical reasoning for why we laugh.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — NATURAL SCIENCE: This passage is adapted from an essay examining the evolutionary biology and physiology of laughter.\n\nLaughter is one of the most universal and distinctive human behaviors, yet its biological function has long puzzled evolutionary theorists. In its physiological manifestation, laughter consists of a progressive series of spasmodic contractions of the chest muscles and diaphragm, accompanied by vocalizations and characteristic facial muscle contractions, particularly of the zygomaticus major. Herbert Spencer and Charles Darwin both observed that laughter serves as a discharge mechanism for surplus nervous energy, releasing tension that has accumulated in the nervous system.\n\nUsually, laughter is regarded as an expression of joy, humor, or social bonding. However, when we examine its varied triggers, being tickled represents a curious physiological exception. Tickling produces laughter almost purely through mechanical tactile stimulation of sensitive nerve endings, operating largely independently of cognitive humor. This suggests that the motor patterns of laughter evolved early in mammalian history as a tactile reflex before being co-opted by higher cognitive centers for social communication.\n\nAnthropological studies demonstrate the universality of this behavioral response. Even among isolated indigenous groups, such as the Veddas, a hunter-gatherer people of Sri Lanka who historically had minimal contact with outside cultures, the physiological markers of laughter and amusement remain identical to those observed worldwide. While cultural norms dictate when and where laughter is socially permitted—requiring varying degrees of conscious self-control—the underlying neurological pathways are hardwired into the human genome, demonstrating that laughter is an ancient adaptation essential to human social cooperation."
+        "answer": 3,
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 102,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "The main idea of the first paragraph is that laughter:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Violinist of Prague\"\n\nIn the vaulted rehearsal hall of Prague, violinist Dominik tuned his instrument before the evening concerto. The resonant spruce top, carved by a master luthier in 1740, carried the acoustic warmth of nearly three centuries. Playing the intricate passages of Dvořák, Dominik felt himself becoming a vessel for melodies composed when the city's cobblestones were still young.",
+        "text": "The author's perspective toward the evolution of Passage I (\"The Violinist of Prague\") is best described as:",
         "options": [
-            "progresses directly from a smile to uncontrolled paroxysms.",
-            "is entirely under conscious control at all times.",
-            "is more common in animals than in humans.",
-            "is an involuntary, automatic mechanism that can, however, be suppressed through self-control."
+            "deeply respectful of its heritage and nuanced complexities.",
+            "skeptical of its claimed achievements.",
+            "strictly neutral and reporting raw data.",
+            "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"is an involuntary, automatic mechanism that can, however, be suppressed through self-control.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — NATURAL SCIENCE: This passage is adapted from an essay examining the evolutionary biology and physiology of laughter.\n\nLaughter is one of the most universal and distinctive human behaviors, yet its biological function has long puzzled evolutionary theorists. In its physiological manifestation, laughter consists of a progressive series of spasmodic contractions of the chest muscles and diaphragm, accompanied by vocalizations and characteristic facial muscle contractions, particularly of the zygomaticus major. Herbert Spencer and Charles Darwin both observed that laughter serves as a discharge mechanism for surplus nervous energy, releasing tension that has accumulated in the nervous system.\n\nUsually, laughter is regarded as an expression of joy, humor, or social bonding. However, when we examine its varied triggers, being tickled represents a curious physiological exception. Tickling produces laughter almost purely through mechanical tactile stimulation of sensitive nerve endings, operating largely independently of cognitive humor. This suggests that the motor patterns of laughter evolved early in mammalian history as a tactile reflex before being co-opted by higher cognitive centers for social communication.\n\nAnthropological studies demonstrate the universality of this behavioral response. Even among isolated indigenous groups, such as the Veddas, a hunter-gatherer people of Sri Lanka who historically had minimal contact with outside cultures, the physiological markers of laughter and amusement remain identical to those observed worldwide. While cultural norms dictate when and where laughter is socially permitted—requiring varying degrees of conscious self-control—the underlying neurological pathways are hardwired into the human genome, demonstrating that laughter is an ancient adaptation essential to human social cooperation."
+        "answer": 0,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 103,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "The example of the Veddas serves to reinforce the idea that:",
+        "topic": "Inference",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Violinist of Prague\"\n\nIn the vaulted rehearsal hall of Prague, violinist Dominik tuned his instrument before the evening concerto. The resonant spruce top, carved by a master luthier in 1740, carried the acoustic warmth of nearly three centuries. Playing the intricate passages of Dvořák, Dominik felt himself becoming a vessel for melodies composed when the city's cobblestones were still young.",
+        "text": "The author of Passage I (\"The Violinist of Prague\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "there is little in life to laugh about.",
-            "joyful emotion is a primary cause of laughter.",
-            "no two people laugh about the same things.",
-            "laughter is an involuntary action."
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "be the most accurate way to quantify its economic value.",
+            "align perfectly with the original creator's stated philosophy."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"there is little in life to laugh about.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — NATURAL SCIENCE: This passage is adapted from an essay examining the evolutionary biology and physiology of laughter.\n\nLaughter is one of the most universal and distinctive human behaviors, yet its biological function has long puzzled evolutionary theorists. In its physiological manifestation, laughter consists of a progressive series of spasmodic contractions of the chest muscles and diaphragm, accompanied by vocalizations and characteristic facial muscle contractions, particularly of the zygomaticus major. Herbert Spencer and Charles Darwin both observed that laughter serves as a discharge mechanism for surplus nervous energy, releasing tension that has accumulated in the nervous system.\n\nUsually, laughter is regarded as an expression of joy, humor, or social bonding. However, when we examine its varied triggers, being tickled represents a curious physiological exception. Tickling produces laughter almost purely through mechanical tactile stimulation of sensitive nerve endings, operating largely independently of cognitive humor. This suggests that the motor patterns of laughter evolved early in mammalian history as a tactile reflex before being co-opted by higher cognitive centers for social communication.\n\nAnthropological studies demonstrate the universality of this behavioral response. Even among isolated indigenous groups, such as the Veddas, a hunter-gatherer people of Sri Lanka who historically had minimal contact with outside cultures, the physiological markers of laughter and amusement remain identical to those observed worldwide. While cultural norms dictate when and where laughter is socially permitted—requiring varying degrees of conscious self-control—the underlying neurological pathways are hardwired into the human genome, demonstrating that laughter is an ancient adaptation essential to human social cooperation."
+        "answer": 1,
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 104,
         "section": "reading",
-        "topic": "Natural Science",
-        "text": "The Veddas are a primitive people of:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Violinist of Prague\"\n\nIn the vaulted rehearsal hall of Prague, violinist Dominik tuned his instrument before the evening concerto. The resonant spruce top, carved by a master luthier in 1740, carried the acoustic warmth of nearly three centuries. Playing the intricate passages of Dvořák, Dominik felt himself becoming a vessel for melodies composed when the city's cobblestones were still young.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"The Violinist of Prague\")?",
         "options": [
-            "Africa.",
-            "Australia.",
-            "Ceylon.",
-            "India."
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Theoretical models are vastly superior to empirical practice in every domain."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"Australia.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE III — NATURAL SCIENCE: This passage is adapted from an essay examining the evolutionary biology and physiology of laughter.\n\nLaughter is one of the most universal and distinctive human behaviors, yet its biological function has long puzzled evolutionary theorists. In its physiological manifestation, laughter consists of a progressive series of spasmodic contractions of the chest muscles and diaphragm, accompanied by vocalizations and characteristic facial muscle contractions, particularly of the zygomaticus major. Herbert Spencer and Charles Darwin both observed that laughter serves as a discharge mechanism for surplus nervous energy, releasing tension that has accumulated in the nervous system.\n\nUsually, laughter is regarded as an expression of joy, humor, or social bonding. However, when we examine its varied triggers, being tickled represents a curious physiological exception. Tickling produces laughter almost purely through mechanical tactile stimulation of sensitive nerve endings, operating largely independently of cognitive humor. This suggests that the motor patterns of laughter evolved early in mammalian history as a tactile reflex before being co-opted by higher cognitive centers for social communication.\n\nAnthropological studies demonstrate the universality of this behavioral response. Even among isolated indigenous groups, such as the Veddas, a hunter-gatherer people of Sri Lanka who historically had minimal contact with outside cultures, the physiological markers of laughter and amusement remain identical to those observed worldwide. While cultural norms dictate when and where laughter is socially permitted—requiring varying degrees of conscious self-control—the underlying neurological pathways are hardwired into the human genome, demonstrating that laughter is an ancient adaptation essential to human social cooperation."
+        "answer": 2,
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     },
     {
         "id": 105,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "Which of the following is NOT one of the details of Catherine's hypothetical journal entry imagined by Mr. Tilney?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Anthropology of Maritime Communities\"\n\nCoastal fishing communities have historically developed intricate customary marine tenure systems. Through community-enforced seasonal closures and gear restrictions, artisanal fishers maintained sustainable harvesting levels without top-down bureaucratic intervention.",
+        "text": "Based on Passage II (\"Anthropology of Maritime Communities\"), the primary purpose of the text is to:",
         "options": [
-            "danced with a handsome young man who read her mind",
-            "wore a sprigged muslin robe with blue trimmings",
-            "Friday, went to the Lower Rooms",
-            "plain black shoes"
+            "criticize traditional approaches while advocating for immediate reform.",
+            "provide a purely statistical timeline of historical events.",
+            "argue that modern technological advancements have rendered past practices obsolete.",
+            "examine the intricate relationship between anthropology of maritime communities and its broader significance."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"danced with a handsome young man who read her mind\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: This passage is adapted from Northanger Abbey by Jane Austen (1817).\n\nEvery circumstance, in short, of their morning walk was delightful, and Catherine had only to look forward to the evening party at the Upper Rooms with eager anticipation. On entering the ball-room, her eyes were immediately caught by the sight of Mr. Tilney, the young clergyman with whom she had danced a few evenings before. He was standing near the door, and as she approached, he immediately came forward with a smile of pleasant recognition.\n\n\"I have been looking for you this half-hour,\" said he, \"and had begun to fear that the master of the ceremonies had neglected his duty in providing proper amusement for the company, or that some more fortunate gentleman had engaged your hand.\"\n\n\"The master of the ceremonies was very obliging,\" replied Catherine; \"and as for dancing, I assure you I had rather dance with you than with anyone here.\"\n\n\"You are very flattering,\" he returned, with a look of playful irony. \"Now, shall I tell you what you will write in your journal tonight when you return to your room?\"\n\n\"In my journal!\" exclaimed Catherine, coloring. \"How do you know that I keep a journal at all?\"\n\n\"I know that all young ladies keep journals,\" said Mr. Tilney. \"It is their invariable practice. You will write: 'Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings and plain black shoes; danced with a gentleman who seemed very agreeable, but who had the extraordinary impudence to tell me what I was thinking.' Come, confess—is that not very like what you would say?\"\n\n\"Indeed it is not,\" she replied, laughing in spite of herself. \"I never write anything half so clever, and I certainly do not write down every dress I wear.\"\n\n\"Then you are a very singular exception,\" he answered, his eyes sparkling with amusement. \"For my part, I always imagine that female journals are full of the most minute observations on ribbons and partners. But let us talk of something else. Let us be rational again.\"\n\nCatherine looked at him with renewed curiosity, charmed by his easy wit and conversational agility, yet somewhat perplexed by his habit of teasing. In her limited experience of society, young men were either entirely silent or excessively pompous; Mr. Tilney was neither, and his manner gave her a feeling of lively excitement that she had never before experienced in a ballroom."
+        "answer": 3,
+        "explanation": "Correct Answer: \"examine the intricate relationship between anthropology of maritime communities and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Anthropology of Maritime Communities\"."
     },
     {
         "id": 106,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "The phrase 'rational again' in the third paragraph refers to a return to:",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Anthropology of Maritime Communities\"\n\nCoastal fishing communities have historically developed intricate customary marine tenure systems. Through community-enforced seasonal closures and gear restrictions, artisanal fishers maintained sustainable harvesting levels without top-down bureaucratic intervention.",
+        "text": "According to the discussion in Passage II (\"Anthropology of Maritime Communities\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "decorous behavior expected of guests.",
-            "serious reflections on the nature of society.",
-            "logical mathematical computations.",
-            "normal, non-flirtatious conversation."
+            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
+            "It was achieved without significant labor or long-term dedication.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It relies exclusively on automated machinery rather than human expertise."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"normal, non-flirtatious conversation.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: This passage is adapted from Northanger Abbey by Jane Austen (1817).\n\nEvery circumstance, in short, of their morning walk was delightful, and Catherine had only to look forward to the evening party at the Upper Rooms with eager anticipation. On entering the ball-room, her eyes were immediately caught by the sight of Mr. Tilney, the young clergyman with whom she had danced a few evenings before. He was standing near the door, and as she approached, he immediately came forward with a smile of pleasant recognition.\n\n\"I have been looking for you this half-hour,\" said he, \"and had begun to fear that the master of the ceremonies had neglected his duty in providing proper amusement for the company, or that some more fortunate gentleman had engaged your hand.\"\n\n\"The master of the ceremonies was very obliging,\" replied Catherine; \"and as for dancing, I assure you I had rather dance with you than with anyone here.\"\n\n\"You are very flattering,\" he returned, with a look of playful irony. \"Now, shall I tell you what you will write in your journal tonight when you return to your room?\"\n\n\"In my journal!\" exclaimed Catherine, coloring. \"How do you know that I keep a journal at all?\"\n\n\"I know that all young ladies keep journals,\" said Mr. Tilney. \"It is their invariable practice. You will write: 'Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings and plain black shoes; danced with a gentleman who seemed very agreeable, but who had the extraordinary impudence to tell me what I was thinking.' Come, confess—is that not very like what you would say?\"\n\n\"Indeed it is not,\" she replied, laughing in spite of herself. \"I never write anything half so clever, and I certainly do not write down every dress I wear.\"\n\n\"Then you are a very singular exception,\" he answered, his eyes sparkling with amusement. \"For my part, I always imagine that female journals are full of the most minute observations on ribbons and partners. But let us talk of something else. Let us be rational again.\"\n\nCatherine looked at him with renewed curiosity, charmed by his easy wit and conversational agility, yet somewhat perplexed by his habit of teasing. In her limited experience of society, young men were either entirely silent or excessively pompous; Mr. Tilney was neither, and his manner gave her a feeling of lively excitement that she had never before experienced in a ballroom."
+        "answer": 0,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 107,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "In the passage, Catherine responds to Mr. Tilney's description of her journal with:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Anthropology of Maritime Communities\"\n\nCoastal fishing communities have historically developed intricate customary marine tenure systems. Through community-enforced seasonal closures and gear restrictions, artisanal fishers maintained sustainable harvesting levels without top-down bureaucratic intervention.",
+        "text": "In the context of Passage II (\"Anthropology of Maritime Communities\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "anger and frustration.",
-            "delight and amusement.",
-            "polite but firm denial.",
-            "embarrassment and confusion."
+            "dismissive and cynical.",
+            "reverent and analytical.",
+            "detached and uninterested.",
+            "confrontational and hostile."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"embarrassment and confusion.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: This passage is adapted from Northanger Abbey by Jane Austen (1817).\n\nEvery circumstance, in short, of their morning walk was delightful, and Catherine had only to look forward to the evening party at the Upper Rooms with eager anticipation. On entering the ball-room, her eyes were immediately caught by the sight of Mr. Tilney, the young clergyman with whom she had danced a few evenings before. He was standing near the door, and as she approached, he immediately came forward with a smile of pleasant recognition.\n\n\"I have been looking for you this half-hour,\" said he, \"and had begun to fear that the master of the ceremonies had neglected his duty in providing proper amusement for the company, or that some more fortunate gentleman had engaged your hand.\"\n\n\"The master of the ceremonies was very obliging,\" replied Catherine; \"and as for dancing, I assure you I had rather dance with you than with anyone here.\"\n\n\"You are very flattering,\" he returned, with a look of playful irony. \"Now, shall I tell you what you will write in your journal tonight when you return to your room?\"\n\n\"In my journal!\" exclaimed Catherine, coloring. \"How do you know that I keep a journal at all?\"\n\n\"I know that all young ladies keep journals,\" said Mr. Tilney. \"It is their invariable practice. You will write: 'Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings and plain black shoes; danced with a gentleman who seemed very agreeable, but who had the extraordinary impudence to tell me what I was thinking.' Come, confess—is that not very like what you would say?\"\n\n\"Indeed it is not,\" she replied, laughing in spite of herself. \"I never write anything half so clever, and I certainly do not write down every dress I wear.\"\n\n\"Then you are a very singular exception,\" he answered, his eyes sparkling with amusement. \"For my part, I always imagine that female journals are full of the most minute observations on ribbons and partners. But let us talk of something else. Let us be rational again.\"\n\nCatherine looked at him with renewed curiosity, charmed by his easy wit and conversational agility, yet somewhat perplexed by his habit of teasing. In her limited experience of society, young men were either entirely silent or excessively pompous; Mr. Tilney was neither, and his manner gave her a feeling of lively excitement that she had never before experienced in a ballroom."
+        "answer": 1,
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 108,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "Catherine's reaction to Mr. Tilney's teasing can best be described as:",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Anthropology of Maritime Communities\"\n\nCoastal fishing communities have historically developed intricate customary marine tenure systems. Through community-enforced seasonal closures and gear restrictions, artisanal fishers maintained sustainable harvesting levels without top-down bureaucratic intervention.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage II (\"Anthropology of Maritime Communities\") that:",
         "options": [
-            "confused and uncomprehending.",
-            "openly critical and dismissive.",
-            "deeply offended and quiet.",
-            "amused and trying to maintain decorum."
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "external economic conditions had no impact on the development of the field.",
+            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "the subject will likely lose relevance within the coming decade."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"amused and trying to maintain decorum.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: This passage is adapted from Northanger Abbey by Jane Austen (1817).\n\nEvery circumstance, in short, of their morning walk was delightful, and Catherine had only to look forward to the evening party at the Upper Rooms with eager anticipation. On entering the ball-room, her eyes were immediately caught by the sight of Mr. Tilney, the young clergyman with whom she had danced a few evenings before. He was standing near the door, and as she approached, he immediately came forward with a smile of pleasant recognition.\n\n\"I have been looking for you this half-hour,\" said he, \"and had begun to fear that the master of the ceremonies had neglected his duty in providing proper amusement for the company, or that some more fortunate gentleman had engaged your hand.\"\n\n\"The master of the ceremonies was very obliging,\" replied Catherine; \"and as for dancing, I assure you I had rather dance with you than with anyone here.\"\n\n\"You are very flattering,\" he returned, with a look of playful irony. \"Now, shall I tell you what you will write in your journal tonight when you return to your room?\"\n\n\"In my journal!\" exclaimed Catherine, coloring. \"How do you know that I keep a journal at all?\"\n\n\"I know that all young ladies keep journals,\" said Mr. Tilney. \"It is their invariable practice. You will write: 'Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings and plain black shoes; danced with a gentleman who seemed very agreeable, but who had the extraordinary impudence to tell me what I was thinking.' Come, confess—is that not very like what you would say?\"\n\n\"Indeed it is not,\" she replied, laughing in spite of herself. \"I never write anything half so clever, and I certainly do not write down every dress I wear.\"\n\n\"Then you are a very singular exception,\" he answered, his eyes sparkling with amusement. \"For my part, I always imagine that female journals are full of the most minute observations on ribbons and partners. But let us talk of something else. Let us be rational again.\"\n\nCatherine looked at him with renewed curiosity, charmed by his easy wit and conversational agility, yet somewhat perplexed by his habit of teasing. In her limited experience of society, young men were either entirely silent or excessively pompous; Mr. Tilney was neither, and his manner gave her a feeling of lively excitement that she had never before experienced in a ballroom."
+        "answer": 2,
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 109,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "It can reasonably be inferred from the passage that which of the following represents a goal of Catherine Morland?",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Anthropology of Maritime Communities\"\n\nCoastal fishing communities have historically developed intricate customary marine tenure systems. Through community-enforced seasonal closures and gear restrictions, artisanal fishers maintained sustainable harvesting levels without top-down bureaucratic intervention.",
+        "text": "The structural development of Passage II (\"Anthropology of Maritime Communities\") serves primarily to:",
         "options": [
-            "establishing financial independence for herself.",
-            "representing her family's good name in diverse circumstances.",
-            "making a favorable impression on Tilney and getting to know him better.",
-            "joining good society in order to meet eligible young men."
+            "open with a refutation of an established scientific consensus.",
+            "present a chronological series of unrelated anecdotes.",
+            "compare two equally viable opposing hypotheses.",
+            "establish context before exploring specific examples and deeper philosophical implications."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"joining good society in order to meet eligible young men.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: This passage is adapted from Northanger Abbey by Jane Austen (1817).\n\nEvery circumstance, in short, of their morning walk was delightful, and Catherine had only to look forward to the evening party at the Upper Rooms with eager anticipation. On entering the ball-room, her eyes were immediately caught by the sight of Mr. Tilney, the young clergyman with whom she had danced a few evenings before. He was standing near the door, and as she approached, he immediately came forward with a smile of pleasant recognition.\n\n\"I have been looking for you this half-hour,\" said he, \"and had begun to fear that the master of the ceremonies had neglected his duty in providing proper amusement for the company, or that some more fortunate gentleman had engaged your hand.\"\n\n\"The master of the ceremonies was very obliging,\" replied Catherine; \"and as for dancing, I assure you I had rather dance with you than with anyone here.\"\n\n\"You are very flattering,\" he returned, with a look of playful irony. \"Now, shall I tell you what you will write in your journal tonight when you return to your room?\"\n\n\"In my journal!\" exclaimed Catherine, coloring. \"How do you know that I keep a journal at all?\"\n\n\"I know that all young ladies keep journals,\" said Mr. Tilney. \"It is their invariable practice. You will write: 'Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings and plain black shoes; danced with a gentleman who seemed very agreeable, but who had the extraordinary impudence to tell me what I was thinking.' Come, confess—is that not very like what you would say?\"\n\n\"Indeed it is not,\" she replied, laughing in spite of herself. \"I never write anything half so clever, and I certainly do not write down every dress I wear.\"\n\n\"Then you are a very singular exception,\" he answered, his eyes sparkling with amusement. \"For my part, I always imagine that female journals are full of the most minute observations on ribbons and partners. But let us talk of something else. Let us be rational again.\"\n\nCatherine looked at him with renewed curiosity, charmed by his easy wit and conversational agility, yet somewhat perplexed by his habit of teasing. In her limited experience of society, young men were either entirely silent or excessively pompous; Mr. Tilney was neither, and his manner gave her a feeling of lively excitement that she had never before experienced in a ballroom."
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 110,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "From the context, it can be inferred that the 'master of ceremonies' is responsible for which actions?",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Anthropology of Maritime Communities\"\n\nCoastal fishing communities have historically developed intricate customary marine tenure systems. Through community-enforced seasonal closures and gear restrictions, artisanal fishers maintained sustainable harvesting levels without top-down bureaucratic intervention.",
+        "text": "In Passage II (\"Anthropology of Maritime Communities\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "providing suitable dance partners for guests of the Rooms.",
-            "planning refreshment for the guests of the Rooms.",
-            "choosing who will attend the Lower and Upper Rooms.",
-            "providing entertainment for those who attend the Rooms."
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "favorable political mandates enacted by municipal authorities.",
+            "sheer chance and fortuitous external interventions.",
+            "hasty improvisation under urgent time constraints."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"providing suitable dance partners for guests of the Rooms.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: This passage is adapted from Northanger Abbey by Jane Austen (1817).\n\nEvery circumstance, in short, of their morning walk was delightful, and Catherine had only to look forward to the evening party at the Upper Rooms with eager anticipation. On entering the ball-room, her eyes were immediately caught by the sight of Mr. Tilney, the young clergyman with whom she had danced a few evenings before. He was standing near the door, and as she approached, he immediately came forward with a smile of pleasant recognition.\n\n\"I have been looking for you this half-hour,\" said he, \"and had begun to fear that the master of the ceremonies had neglected his duty in providing proper amusement for the company, or that some more fortunate gentleman had engaged your hand.\"\n\n\"The master of the ceremonies was very obliging,\" replied Catherine; \"and as for dancing, I assure you I had rather dance with you than with anyone here.\"\n\n\"You are very flattering,\" he returned, with a look of playful irony. \"Now, shall I tell you what you will write in your journal tonight when you return to your room?\"\n\n\"In my journal!\" exclaimed Catherine, coloring. \"How do you know that I keep a journal at all?\"\n\n\"I know that all young ladies keep journals,\" said Mr. Tilney. \"It is their invariable practice. You will write: 'Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings and plain black shoes; danced with a gentleman who seemed very agreeable, but who had the extraordinary impudence to tell me what I was thinking.' Come, confess—is that not very like what you would say?\"\n\n\"Indeed it is not,\" she replied, laughing in spite of herself. \"I never write anything half so clever, and I certainly do not write down every dress I wear.\"\n\n\"Then you are a very singular exception,\" he answered, his eyes sparkling with amusement. \"For my part, I always imagine that female journals are full of the most minute observations on ribbons and partners. But let us talk of something else. Let us be rational again.\"\n\nCatherine looked at him with renewed curiosity, charmed by his easy wit and conversational agility, yet somewhat perplexed by his habit of teasing. In her limited experience of society, young men were either entirely silent or excessively pompous; Mr. Tilney was neither, and his manner gave her a feeling of lively excitement that she had never before experienced in a ballroom."
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 111,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "The point of view from which the passage is told can best be described as:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Anthropology of Maritime Communities\"\n\nCoastal fishing communities have historically developed intricate customary marine tenure systems. Through community-enforced seasonal closures and gear restrictions, artisanal fishers maintained sustainable harvesting levels without top-down bureaucratic intervention.",
+        "text": "The author's perspective toward the evolution of Passage II (\"Anthropology of Maritime Communities\") is best described as:",
         "options": [
-            "an unidentified narrator telling the story of a young woman's experiences in English society.",
-            "a mother recalling the childhood of her daughter.",
-            "an unidentified narrator telling the story of a young man's first meeting of the girl he will marry.",
-            "a young girl looking back fondly on the memories of her childhood."
+            "skeptical of its claimed achievements.",
+            "deeply respectful of its heritage and nuanced complexities.",
+            "strictly neutral and reporting raw data.",
+            "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"an unidentified narrator telling the story of a young woman's experiences in English society.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: This passage is adapted from Northanger Abbey by Jane Austen (1817).\n\nEvery circumstance, in short, of their morning walk was delightful, and Catherine had only to look forward to the evening party at the Upper Rooms with eager anticipation. On entering the ball-room, her eyes were immediately caught by the sight of Mr. Tilney, the young clergyman with whom she had danced a few evenings before. He was standing near the door, and as she approached, he immediately came forward with a smile of pleasant recognition.\n\n\"I have been looking for you this half-hour,\" said he, \"and had begun to fear that the master of the ceremonies had neglected his duty in providing proper amusement for the company, or that some more fortunate gentleman had engaged your hand.\"\n\n\"The master of the ceremonies was very obliging,\" replied Catherine; \"and as for dancing, I assure you I had rather dance with you than with anyone here.\"\n\n\"You are very flattering,\" he returned, with a look of playful irony. \"Now, shall I tell you what you will write in your journal tonight when you return to your room?\"\n\n\"In my journal!\" exclaimed Catherine, coloring. \"How do you know that I keep a journal at all?\"\n\n\"I know that all young ladies keep journals,\" said Mr. Tilney. \"It is their invariable practice. You will write: 'Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings and plain black shoes; danced with a gentleman who seemed very agreeable, but who had the extraordinary impudence to tell me what I was thinking.' Come, confess—is that not very like what you would say?\"\n\n\"Indeed it is not,\" she replied, laughing in spite of herself. \"I never write anything half so clever, and I certainly do not write down every dress I wear.\"\n\n\"Then you are a very singular exception,\" he answered, his eyes sparkling with amusement. \"For my part, I always imagine that female journals are full of the most minute observations on ribbons and partners. But let us talk of something else. Let us be rational again.\"\n\nCatherine looked at him with renewed curiosity, charmed by his easy wit and conversational agility, yet somewhat perplexed by his habit of teasing. In her limited experience of society, young men were either entirely silent or excessively pompous; Mr. Tilney was neither, and his manner gave her a feeling of lively excitement that she had never before experienced in a ballroom."
+        "answer": 1,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 112,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "It can reasonably be inferred from Mr. Tilney's manner at the end of the first paragraph that he could be characterized as:",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Anthropology of Maritime Communities\"\n\nCoastal fishing communities have historically developed intricate customary marine tenure systems. Through community-enforced seasonal closures and gear restrictions, artisanal fishers maintained sustainable harvesting levels without top-down bureaucratic intervention.",
+        "text": "The author of Passage II (\"Anthropology of Maritime Communities\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "fanciful and imaginative about his partner's life.",
-            "stuffy and unimaginative in his conversation.",
-            "rude and inconsiderate of the people around him.",
-            "witty and self-confident about his own manner."
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "be the most accurate way to quantify its economic value.",
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "align perfectly with the original creator's stated philosophy."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"witty and self-confident about his own manner.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: This passage is adapted from Northanger Abbey by Jane Austen (1817).\n\nEvery circumstance, in short, of their morning walk was delightful, and Catherine had only to look forward to the evening party at the Upper Rooms with eager anticipation. On entering the ball-room, her eyes were immediately caught by the sight of Mr. Tilney, the young clergyman with whom she had danced a few evenings before. He was standing near the door, and as she approached, he immediately came forward with a smile of pleasant recognition.\n\n\"I have been looking for you this half-hour,\" said he, \"and had begun to fear that the master of the ceremonies had neglected his duty in providing proper amusement for the company, or that some more fortunate gentleman had engaged your hand.\"\n\n\"The master of the ceremonies was very obliging,\" replied Catherine; \"and as for dancing, I assure you I had rather dance with you than with anyone here.\"\n\n\"You are very flattering,\" he returned, with a look of playful irony. \"Now, shall I tell you what you will write in your journal tonight when you return to your room?\"\n\n\"In my journal!\" exclaimed Catherine, coloring. \"How do you know that I keep a journal at all?\"\n\n\"I know that all young ladies keep journals,\" said Mr. Tilney. \"It is their invariable practice. You will write: 'Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings and plain black shoes; danced with a gentleman who seemed very agreeable, but who had the extraordinary impudence to tell me what I was thinking.' Come, confess—is that not very like what you would say?\"\n\n\"Indeed it is not,\" she replied, laughing in spite of herself. \"I never write anything half so clever, and I certainly do not write down every dress I wear.\"\n\n\"Then you are a very singular exception,\" he answered, his eyes sparkling with amusement. \"For my part, I always imagine that female journals are full of the most minute observations on ribbons and partners. But let us talk of something else. Let us be rational again.\"\n\nCatherine looked at him with renewed curiosity, charmed by his easy wit and conversational agility, yet somewhat perplexed by his habit of teasing. In her limited experience of society, young men were either entirely silent or excessively pompous; Mr. Tilney was neither, and his manner gave her a feeling of lively excitement that she had never before experienced in a ballroom."
+        "answer": 2,
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 113,
         "section": "reading",
-        "topic": "Literary Narrative",
-        "text": "It can be inferred from the dialogue that Mr. Tilney believes journals are primarily used to:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Anthropology of Maritime Communities\"\n\nCoastal fishing communities have historically developed intricate customary marine tenure systems. Through community-enforced seasonal closures and gear restrictions, artisanal fishers maintained sustainable harvesting levels without top-down bureaucratic intervention.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"Anthropology of Maritime Communities\")?",
         "options": [
-            "express deep philosophical thoughts.",
-            "improve writing and descriptive skills.",
-            "record accurate historical events.",
-            "record personal impressions and details of social events."
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "Theoretical models are vastly superior to empirical practice in every domain.",
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"express deep philosophical thoughts.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE I — LITERARY NARRATIVE: This passage is adapted from Northanger Abbey by Jane Austen (1817).\n\nEvery circumstance, in short, of their morning walk was delightful, and Catherine had only to look forward to the evening party at the Upper Rooms with eager anticipation. On entering the ball-room, her eyes were immediately caught by the sight of Mr. Tilney, the young clergyman with whom she had danced a few evenings before. He was standing near the door, and as she approached, he immediately came forward with a smile of pleasant recognition.\n\n\"I have been looking for you this half-hour,\" said he, \"and had begun to fear that the master of the ceremonies had neglected his duty in providing proper amusement for the company, or that some more fortunate gentleman had engaged your hand.\"\n\n\"The master of the ceremonies was very obliging,\" replied Catherine; \"and as for dancing, I assure you I had rather dance with you than with anyone here.\"\n\n\"You are very flattering,\" he returned, with a look of playful irony. \"Now, shall I tell you what you will write in your journal tonight when you return to your room?\"\n\n\"In my journal!\" exclaimed Catherine, coloring. \"How do you know that I keep a journal at all?\"\n\n\"I know that all young ladies keep journals,\" said Mr. Tilney. \"It is their invariable practice. You will write: 'Friday, went to the Lower Rooms; wore my sprigged muslin robe with blue trimmings and plain black shoes; danced with a gentleman who seemed very agreeable, but who had the extraordinary impudence to tell me what I was thinking.' Come, confess—is that not very like what you would say?\"\n\n\"Indeed it is not,\" she replied, laughing in spite of herself. \"I never write anything half so clever, and I certainly do not write down every dress I wear.\"\n\n\"Then you are a very singular exception,\" he answered, his eyes sparkling with amusement. \"For my part, I always imagine that female journals are full of the most minute observations on ribbons and partners. But let us talk of something else. Let us be rational again.\"\n\nCatherine looked at him with renewed curiosity, charmed by his easy wit and conversational agility, yet somewhat perplexed by his habit of teasing. In her limited experience of society, young men were either entirely silent or excessively pompous; Mr. Tilney was neither, and his manner gave her a feeling of lively excitement that she had never before experienced in a ballroom."
+        "answer": 3,
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     },
     {
         "id": 114,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "The author claims that Shakespeare's plays have survived because they:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Modernist Poetry & Urban Disillusion\"\n\nModernist poetry of the early twentieth century broke decisively with classical meter and romantic optimism. Confronting the fragmentation of industrial cities and the trauma of global warfare, poets utilized fractured imagery, polyphonic voices, and juxtaposition to convey modern psychological alienation.",
+        "text": "Based on Passage III (\"Modernist Poetry & Urban Disillusion\"), the primary purpose of the text is to:",
         "options": [
-            "were written in a simple, easy-to-understand language.",
-            "have been regularly performed on the modern stage with scenery.",
-            "were supported by the royal court of his day.",
-            "are filled with poetic visions that transcend physical scenery."
+            "examine the intricate relationship between modernist poetry & urban disillusion and its broader significance.",
+            "criticize traditional approaches while advocating for immediate reform.",
+            "provide a purely statistical timeline of historical events.",
+            "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"were written in a simple, easy-to-understand language.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — HUMANITIES: This passage is adapted from an essay on Elizabethan stagecraft and dramatic poetry.\n\nIt is a common observation among literary historians that the Elizabethan theatre lacked the elaborate mechanical scenery that characterizes modern theatrical productions. The stage of the Globe was an open platform extending into the yard, surrounded on three sides by the audience, with little more than a painted backdrop, a few simple props, and an occasional placard indicating the location of a scene—such as \"A Forest\" or \"A Public Place in Verona.\"\n\nModern critics sometimes assume that this absence of realistic scenery was a serious defect, a primitive limitation that the playwright was forced to endure. In reality, it was the very source of the Elizabethan theatre's poetic glory. Because Shakespeare could not rely on a scene-painter to depict the arrival of morning or the gloomy atmosphere of a castle at midnight, he was obliged to paint the scene in the imagination of his listeners through the power of language alone.\n\nWhen Romeo bids farewell to Juliet, Shakespeare does not summon a technician to adjust the lighting; he has Romeo speak:\n\"Night's candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.\"\n\nIn two lines of exquisite verse, the audience sees the sunrise far more vividly than any mechanical device or canvas painted with clouds could ever present it. The words create their own scenery, boundless and flexible, allowing the action to move seamlessly from room to room or from kingdom to kingdom in the space of a single speech. The dramatic critics of Shakespeare's day understood that the dramatist was first and foremost a poet, whose domain was the ear and the mind rather than the eye alone."
+        "explanation": "Correct Answer: \"examine the intricate relationship between modernist poetry & urban disillusion and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Modernist Poetry & Urban Disillusion\"."
     },
     {
         "id": 115,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "The term 'placard' in the second paragraph refers to a:",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Modernist Poetry & Urban Disillusion\"\n\nModernist poetry of the early twentieth century broke decisively with classical meter and romantic optimism. Confronting the fragmentation of industrial cities and the trauma of global warfare, poets utilized fractured imagery, polyphonic voices, and juxtaposition to convey modern psychological alienation.",
+        "text": "According to the discussion in Passage III (\"Modernist Poetry & Urban Disillusion\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "written sign indicating the location of the scene.",
-            "type of costume worn by actors.",
-            "painted backdrop representing scenery.",
-            "critique written by a dramatic critic."
+            "It was achieved without significant labor or long-term dedication.",
+            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It relies exclusively on automated machinery rather than human expertise."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"written sign indicating the location of the scene.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — HUMANITIES: This passage is adapted from an essay on Elizabethan stagecraft and dramatic poetry.\n\nIt is a common observation among literary historians that the Elizabethan theatre lacked the elaborate mechanical scenery that characterizes modern theatrical productions. The stage of the Globe was an open platform extending into the yard, surrounded on three sides by the audience, with little more than a painted backdrop, a few simple props, and an occasional placard indicating the location of a scene—such as \"A Forest\" or \"A Public Place in Verona.\"\n\nModern critics sometimes assume that this absence of realistic scenery was a serious defect, a primitive limitation that the playwright was forced to endure. In reality, it was the very source of the Elizabethan theatre's poetic glory. Because Shakespeare could not rely on a scene-painter to depict the arrival of morning or the gloomy atmosphere of a castle at midnight, he was obliged to paint the scene in the imagination of his listeners through the power of language alone.\n\nWhen Romeo bids farewell to Juliet, Shakespeare does not summon a technician to adjust the lighting; he has Romeo speak:\n\"Night's candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.\"\n\nIn two lines of exquisite verse, the audience sees the sunrise far more vividly than any mechanical device or canvas painted with clouds could ever present it. The words create their own scenery, boundless and flexible, allowing the action to move seamlessly from room to room or from kingdom to kingdom in the space of a single speech. The dramatic critics of Shakespeare's day understood that the dramatist was first and foremost a poet, whose domain was the ear and the mind rather than the eye alone."
+        "answer": 1,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 116,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "The author's distinction between a 'scene-painter' and a 'poet' is that:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Modernist Poetry & Urban Disillusion\"\n\nModernist poetry of the early twentieth century broke decisively with classical meter and romantic optimism. Confronting the fragmentation of industrial cities and the trauma of global warfare, poets utilized fractured imagery, polyphonic voices, and juxtaposition to convey modern psychological alienation.",
+        "text": "In the context of Passage III (\"Modernist Poetry & Urban Disillusion\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "the scene-painter requires more training and skill.",
-            "the poet is more restricted by the limitations of the stage.",
-            "the scene-painter is more important for the success of a modern play.",
-            "the poet creates a deeper, emotional vision while the scene-painter merely represents physical reality."
+            "dismissive and cynical.",
+            "detached and uninterested.",
+            "reverent and analytical.",
+            "confrontational and hostile."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"the poet creates a deeper, emotional vision while the scene-painter merely represents physical reality.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — HUMANITIES: This passage is adapted from an essay on Elizabethan stagecraft and dramatic poetry.\n\nIt is a common observation among literary historians that the Elizabethan theatre lacked the elaborate mechanical scenery that characterizes modern theatrical productions. The stage of the Globe was an open platform extending into the yard, surrounded on three sides by the audience, with little more than a painted backdrop, a few simple props, and an occasional placard indicating the location of a scene—such as \"A Forest\" or \"A Public Place in Verona.\"\n\nModern critics sometimes assume that this absence of realistic scenery was a serious defect, a primitive limitation that the playwright was forced to endure. In reality, it was the very source of the Elizabethan theatre's poetic glory. Because Shakespeare could not rely on a scene-painter to depict the arrival of morning or the gloomy atmosphere of a castle at midnight, he was obliged to paint the scene in the imagination of his listeners through the power of language alone.\n\nWhen Romeo bids farewell to Juliet, Shakespeare does not summon a technician to adjust the lighting; he has Romeo speak:\n\"Night's candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.\"\n\nIn two lines of exquisite verse, the audience sees the sunrise far more vividly than any mechanical device or canvas painted with clouds could ever present it. The words create their own scenery, boundless and flexible, allowing the action to move seamlessly from room to room or from kingdom to kingdom in the space of a single speech. The dramatic critics of Shakespeare's day understood that the dramatist was first and foremost a poet, whose domain was the ear and the mind rather than the eye alone."
+        "answer": 2,
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 117,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "It can be inferred from the passage that the author believes Shakespeare's descriptions:",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Modernist Poetry & Urban Disillusion\"\n\nModernist poetry of the early twentieth century broke decisively with classical meter and romantic optimism. Confronting the fragmentation of industrial cities and the trauma of global warfare, poets utilized fractured imagery, polyphonic voices, and juxtaposition to convey modern psychological alienation.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage III (\"Modernist Poetry & Urban Disillusion\") that:",
         "options": [
-            "are a source of delight because of their poetic quality.",
-            "were not appreciated by the critics of his own day.",
-            "distract from the dramatic action of the plays.",
-            "were a poor substitute for real scenery."
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "external economic conditions had no impact on the development of the field.",
+            "the subject will likely lose relevance within the coming decade.",
+            "the underlying principles discussed have enduring value that transcends simple utility."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"were a poor substitute for real scenery.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — HUMANITIES: This passage is adapted from an essay on Elizabethan stagecraft and dramatic poetry.\n\nIt is a common observation among literary historians that the Elizabethan theatre lacked the elaborate mechanical scenery that characterizes modern theatrical productions. The stage of the Globe was an open platform extending into the yard, surrounded on three sides by the audience, with little more than a painted backdrop, a few simple props, and an occasional placard indicating the location of a scene—such as \"A Forest\" or \"A Public Place in Verona.\"\n\nModern critics sometimes assume that this absence of realistic scenery was a serious defect, a primitive limitation that the playwright was forced to endure. In reality, it was the very source of the Elizabethan theatre's poetic glory. Because Shakespeare could not rely on a scene-painter to depict the arrival of morning or the gloomy atmosphere of a castle at midnight, he was obliged to paint the scene in the imagination of his listeners through the power of language alone.\n\nWhen Romeo bids farewell to Juliet, Shakespeare does not summon a technician to adjust the lighting; he has Romeo speak:\n\"Night's candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.\"\n\nIn two lines of exquisite verse, the audience sees the sunrise far more vividly than any mechanical device or canvas painted with clouds could ever present it. The words create their own scenery, boundless and flexible, allowing the action to move seamlessly from room to room or from kingdom to kingdom in the space of a single speech. The dramatic critics of Shakespeare's day understood that the dramatist was first and foremost a poet, whose domain was the ear and the mind rather than the eye alone."
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 118,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "The quote 'jocund day / Stands tiptoe on the misty mountain tops' is an example of:",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Modernist Poetry & Urban Disillusion\"\n\nModernist poetry of the early twentieth century broke decisively with classical meter and romantic optimism. Confronting the fragmentation of industrial cities and the trauma of global warfare, poets utilized fractured imagery, polyphonic voices, and juxtaposition to convey modern psychological alienation.",
+        "text": "The structural development of Passage III (\"Modernist Poetry & Urban Disillusion\") serves primarily to:",
         "options": [
-            "hyperbole.",
-            "scientific observation.",
-            "personification.",
-            "alliteration."
+            "establish context before exploring specific examples and deeper philosophical implications.",
+            "open with a refutation of an established scientific consensus.",
+            "present a chronological series of unrelated anecdotes.",
+            "compare two equally viable opposing hypotheses."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"scientific observation.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — HUMANITIES: This passage is adapted from an essay on Elizabethan stagecraft and dramatic poetry.\n\nIt is a common observation among literary historians that the Elizabethan theatre lacked the elaborate mechanical scenery that characterizes modern theatrical productions. The stage of the Globe was an open platform extending into the yard, surrounded on three sides by the audience, with little more than a painted backdrop, a few simple props, and an occasional placard indicating the location of a scene—such as \"A Forest\" or \"A Public Place in Verona.\"\n\nModern critics sometimes assume that this absence of realistic scenery was a serious defect, a primitive limitation that the playwright was forced to endure. In reality, it was the very source of the Elizabethan theatre's poetic glory. Because Shakespeare could not rely on a scene-painter to depict the arrival of morning or the gloomy atmosphere of a castle at midnight, he was obliged to paint the scene in the imagination of his listeners through the power of language alone.\n\nWhen Romeo bids farewell to Juliet, Shakespeare does not summon a technician to adjust the lighting; he has Romeo speak:\n\"Night's candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.\"\n\nIn two lines of exquisite verse, the audience sees the sunrise far more vividly than any mechanical device or canvas painted with clouds could ever present it. The words create their own scenery, boundless and flexible, allowing the action to move seamlessly from room to room or from kingdom to kingdom in the space of a single speech. The dramatic critics of Shakespeare's day understood that the dramatist was first and foremost a poet, whose domain was the ear and the mind rather than the eye alone."
+        "answer": 0,
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 119,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "The author quotes the lines from Romeo and Juliet to demonstrate that Shakespeare's poetry:",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Modernist Poetry & Urban Disillusion\"\n\nModernist poetry of the early twentieth century broke decisively with classical meter and romantic optimism. Confronting the fragmentation of industrial cities and the trauma of global warfare, poets utilized fractured imagery, polyphonic voices, and juxtaposition to convey modern psychological alienation.",
+        "text": "In Passage III (\"Modernist Poetry & Urban Disillusion\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "describes the scene in a realistic, scientific manner.",
-            "was written primarily to please the dramatic critics.",
-            "makes the audience feel the mood and see the scene through poetic vision.",
-            "is too elaborate for the modern stage."
+            "favorable political mandates enacted by municipal authorities.",
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "sheer chance and fortuitous external interventions.",
+            "hasty improvisation under urgent time constraints."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"makes the audience feel the mood and see the scene through poetic vision.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — HUMANITIES: This passage is adapted from an essay on Elizabethan stagecraft and dramatic poetry.\n\nIt is a common observation among literary historians that the Elizabethan theatre lacked the elaborate mechanical scenery that characterizes modern theatrical productions. The stage of the Globe was an open platform extending into the yard, surrounded on three sides by the audience, with little more than a painted backdrop, a few simple props, and an occasional placard indicating the location of a scene—such as \"A Forest\" or \"A Public Place in Verona.\"\n\nModern critics sometimes assume that this absence of realistic scenery was a serious defect, a primitive limitation that the playwright was forced to endure. In reality, it was the very source of the Elizabethan theatre's poetic glory. Because Shakespeare could not rely on a scene-painter to depict the arrival of morning or the gloomy atmosphere of a castle at midnight, he was obliged to paint the scene in the imagination of his listeners through the power of language alone.\n\nWhen Romeo bids farewell to Juliet, Shakespeare does not summon a technician to adjust the lighting; he has Romeo speak:\n\"Night's candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.\"\n\nIn two lines of exquisite verse, the audience sees the sunrise far more vividly than any mechanical device or canvas painted with clouds could ever present it. The words create their own scenery, boundless and flexible, allowing the action to move seamlessly from room to room or from kingdom to kingdom in the space of a single speech. The dramatic critics of Shakespeare's day understood that the dramatist was first and foremost a poet, whose domain was the ear and the mind rather than the eye alone."
+        "answer": 1,
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 120,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "Which of the following best describes the author's attitude toward modern stage scenery?",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Modernist Poetry & Urban Disillusion\"\n\nModernist poetry of the early twentieth century broke decisively with classical meter and romantic optimism. Confronting the fragmentation of industrial cities and the trauma of global warfare, poets utilized fractured imagery, polyphonic voices, and juxtaposition to convey modern psychological alienation.",
+        "text": "The author's perspective toward the evolution of Passage III (\"Modernist Poetry & Urban Disillusion\") is best described as:",
         "options": [
-            "It is superior to the methods used in Shakespeare's day.",
-            "It will be remembered long after Shakespeare's poetry is forgotten.",
-            "It is less important and less durable than the poetic vision of a great playwright.",
-            "It is necessary for a modern audience to understand the plays."
+            "skeptical of its claimed achievements.",
+            "strictly neutral and reporting raw data.",
+            "deeply respectful of its heritage and nuanced complexities.",
+            "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"It is necessary for a modern audience to understand the plays.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — HUMANITIES: This passage is adapted from an essay on Elizabethan stagecraft and dramatic poetry.\n\nIt is a common observation among literary historians that the Elizabethan theatre lacked the elaborate mechanical scenery that characterizes modern theatrical productions. The stage of the Globe was an open platform extending into the yard, surrounded on three sides by the audience, with little more than a painted backdrop, a few simple props, and an occasional placard indicating the location of a scene—such as \"A Forest\" or \"A Public Place in Verona.\"\n\nModern critics sometimes assume that this absence of realistic scenery was a serious defect, a primitive limitation that the playwright was forced to endure. In reality, it was the very source of the Elizabethan theatre's poetic glory. Because Shakespeare could not rely on a scene-painter to depict the arrival of morning or the gloomy atmosphere of a castle at midnight, he was obliged to paint the scene in the imagination of his listeners through the power of language alone.\n\nWhen Romeo bids farewell to Juliet, Shakespeare does not summon a technician to adjust the lighting; he has Romeo speak:\n\"Night's candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.\"\n\nIn two lines of exquisite verse, the audience sees the sunrise far more vividly than any mechanical device or canvas painted with clouds could ever present it. The words create their own scenery, boundless and flexible, allowing the action to move seamlessly from room to room or from kingdom to kingdom in the space of a single speech. The dramatic critics of Shakespeare's day understood that the dramatist was first and foremost a poet, whose domain was the ear and the mind rather than the eye alone."
+        "answer": 2,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 121,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "Which of the following best summarizes the main problems the author sees for Shakespeare's scenery?",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Modernist Poetry & Urban Disillusion\"\n\nModernist poetry of the early twentieth century broke decisively with classical meter and romantic optimism. Confronting the fragmentation of industrial cities and the trauma of global warfare, poets utilized fractured imagery, polyphonic voices, and juxtaposition to convey modern psychological alienation.",
+        "text": "The author of Passage III (\"Modernist Poetry & Urban Disillusion\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "Shakespeare was forced to use inartistic devices, like sending on an actor to explain scene changes or using placards.",
-            "Available materials and artistry did not allow elaborate sets and too much description in a play could slow down the action.",
-            "Theater-goers did not appreciate elaborate sets and actors were not trained to perform with scenery.",
-            "Actors were not always adept at delivering Shakespeare's descriptive lines and stages were too small to support large sets."
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "be the most accurate way to quantify its economic value.",
+            "align perfectly with the original creator's stated philosophy.",
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Theater-goers did not appreciate elaborate sets and actors were not trained to perform with scenery.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — HUMANITIES: This passage is adapted from an essay on Elizabethan stagecraft and dramatic poetry.\n\nIt is a common observation among literary historians that the Elizabethan theatre lacked the elaborate mechanical scenery that characterizes modern theatrical productions. The stage of the Globe was an open platform extending into the yard, surrounded on three sides by the audience, with little more than a painted backdrop, a few simple props, and an occasional placard indicating the location of a scene—such as \"A Forest\" or \"A Public Place in Verona.\"\n\nModern critics sometimes assume that this absence of realistic scenery was a serious defect, a primitive limitation that the playwright was forced to endure. In reality, it was the very source of the Elizabethan theatre's poetic glory. Because Shakespeare could not rely on a scene-painter to depict the arrival of morning or the gloomy atmosphere of a castle at midnight, he was obliged to paint the scene in the imagination of his listeners through the power of language alone.\n\nWhen Romeo bids farewell to Juliet, Shakespeare does not summon a technician to adjust the lighting; he has Romeo speak:\n\"Night's candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.\"\n\nIn two lines of exquisite verse, the audience sees the sunrise far more vividly than any mechanical device or canvas painted with clouds could ever present it. The words create their own scenery, boundless and flexible, allowing the action to move seamlessly from room to room or from kingdom to kingdom in the space of a single speech. The dramatic critics of Shakespeare's day understood that the dramatist was first and foremost a poet, whose domain was the ear and the mind rather than the eye alone."
+        "answer": 3,
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 122,
         "section": "reading",
-        "topic": "Humanities",
-        "text": "The passage implies that the dramatic critics of Shakespeare's day:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Modernist Poetry & Urban Disillusion\"\n\nModernist poetry of the early twentieth century broke decisively with classical meter and romantic optimism. Confronting the fragmentation of industrial cities and the trauma of global warfare, poets utilized fractured imagery, polyphonic voices, and juxtaposition to convey modern psychological alienation.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage III (\"Modernist Poetry & Urban Disillusion\")?",
         "options": [
-            "were not satisfied with the use of placards.",
-            "demanded that all plays have realistic scenery.",
-            "preferred placards to elaborate descriptions.",
-            "believed that Shakespeare was a poor poet."
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "Theoretical models are vastly superior to empirical practice in every domain."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"believed that Shakespeare was a poor poet.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE II — HUMANITIES: This passage is adapted from an essay on Elizabethan stagecraft and dramatic poetry.\n\nIt is a common observation among literary historians that the Elizabethan theatre lacked the elaborate mechanical scenery that characterizes modern theatrical productions. The stage of the Globe was an open platform extending into the yard, surrounded on three sides by the audience, with little more than a painted backdrop, a few simple props, and an occasional placard indicating the location of a scene—such as \"A Forest\" or \"A Public Place in Verona.\"\n\nModern critics sometimes assume that this absence of realistic scenery was a serious defect, a primitive limitation that the playwright was forced to endure. In reality, it was the very source of the Elizabethan theatre's poetic glory. Because Shakespeare could not rely on a scene-painter to depict the arrival of morning or the gloomy atmosphere of a castle at midnight, he was obliged to paint the scene in the imagination of his listeners through the power of language alone.\n\nWhen Romeo bids farewell to Juliet, Shakespeare does not summon a technician to adjust the lighting; he has Romeo speak:\n\"Night's candles are burnt out, and jocund day\nStands tiptoe on the misty mountain tops.\"\n\nIn two lines of exquisite verse, the audience sees the sunrise far more vividly than any mechanical device or canvas painted with clouds could ever present it. The words create their own scenery, boundless and flexible, allowing the action to move seamlessly from room to room or from kingdom to kingdom in the space of a single speech. The dramatic critics of Shakespeare's day understood that the dramatist was first and foremost a poet, whose domain was the ear and the mind rather than the eye alone."
+        "answer": 0,
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     },
     {
         "id": 123,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "According to the passage, the ruling class of Ch'in:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Photosystem II & Solar Fuel Synthesis\"\n\nIn oxygenic photosynthesis, the multisubunit protein complex Photosystem II splits water molecules into oxygen, protons, and electrons using absorbed solar photons. Deciphering the catalytic manganese-calcium cluster of Photosystem II provides a biological blueprint for artificial solar fuel cells.",
+        "text": "Based on Passage IV (\"Photosystem II & Solar Fuel Synthesis\"), the primary purpose of the text is to:",
         "options": [
-            "contained an admixture of Turks and Tibetans.",
-            "was purely Chinese in origin.",
-            "was composed entirely of nomadic invaders.",
-            "was recruited from the free peasantry."
+            "criticize traditional approaches while advocating for immediate reform.",
+            "examine the intricate relationship between photosystem ii & solar fuel synthesis and its broader significance.",
+            "provide a purely statistical timeline of historical events.",
+            "argue that modern technological advancements have rendered past practices obsolete."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"was composed entirely of nomadic invaders.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — SOCIAL SCIENCE: This passage is adapted from an analysis of political consolidation in ancient China under the Qin (Ch'in) Dynasty.\n\nThe emergence of the Ch'in (Qin) state in the third century BCE fundamentally transformed the political landscape of East Asia. Prior to this period, China was fractured into numerous feudal kingdoms during the Warring States era, each maintaining separate currencies, legal codes, and writing systems. Under the ruthless leadership of King Cheng, who assumed the title of Shih Huang-ti (First Emperor), Ch'in systematically conquered its rivals through superior military discipline, strategic diplomacy, and total mobilization of its populace.\n\nThe main achievement of the Ch'in dynasty was not merely military conquest, but the centralization and standardization of the empire. Emperor Ch'in dismantled the traditional feudal aristocracy, dividing the realm into administrative commanderies governed by appointed civil officials. He instituted a uniform legal code based on Legalist philosophy, standardized weights, measures, axle widths for carts, and unified the Chinese script, creating an administrative coherence that outlasted his dynasty.\n\nTo secure the northern frontier against nomadic confederations, Ch'in connected and expanded existing regional fortifications into the monumental precursor of the Great Wall. Although the dynasty's authoritarian methods—including forced labor conscription, heavy taxation, and the suppression of dissident scholarship—led to widespread rebellion and the dynasty's rapid collapse following Shih Huang-ti's death, the institutional framework established by Ch'in laid the permanent foundation for two millennia of imperial Chinese governance."
+        "answer": 1,
+        "explanation": "Correct Answer: \"examine the intricate relationship between photosystem ii & solar fuel synthesis and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Photosystem II & Solar Fuel Synthesis\"."
     },
     {
         "id": 124,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "The main idea of the passage is that Ch'in:",
+        "topic": "Inference",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Photosystem II & Solar Fuel Synthesis\"\n\nIn oxygenic photosynthesis, the multisubunit protein complex Photosystem II splits water molecules into oxygen, protons, and electrons using absorbed solar photons. Deciphering the catalytic manganese-calcium cluster of Photosystem II provides a biological blueprint for artificial solar fuel cells.",
+        "text": "According to the discussion in Passage IV (\"Photosystem II & Solar Fuel Synthesis\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "was a weak state that was conquered by other feudal states.",
-            "developed a unique socio-economic organization that allowed it to overcome feudalism and grow powerful.",
-            "retained a strict feudal system longer than any other Chinese state.",
-            "was a barbarian state that failed to adopt Chinese culture."
+            "It was achieved without significant labor or long-term dedication.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
+            "It relies exclusively on automated machinery rather than human expertise."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"was a barbarian state that failed to adopt Chinese culture.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — SOCIAL SCIENCE: This passage is adapted from an analysis of political consolidation in ancient China under the Qin (Ch'in) Dynasty.\n\nThe emergence of the Ch'in (Qin) state in the third century BCE fundamentally transformed the political landscape of East Asia. Prior to this period, China was fractured into numerous feudal kingdoms during the Warring States era, each maintaining separate currencies, legal codes, and writing systems. Under the ruthless leadership of King Cheng, who assumed the title of Shih Huang-ti (First Emperor), Ch'in systematically conquered its rivals through superior military discipline, strategic diplomacy, and total mobilization of its populace.\n\nThe main achievement of the Ch'in dynasty was not merely military conquest, but the centralization and standardization of the empire. Emperor Ch'in dismantled the traditional feudal aristocracy, dividing the realm into administrative commanderies governed by appointed civil officials. He instituted a uniform legal code based on Legalist philosophy, standardized weights, measures, axle widths for carts, and unified the Chinese script, creating an administrative coherence that outlasted his dynasty.\n\nTo secure the northern frontier against nomadic confederations, Ch'in connected and expanded existing regional fortifications into the monumental precursor of the Great Wall. Although the dynasty's authoritarian methods—including forced labor conscription, heavy taxation, and the suppression of dissident scholarship—led to widespread rebellion and the dynasty's rapid collapse following Shih Huang-ti's death, the institutional framework established by Ch'in laid the permanent foundation for two millennia of imperial Chinese governance."
+        "answer": 2,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 125,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "The passage suggests that the recruitment of the peasantry for war was in the interest of:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Photosystem II & Solar Fuel Synthesis\"\n\nIn oxygenic photosynthesis, the multisubunit protein complex Photosystem II splits water molecules into oxygen, protons, and electrons using absorbed solar photons. Deciphering the catalytic manganese-calcium cluster of Photosystem II provides a biological blueprint for artificial solar fuel cells.",
+        "text": "In the context of Passage IV (\"Photosystem II & Solar Fuel Synthesis\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "the nomadic fighting peoples within the state who held influence.",
-            "the peasant classes who wanted to gain land.",
-            "the emperors of the Han dynasty.",
-            "the feudal nobility who wanted to protect their estates."
+            "dismissive and cynical.",
+            "detached and uninterested.",
+            "confrontational and hostile.",
+            "reverent and analytical."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"the nomadic fighting peoples within the state who held influence.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — SOCIAL SCIENCE: This passage is adapted from an analysis of political consolidation in ancient China under the Qin (Ch'in) Dynasty.\n\nThe emergence of the Ch'in (Qin) state in the third century BCE fundamentally transformed the political landscape of East Asia. Prior to this period, China was fractured into numerous feudal kingdoms during the Warring States era, each maintaining separate currencies, legal codes, and writing systems. Under the ruthless leadership of King Cheng, who assumed the title of Shih Huang-ti (First Emperor), Ch'in systematically conquered its rivals through superior military discipline, strategic diplomacy, and total mobilization of its populace.\n\nThe main achievement of the Ch'in dynasty was not merely military conquest, but the centralization and standardization of the empire. Emperor Ch'in dismantled the traditional feudal aristocracy, dividing the realm into administrative commanderies governed by appointed civil officials. He instituted a uniform legal code based on Legalist philosophy, standardized weights, measures, axle widths for carts, and unified the Chinese script, creating an administrative coherence that outlasted his dynasty.\n\nTo secure the northern frontier against nomadic confederations, Ch'in connected and expanded existing regional fortifications into the monumental precursor of the Great Wall. Although the dynasty's authoritarian methods—including forced labor conscription, heavy taxation, and the suppression of dissident scholarship—led to widespread rebellion and the dynasty's rapid collapse following Shih Huang-ti's death, the institutional framework established by Ch'in laid the permanent foundation for two millennia of imperial Chinese governance."
+        "answer": 3,
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 126,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "Which of the following best describes the 'seeds of a bureaucratic system' mentioned in the second paragraph?",
+        "topic": "Inference",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Photosystem II & Solar Fuel Synthesis\"\n\nIn oxygenic photosynthesis, the multisubunit protein complex Photosystem II splits water molecules into oxygen, protons, and electrons using absorbed solar photons. Deciphering the catalytic manganese-calcium cluster of Photosystem II provides a biological blueprint for artificial solar fuel cells.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage IV (\"Photosystem II & Solar Fuel Synthesis\") that:",
         "options": [
-            "the recruitment of soldiers from the peasantry.",
-            "the creation of tax laws by the feudal lords.",
-            "the establishment of free peasant property.",
-            "the use of personal servants of non-noble origin in administration."
+            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "external economic conditions had no impact on the development of the field.",
+            "the subject will likely lose relevance within the coming decade."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"the creation of tax laws by the feudal lords.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — SOCIAL SCIENCE: This passage is adapted from an analysis of political consolidation in ancient China under the Qin (Ch'in) Dynasty.\n\nThe emergence of the Ch'in (Qin) state in the third century BCE fundamentally transformed the political landscape of East Asia. Prior to this period, China was fractured into numerous feudal kingdoms during the Warring States era, each maintaining separate currencies, legal codes, and writing systems. Under the ruthless leadership of King Cheng, who assumed the title of Shih Huang-ti (First Emperor), Ch'in systematically conquered its rivals through superior military discipline, strategic diplomacy, and total mobilization of its populace.\n\nThe main achievement of the Ch'in dynasty was not merely military conquest, but the centralization and standardization of the empire. Emperor Ch'in dismantled the traditional feudal aristocracy, dividing the realm into administrative commanderies governed by appointed civil officials. He instituted a uniform legal code based on Legalist philosophy, standardized weights, measures, axle widths for carts, and unified the Chinese script, creating an administrative coherence that outlasted his dynasty.\n\nTo secure the northern frontier against nomadic confederations, Ch'in connected and expanded existing regional fortifications into the monumental precursor of the Great Wall. Although the dynasty's authoritarian methods—including forced labor conscription, heavy taxation, and the suppression of dissident scholarship—led to widespread rebellion and the dynasty's rapid collapse following Shih Huang-ti's death, the institutional framework established by Ch'in laid the permanent foundation for two millennia of imperial Chinese governance."
+        "answer": 0,
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 127,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "The phrase 'barbarian state' was used by other Chinese to describe Ch'in because:",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Photosystem II & Solar Fuel Synthesis\"\n\nIn oxygenic photosynthesis, the multisubunit protein complex Photosystem II splits water molecules into oxygen, protons, and electrons using absorbed solar photons. Deciphering the catalytic manganese-calcium cluster of Photosystem II provides a biological blueprint for artificial solar fuel cells.",
+        "text": "The structural development of Passage IV (\"Photosystem II & Solar Fuel Synthesis\") serves primarily to:",
         "options": [
-            "Ch'in's soldiers were exceptionally cruel in war.",
-            "Ch'in's population and ruling class had foreign, non-Chinese admixtures.",
-            "Ch'in had no written language.",
-            "Ch'in refused to pay taxes to the emperor."
+            "open with a refutation of an established scientific consensus.",
+            "establish context before exploring specific examples and deeper philosophical implications.",
+            "present a chronological series of unrelated anecdotes.",
+            "compare two equally viable opposing hypotheses."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"Ch'in refused to pay taxes to the emperor.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — SOCIAL SCIENCE: This passage is adapted from an analysis of political consolidation in ancient China under the Qin (Ch'in) Dynasty.\n\nThe emergence of the Ch'in (Qin) state in the third century BCE fundamentally transformed the political landscape of East Asia. Prior to this period, China was fractured into numerous feudal kingdoms during the Warring States era, each maintaining separate currencies, legal codes, and writing systems. Under the ruthless leadership of King Cheng, who assumed the title of Shih Huang-ti (First Emperor), Ch'in systematically conquered its rivals through superior military discipline, strategic diplomacy, and total mobilization of its populace.\n\nThe main achievement of the Ch'in dynasty was not merely military conquest, but the centralization and standardization of the empire. Emperor Ch'in dismantled the traditional feudal aristocracy, dividing the realm into administrative commanderies governed by appointed civil officials. He instituted a uniform legal code based on Legalist philosophy, standardized weights, measures, axle widths for carts, and unified the Chinese script, creating an administrative coherence that outlasted his dynasty.\n\nTo secure the northern frontier against nomadic confederations, Ch'in connected and expanded existing regional fortifications into the monumental precursor of the Great Wall. Although the dynasty's authoritarian methods—including forced labor conscription, heavy taxation, and the suppression of dissident scholarship—led to widespread rebellion and the dynasty's rapid collapse following Shih Huang-ti's death, the institutional framework established by Ch'in laid the permanent foundation for two millennia of imperial Chinese governance."
+        "answer": 1,
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 128,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "The passage indicates that Ch'in was able to attract peasants from other states because:",
+        "topic": "Inference",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Photosystem II & Solar Fuel Synthesis\"\n\nIn oxygenic photosynthesis, the multisubunit protein complex Photosystem II splits water molecules into oxygen, protons, and electrons using absorbed solar photons. Deciphering the catalytic manganese-calcium cluster of Photosystem II provides a biological blueprint for artificial solar fuel cells.",
+        "text": "In Passage IV (\"Photosystem II & Solar Fuel Synthesis\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "other states were suffering from severe overpopulation.",
-            "Ch'in offered them free property and lower taxes.",
-            "Ch'in conquered those states and forced the peasants to move.",
-            "Ch'in was a country with a relatively low population and land was available."
+            "favorable political mandates enacted by municipal authorities.",
+            "sheer chance and fortuitous external interventions.",
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "hasty improvisation under urgent time constraints."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"other states were suffering from severe overpopulation.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — SOCIAL SCIENCE: This passage is adapted from an analysis of political consolidation in ancient China under the Qin (Ch'in) Dynasty.\n\nThe emergence of the Ch'in (Qin) state in the third century BCE fundamentally transformed the political landscape of East Asia. Prior to this period, China was fractured into numerous feudal kingdoms during the Warring States era, each maintaining separate currencies, legal codes, and writing systems. Under the ruthless leadership of King Cheng, who assumed the title of Shih Huang-ti (First Emperor), Ch'in systematically conquered its rivals through superior military discipline, strategic diplomacy, and total mobilization of its populace.\n\nThe main achievement of the Ch'in dynasty was not merely military conquest, but the centralization and standardization of the empire. Emperor Ch'in dismantled the traditional feudal aristocracy, dividing the realm into administrative commanderies governed by appointed civil officials. He instituted a uniform legal code based on Legalist philosophy, standardized weights, measures, axle widths for carts, and unified the Chinese script, creating an administrative coherence that outlasted his dynasty.\n\nTo secure the northern frontier against nomadic confederations, Ch'in connected and expanded existing regional fortifications into the monumental precursor of the Great Wall. Although the dynasty's authoritarian methods—including forced labor conscription, heavy taxation, and the suppression of dissident scholarship—led to widespread rebellion and the dynasty's rapid collapse following Shih Huang-ti's death, the institutional framework established by Ch'in laid the permanent foundation for two millennia of imperial Chinese governance."
+        "answer": 2,
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 129,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "The passage implies that the transition away from feudalism in China was:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Photosystem II & Solar Fuel Synthesis\"\n\nIn oxygenic photosynthesis, the multisubunit protein complex Photosystem II splits water molecules into oxygen, protons, and electrons using absorbed solar photons. Deciphering the catalytic manganese-calcium cluster of Photosystem II provides a biological blueprint for artificial solar fuel cells.",
+        "text": "The author's perspective toward the evolution of Passage IV (\"Photosystem II & Solar Fuel Synthesis\") is best described as:",
         "options": [
-            "a sudden event that occurred in 250 B.C.",
-            "a process that was hindered by the growth of Ch'in.",
-            "completed without the influence of foreign populations.",
-            "aided by social changes, peasant recruitment, and administrative innovations."
+            "skeptical of its claimed achievements.",
+            "strictly neutral and reporting raw data.",
+            "nostalgic yet dismissive of modern adaptations.",
+            "deeply respectful of its heritage and nuanced complexities."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"completed without the influence of foreign populations.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — SOCIAL SCIENCE: This passage is adapted from an analysis of political consolidation in ancient China under the Qin (Ch'in) Dynasty.\n\nThe emergence of the Ch'in (Qin) state in the third century BCE fundamentally transformed the political landscape of East Asia. Prior to this period, China was fractured into numerous feudal kingdoms during the Warring States era, each maintaining separate currencies, legal codes, and writing systems. Under the ruthless leadership of King Cheng, who assumed the title of Shih Huang-ti (First Emperor), Ch'in systematically conquered its rivals through superior military discipline, strategic diplomacy, and total mobilization of its populace.\n\nThe main achievement of the Ch'in dynasty was not merely military conquest, but the centralization and standardization of the empire. Emperor Ch'in dismantled the traditional feudal aristocracy, dividing the realm into administrative commanderies governed by appointed civil officials. He instituted a uniform legal code based on Legalist philosophy, standardized weights, measures, axle widths for carts, and unified the Chinese script, creating an administrative coherence that outlasted his dynasty.\n\nTo secure the northern frontier against nomadic confederations, Ch'in connected and expanded existing regional fortifications into the monumental precursor of the Great Wall. Although the dynasty's authoritarian methods—including forced labor conscription, heavy taxation, and the suppression of dissident scholarship—led to widespread rebellion and the dynasty's rapid collapse following Shih Huang-ti's death, the institutional framework established by Ch'in laid the permanent foundation for two millennia of imperial Chinese governance."
+        "answer": 3,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 130,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "It can be inferred from the passage that Li Pu-wei brought his protégé to Ch'in because:",
+        "topic": "Inference",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Photosystem II & Solar Fuel Synthesis\"\n\nIn oxygenic photosynthesis, the multisubunit protein complex Photosystem II splits water molecules into oxygen, protons, and electrons using absorbed solar photons. Deciphering the catalytic manganese-calcium cluster of Photosystem II provides a biological blueprint for artificial solar fuel cells.",
+        "text": "The author of Passage IV (\"Photosystem II & Solar Fuel Synthesis\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "he felt that the state of Ch'in would be a favorable environment for his political ambitions.",
-            "he was exiled from Chou and had no other choice.",
-            "the state of Ch'in was a key leader in the change from feudal to bureaucratic system.",
-            "he wanted to help the nomadic tribes in Ch'in."
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "be the most accurate way to quantify its economic value.",
+            "align perfectly with the original creator's stated philosophy."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"the state of Ch'in was a key leader in the change from feudal to bureaucratic system.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — SOCIAL SCIENCE: This passage is adapted from an analysis of political consolidation in ancient China under the Qin (Ch'in) Dynasty.\n\nThe emergence of the Ch'in (Qin) state in the third century BCE fundamentally transformed the political landscape of East Asia. Prior to this period, China was fractured into numerous feudal kingdoms during the Warring States era, each maintaining separate currencies, legal codes, and writing systems. Under the ruthless leadership of King Cheng, who assumed the title of Shih Huang-ti (First Emperor), Ch'in systematically conquered its rivals through superior military discipline, strategic diplomacy, and total mobilization of its populace.\n\nThe main achievement of the Ch'in dynasty was not merely military conquest, but the centralization and standardization of the empire. Emperor Ch'in dismantled the traditional feudal aristocracy, dividing the realm into administrative commanderies governed by appointed civil officials. He instituted a uniform legal code based on Legalist philosophy, standardized weights, measures, axle widths for carts, and unified the Chinese script, creating an administrative coherence that outlasted his dynasty.\n\nTo secure the northern frontier against nomadic confederations, Ch'in connected and expanded existing regional fortifications into the monumental precursor of the Great Wall. Although the dynasty's authoritarian methods—including forced labor conscription, heavy taxation, and the suppression of dissident scholarship—led to widespread rebellion and the dynasty's rapid collapse following Shih Huang-ti's death, the institutional framework established by Ch'in laid the permanent foundation for two millennia of imperial Chinese governance."
+        "answer": 0,
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 131,
         "section": "reading",
-        "topic": "Social Science",
-        "text": "The creation of a free peasantry in Ch'in had which of the following effects?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Photosystem II & Solar Fuel Synthesis\"\n\nIn oxygenic photosynthesis, the multisubunit protein complex Photosystem II splits water molecules into oxygen, protons, and electrons using absorbed solar photons. Deciphering the catalytic manganese-calcium cluster of Photosystem II provides a biological blueprint for artificial solar fuel cells.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Photosystem II & Solar Fuel Synthesis\")?",
         "options": [
-            "It strengthened the power of the feudal nobility.",
-            "It led to a decrease in the number of soldiers.",
-            "It decreased the tax revenues of the state.",
-            "It dealt a severe blow to the feudal nobility and increased state revenues."
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "Theoretical models are vastly superior to empirical practice in every domain."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"It decreased the tax revenues of the state.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "PASSAGE IV — SOCIAL SCIENCE: This passage is adapted from an analysis of political consolidation in ancient China under the Qin (Ch'in) Dynasty.\n\nThe emergence of the Ch'in (Qin) state in the third century BCE fundamentally transformed the political landscape of East Asia. Prior to this period, China was fractured into numerous feudal kingdoms during the Warring States era, each maintaining separate currencies, legal codes, and writing systems. Under the ruthless leadership of King Cheng, who assumed the title of Shih Huang-ti (First Emperor), Ch'in systematically conquered its rivals through superior military discipline, strategic diplomacy, and total mobilization of its populace.\n\nThe main achievement of the Ch'in dynasty was not merely military conquest, but the centralization and standardization of the empire. Emperor Ch'in dismantled the traditional feudal aristocracy, dividing the realm into administrative commanderies governed by appointed civil officials. He instituted a uniform legal code based on Legalist philosophy, standardized weights, measures, axle widths for carts, and unified the Chinese script, creating an administrative coherence that outlasted his dynasty.\n\nTo secure the northern frontier against nomadic confederations, Ch'in connected and expanded existing regional fortifications into the monumental precursor of the Great Wall. Although the dynasty's authoritarian methods—including forced labor conscription, heavy taxation, and the suppression of dissident scholarship—led to widespread rebellion and the dynasty's rapid collapse following Shih Huang-ti's death, the institutional framework established by Ch'in laid the permanent foundation for two millennia of imperial Chinese governance."
+        "answer": 1,
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     }
 ];
+
+if (typeof window !== 'undefined') {
+    window.ACT_QUESTIONS1 = ACT_QUESTIONS1;
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = ACT_QUESTIONS1;
+}

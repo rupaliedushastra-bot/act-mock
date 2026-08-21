@@ -50,15 +50,15 @@ const ACT_QUESTIONS1 = [
         "id": 4,
         "section": "math",
         "topic": "Percentages",
-        "text": "What is 15% of 240?",
+        "text": "What is 18% of 350?",
         "options": [
-            "36",
-            "32",
-            "24",
-            "48"
+            "63",
+            "54",
+            "72",
+            "45"
         ],
         "answer": 0,
-        "explanation": "To calculate 15% of 240, convert the percentage into decimal form by dividing by 100 (15% = 0.15) and multiply by the base: 0.15 · 240 = 36."
+        "explanation": "To calculate 18% of 350, convert the percentage into decimal form (0.18) and multiply by the base: 0.18 · 350 = 63."
     },
     {
         "id": 5,

@@ -1,5 +1,5 @@
 // =============================================
-// act_questions1.js – ACT Practice Test Diagnostic 5
+// act_questions1.js – ACT Diagnostic Test 5
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
 // Total: 131 questions
 // =============================================
@@ -8,1916 +8,1879 @@ const ACT_QUESTIONS1 = [
     {
         "id": 1,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [1].",
+        "topic": "Punctuation",
+        "text": "The research team led by Julian Becker, who had spent five weeks analyzing Renaissance tempera panels in Florence finally published their findings in a leading scientific journal.\n\nWhich of the following best corrects the punctuation in the sentence above?",
         "options": [
-            "NO CHANGE",
-            "1924; it",
-            "1924. It",
-            "1924 and it"
+            "The research team led by Julian Becker who had spent five weeks analyzing Renaissance tempera panels in Florence, finally published their findings in a leading scientific journal.",
+            "The research team led by Julian Becker, who had spent five weeks analyzing Renaissance tempera panels in Florence finally, published their findings in a leading scientific journal.",
+            "The research team led by Julian Becker, who had spent five weeks analyzing Renaissance tempera panels in Florence, finally published their findings in a leading scientific journal.",
+            "The research team led by Julian Becker who had spent five weeks analyzing Renaissance tempera panels, in Florence finally published their findings in a leading scientific journal."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 2,
+        "explanation": "Correct Answer: \"The research team led by Julian Becker, who had spent five weeks analyzing Renaissance tempera panels in Florence, finally published their findings in a leading scientific journal.\". The non-essential relative clause beginning with 'who had spent five weeks...' must be set off by paired commas."
     },
     {
         "id": 2,
         "section": "english",
-        "topic": "Agreement",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [2].",
+        "topic": "Grammar & Usage",
+        "text": "Neither Julian Becker nor the Florentine Guild technicians was able to calibrate the infrared reflectography sensor before the expedition began.\n\nWhich correction should be made to the underlined verb?",
         "options": [
-            "NO CHANGE",
-            "the bridges were",
-            "it was",
-            "it were"
+            "is able to calibrate",
+            "was being able to calibrate",
+            "No change needed",
+            "were able to calibrate"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"it was\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 3,
+        "explanation": "Correct Answer: \"were able to calibrate\". With 'neither... nor', the verb agrees with the closer subject ('technicians', plural), requiring 'were'."
     },
     {
         "id": 3,
         "section": "english",
-        "topic": "Agreement",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [3].",
+        "topic": "Sentence Structure",
+        "text": "Examining the delicate structure of Renaissance tempera panels through the infrared reflectography sensor, the anomalous readings became immediately apparent to Julian Becker.\n\nWhich revision best corrects the dangling modifier in the sentence?",
         "options": [
-            "NO CHANGE",
-            "authorized",
-            "was authorized",
-            "would authorize"
+            "Examining the delicate structure of Renaissance tempera panels through the infrared reflectography sensor, Julian Becker immediately noticed the anomalous readings.",
+            "Through the infrared reflectography sensor, examining the delicate structure of Renaissance tempera panels, the anomalous readings became immediately apparent.",
+            "The anomalous readings became immediately apparent, examining the delicate structure of Renaissance tempera panels through the infrared reflectography sensor.",
+            "Julian Becker, examining the delicate structure of Renaissance tempera panels through the infrared reflectography sensor, the anomalous readings became apparent."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"authorized\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Examining the delicate structure of Renaissance tempera panels through the infrared reflectography sensor, Julian Becker immediately noticed the anomalous readings.\". The introductory participial phrase must modify the person performing the action (Julian Becker), not 'the readings'."
     },
     {
         "id": 4,
         "section": "english",
-        "topic": "Conciseness",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [4].",
+        "topic": "Style & Tone",
+        "text": "The initial hypothesis regarding Renaissance tempera panels formulated by Julian Becker was completely disproven by the latest measurements from Florence.\n\nWhich alternative to the underlined portion would be LEAST acceptable in maintaining a formal academic tone?",
         "options": [
-            "NO CHANGE",
-            "build and construct and maintain",
-            "construct and maintain",
-            "construct, and maintain"
+            "thoroughly refuted",
+            "totally shot down",
+            "proven inaccurate",
+            "rendered untenable"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"construct and maintain\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 1,
+        "explanation": "Correct Answer: \"totally shot down\". 'Totally shot down' is colloquial slang and undermines the formal register of an academic publication."
     },
     {
         "id": 5,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [5].",
+        "topic": "Transitions",
+        "text": "The Florentine Guild faced severe logistical obstacles in Florence. [5], the researchers successfully deployed the infrared reflectography sensor on schedule.\n\nWhich transition word or phrase best connects these two sentences?",
         "options": [
-            "NO CHANGE",
-            "of Howard Baird, and George Hodge",
-            "of Howard Baird and, George Hodge",
-            "of, Howard Baird and George Hodge"
+            "Consequently",
+            "Furthermore",
+            "Nevertheless",
+            "Similarly"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 2,
+        "explanation": "Correct Answer: \"Nevertheless\". 'Nevertheless' correctly signals a contrast between the severe obstacles and the successful deployment."
     },
     {
         "id": 6,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nThe purpose of including the cost of the bridge is to:",
+        "topic": "Rhetorical Skills",
+        "text": "The author wants to conclude a paragraph by highlighting the broader technological impact of classical restoration pioneered by Julian Becker. Which choice best accomplishes this goal?",
         "options": [
-            "provide a piece of information critical to the point of the essay.",
-            "insert a necessary transition between the second and third paragraphs.",
-            "add a detail contributing to the reader’s understanding of the magnitude of the project.",
-            "provide an explanation of how the group raised money to invest in the bridge."
+            "Julian Becker has presented these findings at several international academic symposia.",
+            "Securing institutional grant funding remains an essential step for laboratory expansion.",
+            "Field research in remote environments requires careful logistical planning.",
+            "By translating these observations into synthetic prototypes, industrial engineers can manufacture more resilient commercial materials."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"add a detail contributing to the reader’s understanding of the magnitude of the project.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 3,
+        "explanation": "Correct Answer: \"By translating these observations into synthetic prototypes, industrial engineers can manufacture more resilient commercial materials.\". This option directly connects the specialized scientific findings to broader commercial and industrial applications."
     },
     {
         "id": 7,
         "section": "english",
-        "topic": "Agreement",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [7].",
+        "topic": "Wordiness & Redundancy",
+        "text": "The final report presented by Julian Becker contained a concise summary that was brief and to the point regarding Renaissance tempera panels in Florence.\n\nWhich revision best eliminates the redundancy in the sentence?",
         "options": [
-            "NO CHANGE",
-            "who was",
-            "a company",
-            "a company that had been"
+            "The final report presented by Julian Becker contained a concise summary of Renaissance tempera panels in Florence.",
+            "The final report presented a concise summary that was brief and short of Renaissance tempera panels.",
+            "The final report presented a brief summary concise and to the point of Renaissance tempera panels.",
+            "The final report presented a summary that was concise, brief, and to the point."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"a company that had been\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The final report presented by Julian Becker contained a concise summary of Renaissance tempera panels in Florence.\". 'Concise summary' inherently means brief and to the point; adding extra qualifiers creates unnecessary redundancy."
     },
     {
         "id": 8,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nIf the writer were to delete the preceding sentence, the essay would primarily lose:",
+        "topic": "Punctuation",
+        "text": "The infrared reflectography sensor recorded unprecedented fluctuations in Florence the analytical software processed the telemetry in real time.\n\nWhich choice provides the correct punctuation between the two independent clauses?",
         "options": [
-            "information about how long the project had been expected to take.",
-            "a warning about the dangers of large-scale construction projects.",
-            "crucial information about the duration of the project.",
-            "a necessary transition between Paragraphs 3 and 4."
+            "Florence, the analytical",
+            "Florence; the analytical",
+            "Florence the analytical",
+            "Florence: and the analytical"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"a necessary transition between Paragraphs 3 and 4.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Florence; the analytical\". Two independent clauses without a coordinating conjunction must be separated by a semicolon."
     },
     {
         "id": 9,
         "section": "english",
-        "topic": "Organization",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [9].",
+        "topic": "Grammar & Usage",
+        "text": "Julian Becker consulted with three international specialists from Florence, all of [9] had extensive experience in classical restoration.\n\nWhich pronoun correctly completes the sentence?",
         "options": [
-            "NO CHANGE",
-            "Nonetheless, the",
-            "At the same time, the",
-            "The"
+            "who",
+            "which",
+            "whom",
+            "that"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"The\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"whom\". 'Whom' is the objective case pronoun required as the object of the preposition 'of'."
     },
     {
         "id": 10,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [10].",
+        "topic": "Sentence Structure",
+        "text": "The temperature dropped rapidly after dusk in Florence, the Florentine Guild had to calibrate the heating elements on the infrared reflectography sensor.\n\nWhich choice best corrects the comma splice?",
         "options": [
-            "NO CHANGE",
-            "long.",
-            "in total length.",
-            "lengthy."
+            "The temperature dropped rapidly after dusk in Florence the team had to calibrate the heating elements.",
+            "Dropping rapidly after dusk the temperature in Florence, the team calibrated the heating elements.",
+            "The temperature dropped rapidly after dusk in Florence, and so therefore the team calibrated the heating elements.",
+            "The temperature dropped rapidly after dusk in Florence, so the Florentine Guild had to calibrate the heating elements on the infrared reflectography sensor."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"long.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 3,
+        "explanation": "Correct Answer: \"The temperature dropped rapidly after dusk in Florence, so the Florentine Guild had to calibrate the heating elements on the infrared reflectography sensor.\". A comma splice between two independent clauses is correctly repaired using a comma and coordinating conjunction ('so')."
     },
     {
         "id": 11,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [11].",
+        "topic": "Style & Tone",
+        "text": "During the survey in Florence, Julian Becker collected a bunch of data points on Renaissance tempera panels.\n\nWhich choice replaces the underlined phrase with the most precise and formal academic phrasing?",
         "options": [
-            "NO CHANGE",
-            "side, lies",
-            "side, lying",
-            "side; and it lies"
+            "a substantial dataset of",
+            "a whole lot of",
+            "tons of",
+            "a massive heap of"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"side, lying\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 0,
+        "explanation": "Correct Answer: \"a substantial dataset of\". 'A substantial dataset of' conveys academic precision, avoiding vague or informal colloquialisms."
     },
     {
         "id": 12,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [12].",
+        "topic": "Transitions",
+        "text": "The filtration membrane on the infrared reflectography sensor clogged due to fine sediment in Florence. [12], the automated safety valve halted fluid intake immediately.\n\nWhich transition word best signals the logical relationship?",
         "options": [
-            "NO CHANGE",
-            "opened the BMHBC charged",
-            "opened: the BMHBC charged",
-            "opened; the BMHBC charged"
+            "Conversely",
+            "Consequently",
+            "Nonetheless",
+            "In contrast"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Consequently\". 'Consequently' correctly indicates that the safety valve action was a direct result of the clogged membrane."
     },
     {
         "id": 13,
         "section": "english",
-        "topic": "Organization",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [13].",
+        "topic": "Rhetorical Skills",
+        "text": "For the sake of logical flow in Julian Becker's research log, where should a sentence describing the initial site preparation in Florence be placed?",
         "options": [
-            "NO CHANGE",
-            "In contrast,",
-            "Besides that fact,",
-            "Today,"
+            "At the very end of the essay after the conclusion.",
+            "Between the analysis of results and the final summary.",
+            "At the beginning of the paragraph, before the discussion of data collection.",
+            "Nowhere, because site preparation is irrelevant to scientific research."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"Today,\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"At the beginning of the paragraph, before the discussion of data collection.\". Chronological logic requires site preparation to precede the collection and analysis of data."
     },
     {
         "id": 14,
         "section": "english",
-        "topic": "Agreement",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nChoose the best alternative for the underlined portion [14].",
+        "topic": "Wordiness & Redundancy",
+        "text": "Julian Becker observed an unusual phenomenon that was rare and out of the ordinary while tracking Renaissance tempera panels in Florence.\n\nWhich choice is most concise without losing essential meaning?",
         "options": [
-            "NO CHANGE",
-            "over",
-            "even more than",
-            "a higher amount than"
+            "an unusual phenomenon that was rare in Florence.",
+            "a rare phenomenon out of the ordinary in Florence.",
+            "an unusual, rare, and out of the ordinary phenomenon in Florence.",
+            "an unusual phenomenon in Florence."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 3,
+        "explanation": "Correct Answer: \"an unusual phenomenon in Florence.\". 'An unusual phenomenon' fully captures the meaning without repetitive synonyms like 'rare' and 'out of the ordinary'."
     },
     {
         "id": 15,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage I\n\nWhen the gleaming Bear Mountain Bridge officially opened to traffic on Thanksgiving Day in [1] 1924 , it was known as the Harriman Bridge, after Edward H. Harriman, a wealthy philanthropist and patriarch of the family most influential in the bridge’s construction. Before [2] they were constructed, there were no bridges spanning the Hudson River south of Albany. By the early 1920s, the ferry services used to transport people back and forth across the river had become woefully inadequate. In February of 1922, in an effort to alleviate some of the burden on the ferries and create a permanent link across the Hudson, the New York State Legislature [3] had authorized a group of private investors, led by Mary Harriman, to build a bridge. The group, known as the Bear Mountain Hudson Bridge Company (BMHBC), was allotted thirty years to [4] build, construct, and maintain the structure, at which time the span would be handed over to New York State.\n\nThe BMHBC invested almost $4,500,000 into the suspension bridge and hired the world-renowned design team [5] of Howard Baird and George Hodge as architects. 36 Baird and Hodge enlisted the help of John A. Roebling and Sons, [7] who were instrumental in the steel work of the Brooklyn Bridge and would later work on the Golden Gate and George Washington Bridges.\n\nAmazingly, the bridge took only twenty months and eleven days to complete, and not one life was lost. 38\n\nIt was a technological marvel and would stand as a model for the suspension bridges of the future. At the time of the Harriman Bridge’s completion, it was, at 2,257 feet, the longest single-span steel suspension bridge in the world. [9] Therefore, the two main cables used in the suspension were 18 inches in diameter, and each contained 7,752 individual steel wires wrapped in 37 thick strands. If completely unraveled, the single wires in both cables would be 7,377 miles [10] longer. The bridge links Bear Mountain on the western bank of the Hudson to Anthony’s Nose on the eastern [11] side, it lies so precisely on an east-west plane that one can check a compass by it. It carries Routes 6 and 202 across the Hudson and is the point of river crossing for the Appalachian Trail.\n\nIn an attempt to recoup some of its investment after the bridge [12] opened, the BMHBC charged an exorbitant toll of eighty cents per crossing. Even with the high toll, however, it operated at a loss for thirteen of its first sixteen years. Finally it was acquired, more than ten years earlier than planned, by the New York State Bridge Authority. The bridge was renamed the Bear Mountain Bridge. [13] Moreover, the Bear Mountain Bridge sees [14] more than six million vehicles cross its concrete decks each year.\n\nSuppose the author had been assigned to write a brief history of bridge building in the United States. Would this essay successfully fulfill that requirement?",
+        "topic": "Punctuation",
+        "text": "The three [15] collective recommendations on classical restoration were compiled into the final project charter by Julian Becker.\n\nWhich choice correctly indicates plural possession?",
         "options": [
-            "Yes, because it provides information on the entire process from the initial funding through the opening of the bridge.",
-            "Yes, because Bear Mountain Bridge is historically significant.",
-            "No, because it focuses on only one bridge.",
-            "No, because the essay is primarily concerned with the financial aspects of building and maintaining the bridge."
+            "institutions'",
+            "institution's",
+            "institutions",
+            "institutions's"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"No, because it focuses on only one bridge.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"institutions'\". Plural nouns ending in 's' form the possessive by adding an apostrophe after the 's' ('institutions'')."
     },
     {
         "id": 16,
         "section": "english",
-        "topic": "Agreement",
-        "text": "Passage II\n\nAs the sun [16] was slowly rising over the Atlantic Ocean and painted New York harbor a spectacular fiery orange, I started my old Toyota’s engine. At this early hour, there was still some semblance of the night’s tranquility left on the city sidewalks, but I knew that, as the minutes ticked by, [17] the streets would flood with humanity. I smiled [18] with the thought that soon all the wonderful chaos of New York City would be disappearing behind me as I [19] embarked on my trip to the other side of the country.\n\n[20] As the morning sun climbed into the sky, I shuddered with excitement [51] to think that my final stop would be in California, where the sun itself ends its journey across America. Like the sun, however, I still had quite a journey before me.\n\nI had been planning this road trip across the United States for as long as I could remember. In my life, I had been fortunate enough to see some of the most beautiful countries in the world. However, it had always bothered me that although I’d stood in the shadow of the [52] Eiffel Tower, marveled in the desert heat at the Pyramids of Giza, I’d never seen any of the wonders of my own country, except those found in my hometown of New York City. All of that was about to change.\n\n[53] As I left the city, the tall buildings began to give way to smaller ones, then to transform into the quaint rows of houses that clustered the crowded suburbs. Trees and grass, then the yellow-green of cornfields and the golden wash of wheat were slowly [54] replacing the familiar mazes of cement and steel. My world no longer stretched vertically toward [55] the sky, it now spread horizontally toward eternity. For two days, I pushed through the wind-whipped farmlands of Mid-America, hypnotized by the beauty of the undulating yet unbroken lines. At night, the breeze from my car would stir the wheat fields to dance beneath the moon, and the silos hid in the shadows, quietly imposing their [56] simply serenity upon everything.\n\nThen, as the [57] night’s shadows gave way to light, there seemed to be a great force rising to meet the [58] sun as it made its reappearance.\n\n[59] Still, I had no idea what I was looking at. Then, there was no [60] mistaking it. The unbroken lines of Mid-America had given way to the jagged and majestic heights of the Rockies and the gateway to the American West.\n\nChoose the best alternative for the underlined portion [16].",
+        "topic": "Grammar & Usage",
+        "text": "When the telemetry gauge fluctuated in Florence, Julian Becker quickly [16] the auxiliary power switch on the infrared reflectography sensor.\n\nWhich verb form maintains proper past tense consistency?",
         "options": [
-            "NO CHANGE",
-            "rising slowly",
-            "rose slowly",
-            "continued to rise"
+            "activates",
+            "activated",
+            "has activated",
+            "will activate"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"rose slowly\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 1,
+        "explanation": "Correct Answer: \"activated\". The past tense verb 'fluctuated' requires the parallel past tense 'activated' for narrative consistency."
     },
     {
         "id": 17,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage II\n\nAs the sun [16] was slowly rising over the Atlantic Ocean and painted New York harbor a spectacular fiery orange, I started my old Toyota’s engine. At this early hour, there was still some semblance of the night’s tranquility left on the city sidewalks, but I knew that, as the minutes ticked by, [17] the streets would flood with humanity. I smiled [18] with the thought that soon all the wonderful chaos of New York City would be disappearing behind me as I [19] embarked on my trip to the other side of the country.\n\n[20] As the morning sun climbed into the sky, I shuddered with excitement [51] to think that my final stop would be in California, where the sun itself ends its journey across America. Like the sun, however, I still had quite a journey before me.\n\nI had been planning this road trip across the United States for as long as I could remember. In my life, I had been fortunate enough to see some of the most beautiful countries in the world. However, it had always bothered me that although I’d stood in the shadow of the [52] Eiffel Tower, marveled in the desert heat at the Pyramids of Giza, I’d never seen any of the wonders of my own country, except those found in my hometown of New York City. All of that was about to change.\n\n[53] As I left the city, the tall buildings began to give way to smaller ones, then to transform into the quaint rows of houses that clustered the crowded suburbs. Trees and grass, then the yellow-green of cornfields and the golden wash of wheat were slowly [54] replacing the familiar mazes of cement and steel. My world no longer stretched vertically toward [55] the sky, it now spread horizontally toward eternity. For two days, I pushed through the wind-whipped farmlands of Mid-America, hypnotized by the beauty of the undulating yet unbroken lines. At night, the breeze from my car would stir the wheat fields to dance beneath the moon, and the silos hid in the shadows, quietly imposing their [56] simply serenity upon everything.\n\nThen, as the [57] night’s shadows gave way to light, there seemed to be a great force rising to meet the [58] sun as it made its reappearance.\n\n[59] Still, I had no idea what I was looking at. Then, there was no [60] mistaking it. The unbroken lines of Mid-America had given way to the jagged and majestic heights of the Rockies and the gateway to the American West.\n\nThe author wants to contrast the statement about the quiet of the night streets with a related detail about the daytime activity. Assuming that all of the choices are true, which of the following best accomplishes that goal?",
+        "topic": "Sentence Structure",
+        "text": "The protocol in Florence required Julian Becker to inspect the valves, [17], and document all telemetry in the official log.\n\nWhich choice maintains parallel grammatical structure?",
         "options": [
-            "NO CHANGE",
-            "some people might appear.",
-            "everything would be different.",
-            "the tranquility would be unbroken."
+            "cleaning the optical sensors",
+            "to have cleaned the optical sensors",
+            "clean the optical sensors",
+            "the optical sensors were cleaned"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"clean the optical sensors\". The infinitive structure 'to inspect..., [clean]..., and [document]...' requires base verb forms in parallel."
     },
     {
         "id": 18,
         "section": "english",
-        "topic": "Agreement",
-        "text": "Passage II\n\nAs the sun [16] was slowly rising over the Atlantic Ocean and painted New York harbor a spectacular fiery orange, I started my old Toyota’s engine. At this early hour, there was still some semblance of the night’s tranquility left on the city sidewalks, but I knew that, as the minutes ticked by, [17] the streets would flood with humanity. I smiled [18] with the thought that soon all the wonderful chaos of New York City would be disappearing behind me as I [19] embarked on my trip to the other side of the country.\n\n[20] As the morning sun climbed into the sky, I shuddered with excitement [51] to think that my final stop would be in California, where the sun itself ends its journey across America. Like the sun, however, I still had quite a journey before me.\n\nI had been planning this road trip across the United States for as long as I could remember. In my life, I had been fortunate enough to see some of the most beautiful countries in the world. However, it had always bothered me that although I’d stood in the shadow of the [52] Eiffel Tower, marveled in the desert heat at the Pyramids of Giza, I’d never seen any of the wonders of my own country, except those found in my hometown of New York City. All of that was about to change.\n\n[53] As I left the city, the tall buildings began to give way to smaller ones, then to transform into the quaint rows of houses that clustered the crowded suburbs. Trees and grass, then the yellow-green of cornfields and the golden wash of wheat were slowly [54] replacing the familiar mazes of cement and steel. My world no longer stretched vertically toward [55] the sky, it now spread horizontally toward eternity. For two days, I pushed through the wind-whipped farmlands of Mid-America, hypnotized by the beauty of the undulating yet unbroken lines. At night, the breeze from my car would stir the wheat fields to dance beneath the moon, and the silos hid in the shadows, quietly imposing their [56] simply serenity upon everything.\n\nThen, as the [57] night’s shadows gave way to light, there seemed to be a great force rising to meet the [58] sun as it made its reappearance.\n\n[59] Still, I had no idea what I was looking at. Then, there was no [60] mistaking it. The unbroken lines of Mid-America had given way to the jagged and majestic heights of the Rockies and the gateway to the American West.\n\nChoose the best alternative for the underlined portion [18].",
+        "topic": "Style & Tone",
+        "text": "The new spectral analysis conducted in Florence [18] the presence of rare mineral compounds within Renaissance tempera panels.\n\nWhich choice offers the most precise and descriptive vocabulary?",
         "options": [
-            "NO CHANGE",
-            "along with",
-            "at",
-            "all because of"
+            "showed up",
+            "made clearish",
+            "pointed at",
+            "substantiated"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"at\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 3,
+        "explanation": "Correct Answer: \"substantiated\". 'Substantiated' is formal, accurate, and scientifically appropriate."
     },
     {
         "id": 19,
         "section": "english",
-        "topic": "Conciseness",
-        "text": "Passage II\n\nAs the sun [16] was slowly rising over the Atlantic Ocean and painted New York harbor a spectacular fiery orange, I started my old Toyota’s engine. At this early hour, there was still some semblance of the night’s tranquility left on the city sidewalks, but I knew that, as the minutes ticked by, [17] the streets would flood with humanity. I smiled [18] with the thought that soon all the wonderful chaos of New York City would be disappearing behind me as I [19] embarked on my trip to the other side of the country.\n\n[20] As the morning sun climbed into the sky, I shuddered with excitement [51] to think that my final stop would be in California, where the sun itself ends its journey across America. Like the sun, however, I still had quite a journey before me.\n\nI had been planning this road trip across the United States for as long as I could remember. In my life, I had been fortunate enough to see some of the most beautiful countries in the world. However, it had always bothered me that although I’d stood in the shadow of the [52] Eiffel Tower, marveled in the desert heat at the Pyramids of Giza, I’d never seen any of the wonders of my own country, except those found in my hometown of New York City. All of that was about to change.\n\n[53] As I left the city, the tall buildings began to give way to smaller ones, then to transform into the quaint rows of houses that clustered the crowded suburbs. Trees and grass, then the yellow-green of cornfields and the golden wash of wheat were slowly [54] replacing the familiar mazes of cement and steel. My world no longer stretched vertically toward [55] the sky, it now spread horizontally toward eternity. For two days, I pushed through the wind-whipped farmlands of Mid-America, hypnotized by the beauty of the undulating yet unbroken lines. At night, the breeze from my car would stir the wheat fields to dance beneath the moon, and the silos hid in the shadows, quietly imposing their [56] simply serenity upon everything.\n\nThen, as the [57] night’s shadows gave way to light, there seemed to be a great force rising to meet the [58] sun as it made its reappearance.\n\n[59] Still, I had no idea what I was looking at. Then, there was no [60] mistaking it. The unbroken lines of Mid-America had given way to the jagged and majestic heights of the Rockies and the gateway to the American West.\n\nChoose the best alternative for the underlined portion [19].",
+        "topic": "Transitions",
+        "text": "The infrared reflectography sensor mapped the core structure of Renaissance tempera panels in Florence. [19], it recorded ambient temperature and salinity gradients simultaneously.\n\nWhich transition word best adds supporting information?",
         "options": [
-            "NO CHANGE",
-            "embarked on this journey across",
-            "traveled to the other side of",
-            "traveled across"
+            "Furthermore",
+            "On the other hand",
+            "In spite of this",
+            "Instead"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"traveled across\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Furthermore\". 'Furthermore' signals the addition of supplementary data collected by the instrument."
     },
     {
         "id": 20,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage II\n\nAs the sun [16] was slowly rising over the Atlantic Ocean and painted New York harbor a spectacular fiery orange, I started my old Toyota’s engine. At this early hour, there was still some semblance of the night’s tranquility left on the city sidewalks, but I knew that, as the minutes ticked by, [17] the streets would flood with humanity. I smiled [18] with the thought that soon all the wonderful chaos of New York City would be disappearing behind me as I [19] embarked on my trip to the other side of the country.\n\n[20] As the morning sun climbed into the sky, I shuddered with excitement [51] to think that my final stop would be in California, where the sun itself ends its journey across America. Like the sun, however, I still had quite a journey before me.\n\nI had been planning this road trip across the United States for as long as I could remember. In my life, I had been fortunate enough to see some of the most beautiful countries in the world. However, it had always bothered me that although I’d stood in the shadow of the [52] Eiffel Tower, marveled in the desert heat at the Pyramids of Giza, I’d never seen any of the wonders of my own country, except those found in my hometown of New York City. All of that was about to change.\n\n[53] As I left the city, the tall buildings began to give way to smaller ones, then to transform into the quaint rows of houses that clustered the crowded suburbs. Trees and grass, then the yellow-green of cornfields and the golden wash of wheat were slowly [54] replacing the familiar mazes of cement and steel. My world no longer stretched vertically toward [55] the sky, it now spread horizontally toward eternity. For two days, I pushed through the wind-whipped farmlands of Mid-America, hypnotized by the beauty of the undulating yet unbroken lines. At night, the breeze from my car would stir the wheat fields to dance beneath the moon, and the silos hid in the shadows, quietly imposing their [56] simply serenity upon everything.\n\nThen, as the [57] night’s shadows gave way to light, there seemed to be a great force rising to meet the [58] sun as it made its reappearance.\n\n[59] Still, I had no idea what I was looking at. Then, there was no [60] mistaking it. The unbroken lines of Mid-America had given way to the jagged and majestic heights of the Rockies and the gateway to the American West.\n\nWhich of the following alternatives to the underlined portion would NOT be acceptable?",
+        "topic": "Rhetorical Skills",
+        "text": "Which introductory sentence best establishes the central focus of a passage detailing Julian Becker's breakthrough in classical restoration across Florence?",
         "options": [
-            "At sunrise,",
-            "Watching the morning sun climb into the sky,",
-            "The morning sun climbed into the sky,",
-            "As the sun rose,"
+            "Many people enjoy reading about scientific discoveries during their leisure time.",
+            "Recent advances in classical restoration have been accelerated by groundbreaking field methodologies pioneered by Julian Becker.",
+            "Florence has a diverse geographical profile characterized by variable weather.",
+            "Laboratory equipment is often manufactured by specialized technical firms."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"The morning sun climbed into the sky,\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Recent advances in classical restoration have been accelerated by groundbreaking field methodologies pioneered by Julian Becker.\". This sentence clearly introduces both the scientific discipline and the central role of the primary researcher."
     },
     {
         "id": 21,
         "section": "english",
-        "topic": "Agreement",
-        "text": "Passage III\n\nA quick perusal of any modern major league baseball team will reveal a roster of players of multiple ethnicities [31] from the farthest reaches of the globe. Second only to soccer, baseball has evolved into a global sport and [32] a symbol among races for equality.\n\nIts diversity today presents a stark contrast to the state of the sport just sixty years ago. As late as the 1940s, there existed an unwritten rule in baseball that prevented all but white players [33] to participate in the major leagues. This rule was known as the “color barrier” or “color line.” The color line in baseball actually predated the birth of the major leagues. Prior to the official formation of any league of professional baseball teams, there existed an organization of amateur baseball clubs known as the National Association of Baseball Players, [34] which was the precursor to today’s National League. On December 11, 1868, the governing body of this association had unanimously adopted a rule that effectively barred any team that [35] had, any “colored persons” on its roster. However, when baseball started to organize into leagues [31] by professional teams in the early 1880s, the National Association of Baseball Players’ decree no longer had any weight, especially in the newly formed American Association. [32] For a brief period in those early years, a few African Americans played side by side with white players on major league diamonds.\n\n[1] Most baseball historians believe that the first African American to play in the major leagues was Moses “Fleet” Walker. [2] [33] Walker was a catcher for the Toledo Blue Stockings of the American Association between 1884 and 1889. [3] During that time, a few other African Americans, [34] including Walker’s brother Weldy, [35] would be joining him on the Blue Stockings. [4] Unfortunately, this respite from segregation did not last for very long; as Jim Crow laws took their hold on the nation, many of the most popular white ballplayers started to refuse to take the field with their African American teammates. [5] By the 1890s, the color barrier had fully returned to baseball, where it would endure for more than half a century. 26\n\nJackie Robinson would become the first African American to cross the color line [32] at the time when he debuted for the Brooklyn Dodgers in 1947. For Robinson’s landmark achievements on and off the diamond, he will [33] forever be recognized as a hero of the civil rights movement and a sports icon. [34] His response to the prejudices of American society during the 1940s and 1950s opened the door for the multi-racial and multi-national face of modern baseball, and fans of the sport worldwide will be forever in his debt.\n\nChoose the best alternative for the underlined portion [31].",
+        "topic": "Wordiness & Redundancy",
+        "text": "Julian Becker made adjustments to the infrared reflectography sensor in Florence [21] adverse atmospheric pressure.\n\nWhich choice is the most concise replacement for 'on account of the fact that there was'?",
         "options": [
-            "NO CHANGE",
-            "from the most far",
-            "from the most farthest",
-            "from farther"
+            "on account of the fact that there was",
+            "due to the circumstance where there was",
+            "because of",
+            "owing to the presence of the reality of"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 2,
+        "explanation": "Correct Answer: \"because of\". 'Because of' is the most direct and economical way to express causation."
     },
     {
         "id": 22,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage III\n\nA quick perusal of any modern major league baseball team will reveal a roster of players of multiple ethnicities [31] from the farthest reaches of the globe. Second only to soccer, baseball has evolved into a global sport and [32] a symbol among races for equality.\n\nIts diversity today presents a stark contrast to the state of the sport just sixty years ago. As late as the 1940s, there existed an unwritten rule in baseball that prevented all but white players [33] to participate in the major leagues. This rule was known as the “color barrier” or “color line.” The color line in baseball actually predated the birth of the major leagues. Prior to the official formation of any league of professional baseball teams, there existed an organization of amateur baseball clubs known as the National Association of Baseball Players, [34] which was the precursor to today’s National League. On December 11, 1868, the governing body of this association had unanimously adopted a rule that effectively barred any team that [35] had, any “colored persons” on its roster. However, when baseball started to organize into leagues [31] by professional teams in the early 1880s, the National Association of Baseball Players’ decree no longer had any weight, especially in the newly formed American Association. [32] For a brief period in those early years, a few African Americans played side by side with white players on major league diamonds.\n\n[1] Most baseball historians believe that the first African American to play in the major leagues was Moses “Fleet” Walker. [2] [33] Walker was a catcher for the Toledo Blue Stockings of the American Association between 1884 and 1889. [3] During that time, a few other African Americans, [34] including Walker’s brother Weldy, [35] would be joining him on the Blue Stockings. [4] Unfortunately, this respite from segregation did not last for very long; as Jim Crow laws took their hold on the nation, many of the most popular white ballplayers started to refuse to take the field with their African American teammates. [5] By the 1890s, the color barrier had fully returned to baseball, where it would endure for more than half a century. 26\n\nJackie Robinson would become the first African American to cross the color line [32] at the time when he debuted for the Brooklyn Dodgers in 1947. For Robinson’s landmark achievements on and off the diamond, he will [33] forever be recognized as a hero of the civil rights movement and a sports icon. [34] His response to the prejudices of American society during the 1940s and 1950s opened the door for the multi-racial and multi-national face of modern baseball, and fans of the sport worldwide will be forever in his debt.\n\nChoose the best alternative for the underlined portion [32].",
+        "topic": "Punctuation",
+        "text": "The survey of Renaissance tempera panels in Florence yielded three critical artifacts [22] a brass sextant, an annotated navigational log, and a hand-drawn portolan chart.\n\nWhich punctuation mark correctly introduces the list following an independent clause?",
         "options": [
-            "NO CHANGE",
-            "among races for equality a symbol.",
-            "a symbol for equality among races.",
-            "for equality among races a symbol."
+            "artifacts;",
+            "artifacts,",
+            "artifacts",
+            "artifacts:"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"a symbol for equality among races.\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 3,
+        "explanation": "Correct Answer: \"artifacts:\". A colon is used after an independent clause to introduce an elaborating list or explanation."
     },
     {
         "id": 23,
         "section": "english",
-        "topic": "Agreement",
-        "text": "Passage III\n\nA quick perusal of any modern major league baseball team will reveal a roster of players of multiple ethnicities [31] from the farthest reaches of the globe. Second only to soccer, baseball has evolved into a global sport and [32] a symbol among races for equality.\n\nIts diversity today presents a stark contrast to the state of the sport just sixty years ago. As late as the 1940s, there existed an unwritten rule in baseball that prevented all but white players [33] to participate in the major leagues. This rule was known as the “color barrier” or “color line.” The color line in baseball actually predated the birth of the major leagues. Prior to the official formation of any league of professional baseball teams, there existed an organization of amateur baseball clubs known as the National Association of Baseball Players, [34] which was the precursor to today’s National League. On December 11, 1868, the governing body of this association had unanimously adopted a rule that effectively barred any team that [35] had, any “colored persons” on its roster. However, when baseball started to organize into leagues [31] by professional teams in the early 1880s, the National Association of Baseball Players’ decree no longer had any weight, especially in the newly formed American Association. [32] For a brief period in those early years, a few African Americans played side by side with white players on major league diamonds.\n\n[1] Most baseball historians believe that the first African American to play in the major leagues was Moses “Fleet” Walker. [2] [33] Walker was a catcher for the Toledo Blue Stockings of the American Association between 1884 and 1889. [3] During that time, a few other African Americans, [34] including Walker’s brother Weldy, [35] would be joining him on the Blue Stockings. [4] Unfortunately, this respite from segregation did not last for very long; as Jim Crow laws took their hold on the nation, many of the most popular white ballplayers started to refuse to take the field with their African American teammates. [5] By the 1890s, the color barrier had fully returned to baseball, where it would endure for more than half a century. 26\n\nJackie Robinson would become the first African American to cross the color line [32] at the time when he debuted for the Brooklyn Dodgers in 1947. For Robinson’s landmark achievements on and off the diamond, he will [33] forever be recognized as a hero of the civil rights movement and a sports icon. [34] His response to the prejudices of American society during the 1940s and 1950s opened the door for the multi-racial and multi-national face of modern baseball, and fans of the sport worldwide will be forever in his debt.\n\nChoose the best alternative for the underlined portion [33].",
+        "topic": "Grammar & Usage",
+        "text": "Each of the experimental samples collected by Julian Becker from Florence [23] cataloged in the Florentine Guild database.\n\nWhich verb correctly completes the sentence?",
         "options": [
-            "NO CHANGE",
-            "to be able to participate",
-            "from participating",
-            "to participation"
+            "is",
+            "are",
+            "were",
+            "have been"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"from participating\". This choice adheres strictly to standard American English grammatical conventions. It establishes proper subject-verb agreement in number and person, ensures correct pronoun case and antecedent reference, and maintains consistent verb tense throughout the sentence."
+        "answer": 0,
+        "explanation": "Correct Answer: \"is\". 'Each' is a singular indefinite pronoun and requires the singular verb 'is'."
     },
     {
         "id": 24,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage III\n\nA quick perusal of any modern major league baseball team will reveal a roster of players of multiple ethnicities [31] from the farthest reaches of the globe. Second only to soccer, baseball has evolved into a global sport and [32] a symbol among races for equality.\n\nIts diversity today presents a stark contrast to the state of the sport just sixty years ago. As late as the 1940s, there existed an unwritten rule in baseball that prevented all but white players [33] to participate in the major leagues. This rule was known as the “color barrier” or “color line.” The color line in baseball actually predated the birth of the major leagues. Prior to the official formation of any league of professional baseball teams, there existed an organization of amateur baseball clubs known as the National Association of Baseball Players, [34] which was the precursor to today’s National League. On December 11, 1868, the governing body of this association had unanimously adopted a rule that effectively barred any team that [35] had, any “colored persons” on its roster. However, when baseball started to organize into leagues [31] by professional teams in the early 1880s, the National Association of Baseball Players’ decree no longer had any weight, especially in the newly formed American Association. [32] For a brief period in those early years, a few African Americans played side by side with white players on major league diamonds.\n\n[1] Most baseball historians believe that the first African American to play in the major leagues was Moses “Fleet” Walker. [2] [33] Walker was a catcher for the Toledo Blue Stockings of the American Association between 1884 and 1889. [3] During that time, a few other African Americans, [34] including Walker’s brother Weldy, [35] would be joining him on the Blue Stockings. [4] Unfortunately, this respite from segregation did not last for very long; as Jim Crow laws took their hold on the nation, many of the most popular white ballplayers started to refuse to take the field with their African American teammates. [5] By the 1890s, the color barrier had fully returned to baseball, where it would endure for more than half a century. 26\n\nJackie Robinson would become the first African American to cross the color line [32] at the time when he debuted for the Brooklyn Dodgers in 1947. For Robinson’s landmark achievements on and off the diamond, he will [33] forever be recognized as a hero of the civil rights movement and a sports icon. [34] His response to the prejudices of American society during the 1940s and 1950s opened the door for the multi-racial and multi-national face of modern baseball, and fans of the sport worldwide will be forever in his debt.\n\nIs the underlined portion relevant here?",
+        "topic": "Sentence Structure",
+        "text": "Because the physical conditions surrounding Renaissance tempera panels in Florence were more severe than anticipated. The infrared reflectography sensor drifted off its planned trajectory.\n\nWhich revision eliminates the sentence fragment?",
         "options": [
-            "Yes, because it helps familiarize the reader with the range of baseball associations that once existed.",
-            "Yes, because it helps clarify the development the author traces.",
-            "No, because the names of the organizations are not important.",
-            "No, because it is inconsistent with the style of the essay to provide specific historical data."
+            "Because the physical conditions surrounding Renaissance tempera panels in Florence were more severe than anticipated; the infrared reflectography sensor drifted off its planned trajectory.",
+            "Because the physical conditions surrounding Renaissance tempera panels in Florence were more severe than anticipated, the infrared reflectography sensor drifted off its planned trajectory.",
+            "Being that conditions were more severe than anticipated. The infrared reflectography sensor drifted.",
+            "The conditions being severe in Florence. Causing the infrared reflectography sensor to drift."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Yes, because it helps clarify the development the author traces.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"Because the physical conditions surrounding Renaissance tempera panels in Florence were more severe than anticipated, the infrared reflectography sensor drifted off its planned trajectory.\". Attaching the dependent clause ('Because the conditions...') to the independent clause resolves the fragment."
     },
     {
         "id": 25,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage III\n\nA quick perusal of any modern major league baseball team will reveal a roster of players of multiple ethnicities [31] from the farthest reaches of the globe. Second only to soccer, baseball has evolved into a global sport and [32] a symbol among races for equality.\n\nIts diversity today presents a stark contrast to the state of the sport just sixty years ago. As late as the 1940s, there existed an unwritten rule in baseball that prevented all but white players [33] to participate in the major leagues. This rule was known as the “color barrier” or “color line.” The color line in baseball actually predated the birth of the major leagues. Prior to the official formation of any league of professional baseball teams, there existed an organization of amateur baseball clubs known as the National Association of Baseball Players, [34] which was the precursor to today’s National League. On December 11, 1868, the governing body of this association had unanimously adopted a rule that effectively barred any team that [35] had, any “colored persons” on its roster. However, when baseball started to organize into leagues [31] by professional teams in the early 1880s, the National Association of Baseball Players’ decree no longer had any weight, especially in the newly formed American Association. [32] For a brief period in those early years, a few African Americans played side by side with white players on major league diamonds.\n\n[1] Most baseball historians believe that the first African American to play in the major leagues was Moses “Fleet” Walker. [2] [33] Walker was a catcher for the Toledo Blue Stockings of the American Association between 1884 and 1889. [3] During that time, a few other African Americans, [34] including Walker’s brother Weldy, [35] would be joining him on the Blue Stockings. [4] Unfortunately, this respite from segregation did not last for very long; as Jim Crow laws took their hold on the nation, many of the most popular white ballplayers started to refuse to take the field with their African American teammates. [5] By the 1890s, the color barrier had fully returned to baseball, where it would endure for more than half a century. 26\n\nJackie Robinson would become the first African American to cross the color line [32] at the time when he debuted for the Brooklyn Dodgers in 1947. For Robinson’s landmark achievements on and off the diamond, he will [33] forever be recognized as a hero of the civil rights movement and a sports icon. [34] His response to the prejudices of American society during the 1940s and 1950s opened the door for the multi-racial and multi-national face of modern baseball, and fans of the sport worldwide will be forever in his debt.\n\nChoose the best alternative for the underlined portion [35].",
+        "topic": "Style & Tone",
+        "text": "All researchers assisting Julian Becker in Florence must strictly adhere [25] established safety regulations.\n\nWhich preposition completes the standard English idiom?",
         "options": [
-            "NO CHANGE",
-            "had any, “colored persons”",
-            "had any “colored persons”",
-            "had any “colored persons,”"
+            "with",
+            "at",
+            "to",
+            "on"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"had any “colored persons”\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "explanation": "Correct Answer: \"to\". The verb 'adhere' idiomatically pairs with the preposition 'to'."
     },
     {
         "id": 26,
         "section": "english",
         "topic": "Transitions",
-        "text": "The library had acquired rare first-edition manuscripts; however, it lacked the climate-controlled archives needed to preserve them properly.\n\nWhich of the following transitions best conveys the relationship between the two clauses?",
+        "text": "The Florentine Guild documented several endemic specimens in Florence. [26], they identified a unique manifestation of Renaissance tempera panels never before recorded.\n\nWhich transition best introduces a specific example?",
         "options": [
-            "however,",
-            "furthermore,",
-            "similarly,",
-            "for example,"
+            "In summary",
+            "Nevertheless",
+            "Otherwise",
+            "For instance"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"however,\". The second clause introduces a contrasting complication (lacking proper archives) to the first clause's positive event (acquiring rare manuscripts). 'However' accurately signals this contrast."
+        "answer": 3,
+        "explanation": "Correct Answer: \"For instance\". 'For instance' correctly introduces a concrete example of the endemic specimens mentioned."
     },
     {
         "id": 27,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage III\n\nA quick perusal of any modern major league baseball team will reveal a roster of players of multiple ethnicities [31] from the farthest reaches of the globe. Second only to soccer, baseball has evolved into a global sport and [32] a symbol among races for equality.\n\nIts diversity today presents a stark contrast to the state of the sport just sixty years ago. As late as the 1940s, there existed an unwritten rule in baseball that prevented all but white players [33] to participate in the major leagues. This rule was known as the “color barrier” or “color line.” The color line in baseball actually predated the birth of the major leagues. Prior to the official formation of any league of professional baseball teams, there existed an organization of amateur baseball clubs known as the National Association of Baseball Players, [34] which was the precursor to today’s National League. On December 11, 1868, the governing body of this association had unanimously adopted a rule that effectively barred any team that [35] had, any “colored persons” on its roster. However, when baseball started to organize into leagues [31] by professional teams in the early 1880s, the National Association of Baseball Players’ decree no longer had any weight, especially in the newly formed American Association. [32] For a brief period in those early years, a few African Americans played side by side with white players on major league diamonds.\n\n[1] Most baseball historians believe that the first African American to play in the major leagues was Moses “Fleet” Walker. [2] [33] Walker was a catcher for the Toledo Blue Stockings of the American Association between 1884 and 1889. [3] During that time, a few other African Americans, [34] including Walker’s brother Weldy, [35] would be joining him on the Blue Stockings. [4] Unfortunately, this respite from segregation did not last for very long; as Jim Crow laws took their hold on the nation, many of the most popular white ballplayers started to refuse to take the field with their African American teammates. [5] By the 1890s, the color barrier had fully returned to baseball, where it would endure for more than half a century. 26\n\nJackie Robinson would become the first African American to cross the color line [32] at the time when he debuted for the Brooklyn Dodgers in 1947. For Robinson’s landmark achievements on and off the diamond, he will [33] forever be recognized as a hero of the civil rights movement and a sports icon. [34] His response to the prejudices of American society during the 1940s and 1950s opened the door for the multi-racial and multi-national face of modern baseball, and fans of the sport worldwide will be forever in his debt.\n\nThe writer is considering deleting the underlined portion. Should the writer make this deletion?",
+        "topic": "Rhetorical Skills",
+        "text": "If Julian Becker were to include a quantitative chart comparing measurements of Renaissance tempera panels across Florence, the primary rhetorical function would be to:",
         "options": [
-            "Yes, because the information is not relevant to the topic of the paragraph.",
-            "Yes, because the information contradicts the first sentence of the paragraph.",
-            "No, because the information shows that white players did not object to integration.",
-            "No, because the statement provides a smooth transition to the specific information about early African American players in the next paragraph."
+            "provide empirical validation for the chemical trends described in the narrative.",
+            "distract the reader from ambiguities in the experimental methodology.",
+            "prove that no further scientific investigation is necessary.",
+            "replace the qualitative descriptions with purely numeric indices."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"No, because the statement provides a smooth transition to the specific information about early African American players in the next paragraph.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"provide empirical validation for the chemical trends described in the narrative.\". Quantitative data serves to substantiate and empirically validate the qualitative observations."
     },
     {
         "id": 28,
         "section": "english",
-        "topic": "Punctuation",
-        "text": "The marathon runner trained in three distinct terrains: steep mountain trails, paved city streets, and humid coastal paths.\n\nWhich punctuation mark correctly introduces the list?",
+        "topic": "Wordiness & Redundancy",
+        "text": "The autonomous infrared reflectography sensor deployed in Florence operates independently without human guidance on its own.\n\nWhich choice best eliminates repetitive phrasing?",
         "options": [
-            "terrains:",
-            "terrains;",
-            "terrains,",
-            "terrains—"
+            "The autonomous infrared reflectography sensor operates independently on its own without human guidance.",
+            "The autonomous infrared reflectography sensor operates without human guidance.",
+            "Operating independently, the autonomous infrared reflectography sensor guides itself on its own.",
+            "The infrared reflectography sensor operates autonomously, independently, and on its own."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"terrains:\". A colon is correctly used after an independent clause to introduce an illustrative list or series."
+        "answer": 1,
+        "explanation": "Correct Answer: \"The autonomous infrared reflectography sensor operates without human guidance.\". 'Operates without human guidance' directly explains the function without repeating 'autonomously', 'independently', and 'on its own'."
     },
     {
         "id": 29,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage III\n\nA quick perusal of any modern major league baseball team will reveal a roster of players of multiple ethnicities [31] from the farthest reaches of the globe. Second only to soccer, baseball has evolved into a global sport and [32] a symbol among races for equality.\n\nIts diversity today presents a stark contrast to the state of the sport just sixty years ago. As late as the 1940s, there existed an unwritten rule in baseball that prevented all but white players [33] to participate in the major leagues. This rule was known as the “color barrier” or “color line.” The color line in baseball actually predated the birth of the major leagues. Prior to the official formation of any league of professional baseball teams, there existed an organization of amateur baseball clubs known as the National Association of Baseball Players, [34] which was the precursor to today’s National League. On December 11, 1868, the governing body of this association had unanimously adopted a rule that effectively barred any team that [35] had, any “colored persons” on its roster. However, when baseball started to organize into leagues [31] by professional teams in the early 1880s, the National Association of Baseball Players’ decree no longer had any weight, especially in the newly formed American Association. [32] For a brief period in those early years, a few African Americans played side by side with white players on major league diamonds.\n\n[1] Most baseball historians believe that the first African American to play in the major leagues was Moses “Fleet” Walker. [2] [33] Walker was a catcher for the Toledo Blue Stockings of the American Association between 1884 and 1889. [3] During that time, a few other African Americans, [34] including Walker’s brother Weldy, [35] would be joining him on the Blue Stockings. [4] Unfortunately, this respite from segregation did not last for very long; as Jim Crow laws took their hold on the nation, many of the most popular white ballplayers started to refuse to take the field with their African American teammates. [5] By the 1890s, the color barrier had fully returned to baseball, where it would endure for more than half a century. 26\n\nJackie Robinson would become the first African American to cross the color line [32] at the time when he debuted for the Brooklyn Dodgers in 1947. For Robinson’s landmark achievements on and off the diamond, he will [33] forever be recognized as a hero of the civil rights movement and a sports icon. [34] His response to the prejudices of American society during the 1940s and 1950s opened the door for the multi-racial and multi-national face of modern baseball, and fans of the sport worldwide will be forever in his debt.\n\nChoose the best alternative for the underlined portion [34].",
+        "topic": "Punctuation",
+        "text": "The field specimen of Renaissance tempera panels—fragile from centuries of isolation in Florence [29] was stabilized by Julian Becker.\n\nWhich punctuation mark correctly closes the parenthetical insertion?",
         "options": [
-            "NO CHANGE",
-            "that included",
-            "who would include",
-            "including among them"
+            "isolation in Florence,",
+            "isolation in Florence;",
+            "isolation in Florence—",
+            "isolation in Florence"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 2,
+        "explanation": "Correct Answer: \"isolation in Florence—\". A parenthetical interruption opened with an em-dash must be closed with an em-dash."
     },
     {
         "id": 30,
         "section": "english",
-        "topic": "Wordiness & Redundancy",
-        "text": "The annual festival is held every year during the second week of October.\n\nWhich revision best eliminates the redundant phrasing?",
+        "topic": "Grammar & Usage",
+        "text": "Between the two calibration methods tested by Julian Becker in Florence, the second protocol demonstrated [30] analytical accuracy.\n\nWhich modifier form is grammatically correct?",
         "options": [
-            "The festival is held annually during the second week of October.",
-            "The annual yearly festival is held during the second week of October.",
-            "Each year, the annual festival takes place during the second week of October.",
-            "The festival is held each and every year during October's second week."
+            "greatest",
+            "most greatest",
+            "more greater",
+            "greater"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"The festival is held annually during the second week of October.\". Saying both 'annual' and 'held every year' is redundant. Using 'annually' alone conveys the meaning concisely."
+        "answer": 3,
+        "explanation": "Correct Answer: \"greater\". When comparing exactly two items, the comparative form ('greater') is required, not the superlative ('greatest')."
     },
     {
         "id": 31,
         "section": "english",
-        "topic": "Organization",
-        "text": "Passage III\n\nA quick perusal of any modern major league baseball team will reveal a roster of players of multiple ethnicities [31] from the farthest reaches of the globe. Second only to soccer, baseball has evolved into a global sport and [32] a symbol among races for equality.\n\nIts diversity today presents a stark contrast to the state of the sport just sixty years ago. As late as the 1940s, there existed an unwritten rule in baseball that prevented all but white players [33] to participate in the major leagues. This rule was known as the “color barrier” or “color line.” The color line in baseball actually predated the birth of the major leagues. Prior to the official formation of any league of professional baseball teams, there existed an organization of amateur baseball clubs known as the National Association of Baseball Players, [34] which was the precursor to today’s National League. On December 11, 1868, the governing body of this association had unanimously adopted a rule that effectively barred any team that [35] had, any “colored persons” on its roster. However, when baseball started to organize into leagues [31] by professional teams in the early 1880s, the National Association of Baseball Players’ decree no longer had any weight, especially in the newly formed American Association. [32] For a brief period in those early years, a few African Americans played side by side with white players on major league diamonds.\n\n[1] Most baseball historians believe that the first African American to play in the major leagues was Moses “Fleet” Walker. [2] [33] Walker was a catcher for the Toledo Blue Stockings of the American Association between 1884 and 1889. [3] During that time, a few other African Americans, [34] including Walker’s brother Weldy, [35] would be joining him on the Blue Stockings. [4] Unfortunately, this respite from segregation did not last for very long; as Jim Crow laws took their hold on the nation, many of the most popular white ballplayers started to refuse to take the field with their African American teammates. [5] By the 1890s, the color barrier had fully returned to baseball, where it would endure for more than half a century. 26\n\nJackie Robinson would become the first African American to cross the color line [32] at the time when he debuted for the Brooklyn Dodgers in 1947. For Robinson’s landmark achievements on and off the diamond, he will [33] forever be recognized as a hero of the civil rights movement and a sports icon. [34] His response to the prejudices of American society during the 1940s and 1950s opened the door for the multi-racial and multi-national face of modern baseball, and fans of the sport worldwide will be forever in his debt.\n\nUpon reviewing this paragraph, the author discovers that he has neglected to include the following information:\r\nA handful of African Americans played for other teams as well.\nThis sentence would be most logically placed after:",
+        "topic": "Sentence Structure",
+        "text": "In Florence, Julian Becker only analyzed the data points gathered by the infrared reflectography sensor.\n\nWhich placement of 'only' makes it clear that no other data points were analyzed?",
         "options": [
-            "Sentence 1.",
-            "Sentence 2.",
-            "Sentence 3.",
-            "Sentence 4."
+            "In Florence, Julian Becker analyzed only the data points gathered by the infrared reflectography sensor.",
+            "In Florence, only Julian Becker analyzed the data points gathered by the infrared reflectography sensor.",
+            "In Florence, Julian Becker analyzed the data points only gathered by the infrared reflectography sensor.",
+            "In Florence, Julian Becker analyzed the data points that only were gathered by the infrared reflectography sensor."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Sentence 3.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"In Florence, Julian Becker analyzed only the data points gathered by the infrared reflectography sensor.\". Placing 'only' immediately before 'the data points' unambiguously restricts the action to those specific data points."
     },
     {
         "id": 32,
         "section": "english",
-        "topic": "Grammar & Usage",
-        "text": "Neither of the two solar panels ______ enough energy during cloudy winter afternoons.\n\nWhich verb form correctly completes the sentence?",
+        "topic": "Style & Tone",
+        "text": "The Florentine Guild specialists in Florence [32] to verify the structural integrity of the infrared reflectography sensor.\n\nWhich choice is best suited to contemporary professional writing?",
         "options": [
-            "generates",
-            "generate",
-            "are generating",
-            "have generated"
+            "did strive mightily",
+            "endeavored",
+            "went forth",
+            "soughteth"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"generates\". The subject pronoun 'Neither' is singular in formal standard English, requiring the singular verb 'generates'."
+        "answer": 1,
+        "explanation": "Correct Answer: \"endeavored\". 'Endeavored' is professional and contemporary, avoiding archaic theatrical language."
     },
     {
         "id": 33,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Having studied marine biology for six years, the coral reef restoration project was led by Dr. Ramos.\n\nWhich revision corrects the dangling modifier?",
+        "topic": "Transitions",
+        "text": "[33] the initial sensor calibrations in Florence were delayed by inclement conditions, Julian Becker's primary research objectives were fully met.\n\nWhich subordinating conjunction best indicates concession?",
         "options": [
-            "Having studied marine biology for six years, Dr. Ramos led the coral reef restoration project.",
-            "The coral reef restoration project, having studied marine biology for six years, was led by Dr. Ramos.",
-            "Having studied marine biology for six years, the restoration project was under Dr. Ramos's leadership.",
-            "Dr. Ramos was led by the coral reef restoration project, having studied marine biology for six years."
+            "Because",
+            "Since",
+            "Although",
+            "Unless"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"Having studied marine biology for six years, Dr. Ramos led the coral reef restoration project.\". The introductory modifier 'Having studied marine biology...' must immediately precede the person who did the studying (Dr. Ramos)."
+        "answer": 2,
+        "explanation": "Correct Answer: \"Although\". 'Although' introduces a concession clause, acknowledging the delay while highlighting overall success."
     },
     {
         "id": 34,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage III\n\nA quick perusal of any modern major league baseball team will reveal a roster of players of multiple ethnicities [31] from the farthest reaches of the globe. Second only to soccer, baseball has evolved into a global sport and [32] a symbol among races for equality.\n\nIts diversity today presents a stark contrast to the state of the sport just sixty years ago. As late as the 1940s, there existed an unwritten rule in baseball that prevented all but white players [33] to participate in the major leagues. This rule was known as the “color barrier” or “color line.” The color line in baseball actually predated the birth of the major leagues. Prior to the official formation of any league of professional baseball teams, there existed an organization of amateur baseball clubs known as the National Association of Baseball Players, [34] which was the precursor to today’s National League. On December 11, 1868, the governing body of this association had unanimously adopted a rule that effectively barred any team that [35] had, any “colored persons” on its roster. However, when baseball started to organize into leagues [31] by professional teams in the early 1880s, the National Association of Baseball Players’ decree no longer had any weight, especially in the newly formed American Association. [32] For a brief period in those early years, a few African Americans played side by side with white players on major league diamonds.\n\n[1] Most baseball historians believe that the first African American to play in the major leagues was Moses “Fleet” Walker. [2] [33] Walker was a catcher for the Toledo Blue Stockings of the American Association between 1884 and 1889. [3] During that time, a few other African Americans, [34] including Walker’s brother Weldy, [35] would be joining him on the Blue Stockings. [4] Unfortunately, this respite from segregation did not last for very long; as Jim Crow laws took their hold on the nation, many of the most popular white ballplayers started to refuse to take the field with their African American teammates. [5] By the 1890s, the color barrier had fully returned to baseball, where it would endure for more than half a century. 26\n\nJackie Robinson would become the first African American to cross the color line [32] at the time when he debuted for the Brooklyn Dodgers in 1947. For Robinson’s landmark achievements on and off the diamond, he will [33] forever be recognized as a hero of the civil rights movement and a sports icon. [34] His response to the prejudices of American society during the 1940s and 1950s opened the door for the multi-racial and multi-national face of modern baseball, and fans of the sport worldwide will be forever in his debt.\n\nWhich choice best maintains the essay’s positive tone while emphasizing the unique role that Robinson played?",
+        "topic": "Rhetorical Skills",
+        "text": "Consider the phrase in Julian Becker's summary: 'It is interesting and worth noting that Renaissance tempera panels reacts dynamically to seasonal shifts in Florence.'\n\nWhich revision most effectively improves directness?",
         "options": [
-            "NO CHANGE",
-            "The path that he blazed through",
-            "The stance he took against",
-            "His collaboration in the face of"
+            "As a matter of interesting fact, Renaissance tempera panels reacts dynamically to seasonal shifts in Florence.",
+            "Worth noting is the reality that Renaissance tempera panels reacts dynamically in Florence.",
+            "It goes without saying that Renaissance tempera panels reacts dynamically in Florence.",
+            "Renaissance tempera panels reacts dynamically to seasonal shifts in Florence."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"The path that he blazed through\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Renaissance tempera panels reacts dynamically to seasonal shifts in Florence.\". Deleting unnecessary throat-clearing phrases ('It is worth noting that...') makes the statement direct and authoritative."
     },
     {
         "id": 35,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage III\n\nA quick perusal of any modern major league baseball team will reveal a roster of players of multiple ethnicities [31] from the farthest reaches of the globe. Second only to soccer, baseball has evolved into a global sport and [32] a symbol among races for equality.\n\nIts diversity today presents a stark contrast to the state of the sport just sixty years ago. As late as the 1940s, there existed an unwritten rule in baseball that prevented all but white players [33] to participate in the major leagues. This rule was known as the “color barrier” or “color line.” The color line in baseball actually predated the birth of the major leagues. Prior to the official formation of any league of professional baseball teams, there existed an organization of amateur baseball clubs known as the National Association of Baseball Players, [34] which was the precursor to today’s National League. On December 11, 1868, the governing body of this association had unanimously adopted a rule that effectively barred any team that [35] had, any “colored persons” on its roster. However, when baseball started to organize into leagues [31] by professional teams in the early 1880s, the National Association of Baseball Players’ decree no longer had any weight, especially in the newly formed American Association. [32] For a brief period in those early years, a few African Americans played side by side with white players on major league diamonds.\n\n[1] Most baseball historians believe that the first African American to play in the major leagues was Moses “Fleet” Walker. [2] [33] Walker was a catcher for the Toledo Blue Stockings of the American Association between 1884 and 1889. [3] During that time, a few other African Americans, [34] including Walker’s brother Weldy, [35] would be joining him on the Blue Stockings. [4] Unfortunately, this respite from segregation did not last for very long; as Jim Crow laws took their hold on the nation, many of the most popular white ballplayers started to refuse to take the field with their African American teammates. [5] By the 1890s, the color barrier had fully returned to baseball, where it would endure for more than half a century. 26\n\nJackie Robinson would become the first African American to cross the color line [32] at the time when he debuted for the Brooklyn Dodgers in 1947. For Robinson’s landmark achievements on and off the diamond, he will [33] forever be recognized as a hero of the civil rights movement and a sports icon. [34] His response to the prejudices of American society during the 1940s and 1950s opened the door for the multi-racial and multi-national face of modern baseball, and fans of the sport worldwide will be forever in his debt.\n\nSuppose the writer had been assigned to develop a brief essay on the history of baseball. Would this essay successfully fulfill that goal?",
+        "topic": "Wordiness & Redundancy",
+        "text": "The Florentine Guild decided to make an assessment of the safety protocols governing Florence.\n\nWhich revision is the most concise and forceful?",
         "options": [
-            "Yes, because it covers events in baseball over a period of more than a century.",
-            "Yes, because it mentions key figures in baseball history.",
-            "No, because people played baseball before 1868.",
-            "No, because the focus of this essay is on one particular aspect of baseball history."
+            "The Florentine Guild decided to assess the safety protocols governing Florence.",
+            "The Florentine Guild decided to perform an assessment on the safety protocols in Florence.",
+            "The Florentine Guild decided to conduct a process of assessment of safety in Florence.",
+            "The Florentine Guild decided to carry out the making of an assessment for Florence."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"No, because the focus of this essay is on one particular aspect of baseball history.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"The Florentine Guild decided to assess the safety protocols governing Florence.\". Replacing the nominalized phrase 'make an assessment of' with the active verb 'assess' enhances clarity."
     },
     {
         "id": 36,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [36].",
+        "topic": "Punctuation",
+        "text": "Julian Becker discovered a dense [36] intricate network of crystalline features surrounding Renaissance tempera panels in Florence.\n\nWhich choice correctly punctuates coordinate adjectives?",
         "options": [
-            "NO CHANGE",
-            "ways he has a",
-            "ways having a",
-            "ways, and still has a"
+            "dense;",
+            "dense,",
+            "dense",
+            "dense and,"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 1,
+        "explanation": "Correct Answer: \"dense,\". Coordinate adjectives ('dense' and 'intricate') modifying the same noun should be separated by a comma."
     },
     {
         "id": 37,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [37].",
+        "topic": "Grammar & Usage",
+        "text": "If the infrared reflectography sensor [37] capable of operating in Florence indefinitely, Julian Becker could record longitudinal data continuously.\n\nWhich verb form correctly expresses this hypothetical condition?",
         "options": [
-            "NO CHANGE",
-            "tells us, that,",
-            "tells us that,",
-            "tells us that"
+            "was",
+            "is",
+            "were",
+            "will be"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"tells us that\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 2,
+        "explanation": "Correct Answer: \"were\". In contrary-to-fact conditional statements (subjunctive mood), 'were' is used regardless of the subject's number."
     },
     {
         "id": 38,
         "section": "english",
         "topic": "Sentence Structure",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [38].",
+        "text": "The Florentine Guild not only documented novel properties of Renaissance tempera panels [38] expanded geophysical mapping across Florence.\n\nWhich phrase correctly completes the correlative pair?",
         "options": [
-            "NO CHANGE",
-            "was running",
-            "runs",
-            "ran"
+            "and also",
+            "as well as",
+            "in addition to",
+            "but also"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"runs\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 3,
+        "explanation": "Correct Answer: \"but also\". 'Not only' must be paired with 'but also' for grammatical parallelism."
     },
     {
         "id": 39,
         "section": "english",
-        "topic": "Conciseness",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [39].",
+        "topic": "Style & Tone",
+        "text": "A comprehensive geological survey of Florence was conducted by Julian Becker and the Florentine Guild.\n\nWhich revision converts the sentence into direct active voice?",
         "options": [
-            "NO CHANGE",
-            "not be likely to see very much that has changed since.",
-            "be able to see right away that not very much has changed since.",
-            "not change very much."
+            "Julian Becker and the Florentine Guild conducted a comprehensive geological survey of Florence.",
+            "Conducted by Julian Becker and the Florentine Guild was a comprehensive geological survey of Florence.",
+            "A comprehensive survey of Florence had its conduction by Julian Becker.",
+            "There was a comprehensive geological survey of Florence conducted by the team."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This choice expresses the intended meaning most concisely and clearly, successfully eliminating redundant repetitions and wordy filler while maintaining an appropriate, formal academic tone."
+        "explanation": "Correct Answer: \"Julian Becker and the Florentine Guild conducted a comprehensive geological survey of Florence.\". Active voice places the actors first, improving clarity and grammatical vigor."
     },
     {
         "id": 40,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nAssuming that all are true, which of the following additions to the word inventory is most relevant in context?",
+        "topic": "Transitions",
+        "text": "Julian Becker mapped the outer perimeter of Florence. [40], the team deployed the infrared reflectography sensor into the central core.\n\nWhich transition best conveys sequential progression?",
         "options": [
-            "inventory of canned and dry goods.",
-            "inventory, refusing to consider a more current method.",
-            "inventory, which he writes down by hand.",
-            "inventory of goods on the shelves and in the storeroom."
+            "Simultaneously",
+            "Subsequently",
+            "Previously",
+            "Nevertheless"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"inventory, refusing to consider a more current method.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "explanation": "Correct Answer: \"Subsequently\". 'Subsequently' indicates that the central deployment occurred after the perimeter mapping was complete."
     },
     {
         "id": 41,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [41].",
+        "topic": "Rhetorical Skills",
+        "text": "Which choice provides the most relevant detail to support Julian Becker's claim that Renaissance tempera panels represents an extreme biological habitat in Florence?",
         "options": [
-            "NO CHANGE",
-            "years; his filing cabinets",
-            "years, and besides that, his filing cabinets",
-            "years and since his filing cabinets"
+            "The research vessel is equipped with comfortable crew cabins and a modern navigation deck.",
+            "Julian Becker studied chemistry before specializing in classical restoration.",
+            "Ambient temperatures at Florence reach critical extremes under pressures 150 times greater than baseline standard atmosphere.",
+            "Many scientific expeditions are documented in popular non-fiction periodicals."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"years; his filing cabinets\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 2,
+        "explanation": "Correct Answer: \"Ambient temperatures at Florence reach critical extremes under pressures 150 times greater than baseline standard atmosphere.\". Extreme physical measurements directly substantiate the claim of an extreme biological habitat."
     },
     {
         "id": 42,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [42].",
+        "topic": "Wordiness & Redundancy",
+        "text": "In the event that the primary sensor on the infrared reflectography sensor fails in Florence, the emergency beacon will engage.\n\nWhich word is the most concise replacement for 'In the event that'?",
         "options": [
-            "NO CHANGE",
-            "know, besides, that",
-            "know, however, that",
-            "know, beyond that,"
+            "In the circumstance where",
+            "Given the factual condition that",
+            "Under the contingency wherein",
+            "If"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"know, however, that\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 3,
+        "explanation": "Correct Answer: \"If\". 'If' is the standard, concise equivalent of 'In the event that'."
     },
     {
         "id": 43,
         "section": "english",
-        "topic": "Sentence Structure",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [43].",
+        "topic": "Punctuation",
+        "text": "Julian Becker announced to the Florentine Guild [43] \"Our preliminary telemetry confirms a major breakthrough regarding Renaissance tempera panels.\"\n\nWhich choice correctly introduces the quotation?",
         "options": [
-            "NO CHANGE",
-            "me and my sister",
-            "my sister and I",
-            "my sister and I,"
+            "announced to the Florentine Guild,",
+            "announced to the Florentine Guild;",
+            "announced to the Florentine Guild:",
+            "announced to the Florentine Guild"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"my sister and I\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 0,
+        "explanation": "Correct Answer: \"announced to the Florentine Guild,\". A comma is conventionally used to introduce a direct quotation following a dialogue tag."
     },
     {
         "id": 44,
         "section": "english",
-        "topic": "Organization",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [44].",
+        "topic": "Grammar & Usage",
+        "text": "When the infrared reflectography sensor struck the basalt formation in Florence, it sustained minor surface abrasions.\n\nWhich revision eliminates the ambiguous pronoun 'it'?",
         "options": [
-            "NO CHANGE",
-            "On the other hand,",
-            "In addition",
-            "Rather,"
+            "When it struck the basalt formation in Florence, the infrared reflectography sensor cracked.",
+            "When the infrared reflectography sensor struck the basalt formation in Florence, the instrument sustained minor surface abrasions.",
+            "Striking the basalt formation in Florence, it sustained abrasions.",
+            "The infrared reflectography sensor and basalt collided in Florence, and it was abraded."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 1,
+        "explanation": "Correct Answer: \"When the infrared reflectography sensor struck the basalt formation in Florence, the instrument sustained minor surface abrasions.\". Specifying 'the instrument' clarifies which object sustained the abrasions."
     },
     {
         "id": 45,
         "section": "english",
         "topic": "Sentence Structure",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [45].",
+        "text": "The telemetry stream from Florence stopped abruptly the infrared reflectography sensor battery had completely discharged.\n\nWhich choice correctly repairs the run-on sentence?",
         "options": [
-            "NO CHANGE",
-            "accounts and",
-            "accounts and,",
-            "accounts, we"
+            "The telemetry stream from Florence stopped abruptly, the battery had discharged.",
+            "Stopping abruptly, the telemetry stream from Florence the battery had discharged.",
+            "The telemetry stream from Florence stopped abruptly because the infrared reflectography sensor battery had completely discharged.",
+            "The telemetry stream from Florence stopped abruptly and so the battery had discharged."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"accounts and\". This option corrects structural flaws such as run-on sentences, comma splices, or dangling/misplaced modifiers. It ensures syntactic completeness and creates a parallel grammatical construction across coordinating elements."
+        "answer": 2,
+        "explanation": "Correct Answer: \"The telemetry stream from Florence stopped abruptly because the infrared reflectography sensor battery had completely discharged.\". Using the subordinating conjunction 'because' establishes the causal relationship and eliminates the fused run-on."
     },
     {
         "id": 46,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nThe purpose of including this fact about the town’s blackout history is to:",
+        "topic": "Style & Tone",
+        "text": "The data collected by Julian Becker in Florence revealed an astonishing, mind-boggling increase in the concentration of Renaissance tempera panels.\n\nWhich replacement for the underlined phrase best maintains objective scientific neutrality?",
         "options": [
-            "make the father appear delusional.",
-            "suggest that the father’s reasons not to update his technology are ill-founded.",
-            "add an interesting detail to set the scene.",
-            "foreshadow an event that occurs later in the story."
+            "an unbelievable and crazy",
+            "a super massive",
+            "a shockingly wild",
+            "a statistically significant"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"suggest that the father’s reasons not to update his technology are ill-founded.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 3,
+        "explanation": "Correct Answer: \"a statistically significant\". 'A statistically significant' provides precise scientific description without sensationalist hyperbole."
     },
     {
         "id": 47,
         "section": "english",
-        "topic": "Organization",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nThe author wants to include the following statement in this paragraph:\r\nWe expected it to save him a lot of time and effort.\nThe most logical placement for this sentence would be:",
+        "topic": "Transitions",
+        "text": "Julian Becker decided not to drill into the fragile geological crust in Florence. [47], the Florentine Guild utilized non-invasive acoustic mapping from a safe distance.\n\nWhich transition best presents this alternative approach?",
         "options": [
-            "before Sentence 1",
-            "after Sentence 1",
-            "after Sentence 4",
-            "after Sentence 5"
+            "Instead",
+            "Furthermore",
+            "Consequently",
+            "Likewise"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"after Sentence 1\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Instead\". 'Instead' correctly introduces the chosen alternative action following a rejected option."
     },
     {
         "id": 48,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [48].",
+        "topic": "Rhetorical Skills",
+        "text": "The author wants to ensure smooth cohesion between a paragraph describing fieldwork in Florence and a paragraph detailing laboratory synthesis of Renaissance tempera panels. Which sentence best bridges this transition?",
         "options": [
-            "NO CHANGE",
-            "Sooner rather than later,",
-            "Sooner or later,",
-            "As soon as later,"
+            "Laboratory experiments are often conducted in sterile cleanrooms.",
+            "Having gathered these pristine environmental samples in Florence, Julian Becker returned to the laboratory to synthesize artificial analogues.",
+            "Many scientific discoveries occur unexpectedly during routine maintenance.",
+            "Florence is known for its challenging regional climate."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Sooner or later,\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Having gathered these pristine environmental samples in Florence, Julian Becker returned to the laboratory to synthesize artificial analogues.\". This bridging sentence links the completion of fieldwork in Florence directly to the laboratory synthesis phase."
     },
     {
         "id": 49,
         "section": "english",
-        "topic": "Development",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nChoose the best alternative for the underlined portion [49].",
+        "topic": "Wordiness & Redundancy",
+        "text": "Historical precedents from the past history of classical restoration guided Julian Becker's safety protocols in Florence.\n\nWhich revision removes redundant wording?",
         "options": [
-            "NO CHANGE",
-            "Deep in the disorganization of that office’s, the computer will join the cell phone my mom gave him a few years back.",
-            "In the disorganized depths of the office, the computer will soon be joined by the cell phone my mom gave him a few years ago.",
-            "The computer will join the cell phone my mom gave him a few years back in the disorganized depths of that office."
+            "Past historical precedents from history guided protocols in Florence.",
+            "Precedents from past history guided protocols in Florence.",
+            "Historical precedents in classical restoration guided Julian Becker's safety protocols in Florence.",
+            "Historical precedents from earlier past history guided protocols in Florence."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"NO CHANGE\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"Historical precedents in classical restoration guided Julian Becker's safety protocols in Florence.\". 'Historical precedents' already denotes the past; 'from the past history' is redundant."
     },
     {
         "id": 50,
         "section": "english",
-        "topic": "Organization",
-        "text": "Passage IV\n\nMy father, though he is only in his early 50s, is stuck in his old-fashioned [36] ways. He has a general mistrust of any innovation or technology that he can’t immediately grasp and he always [37] tells us, that if something isn’t broken, then you shouldn’t fix it.\n\nHe [38] has run a small grocery store in town, and if you were to look at a snapshot of his back office taken when he opened the store in 1975, you would [39] see that not much has changed since. He is the most disorganized person I know and still uses a pencil and paper to keep track of his [40] inventory. His small office is about to burst with all the various documents, notes, and receipts he has accumulated over the [41] years, his filing cabinets have long since been filled up. The centerpiece of all the clutter is his ancient typewriter, which isn’t even electric. In the past few years, Father’s search for replacement typewriter ribbons has become an increasingly difficult task, because they are no longer being produced. He is perpetually tracking down the few remaining places that still have these antiquated ribbons in their dusty inventories. When people ask him why he doesn’t upgrade his equipment, he tells them, “Electric typewriters won’t work in a blackout. All I need is a candle and some paper, and I’m fine.” Little does Father [42] know, however, is that the “upgrade” people are speaking of is not to an electric typewriter but to a computer.\n\n[36] Hoping to bring Father out of the Dark Ages, [43] my sister, and I bought him a brand-new computer for his fiftieth birthday. [37] We offered to help him to transfer all of his records onto it and to teach him how to use it. [38] [44] Eagerly , we told him about all the new spreadsheet programs that would help simplify his recordkeeping and organize his [45] accounts; and emphasized the advantage of not having to completely retype any document when he found a typo. [39] Rather than offering us a look of joy for the life-changing gift we had presented him, however, he again brought up the blackout scenario. [40] To Father, this is a concrete argument, although our town hasn’t had a blackout in five years, and that one only lasted an hour or two. 11 12\n\nMy father’s state-of-the-art computer now serves as a very expensive bulletin board for the hundreds of adhesive notes he uses to keep himself organized. [48] Sooner than later , we fully expect it will completely disappear under the mounting files and papers in the back office.\n\n[49] In the depths of that disorganized office, the computer will join the cell phone my mom gave him a few years ago. Interestingly enough, every once in a while, that completely forgotten cell phone will ring from under the heavy clutter of the past. 15\n\nWhich of the following would provide the most appropriate conclusion for the passage?",
+        "topic": "Punctuation",
+        "text": "Julian Becker utilized a state [50] the art infrared reflectography sensor to analyze Renaissance tempera panels in Florence.\n\nWhich choice correctly punctuates the compound adjective before the noun?",
         "options": [
-            "It’s hard to say what else might be lost in there.",
-            "We tell my father it’s a reminder that he can’t hide from the future forever.",
-            "We have no idea who might be calling.",
-            "Maybe one day I will try to find it and answer it."
+            "state of the art",
+            "state, of, the, art",
+            "state-of the art",
+            "state-of-the-art"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"We tell my father it’s a reminder that he can’t hide from the future forever.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 3,
+        "explanation": "Correct Answer: \"state-of-the-art\". Compound adjectives appearing before a noun must be hyphenated ('state-of-the-art infrared reflectography sensor')."
     },
     {
         "id": 51,
         "section": "math",
-        "topic": "Functions",
-        "text": "Which of the following statements describes the total of the first <i>n</i> terms of the arithmetic sequence below?\r\n<p class=\"txc\">2, 4, 6, 8, 10, . . .</p>",
+        "topic": "Pre-Algebra",
+        "text": "A science laboratory orders 48 precision micropipette tips priced at $6.75 per pack. If the supplier provides an educational discount of 16% on the entire order, what is the net total cost before tax?",
         "options": [
-            "The total is always equal to <i>n</i><sup>2</sup> + <i>n</i>.",
-            "The total is always equal to 2<i>n</i>.",
-            "The total is always equal to 3<i>n</i>.",
-            "The total is always equal to <i>n</i><sup>2</sup>.",
-            "There is no consistent pattern for the total."
+            "$324.00",
+            "$275.40",
+            "$272.16",
+            "$356.40"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: The total is always equal to n2 + n.. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that The total is always equal to n2 + n. satisfies all conditions of the problem."
+        "answer": 2,
+        "explanation": "Total standard price = 48 × $6.75 = $324.00. Applying 16% discount: $324.00 × (1 &minus; 0.16) = $272.16."
     },
     {
         "id": 52,
         "section": "math",
-        "topic": "Geometry",
-        "text": "In the following figure, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mover accent=\"true\"><mrow><mi>M</mi><mi>N</mi></mrow><mo stretchy=\"true\">¯</mo></mover></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mover accent=\"true\"><mrow><mi>P</mi><mi>Q</mi></mrow><mo stretchy=\"true\">¯</mo></mover></mrow></math> are parallel. Point <i>A</i> lies on <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mover accent=\"true\"><mrow><mi>M</mi><mi>N</mi></mrow><mo stretchy=\"true\">¯</mo></mover></mrow></math>, and points <i>B</i> and <i>C</i> lie on <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mover accent=\"true\"><mrow><mi>P</mi><mi>Q</mi></mrow><mo stretchy=\"true\">¯</mo></mover></mrow></math>. If <i>AB</i> = <i>AC</i> and ∠<i>MAB</i> has a measure of 50°, what is the measure of ∠<i>ACB</i> ?\r\n<p class=\"txc\"><img alt=\"image\" src=\"images/p912-5.jpg\"/></p>",
+        "topic": "Percentages",
+        "text": "A regional wildlife reserve recorded an initial population of 600 migratory cranes. In year one, the population expanded by 20%, and in year two, seasonal conditions caused an 20% reduction from the new total. What was the population at the end of year two (rounded to the nearest integer)?",
         "options": [
-            "40°",
-            "50°",
-            "60°",
-            "70°",
-            "130°"
+            "450",
+            "720",
+            "750",
+            "576"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 50°. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 50°."
+        "answer": 3,
+        "explanation": "Year 1 count: 600 × (1 + 0.2) = 720.0. Year 2 count: 720.0 × (1 &minus; 0.2) = 576."
     },
     {
         "id": 53,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "If 80 percent of <i>h</i> is 120, what is 40 percent of <i>h</i> ?",
+        "topic": "Elementary Algebra",
+        "text": "Determine the real value of <i>x</i> that satisfies the equation: 13(<i>x</i> &minus; 2) = 52.",
         "options": [
-            "30",
-            "40",
-            "50",
-            "60",
-            "80"
+            "6.00",
+            "3.85",
+            "2.00",
+            "9.20"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 60. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 60."
+        "answer": 0,
+        "explanation": "Divide both sides by 13: <i>x</i> &minus; 2 = 52/13 &rArr; <i>x</i> = 4.00 + 2 = 6.00."
     },
     {
         "id": 54,
         "section": "math",
-        "topic": "Algebra",
-        "text": "What is the slope of the line that passes through the points <span class=\"text-serif\">(−</span>8,0) and (0,−6) ?",
+        "topic": "Exponents & Radicals",
+        "text": "What is the simplified numerical value of (100)<sup>3/2</sup>?",
         "options": [
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mo>&#x2212;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mo>&#x2212;</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac></mrow></math>",
-            "0"
+            "10000",
+            "1000",
+            "30",
+            "100"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: &#x2212;34. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that &#x2212;34 satisfies all conditions of the problem."
+        "explanation": "(100)<sup>3/2</sup> = (&radic;100)<sup>3</sup> = (10)<sup>3</sup> = 1000."
     },
     {
         "id": 55,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "A piece of letter-sized paper is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mn>8</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> inches wide and 11 inches long. Suppose you want to cut strips of paper that are <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math> of an inch wide and 11 inches long. What is the maximum number of strips of paper you could make from 1 piece of letter-sized paper?",
+        "topic": "Coordinate Geometry",
+        "text": "Which equation represents the line in the standard coordinate plane that passes through (8, 21) and runs parallel to <i>y</i> = 11<i>x</i> &minus; 15?",
         "options": [
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"
+            "<i>y</i> = &minus;11<i>x</i> &minus; 67",
+            "<i>y</i> = 11<i>x</i> + 31",
+            "<i>y</i> = 11<i>x</i> &minus; 67",
+            "<i>y</i> = (1/11)<i>x</i> + 13"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 11. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 11."
+        "answer": 2,
+        "explanation": "Parallel lines have identical slope <i>m</i> = 11. Using point-slope: <i>y</i> &minus; 21 = 11(<i>x</i> &minus; 8) &rArr; <i>y</i> = 11<i>x</i> &minus; 67."
     },
     {
         "id": 56,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "In the following figure, all of the small triangles are the same size. If 12 of the triangles are shaded, what percent of the entire figure is shaded?\r\n<p class=\"txc\"><img alt=\"image\" src=\"images/p910-2.jpg\"/></p>",
+        "topic": "Plane Geometry",
+        "text": "In a plane geometric construction, ray <i>PT</i> intersects line <i>RS</i> at point <i>P</i>. If &ang;<i>RPT</i> measures 73&deg;, what is the exact measure of adjacent angle &ang;<i>TPS</i>?",
         "options": [
-            "12",
-            "24",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mn>33</mn><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>",
-            "50",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mn>66</mn><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math>"
+            "73&deg;",
+            "88&deg;",
+            "87&deg;",
+            "107&deg;"
         ],
         "answer": 3,
-        "explanation": "Correct Answer: 50. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 50."
+        "explanation": "Adjacent angles forming a linear pair sum to 180&deg;. &ang;<i>TPS</i> = 180&deg; &minus; 73&deg; = 107&deg;."
     },
     {
         "id": 57,
         "section": "math",
-        "topic": "Algebra",
-        "text": "What is the solution set of 4<i>x</i> − 13 ≥ 27 ?",
+        "topic": "Intermediate Algebra",
+        "text": "Find the unique solution pair (<i>x</i>, <i>y</i>) that satisfies the system:\n\n<i>x</i> + <i>y</i> = 17\n2<i>x</i> &minus; <i>y</i> = 19",
         "options": [
-            "<i>x</i> ≥ −10",
-            "<i>x</i> < −5",
-            "<i>x</i> ≥ 0",
-            "<i>x</i> > 5",
-            "<i>x</i> ≥ 10"
+            "<i>x</i> = 12, <i>y</i> = 5",
+            "<i>x</i> = 14, <i>y</i> = 4",
+            "<i>x</i> = 10, <i>y</i> = 10",
+            "<i>x</i> = &minus;12, <i>y</i> = 5"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: x ≥ 10. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x ≥ 10 satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "Adding equations: 3<i>x</i> = 36 &rArr; <i>x</i> = 12. Then <i>y</i> = 17 &minus; 12 = 5."
     },
     {
         "id": 58,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "Assume <i>m</i> and <i>n</i> are nonzero integers such that <i>m</i> < 0 and <i>n</i> > 0. Which of the following <i>must</i> be negative?",
+        "topic": "Trigonometry",
+        "text": "In right triangle &Delta;<i>PQR</i> with &ang;<i>Q</i> = 90&deg;, side <i>PQ</i> has length 23 and hypotenuse <i>PR</i> has length 49. What is the exact value of cos(&ang;<i>P</i>)?",
         "options": [
-            "−<i>nm</i>",
-            "−<i>mn</i>",
-            "<i>mn</i>",
-            "−<i>n</i> − <i>m</i>",
-            "<i>m</i> − <i>n</i>"
+            "49/23",
+            "23/49",
+            "&radic;(1872)/49",
+            "1"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: m − n. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in m − n."
+        "answer": 1,
+        "explanation": "cos(&ang;<i>P</i>) = Adjacent / Hypotenuse = <i>PQ</i> / <i>PR</i> = 23/49."
     },
     {
         "id": 59,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "4.5<sup>3</sup> + 7.5<sup>2</sup> = ?",
+        "topic": "Statistics & Probability",
+        "text": "What is the median value of the sorted numerical collection: { 74, 78, 83, 90, 99, 112, 125 }?",
         "options": [
-            "56.25",
-            "91.125",
-            "125.625",
-            "147.375",
-            "185.5"
+            "78",
+            "112",
+            "90",
+            "125"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 147.375. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 147.375."
+        "answer": 2,
+        "explanation": "For an ordered dataset of 7 elements, the median is the 4th element: 90."
     },
     {
         "id": 60,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "What positive number, when divided by its reciprocal, gives a result of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>25</mn><mrow><mn>36</mn></mrow></mfrac></mrow></math> ?",
+        "topic": "Ratios & Proportions",
+        "text": "A metallurgical alloy requires copper and zinc in a mass ratio of 11:20. If a foundry batch contains 396 kg of copper, how many kilograms of zinc must be blended?",
         "options": [
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>5</mn><mrow><mn>36</mn></mrow></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>5</mn><mrow><mn>6</mn></mrow></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>6</mn><mrow><mn>5</mn></mrow></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>36</mn><mrow><mn>25</mn></mrow></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>36</mn><mrow><mn>5</mn></mrow></mfrac></mrow></math>"
+            "734 kg",
+            "709 kg",
+            "421 kg",
+            "720 kg"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 56. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 56."
+        "answer": 3,
+        "explanation": "Ratio: 11/20 = 396/<i>z</i> &rArr; <i>z</i> = (20 × 396) / 11 = 720 kg."
     },
     {
         "id": 61,
         "section": "math",
-        "topic": "Geometry",
-        "text": "The volume of a sphere is given by the formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>&#x03C0;</mi><msup><mi>r</mi><mn>3</mn></msup></mrow></math>, where <i>r</i> is the radius of the sphere. What is the volume, in cubic inches, of a sphere that has a diameter of 12 inches?",
+        "topic": "Pre-Algebra",
+        "text": "Find the greatest common factor (GCF) of 660 and 990.",
         "options": [
-            "12π",
-            "36π",
-            "72π",
-            "144π",
-            "288π"
+            "165",
+            "660",
+            "330",
+            "1980"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 288π. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 288π."
+        "answer": 2,
+        "explanation": "GCF(660, 990) = 165 × GCF(4, 6) = 165 × 2 = 330."
     },
     {
         "id": 62,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "Court reporters type every word spoken during trials and hearings so that there is a written record of what transpired. Suppose a certain court reporter can type 4 words per second, and a trial transcript contains 30 pages with an average of 640 words per page. If this court reporter typed the transcript at his typical rate, how long was he actively typing?",
+        "topic": "Elementary Algebra",
+        "text": "Solve for <i>x</i> in the equation: 4<i>x</i> &minus; 166 = 3<i>x</i> + 260.",
         "options": [
-            "1 hour, 10 minutes",
-            "1 hour, 20 minutes",
-            "1 hour, 45 minutes",
-            "2 hours",
-            "2 hours, 15 minutes"
+            "94",
+            "332",
+            "432",
+            "426"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 1 hour, 20 minutes. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 1 hour, 20 minutes."
+        "answer": 3,
+        "explanation": "4<i>x</i> &minus; 3<i>x</i> = 260 + 166 &rArr; <i>x</i> = 426."
     },
     {
         "id": 63,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "When <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mn>5</mn><mfrac><mn>2</mn><mn>9</mn></mfrac></mrow></math> is written as an improper fraction in simplest form, what is the numerator of the fraction?",
+        "topic": "Plane Geometry",
+        "text": "A rectangular courtyard has length 177 meters and width 267 meters. What is its total perimeter?",
         "options": [
-            "10",
-            "19",
-            "38",
-            "45",
-            "47"
+            "888 m",
+            "47259 m",
+            "444 m",
+            "900 m"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 47. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 47."
+        "answer": 0,
+        "explanation": "Perimeter = 2(Length + Width) = 2(177 + 267) = 888 m."
     },
     {
         "id": 64,
         "section": "math",
-        "topic": "Geometry",
-        "text": "The point (−2,−3) is the midpoint of the line segment in the standard (<i>x,y</i>) coordinate plane with endpoints (2,8) and (<i>m,n</i>). Which of the following is (<i>m,n</i>) ?",
+        "topic": "Exponents & Radicals",
+        "text": "Simplify the algebraic expression: (<i>y</i><sup>10</sup>)<sup>11</sup> &middot; <i>y</i><sup>4</sup>.",
         "options": [
-            "(−6,−14)",
-            "(−4,5)",
-            "(−2,2.5)",
-            "(2,3.5)",
-            "(4,14)"
+            "<i>y</i><sup>117</sup>",
+            "<i>y</i><sup>114</sup>",
+            "<i>y</i><sup>112</sup>",
+            "<i>y</i><sup>228</sup>"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: (−6,−14). Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields (−6,−14)."
+        "answer": 1,
+        "explanation": "(<i>y</i><sup>10</sup>)<sup>11</sup> = <i>y</i><sup>110</sup>. Multiplying by <i>y</i><sup>4</sup> gives <i>y</i><sup>114</sup>."
     },
     {
         "id": 65,
         "section": "math",
-        "topic": "Statistics and Probability",
-        "text": "Dillon is going to randomly pick a domino from a pile of dominoes that are all facing downward. Of the dominoes in the pile, 45 have an even number of dots on them. He randomly picks a single domino. If the probability that he picks a domino with an even number of dots is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math>, how many dominoes are in the pile?",
+        "topic": "Trigonometry",
+        "text": "In right triangle &Delta;<i>ABC</i>, acute angle &theta; has tan(&theta;) = 9/12. What is cot(&theta;)?",
         "options": [
-            "36",
-            "45",
-            "50",
-            "54",
-            "60"
+            "9/12",
+            "1",
+            "12/9",
+            "&minus;12/9"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 54. Step-by-step solution: Calculate the statistical parameter (mean, median, mode, range) or determine the probability using P(E) = (number of favorable outcomes) / (total possible outcomes). The result simplifies to 54."
+        "answer": 2,
+        "explanation": "cot(&theta;) = 1 / tan(&theta;) = 12/9."
     },
     {
         "id": 66,
         "section": "math",
-        "topic": "Algebra",
-        "text": "If 5<i>x</i> + 22 = 67, then <i>x</i> = ?",
+        "topic": "Coordinate Geometry",
+        "text": "Determine the midpoint of the line segment joining (170, 268) and (178, 280).",
         "options": [
-            "5",
-            "7.5",
-            "9",
-            "15",
-            "22"
+            "(178, 280)",
+            "(172, 271)",
+            "(176, 276)",
+            "(174, 274)"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 9. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 9 satisfies all conditions of the problem."
+        "answer": 3,
+        "explanation": "Midpoint = ((170 + 178)/2, (268 + 280)/2) = (174, 274)."
     },
     {
         "id": 67,
         "section": "math",
-        "topic": "Geometry",
-        "text": "In the following figure, lines <i>m</i> and <i>l</i> are parallel and the measure of ∠<i>a is</i> 72°. What is the measure of ∠<i>f</i>?\r\n<p class=\"txc\"><img alt=\"image\" src=\"images/p911-1.jpg\"/></p>",
+        "topic": "Intermediate Algebra",
+        "text": "If quadratic function <i>h</i>(<i>x</i>) = 3<i>x</i><sup>2</sup> &minus; 171, evaluate <i>h</i>(4).",
         "options": [
-            "18°",
-            "72°",
-            "90°",
-            "108°",
-            "288°"
+            "-123",
+            "219",
+            "-147",
+            "-112"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 108°. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 108°."
+        "answer": 0,
+        "explanation": "<i>h</i>(4) = 3(4)<sup>2</sup> &minus; 171 = 3(16) &minus; 171 = 48 &minus; 171 = -123."
     },
     {
         "id": 68,
         "section": "math",
-        "topic": "Algebra",
-        "text": "What is the equation of a line that is perpendicular to the line <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>y</mi><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math> and contains the point (3,−2) ?",
+        "topic": "Statistics & Probability",
+        "text": "A lottery drum contains numbered tokens from 1 through 192. If a single token is selected at random, what is the probability that it is divisible by 5?",
         "options": [
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>y</mi><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>y</mi><mo>=</mo><mo>&#x2212;</mo><mfrac><mn>3</mn><mn>4</mn></mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>y</mi><mo>=</mo><mo>&#x2212;</mo><mfrac><mn>4</mn><mn>3</mn></mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>y</mi><mo>=</mo><mo>&#x2212;</mo><mfrac><mn>4</mn><mn>3</mn></mrow><mi>x</mi><mo>&#x2212;</mo><mn>6</mn></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>y</mi><mo>=</mo><mo>&#x2212;</mo><mfrac><mn>4</mn><mn>3</mn></mrow><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math>"
+            "41/192",
+            "38/192",
+            "1/192",
+            "37/192"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: y=&#x2212;43x+2. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that y=&#x2212;43x+2 satisfies all conditions of the problem."
+        "answer": 1,
+        "explanation": "There are 38 multiples of 5 within 1 to 192. Probability = 38/192."
     },
     {
         "id": 69,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "4<sup>3</sup> ÷ 8 + (5<sup>2</sup> − 9) ÷ 4 = ?",
+        "topic": "Percentages",
+        "text": "A laboratory apparatus originally priced at $3460 is discounted by 18%. What is the discounted price?",
         "options": [
-            "4",
-            "8",
-            "10",
-            "12",
-            "16"
+            "$3114.00",
+            "$2249.00",
+            "$2837.20",
+            "$3460.00"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 12. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 12."
+        "answer": 2,
+        "explanation": "Discounted price = $3460 × (1 &minus; 0.18) = $2837.20."
     },
     {
         "id": 70,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "Based on past graduations, a university estimates that 8% of the graduating class will not attend the graduation ceremony. Based on this estimate, if there are 1,500 graduates, how many will not attend the ceremony?",
+        "topic": "Plane Geometry",
+        "text": "What is the area of a right triangle with base 348 mm and perpendicular height 552 mm?",
         "options": [
-            "120",
-            "180",
-            "240",
-            "320",
-            "400"
+            "192096 mm<sup>2</sup>",
+            "48024 mm<sup>2</sup>",
+            "3600 mm<sup>2</sup>",
+            "96048 mm<sup>2</sup>"
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: 120. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 120."
+        "answer": 3,
+        "explanation": "Area = (1/2) × base × height = (1/2) × 348 × 552 = 96048 mm<sup>2</sup>."
     },
     {
         "id": 71,
         "section": "math",
-        "topic": "Algebra",
-        "text": "If bananas cost $0.29 and oranges cost $0.45, what is the total cost of <i>x</i> bananas and <i>y</i> oranges?",
+        "topic": "Intermediate Algebra",
+        "text": "Solve the absolute value equation: |3<i>x</i> &minus; 525| = 834.",
         "options": [
-            "(<i>x</i> + <i>y</i>)($0.29 + $0.45)",
-            "$0.29<i>x</i> + $0.45<i>y</i>",
-            "$0.74(<i>x</i> + <i>y</i>)",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><mi>&#x0024;</mi><mn>0.29</mn></mrow><mi>x</mi></mfrac><mo>+</mo><mfrac><mrow><mi>&#x0024;</mi><mn>0.45</mn></mrow><mi>y</mi></mfrac></mrow></math>",
-            "$0.45<i>x</i> + $0.29<i>y</i>"
+            "<i>x</i> = 453 or <i>x</i> = -103",
+            "<i>x</i> = 453",
+            "<i>x</i> = -103",
+            "<i>x</i> = &minus;453 or <i>x</i> = &minus;-103"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: $0.29x + $0.45y. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that $0.29x + $0.45y satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "3<i>x</i> &minus; 525 = 834 &rArr; <i>x</i> = 453; 3<i>x</i> &minus; 525 = &minus;834 &rArr; <i>x</i> = -103."
     },
     {
         "id": 72,
         "section": "math",
-        "topic": "Algebra",
-        "text": "If <i>x</i><sup>2</sup> + 19 = 100, then <i>x</i> could be which of the following?",
+        "topic": "Coordinate Geometry",
+        "text": "A circle in the standard coordinate plane has equation (<i>x</i> + 176)<sup>2</sup> + (<i>y</i> &minus; 280)<sup>2</sup> = 135424. What is its radius?",
         "options": [
-            "6",
-            "9",
-            "19",
-            "38.5",
-            "81"
+            "135424 units",
+            "368 units",
+            "179 units",
+            "287 units"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: 9. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 9 satisfies all conditions of the problem."
+        "explanation": "In (<i>x</i> &minus; <i>h</i>)<sup>2</sup> + (<i>y</i> &minus; <i>k</i>)<sup>2</sup> = <i>r</i><sup>2</sup>, the radius <i>r</i> = &radic;(135424) = 368 units."
     },
     {
         "id": 73,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "Lexi uses her debit card to make a purchase totaling $60. When she records the debit in her checkbook register, she accidentally adds $60 to her balance rather than subtracting it, which results in an inaccurate total. Because of her error, Lexi’s checkbook register shows:",
+        "topic": "Trigonometry",
+        "text": "Convert the angle 2655&deg; into radian measure.",
         "options": [
-            "$120 less than it should.",
-            "$60 less than it should.",
-            "$30 more than it should.",
-            "$60 more than it should.",
-            "$120 more than it should."
+            "59&pi;/6",
+            "4&pi;/60",
+            "59&pi;/4",
+            "(2655/360)&pi;"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: $120 more than it should.. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in $120 more than it should.."
+        "answer": 2,
+        "explanation": "Radians = (Degrees × &pi;) / 180 = (2655&pi;) / 180 = 59&pi;/4."
     },
     {
         "id": 74,
         "section": "math",
-        "topic": "Algebra",
-        "text": "For all <i>x</i>, (<i>x</i> + 5)(<i>x</i> − 5) + (2<i>x</i> + 3)(<i>x</i> − 3) = ?",
+        "topic": "Pre-Algebra",
+        "text": "An arithmetic sequence has initial term <i>a</i><sub>1</sub> = 178 and common difference <i>d</i> = 11. What is the 10th term, <i>a</i><sub>10</sub>?",
         "options": [
-            "<i>x</i><sup>2</sup> − 3<i>x</i> − 34",
-            "3<i>x</i><sup>2</sup> − 15",
-            "3<i>x</i><sup>2</sup> − 3<i>x</i> − 34",
-            "3<i>x</i><sup>2</sup> + 3<i>x</i> − 34",
-            "3<i>x</i><sup>2</sup> + 3<i>x</i> + 34"
+            "269",
+            "289",
+            "343",
+            "277"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 3x2 − 3x − 34. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 3x2 − 3x − 34 satisfies all conditions of the problem."
+        "answer": 3,
+        "explanation": "<i>a</i><sub>10</sub> = <i>a</i><sub>1</sub> + (10 &minus; 1)<i>d</i> = 178 + 9(11) = 277."
     },
     {
         "id": 75,
         "section": "math",
-        "topic": "Algebra Getting to the Answer: To simplify the given expression, look for factors in the fraction term that will cancel. Use the denominator as a hint as to how to factor the numerator. Be careful—you cannot simply cancel the x + 1 in the denominator with the x + 1 at the end of the expression.",
-        "text": "For all <i>x</i> ≠ −1, which of the following is equivalent to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><msup><mi>x</mi><mrow><mn>2</mn><mo> </mo></mrow></msup><mo>−</mo><mo> </mo><mn>4</mn><mi>x</mi><mo> </mo><mo>−</mo><mo> </mo><mn>5</mn></mrow><mrow><mi>x</mi><mo> </mo><mo>+</mo><mo> </mo><mn>1</mn></mrow></mfrac><mo>+</mo><mi>x</mi><mo>+</mo><mn>2</mn></mrow></math> ?",
+        "topic": "Elementary Algebra",
+        "text": "Factor the quadratic binomial completely: <i>x</i><sup>2</sup> &minus; 33856.",
         "options": [
-            "<i>x</i> − 3",
-            "2<i>x</i> − 3",
-            "<i>x</i><sup>2</sup> − 4<i>x</i> − 5",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><mn>2</mn><mi>x</mi><mo> </mo><mo>−</mo><mo> </mo><mn>3</mn></mrow><mrow><mi>x</mi><mo> </mo><mo>+</mo><mo> </mo><mn>1</mn></mrow></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><msup><mi>x</mi><mrow><mn>2</mn><mo> </mo></mrow></msup><mo>−</mo><mo> </mo><mn>3</mn><mi>x</mi><mo> </mo><mo>−</mo><mo> </mo><mn>4</mn></mrow><mrow><mi>x</mi><mo> </mo><mo>+</mo><mo> </mo><mn>1</mn></mrow></mfrac></mrow></math>"
+            "(<i>x</i> &minus; 184)(<i>x</i> + 184)",
+            "(<i>x</i> &minus; 184)<sup>2</sup>",
+            "(<i>x</i> + 184)<sup>2</sup>",
+            "(<i>x</i> &minus; 368)(<i>x</i> + 2)"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 2x − 3. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 2x − 3 satisfies all conditions of the problem."
+        "answer": 0,
+        "explanation": "Difference of squares: <i>a</i><sup>2</sup> &minus; <i>b</i><sup>2</sup> = (<i>a</i> &minus; <i>b</i>)(<i>a</i> + <i>b</i>)."
     },
     {
         "id": 76,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "On a map, the scale is the ratio of the distance shown on the map to the actual distance. A geography teacher has a map on her wall with a scale of 1 inch:50 miles. She uses the school’s copier to shrink the large wall map down to the size of a piece of paper to hand out to each of her students. To do this, she makes the map <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> of its original size. Suppose on the students’ maps, the distance between two cities is 4 inches. How many actual miles apart are those cities?",
+        "topic": "Statistics & Probability",
+        "text": "From a cohort of 20 researchers, how many distinct 2-person subcommittees can be formed?",
         "options": [
-            "100",
-            "200",
-            "400",
-            "600",
-            "800"
+            "380",
+            "190",
+            "40",
+            "200"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 400. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 400."
+        "answer": 1,
+        "explanation": "<i>C</i>(20, 2) = (20 × 19) / 2 = 190."
     },
     {
         "id": 77,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "Which of the following matrices is equal to the matrix product <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mrow><mo>[</mo><mrow><mtable><mtr><mtd><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mrow><mo>&#x2212;</mo><mn>2</mn></mrow></mtd></mtr></mtable></mrow><mo>]</mo></mrow><mo>&#x22C5;</mo><mrow><mo>[</mo><mrow><mtable><mtr><dt>3</dt></mtr><dt>3</dt></mtr></mtable></mrow><mo>]</mo></mrow></mrow></math> ?",
+        "topic": "Intermediate Algebra",
+        "text": "Simplify the complex number product: (10 + 2<i>i</i>)(3 &minus; <i>i</i>), where <i>i</i><sup>2</sup> = &minus;1.",
         "options": [
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mrow><mo>[</mo><mrow><mtable><mtr><dt><mrow><mo>&#x2212;</mo><mn>9</mn></mrow></dt><dt>0</dt></mtr><dt>3</dt><dt><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></dt></mtr></mtable></mrow><mo>]</mo></mrow></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mrow><mo>[</mo><mrow><mtable><mtr><dt><mrow><mo>&#x2212;</mo><mn>9</mn></mrow></dt><dt>3</dt></mtr><dt>3</dt><dt><mrow><mo>&#x2212;</mo><mn>6</mn></mrow></dt></mtr></mtable></mrow><mo>]</mo></mrow></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mrow><mo>[</mo><mrow><mtable><mtr><dt>0</dt><dt>0</dt></mtr><dt>0</dt><dt>0</dt></mtable></mrow><mo>]</mo></mrow></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mrow><mo>[</mo><mrow><mtable><mtr><dt><mrow><mo>&#x2212;</mo><mn>9</mn></mrow></dt></mtr><dt><mrow><mo>&#x2212;</mo><mn>3</mn></mrow></dt></mtr></mtable></mrow><mo>]</mo></mrow></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mrow><mo>[</mo><mrow><mtable><mtr><dt><mrow><mo>&#x2212;</mo><mn>9</mn></mrow></dt></mtr><dt><mrow><mo>&#x2212;</mo><mn>9</mn></mrow></dt></mtr></mtable></mrow><mo>]</mo></mrow></mrow></math>"
+            "32 &minus; 1<i>i</i>",
+            "38 + <i>i</i>",
+            "32 &minus; 4<i>i</i>",
+            "30 &minus; 4<i>i</i>"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: [&#x2212;9&#x2212;3]. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in [&#x2212;9&#x2212;3]."
+        "answer": 2,
+        "explanation": "(10 + 2<i>i</i>)(3 &minus; <i>i</i>) = 30 &minus; 10<i>i</i> + 6<i>i</i> &minus; 2<i>i</i><sup>2</sup> = 32 + -4<i>i</i>."
     },
     {
         "id": 78,
         "section": "math",
-        "topic": "Functions",
-        "text": "If <i>f</i>(<i>x</i>) = 12<i>x</i><sup>2</sup> − 15<i>x</i>, what is the value of <i>f</i>(3) ?",
+        "topic": "Plane Geometry",
+        "text": "A solid geometric cone has a circular base radius of 11 cm and a height of 14 cm. What is its volume?",
         "options": [
-            "36",
-            "45",
-            "63",
-            "90",
-            "120"
+            "1411.8&pi; cm<sup>3</sup>",
+            "282.4&pi; cm<sup>3</sup>",
+            "308&pi; cm<sup>3</sup>",
+            "564.7&pi; cm<sup>3</sup>"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 63. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 63 satisfies all conditions of the problem."
+        "answer": 3,
+        "explanation": "Volume = (1/3)&pi;<i>r</i><sup>2</sup><i>h</i> = (1/3)&pi;(11)<sup>2</sup>(14) = 564.7&pi; cm<sup>3</sup>."
     },
     {
         "id": 79,
         "section": "math",
-        "topic": "Algebra",
-        "text": "Which of the following expressions is the greatest monomial factor of 40<i>a</i><sup>4</sup><i>b</i><sup>2</sup> + 30<i>a</i><sup>3</sup><i>b</i><sup>3</sup> ?",
+        "topic": "Ratios & Proportions",
+        "text": "If variable <i>u</i> is inversely proportional to <i>v</i>, and <i>u</i> = 366 when <i>v</i> = 3, what is <i>u</i> when <i>v</i> = 6?",
         "options": [
-            "10<i>a</i><sup>3</sup><i>b</i><sup>2</sup>",
-            "10<i>a</i><sup>4</sup><i>b</i><sup>3</sup>",
-            "10<i>a</i><sup>7</sup><i>b</i><sup>5</sup>",
-            "120<i>a</i><sup>4</sup><i>b</i><sup>3</sup>",
-            "120<i>a</i><sup>7</sup><i>b</i><sup>5</sup>"
+            "183",
+            "549",
+            "92",
+            "915"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: 10a3b2. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 10a3b2 satisfies all conditions of the problem."
+        "explanation": "Inverse variation: <i>u</i> &middot; <i>v</i> = <i>k</i> &rArr; <i>k</i> = 366 × 3 = 1098. When <i>v</i> = 6, <i>u</i> = 1098 / 6 = 183."
     },
     {
         "id": 80,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "John weighs 1.25 times as much as Ellen. If John weighs 150 pounds, how many pounds does Ellen weigh?",
+        "topic": "Coordinate Geometry",
+        "text": "What is the <i>x</i>-intercept of the linear equation 5<i>x</i> &minus; 2<i>y</i> = 1840?",
         "options": [
-            "95",
-            "110",
-            "120",
-            "165",
-            "187.5"
+            "(0, 368)",
+            "(368, 0)",
+            "(736, 0)",
+            "(&minus;368, 0)"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 120. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 120."
+        "answer": 1,
+        "explanation": "Set <i>y</i> = 0 &rArr; 5<i>x</i> = 1840 &rArr; <i>x</i> = 368. Intercept is (368, 0)."
     },
     {
         "id": 81,
         "section": "math",
-        "topic": "Geometry",
-        "text": "In the following triangle, what is the value of cos <i>R</i> ?\r\n<p class=\"txc\"><img alt=\"image\" src=\"images/p914-14.jpg\"/></p>",
+        "topic": "Exponents & Radicals",
+        "text": "Simplify the radical product: &radic;(555) &middot; &radic;(2220).",
         "options": [
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>6</mn></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>5</mn></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mn>5</mn><msqrt><mn>2</mn></msqrt></mrow></math>"
+            "2220",
+            "740",
+            "1110",
+            "1125"
         ],
         "answer": 2,
-        "explanation": "Correct Answer: 22. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 22."
+        "explanation": "&radic;(555 × 2220) = &radic;(1232100) = 185 × 6 = 1110."
     },
     {
         "id": 82,
         "section": "math",
-        "topic": "Algebra",
-        "text": "What is the value of 4<i>x</i> − 6<i>y</i> when <i>x</i> = 3 and <i>y</i> = <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mo>&#x2212;</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math> ?",
+        "topic": "Intermediate Algebra",
+        "text": "Evaluate the logarithmic expression: log<sub>13</sub>(2197).",
         "options": [
-            "−4",
-            "6",
-            "10",
-            "12",
-            "14"
+            "2",
+            "13",
+            "4",
+            "3"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 14. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 14 satisfies all conditions of the problem."
+        "answer": 3,
+        "explanation": "log<sub>13</sub>(13<sup>3</sup>) = 3."
     },
     {
         "id": 83,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "Two vectors are given by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mrow><mo>&#x2329;</mo><mrow><mn>8</mn><mo>,</mo><mtext>&#x2009;</mtext><mtext>&#x200A;</mtext><mo>&#x2212;</mo><mn>4</mn></mrow><mo>&#x232A;</mo></mrow></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mrow><mo>&#x2329;</mo><mrow><mi>a</mi><mo>,</mo><mtext>&#x2009;</mtext><mtext>&#x200A;</mtext><mi>b</mi></mrow><mo>&#x232A;</mo></mrow><mo>.</mo></mrow></math> If <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mrow><mo>&#x2329;</mo><mrow><mn>6</mn><mo>,</mo><mtext>&#x2009;</mtext><mtext>&#x200A;</mtext><mn>6</mn></mrow><mo>&#x232A;</mo></mrow><mo>,</mo></mrow></math> then what is the value of <i>a</i>?",
+        "topic": "Plane Geometry",
+        "text": "In a circle with radius 191 cm, calculate the area of a sector with a central angle of 60&deg;.",
         "options": [
-            "−2",
-            "2",
-            "6",
-            "8",
-            "14"
+            "6080.17&pi; cm<sup>2</sup>",
+            "15200.42&pi; cm<sup>2</sup>",
+            "3040.09&pi; cm<sup>2</sup>",
+            "573&pi; cm<sup>2</sup>"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: −2. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in −2."
+        "explanation": "Sector Area = &pi;<i>r</i><sup>2</sup>(&theta;/360&deg;) = &pi;(191)<sup>2</sup>(60&deg;/360&deg;) = 6080.17&pi; cm<sup>2</sup>."
     },
     {
         "id": 84,
         "section": "math",
-        "topic": "Algebra",
-        "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mroot><mi>x</mi><mn>3</mn></mroot><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow></math>, then <i>x</i> = ?",
+        "topic": "Elementary Algebra",
+        "text": "Solve for <i>w</i> in the rational equation: <i>w</i>/5 + <i>w</i>/2 = 1316.",
         "options": [
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>1</mn><mrow><mn>625</mn></mrow></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>1</mn><mrow><mn>125</mn></mrow></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>1</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math>",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mn>1</mn><mrow><mroot><mn>5</mn><mn>3</mn></mroot></mrow></mfrac></mrow></math>",
-            "125"
+            "1316",
+            "1880",
+            "940",
+            "2632"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: 1125. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 1125 satisfies all conditions of the problem."
+        "explanation": "Common denominator: (2<i>w</i> + 5<i>w</i>)/10 = 7<i>w</i>/10 = 1316 &rArr; <i>w</i> = 10 × 188 = 1880."
     },
     {
         "id": 85,
         "section": "math",
-        "topic": "Statistics and Probability",
-        "text": "The eighth-grade girls’ basketball team played a total of 14 games this season. If they scored a total of 392 points, what was the mean (average) score per game?",
+        "topic": "Trigonometry",
+        "text": "If &theta; is an acute angle in test 8 with sin(&theta;) = 1/2, what is the value of cos(&theta;)?",
         "options": [
-            "14",
-            "18",
-            "22",
-            "28",
-            "35"
+            "1/2",
+            "&radic;2/2",
+            "&radic;3/2",
+            "1"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: 28. Step-by-step solution: Calculate the statistical parameter (mean, median, mode, range) or determine the probability using P(E) = (number of favorable outcomes) / (total possible outcomes). The result simplifies to 28."
+        "answer": 2,
+        "explanation": "In a 30&deg;-60&deg;-90&deg; special triangle where sin(30&deg;) = 1/2, cos(30&deg;) = &radic;3/2."
     },
     {
         "id": 86,
         "section": "math",
-        "topic": "Statistics and Probability",
-        "text": "On her first three geometry tests, Sarah scored an 88, a 94, and an 85. If there are four tests total and Sarah needs at least a 90 average for the four, what is the lowest score she can receive on the final test?",
+        "topic": "Statistics & Probability",
+        "text": "A sample container has 11 red beads, 12 blue beads, and 13 green beads. What is the probability of drawing a red bead?",
         "options": [
-            "85",
-            "88",
-            "90",
-            "93",
-            "95"
+            "12/36",
+            "13/36",
+            "1/36",
+            "11/36"
         ],
         "answer": 3,
-        "explanation": "Correct Answer: 93. Step-by-step solution: Calculate the statistical parameter (mean, median, mode, range) or determine the probability using P(E) = (number of favorable outcomes) / (total possible outcomes). The result simplifies to 93."
+        "explanation": "Probability = (Red beads) / (Total beads) = 11 / (11 + 12 + 13) = 11/36."
     },
     {
         "id": 87,
         "section": "math",
-        "topic": "Statistics and Probability",
-        "text": "Set <i>A</i> contains 9 consecutive even integers. If the average of Set <i>A</i>’s integers is 50, which of the following is the smallest integer of Set <i>A</i> ?",
+        "topic": "Intermediate Algebra",
+        "text": "Determine the discriminant &Delta; for the quadratic equation 2<i>x</i><sup>2</sup> + 8<i>x</i> + 12 = 0.",
         "options": [
-            "38",
-            "40",
-            "42",
-            "44",
-            "46"
+            "-32",
+            "-16",
+            "160",
+            "-46"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 42. Step-by-step solution: Calculate the statistical parameter (mean, median, mode, range) or determine the probability using P(E) = (number of favorable outcomes) / (total possible outcomes). The result simplifies to 42."
+        "answer": 0,
+        "explanation": "Discriminant &Delta; = <i>b</i><sup>2</sup> &minus; 4<i>ac</i> = 8<sup>2</sup> &minus; 4(2)(12) = 64 &minus; 96 = -32."
     },
     {
         "id": 88,
         "section": "math",
-        "topic": "Geometry",
-        "text": "A playground is (<i>x</i> + 8) units long and (<i>x</i> + 4) units wide. If a square of side length <i>x</i> is sectioned off from the playground to make a sandpit, which of the following could be the remaining area of the playground?",
+        "topic": "Coordinate Geometry",
+        "text": "Calculate the slope of the line passing through coordinates (4, 192) and (7, 207).",
         "options": [
-            "<i>x</i><sup>2</sup> + 12<i>x</i> + 32",
-            "12<i>x</i> + 32",
-            "2<i>x</i> + 12",
-            "32<i>x</i>",
-            "32"
+            "1/5",
+            "5",
+            "15",
+            "3/7"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: 12x + 32. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 12x + 32."
+        "explanation": "Slope <i>m</i> = (207 &minus; 192) / (7 &minus; 4) = 15/3 = 5."
     },
     {
         "id": 89,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "Marvin has two saltwater fish tanks in his home. One has tangs and angelfish in a ratio of 4 to 3. The second tank has tangs and puffers in a ratio of 3 to 5. Marvin wants to put a tank in his office with angelfish and puffers using the same ratio he has at home to make it easier to buy food for them in bulk. What ratio of angelfish to puffers should he use?",
+        "topic": "Percentages",
+        "text": "What is 18% of 6280?",
         "options": [
-            "3:5",
-            "9:20",
-            "4:5",
-            "3:4",
-            "1:2"
+            "1142.4",
+            "1122.4",
+            "1130.4",
+            "2826.0"
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: 9:20. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 9:20."
+        "answer": 2,
+        "explanation": "(18/100) × 6280 = 1130.4."
     },
     {
         "id": 90,
         "section": "math",
-        "topic": "Functions",
-        "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>8</mn></mrow></math> and <i>g</i>(<i>x</i>) = 2<i>x</i><sup>2</sup> + 4<i>x</i> + 10, which expression represents <i>f</i>(<i>g</i>(<i>x</i>)) ?",
+        "topic": "Plane Geometry",
+        "text": "The hypotenuse of an isosceles right triangle is 776&radic;2 cm. What is the length of each leg?",
         "options": [
-            "<i>x</i><sup>2</sup> + 4<i>x</i> + 5",
-            "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>+</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>13</mn></mrow></math>",
-            "<i>x</i><sup>2</sup> + 2<i>x</i> + 13",
-            "<i>x</i><sup>2</sup> + 2<i>x</i> + 18",
-            "<i>x</i><sup>2</sup> + 2<i>x</i> + 28"
+            "388 cm",
+            "1552 cm",
+            "782 cm",
+            "776 cm"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: x2 + 2x + 13. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that x2 + 2x + 13 satisfies all conditions of the problem."
+        "answer": 3,
+        "explanation": "In a 45&deg;-45&deg;-90&deg; right triangle, Hypotenuse = Leg &middot; &radic;2 &rArr; Leg = 776 cm."
     },
     {
         "id": 91,
         "section": "math",
-        "topic": "Geometry",
-        "text": "What is the length of a line segment with endpoints (4,−8) and (−4,7) ?",
+        "topic": "Pre-Algebra",
+        "text": "Evaluate the arithmetic expression: |&minus;780| &minus; |636| + |&minus;6|.",
         "options": [
-            "5",
-            "8",
-            "12",
-            "15",
-            "17"
+            "150",
+            "164",
+            "140",
+            "1422"
         ],
-        "answer": 4,
-        "explanation": "Correct Answer: 17. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 17."
+        "answer": 0,
+        "explanation": "780 &minus; 636 + 6 = 150."
     },
     {
         "id": 92,
         "section": "math",
-        "topic": "Geometry",
-        "text": "What is the length of side <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mover accent=\"true\"><mrow><mi>A</mi><mi>C</mi></mrow><mo stretchy=\"true\">¯</mo></mover></mrow></math> in triangle <i>ABC</i> graphed on the following coordinate plane? (Assume the coordinate grid points are shifted such that A is (-1, 4) and C is (2, 0))\r\n<p class=\"txc\"><img alt=\"image\" src=\"images/p913-8.jpg\"/></p>",
+        "topic": "Intermediate Algebra",
+        "text": "Given <i>f</i>(<i>x</i>) = 2<i>x</i> + 5 and <i>g</i>(<i>x</i>) = 3<i>x</i>, evaluate the composite function <i>f</i>(<i>g</i>(10)).",
         "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"
+            "72",
+            "65",
+            "30",
+            "75"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 5. Step-by-step solution: Apply relevant geometric theorems and formulas (such as the Pythagorean theorem, area/perimeter equations, slope m = Δy/Δx, or circle equations). Simplifying the geometric measurements yields 5."
+        "answer": 1,
+        "explanation": "<i>g</i>(10) = 3(10) = 30. Then <i>f</i>(30) = 2(30) + 5 = 65."
     },
     {
         "id": 93,
         "section": "math",
-        "topic": "Algebra",
-        "text": "When 4 times <i>x</i> is increased by 3, the result is less than 11. Which of the following is a graph of the real numbers <i>x</i> for which the previous statement is true?",
+        "topic": "Elementary Algebra",
+        "text": "Solve for <i>z</i> in the linear relation: 6<i>z</i> &minus; 1182 = 0.",
         "options": [
-            "<img alt=\"image\" src=\"images/p914-9.jpg\"/>",
-            "<img alt=\"image\" src=\"images/p914-10.jpg\"/>",
-            "<img alt=\"image\" src=\"images/p914-11.jpg\"/>",
-            "<img alt=\"image\" src=\"images/p914-12.jpg\"/>",
-            "<img alt=\"image\" src=\"images/p914-13.jpg\"/>"
+            "201",
+            "&minus;197",
+            "197",
+            "0"
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: . Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that  satisfies all conditions of the problem."
+        "answer": 2,
+        "explanation": "6<i>z</i> = 1182 &rArr; <i>z</i> = 197."
     },
     {
         "id": 94,
         "section": "math",
-        "topic": "Algebra",
-        "text": "The formula for converting a Fahrenheit temperature reading to Celsius is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" alttext=\"math\"><mrow><mi>C</mi><mo>=</mo><mfrac><mn>5</mn><mn>9</mn></mfrac><mtext>&#x00A0;</mtext><mrow><mo>(</mo><mrow><mi>F</mi><mo>&#x2212;</mo><mn>32</mn></mrow><mo>)</mo></mrow></mrow></math>, where <i>C</i> is the reading in degrees Celsius and <i>F</i> is the reading in degrees Fahrenheit. Which of the following is the Fahrenheit equivalent to a reading of 85° Celsius?",
+        "topic": "Statistics & Probability",
+        "text": "The arithmetic mean of four laboratory measurements is 248. If three of the values are 243, 253, and 246, what is the fourth value?",
         "options": [
-            "153°F",
-            "165°F",
-            "175°F",
-            "185°F",
-            "190°F"
+            "256",
+            "242",
+            "248",
+            "250"
         ],
         "answer": 3,
-        "explanation": "Correct Answer: 185°F. Step-by-step solution: Solve the algebraic equation or system by isolating the variable, expanding/factoring terms, or applying the quadratic formula. Substituting values confirms that 185°F satisfies all conditions of the problem."
+        "explanation": "Total sum required = 4 × (248) = 992. Fourth value = 992 &minus; 742 = 250."
     },
     {
         "id": 95,
         "section": "math",
-        "topic": "Number and Quantity",
-        "text": "In a high school senior class, the ratio of girls to boys is 4:3. If there are a total of 168 students in the senior class, how many girls are there?",
+        "topic": "Coordinate Geometry",
+        "text": "Which coordinate point lies on the line given by 3<i>x</i> + 2<i>y</i> = 611?",
         "options": [
-            "64",
-            "72",
-            "96",
-            "120",
-            "144"
+            "(199, 7)",
+            "(201, 7)",
+            "(199, 11)",
+            "(&minus;199, 7)"
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: 96. Step-by-step mathematical derivation confirms that applying standard algebraic, arithmetic, and geometric principles results in 96."
+        "answer": 0,
+        "explanation": "3(199) + 2(7) = 597 + 14. The point (199, 7) satisfies the equation."
     },
     {
         "id": 96,
         "section": "reading",
-        "topic": "Detail",
-        "text": "The author describes which of the following practices as undesirable to New York society?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Memoirs of the Highlands\"\n\nThe Scottish Highlands stretched endlessly beneath a canopy of mist, where Malcolm led his small flock across the heather-covered slopes. Life in the glen demanded resilience against the biting northern winds. Traditional crofting methods, passed through oral storytelling rather than written manuals, taught him how to read weather changes from the flight patterns of golden eagles and the shifting colors of cloud banks.",
+        "text": "Based on Passage I (\"Memoirs of the Highlands\"), the primary purpose of the text is to:",
         "options": [
-            "Playing the piano",
-            "Performing Spanish shawl dances",
-            "Traveling",
-            "Adopting children"
+            "criticize traditional approaches while advocating for immediate reform.",
+            "provide a purely statistical timeline of historical events.",
+            "argue that modern technological advancements have rendered past practices obsolete.",
+            "examine the intricate relationship between memoirs of the highlands and its broader significance."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Traveling\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage I\n\nprose fiction: This passage is adapted from The Age of Innocence, by Edith Wharton (1920).\n\n\n\n\n\n\n\n\nIt was generally agreed in New York that the\n\n\n\nCountess Olenska had “lost her looks.”\n\n\n\nShe had appeared there first, in Newland\n\n\n\nArcher’s boyhood, as a brilliantly pretty little girl\n\n\n5\nof nine or ten, of whom people said that she “ought\n\n\n\nto be painted.” Her parents had been continental\n\n\n\nwanderers, and after a roaming babyhood she had\n\n\n\nlost them both, and been taken in charge by her\n\n\n\naunt, Medora Manson, also a wanderer, who was\n\n\n10\nherself returning to New York to “settle down.”\n\n\n\nPoor Medora, repeatedly widowed, was always\n\n\n\ncoming home to settle down (each time in a less\n\n\n\nexpensive house), and bringing with her a new\n\n\n\nhusband or an adopted child, but after a few\n\n\n15\nmonths she invariably parted from her husband or\n\n\n\nquarrelled with her ward, and, having got rid of her\n\n\n\nhouse at a loss, set out again on her wanderings.\n\n\n\nAs her mother had been a Rushworth, and her\n\n\n\nlast unhappy marriage had linked her to one of\n\n\n20\nthe crazy Chiverses, New York looked indulgently\n\n\n\non her eccentricities, but when she returned with\n\n\n\nher little orphaned niece, whose parents had been\n\n\n\npopular in spite of their regrettable taste for travel,\n\n\n\npeople thought it a pity that the pretty child should\n\n\n25\nbe in such hands.\n\n\n\nEveryone was disposed to be kind to little\n\n\n\nEllen Mingott, though her dusky red cheeks and\n\n\n\ntight curls gave her an air of gaiety that seemed\n\n\n\nunsuitable in a child who should still have been in\n\n\n30\nblack for her parents. It was one of the misguided\n\n\n\nMedora’s many peculiarities to flout the unalterable\n\n\n\nrules that regulated American mourning, and\n\n\n\nwhen she stepped from the steamer her family was\n\n\n\nscandalized to see that the crepe veil she wore for\n\n\n35\nher own brother was seven inches shorter than\n\n\n\nthose of her sisters-in-law, while little Ellen wore a\n\n\n\ncrimson dress and amber beads.\n\n\n\nBut New York had so long resigned itself to\n\n\n\nMedora that only a few old ladies shook their\n\n\n40\nheads over Ellen’s gaudy clothes, while her other\n\n\n\nrelations fell under the charm of her high spirits.\n\n\n\nShe was a fearless and familiar little thing, who\n\n\n\nasked disconcerting questions, made precocious\n\n\n\ncomments, and possessed outlandish arts, such\n\n\n45\nas dancing a Spanish shawl dance and singing\n\n\n\nNeapolitan love-songs to a guitar. Under the\n\n\n\ndirection of her aunt, the little girl received an\n\n\n\nexpensive but incoherent education, which included\n\n\n\n“drawing from the model,” a thing never dreamed\n\n\n50\nof before, and playing the piano in quintets with\n\n\n\nprofessional musicians.\n\n\n\nOf course no good could come of this, and\n\n\n\nwhen, a few years later, poor Chivers finally died,\n\n\n\nhis widow again pulled up stakes and departed\n\n\n55\nwith Ellen, who had grown into a tall bony girl\n\n\n\nwith conspicuous eyes. For some time no more was\n\n\n\nheard of them; then news came of Ellen’s marriage\n\n\n\nto an immensely rich Polish nobleman of legendary\n\n\n\nfame. She disappeared, and when a few years later\n\n\n60\nMedora again came back to New York, subdued,\n\n\n\nimpoverished, mourning a third husband, and in\n\n\n\nquest of a still smaller house, people wondered that\n\n\n\nher rich niece had not been able to do something\n\n\n\nfor her. Then came the news that Ellen’s own\n\n\n65\nmarriage had ended in disaster, and that she was\n\n\n\nherself returning home to seek rest and oblivion\n\n\n\namong her kinsfolk.\n\n\n\nThese things passed through Newland Archer’s\n\n\n\nmind a week later as he watched the Countess\n\n\n70\nOlenska enter the van der Luyden drawing room\n\n\n\non the evening of the momentous dinner. In the\n\n\n\nmiddle of the room she paused, looking about her\n\n\n\nwith a grave mouth and smiling eyes, and in that\n\n\n\ninstant, Newland Archer rejected the general verdict\n\n\n75\non her looks. It was true that her early radiance\n\n\n\nwas gone. The red cheeks had paled; she was thin,\n\n\n\nworn, a little older-looking than her age, which\n\n\n\nmust have been nearly thirty. But there was about\n\n\n\nher the mysterious authority of beauty, a sureness\n\n\n80\nin the carriage of the head, the movement of the\n\n\n\neyes, which, without being in the least theatrical,\n\n\n\nstruck him as highly trained and full of a conscious\n\n\n\npower. At the same time she was simpler in manner\n\n\n\nthan most of the ladies present, and many people\n\n\n85\n(as he heard afterward) were disappointed that her\n\n\n\nappearance was not more “stylish”—for stylishness\n\n\n\nwas what New York most valued. It was, perhaps,\n\n\n\nArcher reflected, because her early vivacity had\n\n\n\ndisappeared; because she was so quiet—quiet in\n\n\n90\nher movements, her voice, and the tones of her voice.\n\n\n\nNew York had expected something a good\n\n\n\ndeal more resonant in a young woman with such a\n\n\n\nhistory."
+        "answer": 3,
+        "explanation": "Correct Answer: \"examine the intricate relationship between memoirs of the highlands and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Memoirs of the Highlands\"."
     },
     {
         "id": 97,
         "section": "reading",
         "topic": "Inference",
-        "text": "With which of the following would the author most likely agree regarding New York society as it pertains to Medora?",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Memoirs of the Highlands\"\n\nThe Scottish Highlands stretched endlessly beneath a canopy of mist, where Malcolm led his small flock across the heather-covered slopes. Life in the glen demanded resilience against the biting northern winds. Traditional crofting methods, passed through oral storytelling rather than written manuals, taught him how to read weather changes from the flight patterns of golden eagles and the shifting colors of cloud banks.",
+        "text": "According to the discussion in Passage I (\"Memoirs of the Highlands\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "It is rigid and unaccepting of different behavior.",
-            "It is usually whimsical, with few solid rules.",
-            "It is often based on unrealistic expectations.",
-            "It is snobbish but occasionally accepting of less common behavior."
+            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
+            "It was achieved without significant labor or long-term dedication.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It relies exclusively on automated machinery rather than human expertise."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"It is snobbish but occasionally accepting of less common behavior.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage I\n\nprose fiction: This passage is adapted from The Age of Innocence, by Edith Wharton (1920).\n\n\n\n\n\n\n\n\nIt was generally agreed in New York that the\n\n\n\nCountess Olenska had “lost her looks.”\n\n\n\nShe had appeared there first, in Newland\n\n\n\nArcher’s boyhood, as a brilliantly pretty little girl\n\n\n5\nof nine or ten, of whom people said that she “ought\n\n\n\nto be painted.” Her parents had been continental\n\n\n\nwanderers, and after a roaming babyhood she had\n\n\n\nlost them both, and been taken in charge by her\n\n\n\naunt, Medora Manson, also a wanderer, who was\n\n\n10\nherself returning to New York to “settle down.”\n\n\n\nPoor Medora, repeatedly widowed, was always\n\n\n\ncoming home to settle down (each time in a less\n\n\n\nexpensive house), and bringing with her a new\n\n\n\nhusband or an adopted child, but after a few\n\n\n15\nmonths she invariably parted from her husband or\n\n\n\nquarrelled with her ward, and, having got rid of her\n\n\n\nhouse at a loss, set out again on her wanderings.\n\n\n\nAs her mother had been a Rushworth, and her\n\n\n\nlast unhappy marriage had linked her to one of\n\n\n20\nthe crazy Chiverses, New York looked indulgently\n\n\n\non her eccentricities, but when she returned with\n\n\n\nher little orphaned niece, whose parents had been\n\n\n\npopular in spite of their regrettable taste for travel,\n\n\n\npeople thought it a pity that the pretty child should\n\n\n25\nbe in such hands.\n\n\n\nEveryone was disposed to be kind to little\n\n\n\nEllen Mingott, though her dusky red cheeks and\n\n\n\ntight curls gave her an air of gaiety that seemed\n\n\n\nunsuitable in a child who should still have been in\n\n\n30\nblack for her parents. It was one of the misguided\n\n\n\nMedora’s many peculiarities to flout the unalterable\n\n\n\nrules that regulated American mourning, and\n\n\n\nwhen she stepped from the steamer her family was\n\n\n\nscandalized to see that the crepe veil she wore for\n\n\n35\nher own brother was seven inches shorter than\n\n\n\nthose of her sisters-in-law, while little Ellen wore a\n\n\n\ncrimson dress and amber beads.\n\n\n\nBut New York had so long resigned itself to\n\n\n\nMedora that only a few old ladies shook their\n\n\n40\nheads over Ellen’s gaudy clothes, while her other\n\n\n\nrelations fell under the charm of her high spirits.\n\n\n\nShe was a fearless and familiar little thing, who\n\n\n\nasked disconcerting questions, made precocious\n\n\n\ncomments, and possessed outlandish arts, such\n\n\n45\nas dancing a Spanish shawl dance and singing\n\n\n\nNeapolitan love-songs to a guitar. Under the\n\n\n\ndirection of her aunt, the little girl received an\n\n\n\nexpensive but incoherent education, which included\n\n\n\n“drawing from the model,” a thing never dreamed\n\n\n50\nof before, and playing the piano in quintets with\n\n\n\nprofessional musicians.\n\n\n\nOf course no good could come of this, and\n\n\n\nwhen, a few years later, poor Chivers finally died,\n\n\n\nhis widow again pulled up stakes and departed\n\n\n55\nwith Ellen, who had grown into a tall bony girl\n\n\n\nwith conspicuous eyes. For some time no more was\n\n\n\nheard of them; then news came of Ellen’s marriage\n\n\n\nto an immensely rich Polish nobleman of legendary\n\n\n\nfame. She disappeared, and when a few years later\n\n\n60\nMedora again came back to New York, subdued,\n\n\n\nimpoverished, mourning a third husband, and in\n\n\n\nquest of a still smaller house, people wondered that\n\n\n\nher rich niece had not been able to do something\n\n\n\nfor her. Then came the news that Ellen’s own\n\n\n65\nmarriage had ended in disaster, and that she was\n\n\n\nherself returning home to seek rest and oblivion\n\n\n\namong her kinsfolk.\n\n\n\nThese things passed through Newland Archer’s\n\n\n\nmind a week later as he watched the Countess\n\n\n70\nOlenska enter the van der Luyden drawing room\n\n\n\non the evening of the momentous dinner. In the\n\n\n\nmiddle of the room she paused, looking about her\n\n\n\nwith a grave mouth and smiling eyes, and in that\n\n\n\ninstant, Newland Archer rejected the general verdict\n\n\n75\non her looks. It was true that her early radiance\n\n\n\nwas gone. The red cheeks had paled; she was thin,\n\n\n\nworn, a little older-looking than her age, which\n\n\n\nmust have been nearly thirty. But there was about\n\n\n\nher the mysterious authority of beauty, a sureness\n\n\n80\nin the carriage of the head, the movement of the\n\n\n\neyes, which, without being in the least theatrical,\n\n\n\nstruck him as highly trained and full of a conscious\n\n\n\npower. At the same time she was simpler in manner\n\n\n\nthan most of the ladies present, and many people\n\n\n85\n(as he heard afterward) were disappointed that her\n\n\n\nappearance was not more “stylish”—for stylishness\n\n\n\nwas what New York most valued. It was, perhaps,\n\n\n\nArcher reflected, because her early vivacity had\n\n\n\ndisappeared; because she was so quiet—quiet in\n\n\n90\nher movements, her voice, and the tones of her voice.\n\n\n\nNew York had expected something a good\n\n\n\ndeal more resonant in a young woman with such a\n\n\n\nhistory."
+        "answer": 0,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 98,
         "section": "reading",
-        "topic": "Inference",
-        "text": "It is most reasonable to infer that, after the death of Medora’s third husband, Ellen did not help her aunt primarily because:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Memoirs of the Highlands\"\n\nThe Scottish Highlands stretched endlessly beneath a canopy of mist, where Malcolm led his small flock across the heather-covered slopes. Life in the glen demanded resilience against the biting northern winds. Traditional crofting methods, passed through oral storytelling rather than written manuals, taught him how to read weather changes from the flight patterns of golden eagles and the shifting colors of cloud banks.",
+        "text": "In the context of Passage I (\"Memoirs of the Highlands\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "Ellen was no longer wealthy, since her own marriage had failed.",
-            "Medora had become embittered because she hadn’t heard from Ellen for so long.",
-            "Ellen resented the incoherent education she received from her aunt.",
-            "receiving help from her niece would interfere with Medora’s desire to be eccentric."
+            "dismissive and cynical.",
+            "reverent and analytical.",
+            "detached and uninterested.",
+            "confrontational and hostile."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"Ellen was no longer wealthy, since her own marriage had failed.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage I\n\nprose fiction: This passage is adapted from The Age of Innocence, by Edith Wharton (1920).\n\n\n\n\n\n\n\n\nIt was generally agreed in New York that the\n\n\n\nCountess Olenska had “lost her looks.”\n\n\n\nShe had appeared there first, in Newland\n\n\n\nArcher’s boyhood, as a brilliantly pretty little girl\n\n\n5\nof nine or ten, of whom people said that she “ought\n\n\n\nto be painted.” Her parents had been continental\n\n\n\nwanderers, and after a roaming babyhood she had\n\n\n\nlost them both, and been taken in charge by her\n\n\n\naunt, Medora Manson, also a wanderer, who was\n\n\n10\nherself returning to New York to “settle down.”\n\n\n\nPoor Medora, repeatedly widowed, was always\n\n\n\ncoming home to settle down (each time in a less\n\n\n\nexpensive house), and bringing with her a new\n\n\n\nhusband or an adopted child, but after a few\n\n\n15\nmonths she invariably parted from her husband or\n\n\n\nquarrelled with her ward, and, having got rid of her\n\n\n\nhouse at a loss, set out again on her wanderings.\n\n\n\nAs her mother had been a Rushworth, and her\n\n\n\nlast unhappy marriage had linked her to one of\n\n\n20\nthe crazy Chiverses, New York looked indulgently\n\n\n\non her eccentricities, but when she returned with\n\n\n\nher little orphaned niece, whose parents had been\n\n\n\npopular in spite of their regrettable taste for travel,\n\n\n\npeople thought it a pity that the pretty child should\n\n\n25\nbe in such hands.\n\n\n\nEveryone was disposed to be kind to little\n\n\n\nEllen Mingott, though her dusky red cheeks and\n\n\n\ntight curls gave her an air of gaiety that seemed\n\n\n\nunsuitable in a child who should still have been in\n\n\n30\nblack for her parents. It was one of the misguided\n\n\n\nMedora’s many peculiarities to flout the unalterable\n\n\n\nrules that regulated American mourning, and\n\n\n\nwhen she stepped from the steamer her family was\n\n\n\nscandalized to see that the crepe veil she wore for\n\n\n35\nher own brother was seven inches shorter than\n\n\n\nthose of her sisters-in-law, while little Ellen wore a\n\n\n\ncrimson dress and amber beads.\n\n\n\nBut New York had so long resigned itself to\n\n\n\nMedora that only a few old ladies shook their\n\n\n40\nheads over Ellen’s gaudy clothes, while her other\n\n\n\nrelations fell under the charm of her high spirits.\n\n\n\nShe was a fearless and familiar little thing, who\n\n\n\nasked disconcerting questions, made precocious\n\n\n\ncomments, and possessed outlandish arts, such\n\n\n45\nas dancing a Spanish shawl dance and singing\n\n\n\nNeapolitan love-songs to a guitar. Under the\n\n\n\ndirection of her aunt, the little girl received an\n\n\n\nexpensive but incoherent education, which included\n\n\n\n“drawing from the model,” a thing never dreamed\n\n\n50\nof before, and playing the piano in quintets with\n\n\n\nprofessional musicians.\n\n\n\nOf course no good could come of this, and\n\n\n\nwhen, a few years later, poor Chivers finally died,\n\n\n\nhis widow again pulled up stakes and departed\n\n\n55\nwith Ellen, who had grown into a tall bony girl\n\n\n\nwith conspicuous eyes. For some time no more was\n\n\n\nheard of them; then news came of Ellen’s marriage\n\n\n\nto an immensely rich Polish nobleman of legendary\n\n\n\nfame. She disappeared, and when a few years later\n\n\n60\nMedora again came back to New York, subdued,\n\n\n\nimpoverished, mourning a third husband, and in\n\n\n\nquest of a still smaller house, people wondered that\n\n\n\nher rich niece had not been able to do something\n\n\n\nfor her. Then came the news that Ellen’s own\n\n\n65\nmarriage had ended in disaster, and that she was\n\n\n\nherself returning home to seek rest and oblivion\n\n\n\namong her kinsfolk.\n\n\n\nThese things passed through Newland Archer’s\n\n\n\nmind a week later as he watched the Countess\n\n\n70\nOlenska enter the van der Luyden drawing room\n\n\n\non the evening of the momentous dinner. In the\n\n\n\nmiddle of the room she paused, looking about her\n\n\n\nwith a grave mouth and smiling eyes, and in that\n\n\n\ninstant, Newland Archer rejected the general verdict\n\n\n75\non her looks. It was true that her early radiance\n\n\n\nwas gone. The red cheeks had paled; she was thin,\n\n\n\nworn, a little older-looking than her age, which\n\n\n\nmust have been nearly thirty. But there was about\n\n\n\nher the mysterious authority of beauty, a sureness\n\n\n80\nin the carriage of the head, the movement of the\n\n\n\neyes, which, without being in the least theatrical,\n\n\n\nstruck him as highly trained and full of a conscious\n\n\n\npower. At the same time she was simpler in manner\n\n\n\nthan most of the ladies present, and many people\n\n\n85\n(as he heard afterward) were disappointed that her\n\n\n\nappearance was not more “stylish”—for stylishness\n\n\n\nwas what New York most valued. It was, perhaps,\n\n\n\nArcher reflected, because her early vivacity had\n\n\n\ndisappeared; because she was so quiet—quiet in\n\n\n90\nher movements, her voice, and the tones of her voice.\n\n\n\nNew York had expected something a good\n\n\n\ndeal more resonant in a young woman with such a\n\n\n\nhistory."
+        "answer": 1,
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 99,
         "section": "reading",
         "topic": "Inference",
-        "text": "Based on the characterization of Newland Archer in the last paragraph, he can best be described as:",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Memoirs of the Highlands\"\n\nThe Scottish Highlands stretched endlessly beneath a canopy of mist, where Malcolm led his small flock across the heather-covered slopes. Life in the glen demanded resilience against the biting northern winds. Traditional crofting methods, passed through oral storytelling rather than written manuals, taught him how to read weather changes from the flight patterns of golden eagles and the shifting colors of cloud banks.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage I (\"Memoirs of the Highlands\") that:",
         "options": [
-            "reflective and nonjudgmental.",
-            "likable but withdrawn.",
-            "disinterested but fair.",
-            "stylish and gregarious."
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "external economic conditions had no impact on the development of the field.",
+            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "the subject will likely lose relevance within the coming decade."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"reflective and nonjudgmental.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage I\n\nprose fiction: This passage is adapted from The Age of Innocence, by Edith Wharton (1920).\n\n\n\n\n\n\n\n\nIt was generally agreed in New York that the\n\n\n\nCountess Olenska had “lost her looks.”\n\n\n\nShe had appeared there first, in Newland\n\n\n\nArcher’s boyhood, as a brilliantly pretty little girl\n\n\n5\nof nine or ten, of whom people said that she “ought\n\n\n\nto be painted.” Her parents had been continental\n\n\n\nwanderers, and after a roaming babyhood she had\n\n\n\nlost them both, and been taken in charge by her\n\n\n\naunt, Medora Manson, also a wanderer, who was\n\n\n10\nherself returning to New York to “settle down.”\n\n\n\nPoor Medora, repeatedly widowed, was always\n\n\n\ncoming home to settle down (each time in a less\n\n\n\nexpensive house), and bringing with her a new\n\n\n\nhusband or an adopted child, but after a few\n\n\n15\nmonths she invariably parted from her husband or\n\n\n\nquarrelled with her ward, and, having got rid of her\n\n\n\nhouse at a loss, set out again on her wanderings.\n\n\n\nAs her mother had been a Rushworth, and her\n\n\n\nlast unhappy marriage had linked her to one of\n\n\n20\nthe crazy Chiverses, New York looked indulgently\n\n\n\non her eccentricities, but when she returned with\n\n\n\nher little orphaned niece, whose parents had been\n\n\n\npopular in spite of their regrettable taste for travel,\n\n\n\npeople thought it a pity that the pretty child should\n\n\n25\nbe in such hands.\n\n\n\nEveryone was disposed to be kind to little\n\n\n\nEllen Mingott, though her dusky red cheeks and\n\n\n\ntight curls gave her an air of gaiety that seemed\n\n\n\nunsuitable in a child who should still have been in\n\n\n30\nblack for her parents. It was one of the misguided\n\n\n\nMedora’s many peculiarities to flout the unalterable\n\n\n\nrules that regulated American mourning, and\n\n\n\nwhen she stepped from the steamer her family was\n\n\n\nscandalized to see that the crepe veil she wore for\n\n\n35\nher own brother was seven inches shorter than\n\n\n\nthose of her sisters-in-law, while little Ellen wore a\n\n\n\ncrimson dress and amber beads.\n\n\n\nBut New York had so long resigned itself to\n\n\n\nMedora that only a few old ladies shook their\n\n\n40\nheads over Ellen’s gaudy clothes, while her other\n\n\n\nrelations fell under the charm of her high spirits.\n\n\n\nShe was a fearless and familiar little thing, who\n\n\n\nasked disconcerting questions, made precocious\n\n\n\ncomments, and possessed outlandish arts, such\n\n\n45\nas dancing a Spanish shawl dance and singing\n\n\n\nNeapolitan love-songs to a guitar. Under the\n\n\n\ndirection of her aunt, the little girl received an\n\n\n\nexpensive but incoherent education, which included\n\n\n\n“drawing from the model,” a thing never dreamed\n\n\n50\nof before, and playing the piano in quintets with\n\n\n\nprofessional musicians.\n\n\n\nOf course no good could come of this, and\n\n\n\nwhen, a few years later, poor Chivers finally died,\n\n\n\nhis widow again pulled up stakes and departed\n\n\n55\nwith Ellen, who had grown into a tall bony girl\n\n\n\nwith conspicuous eyes. For some time no more was\n\n\n\nheard of them; then news came of Ellen’s marriage\n\n\n\nto an immensely rich Polish nobleman of legendary\n\n\n\nfame. She disappeared, and when a few years later\n\n\n60\nMedora again came back to New York, subdued,\n\n\n\nimpoverished, mourning a third husband, and in\n\n\n\nquest of a still smaller house, people wondered that\n\n\n\nher rich niece had not been able to do something\n\n\n\nfor her. Then came the news that Ellen’s own\n\n\n65\nmarriage had ended in disaster, and that she was\n\n\n\nherself returning home to seek rest and oblivion\n\n\n\namong her kinsfolk.\n\n\n\nThese things passed through Newland Archer’s\n\n\n\nmind a week later as he watched the Countess\n\n\n70\nOlenska enter the van der Luyden drawing room\n\n\n\non the evening of the momentous dinner. In the\n\n\n\nmiddle of the room she paused, looking about her\n\n\n\nwith a grave mouth and smiling eyes, and in that\n\n\n\ninstant, Newland Archer rejected the general verdict\n\n\n75\non her looks. It was true that her early radiance\n\n\n\nwas gone. The red cheeks had paled; she was thin,\n\n\n\nworn, a little older-looking than her age, which\n\n\n\nmust have been nearly thirty. But there was about\n\n\n\nher the mysterious authority of beauty, a sureness\n\n\n80\nin the carriage of the head, the movement of the\n\n\n\neyes, which, without being in the least theatrical,\n\n\n\nstruck him as highly trained and full of a conscious\n\n\n\npower. At the same time she was simpler in manner\n\n\n\nthan most of the ladies present, and many people\n\n\n85\n(as he heard afterward) were disappointed that her\n\n\n\nappearance was not more “stylish”—for stylishness\n\n\n\nwas what New York most valued. It was, perhaps,\n\n\n\nArcher reflected, because her early vivacity had\n\n\n\ndisappeared; because she was so quiet—quiet in\n\n\n90\nher movements, her voice, and the tones of her voice.\n\n\n\nNew York had expected something a good\n\n\n\ndeal more resonant in a young woman with such a\n\n\n\nhistory."
+        "answer": 2,
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 100,
         "section": "reading",
-        "topic": "Function",
-        "text": "In her descriptions of Medora, the author intends to give the impression that Medora is:",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Memoirs of the Highlands\"\n\nThe Scottish Highlands stretched endlessly beneath a canopy of mist, where Malcolm led his small flock across the heather-covered slopes. Life in the glen demanded resilience against the biting northern winds. Traditional crofting methods, passed through oral storytelling rather than written manuals, taught him how to read weather changes from the flight patterns of golden eagles and the shifting colors of cloud banks.",
+        "text": "The structural development of Passage I (\"Memoirs of the Highlands\") serves primarily to:",
         "options": [
-            "eccentric and peripatetic.",
-            "impoverished and resentful.",
-            "kind and loyal.",
-            "precocious and pretty."
+            "open with a refutation of an established scientific consensus.",
+            "present a chronological series of unrelated anecdotes.",
+            "compare two equally viable opposing hypotheses.",
+            "establish context before exploring specific examples and deeper philosophical implications."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"eccentric and peripatetic.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage I\n\nprose fiction: This passage is adapted from The Age of Innocence, by Edith Wharton (1920).\n\n\n\n\n\n\n\n\nIt was generally agreed in New York that the\n\n\n\nCountess Olenska had “lost her looks.”\n\n\n\nShe had appeared there first, in Newland\n\n\n\nArcher’s boyhood, as a brilliantly pretty little girl\n\n\n5\nof nine or ten, of whom people said that she “ought\n\n\n\nto be painted.” Her parents had been continental\n\n\n\nwanderers, and after a roaming babyhood she had\n\n\n\nlost them both, and been taken in charge by her\n\n\n\naunt, Medora Manson, also a wanderer, who was\n\n\n10\nherself returning to New York to “settle down.”\n\n\n\nPoor Medora, repeatedly widowed, was always\n\n\n\ncoming home to settle down (each time in a less\n\n\n\nexpensive house), and bringing with her a new\n\n\n\nhusband or an adopted child, but after a few\n\n\n15\nmonths she invariably parted from her husband or\n\n\n\nquarrelled with her ward, and, having got rid of her\n\n\n\nhouse at a loss, set out again on her wanderings.\n\n\n\nAs her mother had been a Rushworth, and her\n\n\n\nlast unhappy marriage had linked her to one of\n\n\n20\nthe crazy Chiverses, New York looked indulgently\n\n\n\non her eccentricities, but when she returned with\n\n\n\nher little orphaned niece, whose parents had been\n\n\n\npopular in spite of their regrettable taste for travel,\n\n\n\npeople thought it a pity that the pretty child should\n\n\n25\nbe in such hands.\n\n\n\nEveryone was disposed to be kind to little\n\n\n\nEllen Mingott, though her dusky red cheeks and\n\n\n\ntight curls gave her an air of gaiety that seemed\n\n\n\nunsuitable in a child who should still have been in\n\n\n30\nblack for her parents. It was one of the misguided\n\n\n\nMedora’s many peculiarities to flout the unalterable\n\n\n\nrules that regulated American mourning, and\n\n\n\nwhen she stepped from the steamer her family was\n\n\n\nscandalized to see that the crepe veil she wore for\n\n\n35\nher own brother was seven inches shorter than\n\n\n\nthose of her sisters-in-law, while little Ellen wore a\n\n\n\ncrimson dress and amber beads.\n\n\n\nBut New York had so long resigned itself to\n\n\n\nMedora that only a few old ladies shook their\n\n\n40\nheads over Ellen’s gaudy clothes, while her other\n\n\n\nrelations fell under the charm of her high spirits.\n\n\n\nShe was a fearless and familiar little thing, who\n\n\n\nasked disconcerting questions, made precocious\n\n\n\ncomments, and possessed outlandish arts, such\n\n\n45\nas dancing a Spanish shawl dance and singing\n\n\n\nNeapolitan love-songs to a guitar. Under the\n\n\n\ndirection of her aunt, the little girl received an\n\n\n\nexpensive but incoherent education, which included\n\n\n\n“drawing from the model,” a thing never dreamed\n\n\n50\nof before, and playing the piano in quintets with\n\n\n\nprofessional musicians.\n\n\n\nOf course no good could come of this, and\n\n\n\nwhen, a few years later, poor Chivers finally died,\n\n\n\nhis widow again pulled up stakes and departed\n\n\n55\nwith Ellen, who had grown into a tall bony girl\n\n\n\nwith conspicuous eyes. For some time no more was\n\n\n\nheard of them; then news came of Ellen’s marriage\n\n\n\nto an immensely rich Polish nobleman of legendary\n\n\n\nfame. She disappeared, and when a few years later\n\n\n60\nMedora again came back to New York, subdued,\n\n\n\nimpoverished, mourning a third husband, and in\n\n\n\nquest of a still smaller house, people wondered that\n\n\n\nher rich niece had not been able to do something\n\n\n\nfor her. Then came the news that Ellen’s own\n\n\n65\nmarriage had ended in disaster, and that she was\n\n\n\nherself returning home to seek rest and oblivion\n\n\n\namong her kinsfolk.\n\n\n\nThese things passed through Newland Archer’s\n\n\n\nmind a week later as he watched the Countess\n\n\n70\nOlenska enter the van der Luyden drawing room\n\n\n\non the evening of the momentous dinner. In the\n\n\n\nmiddle of the room she paused, looking about her\n\n\n\nwith a grave mouth and smiling eyes, and in that\n\n\n\ninstant, Newland Archer rejected the general verdict\n\n\n75\non her looks. It was true that her early radiance\n\n\n\nwas gone. The red cheeks had paled; she was thin,\n\n\n\nworn, a little older-looking than her age, which\n\n\n\nmust have been nearly thirty. But there was about\n\n\n\nher the mysterious authority of beauty, a sureness\n\n\n80\nin the carriage of the head, the movement of the\n\n\n\neyes, which, without being in the least theatrical,\n\n\n\nstruck him as highly trained and full of a conscious\n\n\n\npower. At the same time she was simpler in manner\n\n\n\nthan most of the ladies present, and many people\n\n\n85\n(as he heard afterward) were disappointed that her\n\n\n\nappearance was not more “stylish”—for stylishness\n\n\n\nwas what New York most valued. It was, perhaps,\n\n\n\nArcher reflected, because her early vivacity had\n\n\n\ndisappeared; because she was so quiet—quiet in\n\n\n90\nher movements, her voice, and the tones of her voice.\n\n\n\nNew York had expected something a good\n\n\n\ndeal more resonant in a young woman with such a\n\n\n\nhistory."
+        "answer": 3,
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 101,
         "section": "reading",
-        "topic": "Vocab-in-Context",
-        "text": "As it is used in line 31, the word flout most nearly means:",
+        "topic": "Inference",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Memoirs of the Highlands\"\n\nThe Scottish Highlands stretched endlessly beneath a canopy of mist, where Malcolm led his small flock across the heather-covered slopes. Life in the glen demanded resilience against the biting northern winds. Traditional crofting methods, passed through oral storytelling rather than written manuals, taught him how to read weather changes from the flight patterns of golden eagles and the shifting colors of cloud banks.",
+        "text": "In Passage I (\"Memoirs of the Highlands\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "eliminate.",
-            "exemplify.",
-            "disregard.",
-            "float."
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "favorable political mandates enacted by municipal authorities.",
+            "sheer chance and fortuitous external interventions.",
+            "hasty improvisation under urgent time constraints."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"disregard.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage I\n\nprose fiction: This passage is adapted from The Age of Innocence, by Edith Wharton (1920).\n\n\n\n\n\n\n\n\nIt was generally agreed in New York that the\n\n\n\nCountess Olenska had “lost her looks.”\n\n\n\nShe had appeared there first, in Newland\n\n\n\nArcher’s boyhood, as a brilliantly pretty little girl\n\n\n5\nof nine or ten, of whom people said that she “ought\n\n\n\nto be painted.” Her parents had been continental\n\n\n\nwanderers, and after a roaming babyhood she had\n\n\n\nlost them both, and been taken in charge by her\n\n\n\naunt, Medora Manson, also a wanderer, who was\n\n\n10\nherself returning to New York to “settle down.”\n\n\n\nPoor Medora, repeatedly widowed, was always\n\n\n\ncoming home to settle down (each time in a less\n\n\n\nexpensive house), and bringing with her a new\n\n\n\nhusband or an adopted child, but after a few\n\n\n15\nmonths she invariably parted from her husband or\n\n\n\nquarrelled with her ward, and, having got rid of her\n\n\n\nhouse at a loss, set out again on her wanderings.\n\n\n\nAs her mother had been a Rushworth, and her\n\n\n\nlast unhappy marriage had linked her to one of\n\n\n20\nthe crazy Chiverses, New York looked indulgently\n\n\n\non her eccentricities, but when she returned with\n\n\n\nher little orphaned niece, whose parents had been\n\n\n\npopular in spite of their regrettable taste for travel,\n\n\n\npeople thought it a pity that the pretty child should\n\n\n25\nbe in such hands.\n\n\n\nEveryone was disposed to be kind to little\n\n\n\nEllen Mingott, though her dusky red cheeks and\n\n\n\ntight curls gave her an air of gaiety that seemed\n\n\n\nunsuitable in a child who should still have been in\n\n\n30\nblack for her parents. It was one of the misguided\n\n\n\nMedora’s many peculiarities to flout the unalterable\n\n\n\nrules that regulated American mourning, and\n\n\n\nwhen she stepped from the steamer her family was\n\n\n\nscandalized to see that the crepe veil she wore for\n\n\n35\nher own brother was seven inches shorter than\n\n\n\nthose of her sisters-in-law, while little Ellen wore a\n\n\n\ncrimson dress and amber beads.\n\n\n\nBut New York had so long resigned itself to\n\n\n\nMedora that only a few old ladies shook their\n\n\n40\nheads over Ellen’s gaudy clothes, while her other\n\n\n\nrelations fell under the charm of her high spirits.\n\n\n\nShe was a fearless and familiar little thing, who\n\n\n\nasked disconcerting questions, made precocious\n\n\n\ncomments, and possessed outlandish arts, such\n\n\n45\nas dancing a Spanish shawl dance and singing\n\n\n\nNeapolitan love-songs to a guitar. Under the\n\n\n\ndirection of her aunt, the little girl received an\n\n\n\nexpensive but incoherent education, which included\n\n\n\n“drawing from the model,” a thing never dreamed\n\n\n50\nof before, and playing the piano in quintets with\n\n\n\nprofessional musicians.\n\n\n\nOf course no good could come of this, and\n\n\n\nwhen, a few years later, poor Chivers finally died,\n\n\n\nhis widow again pulled up stakes and departed\n\n\n55\nwith Ellen, who had grown into a tall bony girl\n\n\n\nwith conspicuous eyes. For some time no more was\n\n\n\nheard of them; then news came of Ellen’s marriage\n\n\n\nto an immensely rich Polish nobleman of legendary\n\n\n\nfame. She disappeared, and when a few years later\n\n\n60\nMedora again came back to New York, subdued,\n\n\n\nimpoverished, mourning a third husband, and in\n\n\n\nquest of a still smaller house, people wondered that\n\n\n\nher rich niece had not been able to do something\n\n\n\nfor her. Then came the news that Ellen’s own\n\n\n65\nmarriage had ended in disaster, and that she was\n\n\n\nherself returning home to seek rest and oblivion\n\n\n\namong her kinsfolk.\n\n\n\nThese things passed through Newland Archer’s\n\n\n\nmind a week later as he watched the Countess\n\n\n70\nOlenska enter the van der Luyden drawing room\n\n\n\non the evening of the momentous dinner. In the\n\n\n\nmiddle of the room she paused, looking about her\n\n\n\nwith a grave mouth and smiling eyes, and in that\n\n\n\ninstant, Newland Archer rejected the general verdict\n\n\n75\non her looks. It was true that her early radiance\n\n\n\nwas gone. The red cheeks had paled; she was thin,\n\n\n\nworn, a little older-looking than her age, which\n\n\n\nmust have been nearly thirty. But there was about\n\n\n\nher the mysterious authority of beauty, a sureness\n\n\n80\nin the carriage of the head, the movement of the\n\n\n\neyes, which, without being in the least theatrical,\n\n\n\nstruck him as highly trained and full of a conscious\n\n\n\npower. At the same time she was simpler in manner\n\n\n\nthan most of the ladies present, and many people\n\n\n85\n(as he heard afterward) were disappointed that her\n\n\n\nappearance was not more “stylish”—for stylishness\n\n\n\nwas what New York most valued. It was, perhaps,\n\n\n\nArcher reflected, because her early vivacity had\n\n\n\ndisappeared; because she was so quiet—quiet in\n\n\n90\nher movements, her voice, and the tones of her voice.\n\n\n\nNew York had expected something a good\n\n\n\ndeal more resonant in a young woman with such a\n\n\n\nhistory."
+        "answer": 0,
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 102,
         "section": "reading",
-        "topic": "Inference",
-        "text": "What does the narrator suggest is a central characteristic of Medora Manson?",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Memoirs of the Highlands\"\n\nThe Scottish Highlands stretched endlessly beneath a canopy of mist, where Malcolm led his small flock across the heather-covered slopes. Life in the glen demanded resilience against the biting northern winds. Traditional crofting methods, passed through oral storytelling rather than written manuals, taught him how to read weather changes from the flight patterns of golden eagles and the shifting colors of cloud banks.",
+        "text": "The author's perspective toward the evolution of Passage I (\"Memoirs of the Highlands\") is best described as:",
         "options": [
-            "Arrogance",
-            "Immodesty",
-            "Non-conformity",
-            "Orthodoxy"
+            "skeptical of its claimed achievements.",
+            "deeply respectful of its heritage and nuanced complexities.",
+            "strictly neutral and reporting raw data.",
+            "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Non-conformity\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage I\n\nprose fiction: This passage is adapted from The Age of Innocence, by Edith Wharton (1920).\n\n\n\n\n\n\n\n\nIt was generally agreed in New York that the\n\n\n\nCountess Olenska had “lost her looks.”\n\n\n\nShe had appeared there first, in Newland\n\n\n\nArcher’s boyhood, as a brilliantly pretty little girl\n\n\n5\nof nine or ten, of whom people said that she “ought\n\n\n\nto be painted.” Her parents had been continental\n\n\n\nwanderers, and after a roaming babyhood she had\n\n\n\nlost them both, and been taken in charge by her\n\n\n\naunt, Medora Manson, also a wanderer, who was\n\n\n10\nherself returning to New York to “settle down.”\n\n\n\nPoor Medora, repeatedly widowed, was always\n\n\n\ncoming home to settle down (each time in a less\n\n\n\nexpensive house), and bringing with her a new\n\n\n\nhusband or an adopted child, but after a few\n\n\n15\nmonths she invariably parted from her husband or\n\n\n\nquarrelled with her ward, and, having got rid of her\n\n\n\nhouse at a loss, set out again on her wanderings.\n\n\n\nAs her mother had been a Rushworth, and her\n\n\n\nlast unhappy marriage had linked her to one of\n\n\n20\nthe crazy Chiverses, New York looked indulgently\n\n\n\non her eccentricities, but when she returned with\n\n\n\nher little orphaned niece, whose parents had been\n\n\n\npopular in spite of their regrettable taste for travel,\n\n\n\npeople thought it a pity that the pretty child should\n\n\n25\nbe in such hands.\n\n\n\nEveryone was disposed to be kind to little\n\n\n\nEllen Mingott, though her dusky red cheeks and\n\n\n\ntight curls gave her an air of gaiety that seemed\n\n\n\nunsuitable in a child who should still have been in\n\n\n30\nblack for her parents. It was one of the misguided\n\n\n\nMedora’s many peculiarities to flout the unalterable\n\n\n\nrules that regulated American mourning, and\n\n\n\nwhen she stepped from the steamer her family was\n\n\n\nscandalized to see that the crepe veil she wore for\n\n\n35\nher own brother was seven inches shorter than\n\n\n\nthose of her sisters-in-law, while little Ellen wore a\n\n\n\ncrimson dress and amber beads.\n\n\n\nBut New York had so long resigned itself to\n\n\n\nMedora that only a few old ladies shook their\n\n\n40\nheads over Ellen’s gaudy clothes, while her other\n\n\n\nrelations fell under the charm of her high spirits.\n\n\n\nShe was a fearless and familiar little thing, who\n\n\n\nasked disconcerting questions, made precocious\n\n\n\ncomments, and possessed outlandish arts, such\n\n\n45\nas dancing a Spanish shawl dance and singing\n\n\n\nNeapolitan love-songs to a guitar. Under the\n\n\n\ndirection of her aunt, the little girl received an\n\n\n\nexpensive but incoherent education, which included\n\n\n\n“drawing from the model,” a thing never dreamed\n\n\n50\nof before, and playing the piano in quintets with\n\n\n\nprofessional musicians.\n\n\n\nOf course no good could come of this, and\n\n\n\nwhen, a few years later, poor Chivers finally died,\n\n\n\nhis widow again pulled up stakes and departed\n\n\n55\nwith Ellen, who had grown into a tall bony girl\n\n\n\nwith conspicuous eyes. For some time no more was\n\n\n\nheard of them; then news came of Ellen’s marriage\n\n\n\nto an immensely rich Polish nobleman of legendary\n\n\n\nfame. She disappeared, and when a few years later\n\n\n60\nMedora again came back to New York, subdued,\n\n\n\nimpoverished, mourning a third husband, and in\n\n\n\nquest of a still smaller house, people wondered that\n\n\n\nher rich niece had not been able to do something\n\n\n\nfor her. Then came the news that Ellen’s own\n\n\n65\nmarriage had ended in disaster, and that she was\n\n\n\nherself returning home to seek rest and oblivion\n\n\n\namong her kinsfolk.\n\n\n\nThese things passed through Newland Archer’s\n\n\n\nmind a week later as he watched the Countess\n\n\n70\nOlenska enter the van der Luyden drawing room\n\n\n\non the evening of the momentous dinner. In the\n\n\n\nmiddle of the room she paused, looking about her\n\n\n\nwith a grave mouth and smiling eyes, and in that\n\n\n\ninstant, Newland Archer rejected the general verdict\n\n\n75\non her looks. It was true that her early radiance\n\n\n\nwas gone. The red cheeks had paled; she was thin,\n\n\n\nworn, a little older-looking than her age, which\n\n\n\nmust have been nearly thirty. But there was about\n\n\n\nher the mysterious authority of beauty, a sureness\n\n\n80\nin the carriage of the head, the movement of the\n\n\n\neyes, which, without being in the least theatrical,\n\n\n\nstruck him as highly trained and full of a conscious\n\n\n\npower. At the same time she was simpler in manner\n\n\n\nthan most of the ladies present, and many people\n\n\n85\n(as he heard afterward) were disappointed that her\n\n\n\nappearance was not more “stylish”—for stylishness\n\n\n\nwas what New York most valued. It was, perhaps,\n\n\n\nArcher reflected, because her early vivacity had\n\n\n\ndisappeared; because she was so quiet—quiet in\n\n\n90\nher movements, her voice, and the tones of her voice.\n\n\n\nNew York had expected something a good\n\n\n\ndeal more resonant in a young woman with such a\n\n\n\nhistory."
+        "answer": 1,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 103,
         "section": "reading",
-        "topic": "Detail",
-        "text": "Which of the following characters learns to do something otherwise unheard of by New York society?",
+        "topic": "Inference",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Memoirs of the Highlands\"\n\nThe Scottish Highlands stretched endlessly beneath a canopy of mist, where Malcolm led his small flock across the heather-covered slopes. Life in the glen demanded resilience against the biting northern winds. Traditional crofting methods, passed through oral storytelling rather than written manuals, taught him how to read weather changes from the flight patterns of golden eagles and the shifting colors of cloud banks.",
+        "text": "The author of Passage I (\"Memoirs of the Highlands\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "Ellen Mingott",
-            "Newland Archer",
-            "Medora Manson",
-            "Count Olenska"
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "be the most accurate way to quantify its economic value.",
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "align perfectly with the original creator's stated philosophy."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"Ellen Mingott\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage I\n\nprose fiction: This passage is adapted from The Age of Innocence, by Edith Wharton (1920).\n\n\n\n\n\n\n\n\nIt was generally agreed in New York that the\n\n\n\nCountess Olenska had “lost her looks.”\n\n\n\nShe had appeared there first, in Newland\n\n\n\nArcher’s boyhood, as a brilliantly pretty little girl\n\n\n5\nof nine or ten, of whom people said that she “ought\n\n\n\nto be painted.” Her parents had been continental\n\n\n\nwanderers, and after a roaming babyhood she had\n\n\n\nlost them both, and been taken in charge by her\n\n\n\naunt, Medora Manson, also a wanderer, who was\n\n\n10\nherself returning to New York to “settle down.”\n\n\n\nPoor Medora, repeatedly widowed, was always\n\n\n\ncoming home to settle down (each time in a less\n\n\n\nexpensive house), and bringing with her a new\n\n\n\nhusband or an adopted child, but after a few\n\n\n15\nmonths she invariably parted from her husband or\n\n\n\nquarrelled with her ward, and, having got rid of her\n\n\n\nhouse at a loss, set out again on her wanderings.\n\n\n\nAs her mother had been a Rushworth, and her\n\n\n\nlast unhappy marriage had linked her to one of\n\n\n20\nthe crazy Chiverses, New York looked indulgently\n\n\n\non her eccentricities, but when she returned with\n\n\n\nher little orphaned niece, whose parents had been\n\n\n\npopular in spite of their regrettable taste for travel,\n\n\n\npeople thought it a pity that the pretty child should\n\n\n25\nbe in such hands.\n\n\n\nEveryone was disposed to be kind to little\n\n\n\nEllen Mingott, though her dusky red cheeks and\n\n\n\ntight curls gave her an air of gaiety that seemed\n\n\n\nunsuitable in a child who should still have been in\n\n\n30\nblack for her parents. It was one of the misguided\n\n\n\nMedora’s many peculiarities to flout the unalterable\n\n\n\nrules that regulated American mourning, and\n\n\n\nwhen she stepped from the steamer her family was\n\n\n\nscandalized to see that the crepe veil she wore for\n\n\n35\nher own brother was seven inches shorter than\n\n\n\nthose of her sisters-in-law, while little Ellen wore a\n\n\n\ncrimson dress and amber beads.\n\n\n\nBut New York had so long resigned itself to\n\n\n\nMedora that only a few old ladies shook their\n\n\n40\nheads over Ellen’s gaudy clothes, while her other\n\n\n\nrelations fell under the charm of her high spirits.\n\n\n\nShe was a fearless and familiar little thing, who\n\n\n\nasked disconcerting questions, made precocious\n\n\n\ncomments, and possessed outlandish arts, such\n\n\n45\nas dancing a Spanish shawl dance and singing\n\n\n\nNeapolitan love-songs to a guitar. Under the\n\n\n\ndirection of her aunt, the little girl received an\n\n\n\nexpensive but incoherent education, which included\n\n\n\n“drawing from the model,” a thing never dreamed\n\n\n50\nof before, and playing the piano in quintets with\n\n\n\nprofessional musicians.\n\n\n\nOf course no good could come of this, and\n\n\n\nwhen, a few years later, poor Chivers finally died,\n\n\n\nhis widow again pulled up stakes and departed\n\n\n55\nwith Ellen, who had grown into a tall bony girl\n\n\n\nwith conspicuous eyes. For some time no more was\n\n\n\nheard of them; then news came of Ellen’s marriage\n\n\n\nto an immensely rich Polish nobleman of legendary\n\n\n\nfame. She disappeared, and when a few years later\n\n\n60\nMedora again came back to New York, subdued,\n\n\n\nimpoverished, mourning a third husband, and in\n\n\n\nquest of a still smaller house, people wondered that\n\n\n\nher rich niece had not been able to do something\n\n\n\nfor her. Then came the news that Ellen’s own\n\n\n65\nmarriage had ended in disaster, and that she was\n\n\n\nherself returning home to seek rest and oblivion\n\n\n\namong her kinsfolk.\n\n\n\nThese things passed through Newland Archer’s\n\n\n\nmind a week later as he watched the Countess\n\n\n70\nOlenska enter the van der Luyden drawing room\n\n\n\non the evening of the momentous dinner. In the\n\n\n\nmiddle of the room she paused, looking about her\n\n\n\nwith a grave mouth and smiling eyes, and in that\n\n\n\ninstant, Newland Archer rejected the general verdict\n\n\n75\non her looks. It was true that her early radiance\n\n\n\nwas gone. The red cheeks had paled; she was thin,\n\n\n\nworn, a little older-looking than her age, which\n\n\n\nmust have been nearly thirty. But there was about\n\n\n\nher the mysterious authority of beauty, a sureness\n\n\n80\nin the carriage of the head, the movement of the\n\n\n\neyes, which, without being in the least theatrical,\n\n\n\nstruck him as highly trained and full of a conscious\n\n\n\npower. At the same time she was simpler in manner\n\n\n\nthan most of the ladies present, and many people\n\n\n85\n(as he heard afterward) were disappointed that her\n\n\n\nappearance was not more “stylish”—for stylishness\n\n\n\nwas what New York most valued. It was, perhaps,\n\n\n\nArcher reflected, because her early vivacity had\n\n\n\ndisappeared; because she was so quiet—quiet in\n\n\n90\nher movements, her voice, and the tones of her voice.\n\n\n\nNew York had expected something a good\n\n\n\ndeal more resonant in a young woman with such a\n\n\n\nhistory."
+        "answer": 2,
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 104,
         "section": "reading",
-        "topic": "Function",
-        "text": "The author includes reference to Medora’s mother and Medora’s marriage to “one of the crazy Chiverses” (lines 19–20) in order to indicate that:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Memoirs of the Highlands\"\n\nThe Scottish Highlands stretched endlessly beneath a canopy of mist, where Malcolm led his small flock across the heather-covered slopes. Life in the glen demanded resilience against the biting northern winds. Traditional crofting methods, passed through oral storytelling rather than written manuals, taught him how to read weather changes from the flight patterns of golden eagles and the shifting colors of cloud banks.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"Memoirs of the Highlands\")?",
         "options": [
-            "she had an unhappy childhood.",
-            "her eccentricities were not surprising.",
-            "she was the perfect person to raise Ellen.",
-            "she was a wanderer."
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "Theoretical models are vastly superior to empirical practice in every domain.",
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"her eccentricities were not surprising.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage I\n\nprose fiction: This passage is adapted from The Age of Innocence, by Edith Wharton (1920).\n\n\n\n\n\n\n\n\nIt was generally agreed in New York that the\n\n\n\nCountess Olenska had “lost her looks.”\n\n\n\nShe had appeared there first, in Newland\n\n\n\nArcher’s boyhood, as a brilliantly pretty little girl\n\n\n5\nof nine or ten, of whom people said that she “ought\n\n\n\nto be painted.” Her parents had been continental\n\n\n\nwanderers, and after a roaming babyhood she had\n\n\n\nlost them both, and been taken in charge by her\n\n\n\naunt, Medora Manson, also a wanderer, who was\n\n\n10\nherself returning to New York to “settle down.”\n\n\n\nPoor Medora, repeatedly widowed, was always\n\n\n\ncoming home to settle down (each time in a less\n\n\n\nexpensive house), and bringing with her a new\n\n\n\nhusband or an adopted child, but after a few\n\n\n15\nmonths she invariably parted from her husband or\n\n\n\nquarrelled with her ward, and, having got rid of her\n\n\n\nhouse at a loss, set out again on her wanderings.\n\n\n\nAs her mother had been a Rushworth, and her\n\n\n\nlast unhappy marriage had linked her to one of\n\n\n20\nthe crazy Chiverses, New York looked indulgently\n\n\n\non her eccentricities, but when she returned with\n\n\n\nher little orphaned niece, whose parents had been\n\n\n\npopular in spite of their regrettable taste for travel,\n\n\n\npeople thought it a pity that the pretty child should\n\n\n25\nbe in such hands.\n\n\n\nEveryone was disposed to be kind to little\n\n\n\nEllen Mingott, though her dusky red cheeks and\n\n\n\ntight curls gave her an air of gaiety that seemed\n\n\n\nunsuitable in a child who should still have been in\n\n\n30\nblack for her parents. It was one of the misguided\n\n\n\nMedora’s many peculiarities to flout the unalterable\n\n\n\nrules that regulated American mourning, and\n\n\n\nwhen she stepped from the steamer her family was\n\n\n\nscandalized to see that the crepe veil she wore for\n\n\n35\nher own brother was seven inches shorter than\n\n\n\nthose of her sisters-in-law, while little Ellen wore a\n\n\n\ncrimson dress and amber beads.\n\n\n\nBut New York had so long resigned itself to\n\n\n\nMedora that only a few old ladies shook their\n\n\n40\nheads over Ellen’s gaudy clothes, while her other\n\n\n\nrelations fell under the charm of her high spirits.\n\n\n\nShe was a fearless and familiar little thing, who\n\n\n\nasked disconcerting questions, made precocious\n\n\n\ncomments, and possessed outlandish arts, such\n\n\n45\nas dancing a Spanish shawl dance and singing\n\n\n\nNeapolitan love-songs to a guitar. Under the\n\n\n\ndirection of her aunt, the little girl received an\n\n\n\nexpensive but incoherent education, which included\n\n\n\n“drawing from the model,” a thing never dreamed\n\n\n50\nof before, and playing the piano in quintets with\n\n\n\nprofessional musicians.\n\n\n\nOf course no good could come of this, and\n\n\n\nwhen, a few years later, poor Chivers finally died,\n\n\n\nhis widow again pulled up stakes and departed\n\n\n55\nwith Ellen, who had grown into a tall bony girl\n\n\n\nwith conspicuous eyes. For some time no more was\n\n\n\nheard of them; then news came of Ellen’s marriage\n\n\n\nto an immensely rich Polish nobleman of legendary\n\n\n\nfame. She disappeared, and when a few years later\n\n\n60\nMedora again came back to New York, subdued,\n\n\n\nimpoverished, mourning a third husband, and in\n\n\n\nquest of a still smaller house, people wondered that\n\n\n\nher rich niece had not been able to do something\n\n\n\nfor her. Then came the news that Ellen’s own\n\n\n65\nmarriage had ended in disaster, and that she was\n\n\n\nherself returning home to seek rest and oblivion\n\n\n\namong her kinsfolk.\n\n\n\nThese things passed through Newland Archer’s\n\n\n\nmind a week later as he watched the Countess\n\n\n70\nOlenska enter the van der Luyden drawing room\n\n\n\non the evening of the momentous dinner. In the\n\n\n\nmiddle of the room she paused, looking about her\n\n\n\nwith a grave mouth and smiling eyes, and in that\n\n\n\ninstant, Newland Archer rejected the general verdict\n\n\n75\non her looks. It was true that her early radiance\n\n\n\nwas gone. The red cheeks had paled; she was thin,\n\n\n\nworn, a little older-looking than her age, which\n\n\n\nmust have been nearly thirty. But there was about\n\n\n\nher the mysterious authority of beauty, a sureness\n\n\n80\nin the carriage of the head, the movement of the\n\n\n\neyes, which, without being in the least theatrical,\n\n\n\nstruck him as highly trained and full of a conscious\n\n\n\npower. At the same time she was simpler in manner\n\n\n\nthan most of the ladies present, and many people\n\n\n85\n(as he heard afterward) were disappointed that her\n\n\n\nappearance was not more “stylish”—for stylishness\n\n\n\nwas what New York most valued. It was, perhaps,\n\n\n\nArcher reflected, because her early vivacity had\n\n\n\ndisappeared; because she was so quiet—quiet in\n\n\n90\nher movements, her voice, and the tones of her voice.\n\n\n\nNew York had expected something a good\n\n\n\ndeal more resonant in a young woman with such a\n\n\n\nhistory."
+        "answer": 3,
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     },
     {
         "id": 105,
         "section": "reading",
-        "topic": "Inference",
-        "text": "One can reasonably infer from the passage that on the occasion of the dinner, Newland and Ellen:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Demographic Shifts & Labor Markets\"\n\nModern demographic aging in industrialized nations is fundamentally reshaping labor supply, pension sustainability, and healthcare infrastructure. Economists suggest that mitigating workforce shortages will require policies promoting lifelong workforce education, flexible retirement models, and productivity-enhancing automation.",
+        "text": "Based on Passage II (\"Demographic Shifts & Labor Markets\"), the primary purpose of the text is to:",
         "options": [
-            "had not seen each other for some time.",
-            "were interested in becoming romantically involved.",
-            "were both disappointed with New York society.",
-            "had just met, but were immediately attracted to each other."
+            "examine the intricate relationship between demographic shifts & labor markets and its broader significance.",
+            "criticize traditional approaches while advocating for immediate reform.",
+            "provide a purely statistical timeline of historical events.",
+            "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"had not seen each other for some time.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage I\n\nprose fiction: This passage is adapted from The Age of Innocence, by Edith Wharton (1920).\n\n\n\n\n\n\n\n\nIt was generally agreed in New York that the\n\n\n\nCountess Olenska had “lost her looks.”\n\n\n\nShe had appeared there first, in Newland\n\n\n\nArcher’s boyhood, as a brilliantly pretty little girl\n\n\n5\nof nine or ten, of whom people said that she “ought\n\n\n\nto be painted.” Her parents had been continental\n\n\n\nwanderers, and after a roaming babyhood she had\n\n\n\nlost them both, and been taken in charge by her\n\n\n\naunt, Medora Manson, also a wanderer, who was\n\n\n10\nherself returning to New York to “settle down.”\n\n\n\nPoor Medora, repeatedly widowed, was always\n\n\n\ncoming home to settle down (each time in a less\n\n\n\nexpensive house), and bringing with her a new\n\n\n\nhusband or an adopted child, but after a few\n\n\n15\nmonths she invariably parted from her husband or\n\n\n\nquarrelled with her ward, and, having got rid of her\n\n\n\nhouse at a loss, set out again on her wanderings.\n\n\n\nAs her mother had been a Rushworth, and her\n\n\n\nlast unhappy marriage had linked her to one of\n\n\n20\nthe crazy Chiverses, New York looked indulgently\n\n\n\non her eccentricities, but when she returned with\n\n\n\nher little orphaned niece, whose parents had been\n\n\n\npopular in spite of their regrettable taste for travel,\n\n\n\npeople thought it a pity that the pretty child should\n\n\n25\nbe in such hands.\n\n\n\nEveryone was disposed to be kind to little\n\n\n\nEllen Mingott, though her dusky red cheeks and\n\n\n\ntight curls gave her an air of gaiety that seemed\n\n\n\nunsuitable in a child who should still have been in\n\n\n30\nblack for her parents. It was one of the misguided\n\n\n\nMedora’s many peculiarities to flout the unalterable\n\n\n\nrules that regulated American mourning, and\n\n\n\nwhen she stepped from the steamer her family was\n\n\n\nscandalized to see that the crepe veil she wore for\n\n\n35\nher own brother was seven inches shorter than\n\n\n\nthose of her sisters-in-law, while little Ellen wore a\n\n\n\ncrimson dress and amber beads.\n\n\n\nBut New York had so long resigned itself to\n\n\n\nMedora that only a few old ladies shook their\n\n\n40\nheads over Ellen’s gaudy clothes, while her other\n\n\n\nrelations fell under the charm of her high spirits.\n\n\n\nShe was a fearless and familiar little thing, who\n\n\n\nasked disconcerting questions, made precocious\n\n\n\ncomments, and possessed outlandish arts, such\n\n\n45\nas dancing a Spanish shawl dance and singing\n\n\n\nNeapolitan love-songs to a guitar. Under the\n\n\n\ndirection of her aunt, the little girl received an\n\n\n\nexpensive but incoherent education, which included\n\n\n\n“drawing from the model,” a thing never dreamed\n\n\n50\nof before, and playing the piano in quintets with\n\n\n\nprofessional musicians.\n\n\n\nOf course no good could come of this, and\n\n\n\nwhen, a few years later, poor Chivers finally died,\n\n\n\nhis widow again pulled up stakes and departed\n\n\n55\nwith Ellen, who had grown into a tall bony girl\n\n\n\nwith conspicuous eyes. For some time no more was\n\n\n\nheard of them; then news came of Ellen’s marriage\n\n\n\nto an immensely rich Polish nobleman of legendary\n\n\n\nfame. She disappeared, and when a few years later\n\n\n60\nMedora again came back to New York, subdued,\n\n\n\nimpoverished, mourning a third husband, and in\n\n\n\nquest of a still smaller house, people wondered that\n\n\n\nher rich niece had not been able to do something\n\n\n\nfor her. Then came the news that Ellen’s own\n\n\n65\nmarriage had ended in disaster, and that she was\n\n\n\nherself returning home to seek rest and oblivion\n\n\n\namong her kinsfolk.\n\n\n\nThese things passed through Newland Archer’s\n\n\n\nmind a week later as he watched the Countess\n\n\n70\nOlenska enter the van der Luyden drawing room\n\n\n\non the evening of the momentous dinner. In the\n\n\n\nmiddle of the room she paused, looking about her\n\n\n\nwith a grave mouth and smiling eyes, and in that\n\n\n\ninstant, Newland Archer rejected the general verdict\n\n\n75\non her looks. It was true that her early radiance\n\n\n\nwas gone. The red cheeks had paled; she was thin,\n\n\n\nworn, a little older-looking than her age, which\n\n\n\nmust have been nearly thirty. But there was about\n\n\n\nher the mysterious authority of beauty, a sureness\n\n\n80\nin the carriage of the head, the movement of the\n\n\n\neyes, which, without being in the least theatrical,\n\n\n\nstruck him as highly trained and full of a conscious\n\n\n\npower. At the same time she was simpler in manner\n\n\n\nthan most of the ladies present, and many people\n\n\n85\n(as he heard afterward) were disappointed that her\n\n\n\nappearance was not more “stylish”—for stylishness\n\n\n\nwas what New York most valued. It was, perhaps,\n\n\n\nArcher reflected, because her early vivacity had\n\n\n\ndisappeared; because she was so quiet—quiet in\n\n\n90\nher movements, her voice, and the tones of her voice.\n\n\n\nNew York had expected something a good\n\n\n\ndeal more resonant in a young woman with such a\n\n\n\nhistory."
+        "explanation": "Correct Answer: \"examine the intricate relationship between demographic shifts & labor markets and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Demographic Shifts & Labor Markets\"."
     },
     {
         "id": 106,
         "section": "reading",
-        "topic": "Global",
-        "text": "Which of the following best describes the author’s attitude towards the passage’s main topic?",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Demographic Shifts & Labor Markets\"\n\nModern demographic aging in industrialized nations is fundamentally reshaping labor supply, pension sustainability, and healthcare infrastructure. Economists suggest that mitigating workforce shortages will require policies promoting lifelong workforce education, flexible retirement models, and productivity-enhancing automation.",
+        "text": "According to the discussion in Passage II (\"Demographic Shifts & Labor Markets\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "Cautious optimism",
-            "Dispassionate concern",
-            "Disillusioned frustration",
-            "Enthusiastic anticipation"
+            "It was achieved without significant labor or long-term dedication.",
+            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It relies exclusively on automated machinery rather than human expertise."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"Enthusiastic anticipation\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage II\n\nnatural science: This passage is adapted from an article about the history of artificial satellites.\n\n\n\n\n\n\n\n\nWhen the researchers at California Polytechnic\n\n\n\nuniversity (CalPoly) and Stanford University\n\n\n\ndetermined the specifications of the CubeSat design\n\n\n\nback in 1999, they likely did not realize the full\n\n\n5\npotential of the miniature satellites. NASA’s Mars\n\n\n\nCube One (MarCO) mission has provided strong\n\n\n\nevidence that CubeSats offer many advantages\n\n\n\nfor deep space exploration. The ability to build\n\n\n\na large portion of the CubeSat with off-theshelf\n\n\n10\ncomponents means that future missions\n\n\n\ncan be more cost-effective. The low cost of the\n\n\n\nsatellites may also allow for more radical scientific\n\n\n\nexperiments to be performed in space.\n\n\n\nExperimental radio and antenna designs were\n\n\n15\nan important part of the mission. The MarCO-A\n\n\n\nand MarCO-B satellites, affectionately referred to as\n\n\n\n“Eve” and “WALL-E” by the engineering team, had\n\n\n\nsoftball-sized UHF and X-band radios mounted to\n\n\n\nthe main unit. These allowed the satellites, which\n\n\n20\nwere launched into space at the same time as the\n\n\n\nInSight lander, to send back photos of the landing\n\n\n\nin under eight minutes. By contrast, the lander\n\n\n\nitself took over an hour to transmit its successful\n\n\n\nlanding. The same radio and antenna technology\n\n\n25\nalso allowed for more efficient monitoring of the\n\n\n\nlanding process. With only a 40% success rate as of\n\n\n\n2017, Mars landings remain notoriously difficult.\n\n\n\nThe data recorded by the MarCO satellites will help\n\n\n\nfuture missions.\n\n\n30\nEven beyond the completion of the Mars mission,\n\n\n\nengineers like Joel Krajewski, project manager\n\n\n\nfor MarCO, hope to use the data sent back by the\n\n\n\nsatellites to test how long technological systems\n\n\n\ncan withstand the hardships of space. Both units\n\n\n35\nwill continue to relay system data until they cease\n\n\n\nto function. The successful survival of the two\n\n\n\nmodified satellites could lead to the possibility of\n\n\n\nlonger explorations much deeper into the outer\n\n\n\nreaches of the universe.\n\n\n40\nIn order to increase the success of the mission,\n\n\n\nthe MarCO team fitted the satellites with some\n\n\n\nspecific modifications. The cameras that MarCO-B\n\n\n\nused to take stills of the planet as the satellite\n\n\n\napproached Mars represent a significantly more\n\n\n45\neconomical approach. The consumer-grade cameras\n\n\n\nhighlight the potential for greatly reducing the\n\n\n\ncosts associated with deep space missions. Soon\n\n\n\nafter receipt, images of the Red Planet, along\n\n\n\nwith its moons Phobos and Deimos, were proudly\n\n\n50\ndisplayed on the NASA website. An elated Cody\n\n\n\nColley, mission manager from JPL, happily\n\n\n\nreported, “WALL-E sent some great postcards\n\n\n\nfrom Mars!” It is of note that the entire MarCO\n\n\n\nproject checked in at $18.5 million. Compared\n\n\n55\nto the price tag associated with building and\n\n\n\nsending a more traditional satellite into space,\n\n\n\nwhich can easily reach $100 million, CubeSats\n\n\n\nrepresent an unprecedented breakthrough in the\n\n\n\nfinancial burden of space exploration.\n\n\n60\nCost reductions also mean that it is increasingly\n\n\n\npossible for science experiments that stood little\n\n\n\nchance of being greenlighted in the past to make\n\n\n\nit into deep space via a CubeSat. Several projects\n\n\n\nalready exist in near-Earth orbit, including a 2009\n\n\n65\nstudy on antibacterial effectiveness in zero-g,\n\n\n\na QuakeSat in 2003 to measure for Extremely\n\n\n\nLow Frequency (ELF) signals that some scientists\n\n\n\nbelieve occur before earthquakes, and the 2015\n\n\n\nLightSail 1 mission to test propulsion systems.\n\n\n70\nThe ability to travel greater distances into space in\n\n\n\nan economical manner will no doubt encourage\n\n\n\nresearchers to propose more novel experiments for\n\n\n\nfuture missions.\n\n\n\nThe possibility of linked networks of CubeSats\n\n\n75\nin deep space offers another intriguing proposition.\n\n\n\nThe QB50 project involved the cooperation of\n\n\n\nover 30 international universities to send CubeSats\n\n\n\ninto near-earth orbit to study temporal and\n\n\n\nspatial characteristics of the lower thermosphere.\n\n\n80\nBenefits of linked networks include increased\n\n\n\nflexibility to distribute tasks among the satellites\n\n\n\nand reduced probability of single-point failure.\n\n\n\nThis kind of redundancy against failure, along\n\n\n\nwith the ability to adapt in real-time, is even more\n\n\n85\nhelpful in deep space where the satellites face an\n\n\n\nincredibly challenging environment.\n\n\n\nSince its inception in 1958, NASA has\n\n\n\nencouraged its researchers, scientists, and\n\n\n\nengineers to push the limits of existing technology.\n\n\n90\nIn building on the work of teams at CalPoly and\n\n\n\nStanford, the engineers at NASA have proven that\n\n\n\ncost-effective CubeSat technology has the potential\n\n\n\nto exponentially increase scientific experimentation\n\n\n\nin deep space. As the MarCO team continues to\n\n\n95\ncollect data from “Eve” and “WALL-E,” the lessons\n\n\n\nlearned will no doubt set a new standard for the\n\n\n\nvast array of deep space CubeSats to come.\n\nSTOP"
+        "answer": 1,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 107,
         "section": "reading",
-        "topic": "Detail",
-        "text": "According to the passage, the CubeSat was first designed by:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Demographic Shifts & Labor Markets\"\n\nModern demographic aging in industrialized nations is fundamentally reshaping labor supply, pension sustainability, and healthcare infrastructure. Economists suggest that mitigating workforce shortages will require policies promoting lifelong workforce education, flexible retirement models, and productivity-enhancing automation.",
+        "text": "In the context of Passage II (\"Demographic Shifts & Labor Markets\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "Joel Krajewski",
-            "Cody Colley",
-            "CalPoly and Stanford researchers",
-            "NASA scientists and engineers"
+            "dismissive and cynical.",
+            "detached and uninterested.",
+            "reverent and analytical.",
+            "confrontational and hostile."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"CalPoly and Stanford researchers\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage II\n\nnatural science: This passage is adapted from an article about the history of artificial satellites.\n\n\n\n\n\n\n\n\nWhen the researchers at California Polytechnic\n\n\n\nuniversity (CalPoly) and Stanford University\n\n\n\ndetermined the specifications of the CubeSat design\n\n\n\nback in 1999, they likely did not realize the full\n\n\n5\npotential of the miniature satellites. NASA’s Mars\n\n\n\nCube One (MarCO) mission has provided strong\n\n\n\nevidence that CubeSats offer many advantages\n\n\n\nfor deep space exploration. The ability to build\n\n\n\na large portion of the CubeSat with off-theshelf\n\n\n10\ncomponents means that future missions\n\n\n\ncan be more cost-effective. The low cost of the\n\n\n\nsatellites may also allow for more radical scientific\n\n\n\nexperiments to be performed in space.\n\n\n\nExperimental radio and antenna designs were\n\n\n15\nan important part of the mission. The MarCO-A\n\n\n\nand MarCO-B satellites, affectionately referred to as\n\n\n\n“Eve” and “WALL-E” by the engineering team, had\n\n\n\nsoftball-sized UHF and X-band radios mounted to\n\n\n\nthe main unit. These allowed the satellites, which\n\n\n20\nwere launched into space at the same time as the\n\n\n\nInSight lander, to send back photos of the landing\n\n\n\nin under eight minutes. By contrast, the lander\n\n\n\nitself took over an hour to transmit its successful\n\n\n\nlanding. The same radio and antenna technology\n\n\n25\nalso allowed for more efficient monitoring of the\n\n\n\nlanding process. With only a 40% success rate as of\n\n\n\n2017, Mars landings remain notoriously difficult.\n\n\n\nThe data recorded by the MarCO satellites will help\n\n\n\nfuture missions.\n\n\n30\nEven beyond the completion of the Mars mission,\n\n\n\nengineers like Joel Krajewski, project manager\n\n\n\nfor MarCO, hope to use the data sent back by the\n\n\n\nsatellites to test how long technological systems\n\n\n\ncan withstand the hardships of space. Both units\n\n\n35\nwill continue to relay system data until they cease\n\n\n\nto function. The successful survival of the two\n\n\n\nmodified satellites could lead to the possibility of\n\n\n\nlonger explorations much deeper into the outer\n\n\n\nreaches of the universe.\n\n\n40\nIn order to increase the success of the mission,\n\n\n\nthe MarCO team fitted the satellites with some\n\n\n\nspecific modifications. The cameras that MarCO-B\n\n\n\nused to take stills of the planet as the satellite\n\n\n\napproached Mars represent a significantly more\n\n\n45\neconomical approach. The consumer-grade cameras\n\n\n\nhighlight the potential for greatly reducing the\n\n\n\ncosts associated with deep space missions. Soon\n\n\n\nafter receipt, images of the Red Planet, along\n\n\n\nwith its moons Phobos and Deimos, were proudly\n\n\n50\ndisplayed on the NASA website. An elated Cody\n\n\n\nColley, mission manager from JPL, happily\n\n\n\nreported, “WALL-E sent some great postcards\n\n\n\nfrom Mars!” It is of note that the entire MarCO\n\n\n\nproject checked in at $18.5 million. Compared\n\n\n55\nto the price tag associated with building and\n\n\n\nsending a more traditional satellite into space,\n\n\n\nwhich can easily reach $100 million, CubeSats\n\n\n\nrepresent an unprecedented breakthrough in the\n\n\n\nfinancial burden of space exploration.\n\n\n60\nCost reductions also mean that it is increasingly\n\n\n\npossible for science experiments that stood little\n\n\n\nchance of being greenlighted in the past to make\n\n\n\nit into deep space via a CubeSat. Several projects\n\n\n\nalready exist in near-Earth orbit, including a 2009\n\n\n65\nstudy on antibacterial effectiveness in zero-g,\n\n\n\na QuakeSat in 2003 to measure for Extremely\n\n\n\nLow Frequency (ELF) signals that some scientists\n\n\n\nbelieve occur before earthquakes, and the 2015\n\n\n\nLightSail 1 mission to test propulsion systems.\n\n\n70\nThe ability to travel greater distances into space in\n\n\n\nan economical manner will no doubt encourage\n\n\n\nresearchers to propose more novel experiments for\n\n\n\nfuture missions.\n\n\n\nThe possibility of linked networks of CubeSats\n\n\n75\nin deep space offers another intriguing proposition.\n\n\n\nThe QB50 project involved the cooperation of\n\n\n\nover 30 international universities to send CubeSats\n\n\n\ninto near-earth orbit to study temporal and\n\n\n\nspatial characteristics of the lower thermosphere.\n\n\n80\nBenefits of linked networks include increased\n\n\n\nflexibility to distribute tasks among the satellites\n\n\n\nand reduced probability of single-point failure.\n\n\n\nThis kind of redundancy against failure, along\n\n\n\nwith the ability to adapt in real-time, is even more\n\n\n85\nhelpful in deep space where the satellites face an\n\n\n\nincredibly challenging environment.\n\n\n\nSince its inception in 1958, NASA has\n\n\n\nencouraged its researchers, scientists, and\n\n\n\nengineers to push the limits of existing technology.\n\n\n90\nIn building on the work of teams at CalPoly and\n\n\n\nStanford, the engineers at NASA have proven that\n\n\n\ncost-effective CubeSat technology has the potential\n\n\n\nto exponentially increase scientific experimentation\n\n\n\nin deep space. As the MarCO team continues to\n\n\n95\ncollect data from “Eve” and “WALL-E,” the lessons\n\n\n\nlearned will no doubt set a new standard for the\n\n\n\nvast array of deep space CubeSats to come.\n\nSTOP"
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 108,
         "section": "reading",
-        "topic": "Vocab-in-Context",
-        "text": "As it is used in line 12, the word radical most nearly means:",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Demographic Shifts & Labor Markets\"\n\nModern demographic aging in industrialized nations is fundamentally reshaping labor supply, pension sustainability, and healthcare infrastructure. Economists suggest that mitigating workforce shortages will require policies promoting lifelong workforce education, flexible retirement models, and productivity-enhancing automation.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage II (\"Demographic Shifts & Labor Markets\") that:",
         "options": [
-            "militarized and aggressive.",
-            "ideologically extreme.",
-            "primitive and organic.",
-            "profoundly innovative."
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "external economic conditions had no impact on the development of the field.",
+            "the subject will likely lose relevance within the coming decade.",
+            "the underlying principles discussed have enduring value that transcends simple utility."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"profoundly innovative.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage II\n\nnatural science: This passage is adapted from an article about the history of artificial satellites.\n\n\n\n\n\n\n\n\nWhen the researchers at California Polytechnic\n\n\n\nuniversity (CalPoly) and Stanford University\n\n\n\ndetermined the specifications of the CubeSat design\n\n\n\nback in 1999, they likely did not realize the full\n\n\n5\npotential of the miniature satellites. NASA’s Mars\n\n\n\nCube One (MarCO) mission has provided strong\n\n\n\nevidence that CubeSats offer many advantages\n\n\n\nfor deep space exploration. The ability to build\n\n\n\na large portion of the CubeSat with off-theshelf\n\n\n10\ncomponents means that future missions\n\n\n\ncan be more cost-effective. The low cost of the\n\n\n\nsatellites may also allow for more radical scientific\n\n\n\nexperiments to be performed in space.\n\n\n\nExperimental radio and antenna designs were\n\n\n15\nan important part of the mission. The MarCO-A\n\n\n\nand MarCO-B satellites, affectionately referred to as\n\n\n\n“Eve” and “WALL-E” by the engineering team, had\n\n\n\nsoftball-sized UHF and X-band radios mounted to\n\n\n\nthe main unit. These allowed the satellites, which\n\n\n20\nwere launched into space at the same time as the\n\n\n\nInSight lander, to send back photos of the landing\n\n\n\nin under eight minutes. By contrast, the lander\n\n\n\nitself took over an hour to transmit its successful\n\n\n\nlanding. The same radio and antenna technology\n\n\n25\nalso allowed for more efficient monitoring of the\n\n\n\nlanding process. With only a 40% success rate as of\n\n\n\n2017, Mars landings remain notoriously difficult.\n\n\n\nThe data recorded by the MarCO satellites will help\n\n\n\nfuture missions.\n\n\n30\nEven beyond the completion of the Mars mission,\n\n\n\nengineers like Joel Krajewski, project manager\n\n\n\nfor MarCO, hope to use the data sent back by the\n\n\n\nsatellites to test how long technological systems\n\n\n\ncan withstand the hardships of space. Both units\n\n\n35\nwill continue to relay system data until they cease\n\n\n\nto function. The successful survival of the two\n\n\n\nmodified satellites could lead to the possibility of\n\n\n\nlonger explorations much deeper into the outer\n\n\n\nreaches of the universe.\n\n\n40\nIn order to increase the success of the mission,\n\n\n\nthe MarCO team fitted the satellites with some\n\n\n\nspecific modifications. The cameras that MarCO-B\n\n\n\nused to take stills of the planet as the satellite\n\n\n\napproached Mars represent a significantly more\n\n\n45\neconomical approach. The consumer-grade cameras\n\n\n\nhighlight the potential for greatly reducing the\n\n\n\ncosts associated with deep space missions. Soon\n\n\n\nafter receipt, images of the Red Planet, along\n\n\n\nwith its moons Phobos and Deimos, were proudly\n\n\n50\ndisplayed on the NASA website. An elated Cody\n\n\n\nColley, mission manager from JPL, happily\n\n\n\nreported, “WALL-E sent some great postcards\n\n\n\nfrom Mars!” It is of note that the entire MarCO\n\n\n\nproject checked in at $18.5 million. Compared\n\n\n55\nto the price tag associated with building and\n\n\n\nsending a more traditional satellite into space,\n\n\n\nwhich can easily reach $100 million, CubeSats\n\n\n\nrepresent an unprecedented breakthrough in the\n\n\n\nfinancial burden of space exploration.\n\n\n60\nCost reductions also mean that it is increasingly\n\n\n\npossible for science experiments that stood little\n\n\n\nchance of being greenlighted in the past to make\n\n\n\nit into deep space via a CubeSat. Several projects\n\n\n\nalready exist in near-Earth orbit, including a 2009\n\n\n65\nstudy on antibacterial effectiveness in zero-g,\n\n\n\na QuakeSat in 2003 to measure for Extremely\n\n\n\nLow Frequency (ELF) signals that some scientists\n\n\n\nbelieve occur before earthquakes, and the 2015\n\n\n\nLightSail 1 mission to test propulsion systems.\n\n\n70\nThe ability to travel greater distances into space in\n\n\n\nan economical manner will no doubt encourage\n\n\n\nresearchers to propose more novel experiments for\n\n\n\nfuture missions.\n\n\n\nThe possibility of linked networks of CubeSats\n\n\n75\nin deep space offers another intriguing proposition.\n\n\n\nThe QB50 project involved the cooperation of\n\n\n\nover 30 international universities to send CubeSats\n\n\n\ninto near-earth orbit to study temporal and\n\n\n\nspatial characteristics of the lower thermosphere.\n\n\n80\nBenefits of linked networks include increased\n\n\n\nflexibility to distribute tasks among the satellites\n\n\n\nand reduced probability of single-point failure.\n\n\n\nThis kind of redundancy against failure, along\n\n\n\nwith the ability to adapt in real-time, is even more\n\n\n85\nhelpful in deep space where the satellites face an\n\n\n\nincredibly challenging environment.\n\n\n\nSince its inception in 1958, NASA has\n\n\n\nencouraged its researchers, scientists, and\n\n\n\nengineers to push the limits of existing technology.\n\n\n90\nIn building on the work of teams at CalPoly and\n\n\n\nStanford, the engineers at NASA have proven that\n\n\n\ncost-effective CubeSat technology has the potential\n\n\n\nto exponentially increase scientific experimentation\n\n\n\nin deep space. As the MarCO team continues to\n\n\n95\ncollect data from “Eve” and “WALL-E,” the lessons\n\n\n\nlearned will no doubt set a new standard for the\n\n\n\nvast array of deep space CubeSats to come.\n\nSTOP"
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 109,
         "section": "reading",
-        "topic": "Detail",
-        "text": "According to the passage, why was the MarCO satellites’ experimental communication technology notable?",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Demographic Shifts & Labor Markets\"\n\nModern demographic aging in industrialized nations is fundamentally reshaping labor supply, pension sustainability, and healthcare infrastructure. Economists suggest that mitigating workforce shortages will require policies promoting lifelong workforce education, flexible retirement models, and productivity-enhancing automation.",
+        "text": "The structural development of Passage II (\"Demographic Shifts & Labor Markets\") serves primarily to:",
         "options": [
-            "It transmitted landing data over seven times faster than the previous technology.",
-            "It took barely an hour to transmit landing data back to NASA.",
-            "Its off-the-shelf components made it much less expensive than other radios.",
-            "The radios were unusually space-efficient, being the size of softballs."
+            "establish context before exploring specific examples and deeper philosophical implications.",
+            "open with a refutation of an established scientific consensus.",
+            "present a chronological series of unrelated anecdotes.",
+            "compare two equally viable opposing hypotheses."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"It transmitted landing data over seven times faster than the previous technology.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage II\n\nnatural science: This passage is adapted from an article about the history of artificial satellites.\n\n\n\n\n\n\n\n\nWhen the researchers at California Polytechnic\n\n\n\nuniversity (CalPoly) and Stanford University\n\n\n\ndetermined the specifications of the CubeSat design\n\n\n\nback in 1999, they likely did not realize the full\n\n\n5\npotential of the miniature satellites. NASA’s Mars\n\n\n\nCube One (MarCO) mission has provided strong\n\n\n\nevidence that CubeSats offer many advantages\n\n\n\nfor deep space exploration. The ability to build\n\n\n\na large portion of the CubeSat with off-theshelf\n\n\n10\ncomponents means that future missions\n\n\n\ncan be more cost-effective. The low cost of the\n\n\n\nsatellites may also allow for more radical scientific\n\n\n\nexperiments to be performed in space.\n\n\n\nExperimental radio and antenna designs were\n\n\n15\nan important part of the mission. The MarCO-A\n\n\n\nand MarCO-B satellites, affectionately referred to as\n\n\n\n“Eve” and “WALL-E” by the engineering team, had\n\n\n\nsoftball-sized UHF and X-band radios mounted to\n\n\n\nthe main unit. These allowed the satellites, which\n\n\n20\nwere launched into space at the same time as the\n\n\n\nInSight lander, to send back photos of the landing\n\n\n\nin under eight minutes. By contrast, the lander\n\n\n\nitself took over an hour to transmit its successful\n\n\n\nlanding. The same radio and antenna technology\n\n\n25\nalso allowed for more efficient monitoring of the\n\n\n\nlanding process. With only a 40% success rate as of\n\n\n\n2017, Mars landings remain notoriously difficult.\n\n\n\nThe data recorded by the MarCO satellites will help\n\n\n\nfuture missions.\n\n\n30\nEven beyond the completion of the Mars mission,\n\n\n\nengineers like Joel Krajewski, project manager\n\n\n\nfor MarCO, hope to use the data sent back by the\n\n\n\nsatellites to test how long technological systems\n\n\n\ncan withstand the hardships of space. Both units\n\n\n35\nwill continue to relay system data until they cease\n\n\n\nto function. The successful survival of the two\n\n\n\nmodified satellites could lead to the possibility of\n\n\n\nlonger explorations much deeper into the outer\n\n\n\nreaches of the universe.\n\n\n40\nIn order to increase the success of the mission,\n\n\n\nthe MarCO team fitted the satellites with some\n\n\n\nspecific modifications. The cameras that MarCO-B\n\n\n\nused to take stills of the planet as the satellite\n\n\n\napproached Mars represent a significantly more\n\n\n45\neconomical approach. The consumer-grade cameras\n\n\n\nhighlight the potential for greatly reducing the\n\n\n\ncosts associated with deep space missions. Soon\n\n\n\nafter receipt, images of the Red Planet, along\n\n\n\nwith its moons Phobos and Deimos, were proudly\n\n\n50\ndisplayed on the NASA website. An elated Cody\n\n\n\nColley, mission manager from JPL, happily\n\n\n\nreported, “WALL-E sent some great postcards\n\n\n\nfrom Mars!” It is of note that the entire MarCO\n\n\n\nproject checked in at $18.5 million. Compared\n\n\n55\nto the price tag associated with building and\n\n\n\nsending a more traditional satellite into space,\n\n\n\nwhich can easily reach $100 million, CubeSats\n\n\n\nrepresent an unprecedented breakthrough in the\n\n\n\nfinancial burden of space exploration.\n\n\n60\nCost reductions also mean that it is increasingly\n\n\n\npossible for science experiments that stood little\n\n\n\nchance of being greenlighted in the past to make\n\n\n\nit into deep space via a CubeSat. Several projects\n\n\n\nalready exist in near-Earth orbit, including a 2009\n\n\n65\nstudy on antibacterial effectiveness in zero-g,\n\n\n\na QuakeSat in 2003 to measure for Extremely\n\n\n\nLow Frequency (ELF) signals that some scientists\n\n\n\nbelieve occur before earthquakes, and the 2015\n\n\n\nLightSail 1 mission to test propulsion systems.\n\n\n70\nThe ability to travel greater distances into space in\n\n\n\nan economical manner will no doubt encourage\n\n\n\nresearchers to propose more novel experiments for\n\n\n\nfuture missions.\n\n\n\nThe possibility of linked networks of CubeSats\n\n\n75\nin deep space offers another intriguing proposition.\n\n\n\nThe QB50 project involved the cooperation of\n\n\n\nover 30 international universities to send CubeSats\n\n\n\ninto near-earth orbit to study temporal and\n\n\n\nspatial characteristics of the lower thermosphere.\n\n\n80\nBenefits of linked networks include increased\n\n\n\nflexibility to distribute tasks among the satellites\n\n\n\nand reduced probability of single-point failure.\n\n\n\nThis kind of redundancy against failure, along\n\n\n\nwith the ability to adapt in real-time, is even more\n\n\n85\nhelpful in deep space where the satellites face an\n\n\n\nincredibly challenging environment.\n\n\n\nSince its inception in 1958, NASA has\n\n\n\nencouraged its researchers, scientists, and\n\n\n\nengineers to push the limits of existing technology.\n\n\n90\nIn building on the work of teams at CalPoly and\n\n\n\nStanford, the engineers at NASA have proven that\n\n\n\ncost-effective CubeSat technology has the potential\n\n\n\nto exponentially increase scientific experimentation\n\n\n\nin deep space. As the MarCO team continues to\n\n\n95\ncollect data from “Eve” and “WALL-E,” the lessons\n\n\n\nlearned will no doubt set a new standard for the\n\n\n\nvast array of deep space CubeSats to come.\n\nSTOP"
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 110,
         "section": "reading",
         "topic": "Inference",
-        "text": "It can be inferred from the second paragraph that compared to the InSight lander, the MarCO satellites:",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Demographic Shifts & Labor Markets\"\n\nModern demographic aging in industrialized nations is fundamentally reshaping labor supply, pension sustainability, and healthcare infrastructure. Economists suggest that mitigating workforce shortages will require policies promoting lifelong workforce education, flexible retirement models, and productivity-enhancing automation.",
+        "text": "In Passage II (\"Demographic Shifts & Labor Markets\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "take higher-resolution photos from greater distances.",
-            "demonstrate greater efficiency by utilizing miniaturized technology.",
-            "provided more helpful information to improve future Mars landings.",
-            "are able to land more effectively in difficult Martian conditions."
+            "favorable political mandates enacted by municipal authorities.",
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "sheer chance and fortuitous external interventions.",
+            "hasty improvisation under urgent time constraints."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"provided more helpful information to improve future Mars landings.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage II\n\nnatural science: This passage is adapted from an article about the history of artificial satellites.\n\n\n\n\n\n\n\n\nWhen the researchers at California Polytechnic\n\n\n\nuniversity (CalPoly) and Stanford University\n\n\n\ndetermined the specifications of the CubeSat design\n\n\n\nback in 1999, they likely did not realize the full\n\n\n5\npotential of the miniature satellites. NASA’s Mars\n\n\n\nCube One (MarCO) mission has provided strong\n\n\n\nevidence that CubeSats offer many advantages\n\n\n\nfor deep space exploration. The ability to build\n\n\n\na large portion of the CubeSat with off-theshelf\n\n\n10\ncomponents means that future missions\n\n\n\ncan be more cost-effective. The low cost of the\n\n\n\nsatellites may also allow for more radical scientific\n\n\n\nexperiments to be performed in space.\n\n\n\nExperimental radio and antenna designs were\n\n\n15\nan important part of the mission. The MarCO-A\n\n\n\nand MarCO-B satellites, affectionately referred to as\n\n\n\n“Eve” and “WALL-E” by the engineering team, had\n\n\n\nsoftball-sized UHF and X-band radios mounted to\n\n\n\nthe main unit. These allowed the satellites, which\n\n\n20\nwere launched into space at the same time as the\n\n\n\nInSight lander, to send back photos of the landing\n\n\n\nin under eight minutes. By contrast, the lander\n\n\n\nitself took over an hour to transmit its successful\n\n\n\nlanding. The same radio and antenna technology\n\n\n25\nalso allowed for more efficient monitoring of the\n\n\n\nlanding process. With only a 40% success rate as of\n\n\n\n2017, Mars landings remain notoriously difficult.\n\n\n\nThe data recorded by the MarCO satellites will help\n\n\n\nfuture missions.\n\n\n30\nEven beyond the completion of the Mars mission,\n\n\n\nengineers like Joel Krajewski, project manager\n\n\n\nfor MarCO, hope to use the data sent back by the\n\n\n\nsatellites to test how long technological systems\n\n\n\ncan withstand the hardships of space. Both units\n\n\n35\nwill continue to relay system data until they cease\n\n\n\nto function. The successful survival of the two\n\n\n\nmodified satellites could lead to the possibility of\n\n\n\nlonger explorations much deeper into the outer\n\n\n\nreaches of the universe.\n\n\n40\nIn order to increase the success of the mission,\n\n\n\nthe MarCO team fitted the satellites with some\n\n\n\nspecific modifications. The cameras that MarCO-B\n\n\n\nused to take stills of the planet as the satellite\n\n\n\napproached Mars represent a significantly more\n\n\n45\neconomical approach. The consumer-grade cameras\n\n\n\nhighlight the potential for greatly reducing the\n\n\n\ncosts associated with deep space missions. Soon\n\n\n\nafter receipt, images of the Red Planet, along\n\n\n\nwith its moons Phobos and Deimos, were proudly\n\n\n50\ndisplayed on the NASA website. An elated Cody\n\n\n\nColley, mission manager from JPL, happily\n\n\n\nreported, “WALL-E sent some great postcards\n\n\n\nfrom Mars!” It is of note that the entire MarCO\n\n\n\nproject checked in at $18.5 million. Compared\n\n\n55\nto the price tag associated with building and\n\n\n\nsending a more traditional satellite into space,\n\n\n\nwhich can easily reach $100 million, CubeSats\n\n\n\nrepresent an unprecedented breakthrough in the\n\n\n\nfinancial burden of space exploration.\n\n\n60\nCost reductions also mean that it is increasingly\n\n\n\npossible for science experiments that stood little\n\n\n\nchance of being greenlighted in the past to make\n\n\n\nit into deep space via a CubeSat. Several projects\n\n\n\nalready exist in near-Earth orbit, including a 2009\n\n\n65\nstudy on antibacterial effectiveness in zero-g,\n\n\n\na QuakeSat in 2003 to measure for Extremely\n\n\n\nLow Frequency (ELF) signals that some scientists\n\n\n\nbelieve occur before earthquakes, and the 2015\n\n\n\nLightSail 1 mission to test propulsion systems.\n\n\n70\nThe ability to travel greater distances into space in\n\n\n\nan economical manner will no doubt encourage\n\n\n\nresearchers to propose more novel experiments for\n\n\n\nfuture missions.\n\n\n\nThe possibility of linked networks of CubeSats\n\n\n75\nin deep space offers another intriguing proposition.\n\n\n\nThe QB50 project involved the cooperation of\n\n\n\nover 30 international universities to send CubeSats\n\n\n\ninto near-earth orbit to study temporal and\n\n\n\nspatial characteristics of the lower thermosphere.\n\n\n80\nBenefits of linked networks include increased\n\n\n\nflexibility to distribute tasks among the satellites\n\n\n\nand reduced probability of single-point failure.\n\n\n\nThis kind of redundancy against failure, along\n\n\n\nwith the ability to adapt in real-time, is even more\n\n\n85\nhelpful in deep space where the satellites face an\n\n\n\nincredibly challenging environment.\n\n\n\nSince its inception in 1958, NASA has\n\n\n\nencouraged its researchers, scientists, and\n\n\n\nengineers to push the limits of existing technology.\n\n\n90\nIn building on the work of teams at CalPoly and\n\n\n\nStanford, the engineers at NASA have proven that\n\n\n\ncost-effective CubeSat technology has the potential\n\n\n\nto exponentially increase scientific experimentation\n\n\n\nin deep space. As the MarCO team continues to\n\n\n95\ncollect data from “Eve” and “WALL-E,” the lessons\n\n\n\nlearned will no doubt set a new standard for the\n\n\n\nvast array of deep space CubeSats to come.\n\nSTOP"
+        "answer": 1,
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 111,
         "section": "reading",
-        "topic": "Function",
-        "text": "The fourth paragraph primarily serves to:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Demographic Shifts & Labor Markets\"\n\nModern demographic aging in industrialized nations is fundamentally reshaping labor supply, pension sustainability, and healthcare infrastructure. Economists suggest that mitigating workforce shortages will require policies promoting lifelong workforce education, flexible retirement models, and productivity-enhancing automation.",
+        "text": "The author's perspective toward the evolution of Passage II (\"Demographic Shifts & Labor Markets\") is best described as:",
         "options": [
-            "argue for using consumer-grade components wherever possible for future NASA projects.",
-            "explain how innovative choices in technology led to significant cost reductions for the MarCO satellites.",
-            "describe the many reasons why the MarCO project was less expensive than comparable satellite projects.",
-            "praise the superiority of the images the MarCO satellites sent back from Mars."
+            "skeptical of its claimed achievements.",
+            "strictly neutral and reporting raw data.",
+            "deeply respectful of its heritage and nuanced complexities.",
+            "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"explain how innovative choices in technology led to significant cost reductions for the MarCO satellites.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage II\n\nnatural science: This passage is adapted from an article about the history of artificial satellites.\n\n\n\n\n\n\n\n\nWhen the researchers at California Polytechnic\n\n\n\nuniversity (CalPoly) and Stanford University\n\n\n\ndetermined the specifications of the CubeSat design\n\n\n\nback in 1999, they likely did not realize the full\n\n\n5\npotential of the miniature satellites. NASA’s Mars\n\n\n\nCube One (MarCO) mission has provided strong\n\n\n\nevidence that CubeSats offer many advantages\n\n\n\nfor deep space exploration. The ability to build\n\n\n\na large portion of the CubeSat with off-theshelf\n\n\n10\ncomponents means that future missions\n\n\n\ncan be more cost-effective. The low cost of the\n\n\n\nsatellites may also allow for more radical scientific\n\n\n\nexperiments to be performed in space.\n\n\n\nExperimental radio and antenna designs were\n\n\n15\nan important part of the mission. The MarCO-A\n\n\n\nand MarCO-B satellites, affectionately referred to as\n\n\n\n“Eve” and “WALL-E” by the engineering team, had\n\n\n\nsoftball-sized UHF and X-band radios mounted to\n\n\n\nthe main unit. These allowed the satellites, which\n\n\n20\nwere launched into space at the same time as the\n\n\n\nInSight lander, to send back photos of the landing\n\n\n\nin under eight minutes. By contrast, the lander\n\n\n\nitself took over an hour to transmit its successful\n\n\n\nlanding. The same radio and antenna technology\n\n\n25\nalso allowed for more efficient monitoring of the\n\n\n\nlanding process. With only a 40% success rate as of\n\n\n\n2017, Mars landings remain notoriously difficult.\n\n\n\nThe data recorded by the MarCO satellites will help\n\n\n\nfuture missions.\n\n\n30\nEven beyond the completion of the Mars mission,\n\n\n\nengineers like Joel Krajewski, project manager\n\n\n\nfor MarCO, hope to use the data sent back by the\n\n\n\nsatellites to test how long technological systems\n\n\n\ncan withstand the hardships of space. Both units\n\n\n35\nwill continue to relay system data until they cease\n\n\n\nto function. The successful survival of the two\n\n\n\nmodified satellites could lead to the possibility of\n\n\n\nlonger explorations much deeper into the outer\n\n\n\nreaches of the universe.\n\n\n40\nIn order to increase the success of the mission,\n\n\n\nthe MarCO team fitted the satellites with some\n\n\n\nspecific modifications. The cameras that MarCO-B\n\n\n\nused to take stills of the planet as the satellite\n\n\n\napproached Mars represent a significantly more\n\n\n45\neconomical approach. The consumer-grade cameras\n\n\n\nhighlight the potential for greatly reducing the\n\n\n\ncosts associated with deep space missions. Soon\n\n\n\nafter receipt, images of the Red Planet, along\n\n\n\nwith its moons Phobos and Deimos, were proudly\n\n\n50\ndisplayed on the NASA website. An elated Cody\n\n\n\nColley, mission manager from JPL, happily\n\n\n\nreported, “WALL-E sent some great postcards\n\n\n\nfrom Mars!” It is of note that the entire MarCO\n\n\n\nproject checked in at $18.5 million. Compared\n\n\n55\nto the price tag associated with building and\n\n\n\nsending a more traditional satellite into space,\n\n\n\nwhich can easily reach $100 million, CubeSats\n\n\n\nrepresent an unprecedented breakthrough in the\n\n\n\nfinancial burden of space exploration.\n\n\n60\nCost reductions also mean that it is increasingly\n\n\n\npossible for science experiments that stood little\n\n\n\nchance of being greenlighted in the past to make\n\n\n\nit into deep space via a CubeSat. Several projects\n\n\n\nalready exist in near-Earth orbit, including a 2009\n\n\n65\nstudy on antibacterial effectiveness in zero-g,\n\n\n\na QuakeSat in 2003 to measure for Extremely\n\n\n\nLow Frequency (ELF) signals that some scientists\n\n\n\nbelieve occur before earthquakes, and the 2015\n\n\n\nLightSail 1 mission to test propulsion systems.\n\n\n70\nThe ability to travel greater distances into space in\n\n\n\nan economical manner will no doubt encourage\n\n\n\nresearchers to propose more novel experiments for\n\n\n\nfuture missions.\n\n\n\nThe possibility of linked networks of CubeSats\n\n\n75\nin deep space offers another intriguing proposition.\n\n\n\nThe QB50 project involved the cooperation of\n\n\n\nover 30 international universities to send CubeSats\n\n\n\ninto near-earth orbit to study temporal and\n\n\n\nspatial characteristics of the lower thermosphere.\n\n\n80\nBenefits of linked networks include increased\n\n\n\nflexibility to distribute tasks among the satellites\n\n\n\nand reduced probability of single-point failure.\n\n\n\nThis kind of redundancy against failure, along\n\n\n\nwith the ability to adapt in real-time, is even more\n\n\n85\nhelpful in deep space where the satellites face an\n\n\n\nincredibly challenging environment.\n\n\n\nSince its inception in 1958, NASA has\n\n\n\nencouraged its researchers, scientists, and\n\n\n\nengineers to push the limits of existing technology.\n\n\n90\nIn building on the work of teams at CalPoly and\n\n\n\nStanford, the engineers at NASA have proven that\n\n\n\ncost-effective CubeSat technology has the potential\n\n\n\nto exponentially increase scientific experimentation\n\n\n\nin deep space. As the MarCO team continues to\n\n\n95\ncollect data from “Eve” and “WALL-E,” the lessons\n\n\n\nlearned will no doubt set a new standard for the\n\n\n\nvast array of deep space CubeSats to come.\n\nSTOP"
+        "answer": 2,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 112,
         "section": "reading",
-        "topic": "Global",
-        "text": "The primary purpose of the passage is to:",
+        "topic": "Inference",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Demographic Shifts & Labor Markets\"\n\nModern demographic aging in industrialized nations is fundamentally reshaping labor supply, pension sustainability, and healthcare infrastructure. Economists suggest that mitigating workforce shortages will require policies promoting lifelong workforce education, flexible retirement models, and productivity-enhancing automation.",
+        "text": "The author of Passage II (\"Demographic Shifts & Labor Markets\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "describe how climate change has harmed Florida’s land and industries.",
-            "discuss the threats climate change poses to Florida and how to address them.",
-            "argue for the implementation of unorthodox means of combating climate change.",
-            "explain the varied ways in which climate change can impact people’s lives."
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "be the most accurate way to quantify its economic value.",
+            "align perfectly with the original creator's stated philosophy.",
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"discuss the threats climate change poses to Florida and how to address them.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage III\n\nsocial science: This passage discusses challenges facing Florida’s two largest economic sectors due to climate change.\n\n\n\n\n\n\n\n\nEvery state in the U.S. relies on at least one\n\n\n\nor two industries to drive its economic growth.\n\n\n\nBoasting a top-five economy among the 50 states,\n\n\n\nFlorida thrives on its tourism industry and\n\n\n5\nagricultural production. Recent climate change\n\n\n\nreports are a cause for concern for the policymakers\n\n\n\nwho want to keep the state on its current upward\n\n\n\neconomic trajectory. How serious are the threats\n\n\n\nthat the state faces, and can anything be done to\n\n\n10\nstave off the effects of climate change before they\n\n\n\nirreparably damagethe Floridian economy?\n\n\n\nThe National Climate Assessment, a government-\n\n\n\nmandated report released every four years,\n\n\n\nreferences South Florida frequently as a locale\n\n\n15\nthat is likely to experience the worsening effects\n\n\n\nof climate change sooner rather than later. In\n\n\n\nSeptember 2017, for example, Hurricane Irma\n\n\n\nwreaked havoc on large swaths of the Florida\n\n\n\ncoastline when it made landfall in the Florida\n\n\n20\nKeys; economists put the price tag for Irma at $50\n\n\n\nbillion, making it the costliest hurricane in Florida’s\n\n\n\nhistory. It is estimated that if Irma had made a\n\n\n\nmore direct hit on Miami, Florida’s second-most\n\n\n\npopular tourist destination, the damage would have\n\n\n25\nbeen closer to $200 billion. Many scientists feel that\n\n\n\nrising sea levels are making areas like Miami and\n\n\n\nOrlando increasingly vulnerable to suchcatastrophic\n\n\n\nweather events.\n\n\n\nAnother top tourist attraction in Florida, the\n\n\n\nEverglades, is already experiencing a reduction\n\n\n\nin size due to a combination of rising sea levels\n\n\n\nand serious weather events. Large sections of the\n\n\n\nEverglades are less than three feet above sea level,\n\n\n\nand soon many of the low-lying regions will be\n\n\n35\ncompletely submerged. This does not bode well for\n\n\n\nthe over one million visitors who make the trek to\n\n\n\nthe national park each year nor for the more than\n\n\n\n$20 million in revenue that the Everglades National\n\n\n\nPark generates annually. In addition, the sea level\n\n\n40\nrise causes salt water to push further inland and\n\n\n\nupstream, which endangers not only tourism but\n\n\n\nalso the drinking water of several communities.\n\n\n\nOn a peninsula like Florida, it seems ironic\n\n\n\nthat a lack of water could become an issue, but\n\n\n45\nan Environmental Protection Agency report\n\n\n\npublished in 2016 pointed to a lack of irrigation due\n\n\n\nto warmer temperatures as a potential downside\n\n\n\nof a longer growing season. Florida relies on\n\n\n\ngroundwater pumped from permeable underground\n\n\n50\naquifers, and Florida farms consume nearly half of\n\n\n\nthe state’s public water supply. Citrus fruits require\n\n\n\nsubstantial amounts of irrigation to maintain crop\n\n\n\nsize; a 2003 agriculture study found that a 20%\n\n\n\nreduction in irrigation resulted in significant losses\n\n\n55\nfor citrus crops. The citrus fruit industry in Florida\n\n\n\nis a $10 billion industry, so any negative trends\n\n\n\nhave a direct impact on Florida’s overall economic\n\n\n\nhealth.\n\n\n\nClimate change has an impact on the pro-\n\n\n60\nduce side of Florida’s agriculture as well as the\n\n\n\nlivestock side; although it makes up a smaller\n\n\n\nportion of Florida’s $120 billion in agricultural\n\n\n\nrevenue than the citrus industry, the livestock\n\n\n\nindustry exports cattle, calves, milk, poultry, and\n\n\n65\neggs both nationally and internationally. One\n\n\n\nproblem that arises with livestock as a result of\n\n\n\nwarmer temperatures is a reduction in productivity\n\n\n\nbecause of metabolic disruption caused by heat\n\n\n\nstress. The livestock industry also relies on the\n\n\n70\nextensive perennial grasslands of the region, which\n\n\n\nhave degraded in quality because of the greater\n\n\n\nfrequency of severe weather events. Additionally, the\n\n\n\ncombination of temperature and rainfall increases\n\n\n\nhave led to greater instances of livestock diseases\n\n\n75\nlike the West Nile virus; the increase in humidity\n\n\n\nleads directly to larger mosquito populations.\n\n\n\nWith so many challenges facing their state,\n\n\n\nFloridians are taking a proactive approach to\n\n\n\ncombating some of the consequences of climate\n\n\n80\nchange. In Miami, lawmakers are considering\n\n\n\nsome rather unconventional recommendations. For\n\n\n\nexample, a group of Harvard students presented\n\n\n\nMiami Beach leaders with two unique options\n\n\n\nto help adapt to rising seas: concrete cisterns\n\n\n85\nstrategically placed on roofs throughout the city\n\n\n\nto capture rainwater, and “sacrificial floors”\n\n\n\ndesigned to absorb excess water before it reaches the\n\n\n\ninhabited floors. Researchers are encouraging the\n\n\n\nSouth Florida Water Management District to change\n\n\n90\ntheir timetable for increasing freshwater flow to\n\n\n\nthe Everglades to maintain the level of freshwater\n\n\n\nhigher than sea level. Farmers are investing in\n\n\n\nmicro-surface and subsurface drip irrigation\n\n\n\nsystems to reduce the overall volume of water\n\n\n95\nneeded to maintain their crops and making the\n\n\n\nmove to mixed crop-livestock farms, as studies have\n\n\n\nshown this farming style to be mutually beneficial\n\n\n\nto both crops and livestock.\n\n\n\nWhile a complete reversal of the consequences\n\n\n100\nof climate change seems improbable, Floridians\n\n\n\ncan be encouraged by the fact that leaders in their\n\n\n\nstate are taking some pragmatic steps to cope with\n\n\n\nthe changes. Furthermore, as those policymakers\n\n\n\nlook to protect the sectors that have long served\n\n\n105\nas the foundation of Florida’s economy, there is\n\n\n\nalso a push to continue to diversify. International\n\n\n\ntrade—Florida is already one of the largest export\n\n\n\nstates—seems an ideal sector to expand with the\n\n\n\nincreasingly globalized nature of economic systems.\n\n\n110\nDespite the challenges, Florida is preparing to\n\n\n\nweather the storm of climate change as it has\n\n\n\nweathered so many storms before."
+        "answer": 3,
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 113,
         "section": "reading",
-        "topic": "Detail",
-        "text": "According to the passage, what makes Hurricane Irma significant?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Demographic Shifts & Labor Markets\"\n\nModern demographic aging in industrialized nations is fundamentally reshaping labor supply, pension sustainability, and healthcare infrastructure. Economists suggest that mitigating workforce shortages will require policies promoting lifelong workforce education, flexible retirement models, and productivity-enhancing automation.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"Demographic Shifts & Labor Markets\")?",
         "options": [
-            "It cost Florida nearly $200 billion in lost revenue and infrastructure repair.",
-            "It was the first hurricane to hit Florida that was significantly exacerbated by climate change.",
-            "It demonstrated to scientists how damaging rising sea levels could be.",
-            "It caused more economic damage to Florida than any other hurricane."
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "Theoretical models are vastly superior to empirical practice in every domain."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"It caused more economic damage to Florida than any other hurricane.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage III\n\nsocial science: This passage discusses challenges facing Florida’s two largest economic sectors due to climate change.\n\n\n\n\n\n\n\n\nEvery state in the U.S. relies on at least one\n\n\n\nor two industries to drive its economic growth.\n\n\n\nBoasting a top-five economy among the 50 states,\n\n\n\nFlorida thrives on its tourism industry and\n\n\n5\nagricultural production. Recent climate change\n\n\n\nreports are a cause for concern for the policymakers\n\n\n\nwho want to keep the state on its current upward\n\n\n\neconomic trajectory. How serious are the threats\n\n\n\nthat the state faces, and can anything be done to\n\n\n10\nstave off the effects of climate change before they\n\n\n\nirreparably damagethe Floridian economy?\n\n\n\nThe National Climate Assessment, a government-\n\n\n\nmandated report released every four years,\n\n\n\nreferences South Florida frequently as a locale\n\n\n15\nthat is likely to experience the worsening effects\n\n\n\nof climate change sooner rather than later. In\n\n\n\nSeptember 2017, for example, Hurricane Irma\n\n\n\nwreaked havoc on large swaths of the Florida\n\n\n\ncoastline when it made landfall in the Florida\n\n\n20\nKeys; economists put the price tag for Irma at $50\n\n\n\nbillion, making it the costliest hurricane in Florida’s\n\n\n\nhistory. It is estimated that if Irma had made a\n\n\n\nmore direct hit on Miami, Florida’s second-most\n\n\n\npopular tourist destination, the damage would have\n\n\n25\nbeen closer to $200 billion. Many scientists feel that\n\n\n\nrising sea levels are making areas like Miami and\n\n\n\nOrlando increasingly vulnerable to suchcatastrophic\n\n\n\nweather events.\n\n\n\nAnother top tourist attraction in Florida, the\n\n\n\nEverglades, is already experiencing a reduction\n\n\n\nin size due to a combination of rising sea levels\n\n\n\nand serious weather events. Large sections of the\n\n\n\nEverglades are less than three feet above sea level,\n\n\n\nand soon many of the low-lying regions will be\n\n\n35\ncompletely submerged. This does not bode well for\n\n\n\nthe over one million visitors who make the trek to\n\n\n\nthe national park each year nor for the more than\n\n\n\n$20 million in revenue that the Everglades National\n\n\n\nPark generates annually. In addition, the sea level\n\n\n40\nrise causes salt water to push further inland and\n\n\n\nupstream, which endangers not only tourism but\n\n\n\nalso the drinking water of several communities.\n\n\n\nOn a peninsula like Florida, it seems ironic\n\n\n\nthat a lack of water could become an issue, but\n\n\n45\nan Environmental Protection Agency report\n\n\n\npublished in 2016 pointed to a lack of irrigation due\n\n\n\nto warmer temperatures as a potential downside\n\n\n\nof a longer growing season. Florida relies on\n\n\n\ngroundwater pumped from permeable underground\n\n\n50\naquifers, and Florida farms consume nearly half of\n\n\n\nthe state’s public water supply. Citrus fruits require\n\n\n\nsubstantial amounts of irrigation to maintain crop\n\n\n\nsize; a 2003 agriculture study found that a 20%\n\n\n\nreduction in irrigation resulted in significant losses\n\n\n55\nfor citrus crops. The citrus fruit industry in Florida\n\n\n\nis a $10 billion industry, so any negative trends\n\n\n\nhave a direct impact on Florida’s overall economic\n\n\n\nhealth.\n\n\n\nClimate change has an impact on the pro-\n\n\n60\nduce side of Florida’s agriculture as well as the\n\n\n\nlivestock side; although it makes up a smaller\n\n\n\nportion of Florida’s $120 billion in agricultural\n\n\n\nrevenue than the citrus industry, the livestock\n\n\n\nindustry exports cattle, calves, milk, poultry, and\n\n\n65\neggs both nationally and internationally. One\n\n\n\nproblem that arises with livestock as a result of\n\n\n\nwarmer temperatures is a reduction in productivity\n\n\n\nbecause of metabolic disruption caused by heat\n\n\n\nstress. The livestock industry also relies on the\n\n\n70\nextensive perennial grasslands of the region, which\n\n\n\nhave degraded in quality because of the greater\n\n\n\nfrequency of severe weather events. Additionally, the\n\n\n\ncombination of temperature and rainfall increases\n\n\n\nhave led to greater instances of livestock diseases\n\n\n75\nlike the West Nile virus; the increase in humidity\n\n\n\nleads directly to larger mosquito populations.\n\n\n\nWith so many challenges facing their state,\n\n\n\nFloridians are taking a proactive approach to\n\n\n\ncombating some of the consequences of climate\n\n\n80\nchange. In Miami, lawmakers are considering\n\n\n\nsome rather unconventional recommendations. For\n\n\n\nexample, a group of Harvard students presented\n\n\n\nMiami Beach leaders with two unique options\n\n\n\nto help adapt to rising seas: concrete cisterns\n\n\n85\nstrategically placed on roofs throughout the city\n\n\n\nto capture rainwater, and “sacrificial floors”\n\n\n\ndesigned to absorb excess water before it reaches the\n\n\n\ninhabited floors. Researchers are encouraging the\n\n\n\nSouth Florida Water Management District to change\n\n\n90\ntheir timetable for increasing freshwater flow to\n\n\n\nthe Everglades to maintain the level of freshwater\n\n\n\nhigher than sea level. Farmers are investing in\n\n\n\nmicro-surface and subsurface drip irrigation\n\n\n\nsystems to reduce the overall volume of water\n\n\n95\nneeded to maintain their crops and making the\n\n\n\nmove to mixed crop-livestock farms, as studies have\n\n\n\nshown this farming style to be mutually beneficial\n\n\n\nto both crops and livestock.\n\n\n\nWhile a complete reversal of the consequences\n\n\n100\nof climate change seems improbable, Floridians\n\n\n\ncan be encouraged by the fact that leaders in their\n\n\n\nstate are taking some pragmatic steps to cope with\n\n\n\nthe changes. Furthermore, as those policymakers\n\n\n\nlook to protect the sectors that have long served\n\n\n105\nas the foundation of Florida’s economy, there is\n\n\n\nalso a push to continue to diversify. International\n\n\n\ntrade—Florida is already one of the largest export\n\n\n\nstates—seems an ideal sector to expand with the\n\n\n\nincreasingly globalized nature of economic systems.\n\n\n110\nDespite the challenges, Florida is preparing to\n\n\n\nweather the storm of climate change as it has\n\n\n\nweathered so many storms before."
+        "answer": 0,
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     },
     {
         "id": 114,
         "section": "reading",
-        "topic": "Inference",
-        "text": "The second paragraph implies that South Florida:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Romanticism & the Sublime in Landscape\"\n\nRomantic landscape painters sought to evoke the 'Sublime'—an overwhelming aesthetic sensation combining awe, wonder, and existential insignificance in the presence of untamed nature. Towering alpine peaks, churning sea tempests, and vast ruins served as visual metaphors for the limits of human reason.",
+        "text": "Based on Passage III (\"Romanticism & the Sublime in Landscape\"), the primary purpose of the text is to:",
         "options": [
-            "is a major source of tourism revenue for the state.",
-            "is likely to be entirely submerged by rising sea levels.",
-            "is more vulnerable to extreme weather than North Florida.",
-            "is central to agricultural production in Florida."
+            "criticize traditional approaches while advocating for immediate reform.",
+            "examine the intricate relationship between romanticism & the sublime in landscape and its broader significance.",
+            "provide a purely statistical timeline of historical events.",
+            "argue that modern technological advancements have rendered past practices obsolete."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"is a major source of tourism revenue for the state.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage III\n\nsocial science: This passage discusses challenges facing Florida’s two largest economic sectors due to climate change.\n\n\n\n\n\n\n\n\nEvery state in the U.S. relies on at least one\n\n\n\nor two industries to drive its economic growth.\n\n\n\nBoasting a top-five economy among the 50 states,\n\n\n\nFlorida thrives on its tourism industry and\n\n\n5\nagricultural production. Recent climate change\n\n\n\nreports are a cause for concern for the policymakers\n\n\n\nwho want to keep the state on its current upward\n\n\n\neconomic trajectory. How serious are the threats\n\n\n\nthat the state faces, and can anything be done to\n\n\n10\nstave off the effects of climate change before they\n\n\n\nirreparably damagethe Floridian economy?\n\n\n\nThe National Climate Assessment, a government-\n\n\n\nmandated report released every four years,\n\n\n\nreferences South Florida frequently as a locale\n\n\n15\nthat is likely to experience the worsening effects\n\n\n\nof climate change sooner rather than later. In\n\n\n\nSeptember 2017, for example, Hurricane Irma\n\n\n\nwreaked havoc on large swaths of the Florida\n\n\n\ncoastline when it made landfall in the Florida\n\n\n20\nKeys; economists put the price tag for Irma at $50\n\n\n\nbillion, making it the costliest hurricane in Florida’s\n\n\n\nhistory. It is estimated that if Irma had made a\n\n\n\nmore direct hit on Miami, Florida’s second-most\n\n\n\npopular tourist destination, the damage would have\n\n\n25\nbeen closer to $200 billion. Many scientists feel that\n\n\n\nrising sea levels are making areas like Miami and\n\n\n\nOrlando increasingly vulnerable to suchcatastrophic\n\n\n\nweather events.\n\n\n\nAnother top tourist attraction in Florida, the\n\n\n\nEverglades, is already experiencing a reduction\n\n\n\nin size due to a combination of rising sea levels\n\n\n\nand serious weather events. Large sections of the\n\n\n\nEverglades are less than three feet above sea level,\n\n\n\nand soon many of the low-lying regions will be\n\n\n35\ncompletely submerged. This does not bode well for\n\n\n\nthe over one million visitors who make the trek to\n\n\n\nthe national park each year nor for the more than\n\n\n\n$20 million in revenue that the Everglades National\n\n\n\nPark generates annually. In addition, the sea level\n\n\n40\nrise causes salt water to push further inland and\n\n\n\nupstream, which endangers not only tourism but\n\n\n\nalso the drinking water of several communities.\n\n\n\nOn a peninsula like Florida, it seems ironic\n\n\n\nthat a lack of water could become an issue, but\n\n\n45\nan Environmental Protection Agency report\n\n\n\npublished in 2016 pointed to a lack of irrigation due\n\n\n\nto warmer temperatures as a potential downside\n\n\n\nof a longer growing season. Florida relies on\n\n\n\ngroundwater pumped from permeable underground\n\n\n50\naquifers, and Florida farms consume nearly half of\n\n\n\nthe state’s public water supply. Citrus fruits require\n\n\n\nsubstantial amounts of irrigation to maintain crop\n\n\n\nsize; a 2003 agriculture study found that a 20%\n\n\n\nreduction in irrigation resulted in significant losses\n\n\n55\nfor citrus crops. The citrus fruit industry in Florida\n\n\n\nis a $10 billion industry, so any negative trends\n\n\n\nhave a direct impact on Florida’s overall economic\n\n\n\nhealth.\n\n\n\nClimate change has an impact on the pro-\n\n\n60\nduce side of Florida’s agriculture as well as the\n\n\n\nlivestock side; although it makes up a smaller\n\n\n\nportion of Florida’s $120 billion in agricultural\n\n\n\nrevenue than the citrus industry, the livestock\n\n\n\nindustry exports cattle, calves, milk, poultry, and\n\n\n65\neggs both nationally and internationally. One\n\n\n\nproblem that arises with livestock as a result of\n\n\n\nwarmer temperatures is a reduction in productivity\n\n\n\nbecause of metabolic disruption caused by heat\n\n\n\nstress. The livestock industry also relies on the\n\n\n70\nextensive perennial grasslands of the region, which\n\n\n\nhave degraded in quality because of the greater\n\n\n\nfrequency of severe weather events. Additionally, the\n\n\n\ncombination of temperature and rainfall increases\n\n\n\nhave led to greater instances of livestock diseases\n\n\n75\nlike the West Nile virus; the increase in humidity\n\n\n\nleads directly to larger mosquito populations.\n\n\n\nWith so many challenges facing their state,\n\n\n\nFloridians are taking a proactive approach to\n\n\n\ncombating some of the consequences of climate\n\n\n80\nchange. In Miami, lawmakers are considering\n\n\n\nsome rather unconventional recommendations. For\n\n\n\nexample, a group of Harvard students presented\n\n\n\nMiami Beach leaders with two unique options\n\n\n\nto help adapt to rising seas: concrete cisterns\n\n\n85\nstrategically placed on roofs throughout the city\n\n\n\nto capture rainwater, and “sacrificial floors”\n\n\n\ndesigned to absorb excess water before it reaches the\n\n\n\ninhabited floors. Researchers are encouraging the\n\n\n\nSouth Florida Water Management District to change\n\n\n90\ntheir timetable for increasing freshwater flow to\n\n\n\nthe Everglades to maintain the level of freshwater\n\n\n\nhigher than sea level. Farmers are investing in\n\n\n\nmicro-surface and subsurface drip irrigation\n\n\n\nsystems to reduce the overall volume of water\n\n\n95\nneeded to maintain their crops and making the\n\n\n\nmove to mixed crop-livestock farms, as studies have\n\n\n\nshown this farming style to be mutually beneficial\n\n\n\nto both crops and livestock.\n\n\n\nWhile a complete reversal of the consequences\n\n\n100\nof climate change seems improbable, Floridians\n\n\n\ncan be encouraged by the fact that leaders in their\n\n\n\nstate are taking some pragmatic steps to cope with\n\n\n\nthe changes. Furthermore, as those policymakers\n\n\n\nlook to protect the sectors that have long served\n\n\n105\nas the foundation of Florida’s economy, there is\n\n\n\nalso a push to continue to diversify. International\n\n\n\ntrade—Florida is already one of the largest export\n\n\n\nstates—seems an ideal sector to expand with the\n\n\n\nincreasingly globalized nature of economic systems.\n\n\n110\nDespite the challenges, Florida is preparing to\n\n\n\nweather the storm of climate change as it has\n\n\n\nweathered so many storms before."
+        "answer": 1,
+        "explanation": "Correct Answer: \"examine the intricate relationship between romanticism & the sublime in landscape and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Romanticism & the Sublime in Landscape\"."
     },
     {
         "id": 115,
         "section": "reading",
-        "topic": "Detail",
-        "text": "The passage makes clear that the main threat climate change poses to the Everglades is:",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Romanticism & the Sublime in Landscape\"\n\nRomantic landscape painters sought to evoke the 'Sublime'—an overwhelming aesthetic sensation combining awe, wonder, and existential insignificance in the presence of untamed nature. Towering alpine peaks, churning sea tempests, and vast ruins served as visual metaphors for the limits of human reason.",
+        "text": "According to the discussion in Passage III (\"Romanticism & the Sublime in Landscape\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "contamination; salt water pushed inland will poison fresh water sources.",
-            "submersion; rising sea levels will put lands at low elevations under water.",
-            "habitat destruction; extreme weather will degrade the park’s lush vegetation.",
-            "isolation; changes to the landscape will cut the park off from visitors."
+            "It was achieved without significant labor or long-term dedication.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
+            "It relies exclusively on automated machinery rather than human expertise."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"submersion; rising sea levels will put lands at low elevations under water.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage III\n\nsocial science: This passage discusses challenges facing Florida’s two largest economic sectors due to climate change.\n\n\n\n\n\n\n\n\nEvery state in the U.S. relies on at least one\n\n\n\nor two industries to drive its economic growth.\n\n\n\nBoasting a top-five economy among the 50 states,\n\n\n\nFlorida thrives on its tourism industry and\n\n\n5\nagricultural production. Recent climate change\n\n\n\nreports are a cause for concern for the policymakers\n\n\n\nwho want to keep the state on its current upward\n\n\n\neconomic trajectory. How serious are the threats\n\n\n\nthat the state faces, and can anything be done to\n\n\n10\nstave off the effects of climate change before they\n\n\n\nirreparably damagethe Floridian economy?\n\n\n\nThe National Climate Assessment, a government-\n\n\n\nmandated report released every four years,\n\n\n\nreferences South Florida frequently as a locale\n\n\n15\nthat is likely to experience the worsening effects\n\n\n\nof climate change sooner rather than later. In\n\n\n\nSeptember 2017, for example, Hurricane Irma\n\n\n\nwreaked havoc on large swaths of the Florida\n\n\n\ncoastline when it made landfall in the Florida\n\n\n20\nKeys; economists put the price tag for Irma at $50\n\n\n\nbillion, making it the costliest hurricane in Florida’s\n\n\n\nhistory. It is estimated that if Irma had made a\n\n\n\nmore direct hit on Miami, Florida’s second-most\n\n\n\npopular tourist destination, the damage would have\n\n\n25\nbeen closer to $200 billion. Many scientists feel that\n\n\n\nrising sea levels are making areas like Miami and\n\n\n\nOrlando increasingly vulnerable to suchcatastrophic\n\n\n\nweather events.\n\n\n\nAnother top tourist attraction in Florida, the\n\n\n\nEverglades, is already experiencing a reduction\n\n\n\nin size due to a combination of rising sea levels\n\n\n\nand serious weather events. Large sections of the\n\n\n\nEverglades are less than three feet above sea level,\n\n\n\nand soon many of the low-lying regions will be\n\n\n35\ncompletely submerged. This does not bode well for\n\n\n\nthe over one million visitors who make the trek to\n\n\n\nthe national park each year nor for the more than\n\n\n\n$20 million in revenue that the Everglades National\n\n\n\nPark generates annually. In addition, the sea level\n\n\n40\nrise causes salt water to push further inland and\n\n\n\nupstream, which endangers not only tourism but\n\n\n\nalso the drinking water of several communities.\n\n\n\nOn a peninsula like Florida, it seems ironic\n\n\n\nthat a lack of water could become an issue, but\n\n\n45\nan Environmental Protection Agency report\n\n\n\npublished in 2016 pointed to a lack of irrigation due\n\n\n\nto warmer temperatures as a potential downside\n\n\n\nof a longer growing season. Florida relies on\n\n\n\ngroundwater pumped from permeable underground\n\n\n50\naquifers, and Florida farms consume nearly half of\n\n\n\nthe state’s public water supply. Citrus fruits require\n\n\n\nsubstantial amounts of irrigation to maintain crop\n\n\n\nsize; a 2003 agriculture study found that a 20%\n\n\n\nreduction in irrigation resulted in significant losses\n\n\n55\nfor citrus crops. The citrus fruit industry in Florida\n\n\n\nis a $10 billion industry, so any negative trends\n\n\n\nhave a direct impact on Florida’s overall economic\n\n\n\nhealth.\n\n\n\nClimate change has an impact on the pro-\n\n\n60\nduce side of Florida’s agriculture as well as the\n\n\n\nlivestock side; although it makes up a smaller\n\n\n\nportion of Florida’s $120 billion in agricultural\n\n\n\nrevenue than the citrus industry, the livestock\n\n\n\nindustry exports cattle, calves, milk, poultry, and\n\n\n65\neggs both nationally and internationally. One\n\n\n\nproblem that arises with livestock as a result of\n\n\n\nwarmer temperatures is a reduction in productivity\n\n\n\nbecause of metabolic disruption caused by heat\n\n\n\nstress. The livestock industry also relies on the\n\n\n70\nextensive perennial grasslands of the region, which\n\n\n\nhave degraded in quality because of the greater\n\n\n\nfrequency of severe weather events. Additionally, the\n\n\n\ncombination of temperature and rainfall increases\n\n\n\nhave led to greater instances of livestock diseases\n\n\n75\nlike the West Nile virus; the increase in humidity\n\n\n\nleads directly to larger mosquito populations.\n\n\n\nWith so many challenges facing their state,\n\n\n\nFloridians are taking a proactive approach to\n\n\n\ncombating some of the consequences of climate\n\n\n80\nchange. In Miami, lawmakers are considering\n\n\n\nsome rather unconventional recommendations. For\n\n\n\nexample, a group of Harvard students presented\n\n\n\nMiami Beach leaders with two unique options\n\n\n\nto help adapt to rising seas: concrete cisterns\n\n\n85\nstrategically placed on roofs throughout the city\n\n\n\nto capture rainwater, and “sacrificial floors”\n\n\n\ndesigned to absorb excess water before it reaches the\n\n\n\ninhabited floors. Researchers are encouraging the\n\n\n\nSouth Florida Water Management District to change\n\n\n90\ntheir timetable for increasing freshwater flow to\n\n\n\nthe Everglades to maintain the level of freshwater\n\n\n\nhigher than sea level. Farmers are investing in\n\n\n\nmicro-surface and subsurface drip irrigation\n\n\n\nsystems to reduce the overall volume of water\n\n\n95\nneeded to maintain their crops and making the\n\n\n\nmove to mixed crop-livestock farms, as studies have\n\n\n\nshown this farming style to be mutually beneficial\n\n\n\nto both crops and livestock.\n\n\n\nWhile a complete reversal of the consequences\n\n\n100\nof climate change seems improbable, Floridians\n\n\n\ncan be encouraged by the fact that leaders in their\n\n\n\nstate are taking some pragmatic steps to cope with\n\n\n\nthe changes. Furthermore, as those policymakers\n\n\n\nlook to protect the sectors that have long served\n\n\n105\nas the foundation of Florida’s economy, there is\n\n\n\nalso a push to continue to diversify. International\n\n\n\ntrade—Florida is already one of the largest export\n\n\n\nstates—seems an ideal sector to expand with the\n\n\n\nincreasingly globalized nature of economic systems.\n\n\n110\nDespite the challenges, Florida is preparing to\n\n\n\nweather the storm of climate change as it has\n\n\n\nweathered so many storms before."
+        "answer": 2,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 116,
         "section": "reading",
-        "topic": "Function",
-        "text": "The author references the 2016 Environmental Protection Agency report (lines 45–46) and the 2003 study (lines 53–55) primarily in order to:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Romanticism & the Sublime in Landscape\"\n\nRomantic landscape painters sought to evoke the 'Sublime'—an overwhelming aesthetic sensation combining awe, wonder, and existential insignificance in the presence of untamed nature. Towering alpine peaks, churning sea tempests, and vast ruins served as visual metaphors for the limits of human reason.",
+        "text": "In the context of Passage III (\"Romanticism & the Sublime in Landscape\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "provide specific numerical evidence for the cost of climate change.",
-            "counter an argument that contradicts the author’s point.",
-            "open a discussion about their long-term implications for Florida.",
-            "add support for the paragraph’s claims from authoritative sources."
+            "dismissive and cynical.",
+            "detached and uninterested.",
+            "confrontational and hostile.",
+            "reverent and analytical."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"add support for the paragraph’s claims from authoritative sources.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage III\n\nsocial science: This passage discusses challenges facing Florida’s two largest economic sectors due to climate change.\n\n\n\n\n\n\n\n\nEvery state in the U.S. relies on at least one\n\n\n\nor two industries to drive its economic growth.\n\n\n\nBoasting a top-five economy among the 50 states,\n\n\n\nFlorida thrives on its tourism industry and\n\n\n5\nagricultural production. Recent climate change\n\n\n\nreports are a cause for concern for the policymakers\n\n\n\nwho want to keep the state on its current upward\n\n\n\neconomic trajectory. How serious are the threats\n\n\n\nthat the state faces, and can anything be done to\n\n\n10\nstave off the effects of climate change before they\n\n\n\nirreparably damagethe Floridian economy?\n\n\n\nThe National Climate Assessment, a government-\n\n\n\nmandated report released every four years,\n\n\n\nreferences South Florida frequently as a locale\n\n\n15\nthat is likely to experience the worsening effects\n\n\n\nof climate change sooner rather than later. In\n\n\n\nSeptember 2017, for example, Hurricane Irma\n\n\n\nwreaked havoc on large swaths of the Florida\n\n\n\ncoastline when it made landfall in the Florida\n\n\n20\nKeys; economists put the price tag for Irma at $50\n\n\n\nbillion, making it the costliest hurricane in Florida’s\n\n\n\nhistory. It is estimated that if Irma had made a\n\n\n\nmore direct hit on Miami, Florida’s second-most\n\n\n\npopular tourist destination, the damage would have\n\n\n25\nbeen closer to $200 billion. Many scientists feel that\n\n\n\nrising sea levels are making areas like Miami and\n\n\n\nOrlando increasingly vulnerable to suchcatastrophic\n\n\n\nweather events.\n\n\n\nAnother top tourist attraction in Florida, the\n\n\n\nEverglades, is already experiencing a reduction\n\n\n\nin size due to a combination of rising sea levels\n\n\n\nand serious weather events. Large sections of the\n\n\n\nEverglades are less than three feet above sea level,\n\n\n\nand soon many of the low-lying regions will be\n\n\n35\ncompletely submerged. This does not bode well for\n\n\n\nthe over one million visitors who make the trek to\n\n\n\nthe national park each year nor for the more than\n\n\n\n$20 million in revenue that the Everglades National\n\n\n\nPark generates annually. In addition, the sea level\n\n\n40\nrise causes salt water to push further inland and\n\n\n\nupstream, which endangers not only tourism but\n\n\n\nalso the drinking water of several communities.\n\n\n\nOn a peninsula like Florida, it seems ironic\n\n\n\nthat a lack of water could become an issue, but\n\n\n45\nan Environmental Protection Agency report\n\n\n\npublished in 2016 pointed to a lack of irrigation due\n\n\n\nto warmer temperatures as a potential downside\n\n\n\nof a longer growing season. Florida relies on\n\n\n\ngroundwater pumped from permeable underground\n\n\n50\naquifers, and Florida farms consume nearly half of\n\n\n\nthe state’s public water supply. Citrus fruits require\n\n\n\nsubstantial amounts of irrigation to maintain crop\n\n\n\nsize; a 2003 agriculture study found that a 20%\n\n\n\nreduction in irrigation resulted in significant losses\n\n\n55\nfor citrus crops. The citrus fruit industry in Florida\n\n\n\nis a $10 billion industry, so any negative trends\n\n\n\nhave a direct impact on Florida’s overall economic\n\n\n\nhealth.\n\n\n\nClimate change has an impact on the pro-\n\n\n60\nduce side of Florida’s agriculture as well as the\n\n\n\nlivestock side; although it makes up a smaller\n\n\n\nportion of Florida’s $120 billion in agricultural\n\n\n\nrevenue than the citrus industry, the livestock\n\n\n\nindustry exports cattle, calves, milk, poultry, and\n\n\n65\neggs both nationally and internationally. One\n\n\n\nproblem that arises with livestock as a result of\n\n\n\nwarmer temperatures is a reduction in productivity\n\n\n\nbecause of metabolic disruption caused by heat\n\n\n\nstress. The livestock industry also relies on the\n\n\n70\nextensive perennial grasslands of the region, which\n\n\n\nhave degraded in quality because of the greater\n\n\n\nfrequency of severe weather events. Additionally, the\n\n\n\ncombination of temperature and rainfall increases\n\n\n\nhave led to greater instances of livestock diseases\n\n\n75\nlike the West Nile virus; the increase in humidity\n\n\n\nleads directly to larger mosquito populations.\n\n\n\nWith so many challenges facing their state,\n\n\n\nFloridians are taking a proactive approach to\n\n\n\ncombating some of the consequences of climate\n\n\n80\nchange. In Miami, lawmakers are considering\n\n\n\nsome rather unconventional recommendations. For\n\n\n\nexample, a group of Harvard students presented\n\n\n\nMiami Beach leaders with two unique options\n\n\n\nto help adapt to rising seas: concrete cisterns\n\n\n85\nstrategically placed on roofs throughout the city\n\n\n\nto capture rainwater, and “sacrificial floors”\n\n\n\ndesigned to absorb excess water before it reaches the\n\n\n\ninhabited floors. Researchers are encouraging the\n\n\n\nSouth Florida Water Management District to change\n\n\n90\ntheir timetable for increasing freshwater flow to\n\n\n\nthe Everglades to maintain the level of freshwater\n\n\n\nhigher than sea level. Farmers are investing in\n\n\n\nmicro-surface and subsurface drip irrigation\n\n\n\nsystems to reduce the overall volume of water\n\n\n95\nneeded to maintain their crops and making the\n\n\n\nmove to mixed crop-livestock farms, as studies have\n\n\n\nshown this farming style to be mutually beneficial\n\n\n\nto both crops and livestock.\n\n\n\nWhile a complete reversal of the consequences\n\n\n100\nof climate change seems improbable, Floridians\n\n\n\ncan be encouraged by the fact that leaders in their\n\n\n\nstate are taking some pragmatic steps to cope with\n\n\n\nthe changes. Furthermore, as those policymakers\n\n\n\nlook to protect the sectors that have long served\n\n\n105\nas the foundation of Florida’s economy, there is\n\n\n\nalso a push to continue to diversify. International\n\n\n\ntrade—Florida is already one of the largest export\n\n\n\nstates—seems an ideal sector to expand with the\n\n\n\nincreasingly globalized nature of economic systems.\n\n\n110\nDespite the challenges, Florida is preparing to\n\n\n\nweather the storm of climate change as it has\n\n\n\nweathered so many storms before."
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 117,
         "section": "reading",
-        "topic": "Detail",
-        "text": "The passage states that compared to the citrus industry, the livestock industry in Florida:",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Romanticism & the Sublime in Landscape\"\n\nRomantic landscape painters sought to evoke the 'Sublime'—an overwhelming aesthetic sensation combining awe, wonder, and existential insignificance in the presence of untamed nature. Towering alpine peaks, churning sea tempests, and vast ruins served as visual metaphors for the limits of human reason.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage III (\"Romanticism & the Sublime in Landscape\") that:",
         "options": [
-            "consumes more water.",
-            "creates less pollution.",
-            "exports more products.",
-            "generates less income."
+            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "external economic conditions had no impact on the development of the field.",
+            "the subject will likely lose relevance within the coming decade."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"generates less income.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage III\n\nsocial science: This passage discusses challenges facing Florida’s two largest economic sectors due to climate change.\n\n\n\n\n\n\n\n\nEvery state in the U.S. relies on at least one\n\n\n\nor two industries to drive its economic growth.\n\n\n\nBoasting a top-five economy among the 50 states,\n\n\n\nFlorida thrives on its tourism industry and\n\n\n5\nagricultural production. Recent climate change\n\n\n\nreports are a cause for concern for the policymakers\n\n\n\nwho want to keep the state on its current upward\n\n\n\neconomic trajectory. How serious are the threats\n\n\n\nthat the state faces, and can anything be done to\n\n\n10\nstave off the effects of climate change before they\n\n\n\nirreparably damagethe Floridian economy?\n\n\n\nThe National Climate Assessment, a government-\n\n\n\nmandated report released every four years,\n\n\n\nreferences South Florida frequently as a locale\n\n\n15\nthat is likely to experience the worsening effects\n\n\n\nof climate change sooner rather than later. In\n\n\n\nSeptember 2017, for example, Hurricane Irma\n\n\n\nwreaked havoc on large swaths of the Florida\n\n\n\ncoastline when it made landfall in the Florida\n\n\n20\nKeys; economists put the price tag for Irma at $50\n\n\n\nbillion, making it the costliest hurricane in Florida’s\n\n\n\nhistory. It is estimated that if Irma had made a\n\n\n\nmore direct hit on Miami, Florida’s second-most\n\n\n\npopular tourist destination, the damage would have\n\n\n25\nbeen closer to $200 billion. Many scientists feel that\n\n\n\nrising sea levels are making areas like Miami and\n\n\n\nOrlando increasingly vulnerable to suchcatastrophic\n\n\n\nweather events.\n\n\n\nAnother top tourist attraction in Florida, the\n\n\n\nEverglades, is already experiencing a reduction\n\n\n\nin size due to a combination of rising sea levels\n\n\n\nand serious weather events. Large sections of the\n\n\n\nEverglades are less than three feet above sea level,\n\n\n\nand soon many of the low-lying regions will be\n\n\n35\ncompletely submerged. This does not bode well for\n\n\n\nthe over one million visitors who make the trek to\n\n\n\nthe national park each year nor for the more than\n\n\n\n$20 million in revenue that the Everglades National\n\n\n\nPark generates annually. In addition, the sea level\n\n\n40\nrise causes salt water to push further inland and\n\n\n\nupstream, which endangers not only tourism but\n\n\n\nalso the drinking water of several communities.\n\n\n\nOn a peninsula like Florida, it seems ironic\n\n\n\nthat a lack of water could become an issue, but\n\n\n45\nan Environmental Protection Agency report\n\n\n\npublished in 2016 pointed to a lack of irrigation due\n\n\n\nto warmer temperatures as a potential downside\n\n\n\nof a longer growing season. Florida relies on\n\n\n\ngroundwater pumped from permeable underground\n\n\n50\naquifers, and Florida farms consume nearly half of\n\n\n\nthe state’s public water supply. Citrus fruits require\n\n\n\nsubstantial amounts of irrigation to maintain crop\n\n\n\nsize; a 2003 agriculture study found that a 20%\n\n\n\nreduction in irrigation resulted in significant losses\n\n\n55\nfor citrus crops. The citrus fruit industry in Florida\n\n\n\nis a $10 billion industry, so any negative trends\n\n\n\nhave a direct impact on Florida’s overall economic\n\n\n\nhealth.\n\n\n\nClimate change has an impact on the pro-\n\n\n60\nduce side of Florida’s agriculture as well as the\n\n\n\nlivestock side; although it makes up a smaller\n\n\n\nportion of Florida’s $120 billion in agricultural\n\n\n\nrevenue than the citrus industry, the livestock\n\n\n\nindustry exports cattle, calves, milk, poultry, and\n\n\n65\neggs both nationally and internationally. One\n\n\n\nproblem that arises with livestock as a result of\n\n\n\nwarmer temperatures is a reduction in productivity\n\n\n\nbecause of metabolic disruption caused by heat\n\n\n\nstress. The livestock industry also relies on the\n\n\n70\nextensive perennial grasslands of the region, which\n\n\n\nhave degraded in quality because of the greater\n\n\n\nfrequency of severe weather events. Additionally, the\n\n\n\ncombination of temperature and rainfall increases\n\n\n\nhave led to greater instances of livestock diseases\n\n\n75\nlike the West Nile virus; the increase in humidity\n\n\n\nleads directly to larger mosquito populations.\n\n\n\nWith so many challenges facing their state,\n\n\n\nFloridians are taking a proactive approach to\n\n\n\ncombating some of the consequences of climate\n\n\n80\nchange. In Miami, lawmakers are considering\n\n\n\nsome rather unconventional recommendations. For\n\n\n\nexample, a group of Harvard students presented\n\n\n\nMiami Beach leaders with two unique options\n\n\n\nto help adapt to rising seas: concrete cisterns\n\n\n85\nstrategically placed on roofs throughout the city\n\n\n\nto capture rainwater, and “sacrificial floors”\n\n\n\ndesigned to absorb excess water before it reaches the\n\n\n\ninhabited floors. Researchers are encouraging the\n\n\n\nSouth Florida Water Management District to change\n\n\n90\ntheir timetable for increasing freshwater flow to\n\n\n\nthe Everglades to maintain the level of freshwater\n\n\n\nhigher than sea level. Farmers are investing in\n\n\n\nmicro-surface and subsurface drip irrigation\n\n\n\nsystems to reduce the overall volume of water\n\n\n95\nneeded to maintain their crops and making the\n\n\n\nmove to mixed crop-livestock farms, as studies have\n\n\n\nshown this farming style to be mutually beneficial\n\n\n\nto both crops and livestock.\n\n\n\nWhile a complete reversal of the consequences\n\n\n100\nof climate change seems improbable, Floridians\n\n\n\ncan be encouraged by the fact that leaders in their\n\n\n\nstate are taking some pragmatic steps to cope with\n\n\n\nthe changes. Furthermore, as those policymakers\n\n\n\nlook to protect the sectors that have long served\n\n\n105\nas the foundation of Florida’s economy, there is\n\n\n\nalso a push to continue to diversify. International\n\n\n\ntrade—Florida is already one of the largest export\n\n\n\nstates—seems an ideal sector to expand with the\n\n\n\nincreasingly globalized nature of economic systems.\n\n\n110\nDespite the challenges, Florida is preparing to\n\n\n\nweather the storm of climate change as it has\n\n\n\nweathered so many storms before."
+        "answer": 0,
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 118,
         "section": "reading",
-        "topic": "Detail",
-        "text": "According to the passage, how might climate change negatively impact the livestock industry in Florida?",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Romanticism & the Sublime in Landscape\"\n\nRomantic landscape painters sought to evoke the 'Sublime'—an overwhelming aesthetic sensation combining awe, wonder, and existential insignificance in the presence of untamed nature. Towering alpine peaks, churning sea tempests, and vast ruins served as visual metaphors for the limits of human reason.",
+        "text": "The structural development of Passage III (\"Romanticism & the Sublime in Landscape\") serves primarily to:",
         "options": [
-            "Decreased crop yields would mean less food for the animals.",
-            "Higher temperatures would put a strain on the animals’ bodies.",
-            "Animals exposed to poor weather would be more likely to become ill.",
-            "Water shortages would cause the animals to become dehydrated."
+            "open with a refutation of an established scientific consensus.",
+            "establish context before exploring specific examples and deeper philosophical implications.",
+            "present a chronological series of unrelated anecdotes.",
+            "compare two equally viable opposing hypotheses."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"Higher temperatures would put a strain on the animals’ bodies.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage III\n\nsocial science: This passage discusses challenges facing Florida’s two largest economic sectors due to climate change.\n\n\n\n\n\n\n\n\nEvery state in the U.S. relies on at least one\n\n\n\nor two industries to drive its economic growth.\n\n\n\nBoasting a top-five economy among the 50 states,\n\n\n\nFlorida thrives on its tourism industry and\n\n\n5\nagricultural production. Recent climate change\n\n\n\nreports are a cause for concern for the policymakers\n\n\n\nwho want to keep the state on its current upward\n\n\n\neconomic trajectory. How serious are the threats\n\n\n\nthat the state faces, and can anything be done to\n\n\n10\nstave off the effects of climate change before they\n\n\n\nirreparably damagethe Floridian economy?\n\n\n\nThe National Climate Assessment, a government-\n\n\n\nmandated report released every four years,\n\n\n\nreferences South Florida frequently as a locale\n\n\n15\nthat is likely to experience the worsening effects\n\n\n\nof climate change sooner rather than later. In\n\n\n\nSeptember 2017, for example, Hurricane Irma\n\n\n\nwreaked havoc on large swaths of the Florida\n\n\n\ncoastline when it made landfall in the Florida\n\n\n20\nKeys; economists put the price tag for Irma at $50\n\n\n\nbillion, making it the costliest hurricane in Florida’s\n\n\n\nhistory. It is estimated that if Irma had made a\n\n\n\nmore direct hit on Miami, Florida’s second-most\n\n\n\npopular tourist destination, the damage would have\n\n\n25\nbeen closer to $200 billion. Many scientists feel that\n\n\n\nrising sea levels are making areas like Miami and\n\n\n\nOrlando increasingly vulnerable to suchcatastrophic\n\n\n\nweather events.\n\n\n\nAnother top tourist attraction in Florida, the\n\n\n\nEverglades, is already experiencing a reduction\n\n\n\nin size due to a combination of rising sea levels\n\n\n\nand serious weather events. Large sections of the\n\n\n\nEverglades are less than three feet above sea level,\n\n\n\nand soon many of the low-lying regions will be\n\n\n35\ncompletely submerged. This does not bode well for\n\n\n\nthe over one million visitors who make the trek to\n\n\n\nthe national park each year nor for the more than\n\n\n\n$20 million in revenue that the Everglades National\n\n\n\nPark generates annually. In addition, the sea level\n\n\n40\nrise causes salt water to push further inland and\n\n\n\nupstream, which endangers not only tourism but\n\n\n\nalso the drinking water of several communities.\n\n\n\nOn a peninsula like Florida, it seems ironic\n\n\n\nthat a lack of water could become an issue, but\n\n\n45\nan Environmental Protection Agency report\n\n\n\npublished in 2016 pointed to a lack of irrigation due\n\n\n\nto warmer temperatures as a potential downside\n\n\n\nof a longer growing season. Florida relies on\n\n\n\ngroundwater pumped from permeable underground\n\n\n50\naquifers, and Florida farms consume nearly half of\n\n\n\nthe state’s public water supply. Citrus fruits require\n\n\n\nsubstantial amounts of irrigation to maintain crop\n\n\n\nsize; a 2003 agriculture study found that a 20%\n\n\n\nreduction in irrigation resulted in significant losses\n\n\n55\nfor citrus crops. The citrus fruit industry in Florida\n\n\n\nis a $10 billion industry, so any negative trends\n\n\n\nhave a direct impact on Florida’s overall economic\n\n\n\nhealth.\n\n\n\nClimate change has an impact on the pro-\n\n\n60\nduce side of Florida’s agriculture as well as the\n\n\n\nlivestock side; although it makes up a smaller\n\n\n\nportion of Florida’s $120 billion in agricultural\n\n\n\nrevenue than the citrus industry, the livestock\n\n\n\nindustry exports cattle, calves, milk, poultry, and\n\n\n65\neggs both nationally and internationally. One\n\n\n\nproblem that arises with livestock as a result of\n\n\n\nwarmer temperatures is a reduction in productivity\n\n\n\nbecause of metabolic disruption caused by heat\n\n\n\nstress. The livestock industry also relies on the\n\n\n70\nextensive perennial grasslands of the region, which\n\n\n\nhave degraded in quality because of the greater\n\n\n\nfrequency of severe weather events. Additionally, the\n\n\n\ncombination of temperature and rainfall increases\n\n\n\nhave led to greater instances of livestock diseases\n\n\n75\nlike the West Nile virus; the increase in humidity\n\n\n\nleads directly to larger mosquito populations.\n\n\n\nWith so many challenges facing their state,\n\n\n\nFloridians are taking a proactive approach to\n\n\n\ncombating some of the consequences of climate\n\n\n80\nchange. In Miami, lawmakers are considering\n\n\n\nsome rather unconventional recommendations. For\n\n\n\nexample, a group of Harvard students presented\n\n\n\nMiami Beach leaders with two unique options\n\n\n\nto help adapt to rising seas: concrete cisterns\n\n\n85\nstrategically placed on roofs throughout the city\n\n\n\nto capture rainwater, and “sacrificial floors”\n\n\n\ndesigned to absorb excess water before it reaches the\n\n\n\ninhabited floors. Researchers are encouraging the\n\n\n\nSouth Florida Water Management District to change\n\n\n90\ntheir timetable for increasing freshwater flow to\n\n\n\nthe Everglades to maintain the level of freshwater\n\n\n\nhigher than sea level. Farmers are investing in\n\n\n\nmicro-surface and subsurface drip irrigation\n\n\n\nsystems to reduce the overall volume of water\n\n\n95\nneeded to maintain their crops and making the\n\n\n\nmove to mixed crop-livestock farms, as studies have\n\n\n\nshown this farming style to be mutually beneficial\n\n\n\nto both crops and livestock.\n\n\n\nWhile a complete reversal of the consequences\n\n\n100\nof climate change seems improbable, Floridians\n\n\n\ncan be encouraged by the fact that leaders in their\n\n\n\nstate are taking some pragmatic steps to cope with\n\n\n\nthe changes. Furthermore, as those policymakers\n\n\n\nlook to protect the sectors that have long served\n\n\n105\nas the foundation of Florida’s economy, there is\n\n\n\nalso a push to continue to diversify. International\n\n\n\ntrade—Florida is already one of the largest export\n\n\n\nstates—seems an ideal sector to expand with the\n\n\n\nincreasingly globalized nature of economic systems.\n\n\n110\nDespite the challenges, Florida is preparing to\n\n\n\nweather the storm of climate change as it has\n\n\n\nweathered so many storms before."
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 119,
         "section": "reading",
-        "topic": "Global",
-        "text": "Which of the following best describes the purpose of the sixth paragraph?",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Romanticism & the Sublime in Landscape\"\n\nRomantic landscape painters sought to evoke the 'Sublime'—an overwhelming aesthetic sensation combining awe, wonder, and existential insignificance in the presence of untamed nature. Towering alpine peaks, churning sea tempests, and vast ruins served as visual metaphors for the limits of human reason.",
+        "text": "In Passage III (\"Romanticism & the Sublime in Landscape\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "It outlines suggested infrastructure adaptations to be applied throughout Florida.",
-            "It summarizes the primary challenges facing Florida’s economy due to climate change.",
-            "It explains some of the ways Floridians are planning to address problems caused by climate change.",
-            "It examines how to best direct water supplies in order to compensate for imbalances in rainfall."
+            "favorable political mandates enacted by municipal authorities.",
+            "sheer chance and fortuitous external interventions.",
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "hasty improvisation under urgent time constraints."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"It explains some of the ways Floridians are planning to address problems caused by climate change.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage III\n\nsocial science: This passage discusses challenges facing Florida’s two largest economic sectors due to climate change.\n\n\n\n\n\n\n\n\nEvery state in the U.S. relies on at least one\n\n\n\nor two industries to drive its economic growth.\n\n\n\nBoasting a top-five economy among the 50 states,\n\n\n\nFlorida thrives on its tourism industry and\n\n\n5\nagricultural production. Recent climate change\n\n\n\nreports are a cause for concern for the policymakers\n\n\n\nwho want to keep the state on its current upward\n\n\n\neconomic trajectory. How serious are the threats\n\n\n\nthat the state faces, and can anything be done to\n\n\n10\nstave off the effects of climate change before they\n\n\n\nirreparably damagethe Floridian economy?\n\n\n\nThe National Climate Assessment, a government-\n\n\n\nmandated report released every four years,\n\n\n\nreferences South Florida frequently as a locale\n\n\n15\nthat is likely to experience the worsening effects\n\n\n\nof climate change sooner rather than later. In\n\n\n\nSeptember 2017, for example, Hurricane Irma\n\n\n\nwreaked havoc on large swaths of the Florida\n\n\n\ncoastline when it made landfall in the Florida\n\n\n20\nKeys; economists put the price tag for Irma at $50\n\n\n\nbillion, making it the costliest hurricane in Florida’s\n\n\n\nhistory. It is estimated that if Irma had made a\n\n\n\nmore direct hit on Miami, Florida’s second-most\n\n\n\npopular tourist destination, the damage would have\n\n\n25\nbeen closer to $200 billion. Many scientists feel that\n\n\n\nrising sea levels are making areas like Miami and\n\n\n\nOrlando increasingly vulnerable to suchcatastrophic\n\n\n\nweather events.\n\n\n\nAnother top tourist attraction in Florida, the\n\n\n\nEverglades, is already experiencing a reduction\n\n\n\nin size due to a combination of rising sea levels\n\n\n\nand serious weather events. Large sections of the\n\n\n\nEverglades are less than three feet above sea level,\n\n\n\nand soon many of the low-lying regions will be\n\n\n35\ncompletely submerged. This does not bode well for\n\n\n\nthe over one million visitors who make the trek to\n\n\n\nthe national park each year nor for the more than\n\n\n\n$20 million in revenue that the Everglades National\n\n\n\nPark generates annually. In addition, the sea level\n\n\n40\nrise causes salt water to push further inland and\n\n\n\nupstream, which endangers not only tourism but\n\n\n\nalso the drinking water of several communities.\n\n\n\nOn a peninsula like Florida, it seems ironic\n\n\n\nthat a lack of water could become an issue, but\n\n\n45\nan Environmental Protection Agency report\n\n\n\npublished in 2016 pointed to a lack of irrigation due\n\n\n\nto warmer temperatures as a potential downside\n\n\n\nof a longer growing season. Florida relies on\n\n\n\ngroundwater pumped from permeable underground\n\n\n50\naquifers, and Florida farms consume nearly half of\n\n\n\nthe state’s public water supply. Citrus fruits require\n\n\n\nsubstantial amounts of irrigation to maintain crop\n\n\n\nsize; a 2003 agriculture study found that a 20%\n\n\n\nreduction in irrigation resulted in significant losses\n\n\n55\nfor citrus crops. The citrus fruit industry in Florida\n\n\n\nis a $10 billion industry, so any negative trends\n\n\n\nhave a direct impact on Florida’s overall economic\n\n\n\nhealth.\n\n\n\nClimate change has an impact on the pro-\n\n\n60\nduce side of Florida’s agriculture as well as the\n\n\n\nlivestock side; although it makes up a smaller\n\n\n\nportion of Florida’s $120 billion in agricultural\n\n\n\nrevenue than the citrus industry, the livestock\n\n\n\nindustry exports cattle, calves, milk, poultry, and\n\n\n65\neggs both nationally and internationally. One\n\n\n\nproblem that arises with livestock as a result of\n\n\n\nwarmer temperatures is a reduction in productivity\n\n\n\nbecause of metabolic disruption caused by heat\n\n\n\nstress. The livestock industry also relies on the\n\n\n70\nextensive perennial grasslands of the region, which\n\n\n\nhave degraded in quality because of the greater\n\n\n\nfrequency of severe weather events. Additionally, the\n\n\n\ncombination of temperature and rainfall increases\n\n\n\nhave led to greater instances of livestock diseases\n\n\n75\nlike the West Nile virus; the increase in humidity\n\n\n\nleads directly to larger mosquito populations.\n\n\n\nWith so many challenges facing their state,\n\n\n\nFloridians are taking a proactive approach to\n\n\n\ncombating some of the consequences of climate\n\n\n80\nchange. In Miami, lawmakers are considering\n\n\n\nsome rather unconventional recommendations. For\n\n\n\nexample, a group of Harvard students presented\n\n\n\nMiami Beach leaders with two unique options\n\n\n\nto help adapt to rising seas: concrete cisterns\n\n\n85\nstrategically placed on roofs throughout the city\n\n\n\nto capture rainwater, and “sacrificial floors”\n\n\n\ndesigned to absorb excess water before it reaches the\n\n\n\ninhabited floors. Researchers are encouraging the\n\n\n\nSouth Florida Water Management District to change\n\n\n90\ntheir timetable for increasing freshwater flow to\n\n\n\nthe Everglades to maintain the level of freshwater\n\n\n\nhigher than sea level. Farmers are investing in\n\n\n\nmicro-surface and subsurface drip irrigation\n\n\n\nsystems to reduce the overall volume of water\n\n\n95\nneeded to maintain their crops and making the\n\n\n\nmove to mixed crop-livestock farms, as studies have\n\n\n\nshown this farming style to be mutually beneficial\n\n\n\nto both crops and livestock.\n\n\n\nWhile a complete reversal of the consequences\n\n\n100\nof climate change seems improbable, Floridians\n\n\n\ncan be encouraged by the fact that leaders in their\n\n\n\nstate are taking some pragmatic steps to cope with\n\n\n\nthe changes. Furthermore, as those policymakers\n\n\n\nlook to protect the sectors that have long served\n\n\n105\nas the foundation of Florida’s economy, there is\n\n\n\nalso a push to continue to diversify. International\n\n\n\ntrade—Florida is already one of the largest export\n\n\n\nstates—seems an ideal sector to expand with the\n\n\n\nincreasingly globalized nature of economic systems.\n\n\n110\nDespite the challenges, Florida is preparing to\n\n\n\nweather the storm of climate change as it has\n\n\n\nweathered so many storms before."
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 120,
         "section": "reading",
-        "topic": "Detail",
-        "text": "According to the passage, how is the agriculture industry preparing to address problems caused by climate change?",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Romanticism & the Sublime in Landscape\"\n\nRomantic landscape painters sought to evoke the 'Sublime'—an overwhelming aesthetic sensation combining awe, wonder, and existential insignificance in the presence of untamed nature. Towering alpine peaks, churning sea tempests, and vast ruins served as visual metaphors for the limits of human reason.",
+        "text": "The author's perspective toward the evolution of Passage III (\"Romanticism & the Sublime in Landscape\") is best described as:",
         "options": [
-            "Farmers are replacing microsurface and subsurface drip irrigation with more efficient systems.",
-            "Industry associations are working to expand underground aquifers.",
-            "Farms are integrating crops and livestock to improve production of both.",
-            "Farmers are stepping up vaccinations of livestock to combat the spread of disease."
+            "skeptical of its claimed achievements.",
+            "strictly neutral and reporting raw data.",
+            "nostalgic yet dismissive of modern adaptations.",
+            "deeply respectful of its heritage and nuanced complexities."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"Farms are integrating crops and livestock to improve production of both.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage III\n\nsocial science: This passage discusses challenges facing Florida’s two largest economic sectors due to climate change.\n\n\n\n\n\n\n\n\nEvery state in the U.S. relies on at least one\n\n\n\nor two industries to drive its economic growth.\n\n\n\nBoasting a top-five economy among the 50 states,\n\n\n\nFlorida thrives on its tourism industry and\n\n\n5\nagricultural production. Recent climate change\n\n\n\nreports are a cause for concern for the policymakers\n\n\n\nwho want to keep the state on its current upward\n\n\n\neconomic trajectory. How serious are the threats\n\n\n\nthat the state faces, and can anything be done to\n\n\n10\nstave off the effects of climate change before they\n\n\n\nirreparably damagethe Floridian economy?\n\n\n\nThe National Climate Assessment, a government-\n\n\n\nmandated report released every four years,\n\n\n\nreferences South Florida frequently as a locale\n\n\n15\nthat is likely to experience the worsening effects\n\n\n\nof climate change sooner rather than later. In\n\n\n\nSeptember 2017, for example, Hurricane Irma\n\n\n\nwreaked havoc on large swaths of the Florida\n\n\n\ncoastline when it made landfall in the Florida\n\n\n20\nKeys; economists put the price tag for Irma at $50\n\n\n\nbillion, making it the costliest hurricane in Florida’s\n\n\n\nhistory. It is estimated that if Irma had made a\n\n\n\nmore direct hit on Miami, Florida’s second-most\n\n\n\npopular tourist destination, the damage would have\n\n\n25\nbeen closer to $200 billion. Many scientists feel that\n\n\n\nrising sea levels are making areas like Miami and\n\n\n\nOrlando increasingly vulnerable to suchcatastrophic\n\n\n\nweather events.\n\n\n\nAnother top tourist attraction in Florida, the\n\n\n\nEverglades, is already experiencing a reduction\n\n\n\nin size due to a combination of rising sea levels\n\n\n\nand serious weather events. Large sections of the\n\n\n\nEverglades are less than three feet above sea level,\n\n\n\nand soon many of the low-lying regions will be\n\n\n35\ncompletely submerged. This does not bode well for\n\n\n\nthe over one million visitors who make the trek to\n\n\n\nthe national park each year nor for the more than\n\n\n\n$20 million in revenue that the Everglades National\n\n\n\nPark generates annually. In addition, the sea level\n\n\n40\nrise causes salt water to push further inland and\n\n\n\nupstream, which endangers not only tourism but\n\n\n\nalso the drinking water of several communities.\n\n\n\nOn a peninsula like Florida, it seems ironic\n\n\n\nthat a lack of water could become an issue, but\n\n\n45\nan Environmental Protection Agency report\n\n\n\npublished in 2016 pointed to a lack of irrigation due\n\n\n\nto warmer temperatures as a potential downside\n\n\n\nof a longer growing season. Florida relies on\n\n\n\ngroundwater pumped from permeable underground\n\n\n50\naquifers, and Florida farms consume nearly half of\n\n\n\nthe state’s public water supply. Citrus fruits require\n\n\n\nsubstantial amounts of irrigation to maintain crop\n\n\n\nsize; a 2003 agriculture study found that a 20%\n\n\n\nreduction in irrigation resulted in significant losses\n\n\n55\nfor citrus crops. The citrus fruit industry in Florida\n\n\n\nis a $10 billion industry, so any negative trends\n\n\n\nhave a direct impact on Florida’s overall economic\n\n\n\nhealth.\n\n\n\nClimate change has an impact on the pro-\n\n\n60\nduce side of Florida’s agriculture as well as the\n\n\n\nlivestock side; although it makes up a smaller\n\n\n\nportion of Florida’s $120 billion in agricultural\n\n\n\nrevenue than the citrus industry, the livestock\n\n\n\nindustry exports cattle, calves, milk, poultry, and\n\n\n65\neggs both nationally and internationally. One\n\n\n\nproblem that arises with livestock as a result of\n\n\n\nwarmer temperatures is a reduction in productivity\n\n\n\nbecause of metabolic disruption caused by heat\n\n\n\nstress. The livestock industry also relies on the\n\n\n70\nextensive perennial grasslands of the region, which\n\n\n\nhave degraded in quality because of the greater\n\n\n\nfrequency of severe weather events. Additionally, the\n\n\n\ncombination of temperature and rainfall increases\n\n\n\nhave led to greater instances of livestock diseases\n\n\n75\nlike the West Nile virus; the increase in humidity\n\n\n\nleads directly to larger mosquito populations.\n\n\n\nWith so many challenges facing their state,\n\n\n\nFloridians are taking a proactive approach to\n\n\n\ncombating some of the consequences of climate\n\n\n80\nchange. In Miami, lawmakers are considering\n\n\n\nsome rather unconventional recommendations. For\n\n\n\nexample, a group of Harvard students presented\n\n\n\nMiami Beach leaders with two unique options\n\n\n\nto help adapt to rising seas: concrete cisterns\n\n\n85\nstrategically placed on roofs throughout the city\n\n\n\nto capture rainwater, and “sacrificial floors”\n\n\n\ndesigned to absorb excess water before it reaches the\n\n\n\ninhabited floors. Researchers are encouraging the\n\n\n\nSouth Florida Water Management District to change\n\n\n90\ntheir timetable for increasing freshwater flow to\n\n\n\nthe Everglades to maintain the level of freshwater\n\n\n\nhigher than sea level. Farmers are investing in\n\n\n\nmicro-surface and subsurface drip irrigation\n\n\n\nsystems to reduce the overall volume of water\n\n\n95\nneeded to maintain their crops and making the\n\n\n\nmove to mixed crop-livestock farms, as studies have\n\n\n\nshown this farming style to be mutually beneficial\n\n\n\nto both crops and livestock.\n\n\n\nWhile a complete reversal of the consequences\n\n\n100\nof climate change seems improbable, Floridians\n\n\n\ncan be encouraged by the fact that leaders in their\n\n\n\nstate are taking some pragmatic steps to cope with\n\n\n\nthe changes. Furthermore, as those policymakers\n\n\n\nlook to protect the sectors that have long served\n\n\n105\nas the foundation of Florida’s economy, there is\n\n\n\nalso a push to continue to diversify. International\n\n\n\ntrade—Florida is already one of the largest export\n\n\n\nstates—seems an ideal sector to expand with the\n\n\n\nincreasingly globalized nature of economic systems.\n\n\n110\nDespite the challenges, Florida is preparing to\n\n\n\nweather the storm of climate change as it has\n\n\n\nweathered so many storms before."
+        "answer": 3,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 121,
         "section": "reading",
-        "topic": "Function",
-        "text": "The detail “Florida is already one of the largest export states” (lines 107–108) most nearly serves to:",
+        "topic": "Inference",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Romanticism & the Sublime in Landscape\"\n\nRomantic landscape painters sought to evoke the 'Sublime'—an overwhelming aesthetic sensation combining awe, wonder, and existential insignificance in the presence of untamed nature. Towering alpine peaks, churning sea tempests, and vast ruins served as visual metaphors for the limits of human reason.",
+        "text": "The author of Passage III (\"Romanticism & the Sublime in Landscape\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "identify one of the main drivers of Florida’s economic expansion.",
-            "compare Florida’s trade balance to that of other states.",
-            "explain why expanding Florida’s international trade is likely to be effective.",
-            "emphasize the benefits of diversifying Florida’s economy."
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "be the most accurate way to quantify its economic value.",
+            "align perfectly with the original creator's stated philosophy."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"explain why expanding Florida’s international trade is likely to be effective.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage III\n\nsocial science: This passage discusses challenges facing Florida’s two largest economic sectors due to climate change.\n\n\n\n\n\n\n\n\nEvery state in the U.S. relies on at least one\n\n\n\nor two industries to drive its economic growth.\n\n\n\nBoasting a top-five economy among the 50 states,\n\n\n\nFlorida thrives on its tourism industry and\n\n\n5\nagricultural production. Recent climate change\n\n\n\nreports are a cause for concern for the policymakers\n\n\n\nwho want to keep the state on its current upward\n\n\n\neconomic trajectory. How serious are the threats\n\n\n\nthat the state faces, and can anything be done to\n\n\n10\nstave off the effects of climate change before they\n\n\n\nirreparably damagethe Floridian economy?\n\n\n\nThe National Climate Assessment, a government-\n\n\n\nmandated report released every four years,\n\n\n\nreferences South Florida frequently as a locale\n\n\n15\nthat is likely to experience the worsening effects\n\n\n\nof climate change sooner rather than later. In\n\n\n\nSeptember 2017, for example, Hurricane Irma\n\n\n\nwreaked havoc on large swaths of the Florida\n\n\n\ncoastline when it made landfall in the Florida\n\n\n20\nKeys; economists put the price tag for Irma at $50\n\n\n\nbillion, making it the costliest hurricane in Florida’s\n\n\n\nhistory. It is estimated that if Irma had made a\n\n\n\nmore direct hit on Miami, Florida’s second-most\n\n\n\npopular tourist destination, the damage would have\n\n\n25\nbeen closer to $200 billion. Many scientists feel that\n\n\n\nrising sea levels are making areas like Miami and\n\n\n\nOrlando increasingly vulnerable to suchcatastrophic\n\n\n\nweather events.\n\n\n\nAnother top tourist attraction in Florida, the\n\n\n\nEverglades, is already experiencing a reduction\n\n\n\nin size due to a combination of rising sea levels\n\n\n\nand serious weather events. Large sections of the\n\n\n\nEverglades are less than three feet above sea level,\n\n\n\nand soon many of the low-lying regions will be\n\n\n35\ncompletely submerged. This does not bode well for\n\n\n\nthe over one million visitors who make the trek to\n\n\n\nthe national park each year nor for the more than\n\n\n\n$20 million in revenue that the Everglades National\n\n\n\nPark generates annually. In addition, the sea level\n\n\n40\nrise causes salt water to push further inland and\n\n\n\nupstream, which endangers not only tourism but\n\n\n\nalso the drinking water of several communities.\n\n\n\nOn a peninsula like Florida, it seems ironic\n\n\n\nthat a lack of water could become an issue, but\n\n\n45\nan Environmental Protection Agency report\n\n\n\npublished in 2016 pointed to a lack of irrigation due\n\n\n\nto warmer temperatures as a potential downside\n\n\n\nof a longer growing season. Florida relies on\n\n\n\ngroundwater pumped from permeable underground\n\n\n50\naquifers, and Florida farms consume nearly half of\n\n\n\nthe state’s public water supply. Citrus fruits require\n\n\n\nsubstantial amounts of irrigation to maintain crop\n\n\n\nsize; a 2003 agriculture study found that a 20%\n\n\n\nreduction in irrigation resulted in significant losses\n\n\n55\nfor citrus crops. The citrus fruit industry in Florida\n\n\n\nis a $10 billion industry, so any negative trends\n\n\n\nhave a direct impact on Florida’s overall economic\n\n\n\nhealth.\n\n\n\nClimate change has an impact on the pro-\n\n\n60\nduce side of Florida’s agriculture as well as the\n\n\n\nlivestock side; although it makes up a smaller\n\n\n\nportion of Florida’s $120 billion in agricultural\n\n\n\nrevenue than the citrus industry, the livestock\n\n\n\nindustry exports cattle, calves, milk, poultry, and\n\n\n65\neggs both nationally and internationally. One\n\n\n\nproblem that arises with livestock as a result of\n\n\n\nwarmer temperatures is a reduction in productivity\n\n\n\nbecause of metabolic disruption caused by heat\n\n\n\nstress. The livestock industry also relies on the\n\n\n70\nextensive perennial grasslands of the region, which\n\n\n\nhave degraded in quality because of the greater\n\n\n\nfrequency of severe weather events. Additionally, the\n\n\n\ncombination of temperature and rainfall increases\n\n\n\nhave led to greater instances of livestock diseases\n\n\n75\nlike the West Nile virus; the increase in humidity\n\n\n\nleads directly to larger mosquito populations.\n\n\n\nWith so many challenges facing their state,\n\n\n\nFloridians are taking a proactive approach to\n\n\n\ncombating some of the consequences of climate\n\n\n80\nchange. In Miami, lawmakers are considering\n\n\n\nsome rather unconventional recommendations. For\n\n\n\nexample, a group of Harvard students presented\n\n\n\nMiami Beach leaders with two unique options\n\n\n\nto help adapt to rising seas: concrete cisterns\n\n\n85\nstrategically placed on roofs throughout the city\n\n\n\nto capture rainwater, and “sacrificial floors”\n\n\n\ndesigned to absorb excess water before it reaches the\n\n\n\ninhabited floors. Researchers are encouraging the\n\n\n\nSouth Florida Water Management District to change\n\n\n90\ntheir timetable for increasing freshwater flow to\n\n\n\nthe Everglades to maintain the level of freshwater\n\n\n\nhigher than sea level. Farmers are investing in\n\n\n\nmicro-surface and subsurface drip irrigation\n\n\n\nsystems to reduce the overall volume of water\n\n\n95\nneeded to maintain their crops and making the\n\n\n\nmove to mixed crop-livestock farms, as studies have\n\n\n\nshown this farming style to be mutually beneficial\n\n\n\nto both crops and livestock.\n\n\n\nWhile a complete reversal of the consequences\n\n\n100\nof climate change seems improbable, Floridians\n\n\n\ncan be encouraged by the fact that leaders in their\n\n\n\nstate are taking some pragmatic steps to cope with\n\n\n\nthe changes. Furthermore, as those policymakers\n\n\n\nlook to protect the sectors that have long served\n\n\n105\nas the foundation of Florida’s economy, there is\n\n\n\nalso a push to continue to diversify. International\n\n\n\ntrade—Florida is already one of the largest export\n\n\n\nstates—seems an ideal sector to expand with the\n\n\n\nincreasingly globalized nature of economic systems.\n\n\n110\nDespite the challenges, Florida is preparing to\n\n\n\nweather the storm of climate change as it has\n\n\n\nweathered so many storms before."
+        "answer": 0,
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 122,
         "section": "reading",
-        "topic": "Detail",
-        "text": "According to the passage, country music originated from all of the following EXCEPT:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE III: HUMANITIES\n\n\"Romanticism & the Sublime in Landscape\"\n\nRomantic landscape painters sought to evoke the 'Sublime'—an overwhelming aesthetic sensation combining awe, wonder, and existential insignificance in the presence of untamed nature. Towering alpine peaks, churning sea tempests, and vast ruins served as visual metaphors for the limits of human reason.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage III (\"Romanticism & the Sublime in Landscape\")?",
         "options": [
-            "Celtic melodies.",
-            "spirituals.",
-            "jazz.",
-            "cowboy songs."
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "Theoretical models are vastly superior to empirical practice in every domain."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"jazz.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage IV\n\nhumanities: One of the most enjoyable ways to analyze culture is through music. By analyzing musical styles and lyrics, one can explore quintessential characteristics of particular cultures. Passage A explores the relationship between the central and southern areas of the Appalachian mountain range and country music. Passage B contrasts bluegrass and country music and culture.\nPassage A\n\n\n\n\n\n\n\n\nCountry music has its roots in the southern\n\n\n\nportions of the United States, specifically in the\n\n\n\nremote and undeveloped backcountry of the central\n\n\n\nand southern areas of the Appalachian mountain\n\n\n5\nrange. Recognized as a distinct cultural region\n\n\n\nsince the late nineteenth century, the area became\n\n\n\nhome to European settlements in the eighteenth\n\n\n\ncentury, primarily led by Ulster Scots from Ireland.\n\n\n\nEarly inhabitants have been characterized as\n\n\n10\nfiercely independent, to the point of rudeness and\n\n\n\ninhospitality. It was in this area that the region’s\n\n\n\ntruly indigenous music, now known as country\n\n\n\nmusic, was born.\n\n\n\nRooted in spirituals as well as folk music,\n\n\n15\ncowboy songs, and traditional Celtic melodies,\n\n\n\ncountry music originated in the 1920s. The motifs\n\n\n\nare generally ballads and dance tunes, simple in\n\n\n\nform and accompanied mostly by guitar, banjo,\n\n\n\nand violin. Though today there are many genres of\n\n\n20\ncountry music, all have their roots in this mélange\n\n\n\nof sources.\n\n\n\nThe term “country” has replaced the original\n\n\n\npejorative term “hillbilly.” Hillbillies referred to\n\n\n\nAppalachian inhabitants who were considered poor,\n\n\n25\nuneducated, isolated, and wary; the name change\n\n\n\nreflects a more accepting characterization of these\n\n\n\nmountain dwellers.\n\n\n\nHank Williams put country music on the map\n\n\n\nnationally, and is credited with the movement of\n\n\n30\ncountry music from the South to more national\n\n\n\nprominence. Other early innovators include the\n\n\n\nCarter family, Ernest Tubb, Woody Guthrie, Loretta\n\n\n\nLynn, and Bill Monroe, father of bluegrass music.\n\n\n\nMore recently, Faith Hill, Reba McEntire, and\n\n\n35\nShania Twain have carried on the tradition.\n\n\n\nWhat might be considered the “home base” of\n\n\n\ncountry music is in Nashville, Tennessee, and the\n\n\n\nlegendary music hall, the Grand Ole Opry. Founded\n\n\n\nin 1925 by George D. Hay, it had its genesis in the\n\n\n40\npioneer radio station WSM’s program Barn Dance.\n\n\n\nCountry singers are considered to have reached\n\n\n\nthe pinnacle of the profession if they are asked to\n\n\n\nbecome members of the Opry. While noted country\n\n\n\nmusic performers and acts take the stage at the Opry\n\n\n45\nnumerous times, Elvis Presley performed there only\n\n\n\nonce, in 1954. His act was so poorly received that it\n\n\n\nwas suggested he return to his job as a truck driver.\n\n\n\nThe offshoots and relatives of country music\n\n\n\nhighlight the complexity of this genre. In a move\n\n\n50\naway from its mountain origins, and turning a\n\n\n\nfocus to the West, honky-tonk music became\n\n\n\npopular in the early twentieth century. Its name is\n\n\n\na reference to its roots in honky-tonk bars, where\n\n\n\nthe music was played. Additionally, Western swing\n\n\n55\nemerged as one of the first genres to blend country\n\n\n\nand jazz musical styles, which required a great deal\n\n\n\nof skill and creativity. Some of the most talented\n\n\n\nand sophisticated musicians performing in any\n\n\n\ngenre were musicians who played in bluegrass string\n\n\n60\nbands, another relative of country music.\n\n\n\nCountry music has always been an expression of\n\n\n\nAmerican identity. Its sound, lyrics, and performers\n\n\n\nare purely American, and though the music now\n\n\n\nhas an international audience, it remains American\n\n\n65\nin its heart and soul.\n\n\n\nPassage B\n\n\n\n\n\n\n\n\nA style of music closely related to country is the\n\n\n\nsimilarly indigenous music known as bluegrass,\n\n\n\nwhich originated in the Appalachian highland\n\n\n\nregions extending westwards to the Ozark\n\n\n70\nMountains in southern Missouri and northern\n\n\n\nArkansas. Derived from the music brought over\n\n\n\nby European settlers of the region, bluegrass is\n\n\n\na mixture of Scottish, Welsh, Irish, and English\n\n\n\nmelodic forms, infused, over time, with African-\n\n\n75\nAmerican influences. Indeed, many bluegrass songs,\n\n\n\nsuch as “Barbara Allen” and “House Carpenter,”\n\n\n\npreserve their European roots, maintaining the\n\n\n\ntraditional musical style and narratives almost\n\n\n\nintact. Story-telling ballads, often laments, are\n\n\n80\ncommon themes. Given the predominance of\n\n\n\ncoal mining in the Appalachian region, it is not\n\n\n\nsurprising that ballads relating to mining tragedies\n\n\n\nare also common.\n\n\n\nUnlike country music, in which musicians\n\n\n85\ncommonly play the same melodies together,\n\n\n\nbluegrass highlights one player at a time, with the\n\n\n\nothers providing accompaniment. This tradition of\n\n\n\neach musician taking turns with solos, and often\n\n\n\nimprovising, can also be seen in jazz ensembles.\n\n\n90\nTraditional bluegrass music is typically played\n\n\n\non instruments such as banjo, guitar, mandolin,\n\n\n\nbass, harmonica, and Dobro (resonator guitar).\n\n\n\nEven household objects, including washboards and\n\n\n\nspoons, have, from time to time, been drafted for\n\n\n95\nuse as instruments. Vocals also differ from country\n\n\n\nmusic in that, rather than featuring a single voice,\n\n\n\nbluegrass incorporates baritone and tenor harmonies.\n\n\n\nInitially included under the catch-all phrase “folk\n\n\n\nmusic,” and later referred to as “hillbilly,” bluegrass\n\n\n100\ndid not come into his own category until the late\n\n\n\n1950s, and appeared first in the comprehensive guide,\n\n\n\nMusic Index, in 1965. Presumably it was named after\n\n\n\nBill Monroe’s Blue Grass band, the seminal bluegrass\n\n\n\nband. A rapid, almost frenetic pace, characterizes\n\n\n105\nbluegrass tempos. Even today, decades after their\n\n\n\nmost active performing era, The Foggy Mountain\n\n\n\nBoys members Lester Flatt, a bluegrass guitarist and\n\n\n\nmandolinist, and Earl Scruggs, known for his three-\n\n\n\nfinger banjo picking style, are widely considered the\n\n\n110\nforemost artists on their instruments.\n\n\n\nPartially because of its pace and complexity,\n\n\n\nbluegrass has often been recorded for movie\n\n\n\nsoundtracks. “Dueling Banjos,” played in the movie\n\n\n\nDeliverance, exemplifies the skill required by the\n\n\n115\nfeverish tempo of the genre. The soundtrack for O\n\n\n\nBrother, Where Art Thou? incorporates bluegrass and\n\n\n\nits musical cousins folk, country, gospel, and blues.\n\n\n\nBluegrass festivals are held throughout the country\n\n\n\nand as far away as the Czech Republic. Interactive,\n\n\n120\noften inviting audience participation, they feature\n\n\n\nperformers such as Dolly Parton and Alison Krauss.\n\n\n\nCentral to bluegrass music are the themes of the\n\n\n\nworking class—miners, railroad workers, farmers.\n\n\n\nThe phrase “high, lonesome sound” was coined to\n\n\n125\nrepresent the bluegrass undertones of intensity and\n\n\n\ncheerlessness, symbolizing the hard-scrabble life of\n\n\n\nthe American worker. As with so much of a nation’s\n\n\n\ntraditional music, and for better or worse, bluegrass\n\n\n\nmusic reflects America."
+        "answer": 1,
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     },
     {
         "id": 123,
         "section": "reading",
-        "topic": "Inference",
-        "text": "Which of the following would be the most logical place to hear the best of country music?",
+        "topic": "Main Idea",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Glacial Ice Cores & Paleoclimatology\"\n\nAntarctic and Greenland ice cores provide an unbroken geochemical record of Earth's atmosphere spanning hundreds of thousands of years. Trapped air bubbles preserve ancient atmospheric greenhouse gas concentrations, while stable oxygen isotope ratios in ice crystals reveal past global temperature variations.",
+        "text": "Based on Passage IV (\"Glacial Ice Cores & Paleoclimatology\"), the primary purpose of the text is to:",
         "options": [
-            "Honky-tonk bars",
-            "Ireland",
-            "The Appalachian backcountry",
-            "The Grand Ole Opry"
+            "criticize traditional approaches while advocating for immediate reform.",
+            "provide a purely statistical timeline of historical events.",
+            "examine the intricate relationship between glacial ice cores & paleoclimatology and its broader significance.",
+            "argue that modern technological advancements have rendered past practices obsolete."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"The Grand Ole Opry\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage IV\n\nhumanities: One of the most enjoyable ways to analyze culture is through music. By analyzing musical styles and lyrics, one can explore quintessential characteristics of particular cultures. Passage A explores the relationship between the central and southern areas of the Appalachian mountain range and country music. Passage B contrasts bluegrass and country music and culture.\nPassage A\n\n\n\n\n\n\n\n\nCountry music has its roots in the southern\n\n\n\nportions of the United States, specifically in the\n\n\n\nremote and undeveloped backcountry of the central\n\n\n\nand southern areas of the Appalachian mountain\n\n\n5\nrange. Recognized as a distinct cultural region\n\n\n\nsince the late nineteenth century, the area became\n\n\n\nhome to European settlements in the eighteenth\n\n\n\ncentury, primarily led by Ulster Scots from Ireland.\n\n\n\nEarly inhabitants have been characterized as\n\n\n10\nfiercely independent, to the point of rudeness and\n\n\n\ninhospitality. It was in this area that the region’s\n\n\n\ntruly indigenous music, now known as country\n\n\n\nmusic, was born.\n\n\n\nRooted in spirituals as well as folk music,\n\n\n15\ncowboy songs, and traditional Celtic melodies,\n\n\n\ncountry music originated in the 1920s. The motifs\n\n\n\nare generally ballads and dance tunes, simple in\n\n\n\nform and accompanied mostly by guitar, banjo,\n\n\n\nand violin. Though today there are many genres of\n\n\n20\ncountry music, all have their roots in this mélange\n\n\n\nof sources.\n\n\n\nThe term “country” has replaced the original\n\n\n\npejorative term “hillbilly.” Hillbillies referred to\n\n\n\nAppalachian inhabitants who were considered poor,\n\n\n25\nuneducated, isolated, and wary; the name change\n\n\n\nreflects a more accepting characterization of these\n\n\n\nmountain dwellers.\n\n\n\nHank Williams put country music on the map\n\n\n\nnationally, and is credited with the movement of\n\n\n30\ncountry music from the South to more national\n\n\n\nprominence. Other early innovators include the\n\n\n\nCarter family, Ernest Tubb, Woody Guthrie, Loretta\n\n\n\nLynn, and Bill Monroe, father of bluegrass music.\n\n\n\nMore recently, Faith Hill, Reba McEntire, and\n\n\n35\nShania Twain have carried on the tradition.\n\n\n\nWhat might be considered the “home base” of\n\n\n\ncountry music is in Nashville, Tennessee, and the\n\n\n\nlegendary music hall, the Grand Ole Opry. Founded\n\n\n\nin 1925 by George D. Hay, it had its genesis in the\n\n\n40\npioneer radio station WSM’s program Barn Dance.\n\n\n\nCountry singers are considered to have reached\n\n\n\nthe pinnacle of the profession if they are asked to\n\n\n\nbecome members of the Opry. While noted country\n\n\n\nmusic performers and acts take the stage at the Opry\n\n\n45\nnumerous times, Elvis Presley performed there only\n\n\n\nonce, in 1954. His act was so poorly received that it\n\n\n\nwas suggested he return to his job as a truck driver.\n\n\n\nThe offshoots and relatives of country music\n\n\n\nhighlight the complexity of this genre. In a move\n\n\n50\naway from its mountain origins, and turning a\n\n\n\nfocus to the West, honky-tonk music became\n\n\n\npopular in the early twentieth century. Its name is\n\n\n\na reference to its roots in honky-tonk bars, where\n\n\n\nthe music was played. Additionally, Western swing\n\n\n55\nemerged as one of the first genres to blend country\n\n\n\nand jazz musical styles, which required a great deal\n\n\n\nof skill and creativity. Some of the most talented\n\n\n\nand sophisticated musicians performing in any\n\n\n\ngenre were musicians who played in bluegrass string\n\n\n60\nbands, another relative of country music.\n\n\n\nCountry music has always been an expression of\n\n\n\nAmerican identity. Its sound, lyrics, and performers\n\n\n\nare purely American, and though the music now\n\n\n\nhas an international audience, it remains American\n\n\n65\nin its heart and soul.\n\n\n\nPassage B\n\n\n\n\n\n\n\n\nA style of music closely related to country is the\n\n\n\nsimilarly indigenous music known as bluegrass,\n\n\n\nwhich originated in the Appalachian highland\n\n\n\nregions extending westwards to the Ozark\n\n\n70\nMountains in southern Missouri and northern\n\n\n\nArkansas. Derived from the music brought over\n\n\n\nby European settlers of the region, bluegrass is\n\n\n\na mixture of Scottish, Welsh, Irish, and English\n\n\n\nmelodic forms, infused, over time, with African-\n\n\n75\nAmerican influences. Indeed, many bluegrass songs,\n\n\n\nsuch as “Barbara Allen” and “House Carpenter,”\n\n\n\npreserve their European roots, maintaining the\n\n\n\ntraditional musical style and narratives almost\n\n\n\nintact. Story-telling ballads, often laments, are\n\n\n80\ncommon themes. Given the predominance of\n\n\n\ncoal mining in the Appalachian region, it is not\n\n\n\nsurprising that ballads relating to mining tragedies\n\n\n\nare also common.\n\n\n\nUnlike country music, in which musicians\n\n\n85\ncommonly play the same melodies together,\n\n\n\nbluegrass highlights one player at a time, with the\n\n\n\nothers providing accompaniment. This tradition of\n\n\n\neach musician taking turns with solos, and often\n\n\n\nimprovising, can also be seen in jazz ensembles.\n\n\n90\nTraditional bluegrass music is typically played\n\n\n\non instruments such as banjo, guitar, mandolin,\n\n\n\nbass, harmonica, and Dobro (resonator guitar).\n\n\n\nEven household objects, including washboards and\n\n\n\nspoons, have, from time to time, been drafted for\n\n\n95\nuse as instruments. Vocals also differ from country\n\n\n\nmusic in that, rather than featuring a single voice,\n\n\n\nbluegrass incorporates baritone and tenor harmonies.\n\n\n\nInitially included under the catch-all phrase “folk\n\n\n\nmusic,” and later referred to as “hillbilly,” bluegrass\n\n\n100\ndid not come into his own category until the late\n\n\n\n1950s, and appeared first in the comprehensive guide,\n\n\n\nMusic Index, in 1965. Presumably it was named after\n\n\n\nBill Monroe’s Blue Grass band, the seminal bluegrass\n\n\n\nband. A rapid, almost frenetic pace, characterizes\n\n\n105\nbluegrass tempos. Even today, decades after their\n\n\n\nmost active performing era, The Foggy Mountain\n\n\n\nBoys members Lester Flatt, a bluegrass guitarist and\n\n\n\nmandolinist, and Earl Scruggs, known for his three-\n\n\n\nfinger banjo picking style, are widely considered the\n\n\n110\nforemost artists on their instruments.\n\n\n\nPartially because of its pace and complexity,\n\n\n\nbluegrass has often been recorded for movie\n\n\n\nsoundtracks. “Dueling Banjos,” played in the movie\n\n\n\nDeliverance, exemplifies the skill required by the\n\n\n115\nfeverish tempo of the genre. The soundtrack for O\n\n\n\nBrother, Where Art Thou? incorporates bluegrass and\n\n\n\nits musical cousins folk, country, gospel, and blues.\n\n\n\nBluegrass festivals are held throughout the country\n\n\n\nand as far away as the Czech Republic. Interactive,\n\n\n120\noften inviting audience participation, they feature\n\n\n\nperformers such as Dolly Parton and Alison Krauss.\n\n\n\nCentral to bluegrass music are the themes of the\n\n\n\nworking class—miners, railroad workers, farmers.\n\n\n\nThe phrase “high, lonesome sound” was coined to\n\n\n125\nrepresent the bluegrass undertones of intensity and\n\n\n\ncheerlessness, symbolizing the hard-scrabble life of\n\n\n\nthe American worker. As with so much of a nation’s\n\n\n\ntraditional music, and for better or worse, bluegrass\n\n\n\nmusic reflects America."
+        "answer": 2,
+        "explanation": "Correct Answer: \"examine the intricate relationship between glacial ice cores & paleoclimatology and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Glacial Ice Cores & Paleoclimatology\"."
     },
     {
         "id": 124,
         "section": "reading",
-        "topic": "Vocab-in-Context",
-        "text": "As it is used in line 23, the word pejorative most nearly means:",
+        "topic": "Inference",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Glacial Ice Cores & Paleoclimatology\"\n\nAntarctic and Greenland ice cores provide an unbroken geochemical record of Earth's atmosphere spanning hundreds of thousands of years. Trapped air bubbles preserve ancient atmospheric greenhouse gas concentrations, while stable oxygen isotope ratios in ice crystals reveal past global temperature variations.",
+        "text": "According to the discussion in Passage IV (\"Glacial Ice Cores & Paleoclimatology\"), which of the following is explicitly emphasized about the subject?",
         "options": [
-            "traditional.",
-            "accurate.",
-            "disparaging.",
-            "mountain dwelling."
+            "It was achieved without significant labor or long-term dedication.",
+            "It was largely rejected by contemporary experts during its initial phase.",
+            "It relies exclusively on automated machinery rather than human expertise.",
+            "It requires meticulous attention to detail and a deep understanding of foundational principles."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"disparaging.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage IV\n\nhumanities: One of the most enjoyable ways to analyze culture is through music. By analyzing musical styles and lyrics, one can explore quintessential characteristics of particular cultures. Passage A explores the relationship between the central and southern areas of the Appalachian mountain range and country music. Passage B contrasts bluegrass and country music and culture.\nPassage A\n\n\n\n\n\n\n\n\nCountry music has its roots in the southern\n\n\n\nportions of the United States, specifically in the\n\n\n\nremote and undeveloped backcountry of the central\n\n\n\nand southern areas of the Appalachian mountain\n\n\n5\nrange. Recognized as a distinct cultural region\n\n\n\nsince the late nineteenth century, the area became\n\n\n\nhome to European settlements in the eighteenth\n\n\n\ncentury, primarily led by Ulster Scots from Ireland.\n\n\n\nEarly inhabitants have been characterized as\n\n\n10\nfiercely independent, to the point of rudeness and\n\n\n\ninhospitality. It was in this area that the region’s\n\n\n\ntruly indigenous music, now known as country\n\n\n\nmusic, was born.\n\n\n\nRooted in spirituals as well as folk music,\n\n\n15\ncowboy songs, and traditional Celtic melodies,\n\n\n\ncountry music originated in the 1920s. The motifs\n\n\n\nare generally ballads and dance tunes, simple in\n\n\n\nform and accompanied mostly by guitar, banjo,\n\n\n\nand violin. Though today there are many genres of\n\n\n20\ncountry music, all have their roots in this mélange\n\n\n\nof sources.\n\n\n\nThe term “country” has replaced the original\n\n\n\npejorative term “hillbilly.” Hillbillies referred to\n\n\n\nAppalachian inhabitants who were considered poor,\n\n\n25\nuneducated, isolated, and wary; the name change\n\n\n\nreflects a more accepting characterization of these\n\n\n\nmountain dwellers.\n\n\n\nHank Williams put country music on the map\n\n\n\nnationally, and is credited with the movement of\n\n\n30\ncountry music from the South to more national\n\n\n\nprominence. Other early innovators include the\n\n\n\nCarter family, Ernest Tubb, Woody Guthrie, Loretta\n\n\n\nLynn, and Bill Monroe, father of bluegrass music.\n\n\n\nMore recently, Faith Hill, Reba McEntire, and\n\n\n35\nShania Twain have carried on the tradition.\n\n\n\nWhat might be considered the “home base” of\n\n\n\ncountry music is in Nashville, Tennessee, and the\n\n\n\nlegendary music hall, the Grand Ole Opry. Founded\n\n\n\nin 1925 by George D. Hay, it had its genesis in the\n\n\n40\npioneer radio station WSM’s program Barn Dance.\n\n\n\nCountry singers are considered to have reached\n\n\n\nthe pinnacle of the profession if they are asked to\n\n\n\nbecome members of the Opry. While noted country\n\n\n\nmusic performers and acts take the stage at the Opry\n\n\n45\nnumerous times, Elvis Presley performed there only\n\n\n\nonce, in 1954. His act was so poorly received that it\n\n\n\nwas suggested he return to his job as a truck driver.\n\n\n\nThe offshoots and relatives of country music\n\n\n\nhighlight the complexity of this genre. In a move\n\n\n50\naway from its mountain origins, and turning a\n\n\n\nfocus to the West, honky-tonk music became\n\n\n\npopular in the early twentieth century. Its name is\n\n\n\na reference to its roots in honky-tonk bars, where\n\n\n\nthe music was played. Additionally, Western swing\n\n\n55\nemerged as one of the first genres to blend country\n\n\n\nand jazz musical styles, which required a great deal\n\n\n\nof skill and creativity. Some of the most talented\n\n\n\nand sophisticated musicians performing in any\n\n\n\ngenre were musicians who played in bluegrass string\n\n\n60\nbands, another relative of country music.\n\n\n\nCountry music has always been an expression of\n\n\n\nAmerican identity. Its sound, lyrics, and performers\n\n\n\nare purely American, and though the music now\n\n\n\nhas an international audience, it remains American\n\n\n65\nin its heart and soul.\n\n\n\nPassage B\n\n\n\n\n\n\n\n\nA style of music closely related to country is the\n\n\n\nsimilarly indigenous music known as bluegrass,\n\n\n\nwhich originated in the Appalachian highland\n\n\n\nregions extending westwards to the Ozark\n\n\n70\nMountains in southern Missouri and northern\n\n\n\nArkansas. Derived from the music brought over\n\n\n\nby European settlers of the region, bluegrass is\n\n\n\na mixture of Scottish, Welsh, Irish, and English\n\n\n\nmelodic forms, infused, over time, with African-\n\n\n75\nAmerican influences. Indeed, many bluegrass songs,\n\n\n\nsuch as “Barbara Allen” and “House Carpenter,”\n\n\n\npreserve their European roots, maintaining the\n\n\n\ntraditional musical style and narratives almost\n\n\n\nintact. Story-telling ballads, often laments, are\n\n\n80\ncommon themes. Given the predominance of\n\n\n\ncoal mining in the Appalachian region, it is not\n\n\n\nsurprising that ballads relating to mining tragedies\n\n\n\nare also common.\n\n\n\nUnlike country music, in which musicians\n\n\n85\ncommonly play the same melodies together,\n\n\n\nbluegrass highlights one player at a time, with the\n\n\n\nothers providing accompaniment. This tradition of\n\n\n\neach musician taking turns with solos, and often\n\n\n\nimprovising, can also be seen in jazz ensembles.\n\n\n90\nTraditional bluegrass music is typically played\n\n\n\non instruments such as banjo, guitar, mandolin,\n\n\n\nbass, harmonica, and Dobro (resonator guitar).\n\n\n\nEven household objects, including washboards and\n\n\n\nspoons, have, from time to time, been drafted for\n\n\n95\nuse as instruments. Vocals also differ from country\n\n\n\nmusic in that, rather than featuring a single voice,\n\n\n\nbluegrass incorporates baritone and tenor harmonies.\n\n\n\nInitially included under the catch-all phrase “folk\n\n\n\nmusic,” and later referred to as “hillbilly,” bluegrass\n\n\n100\ndid not come into his own category until the late\n\n\n\n1950s, and appeared first in the comprehensive guide,\n\n\n\nMusic Index, in 1965. Presumably it was named after\n\n\n\nBill Monroe’s Blue Grass band, the seminal bluegrass\n\n\n\nband. A rapid, almost frenetic pace, characterizes\n\n\n105\nbluegrass tempos. Even today, decades after their\n\n\n\nmost active performing era, The Foggy Mountain\n\n\n\nBoys members Lester Flatt, a bluegrass guitarist and\n\n\n\nmandolinist, and Earl Scruggs, known for his three-\n\n\n\nfinger banjo picking style, are widely considered the\n\n\n110\nforemost artists on their instruments.\n\n\n\nPartially because of its pace and complexity,\n\n\n\nbluegrass has often been recorded for movie\n\n\n\nsoundtracks. “Dueling Banjos,” played in the movie\n\n\n\nDeliverance, exemplifies the skill required by the\n\n\n115\nfeverish tempo of the genre. The soundtrack for O\n\n\n\nBrother, Where Art Thou? incorporates bluegrass and\n\n\n\nits musical cousins folk, country, gospel, and blues.\n\n\n\nBluegrass festivals are held throughout the country\n\n\n\nand as far away as the Czech Republic. Interactive,\n\n\n120\noften inviting audience participation, they feature\n\n\n\nperformers such as Dolly Parton and Alison Krauss.\n\n\n\nCentral to bluegrass music are the themes of the\n\n\n\nworking class—miners, railroad workers, farmers.\n\n\n\nThe phrase “high, lonesome sound” was coined to\n\n\n125\nrepresent the bluegrass undertones of intensity and\n\n\n\ncheerlessness, symbolizing the hard-scrabble life of\n\n\n\nthe American worker. As with so much of a nation’s\n\n\n\ntraditional music, and for better or worse, bluegrass\n\n\n\nmusic reflects America."
+        "answer": 3,
+        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
     },
     {
         "id": 125,
         "section": "reading",
-        "topic": "Inference",
-        "text": "If a song were a lament with Welsh and African-American derivation, the author of Passage B would classify it as:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Glacial Ice Cores & Paleoclimatology\"\n\nAntarctic and Greenland ice cores provide an unbroken geochemical record of Earth's atmosphere spanning hundreds of thousands of years. Trapped air bubbles preserve ancient atmospheric greenhouse gas concentrations, while stable oxygen isotope ratios in ice crystals reveal past global temperature variations.",
+        "text": "In the context of Passage IV (\"Glacial Ice Cores & Paleoclimatology\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "bluegrass.",
-            "country.",
-            "jazz.",
-            "hillbilly."
+            "reverent and analytical.",
+            "dismissive and cynical.",
+            "detached and uninterested.",
+            "confrontational and hostile."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"bluegrass.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage IV\n\nhumanities: One of the most enjoyable ways to analyze culture is through music. By analyzing musical styles and lyrics, one can explore quintessential characteristics of particular cultures. Passage A explores the relationship between the central and southern areas of the Appalachian mountain range and country music. Passage B contrasts bluegrass and country music and culture.\nPassage A\n\n\n\n\n\n\n\n\nCountry music has its roots in the southern\n\n\n\nportions of the United States, specifically in the\n\n\n\nremote and undeveloped backcountry of the central\n\n\n\nand southern areas of the Appalachian mountain\n\n\n5\nrange. Recognized as a distinct cultural region\n\n\n\nsince the late nineteenth century, the area became\n\n\n\nhome to European settlements in the eighteenth\n\n\n\ncentury, primarily led by Ulster Scots from Ireland.\n\n\n\nEarly inhabitants have been characterized as\n\n\n10\nfiercely independent, to the point of rudeness and\n\n\n\ninhospitality. It was in this area that the region’s\n\n\n\ntruly indigenous music, now known as country\n\n\n\nmusic, was born.\n\n\n\nRooted in spirituals as well as folk music,\n\n\n15\ncowboy songs, and traditional Celtic melodies,\n\n\n\ncountry music originated in the 1920s. The motifs\n\n\n\nare generally ballads and dance tunes, simple in\n\n\n\nform and accompanied mostly by guitar, banjo,\n\n\n\nand violin. Though today there are many genres of\n\n\n20\ncountry music, all have their roots in this mélange\n\n\n\nof sources.\n\n\n\nThe term “country” has replaced the original\n\n\n\npejorative term “hillbilly.” Hillbillies referred to\n\n\n\nAppalachian inhabitants who were considered poor,\n\n\n25\nuneducated, isolated, and wary; the name change\n\n\n\nreflects a more accepting characterization of these\n\n\n\nmountain dwellers.\n\n\n\nHank Williams put country music on the map\n\n\n\nnationally, and is credited with the movement of\n\n\n30\ncountry music from the South to more national\n\n\n\nprominence. Other early innovators include the\n\n\n\nCarter family, Ernest Tubb, Woody Guthrie, Loretta\n\n\n\nLynn, and Bill Monroe, father of bluegrass music.\n\n\n\nMore recently, Faith Hill, Reba McEntire, and\n\n\n35\nShania Twain have carried on the tradition.\n\n\n\nWhat might be considered the “home base” of\n\n\n\ncountry music is in Nashville, Tennessee, and the\n\n\n\nlegendary music hall, the Grand Ole Opry. Founded\n\n\n\nin 1925 by George D. Hay, it had its genesis in the\n\n\n40\npioneer radio station WSM’s program Barn Dance.\n\n\n\nCountry singers are considered to have reached\n\n\n\nthe pinnacle of the profession if they are asked to\n\n\n\nbecome members of the Opry. While noted country\n\n\n\nmusic performers and acts take the stage at the Opry\n\n\n45\nnumerous times, Elvis Presley performed there only\n\n\n\nonce, in 1954. His act was so poorly received that it\n\n\n\nwas suggested he return to his job as a truck driver.\n\n\n\nThe offshoots and relatives of country music\n\n\n\nhighlight the complexity of this genre. In a move\n\n\n50\naway from its mountain origins, and turning a\n\n\n\nfocus to the West, honky-tonk music became\n\n\n\npopular in the early twentieth century. Its name is\n\n\n\na reference to its roots in honky-tonk bars, where\n\n\n\nthe music was played. Additionally, Western swing\n\n\n55\nemerged as one of the first genres to blend country\n\n\n\nand jazz musical styles, which required a great deal\n\n\n\nof skill and creativity. Some of the most talented\n\n\n\nand sophisticated musicians performing in any\n\n\n\ngenre were musicians who played in bluegrass string\n\n\n60\nbands, another relative of country music.\n\n\n\nCountry music has always been an expression of\n\n\n\nAmerican identity. Its sound, lyrics, and performers\n\n\n\nare purely American, and though the music now\n\n\n\nhas an international audience, it remains American\n\n\n65\nin its heart and soul.\n\n\n\nPassage B\n\n\n\n\n\n\n\n\nA style of music closely related to country is the\n\n\n\nsimilarly indigenous music known as bluegrass,\n\n\n\nwhich originated in the Appalachian highland\n\n\n\nregions extending westwards to the Ozark\n\n\n70\nMountains in southern Missouri and northern\n\n\n\nArkansas. Derived from the music brought over\n\n\n\nby European settlers of the region, bluegrass is\n\n\n\na mixture of Scottish, Welsh, Irish, and English\n\n\n\nmelodic forms, infused, over time, with African-\n\n\n75\nAmerican influences. Indeed, many bluegrass songs,\n\n\n\nsuch as “Barbara Allen” and “House Carpenter,”\n\n\n\npreserve their European roots, maintaining the\n\n\n\ntraditional musical style and narratives almost\n\n\n\nintact. Story-telling ballads, often laments, are\n\n\n80\ncommon themes. Given the predominance of\n\n\n\ncoal mining in the Appalachian region, it is not\n\n\n\nsurprising that ballads relating to mining tragedies\n\n\n\nare also common.\n\n\n\nUnlike country music, in which musicians\n\n\n85\ncommonly play the same melodies together,\n\n\n\nbluegrass highlights one player at a time, with the\n\n\n\nothers providing accompaniment. This tradition of\n\n\n\neach musician taking turns with solos, and often\n\n\n\nimprovising, can also be seen in jazz ensembles.\n\n\n90\nTraditional bluegrass music is typically played\n\n\n\non instruments such as banjo, guitar, mandolin,\n\n\n\nbass, harmonica, and Dobro (resonator guitar).\n\n\n\nEven household objects, including washboards and\n\n\n\nspoons, have, from time to time, been drafted for\n\n\n95\nuse as instruments. Vocals also differ from country\n\n\n\nmusic in that, rather than featuring a single voice,\n\n\n\nbluegrass incorporates baritone and tenor harmonies.\n\n\n\nInitially included under the catch-all phrase “folk\n\n\n\nmusic,” and later referred to as “hillbilly,” bluegrass\n\n\n100\ndid not come into his own category until the late\n\n\n\n1950s, and appeared first in the comprehensive guide,\n\n\n\nMusic Index, in 1965. Presumably it was named after\n\n\n\nBill Monroe’s Blue Grass band, the seminal bluegrass\n\n\n\nband. A rapid, almost frenetic pace, characterizes\n\n\n105\nbluegrass tempos. Even today, decades after their\n\n\n\nmost active performing era, The Foggy Mountain\n\n\n\nBoys members Lester Flatt, a bluegrass guitarist and\n\n\n\nmandolinist, and Earl Scruggs, known for his three-\n\n\n\nfinger banjo picking style, are widely considered the\n\n\n110\nforemost artists on their instruments.\n\n\n\nPartially because of its pace and complexity,\n\n\n\nbluegrass has often been recorded for movie\n\n\n\nsoundtracks. “Dueling Banjos,” played in the movie\n\n\n\nDeliverance, exemplifies the skill required by the\n\n\n115\nfeverish tempo of the genre. The soundtrack for O\n\n\n\nBrother, Where Art Thou? incorporates bluegrass and\n\n\n\nits musical cousins folk, country, gospel, and blues.\n\n\n\nBluegrass festivals are held throughout the country\n\n\n\nand as far away as the Czech Republic. Interactive,\n\n\n120\noften inviting audience participation, they feature\n\n\n\nperformers such as Dolly Parton and Alison Krauss.\n\n\n\nCentral to bluegrass music are the themes of the\n\n\n\nworking class—miners, railroad workers, farmers.\n\n\n\nThe phrase “high, lonesome sound” was coined to\n\n\n125\nrepresent the bluegrass undertones of intensity and\n\n\n\ncheerlessness, symbolizing the hard-scrabble life of\n\n\n\nthe American worker. As with so much of a nation’s\n\n\n\ntraditional music, and for better or worse, bluegrass\n\n\n\nmusic reflects America."
+        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 126,
         "section": "reading",
-        "topic": "Detail",
-        "text": "According to the passage, the instruments played in bluegrass music are:",
+        "topic": "Inference",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Glacial Ice Cores & Paleoclimatology\"\n\nAntarctic and Greenland ice cores provide an unbroken geochemical record of Earth's atmosphere spanning hundreds of thousands of years. Trapped air bubbles preserve ancient atmospheric greenhouse gas concentrations, while stable oxygen isotope ratios in ice crystals reveal past global temperature variations.",
+        "text": "It can reasonably be inferred from the narrative presented in Passage IV (\"Glacial Ice Cores & Paleoclimatology\") that:",
         "options": [
-            "both typical and unusual.",
-            "derived from African-American influences.",
-            "made famous by the piece “Dueling Banjos.”",
-            "restricted to those used in the Ozarks."
+            "the primary actors involved were unaware of the consequences of their actions.",
+            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "external economic conditions had no impact on the development of the field.",
+            "the subject will likely lose relevance within the coming decade."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"both typical and unusual.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage IV\n\nhumanities: One of the most enjoyable ways to analyze culture is through music. By analyzing musical styles and lyrics, one can explore quintessential characteristics of particular cultures. Passage A explores the relationship between the central and southern areas of the Appalachian mountain range and country music. Passage B contrasts bluegrass and country music and culture.\nPassage A\n\n\n\n\n\n\n\n\nCountry music has its roots in the southern\n\n\n\nportions of the United States, specifically in the\n\n\n\nremote and undeveloped backcountry of the central\n\n\n\nand southern areas of the Appalachian mountain\n\n\n5\nrange. Recognized as a distinct cultural region\n\n\n\nsince the late nineteenth century, the area became\n\n\n\nhome to European settlements in the eighteenth\n\n\n\ncentury, primarily led by Ulster Scots from Ireland.\n\n\n\nEarly inhabitants have been characterized as\n\n\n10\nfiercely independent, to the point of rudeness and\n\n\n\ninhospitality. It was in this area that the region’s\n\n\n\ntruly indigenous music, now known as country\n\n\n\nmusic, was born.\n\n\n\nRooted in spirituals as well as folk music,\n\n\n15\ncowboy songs, and traditional Celtic melodies,\n\n\n\ncountry music originated in the 1920s. The motifs\n\n\n\nare generally ballads and dance tunes, simple in\n\n\n\nform and accompanied mostly by guitar, banjo,\n\n\n\nand violin. Though today there are many genres of\n\n\n20\ncountry music, all have their roots in this mélange\n\n\n\nof sources.\n\n\n\nThe term “country” has replaced the original\n\n\n\npejorative term “hillbilly.” Hillbillies referred to\n\n\n\nAppalachian inhabitants who were considered poor,\n\n\n25\nuneducated, isolated, and wary; the name change\n\n\n\nreflects a more accepting characterization of these\n\n\n\nmountain dwellers.\n\n\n\nHank Williams put country music on the map\n\n\n\nnationally, and is credited with the movement of\n\n\n30\ncountry music from the South to more national\n\n\n\nprominence. Other early innovators include the\n\n\n\nCarter family, Ernest Tubb, Woody Guthrie, Loretta\n\n\n\nLynn, and Bill Monroe, father of bluegrass music.\n\n\n\nMore recently, Faith Hill, Reba McEntire, and\n\n\n35\nShania Twain have carried on the tradition.\n\n\n\nWhat might be considered the “home base” of\n\n\n\ncountry music is in Nashville, Tennessee, and the\n\n\n\nlegendary music hall, the Grand Ole Opry. Founded\n\n\n\nin 1925 by George D. Hay, it had its genesis in the\n\n\n40\npioneer radio station WSM’s program Barn Dance.\n\n\n\nCountry singers are considered to have reached\n\n\n\nthe pinnacle of the profession if they are asked to\n\n\n\nbecome members of the Opry. While noted country\n\n\n\nmusic performers and acts take the stage at the Opry\n\n\n45\nnumerous times, Elvis Presley performed there only\n\n\n\nonce, in 1954. His act was so poorly received that it\n\n\n\nwas suggested he return to his job as a truck driver.\n\n\n\nThe offshoots and relatives of country music\n\n\n\nhighlight the complexity of this genre. In a move\n\n\n50\naway from its mountain origins, and turning a\n\n\n\nfocus to the West, honky-tonk music became\n\n\n\npopular in the early twentieth century. Its name is\n\n\n\na reference to its roots in honky-tonk bars, where\n\n\n\nthe music was played. Additionally, Western swing\n\n\n55\nemerged as one of the first genres to blend country\n\n\n\nand jazz musical styles, which required a great deal\n\n\n\nof skill and creativity. Some of the most talented\n\n\n\nand sophisticated musicians performing in any\n\n\n\ngenre were musicians who played in bluegrass string\n\n\n60\nbands, another relative of country music.\n\n\n\nCountry music has always been an expression of\n\n\n\nAmerican identity. Its sound, lyrics, and performers\n\n\n\nare purely American, and though the music now\n\n\n\nhas an international audience, it remains American\n\n\n65\nin its heart and soul.\n\n\n\nPassage B\n\n\n\n\n\n\n\n\nA style of music closely related to country is the\n\n\n\nsimilarly indigenous music known as bluegrass,\n\n\n\nwhich originated in the Appalachian highland\n\n\n\nregions extending westwards to the Ozark\n\n\n70\nMountains in southern Missouri and northern\n\n\n\nArkansas. Derived from the music brought over\n\n\n\nby European settlers of the region, bluegrass is\n\n\n\na mixture of Scottish, Welsh, Irish, and English\n\n\n\nmelodic forms, infused, over time, with African-\n\n\n75\nAmerican influences. Indeed, many bluegrass songs,\n\n\n\nsuch as “Barbara Allen” and “House Carpenter,”\n\n\n\npreserve their European roots, maintaining the\n\n\n\ntraditional musical style and narratives almost\n\n\n\nintact. Story-telling ballads, often laments, are\n\n\n80\ncommon themes. Given the predominance of\n\n\n\ncoal mining in the Appalachian region, it is not\n\n\n\nsurprising that ballads relating to mining tragedies\n\n\n\nare also common.\n\n\n\nUnlike country music, in which musicians\n\n\n85\ncommonly play the same melodies together,\n\n\n\nbluegrass highlights one player at a time, with the\n\n\n\nothers providing accompaniment. This tradition of\n\n\n\neach musician taking turns with solos, and often\n\n\n\nimprovising, can also be seen in jazz ensembles.\n\n\n90\nTraditional bluegrass music is typically played\n\n\n\non instruments such as banjo, guitar, mandolin,\n\n\n\nbass, harmonica, and Dobro (resonator guitar).\n\n\n\nEven household objects, including washboards and\n\n\n\nspoons, have, from time to time, been drafted for\n\n\n95\nuse as instruments. Vocals also differ from country\n\n\n\nmusic in that, rather than featuring a single voice,\n\n\n\nbluegrass incorporates baritone and tenor harmonies.\n\n\n\nInitially included under the catch-all phrase “folk\n\n\n\nmusic,” and later referred to as “hillbilly,” bluegrass\n\n\n100\ndid not come into his own category until the late\n\n\n\n1950s, and appeared first in the comprehensive guide,\n\n\n\nMusic Index, in 1965. Presumably it was named after\n\n\n\nBill Monroe’s Blue Grass band, the seminal bluegrass\n\n\n\nband. A rapid, almost frenetic pace, characterizes\n\n\n105\nbluegrass tempos. Even today, decades after their\n\n\n\nmost active performing era, The Foggy Mountain\n\n\n\nBoys members Lester Flatt, a bluegrass guitarist and\n\n\n\nmandolinist, and Earl Scruggs, known for his three-\n\n\n\nfinger banjo picking style, are widely considered the\n\n\n110\nforemost artists on their instruments.\n\n\n\nPartially because of its pace and complexity,\n\n\n\nbluegrass has often been recorded for movie\n\n\n\nsoundtracks. “Dueling Banjos,” played in the movie\n\n\n\nDeliverance, exemplifies the skill required by the\n\n\n115\nfeverish tempo of the genre. The soundtrack for O\n\n\n\nBrother, Where Art Thou? incorporates bluegrass and\n\n\n\nits musical cousins folk, country, gospel, and blues.\n\n\n\nBluegrass festivals are held throughout the country\n\n\n\nand as far away as the Czech Republic. Interactive,\n\n\n120\noften inviting audience participation, they feature\n\n\n\nperformers such as Dolly Parton and Alison Krauss.\n\n\n\nCentral to bluegrass music are the themes of the\n\n\n\nworking class—miners, railroad workers, farmers.\n\n\n\nThe phrase “high, lonesome sound” was coined to\n\n\n125\nrepresent the bluegrass undertones of intensity and\n\n\n\ncheerlessness, symbolizing the hard-scrabble life of\n\n\n\nthe American worker. As with so much of a nation’s\n\n\n\ntraditional music, and for better or worse, bluegrass\n\n\n\nmusic reflects America."
+        "answer": 1,
+        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
     },
     {
         "id": 127,
         "section": "reading",
-        "topic": "Detail",
-        "text": "In addition to highlighting one player at a time, bluegrass music differs from country music in that it often:",
+        "topic": "Rhetorical Skills",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Glacial Ice Cores & Paleoclimatology\"\n\nAntarctic and Greenland ice cores provide an unbroken geochemical record of Earth's atmosphere spanning hundreds of thousands of years. Trapped air bubbles preserve ancient atmospheric greenhouse gas concentrations, while stable oxygen isotope ratios in ice crystals reveal past global temperature variations.",
+        "text": "The structural development of Passage IV (\"Glacial Ice Cores & Paleoclimatology\") serves primarily to:",
         "options": [
-            "features harmonies sung by bass and tenor voices.",
-            "features a single voice.",
-            "is characterized by musicians commonly playing the same melodies together.",
-            "is played on instruments such as the banjo and guitar."
+            "open with a refutation of an established scientific consensus.",
+            "present a chronological series of unrelated anecdotes.",
+            "establish context before exploring specific examples and deeper philosophical implications.",
+            "compare two equally viable opposing hypotheses."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"features harmonies sung by bass and tenor voices.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage IV\n\nhumanities: One of the most enjoyable ways to analyze culture is through music. By analyzing musical styles and lyrics, one can explore quintessential characteristics of particular cultures. Passage A explores the relationship between the central and southern areas of the Appalachian mountain range and country music. Passage B contrasts bluegrass and country music and culture.\nPassage A\n\n\n\n\n\n\n\n\nCountry music has its roots in the southern\n\n\n\nportions of the United States, specifically in the\n\n\n\nremote and undeveloped backcountry of the central\n\n\n\nand southern areas of the Appalachian mountain\n\n\n5\nrange. Recognized as a distinct cultural region\n\n\n\nsince the late nineteenth century, the area became\n\n\n\nhome to European settlements in the eighteenth\n\n\n\ncentury, primarily led by Ulster Scots from Ireland.\n\n\n\nEarly inhabitants have been characterized as\n\n\n10\nfiercely independent, to the point of rudeness and\n\n\n\ninhospitality. It was in this area that the region’s\n\n\n\ntruly indigenous music, now known as country\n\n\n\nmusic, was born.\n\n\n\nRooted in spirituals as well as folk music,\n\n\n15\ncowboy songs, and traditional Celtic melodies,\n\n\n\ncountry music originated in the 1920s. The motifs\n\n\n\nare generally ballads and dance tunes, simple in\n\n\n\nform and accompanied mostly by guitar, banjo,\n\n\n\nand violin. Though today there are many genres of\n\n\n20\ncountry music, all have their roots in this mélange\n\n\n\nof sources.\n\n\n\nThe term “country” has replaced the original\n\n\n\npejorative term “hillbilly.” Hillbillies referred to\n\n\n\nAppalachian inhabitants who were considered poor,\n\n\n25\nuneducated, isolated, and wary; the name change\n\n\n\nreflects a more accepting characterization of these\n\n\n\nmountain dwellers.\n\n\n\nHank Williams put country music on the map\n\n\n\nnationally, and is credited with the movement of\n\n\n30\ncountry music from the South to more national\n\n\n\nprominence. Other early innovators include the\n\n\n\nCarter family, Ernest Tubb, Woody Guthrie, Loretta\n\n\n\nLynn, and Bill Monroe, father of bluegrass music.\n\n\n\nMore recently, Faith Hill, Reba McEntire, and\n\n\n35\nShania Twain have carried on the tradition.\n\n\n\nWhat might be considered the “home base” of\n\n\n\ncountry music is in Nashville, Tennessee, and the\n\n\n\nlegendary music hall, the Grand Ole Opry. Founded\n\n\n\nin 1925 by George D. Hay, it had its genesis in the\n\n\n40\npioneer radio station WSM’s program Barn Dance.\n\n\n\nCountry singers are considered to have reached\n\n\n\nthe pinnacle of the profession if they are asked to\n\n\n\nbecome members of the Opry. While noted country\n\n\n\nmusic performers and acts take the stage at the Opry\n\n\n45\nnumerous times, Elvis Presley performed there only\n\n\n\nonce, in 1954. His act was so poorly received that it\n\n\n\nwas suggested he return to his job as a truck driver.\n\n\n\nThe offshoots and relatives of country music\n\n\n\nhighlight the complexity of this genre. In a move\n\n\n50\naway from its mountain origins, and turning a\n\n\n\nfocus to the West, honky-tonk music became\n\n\n\npopular in the early twentieth century. Its name is\n\n\n\na reference to its roots in honky-tonk bars, where\n\n\n\nthe music was played. Additionally, Western swing\n\n\n55\nemerged as one of the first genres to blend country\n\n\n\nand jazz musical styles, which required a great deal\n\n\n\nof skill and creativity. Some of the most talented\n\n\n\nand sophisticated musicians performing in any\n\n\n\ngenre were musicians who played in bluegrass string\n\n\n60\nbands, another relative of country music.\n\n\n\nCountry music has always been an expression of\n\n\n\nAmerican identity. Its sound, lyrics, and performers\n\n\n\nare purely American, and though the music now\n\n\n\nhas an international audience, it remains American\n\n\n65\nin its heart and soul.\n\n\n\nPassage B\n\n\n\n\n\n\n\n\nA style of music closely related to country is the\n\n\n\nsimilarly indigenous music known as bluegrass,\n\n\n\nwhich originated in the Appalachian highland\n\n\n\nregions extending westwards to the Ozark\n\n\n70\nMountains in southern Missouri and northern\n\n\n\nArkansas. Derived from the music brought over\n\n\n\nby European settlers of the region, bluegrass is\n\n\n\na mixture of Scottish, Welsh, Irish, and English\n\n\n\nmelodic forms, infused, over time, with African-\n\n\n75\nAmerican influences. Indeed, many bluegrass songs,\n\n\n\nsuch as “Barbara Allen” and “House Carpenter,”\n\n\n\npreserve their European roots, maintaining the\n\n\n\ntraditional musical style and narratives almost\n\n\n\nintact. Story-telling ballads, often laments, are\n\n\n80\ncommon themes. Given the predominance of\n\n\n\ncoal mining in the Appalachian region, it is not\n\n\n\nsurprising that ballads relating to mining tragedies\n\n\n\nare also common.\n\n\n\nUnlike country music, in which musicians\n\n\n85\ncommonly play the same melodies together,\n\n\n\nbluegrass highlights one player at a time, with the\n\n\n\nothers providing accompaniment. This tradition of\n\n\n\neach musician taking turns with solos, and often\n\n\n\nimprovising, can also be seen in jazz ensembles.\n\n\n90\nTraditional bluegrass music is typically played\n\n\n\non instruments such as banjo, guitar, mandolin,\n\n\n\nbass, harmonica, and Dobro (resonator guitar).\n\n\n\nEven household objects, including washboards and\n\n\n\nspoons, have, from time to time, been drafted for\n\n\n95\nuse as instruments. Vocals also differ from country\n\n\n\nmusic in that, rather than featuring a single voice,\n\n\n\nbluegrass incorporates baritone and tenor harmonies.\n\n\n\nInitially included under the catch-all phrase “folk\n\n\n\nmusic,” and later referred to as “hillbilly,” bluegrass\n\n\n100\ndid not come into his own category until the late\n\n\n\n1950s, and appeared first in the comprehensive guide,\n\n\n\nMusic Index, in 1965. Presumably it was named after\n\n\n\nBill Monroe’s Blue Grass band, the seminal bluegrass\n\n\n\nband. A rapid, almost frenetic pace, characterizes\n\n\n105\nbluegrass tempos. Even today, decades after their\n\n\n\nmost active performing era, The Foggy Mountain\n\n\n\nBoys members Lester Flatt, a bluegrass guitarist and\n\n\n\nmandolinist, and Earl Scruggs, known for his three-\n\n\n\nfinger banjo picking style, are widely considered the\n\n\n110\nforemost artists on their instruments.\n\n\n\nPartially because of its pace and complexity,\n\n\n\nbluegrass has often been recorded for movie\n\n\n\nsoundtracks. “Dueling Banjos,” played in the movie\n\n\n\nDeliverance, exemplifies the skill required by the\n\n\n115\nfeverish tempo of the genre. The soundtrack for O\n\n\n\nBrother, Where Art Thou? incorporates bluegrass and\n\n\n\nits musical cousins folk, country, gospel, and blues.\n\n\n\nBluegrass festivals are held throughout the country\n\n\n\nand as far away as the Czech Republic. Interactive,\n\n\n120\noften inviting audience participation, they feature\n\n\n\nperformers such as Dolly Parton and Alison Krauss.\n\n\n\nCentral to bluegrass music are the themes of the\n\n\n\nworking class—miners, railroad workers, farmers.\n\n\n\nThe phrase “high, lonesome sound” was coined to\n\n\n125\nrepresent the bluegrass undertones of intensity and\n\n\n\ncheerlessness, symbolizing the hard-scrabble life of\n\n\n\nthe American worker. As with so much of a nation’s\n\n\n\ntraditional music, and for better or worse, bluegrass\n\n\n\nmusic reflects America."
+        "answer": 2,
+        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 128,
         "section": "reading",
         "topic": "Inference",
-        "text": "It can be inferred that laments and high, lonesome sounds both reflect:",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Glacial Ice Cores & Paleoclimatology\"\n\nAntarctic and Greenland ice cores provide an unbroken geochemical record of Earth's atmosphere spanning hundreds of thousands of years. Trapped air bubbles preserve ancient atmospheric greenhouse gas concentrations, while stable oxygen isotope ratios in ice crystals reveal past global temperature variations.",
+        "text": "In Passage IV (\"Glacial Ice Cores & Paleoclimatology\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "the influence of Irish music.",
-            "the challenges of American life.",
-            "songs sung by Shania Twain.",
-            "hillbilly music."
+            "favorable political mandates enacted by municipal authorities.",
+            "sheer chance and fortuitous external interventions.",
+            "hasty improvisation under urgent time constraints.",
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"the challenges of American life.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage IV\n\nhumanities: One of the most enjoyable ways to analyze culture is through music. By analyzing musical styles and lyrics, one can explore quintessential characteristics of particular cultures. Passage A explores the relationship between the central and southern areas of the Appalachian mountain range and country music. Passage B contrasts bluegrass and country music and culture.\nPassage A\n\n\n\n\n\n\n\n\nCountry music has its roots in the southern\n\n\n\nportions of the United States, specifically in the\n\n\n\nremote and undeveloped backcountry of the central\n\n\n\nand southern areas of the Appalachian mountain\n\n\n5\nrange. Recognized as a distinct cultural region\n\n\n\nsince the late nineteenth century, the area became\n\n\n\nhome to European settlements in the eighteenth\n\n\n\ncentury, primarily led by Ulster Scots from Ireland.\n\n\n\nEarly inhabitants have been characterized as\n\n\n10\nfiercely independent, to the point of rudeness and\n\n\n\ninhospitality. It was in this area that the region’s\n\n\n\ntruly indigenous music, now known as country\n\n\n\nmusic, was born.\n\n\n\nRooted in spirituals as well as folk music,\n\n\n15\ncowboy songs, and traditional Celtic melodies,\n\n\n\ncountry music originated in the 1920s. The motifs\n\n\n\nare generally ballads and dance tunes, simple in\n\n\n\nform and accompanied mostly by guitar, banjo,\n\n\n\nand violin. Though today there are many genres of\n\n\n20\ncountry music, all have their roots in this mélange\n\n\n\nof sources.\n\n\n\nThe term “country” has replaced the original\n\n\n\npejorative term “hillbilly.” Hillbillies referred to\n\n\n\nAppalachian inhabitants who were considered poor,\n\n\n25\nuneducated, isolated, and wary; the name change\n\n\n\nreflects a more accepting characterization of these\n\n\n\nmountain dwellers.\n\n\n\nHank Williams put country music on the map\n\n\n\nnationally, and is credited with the movement of\n\n\n30\ncountry music from the South to more national\n\n\n\nprominence. Other early innovators include the\n\n\n\nCarter family, Ernest Tubb, Woody Guthrie, Loretta\n\n\n\nLynn, and Bill Monroe, father of bluegrass music.\n\n\n\nMore recently, Faith Hill, Reba McEntire, and\n\n\n35\nShania Twain have carried on the tradition.\n\n\n\nWhat might be considered the “home base” of\n\n\n\ncountry music is in Nashville, Tennessee, and the\n\n\n\nlegendary music hall, the Grand Ole Opry. Founded\n\n\n\nin 1925 by George D. Hay, it had its genesis in the\n\n\n40\npioneer radio station WSM’s program Barn Dance.\n\n\n\nCountry singers are considered to have reached\n\n\n\nthe pinnacle of the profession if they are asked to\n\n\n\nbecome members of the Opry. While noted country\n\n\n\nmusic performers and acts take the stage at the Opry\n\n\n45\nnumerous times, Elvis Presley performed there only\n\n\n\nonce, in 1954. His act was so poorly received that it\n\n\n\nwas suggested he return to his job as a truck driver.\n\n\n\nThe offshoots and relatives of country music\n\n\n\nhighlight the complexity of this genre. In a move\n\n\n50\naway from its mountain origins, and turning a\n\n\n\nfocus to the West, honky-tonk music became\n\n\n\npopular in the early twentieth century. Its name is\n\n\n\na reference to its roots in honky-tonk bars, where\n\n\n\nthe music was played. Additionally, Western swing\n\n\n55\nemerged as one of the first genres to blend country\n\n\n\nand jazz musical styles, which required a great deal\n\n\n\nof skill and creativity. Some of the most talented\n\n\n\nand sophisticated musicians performing in any\n\n\n\ngenre were musicians who played in bluegrass string\n\n\n60\nbands, another relative of country music.\n\n\n\nCountry music has always been an expression of\n\n\n\nAmerican identity. Its sound, lyrics, and performers\n\n\n\nare purely American, and though the music now\n\n\n\nhas an international audience, it remains American\n\n\n65\nin its heart and soul.\n\n\n\nPassage B\n\n\n\n\n\n\n\n\nA style of music closely related to country is the\n\n\n\nsimilarly indigenous music known as bluegrass,\n\n\n\nwhich originated in the Appalachian highland\n\n\n\nregions extending westwards to the Ozark\n\n\n70\nMountains in southern Missouri and northern\n\n\n\nArkansas. Derived from the music brought over\n\n\n\nby European settlers of the region, bluegrass is\n\n\n\na mixture of Scottish, Welsh, Irish, and English\n\n\n\nmelodic forms, infused, over time, with African-\n\n\n75\nAmerican influences. Indeed, many bluegrass songs,\n\n\n\nsuch as “Barbara Allen” and “House Carpenter,”\n\n\n\npreserve their European roots, maintaining the\n\n\n\ntraditional musical style and narratives almost\n\n\n\nintact. Story-telling ballads, often laments, are\n\n\n80\ncommon themes. Given the predominance of\n\n\n\ncoal mining in the Appalachian region, it is not\n\n\n\nsurprising that ballads relating to mining tragedies\n\n\n\nare also common.\n\n\n\nUnlike country music, in which musicians\n\n\n85\ncommonly play the same melodies together,\n\n\n\nbluegrass highlights one player at a time, with the\n\n\n\nothers providing accompaniment. This tradition of\n\n\n\neach musician taking turns with solos, and often\n\n\n\nimprovising, can also be seen in jazz ensembles.\n\n\n90\nTraditional bluegrass music is typically played\n\n\n\non instruments such as banjo, guitar, mandolin,\n\n\n\nbass, harmonica, and Dobro (resonator guitar).\n\n\n\nEven household objects, including washboards and\n\n\n\nspoons, have, from time to time, been drafted for\n\n\n95\nuse as instruments. Vocals also differ from country\n\n\n\nmusic in that, rather than featuring a single voice,\n\n\n\nbluegrass incorporates baritone and tenor harmonies.\n\n\n\nInitially included under the catch-all phrase “folk\n\n\n\nmusic,” and later referred to as “hillbilly,” bluegrass\n\n\n100\ndid not come into his own category until the late\n\n\n\n1950s, and appeared first in the comprehensive guide,\n\n\n\nMusic Index, in 1965. Presumably it was named after\n\n\n\nBill Monroe’s Blue Grass band, the seminal bluegrass\n\n\n\nband. A rapid, almost frenetic pace, characterizes\n\n\n105\nbluegrass tempos. Even today, decades after their\n\n\n\nmost active performing era, The Foggy Mountain\n\n\n\nBoys members Lester Flatt, a bluegrass guitarist and\n\n\n\nmandolinist, and Earl Scruggs, known for his three-\n\n\n\nfinger banjo picking style, are widely considered the\n\n\n110\nforemost artists on their instruments.\n\n\n\nPartially because of its pace and complexity,\n\n\n\nbluegrass has often been recorded for movie\n\n\n\nsoundtracks. “Dueling Banjos,” played in the movie\n\n\n\nDeliverance, exemplifies the skill required by the\n\n\n115\nfeverish tempo of the genre. The soundtrack for O\n\n\n\nBrother, Where Art Thou? incorporates bluegrass and\n\n\n\nits musical cousins folk, country, gospel, and blues.\n\n\n\nBluegrass festivals are held throughout the country\n\n\n\nand as far away as the Czech Republic. Interactive,\n\n\n120\noften inviting audience participation, they feature\n\n\n\nperformers such as Dolly Parton and Alison Krauss.\n\n\n\nCentral to bluegrass music are the themes of the\n\n\n\nworking class—miners, railroad workers, farmers.\n\n\n\nThe phrase “high, lonesome sound” was coined to\n\n\n125\nrepresent the bluegrass undertones of intensity and\n\n\n\ncheerlessness, symbolizing the hard-scrabble life of\n\n\n\nthe American worker. As with so much of a nation’s\n\n\n\ntraditional music, and for better or worse, bluegrass\n\n\n\nmusic reflects America."
+        "answer": 3,
+        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
     },
     {
         "id": 129,
         "section": "reading",
-        "topic": "Vocab-in-Context",
-        "text": "As it is used in the introductory information, “quintessential” most nearly means:",
+        "topic": "Style & Tone",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Glacial Ice Cores & Paleoclimatology\"\n\nAntarctic and Greenland ice cores provide an unbroken geochemical record of Earth's atmosphere spanning hundreds of thousands of years. Trapped air bubbles preserve ancient atmospheric greenhouse gas concentrations, while stable oxygen isotope ratios in ice crystals reveal past global temperature variations.",
+        "text": "The author's perspective toward the evolution of Passage IV (\"Glacial Ice Cores & Paleoclimatology\") is best described as:",
         "options": [
-            "old-fashioned.",
-            "representative.",
-            "charming.",
-            "unconventional."
+            "deeply respectful of its heritage and nuanced complexities.",
+            "skeptical of its claimed achievements.",
+            "strictly neutral and reporting raw data.",
+            "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"representative.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage IV\n\nhumanities: One of the most enjoyable ways to analyze culture is through music. By analyzing musical styles and lyrics, one can explore quintessential characteristics of particular cultures. Passage A explores the relationship between the central and southern areas of the Appalachian mountain range and country music. Passage B contrasts bluegrass and country music and culture.\nPassage A\n\n\n\n\n\n\n\n\nCountry music has its roots in the southern\n\n\n\nportions of the United States, specifically in the\n\n\n\nremote and undeveloped backcountry of the central\n\n\n\nand southern areas of the Appalachian mountain\n\n\n5\nrange. Recognized as a distinct cultural region\n\n\n\nsince the late nineteenth century, the area became\n\n\n\nhome to European settlements in the eighteenth\n\n\n\ncentury, primarily led by Ulster Scots from Ireland.\n\n\n\nEarly inhabitants have been characterized as\n\n\n10\nfiercely independent, to the point of rudeness and\n\n\n\ninhospitality. It was in this area that the region’s\n\n\n\ntruly indigenous music, now known as country\n\n\n\nmusic, was born.\n\n\n\nRooted in spirituals as well as folk music,\n\n\n15\ncowboy songs, and traditional Celtic melodies,\n\n\n\ncountry music originated in the 1920s. The motifs\n\n\n\nare generally ballads and dance tunes, simple in\n\n\n\nform and accompanied mostly by guitar, banjo,\n\n\n\nand violin. Though today there are many genres of\n\n\n20\ncountry music, all have their roots in this mélange\n\n\n\nof sources.\n\n\n\nThe term “country” has replaced the original\n\n\n\npejorative term “hillbilly.” Hillbillies referred to\n\n\n\nAppalachian inhabitants who were considered poor,\n\n\n25\nuneducated, isolated, and wary; the name change\n\n\n\nreflects a more accepting characterization of these\n\n\n\nmountain dwellers.\n\n\n\nHank Williams put country music on the map\n\n\n\nnationally, and is credited with the movement of\n\n\n30\ncountry music from the South to more national\n\n\n\nprominence. Other early innovators include the\n\n\n\nCarter family, Ernest Tubb, Woody Guthrie, Loretta\n\n\n\nLynn, and Bill Monroe, father of bluegrass music.\n\n\n\nMore recently, Faith Hill, Reba McEntire, and\n\n\n35\nShania Twain have carried on the tradition.\n\n\n\nWhat might be considered the “home base” of\n\n\n\ncountry music is in Nashville, Tennessee, and the\n\n\n\nlegendary music hall, the Grand Ole Opry. Founded\n\n\n\nin 1925 by George D. Hay, it had its genesis in the\n\n\n40\npioneer radio station WSM’s program Barn Dance.\n\n\n\nCountry singers are considered to have reached\n\n\n\nthe pinnacle of the profession if they are asked to\n\n\n\nbecome members of the Opry. While noted country\n\n\n\nmusic performers and acts take the stage at the Opry\n\n\n45\nnumerous times, Elvis Presley performed there only\n\n\n\nonce, in 1954. His act was so poorly received that it\n\n\n\nwas suggested he return to his job as a truck driver.\n\n\n\nThe offshoots and relatives of country music\n\n\n\nhighlight the complexity of this genre. In a move\n\n\n50\naway from its mountain origins, and turning a\n\n\n\nfocus to the West, honky-tonk music became\n\n\n\npopular in the early twentieth century. Its name is\n\n\n\na reference to its roots in honky-tonk bars, where\n\n\n\nthe music was played. Additionally, Western swing\n\n\n55\nemerged as one of the first genres to blend country\n\n\n\nand jazz musical styles, which required a great deal\n\n\n\nof skill and creativity. Some of the most talented\n\n\n\nand sophisticated musicians performing in any\n\n\n\ngenre were musicians who played in bluegrass string\n\n\n60\nbands, another relative of country music.\n\n\n\nCountry music has always been an expression of\n\n\n\nAmerican identity. Its sound, lyrics, and performers\n\n\n\nare purely American, and though the music now\n\n\n\nhas an international audience, it remains American\n\n\n65\nin its heart and soul.\n\n\n\nPassage B\n\n\n\n\n\n\n\n\nA style of music closely related to country is the\n\n\n\nsimilarly indigenous music known as bluegrass,\n\n\n\nwhich originated in the Appalachian highland\n\n\n\nregions extending westwards to the Ozark\n\n\n70\nMountains in southern Missouri and northern\n\n\n\nArkansas. Derived from the music brought over\n\n\n\nby European settlers of the region, bluegrass is\n\n\n\na mixture of Scottish, Welsh, Irish, and English\n\n\n\nmelodic forms, infused, over time, with African-\n\n\n75\nAmerican influences. Indeed, many bluegrass songs,\n\n\n\nsuch as “Barbara Allen” and “House Carpenter,”\n\n\n\npreserve their European roots, maintaining the\n\n\n\ntraditional musical style and narratives almost\n\n\n\nintact. Story-telling ballads, often laments, are\n\n\n80\ncommon themes. Given the predominance of\n\n\n\ncoal mining in the Appalachian region, it is not\n\n\n\nsurprising that ballads relating to mining tragedies\n\n\n\nare also common.\n\n\n\nUnlike country music, in which musicians\n\n\n85\ncommonly play the same melodies together,\n\n\n\nbluegrass highlights one player at a time, with the\n\n\n\nothers providing accompaniment. This tradition of\n\n\n\neach musician taking turns with solos, and often\n\n\n\nimprovising, can also be seen in jazz ensembles.\n\n\n90\nTraditional bluegrass music is typically played\n\n\n\non instruments such as banjo, guitar, mandolin,\n\n\n\nbass, harmonica, and Dobro (resonator guitar).\n\n\n\nEven household objects, including washboards and\n\n\n\nspoons, have, from time to time, been drafted for\n\n\n95\nuse as instruments. Vocals also differ from country\n\n\n\nmusic in that, rather than featuring a single voice,\n\n\n\nbluegrass incorporates baritone and tenor harmonies.\n\n\n\nInitially included under the catch-all phrase “folk\n\n\n\nmusic,” and later referred to as “hillbilly,” bluegrass\n\n\n100\ndid not come into his own category until the late\n\n\n\n1950s, and appeared first in the comprehensive guide,\n\n\n\nMusic Index, in 1965. Presumably it was named after\n\n\n\nBill Monroe’s Blue Grass band, the seminal bluegrass\n\n\n\nband. A rapid, almost frenetic pace, characterizes\n\n\n105\nbluegrass tempos. Even today, decades after their\n\n\n\nmost active performing era, The Foggy Mountain\n\n\n\nBoys members Lester Flatt, a bluegrass guitarist and\n\n\n\nmandolinist, and Earl Scruggs, known for his three-\n\n\n\nfinger banjo picking style, are widely considered the\n\n\n110\nforemost artists on their instruments.\n\n\n\nPartially because of its pace and complexity,\n\n\n\nbluegrass has often been recorded for movie\n\n\n\nsoundtracks. “Dueling Banjos,” played in the movie\n\n\n\nDeliverance, exemplifies the skill required by the\n\n\n115\nfeverish tempo of the genre. The soundtrack for O\n\n\n\nBrother, Where Art Thou? incorporates bluegrass and\n\n\n\nits musical cousins folk, country, gospel, and blues.\n\n\n\nBluegrass festivals are held throughout the country\n\n\n\nand as far away as the Czech Republic. Interactive,\n\n\n120\noften inviting audience participation, they feature\n\n\n\nperformers such as Dolly Parton and Alison Krauss.\n\n\n\nCentral to bluegrass music are the themes of the\n\n\n\nworking class—miners, railroad workers, farmers.\n\n\n\nThe phrase “high, lonesome sound” was coined to\n\n\n125\nrepresent the bluegrass undertones of intensity and\n\n\n\ncheerlessness, symbolizing the hard-scrabble life of\n\n\n\nthe American worker. As with so much of a nation’s\n\n\n\ntraditional music, and for better or worse, bluegrass\n\n\n\nmusic reflects America."
+        "answer": 0,
+        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
     },
     {
         "id": 130,
         "section": "reading",
         "topic": "Inference",
-        "text": "Passage A states that there were “talented and sophisticated” (line 57–58) musicians playing bluegrass music. Which sentence in Passage B suggests this claim?",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Glacial Ice Cores & Paleoclimatology\"\n\nAntarctic and Greenland ice cores provide an unbroken geochemical record of Earth's atmosphere spanning hundreds of thousands of years. Trapped air bubbles preserve ancient atmospheric greenhouse gas concentrations, while stable oxygen isotope ratios in ice crystals reveal past global temperature variations.",
+        "text": "The author of Passage IV (\"Glacial Ice Cores & Paleoclimatology\") suggests that viewing the subject merely as a routine process would:",
         "options": [
-            "“Central to bluegrass music are the themes of the working class—miners, railroad workers, farmers.”",
-            "“Partially because of its pace and complexity, bluegrass has often been recorded for movie soundtracks.”",
-            "“Lester Flatt, a bluegrass guitarist and mandolinist, and Earl Scruggs, known for his three-finger banjo picking style, are widely considered the foremost artists on their instruments.”",
-            "“A style of music closely related to country is the similarly indigenous music known as bluegrass . . .”"
+            "lead to rapid efficiency improvements in industrial manufacturing.",
+            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "be the most accurate way to quantify its economic value.",
+            "align perfectly with the original creator's stated philosophy."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"“Lester Flatt, a bluegrass guitarist and mandolinist, and Earl Scruggs, known for his three-finger banjo picking style, are widely considered the foremost artists on their instruments.”\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage IV\n\nhumanities: One of the most enjoyable ways to analyze culture is through music. By analyzing musical styles and lyrics, one can explore quintessential characteristics of particular cultures. Passage A explores the relationship between the central and southern areas of the Appalachian mountain range and country music. Passage B contrasts bluegrass and country music and culture.\nPassage A\n\n\n\n\n\n\n\n\nCountry music has its roots in the southern\n\n\n\nportions of the United States, specifically in the\n\n\n\nremote and undeveloped backcountry of the central\n\n\n\nand southern areas of the Appalachian mountain\n\n\n5\nrange. Recognized as a distinct cultural region\n\n\n\nsince the late nineteenth century, the area became\n\n\n\nhome to European settlements in the eighteenth\n\n\n\ncentury, primarily led by Ulster Scots from Ireland.\n\n\n\nEarly inhabitants have been characterized as\n\n\n10\nfiercely independent, to the point of rudeness and\n\n\n\ninhospitality. It was in this area that the region’s\n\n\n\ntruly indigenous music, now known as country\n\n\n\nmusic, was born.\n\n\n\nRooted in spirituals as well as folk music,\n\n\n15\ncowboy songs, and traditional Celtic melodies,\n\n\n\ncountry music originated in the 1920s. The motifs\n\n\n\nare generally ballads and dance tunes, simple in\n\n\n\nform and accompanied mostly by guitar, banjo,\n\n\n\nand violin. Though today there are many genres of\n\n\n20\ncountry music, all have their roots in this mélange\n\n\n\nof sources.\n\n\n\nThe term “country” has replaced the original\n\n\n\npejorative term “hillbilly.” Hillbillies referred to\n\n\n\nAppalachian inhabitants who were considered poor,\n\n\n25\nuneducated, isolated, and wary; the name change\n\n\n\nreflects a more accepting characterization of these\n\n\n\nmountain dwellers.\n\n\n\nHank Williams put country music on the map\n\n\n\nnationally, and is credited with the movement of\n\n\n30\ncountry music from the South to more national\n\n\n\nprominence. Other early innovators include the\n\n\n\nCarter family, Ernest Tubb, Woody Guthrie, Loretta\n\n\n\nLynn, and Bill Monroe, father of bluegrass music.\n\n\n\nMore recently, Faith Hill, Reba McEntire, and\n\n\n35\nShania Twain have carried on the tradition.\n\n\n\nWhat might be considered the “home base” of\n\n\n\ncountry music is in Nashville, Tennessee, and the\n\n\n\nlegendary music hall, the Grand Ole Opry. Founded\n\n\n\nin 1925 by George D. Hay, it had its genesis in the\n\n\n40\npioneer radio station WSM’s program Barn Dance.\n\n\n\nCountry singers are considered to have reached\n\n\n\nthe pinnacle of the profession if they are asked to\n\n\n\nbecome members of the Opry. While noted country\n\n\n\nmusic performers and acts take the stage at the Opry\n\n\n45\nnumerous times, Elvis Presley performed there only\n\n\n\nonce, in 1954. His act was so poorly received that it\n\n\n\nwas suggested he return to his job as a truck driver.\n\n\n\nThe offshoots and relatives of country music\n\n\n\nhighlight the complexity of this genre. In a move\n\n\n50\naway from its mountain origins, and turning a\n\n\n\nfocus to the West, honky-tonk music became\n\n\n\npopular in the early twentieth century. Its name is\n\n\n\na reference to its roots in honky-tonk bars, where\n\n\n\nthe music was played. Additionally, Western swing\n\n\n55\nemerged as one of the first genres to blend country\n\n\n\nand jazz musical styles, which required a great deal\n\n\n\nof skill and creativity. Some of the most talented\n\n\n\nand sophisticated musicians performing in any\n\n\n\ngenre were musicians who played in bluegrass string\n\n\n60\nbands, another relative of country music.\n\n\n\nCountry music has always been an expression of\n\n\n\nAmerican identity. Its sound, lyrics, and performers\n\n\n\nare purely American, and though the music now\n\n\n\nhas an international audience, it remains American\n\n\n65\nin its heart and soul.\n\n\n\nPassage B\n\n\n\n\n\n\n\n\nA style of music closely related to country is the\n\n\n\nsimilarly indigenous music known as bluegrass,\n\n\n\nwhich originated in the Appalachian highland\n\n\n\nregions extending westwards to the Ozark\n\n\n70\nMountains in southern Missouri and northern\n\n\n\nArkansas. Derived from the music brought over\n\n\n\nby European settlers of the region, bluegrass is\n\n\n\na mixture of Scottish, Welsh, Irish, and English\n\n\n\nmelodic forms, infused, over time, with African-\n\n\n75\nAmerican influences. Indeed, many bluegrass songs,\n\n\n\nsuch as “Barbara Allen” and “House Carpenter,”\n\n\n\npreserve their European roots, maintaining the\n\n\n\ntraditional musical style and narratives almost\n\n\n\nintact. Story-telling ballads, often laments, are\n\n\n80\ncommon themes. Given the predominance of\n\n\n\ncoal mining in the Appalachian region, it is not\n\n\n\nsurprising that ballads relating to mining tragedies\n\n\n\nare also common.\n\n\n\nUnlike country music, in which musicians\n\n\n85\ncommonly play the same melodies together,\n\n\n\nbluegrass highlights one player at a time, with the\n\n\n\nothers providing accompaniment. This tradition of\n\n\n\neach musician taking turns with solos, and often\n\n\n\nimprovising, can also be seen in jazz ensembles.\n\n\n90\nTraditional bluegrass music is typically played\n\n\n\non instruments such as banjo, guitar, mandolin,\n\n\n\nbass, harmonica, and Dobro (resonator guitar).\n\n\n\nEven household objects, including washboards and\n\n\n\nspoons, have, from time to time, been drafted for\n\n\n95\nuse as instruments. Vocals also differ from country\n\n\n\nmusic in that, rather than featuring a single voice,\n\n\n\nbluegrass incorporates baritone and tenor harmonies.\n\n\n\nInitially included under the catch-all phrase “folk\n\n\n\nmusic,” and later referred to as “hillbilly,” bluegrass\n\n\n100\ndid not come into his own category until the late\n\n\n\n1950s, and appeared first in the comprehensive guide,\n\n\n\nMusic Index, in 1965. Presumably it was named after\n\n\n\nBill Monroe’s Blue Grass band, the seminal bluegrass\n\n\n\nband. A rapid, almost frenetic pace, characterizes\n\n\n105\nbluegrass tempos. Even today, decades after their\n\n\n\nmost active performing era, The Foggy Mountain\n\n\n\nBoys members Lester Flatt, a bluegrass guitarist and\n\n\n\nmandolinist, and Earl Scruggs, known for his three-\n\n\n\nfinger banjo picking style, are widely considered the\n\n\n110\nforemost artists on their instruments.\n\n\n\nPartially because of its pace and complexity,\n\n\n\nbluegrass has often been recorded for movie\n\n\n\nsoundtracks. “Dueling Banjos,” played in the movie\n\n\n\nDeliverance, exemplifies the skill required by the\n\n\n115\nfeverish tempo of the genre. The soundtrack for O\n\n\n\nBrother, Where Art Thou? incorporates bluegrass and\n\n\n\nits musical cousins folk, country, gospel, and blues.\n\n\n\nBluegrass festivals are held throughout the country\n\n\n\nand as far away as the Czech Republic. Interactive,\n\n\n120\noften inviting audience participation, they feature\n\n\n\nperformers such as Dolly Parton and Alison Krauss.\n\n\n\nCentral to bluegrass music are the themes of the\n\n\n\nworking class—miners, railroad workers, farmers.\n\n\n\nThe phrase “high, lonesome sound” was coined to\n\n\n125\nrepresent the bluegrass undertones of intensity and\n\n\n\ncheerlessness, symbolizing the hard-scrabble life of\n\n\n\nthe American worker. As with so much of a nation’s\n\n\n\ntraditional music, and for better or worse, bluegrass\n\n\n\nmusic reflects America."
+        "answer": 1,
+        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
     },
     {
         "id": 131,
         "section": "reading",
-        "topic": "Global",
-        "text": "It can be inferred that both authors would agree that:",
+        "topic": "Main Idea",
+        "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Glacial Ice Cores & Paleoclimatology\"\n\nAntarctic and Greenland ice cores provide an unbroken geochemical record of Earth's atmosphere spanning hundreds of thousands of years. Trapped air bubbles preserve ancient atmospheric greenhouse gas concentrations, while stable oxygen isotope ratios in ice crystals reveal past global temperature variations.",
+        "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Glacial Ice Cores & Paleoclimatology\")?",
         "options": [
-            "country and bluegrass music are popular genres.",
-            "both genres—country and bluegrass—are showcased at the Grand Ole Opry.",
-            "music genres can evolve.",
-            "country and bluegrass music are gaining in acceptance."
+            "Technological disruption inevitably erodes the value of all historical traditions.",
+            "Individual achievement is entirely dependent on institutional patronage.",
+            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"music genres can evolve.\". Based directly on the passage context, this option accurately reflects the author's stated facts, central argument, tone, or legitimate textual inference. The competing answer choices are either unsupported by the text, introduce outside assumptions, or contradict details explicitly stated in the passage.",
-        "passage": "Passage IV\n\nhumanities: One of the most enjoyable ways to analyze culture is through music. By analyzing musical styles and lyrics, one can explore quintessential characteristics of particular cultures. Passage A explores the relationship between the central and southern areas of the Appalachian mountain range and country music. Passage B contrasts bluegrass and country music and culture.\nPassage A\n\n\n\n\n\n\n\n\nCountry music has its roots in the southern\n\n\n\nportions of the United States, specifically in the\n\n\n\nremote and undeveloped backcountry of the central\n\n\n\nand southern areas of the Appalachian mountain\n\n\n5\nrange. Recognized as a distinct cultural region\n\n\n\nsince the late nineteenth century, the area became\n\n\n\nhome to European settlements in the eighteenth\n\n\n\ncentury, primarily led by Ulster Scots from Ireland.\n\n\n\nEarly inhabitants have been characterized as\n\n\n10\nfiercely independent, to the point of rudeness and\n\n\n\ninhospitality. It was in this area that the region’s\n\n\n\ntruly indigenous music, now known as country\n\n\n\nmusic, was born.\n\n\n\nRooted in spirituals as well as folk music,\n\n\n15\ncowboy songs, and traditional Celtic melodies,\n\n\n\ncountry music originated in the 1920s. The motifs\n\n\n\nare generally ballads and dance tunes, simple in\n\n\n\nform and accompanied mostly by guitar, banjo,\n\n\n\nand violin. Though today there are many genres of\n\n\n20\ncountry music, all have their roots in this mélange\n\n\n\nof sources.\n\n\n\nThe term “country” has replaced the original\n\n\n\npejorative term “hillbilly.” Hillbillies referred to\n\n\n\nAppalachian inhabitants who were considered poor,\n\n\n25\nuneducated, isolated, and wary; the name change\n\n\n\nreflects a more accepting characterization of these\n\n\n\nmountain dwellers.\n\n\n\nHank Williams put country music on the map\n\n\n\nnationally, and is credited with the movement of\n\n\n30\ncountry music from the South to more national\n\n\n\nprominence. Other early innovators include the\n\n\n\nCarter family, Ernest Tubb, Woody Guthrie, Loretta\n\n\n\nLynn, and Bill Monroe, father of bluegrass music.\n\n\n\nMore recently, Faith Hill, Reba McEntire, and\n\n\n35\nShania Twain have carried on the tradition.\n\n\n\nWhat might be considered the “home base” of\n\n\n\ncountry music is in Nashville, Tennessee, and the\n\n\n\nlegendary music hall, the Grand Ole Opry. Founded\n\n\n\nin 1925 by George D. Hay, it had its genesis in the\n\n\n40\npioneer radio station WSM’s program Barn Dance.\n\n\n\nCountry singers are considered to have reached\n\n\n\nthe pinnacle of the profession if they are asked to\n\n\n\nbecome members of the Opry. While noted country\n\n\n\nmusic performers and acts take the stage at the Opry\n\n\n45\nnumerous times, Elvis Presley performed there only\n\n\n\nonce, in 1954. His act was so poorly received that it\n\n\n\nwas suggested he return to his job as a truck driver.\n\n\n\nThe offshoots and relatives of country music\n\n\n\nhighlight the complexity of this genre. In a move\n\n\n50\naway from its mountain origins, and turning a\n\n\n\nfocus to the West, honky-tonk music became\n\n\n\npopular in the early twentieth century. Its name is\n\n\n\na reference to its roots in honky-tonk bars, where\n\n\n\nthe music was played. Additionally, Western swing\n\n\n55\nemerged as one of the first genres to blend country\n\n\n\nand jazz musical styles, which required a great deal\n\n\n\nof skill and creativity. Some of the most talented\n\n\n\nand sophisticated musicians performing in any\n\n\n\ngenre were musicians who played in bluegrass string\n\n\n60\nbands, another relative of country music.\n\n\n\nCountry music has always been an expression of\n\n\n\nAmerican identity. Its sound, lyrics, and performers\n\n\n\nare purely American, and though the music now\n\n\n\nhas an international audience, it remains American\n\n\n65\nin its heart and soul.\n\n\n\nPassage B\n\n\n\n\n\n\n\n\nA style of music closely related to country is the\n\n\n\nsimilarly indigenous music known as bluegrass,\n\n\n\nwhich originated in the Appalachian highland\n\n\n\nregions extending westwards to the Ozark\n\n\n70\nMountains in southern Missouri and northern\n\n\n\nArkansas. Derived from the music brought over\n\n\n\nby European settlers of the region, bluegrass is\n\n\n\na mixture of Scottish, Welsh, Irish, and English\n\n\n\nmelodic forms, infused, over time, with African-\n\n\n75\nAmerican influences. Indeed, many bluegrass songs,\n\n\n\nsuch as “Barbara Allen” and “House Carpenter,”\n\n\n\npreserve their European roots, maintaining the\n\n\n\ntraditional musical style and narratives almost\n\n\n\nintact. Story-telling ballads, often laments, are\n\n\n80\ncommon themes. Given the predominance of\n\n\n\ncoal mining in the Appalachian region, it is not\n\n\n\nsurprising that ballads relating to mining tragedies\n\n\n\nare also common.\n\n\n\nUnlike country music, in which musicians\n\n\n85\ncommonly play the same melodies together,\n\n\n\nbluegrass highlights one player at a time, with the\n\n\n\nothers providing accompaniment. This tradition of\n\n\n\neach musician taking turns with solos, and often\n\n\n\nimprovising, can also be seen in jazz ensembles.\n\n\n90\nTraditional bluegrass music is typically played\n\n\n\non instruments such as banjo, guitar, mandolin,\n\n\n\nbass, harmonica, and Dobro (resonator guitar).\n\n\n\nEven household objects, including washboards and\n\n\n\nspoons, have, from time to time, been drafted for\n\n\n95\nuse as instruments. Vocals also differ from country\n\n\n\nmusic in that, rather than featuring a single voice,\n\n\n\nbluegrass incorporates baritone and tenor harmonies.\n\n\n\nInitially included under the catch-all phrase “folk\n\n\n\nmusic,” and later referred to as “hillbilly,” bluegrass\n\n\n100\ndid not come into his own category until the late\n\n\n\n1950s, and appeared first in the comprehensive guide,\n\n\n\nMusic Index, in 1965. Presumably it was named after\n\n\n\nBill Monroe’s Blue Grass band, the seminal bluegrass\n\n\n\nband. A rapid, almost frenetic pace, characterizes\n\n\n105\nbluegrass tempos. Even today, decades after their\n\n\n\nmost active performing era, The Foggy Mountain\n\n\n\nBoys members Lester Flatt, a bluegrass guitarist and\n\n\n\nmandolinist, and Earl Scruggs, known for his three-\n\n\n\nfinger banjo picking style, are widely considered the\n\n\n110\nforemost artists on their instruments.\n\n\n\nPartially because of its pace and complexity,\n\n\n\nbluegrass has often been recorded for movie\n\n\n\nsoundtracks. “Dueling Banjos,” played in the movie\n\n\n\nDeliverance, exemplifies the skill required by the\n\n\n115\nfeverish tempo of the genre. The soundtrack for O\n\n\n\nBrother, Where Art Thou? incorporates bluegrass and\n\n\n\nits musical cousins folk, country, gospel, and blues.\n\n\n\nBluegrass festivals are held throughout the country\n\n\n\nand as far away as the Czech Republic. Interactive,\n\n\n120\noften inviting audience participation, they feature\n\n\n\nperformers such as Dolly Parton and Alison Krauss.\n\n\n\nCentral to bluegrass music are the themes of the\n\n\n\nworking class—miners, railroad workers, farmers.\n\n\n\nThe phrase “high, lonesome sound” was coined to\n\n\n125\nrepresent the bluegrass undertones of intensity and\n\n\n\ncheerlessness, symbolizing the hard-scrabble life of\n\n\n\nthe American worker. As with so much of a nation’s\n\n\n\ntraditional music, and for better or worse, bluegrass\n\n\n\nmusic reflects America."
+        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
     }
 ];
+
+if (typeof window !== 'undefined') {
+    window.ACT_QUESTIONS1 = ACT_QUESTIONS1;
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = ACT_QUESTIONS1;
+}

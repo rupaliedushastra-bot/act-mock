@@ -10,7 +10,7 @@
 
 const EMAIL_API_URL = '/api/send-email';
 
-// ── Send admin email when student submits a test ───────
+// ── Send admin email when student submits an ACT test ───────
 async function sendEmails(result) {
   try {
     const res = await fetch(EMAIL_API_URL, {
@@ -27,11 +27,10 @@ async function sendEmails(result) {
           total:         result.total,
           pct:           result.pct,
           grade:         result.grade,
-          scaled:        result.scaled,
-          rwScore:       result.rwScore,
-          mathScore:     result.mathScore,
-          submitTime:    result.submitTime,
-          topicAnalysis: result.topicAnalysis,
+          composite:     result.composite || result.scaled,
+          sectionScores: result.sectionScores || {},
+          submitTime:    result.submitTime || new Date().toISOString(),
+          topicAnalysis: result.topicAnalysis || [],
         }
       })
     });
