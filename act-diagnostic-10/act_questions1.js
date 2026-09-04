@@ -1,5 +1,5 @@
 // =============================================
-// act_questions1.js – ACT Diagnostic Test 10
+// act_questions1.js – ACT-DIAGNOSTIC-10
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
 // Total: 131 questions
 // =============================================
@@ -1462,13 +1462,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Violinist of Prague\"\n\nIn the vaulted rehearsal hall of Prague, violinist Dominik tuned his instrument before the evening concerto. The resonant spruce top, carved by a master luthier in 1740, carried the acoustic warmth of nearly three centuries. Playing the intricate passages of Dvořák, Dominik felt himself becoming a vessel for melodies composed when the city's cobblestones were still young.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"The Violinist of Prague\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Profound musical interpretation transcends technical dexterity by forging a deep emotional bridge between instrument craftsmanship and audience empathy.",
+            "Precision tempo machines can completely replicate the emotional warmth of a live soloist.",
+            "Antique violins deteriorate in acoustic resonance as they age through centuries.",
+            "Orchestral concertos are effective only when performed without rehearsals."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Profound musical interpretation transcends technical dexterity by forging a deep emotional bridge between instrument craftsmanship and audience empathy.\". The narrative demonstrates that true musical resonance lies in emotional vulnerability rather than mere technical accuracy."
     },
     {
         "id": 105,
@@ -1597,13 +1597,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Anthropology of Maritime Communities\"\n\nCoastal fishing communities have historically developed intricate customary marine tenure systems. Through community-enforced seasonal closures and gear restrictions, artisanal fishers maintained sustainable harvesting levels without top-down bureaucratic intervention.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"Anthropology of Maritime Communities\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
+            "Coastal fishing villages maintain social hierarchies that completely disregard tidal changes.",
+            "Maritime coastal communities develop rich cultural cosmologies and mutual-aid social structures shaped directly by their intimate reliance on the sea.",
+            "Modern industrial trawlers have adopted traditional artisanal conservation ethics.",
+            "Maritime communities survive best when completely isolated from regional market networks."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Maritime coastal communities develop rich cultural cosmologies and mutual-aid social structures shaped directly by their intimate reliance on the sea.\". The anthropologist details how ecological co-dependence shapes coastal traditions and communal solidarity."
     },
     {
         "id": 114,
@@ -1732,13 +1732,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"Modernist Poetry & Urban Disillusion\"\n\nModernist poetry of the early twentieth century broke decisively with classical meter and romantic optimism. Confronting the fragmentation of industrial cities and the trauma of global warfare, poets utilized fractured imagery, polyphonic voices, and juxtaposition to convey modern psychological alienation.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage III (\"Modernist Poetry & Urban Disillusion\")?",
         "options": [
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Early twentieth-century poetry adhered strictly to pastoral Romantic rhyming conventions.",
+            "Modernist verse celebrated industrial mechanization as an unmitigated spiritual triumph.",
+            "Modernist poets employed fractured syntax and stark urban imagery to articulate the psychological fragmentation and disorientation of the industrial era.",
+            "Urban alienation had no perceptible influence on the structure of modernist free verse."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 2,
+        "explanation": "Correct Answer: \"Modernist poets employed fractured syntax and stark urban imagery to articulate the psychological fragmentation and disorientation of the industrial era.\". The analysis links experimental poetic form directly with the existential anxieties of industrial modernity."
     },
     {
         "id": 123,
@@ -1867,19 +1867,15 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Photosystem II & Solar Fuel Synthesis\"\n\nIn oxygenic photosynthesis, the multisubunit protein complex Photosystem II splits water molecules into oxygen, protons, and electrons using absorbed solar photons. Deciphering the catalytic manganese-calcium cluster of Photosystem II provides a biological blueprint for artificial solar fuel cells.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Photosystem II & Solar Fuel Synthesis\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Deciphering the catalytic water-splitting mechanism of Photosystem II provides the vital blueprint for designing efficient artificial solar fuels.",
+            "Photosystem II operates without requiring any solar photon absorption.",
+            "Water oxidation generates toxic byproducts that inevitably poison photosynthetic thylakoid membranes.",
+            "Artificial photosynthesis systems cannot produce hydrogen fuel without using rare noble gases."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Deciphering the catalytic water-splitting mechanism of Photosystem II provides the vital blueprint for designing efficient artificial solar fuels.\". The conclusion shows how biological water photolysis inspires sustainable solar chemical synthesis."
     }
 ];
-
-if (typeof window !== 'undefined') {
-    window.ACT_QUESTIONS1 = ACT_QUESTIONS1;
-}
 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = ACT_QUESTIONS1;

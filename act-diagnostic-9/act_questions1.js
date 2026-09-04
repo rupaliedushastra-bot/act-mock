@@ -1,5 +1,5 @@
 // =============================================
-// act_questions1.js – ACT Diagnostic Test 9
+// act_questions1.js – ACT-DIAGNOSTIC-9
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
 // Total: 131 questions
 // =============================================
@@ -1462,13 +1462,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Whispers of the Stone Mason\"\n\nMaster Mason Thomas examined the limestone block destined for the cathedral's flying buttress. Decades of chisel work had taught him that stone was not inert matter, but a dynamic medium with hidden grain and stress lines. Fitting the keystone into the soaring arch required millimetric precision to ensure the structural equilibrium of the sanctuary.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"Whispers of the Stone Mason\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
+            "Automated stone-cutting machinery has rendered traditional architectural principles obsolete.",
+            "Master stone masonry blends tactile craftsmanship with architectural geometry to create enduring structures that outlast transient modern materials.",
+            "Cathedral stonework was assembled without structural blueprints or load calculations.",
+            "Mortarless masonry is inherently incapable of supporting heavy vaulted arches."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Master stone masonry blends tactile craftsmanship with architectural geometry to create enduring structures that outlast transient modern materials.\". The narrative reflects on stone masonry as a timeless union of human labor and enduring beauty."
     },
     {
         "id": 105,
@@ -1597,13 +1597,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Economics of Renewable Transition\"\n\nThe global transition toward decentralized renewable energy grids involves complex economic realignments. While initial capital expenditures for photovoltaic and wind infrastructure are substantial, the declining marginal cost of renewable generation offers long-term price stability against fossil fuel market volatility.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"The Economics of Renewable Transition\")?",
         "options": [
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Achieving long-term energy transition requires overcoming initial capital constraints through sustained grid modernization and competitive levelized costs.",
+            "Fossil fuel subsidies should be increased to cushion renewable deployment costs.",
+            "Solar and wind energy can never achieve economic cost parity with conventional coal plants.",
+            "Centralized battery storage systems inherently destabilize regional electrical grids."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Achieving long-term energy transition requires overcoming initial capital constraints through sustained grid modernization and competitive levelized costs.\". The author argues that strategic capital deployment enables clean energy cost parity."
     },
     {
         "id": 114,
@@ -1732,13 +1732,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Evolution of Woodcut Printmaking\"\n\nThe sixteenth-century rise of relief printmaking democratized visual culture throughout Europe. Master printmakers like Albrecht Dürer utilized fine parallel hatching and cross-hatching to render dramatic tonal depth and textures in woodcut prints, producing thousands of affordable impressions.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage III (\"The Evolution of Woodcut Printmaking\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Woodblock relief prints were reserved exclusively for private imperial collections.",
+            "Metal engraving was completely abandoned after the invention of wooden relief printing.",
+            "The development of woodcut relief printing democratized visual art by enabling the widespread replication and dissemination of complex illustrations.",
+            "Intricate woodcut carvings could only produce a single viable impression before breaking."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 2,
+        "explanation": "Correct Answer: \"The development of woodcut relief printing democratized visual art by enabling the widespread replication and dissemination of complex illustrations.\". The passage highlights printmaking's historic role in popularizing visual literacy."
     },
     {
         "id": 123,
@@ -1867,19 +1867,15 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Avian Magnetoreception & Migration\"\n\nMigratory birds navigate across continents by detecting Earth's magnetic field through specialized cryptochrome proteins in their retinas. This quantum magnetoreception mechanism enables avian species to perceive subtle magnetic inclination angles as visual patterns of light and shadow.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Avian Magnetoreception & Migration\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Avian navigation is guided solely by coastal landmarks without magnetic sensitivity.",
+            "Magnetic field fluctuations cause migrating birds to lose their sense of equilibrium permanently.",
+            "Cryptochrome proteins in bird eyes are activated exclusively during pitch-black nights.",
+            "Migratory birds rely on light-dependent quantum magnetoreception mechanisms in their retinas to navigate accurately across continental distances."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Migratory birds rely on light-dependent quantum magnetoreception mechanisms in their retinas to navigate accurately across continental distances.\". The conclusion summarizes cryptochrome-mediated magnetic sensing as an evolutionary marvel."
     }
 ];
-
-if (typeof window !== 'undefined') {
-    window.ACT_QUESTIONS1 = ACT_QUESTIONS1;
-}
 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = ACT_QUESTIONS1;

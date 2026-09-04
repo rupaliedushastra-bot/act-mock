@@ -1026,17 +1026,26 @@ function formatPassageHTML(passage, qText) {
         }
 
         function formatLaTeX(str) {
-          if (!str || typeof str !== 'string') return str || '';
-          let res = str.replace(/\$([^\$]+)\$/g, (m, math) => {
-            if (window.katex) {
-              try {
-                return katex.renderToString(math, { throwOnError: false });
-              } catch (e) { }
-            }
-            return `<span class="latex-math">${formatMathCaret(math)}</span>`;
-          });
-          return formatMathCaret(res);
+    if (!str || typeof str !== 'string') return str || '';
+    const currencyMap = [];
+    const clean = str.replace(/\$(?:\d[\d,]*(?:\.\d+)?)(?=[,\s\.\)\?\!\;\–\—\-]|$)/g, (match) => {
+        const placeholder = `@@CURRENCY_${currencyMap.length}@@`;
+        currencyMap.push(match);
+        return placeholder;
+    });
+    let res = clean.replace(/\$([^\$]+)\$/g, (m, math) => {
+        if (typeof window !== 'undefined' && window.katex && window.katex.renderToString) {
+            try {
+                return window.katex.renderToString(math, { throwOnError: false });
+            } catch (e) { }
         }
+        return `<span class="latex-math">${formatMathCaret(math)}</span>`;
+    });
+    if (currencyMap.length > 0) {
+        res = res.replace(/@@CURRENCY_(\d+)@@/g, (_, idx) => currencyMap[Number(idx)]);
+    }
+    return formatMathCaret(res);
+}
 
         function formatMathCaret(text) {
           if (!text) return '';

@@ -471,15 +471,15 @@ const ACT_QUESTIONS1 = [
         "id": 34,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "text": "Consider the phrase in Dr. Chloe Lin's summary: 'It is interesting and worth noting that ancient phonetic scripts reacts dynamically to seasonal shifts in Oxford.'\n\nWhich revision most effectively improves directness?",
+        "text": "Consider the phrase in Dr. Chloe Lin's summary: 'It is interesting and worth noting that ancient phonetic scripts react dynamically to seasonal shifts in Oxford.'\n\nWhich revision most effectively improves directness?",
         "options": [
-            "As a matter of interesting fact, ancient phonetic scripts reacts dynamically to seasonal shifts in Oxford.",
-            "Worth noting is the reality that ancient phonetic scripts reacts dynamically in Oxford.",
-            "ancient phonetic scripts reacts dynamically to seasonal shifts in Oxford.",
-            "It goes without saying that ancient phonetic scripts reacts dynamically in Oxford."
+            "As a matter of interesting fact, ancient phonetic scripts react dynamically to seasonal shifts in Oxford.",
+            "Worth noting is the reality that ancient phonetic scripts react dynamically in Oxford.",
+            "ancient phonetic scripts react dynamically to seasonal shifts in Oxford.",
+            "It goes without saying that ancient phonetic scripts react dynamically in Oxford."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"ancient phonetic scripts reacts dynamically to seasonal shifts in Oxford.\". Deleting unnecessary throat-clearing phrases ('It is worth noting that...') makes the statement direct and authoritative."
+        "explanation": "Correct Answer: \"ancient phonetic scripts react dynamically to seasonal shifts in Oxford.\". Deleting unnecessary wordy phrases ('It is interesting and worth noting that...') makes the statement direct, concise, and grammatically sound."
     },
     {
         "id": 35,
@@ -1095,7 +1095,7 @@ const ACT_QUESTIONS1 = [
             "176&pi; cm<sup>3</sup>"
         ],
         "answer": 0,
-        "explanation": "Volume = (1/3)&pi;<i>r</i><sup>2</sup><i>h</i> = (1/3)&pi;(8)<sup>2</sup>(11) = 234.7&pi; cm<sup>3</sup>."
+        "explanation": "Volume = (1/3)&pi;<i>r</i><sup>2</sup><i>h</i> = (1/3)&pi;(8)<sup>2</sup>(11) = 704&pi;/3 &approx; 234.7&pi; cm<sup>3</sup> (rounded to one decimal place)."
     },
     {
         "id": 79,
@@ -1165,7 +1165,7 @@ const ACT_QUESTIONS1 = [
             "456&pi; cm<sup>2</sup>"
         ],
         "answer": 1,
-        "explanation": "Sector Area = &pi;<i>r</i><sup>2</sup>(&theta;/360&deg;) = &pi;(152)<sup>2</sup>(60&deg;/360&deg;) = 3850.67&pi; cm<sup>2</sup>."
+        "explanation": "Sector Area = &pi;<i>r</i><sup>2</sup>(&theta;/360&deg;) = &pi;(152)<sup>2</sup>(60&deg;/360&deg;) = 11552&pi;/3 &approx; 3850.67&pi; cm<sup>2</sup> (rounded to two decimal places)."
     },
     {
         "id": 84,
@@ -1344,26 +1344,26 @@ const ACT_QUESTIONS1 = [
         "options": [
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
-            "examine the intricate relationship between the weaver of lyon and its broader significance.",
+            "portray Madame Laurent's dedication to preserving traditional artisan weaving amidst industrialization.",
             "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"examine the intricate relationship between the weaver of lyon and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"The Weaver of Lyon\"."
+        "explanation": "Correct Answer: \"portray Madame Laurent's dedication to preserving traditional artisan weaving amidst industrialization.\". The passage focuses on Madame Laurent's preservation of the delicate Jacquard silk weaving tradition in contrast with industrial mass production."
     },
     {
         "id": 97,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Weaver of Lyon\"\n\nIn the historic silk quarter of Lyon, Madame Laurent operated the wooden loom with rhythmic grace. While industrial steam engines were rapidly transforming urban textile mills, her workshop preserved the delicate Jacquard weaving tradition. Her fingers deftly corrected tension irregularities in crimson and gold silk strands. For Laurent, fabric was not a commodity of mass production, but a living tapestry chronicling the artistic heritage of French artisans.",
-        "text": "According to the discussion in Passage I (\"The Weaver of Lyon\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage I (\"The Weaver of Lyon\"), Madame Laurent's weaving practice is characterized by:",
         "options": [
-            "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles."
+            "an exclusive reliance on steam engines and automated mass production.",
+            "rapid factory assembly without regard for individual thread tension.",
+            "a complete abandonment of historic French weaving techniques.",
+            "manual precision and personal skill in managing thread tension on a wooden loom."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"manual precision and personal skill in managing thread tension on a wooden loom.\". The passage states that Madame Laurent operated the wooden loom with rhythmic grace, deftly correcting tension irregularities in silk strands by hand."
     },
     {
         "id": 98,
@@ -1372,28 +1372,28 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Weaver of Lyon\"\n\nIn the historic silk quarter of Lyon, Madame Laurent operated the wooden loom with rhythmic grace. While industrial steam engines were rapidly transforming urban textile mills, her workshop preserved the delicate Jacquard weaving tradition. Her fingers deftly corrected tension irregularities in crimson and gold silk strands. For Laurent, fabric was not a commodity of mass production, but a living tapestry chronicling the artistic heritage of French artisans.",
         "text": "In the context of Passage I (\"The Weaver of Lyon\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "reverent and analytical.",
+            "appreciative and reverent.",
             "dismissive and cynical.",
             "detached and uninterested.",
             "confrontational and hostile."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"appreciative and reverent.\". The author describes Madame Laurent's craftsmanship with admiration, referring to her 'rhythmic grace' and viewing fabric as a 'living tapestry'."
     },
     {
         "id": 99,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Weaver of Lyon\"\n\nIn the historic silk quarter of Lyon, Madame Laurent operated the wooden loom with rhythmic grace. While industrial steam engines were rapidly transforming urban textile mills, her workshop preserved the delicate Jacquard weaving tradition. Her fingers deftly corrected tension irregularities in crimson and gold silk strands. For Laurent, fabric was not a commodity of mass production, but a living tapestry chronicling the artistic heritage of French artisans.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage I (\"The Weaver of Lyon\") that:",
+        "text": "It can reasonably be inferred from Passage I (\"The Weaver of Lyon\") that Madame Laurent viewed her work as:",
         "options": [
-            "the primary actors involved were unaware of the consequences of their actions.",
-            "the underlying principles discussed have enduring value that transcends simple utility.",
-            "external economic conditions had no impact on the development of the field.",
-            "the subject will likely lose relevance within the coming decade."
+            "a temporary trade to be discarded once steam engines became cheaper.",
+            "an artistic cultural tradition rather than merely a commercial commodity.",
+            "an endeavor driven solely by maximizing unit output and profit margins.",
+            "a mechanical routine unrelated to French artistic heritage."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"an artistic cultural tradition rather than merely a commercial commodity.\". The passage explicitly notes that for Laurent, fabric was 'not a commodity of mass production, but a living tapestry chronicling the artistic heritage of French artisans'."
     },
     {
         "id": 100,
@@ -1404,56 +1404,56 @@ const ACT_QUESTIONS1 = [
         "options": [
             "open with a refutation of an established scientific consensus.",
             "present a chronological series of unrelated anecdotes.",
-            "establish context before exploring specific examples and deeper philosophical implications.",
+            "contrast traditional artisan weaving with industrial mass production to highlight cultural craftsmanship.",
             "compare two equally viable opposing hypotheses."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"contrast traditional artisan weaving with industrial mass production to highlight cultural craftsmanship.\". The passage contrasts urban steam mills with Madame Laurent's workshop to illustrate the cultural value of the Jacquard tradition."
     },
     {
         "id": 101,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Weaver of Lyon\"\n\nIn the historic silk quarter of Lyon, Madame Laurent operated the wooden loom with rhythmic grace. While industrial steam engines were rapidly transforming urban textile mills, her workshop preserved the delicate Jacquard weaving tradition. Her fingers deftly corrected tension irregularities in crimson and gold silk strands. For Laurent, fabric was not a commodity of mass production, but a living tapestry chronicling the artistic heritage of French artisans.",
-        "text": "In Passage I (\"The Weaver of Lyon\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage I (\"The Weaver of Lyon\"), Madame Laurent's preservation of the Jacquard tradition is most directly attributed to:",
         "options": [
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance."
+            "her dedicated manual skill and reverence for artisanal heritage."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"her dedicated manual skill and reverence for artisanal heritage.\". The passage highlights her rhythmic grace, deft manual corrections, and deep valuation of French artisan heritage."
     },
     {
         "id": 102,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Weaver of Lyon\"\n\nIn the historic silk quarter of Lyon, Madame Laurent operated the wooden loom with rhythmic grace. While industrial steam engines were rapidly transforming urban textile mills, her workshop preserved the delicate Jacquard weaving tradition. Her fingers deftly corrected tension irregularities in crimson and gold silk strands. For Laurent, fabric was not a commodity of mass production, but a living tapestry chronicling the artistic heritage of French artisans.",
-        "text": "The author's perspective toward the evolution of Passage I (\"The Weaver of Lyon\") is best described as:",
+        "text": "The author's perspective toward Madame Laurent's craft in Passage I is best described as:",
         "options": [
-            "deeply respectful of its heritage and nuanced complexities.",
-            "skeptical of its claimed achievements.",
+            "deeply respectful of its artisanal heritage and cultural significance.",
+            "skeptical of its economic viability.",
             "strictly neutral and reporting raw data.",
-            "nostalgic yet dismissive of modern adaptations."
+            "dismissive of traditional methods in favor of steam mills."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"deeply respectful of its artisanal heritage and cultural significance.\". The author emphasizes the beauty, grace, and historic importance of traditional Jacquard weaving."
     },
     {
         "id": 103,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Weaver of Lyon\"\n\nIn the historic silk quarter of Lyon, Madame Laurent operated the wooden loom with rhythmic grace. While industrial steam engines were rapidly transforming urban textile mills, her workshop preserved the delicate Jacquard weaving tradition. Her fingers deftly corrected tension irregularities in crimson and gold silk strands. For Laurent, fabric was not a commodity of mass production, but a living tapestry chronicling the artistic heritage of French artisans.",
-        "text": "The author of Passage I (\"The Weaver of Lyon\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage I (\"The Weaver of Lyon\") suggests that treating fabric solely as a mass-produced commodity would:",
         "options": [
             "lead to rapid efficiency improvements in industrial manufacturing.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "overlook the living artistic heritage and craftsmanship embodied in traditional textiles.",
             "be the most accurate way to quantify its economic value.",
             "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"overlook the living artistic heritage and craftsmanship embodied in traditional textiles.\". The passage contrasts viewing fabric as a mass-produced commodity with viewing it as a living tapestry of artisan heritage."
     },
     {
         "id": 104,
@@ -1464,11 +1464,11 @@ const ACT_QUESTIONS1 = [
         "options": [
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Traditional craftsmanship preserves an invaluable cultural and artistic heritage amidst industrialization.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Traditional craftsmanship preserves an invaluable cultural and artistic heritage amidst industrialization.\". The passage concludes by affirming that traditional artisan weaving maintains a living chronicle of artistic heritage that transcends mass commodity production."
     },
     {
         "id": 105,
@@ -1480,25 +1480,25 @@ const ACT_QUESTIONS1 = [
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
             "argue that modern technological advancements have rendered past practices obsolete.",
-            "examine the intricate relationship between cognitive biases in public policy and its broader significance."
+            "explain how understanding cognitive biases enables policymakers to design effective regulatory nudges."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"examine the intricate relationship between cognitive biases in public policy and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Cognitive Biases in Public Policy\"."
+        "explanation": "Correct Answer: \"explain how understanding cognitive biases enables policymakers to design effective regulatory nudges.\". The passage explains how behavioral economics helps institutional designers create frameworks that guide individuals toward better decisions."
     },
     {
         "id": 106,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Cognitive Biases in Public Policy\"\n\nBehavioral economics demonstrates that public policy decisions are frequently shaped by heuristic cognitive shortcuts, including loss aversion and status quo bias. Recognizing these psychological inclinations allows institutional designers to craft regulatory frameworks that nudge individuals toward optimal civic and financial outcomes.",
-        "text": "According to the discussion in Passage II (\"Cognitive Biases in Public Policy\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage II (\"Cognitive Biases in Public Policy\"), behavioral economics helps institutional designers by:",
         "options": [
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
-            "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "identifying cognitive shortcuts like loss aversion to design beneficial regulatory nudges.",
+            "eliminating all forms of regulatory oversight in financial markets.",
+            "mandating that individuals make decisions without any psychological influence.",
+            "proving that human decisions are completely erratic and impossible to influence."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"identifying cognitive shortcuts like loss aversion to design beneficial regulatory nudges.\". The passage explains that recognizing inclinations like loss aversion and status quo bias allows designers to craft regulatory frameworks that nudge individuals toward optimal outcomes."
     },
     {
         "id": 107,
@@ -1508,27 +1508,27 @@ const ACT_QUESTIONS1 = [
         "text": "In the context of Passage II (\"Cognitive Biases in Public Policy\"), the author's descriptive tone is best characterized as:",
         "options": [
             "dismissive and cynical.",
-            "reverent and analytical.",
+            "analytical and informative.",
             "detached and uninterested.",
             "confrontational and hostile."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"analytical and informative.\". The author provides a clear, objective analysis of behavioral economics and its application to public policy."
     },
     {
         "id": 108,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Cognitive Biases in Public Policy\"\n\nBehavioral economics demonstrates that public policy decisions are frequently shaped by heuristic cognitive shortcuts, including loss aversion and status quo bias. Recognizing these psychological inclinations allows institutional designers to craft regulatory frameworks that nudge individuals toward optimal civic and financial outcomes.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage II (\"Cognitive Biases in Public Policy\") that:",
+        "text": "It can reasonably be inferred from Passage II (\"Cognitive Biases in Public Policy\") that cognitive shortcuts:",
         "options": [
-            "the primary actors involved were unaware of the consequences of their actions.",
-            "external economic conditions had no impact on the development of the field.",
-            "the underlying principles discussed have enduring value that transcends simple utility.",
-            "the subject will likely lose relevance within the coming decade."
+            "invariably lead to optimal financial outcomes without any regulatory intervention.",
+            "are completely eliminated once individuals enter public office.",
+            "systematically influence individual decision-making in ways policy designers can anticipate.",
+            "have no practical relevance to civic institutions."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"systematically influence individual decision-making in ways policy designers can anticipate.\". Because cognitive shortcuts like loss aversion follow predictable patterns, institutional designers can construct frameworks that guide individuals toward better choices."
     },
     {
         "id": 109,
@@ -1540,55 +1540,55 @@ const ACT_QUESTIONS1 = [
             "open with a refutation of an established scientific consensus.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses.",
-            "establish context before exploring specific examples and deeper philosophical implications."
+            "identify psychological cognitive biases and explain their application in institutional policy design."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"identify psychological cognitive biases and explain their application in institutional policy design.\". The passage begins by identifying specific cognitive shortcuts and concludes by explaining how policymakers can utilize them to achieve optimal civic outcomes."
     },
     {
         "id": 110,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Cognitive Biases in Public Policy\"\n\nBehavioral economics demonstrates that public policy decisions are frequently shaped by heuristic cognitive shortcuts, including loss aversion and status quo bias. Recognizing these psychological inclinations allows institutional designers to craft regulatory frameworks that nudge individuals toward optimal civic and financial outcomes.",
-        "text": "In Passage II (\"Cognitive Biases in Public Policy\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage II (\"Cognitive Biases in Public Policy\"), effective regulatory design is most directly attributed to:",
         "options": [
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
-            "favorable political mandates enacted by municipal authorities.",
+            "recognizing psychological inclinations and crafting frameworks that nudge behavior.",
+            "favorable political mandates enacted without empirical research.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"recognizing psychological inclinations and crafting frameworks that nudge behavior.\". The text states that recognizing psychological inclinations enables institutional designers to craft regulatory frameworks that nudge optimal outcomes."
     },
     {
         "id": 111,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Cognitive Biases in Public Policy\"\n\nBehavioral economics demonstrates that public policy decisions are frequently shaped by heuristic cognitive shortcuts, including loss aversion and status quo bias. Recognizing these psychological inclinations allows institutional designers to craft regulatory frameworks that nudge individuals toward optimal civic and financial outcomes.",
-        "text": "The author's perspective toward the evolution of Passage II (\"Cognitive Biases in Public Policy\") is best described as:",
+        "text": "The author's perspective toward the application of behavioral economics in Passage II is best described as:",
         "options": [
-            "skeptical of its claimed achievements.",
-            "deeply respectful of its heritage and nuanced complexities.",
-            "strictly neutral and reporting raw data.",
-            "nostalgic yet dismissive of modern adaptations."
+            "skeptical of whether cognitive biases actually exist.",
+            "objective and supportive of using behavioral insights to improve public policy.",
+            "strictly emotional and critical of institutional regulation.",
+            "nostalgic for traditional neoclassical economic models."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"objective and supportive of using behavioral insights to improve public policy.\". The author objectively outlines how behavioral economics provides practical tools for designing better civic and financial frameworks."
     },
     {
         "id": 112,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Cognitive Biases in Public Policy\"\n\nBehavioral economics demonstrates that public policy decisions are frequently shaped by heuristic cognitive shortcuts, including loss aversion and status quo bias. Recognizing these psychological inclinations allows institutional designers to craft regulatory frameworks that nudge individuals toward optimal civic and financial outcomes.",
-        "text": "The author of Passage II (\"Cognitive Biases in Public Policy\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage II suggests that failing to account for cognitive biases in public policy would:",
         "options": [
             "lead to rapid efficiency improvements in industrial manufacturing.",
-            "be the most accurate way to quantify its economic value.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "be the most accurate way to quantify economic value.",
+            "overlook key psychological factors that shape citizen decisions and outcomes.",
             "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"overlook key psychological factors that shape citizen decisions and outcomes.\". The passage emphasizes that policy decisions and human behavior are shaped by cognitive shortcuts, which policymakers must account for to achieve optimal outcomes."
     },
     {
         "id": 113,
@@ -1600,10 +1600,10 @@ const ACT_QUESTIONS1 = [
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
+            "Understanding behavioral heuristics allows policymakers to nudge individuals toward optimal civic and financial outcomes."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Understanding behavioral heuristics allows policymakers to nudge individuals toward optimal civic and financial outcomes.\". The passage concludes that recognizing cognitive biases enables designers to craft frameworks that nudge citizens toward optimal outcomes."
     },
     {
         "id": 114,
@@ -1612,28 +1612,28 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"Literary Realism & 19th Century Society\"\n\nNineteenth-century literary realism emerged as a direct artistic reaction against the idealized sentimentalism of romantic fiction. Authors like Balzac and George Eliot employed panoramic social analysis, portraying characters shaped by economic realities, class constraints, and institutional pressures.",
         "text": "Based on Passage III (\"Literary Realism & 19th Century Society\"), the primary purpose of the text is to:",
         "options": [
-            "examine the intricate relationship between literary realism & 19th century society and its broader significance.",
+            "explain how 19th-century literary realism emerged to portray society and human behavior through realistic socioeconomic constraints.",
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
             "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"examine the intricate relationship between literary realism & 19th century society and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Literary Realism & 19th Century Society\"."
+        "explanation": "Correct Answer: \"explain how 19th-century literary realism emerged to portray society and human behavior through realistic socioeconomic constraints.\". The passage explains that realism arose as a reaction to romanticism, focusing on characters shaped by economic, class, and institutional realities."
     },
     {
         "id": 115,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"Literary Realism & 19th Century Society\"\n\nNineteenth-century literary realism emerged as a direct artistic reaction against the idealized sentimentalism of romantic fiction. Authors like Balzac and George Eliot employed panoramic social analysis, portraying characters shaped by economic realities, class constraints, and institutional pressures.",
-        "text": "According to the discussion in Passage III (\"Literary Realism & 19th Century Society\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage III (\"Literary Realism & 19th Century Society\"), 19th-century realism developed primarily as a reaction against:",
         "options": [
-            "It was achieved without significant labor or long-term dedication.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "the idealized sentimentalism of romantic fiction.",
+            "the use of panoramic social analysis in novels.",
+            "portraying economic realities in literature.",
+            "the depiction of institutional pressures on individuals."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "answer": 0,
+        "explanation": "Correct Answer: \"the idealized sentimentalism of romantic fiction.\". The passage explicitly states that realism emerged as a direct artistic reaction against the idealized sentimentalism of romantic fiction."
     },
     {
         "id": 116,
@@ -1644,26 +1644,26 @@ const ACT_QUESTIONS1 = [
         "options": [
             "dismissive and cynical.",
             "detached and uninterested.",
-            "reverent and analytical.",
+            "analytical and appreciative.",
             "confrontational and hostile."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"analytical and appreciative.\". The author provides a thoughtful, analytical summary of realism's historical development and literary merits."
     },
     {
         "id": 117,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"Literary Realism & 19th Century Society\"\n\nNineteenth-century literary realism emerged as a direct artistic reaction against the idealized sentimentalism of romantic fiction. Authors like Balzac and George Eliot employed panoramic social analysis, portraying characters shaped by economic realities, class constraints, and institutional pressures.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage III (\"Literary Realism & 19th Century Society\") that:",
+        "text": "It can reasonably be inferred from Passage III (\"Literary Realism & 19th Century Society\") that realist authors such as Balzac and George Eliot believed literature should:",
         "options": [
-            "the primary actors involved were unaware of the consequences of their actions.",
-            "external economic conditions had no impact on the development of the field.",
-            "the subject will likely lose relevance within the coming decade.",
-            "the underlying principles discussed have enduring value that transcends simple utility."
+            "escape into romantic fantasies that ignore societal limitations.",
+            "focus exclusively on mythological and supernatural themes.",
+            "ignore the influence of class structure on personal destiny.",
+            "accurately reflect the economic, class, and institutional forces that govern everyday life."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"accurately reflect the economic, class, and institutional forces that govern everyday life.\". The passage states that realist authors portrayed characters shaped by economic realities, class constraints, and institutional pressures."
     },
     {
         "id": 118,
@@ -1672,58 +1672,58 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"Literary Realism & 19th Century Society\"\n\nNineteenth-century literary realism emerged as a direct artistic reaction against the idealized sentimentalism of romantic fiction. Authors like Balzac and George Eliot employed panoramic social analysis, portraying characters shaped by economic realities, class constraints, and institutional pressures.",
         "text": "The structural development of Passage III (\"Literary Realism & 19th Century Society\") serves primarily to:",
         "options": [
-            "establish context before exploring specific examples and deeper philosophical implications.",
+            "define the emergence of literary realism as a counter-movement and describe its key thematic focus.",
             "open with a refutation of an established scientific consensus.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"define the emergence of literary realism as a counter-movement and describe its key thematic focus.\". The passage opens by defining realism in opposition to romanticism and then details its panoramic social and economic focus."
     },
     {
         "id": 119,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"Literary Realism & 19th Century Society\"\n\nNineteenth-century literary realism emerged as a direct artistic reaction against the idealized sentimentalism of romantic fiction. Authors like Balzac and George Eliot employed panoramic social analysis, portraying characters shaped by economic realities, class constraints, and institutional pressures.",
-        "text": "In Passage III (\"Literary Realism & 19th Century Society\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage III (\"Literary Realism & 19th Century Society\"), the distinctive impact of realist literature is attributed to:",
         "options": [
             "favorable political mandates enacted by municipal authorities.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "its panoramic social analysis depicting characters shaped by socioeconomic and institutional forces.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"its panoramic social analysis depicting characters shaped by socioeconomic and institutional forces.\". The passage highlights how authors like Balzac and Eliot portrayed characters shaped by economic realities, class constraints, and institutional pressures."
     },
     {
         "id": 120,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE III: HUMANITIES\n\n\"Literary Realism & 19th Century Society\"\n\nNineteenth-century literary realism emerged as a direct artistic reaction against the idealized sentimentalism of romantic fiction. Authors like Balzac and George Eliot employed panoramic social analysis, portraying characters shaped by economic realities, class constraints, and institutional pressures.",
-        "text": "The author's perspective toward the evolution of Passage III (\"Literary Realism & 19th Century Society\") is best described as:",
+        "text": "The author's perspective toward 19th-century literary realism in Passage III is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
             "strictly neutral and reporting raw data.",
-            "deeply respectful of its heritage and nuanced complexities.",
+            "insightful and appreciative of its analytical portrayal of society.",
             "nostalgic yet dismissive of modern adaptations."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"insightful and appreciative of its analytical portrayal of society.\". The author highlights realism's meaningful shift toward authentic social observation and panoramic analysis."
     },
     {
         "id": 121,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"Literary Realism & 19th Century Society\"\n\nNineteenth-century literary realism emerged as a direct artistic reaction against the idealized sentimentalism of romantic fiction. Authors like Balzac and George Eliot employed panoramic social analysis, portraying characters shaped by economic realities, class constraints, and institutional pressures.",
-        "text": "The author of Passage III (\"Literary Realism & 19th Century Society\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage III suggests that viewing 19th-century novels without considering their socioeconomic context would:",
         "options": [
             "lead to rapid efficiency improvements in industrial manufacturing.",
-            "be the most accurate way to quantify its economic value.",
+            "be the most accurate way to quantify their economic value.",
             "align perfectly with the original creator's stated philosophy.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies."
+            "miss the core realist objective of portraying characters shaped by class and economic pressures."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"miss the core realist objective of portraying characters shaped by class and economic pressures.\". Realist literature was explicitly constructed to portray how economic realities, class constraints, and institutional pressures shape human lives."
     },
     {
         "id": 122,
@@ -1732,13 +1732,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"Literary Realism & 19th Century Society\"\n\nNineteenth-century literary realism emerged as a direct artistic reaction against the idealized sentimentalism of romantic fiction. Authors like Balzac and George Eliot employed panoramic social analysis, portraying characters shaped by economic realities, class constraints, and institutional pressures.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage III (\"Literary Realism & 19th Century Society\")?",
         "options": [
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Literary realism transformed fiction by replacing romantic idealization with panoramic examinations of societal and economic forces.",
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Literary realism transformed fiction by replacing romantic idealization with panoramic examinations of societal and economic forces.\". The passage concludes that realism redefined literature through panoramic social analysis grounded in real-world socioeconomic realities."
     },
     {
         "id": 123,
@@ -1748,27 +1748,27 @@ const ACT_QUESTIONS1 = [
         "text": "Based on Passage IV (\"Mycorrhizal Fungal Communication\"), the primary purpose of the text is to:",
         "options": [
             "criticize traditional approaches while advocating for immediate reform.",
-            "examine the intricate relationship between mycorrhizal fungal communication and its broader significance.",
+            "explain the symbiotic nutrient exchange and communication functions of underground mycorrhizal networks.",
             "provide a purely statistical timeline of historical events.",
             "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"examine the intricate relationship between mycorrhizal fungal communication and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Mycorrhizal Fungal Communication\"."
+        "explanation": "Correct Answer: \"explain the symbiotic nutrient exchange and communication functions of underground mycorrhizal networks.\". The passage describes how mycorrhizal networks connect forest trees, facilitate nutrient trade, and transmit biochemical warnings."
     },
     {
         "id": 124,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Mycorrhizal Fungal Communication\"\n\nUnderground mycorrhizal networks establish vast symbiotic partnerships between fungal mycelium and forest trees. Through these subterranean channels, plants exchange photosynthetic carbon for fungal phosphorus and nitrogen, while transmitting biochemical warning signals regarding insect pest infestations.",
-        "text": "According to the discussion in Passage IV (\"Mycorrhizal Fungal Communication\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage IV (\"Mycorrhizal Fungal Communication\"), what do plants and fungal mycelium exchange through mycorrhizal networks?",
         "options": [
-            "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "Plants provide photosynthetic carbon in exchange for fungal phosphorus and nitrogen.",
+            "Plants provide toxic waste in exchange for fungal water reserves.",
+            "Plants provide mechanical support in exchange for synthetic pesticides.",
+            "Fungi provide photosynthetic carbon while trees supply fungal nitrogen."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Plants provide photosynthetic carbon in exchange for fungal phosphorus and nitrogen.\". The passage states that plants exchange photosynthetic carbon for fungal phosphorus and nitrogen through subterranean channels."
     },
     {
         "id": 125,
@@ -1780,25 +1780,25 @@ const ACT_QUESTIONS1 = [
             "dismissive and cynical.",
             "detached and uninterested.",
             "confrontational and hostile.",
-            "reverent and analytical."
+            "scientific and informative."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"scientific and informative.\". The author explains the biological mechanisms of mycorrhizal symbiosis in a clear, objective, and informative manner."
     },
     {
         "id": 126,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Mycorrhizal Fungal Communication\"\n\nUnderground mycorrhizal networks establish vast symbiotic partnerships between fungal mycelium and forest trees. Through these subterranean channels, plants exchange photosynthetic carbon for fungal phosphorus and nitrogen, while transmitting biochemical warning signals regarding insect pest infestations.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage IV (\"Mycorrhizal Fungal Communication\") that:",
+        "text": "It can reasonably be inferred from Passage IV (\"Mycorrhizal Fungal Communication\") that mycorrhizal networks:",
         "options": [
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "enhance forest defense by transmitting biochemical warnings about insect infestations between trees.",
             "the primary actors involved were unaware of the consequences of their actions.",
             "external economic conditions had no impact on the development of the field.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"enhance forest defense by transmitting biochemical warnings about insect infestations between trees.\". The passage notes that trees transmit biochemical warning signals regarding insect pest infestations through subterranean fungal channels."
     },
     {
         "id": 127,
@@ -1808,57 +1808,57 @@ const ACT_QUESTIONS1 = [
         "text": "The structural development of Passage IV (\"Mycorrhizal Fungal Communication\") serves primarily to:",
         "options": [
             "open with a refutation of an established scientific consensus.",
-            "establish context before exploring specific examples and deeper philosophical implications.",
+            "define the mycorrhizal symbiotic partnership and detail its nutrient-sharing and signaling capabilities.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"define the mycorrhizal symbiotic partnership and detail its nutrient-sharing and signaling capabilities.\". The passage introduces underground mycorrhizal networks and then explains their dual roles in nutrient exchange and defensive communication."
     },
     {
         "id": 128,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Mycorrhizal Fungal Communication\"\n\nUnderground mycorrhizal networks establish vast symbiotic partnerships between fungal mycelium and forest trees. Through these subterranean channels, plants exchange photosynthetic carbon for fungal phosphorus and nitrogen, while transmitting biochemical warning signals regarding insect pest infestations.",
-        "text": "In Passage IV (\"Mycorrhizal Fungal Communication\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage IV (\"Mycorrhizal Fungal Communication\"), the successful functioning of forest ecosystems is most directly attributed to:",
         "options": [
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "subterranean symbiotic channels that enable nutrient trading and pest warning signals.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"subterranean symbiotic channels that enable nutrient trading and pest warning signals.\". The text highlights that underground mycorrhizal networks facilitate vital exchanges of carbon, nitrogen, phosphorus, and biochemical warning signals."
     },
     {
         "id": 129,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Mycorrhizal Fungal Communication\"\n\nUnderground mycorrhizal networks establish vast symbiotic partnerships between fungal mycelium and forest trees. Through these subterranean channels, plants exchange photosynthetic carbon for fungal phosphorus and nitrogen, while transmitting biochemical warning signals regarding insect pest infestations.",
-        "text": "The author's perspective toward the evolution of Passage IV (\"Mycorrhizal Fungal Communication\") is best described as:",
+        "text": "The author's perspective toward mycorrhizal networks in Passage IV is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
-            "strictly neutral and reporting raw data.",
-            "nostalgic yet dismissive of modern adaptations.",
-            "deeply respectful of its heritage and nuanced complexities."
+            "strictly emotional and nostalgic.",
+            "dismissive of botanical research.",
+            "objective and appreciative of natural ecological interconnectedness."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"objective and appreciative of natural ecological interconnectedness.\". The author provides a factual, appreciative explanation of the complex mutualistic relationship between fungi and trees."
     },
     {
         "id": 130,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Mycorrhizal Fungal Communication\"\n\nUnderground mycorrhizal networks establish vast symbiotic partnerships between fungal mycelium and forest trees. Through these subterranean channels, plants exchange photosynthetic carbon for fungal phosphorus and nitrogen, while transmitting biochemical warning signals regarding insect pest infestations.",
-        "text": "The author of Passage IV (\"Mycorrhizal Fungal Communication\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage IV suggests that viewing forest trees as isolated individual organisms would:",
         "options": [
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
             "lead to rapid efficiency improvements in industrial manufacturing.",
+            "overlook the extensive subterranean networks that connect and support forest ecosystems.",
             "be the most accurate way to quantify its economic value.",
             "align perfectly with the original creator's stated philosophy."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "answer": 1,
+        "explanation": "Correct Answer: \"overlook the extensive subterranean networks that connect and support forest ecosystems.\". The text emphasizes that forest trees are linked by vast underground mycorrhizal networks that facilitate resource exchange and communication."
     },
     {
         "id": 131,
@@ -1868,12 +1868,12 @@ const ACT_QUESTIONS1 = [
         "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Mycorrhizal Fungal Communication\")?",
         "options": [
             "Technological disruption inevitably erodes the value of all historical traditions.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Mycorrhizal networks establish essential symbiotic channels for nutrient exchange and biochemical warning communication in forests.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Mycorrhizal networks establish essential symbiotic channels for nutrient exchange and biochemical warning communication in forests.\". The passage concludes that mycorrhizal networks serve as vital subterranean pathways through which trees exchange carbon for fungal nutrients and transmit biochemical warning signals."
     }
 ];
 

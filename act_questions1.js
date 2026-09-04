@@ -191,15 +191,15 @@ const ACT_QUESTIONS1 = [
         "id": 14,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "text": "A student is writing a paragraph about rising sea levels and wants a concluding sentence that maintains a formal, evidence-based tone. Which sentence best fits?",
+        "text": "The writer is considering adding the following true statement to a paragraph detailing the efficiency benefits of municipal high-speed rail networks:\n\n\"Many locomotive conductors undergo rigorous physiological examinations and technical simulator training before operating passenger transit cars.\"\n\nShould the writer make this addition here?",
         "options": [
-            "These rising sea levels represent a measurable and accelerating threat to coastal populations worldwide.",
-            "It's really scary how much the oceans are rising these days.",
-            "Someone should definitely do something about all this water.",
-            "Sea levels have always changed throughout history, so maybe it's not that big a deal."
+            "Yes, because it provides essential biographical context regarding the individuals who operate mass transit networks.",
+            "Yes, because it supports the argument that modern locomotives achieve high speeds safely.",
+            "No, because it introduces a digression about personnel requirements that distracts from the paragraph's focus on system efficiency.",
+            "No, because it contradicts the earlier claim that automated dispatch systems manage train schedules."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"These rising sea levels represent a measurable and accelerating threat to coastal populations worldwide.\". This option best accomplishes the author's rhetorical goal by providing logical progression, precise transitional relationships, and cohesive paragraph organization that directly supports the central focus of the passage."
+        "answer": 2,
+        "explanation": "Correct Answer: \"No, because it introduces a digression about personnel requirements that distracts from the paragraph's focus on system efficiency.\". The paragraph focuses strictly on the operational and environmental efficiency of municipal rail systems. Introducing information about conductor training and medical exams creates a digression that interrupts the logical flow and relevance of the paragraph."
     },
     {
         "id": 15,

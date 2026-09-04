@@ -1,5 +1,5 @@
 // =============================================
-// act_questions1.js – ACT Diagnostic Test 7
+// act_questions1.js – ACT-DIAGNOSTIC-7
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
 // Total: 131 questions
 // =============================================
@@ -1462,13 +1462,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Botanist's Journal\"\n\nDr. Evelyn Vance recorded her botanical observations in leather-bound notebooks beneath the humid canopy of the Monteverde cloud forest. Epiphytic orchids clung to moss-draped branches, creating aerial gardens that hosted endemic amphibians. Her meticulous watercolor sketches captured fleeting morphological details before specimens succumbed to tropical humidity.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"The Botanist's Journal\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Botanical fieldwork should be entirely replaced by satellite imagery and remote sensing.",
+            "Dedicated empirical observation and detailed field documentation remain indispensable for preserving biodiversity in fragile tropical ecosystems.",
+            "Cloud forest species adapt rapidly to changing humidity levels without human intervention.",
+            "Specimen collection is only valuable when backed by commercial pharmaceutical companies."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Dedicated empirical observation and detailed field documentation remain indispensable for preserving biodiversity in fragile tropical ecosystems.\". The narrative reflects on Dr. Vance's meticulous fieldwork as a vital defense against losing fragile biodiversity."
     },
     {
         "id": 105,
@@ -1597,13 +1597,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Psychology of Collective Memory\"\n\nCollective memory represents the shared pool of knowledge and information in the memories of two or more members of a social group. Cultural institutions, historical commemorations, and public monuments play a crucial role in constructing national identities and transmitting historical narratives across generations.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"Psychology of Collective Memory\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Individual memory is completely isolated from institutional and cultural influences.",
+            "Historical monuments eliminate all debate regarding past historical events.",
+            "Collective memory serves as an active social foundation through which communities continually reconstruct and negotiate their shared cultural identity.",
+            "Collective memory remains completely static and unalterable across generations."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Collective memory serves as an active social foundation through which communities continually reconstruct and negotiate their shared cultural identity.\". The passage concludes that collective memory is an ongoing social process of identity transmission."
     },
     {
         "id": 114,
@@ -1732,13 +1732,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Cultural Semiotics of Theater\"\n\nClassical dramatic performance functioned as a communal ritual of moral and political interrogation. Through tragic catharsis, audiences confronted fundamental dilemmas regarding divine justice, civic duty, and the limits of individual agency.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage III (\"The Cultural Semiotics of Theater\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
+            "Dramatic theater functions as a multi-layered symbolic system where staging, gesture, and spoken language collaboratively generate cultural meaning.",
+            "Theatrical meaning is determined exclusively by the playwright's written script without regard to staging.",
+            "Visual symbols in theater distract audiences from understanding philosophical dialogue.",
+            "Non-verbal gestures in drama have no measurable impact on cultural interpretation."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Dramatic theater functions as a multi-layered symbolic system where staging, gesture, and spoken language collaboratively generate cultural meaning.\". The author emphasizes how theater integrates diverse semiotic codes to communicate complex themes."
     },
     {
         "id": 123,
@@ -1867,19 +1867,15 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Plate Tectonics & Mantle Plumes\"\n\nGeological mantle plumes originate near the core-mantle boundary, ascending as buoyant thermal diapirs through the Earth's mantle. As plumes decompress beneath oceanic crust, they generate persistent volcanic hotspot chains like the Hawaiian-Emperor seamount system.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Plate Tectonics & Mantle Plumes\")?",
         "options": [
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Oceanic plates remain permanently stationary over geological time scales.",
+            "Volcanic hotspots occur solely along convergent tectonic plate boundaries.",
+            "Lithospheric movement is driven entirely by lunar gravitational tidal forces.",
+            "Deep mantle plumes and surface plate tectonics operate as interconnected convective systems that continually reshape planetary crust."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 3,
+        "explanation": "Correct Answer: \"Deep mantle plumes and surface plate tectonics operate as interconnected convective systems that continually reshape planetary crust.\". The conclusion ties together deep mantle dynamics with surface crustal movement."
     }
 ];
-
-if (typeof window !== 'undefined') {
-    window.ACT_QUESTIONS1 = ACT_QUESTIONS1;
-}
 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = ACT_QUESTIONS1;

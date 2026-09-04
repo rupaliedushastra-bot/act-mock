@@ -1,5 +1,5 @@
 // =============================================
-// act_questions1.js – ACT Diagnostic Test 11
+// act_questions1.js – ACT-DIAGNOSTIC-11
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
 // Total: 131 questions
 // =============================================
@@ -1462,13 +1462,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Lantern Keeper\"\n\nPerched atop the granite headland, the lighthouse lamp rotated silently, casting its sweeping beam across the churning Atlantic surf. For keeper Donald, vigilance was a sacred trust. Automatic electric relays had replaced whale oil lamps, but the essential responsibility of safeguarding maritime lives against treacherous shoals remained unchanged.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"The Lantern Keeper\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Automated coastal beacons have entirely eliminated the need for navigational radar aboard modern ships.",
+            "The solitary vigil of the lighthouse keeper embodies a selfless commitment to maritime safety amidst unforgiving natural elements.",
+            "Fog horns are ineffective at warning vessels away from shallow granite reefs.",
+            "Lighthouse keepers preferred severe storms because they increased shipping traffic."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"The solitary vigil of the lighthouse keeper embodies a selfless commitment to maritime safety amidst unforgiving natural elements.\". The narrative honors the quiet dedication of lighthouse guardians protecting travelers from oceanic hazards."
     },
     {
         "id": 105,
@@ -1597,13 +1597,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Sociology of Technological Adoption\"\n\nThe diffusion of technological innovations within social systems follows predictable S-curve adoption trajectories. Early adopters play a pivotal role in validating utility, whereas late-stage adoption depends primarily on infrastructural ubiquity and perceived institutional support.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"Sociology of Technological Adoption\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Technological adoption occurs at an identical velocity across all demographic strata.",
+            "The widespread adoption of new technologies depends as much on social trust and cultural integration as on raw technical capability.",
+            "Early adopters always constitute the overwhelming majority of a society's population.",
+            "Digital innovations succeed solely through aggressive marketing regardless of utility."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 1,
+        "explanation": "Correct Answer: \"The widespread adoption of new technologies depends as much on social trust and cultural integration as on raw technical capability.\". The sociologist highlights social dynamics and perceived reliability as primary drivers of technology diffusion."
     },
     {
         "id": 114,
@@ -1732,13 +1732,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Art of Japanese Tea Aesthetics\"\n\nThe traditional Japanese tea ceremony (chanoyu) embodies the aesthetic philosophy of wabi-sabi—finding profound tranquility and beauty in imperfection, simplicity, and natural impermanence. Every utensil, architectural beam, and seasonal flower arrangement is curated to foster mindfulness and quiet hospitality.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage III (\"The Art of Japanese Tea Aesthetics\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
+            "Chado tea ceremonies prioritize ostentatious gold-leaf tableware over modest ceramics.",
+            "Zen aesthetic philosophy encourages the rapid, hurried consumption of matcha tea.",
+            "Imperfect or repaired tea bowls are regarded as worthless according to traditional tea masters.",
+            "The Japanese tea aesthetic of wabi-sabi elevates rustic simplicity and impermanence into a profound meditative ritual of presence and harmony."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"The Japanese tea aesthetic of wabi-sabi elevates rustic simplicity and impermanence into a profound meditative ritual of presence and harmony.\". The author explores how tea ceremonies cultivate mindfulness through humility and reverence for transient beauty."
     },
     {
         "id": 123,
@@ -1867,19 +1867,15 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Viral Vectors & Gene Therapy\"\n\nRecombinant adeno-associated viral vectors have revolutionized clinical gene therapy. Engineered to deliver functional therapeutic genes into target tissues without pathogenic replication, viral vectors offer promising interventions for monogenic genetic disorders.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Viral Vectors & Gene Therapy\")?",
         "options": [
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Viral vectors permanently integrate into host genomes in every targeted cellular tissue.",
+            "Engineered viral vectors represent a transformative medical frontier by enabling the precise delivery of therapeutic genes to correct genetic disorders.",
+            "Gene therapy treatments have completely eliminated the incidence of hereditary diseases worldwide.",
+            "Adeno-associated vectors trigger uncontrollable host immune responses that prevent therapeutic efficacy."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Engineered viral vectors represent a transformative medical frontier by enabling the precise delivery of therapeutic genes to correct genetic disorders.\". The passage concludes that viral engineering is unlocking targeted molecular therapies for intractable diseases."
     }
 ];
-
-if (typeof window !== 'undefined') {
-    window.ACT_QUESTIONS1 = ACT_QUESTIONS1;
-}
 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = ACT_QUESTIONS1;

@@ -1490,15 +1490,15 @@ const ACT_QUESTIONS1 = [
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Urban Agriculture & Food Security\"\n\nContemporary urban planners increasingly recognize that rooftop farming and community micro-gardens provide vital social infrastructure alongside supplemental food production. By converting vacant metropolitan surfaces into productive agricultural space, cities mitigate the urban heat island effect while fostering community cohesion across diverse demographic neighborhoods.",
-        "text": "According to the discussion in Passage II (\"Urban Agriculture & Food Security\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage II (\"Urban Agriculture & Food Security\"), which of the following is explicitly emphasized about urban agriculture?",
         "options": [
             "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
+            "It provides vital social infrastructure and supplemental food production.",
             "It relies exclusively on automated machinery rather than human expertise.",
             "It requires meticulous attention to detail and a deep understanding of foundational principles."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "answer": 1,
+        "explanation": "Correct Answer: \"It provides vital social infrastructure and supplemental food production.\". The passage explicitly states that rooftop farming and community micro-gardens provide vital social infrastructure alongside supplemental food production."
     },
     {
         "id": 107,
@@ -1520,15 +1520,15 @@ const ACT_QUESTIONS1 = [
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Urban Agriculture & Food Security\"\n\nContemporary urban planners increasingly recognize that rooftop farming and community micro-gardens provide vital social infrastructure alongside supplemental food production. By converting vacant metropolitan surfaces into productive agricultural space, cities mitigate the urban heat island effect while fostering community cohesion across diverse demographic neighborhoods.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage II (\"Urban Agriculture & Food Security\") that:",
+        "text": "It can reasonably be inferred from the discussion presented in Passage II (\"Urban Agriculture & Food Security\") that:",
         "options": [
             "the primary actors involved were unaware of the consequences of their actions.",
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "urban agricultural practices address environmental concerns as well as community needs.",
             "external economic conditions had no impact on the development of the field.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"urban agricultural practices address environmental concerns as well as community needs.\". The passage notes that urban farming mitigates the urban heat island effect (environmental) and fosters community cohesion across neighborhoods (community)."
     },
     {
         "id": 109,
@@ -1554,11 +1554,11 @@ const ACT_QUESTIONS1 = [
         "options": [
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
-            "hasty improvisation under urgent time constraints.",
+            "converting vacant metropolitan surfaces into productive agricultural space.",
             "a harmonious blend of disciplined craft, historical knowledge, and perseverance."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "answer": 2,
+        "explanation": "Correct Answer: \"converting vacant metropolitan surfaces into productive agricultural space.\". The passage explicitly attributes these benefits to converting vacant metropolitan surfaces into productive agricultural space."
     },
     {
         "id": 111,
@@ -1568,12 +1568,12 @@ const ACT_QUESTIONS1 = [
         "text": "The author's perspective toward the evolution of Passage II (\"Urban Agriculture & Food Security\") is best described as:",
         "options": [
             "deeply respectful of its heritage and nuanced complexities.",
+            "strictly neutral and reporting informative civic data.",
             "skeptical of its claimed achievements.",
-            "strictly neutral and reporting raw data.",
             "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "answer": 1,
+        "explanation": "Correct Answer: \"strictly neutral and reporting informative civic data.\". The passage employs an informative and explanatory tone that objectively describes the positive roles of urban farming."
     },
     {
         "id": 112,
@@ -1599,11 +1599,11 @@ const ACT_QUESTIONS1 = [
         "options": [
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Repurposing vacant urban spaces for agriculture provides both ecological relief and community cohesion.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Repurposing vacant urban spaces for agriculture provides both ecological relief and community cohesion.\". The passage concludes that converting vacant urban spaces into agriculture mitigates the heat island effect and fosters community cohesion alongside supplemental food production."
     },
     {
         "id": 114,
@@ -1658,12 +1658,12 @@ const ACT_QUESTIONS1 = [
         "text": "It can reasonably be inferred from the narrative presented in Passage III (\"Aesthetics of Renaissance Frescoes\") that:",
         "options": [
             "the primary actors involved were unaware of the consequences of their actions.",
-            "external economic conditions had no impact on the development of the field.",
+            "the rapid chemical curing of wet plaster created urgent time constraints for the artist.",
             "the underlying principles discussed have enduring value that transcends simple utility.",
             "the subject will likely lose relevance within the coming decade."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "answer": 1,
+        "explanation": "Correct Answer: \"the rapid chemical curing of wet plaster created urgent time constraints for the artist.\". The passage explains that the artist had to execute each section within a single workday before the lime cured into calcium carbonate."
     },
     {
         "id": 118,
@@ -1687,13 +1687,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"Aesthetics of Renaissance Frescoes\"\n\nRenaissance fresco painting demanded an extraordinary synthesis of chemical expertise and artistic agility. Applying mineral pigments directly onto wet plaster (buon fresco) required the artist to execute each section within a single workday before the lime cured into an insoluble calcium carbonate matrix, permanently binding the pigment into the wall.",
         "text": "In Passage III (\"Aesthetics of Renaissance Frescoes\"), the success or impact of the central endeavor is most directly attributed to:",
         "options": [
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "a synthesis of chemical expertise and artistic agility within a strict timeframe.",
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"a synthesis of chemical expertise and artistic agility within a strict timeframe.\". The text illustrates that mastery and lasting impact in fresco painting stem from chemical knowledge and artistic agility executed before the plaster cures."
     },
     {
         "id": 120,
@@ -1760,15 +1760,15 @@ const ACT_QUESTIONS1 = [
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Hydrothermal Vents & Chemosynthesis\"\n\nDiscovered along mid-ocean spreading ridges, deep-sea hydrothermal vents sustain thriving ecosystems completely independent of solar energy. Chemosynthetic bacteria oxidize hydrogen sulfide and methane emitted from mineral chimneys, forming the primary trophic foundation for giant tube worms, blind shrimp, and specialized crabs.",
-        "text": "According to the discussion in Passage IV (\"Hydrothermal Vents & Chemosynthesis\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to the discussion in Passage IV (\"Hydrothermal Vents & Chemosynthesis\"), which of the following is explicitly emphasized about hydrothermal vent ecosystems?",
         "options": [
-            "It was achieved without significant labor or long-term dedication.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "They were achieved without significant labor or long-term dedication.",
+            "They sustain thriving biological communities completely independent of solar energy.",
+            "They were largely rejected by contemporary experts during their initial phase.",
+            "They rely exclusively on automated machinery rather than human expertise."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"They sustain thriving biological communities completely independent of solar energy.\". The passage explicitly states that deep-sea hydrothermal vents sustain thriving ecosystems completely independent of solar energy."
     },
     {
         "id": 125,
@@ -1779,26 +1779,26 @@ const ACT_QUESTIONS1 = [
         "options": [
             "dismissive and cynical.",
             "detached and uninterested.",
-            "reverent and analytical.",
+            "scientific and explanatory.",
             "confrontational and hostile."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"scientific and explanatory.\". The author uses objective, precise scientific terminology to explain how hydrothermal vents and chemosynthesis function."
     },
     {
         "id": 126,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Hydrothermal Vents & Chemosynthesis\"\n\nDiscovered along mid-ocean spreading ridges, deep-sea hydrothermal vents sustain thriving ecosystems completely independent of solar energy. Chemosynthetic bacteria oxidize hydrogen sulfide and methane emitted from mineral chimneys, forming the primary trophic foundation for giant tube worms, blind shrimp, and specialized crabs.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage IV (\"Hydrothermal Vents & Chemosynthesis\") that:",
+        "text": "It can reasonably be inferred from the discussion presented in Passage IV (\"Hydrothermal Vents & Chemosynthesis\") that:",
         "options": [
             "the primary actors involved were unaware of the consequences of their actions.",
+            "chemosynthetic oxidation replaces photosynthesis as the basis of the deep-sea food web.",
             "external economic conditions had no impact on the development of the field.",
-            "the subject will likely lose relevance within the coming decade.",
             "the underlying principles discussed have enduring value that transcends simple utility."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "answer": 1,
+        "explanation": "Correct Answer: \"chemosynthetic oxidation replaces photosynthesis as the basis of the deep-sea food web.\". The passage establishes that chemosynthetic bacteria oxidizing mineral emissions form the primary trophic foundation in an ecosystem independent of solar energy."
     },
     {
         "id": 127,
@@ -1820,30 +1820,30 @@ const ACT_QUESTIONS1 = [
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Hydrothermal Vents & Chemosynthesis\"\n\nDiscovered along mid-ocean spreading ridges, deep-sea hydrothermal vents sustain thriving ecosystems completely independent of solar energy. Chemosynthetic bacteria oxidize hydrogen sulfide and methane emitted from mineral chimneys, forming the primary trophic foundation for giant tube worms, blind shrimp, and specialized crabs.",
-        "text": "In Passage IV (\"Hydrothermal Vents & Chemosynthesis\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage IV (\"Hydrothermal Vents & Chemosynthesis\"), the sustenance of the ecosystem is most directly attributed to:",
         "options": [
-            "favorable political mandates enacted by municipal authorities.",
+            "chemosynthetic bacteria oxidizing chemicals emitted from mineral chimneys.",
             "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
-            "sheer chance and fortuitous external interventions.",
+            "favorable political mandates enacted by municipal authorities.",
             "hasty improvisation under urgent time constraints."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "answer": 0,
+        "explanation": "Correct Answer: \"chemosynthetic bacteria oxidizing chemicals emitted from mineral chimneys.\". The passage attributes the ecosystem's foundation directly to chemosynthetic bacteria oxidizing hydrogen sulfide and methane from mineral chimneys."
     },
     {
         "id": 129,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Hydrothermal Vents & Chemosynthesis\"\n\nDiscovered along mid-ocean spreading ridges, deep-sea hydrothermal vents sustain thriving ecosystems completely independent of solar energy. Chemosynthetic bacteria oxidize hydrogen sulfide and methane emitted from mineral chimneys, forming the primary trophic foundation for giant tube worms, blind shrimp, and specialized crabs.",
-        "text": "The author's perspective toward the evolution of Passage IV (\"Hydrothermal Vents & Chemosynthesis\") is best described as:",
+        "text": "The author's perspective toward the phenomenon in Passage IV (\"Hydrothermal Vents & Chemosynthesis\") is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
-            "strictly neutral and reporting raw data.",
+            "strictly neutral and reporting scientific facts.",
             "deeply respectful of its heritage and nuanced complexities.",
             "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "answer": 1,
+        "explanation": "Correct Answer: \"strictly neutral and reporting scientific facts.\". The passage is purely objective, factual, and informative, describing the natural biological and chemical mechanics without emotional commentary."
     },
     {
         "id": 130,
@@ -1867,13 +1867,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Hydrothermal Vents & Chemosynthesis\"\n\nDiscovered along mid-ocean spreading ridges, deep-sea hydrothermal vents sustain thriving ecosystems completely independent of solar energy. Chemosynthetic bacteria oxidize hydrogen sulfide and methane emitted from mineral chimneys, forming the primary trophic foundation for giant tube worms, blind shrimp, and specialized crabs.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Hydrothermal Vents & Chemosynthesis\")?",
         "options": [
+            "Chemosynthetic bacteria form the essential trophic foundation supporting complex deep-sea animal life.",
             "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Chemosynthetic bacteria form the essential trophic foundation supporting complex deep-sea animal life.\". The passage concludes that chemosynthetic bacteria form the primary trophic foundation supporting giant tube worms, blind shrimp, and specialized crabs."
     }
 ];
 

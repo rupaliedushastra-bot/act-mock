@@ -471,15 +471,15 @@ const ACT_QUESTIONS1 = [
         "id": 34,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "text": "Consider the phrase in Captain Sterling's summary: 'It is interesting and worth noting that sub-ice volcanic vents reacts dynamically to seasonal shifts in the Weddell Sea.'\n\nWhich revision most effectively improves directness?",
+        "text": "Consider the phrase in Captain Sterling's summary: 'It is interesting and worth noting that sub-ice volcanic vents react dynamically to seasonal shifts in the Weddell Sea.'\n\nWhich revision most effectively improves directness?",
         "options": [
-            "As a matter of interesting fact, sub-ice volcanic vents reacts dynamically to seasonal shifts in the Weddell Sea.",
-            "sub-ice volcanic vents reacts dynamically to seasonal shifts in the Weddell Sea.",
-            "Worth noting is the reality that sub-ice volcanic vents reacts dynamically in the Weddell Sea.",
-            "It goes without saying that sub-ice volcanic vents reacts dynamically in the Weddell Sea."
+            "As a matter of interesting fact, sub-ice volcanic vents react dynamically to seasonal shifts in the Weddell Sea.",
+            "sub-ice volcanic vents react dynamically to seasonal shifts in the Weddell Sea.",
+            "Worth noting is the reality that sub-ice volcanic vents react dynamically in the Weddell Sea.",
+            "It goes without saying that sub-ice volcanic vents react dynamically in the Weddell Sea."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"sub-ice volcanic vents reacts dynamically to seasonal shifts in the Weddell Sea.\". Deleting unnecessary throat-clearing phrases ('It is worth noting that...') makes the statement direct and authoritative."
+        "explanation": "Correct Answer: \"sub-ice volcanic vents react dynamically to seasonal shifts in the Weddell Sea.\". Deleting unnecessary wordy phrases ('It is interesting and worth noting that...') and ensuring subject-verb agreement ('vents react') creates a direct, concise, and grammatically sound statement."
     },
     {
         "id": 35,
@@ -642,12 +642,12 @@ const ACT_QUESTIONS1 = [
         "text": "The data collected by Captain Sterling in the Weddell Sea revealed an astonishing, mind-boggling increase in the concentration of sub-ice volcanic vents.\n\nWhich replacement for the underlined phrase best maintains objective scientific neutrality?",
         "options": [
             "an unbelievable and crazy",
-            "a statistically significant",
+            "a notable and measurable",
             "a super massive",
             "a shockingly wild"
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"a statistically significant\". 'A statistically significant' provides precise scientific description without sensationalist hyperbole."
+        "explanation": "Correct Answer: \"a notable and measurable\". 'A notable and measurable' provides objective, neutral scientific phrasing without sensationalist hyperbole or unsupported statistical claims."
     },
     {
         "id": 47,
@@ -1343,27 +1343,27 @@ const ACT_QUESTIONS1 = [
         "text": "Based on Passage I (\"Echoes from the Harbour\"), the primary purpose of the text is to:",
         "options": [
             "criticize traditional approaches while advocating for immediate reform.",
-            "examine the intricate relationship between echoes from the harbour and its broader significance.",
+            "portray the transformation of the Bristol waterfront and the enduring continuity of its maritime character.",
             "provide a purely statistical timeline of historical events.",
             "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"examine the intricate relationship between echoes from the harbour and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Echoes from the Harbour\"."
+        "explanation": "Correct Answer: \"portray the transformation of the Bristol waterfront and the enduring continuity of its maritime character.\". The passage centers on Samuel observing how the harbour transformed into a commercial hub while retaining its timeless maritime rhythm."
     },
     {
         "id": 97,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Echoes from the Harbour\"\n\nThe morning fog rolled across the fishing harbour of Bristol, enshrouding the masts of wooden schooners. Samuel, a retired dockmaster, watched the young fishermen prepare their nets with a practiced eye. Over four decades, he had witnessed the transformation of the waterfront from a quiet maritime village into a bustling hub of international commerce. Yet beneath the roar of diesel engines, the ancient rhythm of the tide remained sovereign.",
-        "text": "According to the discussion in Passage I (\"Echoes from the Harbour\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage I (\"Echoes from the Harbour\"), Samuel's relationship to the harbour is defined by:",
         "options": [
-            "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "his recent employment as an inexperienced deckhand on a diesel schooner.",
+            "his role as a municipal regulator enforcing international trade tariffs.",
+            "four decades of observation that give him a practiced perspective on the waterfront's changes.",
+            "a complete lack of familiarity with traditional fishing practices."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"four decades of observation that give him a practiced perspective on the waterfront's changes.\". The text states that Samuel, a retired dockmaster with over four decades of experience, watched the fishermen prepare nets with a practiced eye as he reflected on the harbour's transformation."
     },
     {
         "id": 98,
@@ -1375,25 +1375,25 @@ const ACT_QUESTIONS1 = [
             "dismissive and cynical.",
             "detached and uninterested.",
             "confrontational and hostile.",
-            "reverent and analytical."
+            "reflective and appreciative."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"reflective and appreciative.\". The author treats the harbour's history and enduring tidal rhythm with reflective warmth and respectful appreciation."
     },
     {
         "id": 99,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Echoes from the Harbour\"\n\nThe morning fog rolled across the fishing harbour of Bristol, enshrouding the masts of wooden schooners. Samuel, a retired dockmaster, watched the young fishermen prepare their nets with a practiced eye. Over four decades, he had witnessed the transformation of the waterfront from a quiet maritime village into a bustling hub of international commerce. Yet beneath the roar of diesel engines, the ancient rhythm of the tide remained sovereign.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage I (\"Echoes from the Harbour\") that:",
+        "text": "It can reasonably be inferred from the final sentence of Passage I that:",
         "options": [
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "the ancient natural rhythms of the sea persist despite the noise and growth of modern commercial shipping.",
             "the primary actors involved were unaware of the consequences of their actions.",
             "external economic conditions had no impact on the development of the field.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"the ancient natural rhythms of the sea persist despite the noise and growth of modern commercial shipping.\". The statement that 'beneath the roar of diesel engines, the ancient rhythm of the tide remained sovereign' indicates that the natural maritime essence endures through industrial changes."
     },
     {
         "id": 100,
@@ -1403,57 +1403,57 @@ const ACT_QUESTIONS1 = [
         "text": "The structural development of Passage I (\"Echoes from the Harbour\") serves primarily to:",
         "options": [
             "open with a refutation of an established scientific consensus.",
-            "establish context before exploring specific examples and deeper philosophical implications.",
+            "establish the atmospheric scene and contrast the harbour's modern expansion with its enduring traditional rhythm.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"establish the atmospheric scene and contrast the harbour's modern expansion with its enduring traditional rhythm.\". The passage sets a misty morning scene, introduces Samuel's long-term perspective on the harbour's commercial growth, and concludes with the enduring sovereignty of the tide."
     },
     {
         "id": 101,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Echoes from the Harbour\"\n\nThe morning fog rolled across the fishing harbour of Bristol, enshrouding the masts of wooden schooners. Samuel, a retired dockmaster, watched the young fishermen prepare their nets with a practiced eye. Over four decades, he had witnessed the transformation of the waterfront from a quiet maritime village into a bustling hub of international commerce. Yet beneath the roar of diesel engines, the ancient rhythm of the tide remained sovereign.",
-        "text": "In Passage I (\"Echoes from the Harbour\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage I (\"Echoes from the Harbour\"), Samuel's insight into the harbour's life is most directly attributed to:",
         "options": [
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "his four decades of dockmaster experience and practiced observational knowledge.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"his four decades of dockmaster experience and practiced observational knowledge.\". The passage highlights that Samuel spent four decades witnessing the waterfront's evolution and observed the fishermen 'with a practiced eye'."
     },
     {
         "id": 102,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Echoes from the Harbour\"\n\nThe morning fog rolled across the fishing harbour of Bristol, enshrouding the masts of wooden schooners. Samuel, a retired dockmaster, watched the young fishermen prepare their nets with a practiced eye. Over four decades, he had witnessed the transformation of the waterfront from a quiet maritime village into a bustling hub of international commerce. Yet beneath the roar of diesel engines, the ancient rhythm of the tide remained sovereign.",
-        "text": "The author's perspective toward the evolution of Passage I (\"Echoes from the Harbour\") is best described as:",
+        "text": "The author's perspective toward the harbour's history in Passage I is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
             "strictly neutral and reporting raw data.",
             "nostalgic yet dismissive of modern adaptations.",
-            "deeply respectful of its heritage and nuanced complexities."
+            "deeply respectful of its maritime heritage and enduring natural rhythm."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"deeply respectful of its maritime heritage and enduring natural rhythm.\". The descriptive language conveys profound appreciation for both the historical legacy and the sovereign rhythm of the tide."
     },
     {
         "id": 103,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Echoes from the Harbour\"\n\nThe morning fog rolled across the fishing harbour of Bristol, enshrouding the masts of wooden schooners. Samuel, a retired dockmaster, watched the young fishermen prepare their nets with a practiced eye. Over four decades, he had witnessed the transformation of the waterfront from a quiet maritime village into a bustling hub of international commerce. Yet beneath the roar of diesel engines, the ancient rhythm of the tide remained sovereign.",
-        "text": "The author of Passage I (\"Echoes from the Harbour\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage I (\"Echoes from the Harbour\") suggests that viewing the harbour merely as a modern commercial port would:",
         "options": [
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "overlook the enduring traditional character and sovereign natural rhythms that define it.",
             "lead to rapid efficiency improvements in industrial manufacturing.",
             "be the most accurate way to quantify its economic value.",
             "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"overlook the enduring traditional character and sovereign natural rhythms that define it.\". The author emphasizes that despite modern international commerce and diesel engines, the ancient rhythm of the tide and fishing heritage remain central."
     },
     {
         "id": 104,
@@ -1463,12 +1463,12 @@ const ACT_QUESTIONS1 = [
         "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"Echoes from the Harbour\")?",
         "options": [
             "Technological disruption inevitably erodes the value of all historical traditions.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Modern commerce has transformed the harbour, but its fundamental maritime character and natural rhythm remain sovereign.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Modern commerce has transformed the harbour, but its fundamental maritime character and natural rhythm remain sovereign.\". The concluding lines affirm that despite the waterfront's dramatic commercial evolution, the fundamental natural and maritime rhythms endure."
     },
     {
         "id": 105,
@@ -1479,26 +1479,26 @@ const ACT_QUESTIONS1 = [
         "options": [
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
-            "examine the intricate relationship between the architecture of early settlements and its broader significance.",
+            "demonstrate that early Neolithic settlement architecture reflects sophisticated spatial planning and collective governance.",
             "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"examine the intricate relationship between the architecture of early settlements and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"The Architecture of Early Settlements\"."
+        "explanation": "Correct Answer: \"demonstrate that early Neolithic settlement architecture reflects sophisticated spatial planning and collective governance.\". The passage focuses on how early Neolithic architecture, such as communal granaries and egalitarian layouts, demonstrates advanced planning and collective governance."
     },
     {
         "id": 106,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Architecture of Early Settlements\"\n\nArchaeological investigations of early Neolithic settlements reveal sophisticated spatial planning long before the rise of monumental urban centers. Communal granaries, defensive enclosures, and egalitarian domestic layouts reflect collective governance mechanisms adapted to pastoral and agricultural unpredictability.",
-        "text": "According to the discussion in Passage II (\"The Architecture of Early Settlements\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage II (\"The Architecture of Early Settlements\"), archaeological evidence indicates that early Neolithic settlements:",
         "options": [
-            "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles."
+            "lacked any deliberate spatial planning prior to monumental urbanization.",
+            "depended entirely on centralized autocratic monarchs for building designs.",
+            "relied exclusively on automated machinery rather than human labor.",
+            "featured sophisticated spatial planning and egalitarian layouts long before monumental cities emerged."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"featured sophisticated spatial planning and egalitarian layouts long before monumental cities emerged.\". The text states that early Neolithic settlements possessed sophisticated spatial planning, communal granaries, and egalitarian layouts long before the rise of monumental urban centers."
     },
     {
         "id": 107,
@@ -1507,28 +1507,28 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Architecture of Early Settlements\"\n\nArchaeological investigations of early Neolithic settlements reveal sophisticated spatial planning long before the rise of monumental urban centers. Communal granaries, defensive enclosures, and egalitarian domestic layouts reflect collective governance mechanisms adapted to pastoral and agricultural unpredictability.",
         "text": "In the context of Passage II (\"The Architecture of Early Settlements\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "reverent and analytical.",
+            "analytical and informative.",
             "dismissive and cynical.",
             "detached and uninterested.",
             "confrontational and hostile."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"analytical and informative.\". The author provides an objective, archaeological analysis of prehistoric settlement architecture and governance."
     },
     {
         "id": 108,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Architecture of Early Settlements\"\n\nArchaeological investigations of early Neolithic settlements reveal sophisticated spatial planning long before the rise of monumental urban centers. Communal granaries, defensive enclosures, and egalitarian domestic layouts reflect collective governance mechanisms adapted to pastoral and agricultural unpredictability.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage II (\"The Architecture of Early Settlements\") that:",
+        "text": "It can reasonably be inferred from Passage II (\"The Architecture of Early Settlements\") that communal granaries and defensive enclosures were designed to:",
         "options": [
-            "the primary actors involved were unaware of the consequences of their actions.",
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "foster competitive individualism among agricultural laborers.",
+            "serve as collective governance mechanisms to manage agricultural and pastoral unpredictability.",
             "external economic conditions had no impact on the development of the field.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"serve as collective governance mechanisms to manage agricultural and pastoral unpredictability.\". The passage states that communal granaries and defensive enclosures reflect collective governance mechanisms adapted to pastoral and agricultural unpredictability."
     },
     {
         "id": 109,
@@ -1539,56 +1539,56 @@ const ACT_QUESTIONS1 = [
         "options": [
             "open with a refutation of an established scientific consensus.",
             "present a chronological series of unrelated anecdotes.",
-            "establish context before exploring specific examples and deeper philosophical implications.",
+            "introduce the thesis of early spatial planning and substantiate it with specific architectural examples.",
             "compare two equally viable opposing hypotheses."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"introduce the thesis of early spatial planning and substantiate it with specific architectural examples.\". The passage introduces the concept of sophisticated Neolithic spatial planning and cites communal granaries, enclosures, and domestic layouts as evidence."
     },
     {
         "id": 110,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Architecture of Early Settlements\"\n\nArchaeological investigations of early Neolithic settlements reveal sophisticated spatial planning long before the rise of monumental urban centers. Communal granaries, defensive enclosures, and egalitarian domestic layouts reflect collective governance mechanisms adapted to pastoral and agricultural unpredictability.",
-        "text": "In Passage II (\"The Architecture of Early Settlements\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage II (\"The Architecture of Early Settlements\"), the organizational effectiveness of early settlements is most directly attributed to:",
         "options": [
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance."
+            "collective governance mechanisms and adaptive planning in response to environmental uncertainty."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"collective governance mechanisms and adaptive planning in response to environmental uncertainty.\". The text directly credits collective governance mechanisms adapted to pastoral and agricultural unpredictability."
     },
     {
         "id": 111,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Architecture of Early Settlements\"\n\nArchaeological investigations of early Neolithic settlements reveal sophisticated spatial planning long before the rise of monumental urban centers. Communal granaries, defensive enclosures, and egalitarian domestic layouts reflect collective governance mechanisms adapted to pastoral and agricultural unpredictability.",
-        "text": "The author's perspective toward the evolution of Passage II (\"The Architecture of Early Settlements\") is best described as:",
+        "text": "The author's perspective toward early Neolithic settlements in Passage II is best described as:",
         "options": [
-            "deeply respectful of its heritage and nuanced complexities.",
+            "analytical and appreciative of their sophisticated collective organization.",
             "skeptical of its claimed achievements.",
             "strictly neutral and reporting raw data.",
             "nostalgic yet dismissive of modern adaptations."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"analytical and appreciative of their sophisticated collective organization.\". The author highlights the advanced planning and adaptive social mechanisms evident in early architectural remains."
     },
     {
         "id": 112,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Architecture of Early Settlements\"\n\nArchaeological investigations of early Neolithic settlements reveal sophisticated spatial planning long before the rise of monumental urban centers. Communal granaries, defensive enclosures, and egalitarian domestic layouts reflect collective governance mechanisms adapted to pastoral and agricultural unpredictability.",
-        "text": "The author of Passage II (\"The Architecture of Early Settlements\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage II suggests that viewing early settlements merely as primitive clusters would:",
         "options": [
             "lead to rapid efficiency improvements in industrial manufacturing.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "overlook their sophisticated social organization and adaptive collective governance.",
             "be the most accurate way to quantify its economic value.",
             "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"overlook their sophisticated social organization and adaptive collective governance.\". The passage argues that these settlements displayed sophisticated planning and collective governance rather than haphazard or primitive building."
     },
     {
         "id": 113,
@@ -1599,11 +1599,11 @@ const ACT_QUESTIONS1 = [
         "options": [
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Early Neolithic settlement architecture demonstrates sophisticated spatial planning and collective adaptability prior to urban centers.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Early Neolithic settlement architecture demonstrates sophisticated spatial planning and collective adaptability prior to urban centers.\". The passage concludes that Neolithic architecture embodied complex collective governance and environmental adaptation long before monumental urbanism."
     },
     {
         "id": 114,
@@ -1615,25 +1615,25 @@ const ACT_QUESTIONS1 = [
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
             "argue that modern technological advancements have rendered past practices obsolete.",
-            "examine the intricate relationship between the expressive language of sculpture and its broader significance."
+            "explain how sculpture communicates through three-dimensional space, light, and viewer movement."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"examine the intricate relationship between the expressive language of sculpture and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"The Expressive Language of Sculpture\"."
+        "explanation": "Correct Answer: \"explain how sculpture communicates through three-dimensional space, light, and viewer movement.\". The passage focuses on how sculpture uniquely engages with physical space by inviting viewers to move around it to perceive changing light, shadow, and tension."
     },
     {
         "id": 115,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Expressive Language of Sculpture\"\n\nSculpture engages with physical space in a manner distinct from two-dimensional visual arts. By inviting the viewer to traverse its circumference, sculpted stone and bronze orchestrate shifting perspectives of light, shadow, and kinetic tension across three dimensions.",
-        "text": "According to the discussion in Passage III (\"The Expressive Language of Sculpture\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage III (\"The Expressive Language of Sculpture\"), sculpture differs fundamentally from two-dimensional arts because it:",
         "options": [
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
-            "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "invites the viewer to traverse its physical circumference to experience shifting perspectives in three dimensions.",
+            "was achieved without significant labor or long-term dedication.",
+            "was largely rejected by contemporary experts during its initial phase.",
+            "relies exclusively on automated machinery rather than human expertise."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"invites the viewer to traverse its physical circumference to experience shifting perspectives in three dimensions.\". The passage explicitly notes that sculpture invites the viewer to traverse its circumference, orchestrating shifting perspectives of light, shadow, and kinetic tension across three dimensions."
     },
     {
         "id": 116,
@@ -1643,27 +1643,27 @@ const ACT_QUESTIONS1 = [
         "text": "In the context of Passage III (\"The Expressive Language of Sculpture\"), the author's descriptive tone is best characterized as:",
         "options": [
             "dismissive and cynical.",
-            "reverent and analytical.",
+            "analytical and appreciative.",
             "detached and uninterested.",
             "confrontational and hostile."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"analytical and appreciative.\". The author treats the artistic medium of sculpture with thoughtful, analytical appreciation of its spatial dynamics."
     },
     {
         "id": 117,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Expressive Language of Sculpture\"\n\nSculpture engages with physical space in a manner distinct from two-dimensional visual arts. By inviting the viewer to traverse its circumference, sculpted stone and bronze orchestrate shifting perspectives of light, shadow, and kinetic tension across three dimensions.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage III (\"The Expressive Language of Sculpture\") that:",
+        "text": "It can reasonably be inferred from Passage III (\"The Expressive Language of Sculpture\") that fully appreciating a sculpted work requires:",
         "options": [
             "the primary actors involved were unaware of the consequences of their actions.",
             "external economic conditions had no impact on the development of the field.",
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "viewing the work dynamically from multiple angles rather than from a single static vantage point.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"viewing the work dynamically from multiple angles rather than from a single static vantage point.\". The passage indicates that sculpture orchestrates shifting perspectives as the viewer traverses its circumference in physical space."
     },
     {
         "id": 118,
@@ -1675,55 +1675,55 @@ const ACT_QUESTIONS1 = [
             "open with a refutation of an established scientific consensus.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses.",
-            "establish context before exploring specific examples and deeper philosophical implications."
+            "distinguish sculpture from two-dimensional arts and describe its dynamic three-dimensional interaction with the viewer."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"distinguish sculpture from two-dimensional arts and describe its dynamic three-dimensional interaction with the viewer.\". The passage opens by contrasting sculpture with two-dimensional media and proceeds to describe how moving around a sculpture reveals light, shadow, and kinetic tension."
     },
     {
         "id": 119,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Expressive Language of Sculpture\"\n\nSculpture engages with physical space in a manner distinct from two-dimensional visual arts. By inviting the viewer to traverse its circumference, sculpted stone and bronze orchestrate shifting perspectives of light, shadow, and kinetic tension across three dimensions.",
-        "text": "In Passage III (\"The Expressive Language of Sculpture\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage III (\"The Expressive Language of Sculpture\"), the distinct expressive power of sculpture is attributed to:",
         "options": [
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "its three-dimensional orchestration of shifting light, shadow, and kinetic tension as the viewer moves around it.",
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"its three-dimensional orchestration of shifting light, shadow, and kinetic tension as the viewer moves around it.\". The text highlights that sculpture creates meaning by orchestrating shifting perspectives across three dimensions in response to viewer traversal."
     },
     {
         "id": 120,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Expressive Language of Sculpture\"\n\nSculpture engages with physical space in a manner distinct from two-dimensional visual arts. By inviting the viewer to traverse its circumference, sculpted stone and bronze orchestrate shifting perspectives of light, shadow, and kinetic tension across three dimensions.",
-        "text": "The author's perspective toward the evolution of Passage III (\"The Expressive Language of Sculpture\") is best described as:",
+        "text": "The author's perspective toward the art of sculpture in Passage III is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
-            "deeply respectful of its heritage and nuanced complexities.",
+            "perceptive and appreciative of its spatial complexity.",
             "strictly neutral and reporting raw data.",
             "nostalgic yet dismissive of modern adaptations."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"perceptive and appreciative of its spatial complexity.\". The descriptive language emphasizes deep appreciation for how sculpture engages physical space and creates kinetic tension."
     },
     {
         "id": 121,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Expressive Language of Sculpture\"\n\nSculpture engages with physical space in a manner distinct from two-dimensional visual arts. By inviting the viewer to traverse its circumference, sculpted stone and bronze orchestrate shifting perspectives of light, shadow, and kinetic tension across three dimensions.",
-        "text": "The author of Passage III (\"The Expressive Language of Sculpture\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage III suggests that viewing sculpture merely as a flat image would:",
         "options": [
             "lead to rapid efficiency improvements in industrial manufacturing.",
             "be the most accurate way to quantify its economic value.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "miss the dynamic interplay of light, shadow, and kinetic tension that emerges from traversing its three dimensions.",
             "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"miss the dynamic interplay of light, shadow, and kinetic tension that emerges from traversing its three dimensions.\". The passage emphasizes that sculpture's unique power lies in engaging three-dimensional space as the viewer moves around it."
     },
     {
         "id": 122,
@@ -1735,10 +1735,10 @@ const ACT_QUESTIONS1 = [
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
+            "Sculpture creates a distinctive artistic experience by orchestrating light, shadow, and kinetic tension in three-dimensional space."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Sculpture creates a distinctive artistic experience by orchestrating light, shadow, and kinetic tension in three-dimensional space.\". The passage concludes that sculpture's unique essence is its ability to engage viewers dynamically across three physical dimensions."
     },
     {
         "id": 123,
@@ -1747,28 +1747,28 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Dark Matter & Gravitational Lensing\"\n\nAlthough dark matter does not interact with electromagnetic radiation, its gravitational presence is mapped through gravitational lensing. The immense mass of distant galaxy clusters warps spacetime, bending the trajectory of light rays originating from background galaxies into characteristic arc-like distortions.",
         "text": "Based on Passage IV (\"Dark Matter & Gravitational Lensing\"), the primary purpose of the text is to:",
         "options": [
-            "examine the intricate relationship between dark matter & gravitational lensing and its broader significance.",
+            "explain how astronomers map invisible dark matter by observing the gravitational bending of background light.",
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
             "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"examine the intricate relationship between dark matter & gravitational lensing and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Dark Matter & Gravitational Lensing\"."
+        "explanation": "Correct Answer: \"explain how astronomers map invisible dark matter by observing the gravitational bending of background light.\". The passage explains how gravitational lensing allows scientists to detect and map dark matter despite its lack of electromagnetic interaction."
     },
     {
         "id": 124,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Dark Matter & Gravitational Lensing\"\n\nAlthough dark matter does not interact with electromagnetic radiation, its gravitational presence is mapped through gravitational lensing. The immense mass of distant galaxy clusters warps spacetime, bending the trajectory of light rays originating from background galaxies into characteristic arc-like distortions.",
-        "text": "According to the discussion in Passage IV (\"Dark Matter & Gravitational Lensing\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage IV (\"Dark Matter & Gravitational Lensing\"), dark matter can be detected and mapped because:",
         "options": [
-            "It was achieved without significant labor or long-term dedication.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "it emits intense bursts of high-frequency gamma radiation.",
+            "its immense gravitational mass warps spacetime and bends light from background galaxies.",
+            "it directly reflects optical sunlight back to terrestrial telescopes.",
+            "it was achieved without significant labor or long-term dedication."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"its immense gravitational mass warps spacetime and bends light from background galaxies.\". The passage states that the immense mass of galaxy clusters warps spacetime, bending background light into characteristic arc-like distortions that reveal dark matter."
     },
     {
         "id": 125,
@@ -1779,26 +1779,26 @@ const ACT_QUESTIONS1 = [
         "options": [
             "dismissive and cynical.",
             "detached and uninterested.",
-            "reverent and analytical.",
+            "scientific, explanatory, and objective.",
             "confrontational and hostile."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"scientific, explanatory, and objective.\". The author explains the astrophysical principles of dark matter and gravitational lensing using clear, neutral scientific language."
     },
     {
         "id": 126,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Dark Matter & Gravitational Lensing\"\n\nAlthough dark matter does not interact with electromagnetic radiation, its gravitational presence is mapped through gravitational lensing. The immense mass of distant galaxy clusters warps spacetime, bending the trajectory of light rays originating from background galaxies into characteristic arc-like distortions.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage IV (\"Dark Matter & Gravitational Lensing\") that:",
+        "text": "It can reasonably be inferred from Passage IV (\"Dark Matter & Gravitational Lensing\") that gravitational lensing:",
         "options": [
             "the primary actors involved were unaware of the consequences of their actions.",
             "external economic conditions had no impact on the development of the field.",
             "the subject will likely lose relevance within the coming decade.",
-            "the underlying principles discussed have enduring value that transcends simple utility."
+            "provides indirect observational evidence for massive astrophysical phenomena that cannot be seen directly."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"provides indirect observational evidence for massive astrophysical phenomena that cannot be seen directly.\". Because dark matter does not interact with electromagnetic radiation, observing distorted light rays provides the indirect evidence needed to map its mass."
     },
     {
         "id": 127,
@@ -1807,58 +1807,58 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Dark Matter & Gravitational Lensing\"\n\nAlthough dark matter does not interact with electromagnetic radiation, its gravitational presence is mapped through gravitational lensing. The immense mass of distant galaxy clusters warps spacetime, bending the trajectory of light rays originating from background galaxies into characteristic arc-like distortions.",
         "text": "The structural development of Passage IV (\"Dark Matter & Gravitational Lensing\") serves primarily to:",
         "options": [
-            "establish context before exploring specific examples and deeper philosophical implications.",
+            "state an observational challenge regarding dark matter and explain the physical mechanism used to resolve it.",
             "open with a refutation of an established scientific consensus.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"state an observational challenge regarding dark matter and explain the physical mechanism used to resolve it.\". The passage opens with the fact that dark matter does not emit radiation and then describes how gravitational spacetime warping allows it to be mapped."
     },
     {
         "id": 128,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Dark Matter & Gravitational Lensing\"\n\nAlthough dark matter does not interact with electromagnetic radiation, its gravitational presence is mapped through gravitational lensing. The immense mass of distant galaxy clusters warps spacetime, bending the trajectory of light rays originating from background galaxies into characteristic arc-like distortions.",
-        "text": "In Passage IV (\"Dark Matter & Gravitational Lensing\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage IV (\"Dark Matter & Gravitational Lensing\"), the arc-like distortions observed in deep space are attributed to:",
         "options": [
             "favorable political mandates enacted by municipal authorities.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "the immense gravitational mass of galaxy clusters warping spacetime and bending background light.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"the immense gravitational mass of galaxy clusters warping spacetime and bending background light.\". The text states that the immense mass of galaxy clusters warps spacetime, bending the trajectory of light rays into arc-like distortions."
     },
     {
         "id": 129,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Dark Matter & Gravitational Lensing\"\n\nAlthough dark matter does not interact with electromagnetic radiation, its gravitational presence is mapped through gravitational lensing. The immense mass of distant galaxy clusters warps spacetime, bending the trajectory of light rays originating from background galaxies into characteristic arc-like distortions.",
-        "text": "The author's perspective toward the evolution of Passage IV (\"Dark Matter & Gravitational Lensing\") is best described as:",
+        "text": "The author's perspective toward gravitational lensing in Passage IV is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
             "strictly neutral and reporting raw data.",
-            "deeply respectful of its heritage and nuanced complexities.",
+            "objective and scientific, presenting it as an established astrophysical mapping technique.",
             "nostalgic yet dismissive of modern adaptations."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"objective and scientific, presenting it as an established astrophysical mapping technique.\". The descriptive language is precise, matter-of-fact, and scientifically grounded."
     },
     {
         "id": 130,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Dark Matter & Gravitational Lensing\"\n\nAlthough dark matter does not interact with electromagnetic radiation, its gravitational presence is mapped through gravitational lensing. The immense mass of distant galaxy clusters warps spacetime, bending the trajectory of light rays originating from background galaxies into characteristic arc-like distortions.",
-        "text": "The author of Passage IV (\"Dark Matter & Gravitational Lensing\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage IV suggests that assuming unobservable matter cannot be studied would:",
         "options": [
             "lead to rapid efficiency improvements in industrial manufacturing.",
             "be the most accurate way to quantify its economic value.",
             "align perfectly with the original creator's stated philosophy.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies."
+            "overlook the powerful astrophysical method of gravitational lensing for mapping dark matter."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"overlook the powerful astrophysical method of gravitational lensing for mapping dark matter.\". The passage demonstrates that even though dark matter does not emit radiation, its gravitational effects on spacetime allow it to be mapped accurately."
     },
     {
         "id": 131,
@@ -1867,13 +1867,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Dark Matter & Gravitational Lensing\"\n\nAlthough dark matter does not interact with electromagnetic radiation, its gravitational presence is mapped through gravitational lensing. The immense mass of distant galaxy clusters warps spacetime, bending the trajectory of light rays originating from background galaxies into characteristic arc-like distortions.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Dark Matter & Gravitational Lensing\")?",
         "options": [
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Gravitational lensing enables scientists to map the invisible mass of dark matter through the distortion of spacetime and light.",
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Gravitational lensing enables scientists to map the invisible mass of dark matter through the distortion of spacetime and light.\". The passage concludes that the gravitational warping of spacetime by massive galaxy clusters allows the presence and distribution of dark matter to be mapped."
     }
 ];
 

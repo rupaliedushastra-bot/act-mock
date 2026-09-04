@@ -471,15 +471,15 @@ const ACT_QUESTIONS1 = [
         "id": 34,
         "section": "english",
         "topic": "Rhetorical Skills",
-        "text": "Consider the phrase in Nadia Farouk's summary: 'It is interesting and worth noting that graphene aerogel filters reacts dynamically to seasonal shifts in Munich.'\n\nWhich revision most effectively improves directness?",
+        "text": "Consider the phrase in Nadia Farouk's summary: 'It is interesting and worth noting that graphene aerogel filters react dynamically to seasonal shifts in Munich.'\n\nWhich revision most effectively improves directness?",
         "options": [
-            "graphene aerogel filters reacts dynamically to seasonal shifts in Munich.",
-            "As a matter of interesting fact, graphene aerogel filters reacts dynamically to seasonal shifts in Munich.",
-            "Worth noting is the reality that graphene aerogel filters reacts dynamically in Munich.",
-            "It goes without saying that graphene aerogel filters reacts dynamically in Munich."
+            "graphene aerogel filters react dynamically to seasonal shifts in Munich.",
+            "As a matter of interesting fact, graphene aerogel filters react dynamically to seasonal shifts in Munich.",
+            "Worth noting is the reality that graphene aerogel filters react dynamically in Munich.",
+            "It goes without saying that graphene aerogel filters react dynamically in Munich."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"graphene aerogel filters reacts dynamically to seasonal shifts in Munich.\". Deleting unnecessary throat-clearing phrases ('It is worth noting that...') makes the statement direct and authoritative."
+        "explanation": "Correct Answer: \"graphene aerogel filters react dynamically to seasonal shifts in Munich.\". Deleting unnecessary wordy phrases ('It is interesting and worth noting that...') and ensuring subject-verb agreement ('filters react') makes the statement direct, authoritative, and grammatically correct."
     },
     {
         "id": 35,
@@ -641,13 +641,13 @@ const ACT_QUESTIONS1 = [
         "topic": "Style & Tone",
         "text": "The data collected by Nadia Farouk in Munich revealed an astonishing, mind-boggling increase in the concentration of graphene aerogel filters.\n\nWhich replacement for the underlined phrase best maintains objective scientific neutrality?",
         "options": [
-            "a statistically significant",
+            "a substantial",
             "an unbelievable and crazy",
             "a super massive",
             "a shockingly wild"
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"a statistically significant\". 'A statistically significant' provides precise scientific description without sensationalist hyperbole."
+        "explanation": "Correct Answer: \"a substantial\". 'A substantial' provides clear, neutral scientific phrasing without sensationalist hyperbole or unsupported claims of statistical significance."
     },
     {
         "id": 47,
@@ -1342,28 +1342,28 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Glassblower's Daughter\"\n\nInside the glassworks of Murano, Elena rotated the iron blowpipe with steady precision. The molten silica glowed radiant orange in the furnace mouth before taking form under her breath. Venetian masters had guarded these chemical formulas for centuries, utilizing cobalt and manganese to achieve unrivaled luminosity. Elena's modern sculptures paid homage to classical Renaissance silhouettes while embracing bold asymmetrical contours.",
         "text": "Based on Passage I (\"The Glassblower's Daughter\"), the primary purpose of the text is to:",
         "options": [
-            "examine the intricate relationship between the glassblower's daughter and its broader significance.",
+            "portray Elena combining traditional Murano glassblowing heritage with modern artistic forms.",
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
             "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"examine the intricate relationship between the glassblower's daughter and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"The Glassblower's Daughter\"."
+        "explanation": "Correct Answer: \"portray Elena combining traditional Murano glassblowing heritage with modern artistic forms.\". The passage focuses on Elena's steady craftsmanship, historic Venetian formulas, and how her sculptures blend classical Renaissance silhouettes with modern asymmetrical contours."
     },
     {
         "id": 97,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Glassblower's Daughter\"\n\nInside the glassworks of Murano, Elena rotated the iron blowpipe with steady precision. The molten silica glowed radiant orange in the furnace mouth before taking form under her breath. Venetian masters had guarded these chemical formulas for centuries, utilizing cobalt and manganese to achieve unrivaled luminosity. Elena's modern sculptures paid homage to classical Renaissance silhouettes while embracing bold asymmetrical contours.",
-        "text": "According to the discussion in Passage I (\"The Glassblower's Daughter\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage I (\"The Glassblower's Daughter\"), historical Venetian glassmakers achieved unrivaled luminosity by:",
         "options": [
-            "It was achieved without significant labor or long-term dedication.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "importing pre-fabricated silica components from industrial factories.",
+            "guarding secret chemical formulas utilizing cobalt and manganese.",
+            "relying exclusively on automated machinery rather than human artisans.",
+            "abandoning classical silhouettes in favor of mass-produced commercial glass."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"guarding secret chemical formulas utilizing cobalt and manganese.\". The passage states that Venetian masters had guarded their chemical formulas for centuries, utilizing cobalt and manganese to achieve unrivaled luminosity."
     },
     {
         "id": 98,
@@ -1374,26 +1374,26 @@ const ACT_QUESTIONS1 = [
         "options": [
             "dismissive and cynical.",
             "detached and uninterested.",
-            "reverent and analytical.",
+            "appreciative and reverent toward artisanal craftsmanship.",
             "confrontational and hostile."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"appreciative and reverent toward artisanal craftsmanship.\". The author describes Elena's 'steady precision' and the radiant luminosity of Murano glass with deep aesthetic admiration."
     },
     {
         "id": 99,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Glassblower's Daughter\"\n\nInside the glassworks of Murano, Elena rotated the iron blowpipe with steady precision. The molten silica glowed radiant orange in the furnace mouth before taking form under her breath. Venetian masters had guarded these chemical formulas for centuries, utilizing cobalt and manganese to achieve unrivaled luminosity. Elena's modern sculptures paid homage to classical Renaissance silhouettes while embracing bold asymmetrical contours.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage I (\"The Glassblower's Daughter\") that:",
+        "text": "It can reasonably be inferred from the final sentence of Passage I that Elena's artistic work:",
         "options": [
-            "the primary actors involved were unaware of the consequences of their actions.",
-            "external economic conditions had no impact on the development of the field.",
-            "the subject will likely lose relevance within the coming decade.",
-            "the underlying principles discussed have enduring value that transcends simple utility."
+            "completely rejects historical techniques in favor of total abstraction.",
+            "synthesizes classical Renaissance traditions with innovative contemporary aesthetics.",
+            "fails to achieve the technical quality of ancient Venetian masters.",
+            "is intended strictly for utilitarian commercial purposes."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "answer": 1,
+        "explanation": "Correct Answer: \"synthesizes classical Renaissance traditions with innovative contemporary aesthetics.\". The text notes that her sculptures pay homage to classical Renaissance silhouettes while embracing bold asymmetrical contours."
     },
     {
         "id": 100,
@@ -1402,58 +1402,58 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Glassblower's Daughter\"\n\nInside the glassworks of Murano, Elena rotated the iron blowpipe with steady precision. The molten silica glowed radiant orange in the furnace mouth before taking form under her breath. Venetian masters had guarded these chemical formulas for centuries, utilizing cobalt and manganese to achieve unrivaled luminosity. Elena's modern sculptures paid homage to classical Renaissance silhouettes while embracing bold asymmetrical contours.",
         "text": "The structural development of Passage I (\"The Glassblower's Daughter\") serves primarily to:",
         "options": [
-            "establish context before exploring specific examples and deeper philosophical implications.",
             "open with a refutation of an established scientific consensus.",
+            "establish Elena's physical glassblowing craft, recount Murano's historical secrets, and describe her modern creative synthesis.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "answer": 1,
+        "explanation": "Correct Answer: \"establish Elena's physical glassblowing craft, recount Murano's historical secrets, and describe her modern creative synthesis.\". The passage begins with Elena at the furnace, explains the historical chemistry behind Murano's glass, and concludes with her distinctive artistic style."
     },
     {
         "id": 101,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Glassblower's Daughter\"\n\nInside the glassworks of Murano, Elena rotated the iron blowpipe with steady precision. The molten silica glowed radiant orange in the furnace mouth before taking form under her breath. Venetian masters had guarded these chemical formulas for centuries, utilizing cobalt and manganese to achieve unrivaled luminosity. Elena's modern sculptures paid homage to classical Renaissance silhouettes while embracing bold asymmetrical contours.",
-        "text": "In Passage I (\"The Glassblower's Daughter\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage I (\"The Glassblower's Daughter\"), Elena's skill at the furnace is attributed primarily to:",
         "options": [
             "favorable political mandates enacted by municipal authorities.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "steady physical precision and practiced mastery of the glassblowing process.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"steady physical precision and practiced mastery of the glassblowing process.\". The text emphasizes that Elena rotated the iron blowpipe with 'steady precision' as the molten silica took form under her breath."
     },
     {
         "id": 102,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Glassblower's Daughter\"\n\nInside the glassworks of Murano, Elena rotated the iron blowpipe with steady precision. The molten silica glowed radiant orange in the furnace mouth before taking form under her breath. Venetian masters had guarded these chemical formulas for centuries, utilizing cobalt and manganese to achieve unrivaled luminosity. Elena's modern sculptures paid homage to classical Renaissance silhouettes while embracing bold asymmetrical contours.",
-        "text": "The author's perspective toward the evolution of Passage I (\"The Glassblower's Daughter\") is best described as:",
+        "text": "The author's perspective toward Elena's glass sculptures in Passage I is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
             "strictly neutral and reporting raw data.",
-            "deeply respectful of its heritage and nuanced complexities.",
+            "deeply admiring of her ability to bridge historical heritage and contemporary design.",
             "nostalgic yet dismissive of modern adaptations."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"deeply admiring of her ability to bridge historical heritage and contemporary design.\". The author highlights Elena's respect for Renaissance heritage combined with her bold asymmetrical innovations."
     },
     {
         "id": 103,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Glassblower's Daughter\"\n\nInside the glassworks of Murano, Elena rotated the iron blowpipe with steady precision. The molten silica glowed radiant orange in the furnace mouth before taking form under her breath. Venetian masters had guarded these chemical formulas for centuries, utilizing cobalt and manganese to achieve unrivaled luminosity. Elena's modern sculptures paid homage to classical Renaissance silhouettes while embracing bold asymmetrical contours.",
-        "text": "The author of Passage I (\"The Glassblower's Daughter\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage I suggests that Elena's work is distinguished by:",
         "options": [
-            "lead to rapid efficiency improvements in industrial manufacturing.",
-            "be the most accurate way to quantify its economic value.",
-            "align perfectly with the original creator's stated philosophy.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies."
+            "honoring classical Venetian glassmaking traditions while exploring modern asymmetrical contours.",
+            "relying entirely on automated industrial machinery to maximize production speed.",
+            "abandoning historic chemical formulas in favor of synthetic plastic substitutes.",
+            "ignoring aesthetic considerations in pursuit of purely utilitarian glassware."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "answer": 0,
+        "explanation": "Correct Answer: \"honoring classical Venetian glassmaking traditions while exploring modern asymmetrical contours.\". The passage explicitly highlights how Elena balances homage to Renaissance silhouettes with modern asymmetrical artistic designs."
     },
     {
         "id": 104,
@@ -1462,13 +1462,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Glassblower's Daughter\"\n\nInside the glassworks of Murano, Elena rotated the iron blowpipe with steady precision. The molten silica glowed radiant orange in the furnace mouth before taking form under her breath. Venetian masters had guarded these chemical formulas for centuries, utilizing cobalt and manganese to achieve unrivaled luminosity. Elena's modern sculptures paid homage to classical Renaissance silhouettes while embracing bold asymmetrical contours.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"The Glassblower's Daughter\")?",
         "options": [
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Elena's glass sculptures successfully unite traditional Murano artisanal heritage with modern asymmetrical innovation.",
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Elena's glass sculptures successfully unite traditional Murano artisanal heritage with modern asymmetrical innovation.\". The passage concludes by showing how Elena's contemporary sculptures blend historical Murano craftsmanship and classical silhouettes with bold modern forms."
     },
     {
         "id": 105,
@@ -1478,27 +1478,27 @@ const ACT_QUESTIONS1 = [
         "text": "Based on Passage II (\"Economic Resilience in Craft Guilds\"), the primary purpose of the text is to:",
         "options": [
             "criticize traditional approaches while advocating for immediate reform.",
-            "examine the intricate relationship between economic resilience in craft guilds and its broader significance.",
+            "explain how medieval craft guilds fostered socioeconomic stability through training standards, quality control, and mutual aid.",
             "provide a purely statistical timeline of historical events.",
             "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"examine the intricate relationship between economic resilience in craft guilds and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Economic Resilience in Craft Guilds\"."
+        "explanation": "Correct Answer: \"explain how medieval craft guilds fostered socioeconomic stability through training standards, quality control, and mutual aid.\". The passage explains that craft guilds served as comprehensive social welfare institutions that supported socioeconomic stability."
     },
     {
         "id": 106,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Economic Resilience in Craft Guilds\"\n\nMedieval craft guilds functioned not merely as economic cartels, but as comprehensive social welfare institutions. By enforcing rigorous apprenticeship standards, standardizing product quality, and providing mutual aid pensions to widows and injured artisans, guilds fostered long-term socio-economic stability.",
-        "text": "According to the discussion in Passage II (\"Economic Resilience in Craft Guilds\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage II (\"Economic Resilience in Craft Guilds\"), guilds achieved socioeconomic stability through which of the following mechanisms?",
         "options": [
-            "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "Monopolizing agricultural land and imposing municipal labor taxes.",
+            "Enforcing apprenticeship standards, ensuring product quality, and providing mutual aid pensions.",
+            "Eliminating private workshops and centralizing production in state factories.",
+            "Relying exclusively on automated machinery rather than human artisans."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Enforcing apprenticeship standards, ensuring product quality, and providing mutual aid pensions.\". The passage explicitly cites rigorous apprenticeship standards, standardized product quality, and mutual aid pensions to widows and injured artisans."
     },
     {
         "id": 107,
@@ -1510,25 +1510,25 @@ const ACT_QUESTIONS1 = [
             "dismissive and cynical.",
             "detached and uninterested.",
             "confrontational and hostile.",
-            "reverent and analytical."
+            "analytical and informative."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"analytical and informative.\". The author presents an objective, informative historical analysis of the institutional functions of medieval craft guilds."
     },
     {
         "id": 108,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Economic Resilience in Craft Guilds\"\n\nMedieval craft guilds functioned not merely as economic cartels, but as comprehensive social welfare institutions. By enforcing rigorous apprenticeship standards, standardizing product quality, and providing mutual aid pensions to widows and injured artisans, guilds fostered long-term socio-economic stability.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage II (\"Economic Resilience in Craft Guilds\") that:",
+        "text": "It can reasonably be inferred from Passage II (\"Economic Resilience in Craft Guilds\") that mutual aid pensions for widows and injured artisans:",
         "options": [
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "helped protect guild communities against economic hardship and instability.",
             "the primary actors involved were unaware of the consequences of their actions.",
             "external economic conditions had no impact on the development of the field.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"helped protect guild communities against economic hardship and instability.\". The text identifies mutual aid pensions as a core component of how guilds functioned as comprehensive social welfare institutions fostering stability."
     },
     {
         "id": 109,
@@ -1537,58 +1537,58 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Economic Resilience in Craft Guilds\"\n\nMedieval craft guilds functioned not merely as economic cartels, but as comprehensive social welfare institutions. By enforcing rigorous apprenticeship standards, standardizing product quality, and providing mutual aid pensions to widows and injured artisans, guilds fostered long-term socio-economic stability.",
         "text": "The structural development of Passage II (\"Economic Resilience in Craft Guilds\") serves primarily to:",
         "options": [
+            "redefine guilds beyond simple economic cartels by detailing their welfare, training, and quality-control functions.",
             "open with a refutation of an established scientific consensus.",
-            "establish context before exploring specific examples and deeper philosophical implications.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "answer": 0,
+        "explanation": "Correct Answer: \"redefine guilds beyond simple economic cartels by detailing their welfare, training, and quality-control functions.\". The passage establishes that guilds were comprehensive social institutions and enumerates the specific practices that generated stability."
     },
     {
         "id": 110,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Economic Resilience in Craft Guilds\"\n\nMedieval craft guilds functioned not merely as economic cartels, but as comprehensive social welfare institutions. By enforcing rigorous apprenticeship standards, standardizing product quality, and providing mutual aid pensions to widows and injured artisans, guilds fostered long-term socio-economic stability.",
-        "text": "In Passage II (\"Economic Resilience in Craft Guilds\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage II (\"Economic Resilience in Craft Guilds\"), the lasting socioeconomic stability of guild systems is attributed to:",
         "options": [
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "rigorous training standards, product-quality enforcement, and mutual-aid safety nets.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"rigorous training standards, product-quality enforcement, and mutual-aid safety nets.\". The passage directly attributes long-term stability to rigorous apprenticeship standards, standardized product quality, and mutual aid pensions."
     },
     {
         "id": 111,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Economic Resilience in Craft Guilds\"\n\nMedieval craft guilds functioned not merely as economic cartels, but as comprehensive social welfare institutions. By enforcing rigorous apprenticeship standards, standardizing product quality, and providing mutual aid pensions to widows and injured artisans, guilds fostered long-term socio-economic stability.",
-        "text": "The author's perspective toward the evolution of Passage II (\"Economic Resilience in Craft Guilds\") is best described as:",
+        "text": "The author's perspective toward medieval craft guilds in Passage II is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
+            "analytical and appreciative of their comprehensive social and economic functions.",
             "strictly neutral and reporting raw data.",
-            "nostalgic yet dismissive of modern adaptations.",
-            "deeply respectful of its heritage and nuanced complexities."
+            "nostalgic yet dismissive of modern adaptations."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "answer": 1,
+        "explanation": "Correct Answer: \"analytical and appreciative of their comprehensive social and economic functions.\". The author emphasizes that guilds were multifaceted welfare and regulatory institutions that promoted social resilience."
     },
     {
         "id": 112,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Economic Resilience in Craft Guilds\"\n\nMedieval craft guilds functioned not merely as economic cartels, but as comprehensive social welfare institutions. By enforcing rigorous apprenticeship standards, standardizing product quality, and providing mutual aid pensions to widows and injured artisans, guilds fostered long-term socio-economic stability.",
-        "text": "The author of Passage II (\"Economic Resilience in Craft Guilds\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage II suggests that viewing craft guilds merely as commercial cartels would:",
         "options": [
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
             "lead to rapid efficiency improvements in industrial manufacturing.",
             "be the most accurate way to quantify its economic value.",
+            "overlook their vital social-welfare role and contributions to community stability.",
             "align perfectly with the original creator's stated philosophy."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "answer": 2,
+        "explanation": "Correct Answer: \"overlook their vital social-welfare role and contributions to community stability.\". The author argues that guilds functioned not merely as cartels, but as comprehensive social welfare institutions offering training, quality control, and mutual aid."
     },
     {
         "id": 113,
@@ -1598,12 +1598,12 @@ const ACT_QUESTIONS1 = [
         "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"Economic Resilience in Craft Guilds\")?",
         "options": [
             "Technological disruption inevitably erodes the value of all historical traditions.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Craft guilds fostered long-term socioeconomic stability by combining apprenticeship standards, quality control, and mutual aid.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Craft guilds fostered long-term socioeconomic stability by combining apprenticeship standards, quality control, and mutual aid.\". The passage concludes that through these structured mechanisms, guilds supported artisans and created lasting social and economic stability."
     },
     {
         "id": 114,
@@ -1614,26 +1614,26 @@ const ACT_QUESTIONS1 = [
         "options": [
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
-            "examine the intricate relationship between the hermeneutics of translation and its broader significance.",
+            "explain that literary translation requires a complex balance between source fidelity and target-language resonance.",
             "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"examine the intricate relationship between the hermeneutics of translation and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"The Hermeneutics of Translation\"."
+        "explanation": "Correct Answer: \"explain that literary translation requires a complex balance between source fidelity and target-language resonance.\". The passage emphasizes that translation is a cultural hermeneutic requiring translators to balance original syntax with target resonance and idiom."
     },
     {
         "id": 115,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Hermeneutics of Translation\"\n\nThe act of literary translation is never a mechanical substitution of vocabulary, but a profound cultural hermeneutic. Translators must weigh fidelity to the original syntax against the poetic resonance and idiom of the target language, navigating inevitable losses and creative reinventions.",
-        "text": "According to the discussion in Passage III (\"The Hermeneutics of Translation\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage III (\"The Hermeneutics of Translation\"), the central challenge facing a literary translator is:",
         "options": [
-            "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles."
+            "memorizing obsolete grammatical rules from classical languages.",
+            "replacing human translators entirely with automated computer algorithms.",
+            "eliminating all creative choices to produce a purely literal word-for-word copy.",
+            "balancing fidelity to original syntax with the poetic resonance and idiom of the target language."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"balancing fidelity to original syntax with the poetic resonance and idiom of the target language.\". The passage states that translators must weigh fidelity to the original syntax against the poetic resonance and idiom of the target language while navigating inevitable losses and reinventions."
     },
     {
         "id": 116,
@@ -1642,28 +1642,28 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Hermeneutics of Translation\"\n\nThe act of literary translation is never a mechanical substitution of vocabulary, but a profound cultural hermeneutic. Translators must weigh fidelity to the original syntax against the poetic resonance and idiom of the target language, navigating inevitable losses and creative reinventions.",
         "text": "In the context of Passage III (\"The Hermeneutics of Translation\"), the author's descriptive tone is best characterized as:",
         "options": [
-            "reverent and analytical.",
+            "analytical and appreciative of the nuance of translation.",
             "dismissive and cynical.",
             "detached and uninterested.",
             "confrontational and hostile."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"analytical and appreciative of the nuance of translation.\". The author thoughtfully examines translation as an intellectual, artistic hermeneutic rather than a routine task."
     },
     {
         "id": 117,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Hermeneutics of Translation\"\n\nThe act of literary translation is never a mechanical substitution of vocabulary, but a profound cultural hermeneutic. Translators must weigh fidelity to the original syntax against the poetic resonance and idiom of the target language, navigating inevitable losses and creative reinventions.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage III (\"The Hermeneutics of Translation\") that:",
+        "text": "It can reasonably be inferred from Passage III (\"The Hermeneutics of Translation\") that translating a literary text involves:",
         "options": [
             "the primary actors involved were unaware of the consequences of their actions.",
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "accepting certain textual losses while making creative reinventions to preserve poetic impact.",
             "external economic conditions had no impact on the development of the field.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"accepting certain textual losses while making creative reinventions to preserve poetic impact.\". The passage explicitly mentions that translators must navigate 'inevitable losses and creative reinventions'."
     },
     {
         "id": 118,
@@ -1674,56 +1674,56 @@ const ACT_QUESTIONS1 = [
         "options": [
             "open with a refutation of an established scientific consensus.",
             "present a chronological series of unrelated anecdotes.",
-            "establish context before exploring specific examples and deeper philosophical implications.",
+            "reject mechanical views of translation and define the competing linguistic and artistic priorities translators must weigh.",
             "compare two equally viable opposing hypotheses."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"reject mechanical views of translation and define the competing linguistic and artistic priorities translators must weigh.\". The passage opens by stating translation is never mechanical and then outlines the delicate balance between fidelity, idiom, loss, and reinvention."
     },
     {
         "id": 119,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Hermeneutics of Translation\"\n\nThe act of literary translation is never a mechanical substitution of vocabulary, but a profound cultural hermeneutic. Translators must weigh fidelity to the original syntax against the poetic resonance and idiom of the target language, navigating inevitable losses and creative reinventions.",
-        "text": "In Passage III (\"The Hermeneutics of Translation\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage III (\"The Hermeneutics of Translation\"), successful literary translation is attributed to the translator's ability to:",
         "options": [
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance."
+            "harmonize fidelity to the original text with the natural idiom and poetic resonance of the target language."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"harmonize fidelity to the original text with the natural idiom and poetic resonance of the target language.\". The text highlights that translators must weigh fidelity to original syntax against the poetic resonance and idiom of the target language."
     },
     {
         "id": 120,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Hermeneutics of Translation\"\n\nThe act of literary translation is never a mechanical substitution of vocabulary, but a profound cultural hermeneutic. Translators must weigh fidelity to the original syntax against the poetic resonance and idiom of the target language, navigating inevitable losses and creative reinventions.",
-        "text": "The author's perspective toward the evolution of Passage III (\"The Hermeneutics of Translation\") is best described as:",
+        "text": "The author's perspective toward the discipline of literary translation in Passage III is best described as:",
         "options": [
-            "deeply respectful of its heritage and nuanced complexities.",
+            "perceptive and appreciative of its creative and interpretive complexity.",
             "skeptical of its claimed achievements.",
             "strictly neutral and reporting raw data.",
             "nostalgic yet dismissive of modern adaptations."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"perceptive and appreciative of its creative and interpretive complexity.\". The author emphasizes that translation is a 'profound cultural hermeneutic' requiring sophisticated interpretive and creative balancing."
     },
     {
         "id": 121,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Hermeneutics of Translation\"\n\nThe act of literary translation is never a mechanical substitution of vocabulary, but a profound cultural hermeneutic. Translators must weigh fidelity to the original syntax against the poetic resonance and idiom of the target language, navigating inevitable losses and creative reinventions.",
-        "text": "The author of Passage III (\"The Hermeneutics of Translation\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage III suggests that viewing translation merely as mechanical word substitution would:",
         "options": [
             "lead to rapid efficiency improvements in industrial manufacturing.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "miss the nuanced interpretive balance between source fidelity and target poetic resonance.",
             "be the most accurate way to quantify its economic value.",
             "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"miss the nuanced interpretive balance between source fidelity and target poetic resonance.\". The author explicitly asserts that translation is 'never a mechanical substitution of vocabulary, but a profound cultural hermeneutic'."
     },
     {
         "id": 122,
@@ -1734,11 +1734,11 @@ const ACT_QUESTIONS1 = [
         "options": [
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Literary translation is a nuanced art requiring a balance between original syntax, target idiom, and creative reinvention.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Literary translation is a nuanced art requiring a balance between original syntax, target idiom, and creative reinvention.\". The passage concludes that translation requires balancing fidelity with poetic resonance while navigating inevitable losses and reinventions."
     },
     {
         "id": 123,
@@ -1750,25 +1750,25 @@ const ACT_QUESTIONS1 = [
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
             "argue that modern technological advancements have rendered past practices obsolete.",
-            "examine the intricate relationship between neuroplasticity & synaptic pruning and its broader significance."
+            "explain the mechanisms of neuroplasticity, synaptic strengthening, and pruning in brain optimization."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"examine the intricate relationship between neuroplasticity & synaptic pruning and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"Neuroplasticity & Synaptic Pruning\"."
+        "explanation": "Correct Answer: \"explain the mechanisms of neuroplasticity, synaptic strengthening, and pruning in brain optimization.\". The passage describes how the brain remodels synapses throughout life, strengthening active pathways and pruning inactive ones to optimize performance."
     },
     {
         "id": 124,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Neuroplasticity & Synaptic Pruning\"\n\nThe human brain exhibits lifelong neuroplasticity through synaptic remodeling and activity-dependent pruning. Frequently stimulated neural pathways are strengthened through long-term potentiation, while inactive connections are systematically dismantled, optimizing cognitive efficiency and motor skill acquisition.",
-        "text": "According to the discussion in Passage IV (\"Neuroplasticity & Synaptic Pruning\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage IV (\"Neuroplasticity & Synaptic Pruning\"), how does the brain respond to frequently stimulated neural pathways?",
         "options": [
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
+            "It strengthens them through long-term potentiation to optimize cognitive and motor functions.",
+            "It systematically dismantles them to conserve metabolic energy.",
             "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "It relies exclusively on automated machinery rather than biological processes."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"It strengthens them through long-term potentiation to optimize cognitive and motor functions.\". The text states that frequently stimulated neural pathways are strengthened through long-term potentiation, while inactive connections are dismantled."
     },
     {
         "id": 125,
@@ -1778,27 +1778,27 @@ const ACT_QUESTIONS1 = [
         "text": "In the context of Passage IV (\"Neuroplasticity & Synaptic Pruning\"), the author's descriptive tone is best characterized as:",
         "options": [
             "dismissive and cynical.",
-            "reverent and analytical.",
+            "scientific, explanatory, and neutral.",
             "detached and uninterested.",
             "confrontational and hostile."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"scientific, explanatory, and neutral.\". The author provides an objective, factual biological explanation of synaptic remodeling and pruning."
     },
     {
         "id": 126,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Neuroplasticity & Synaptic Pruning\"\n\nThe human brain exhibits lifelong neuroplasticity through synaptic remodeling and activity-dependent pruning. Frequently stimulated neural pathways are strengthened through long-term potentiation, while inactive connections are systematically dismantled, optimizing cognitive efficiency and motor skill acquisition.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage IV (\"Neuroplasticity & Synaptic Pruning\") that:",
+        "text": "It can reasonably be inferred from Passage IV (\"Neuroplasticity & Synaptic Pruning\") that synaptic pruning serves to:",
         "options": [
             "the primary actors involved were unaware of the consequences of their actions.",
             "external economic conditions had no impact on the development of the field.",
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "eliminate underutilized neural connections to enhance overall cognitive and motor efficiency.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"eliminate underutilized neural connections to enhance overall cognitive and motor efficiency.\". The passage notes that inactive connections are systematically dismantled, optimizing cognitive efficiency and motor skill acquisition."
     },
     {
         "id": 127,
@@ -1810,55 +1810,55 @@ const ACT_QUESTIONS1 = [
             "open with a refutation of an established scientific consensus.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses.",
-            "establish context before exploring specific examples and deeper philosophical implications."
+            "define neuroplasticity and explain the complementary processes of synaptic strengthening and pruning."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"define neuroplasticity and explain the complementary processes of synaptic strengthening and pruning.\". The passage introduces lifelong neuroplasticity and details how pathway strengthening and synaptic pruning optimize brain function."
     },
     {
         "id": 128,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Neuroplasticity & Synaptic Pruning\"\n\nThe human brain exhibits lifelong neuroplasticity through synaptic remodeling and activity-dependent pruning. Frequently stimulated neural pathways are strengthened through long-term potentiation, while inactive connections are systematically dismantled, optimizing cognitive efficiency and motor skill acquisition.",
-        "text": "In Passage IV (\"Neuroplasticity & Synaptic Pruning\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage IV (\"Neuroplasticity & Synaptic Pruning\"), improvements in cognitive efficiency and motor skill acquisition are attributed to:",
         "options": [
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "activity-dependent synaptic remodeling that strengthens active pathways and dismantles unused connections.",
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"activity-dependent synaptic remodeling that strengthens active pathways and dismantles unused connections.\". The passage states that long-term potentiation of active pathways and systematic dismantling of inactive connections optimize cognitive efficiency and motor skills."
     },
     {
         "id": 129,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Neuroplasticity & Synaptic Pruning\"\n\nThe human brain exhibits lifelong neuroplasticity through synaptic remodeling and activity-dependent pruning. Frequently stimulated neural pathways are strengthened through long-term potentiation, while inactive connections are systematically dismantled, optimizing cognitive efficiency and motor skill acquisition.",
-        "text": "The author's perspective toward the evolution of Passage IV (\"Neuroplasticity & Synaptic Pruning\") is best described as:",
+        "text": "The author's perspective toward neuroplasticity in Passage IV is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
-            "deeply respectful of its heritage and nuanced complexities.",
+            "objective and scientific, focusing on physiological adaptation mechanisms.",
             "strictly neutral and reporting raw data.",
             "nostalgic yet dismissive of modern adaptations."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"objective and scientific, focusing on physiological adaptation mechanisms.\". The author presents synaptic remodeling and pruning as factual, lifelong biological processes that optimize brain performance."
     },
     {
         "id": 130,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Neuroplasticity & Synaptic Pruning\"\n\nThe human brain exhibits lifelong neuroplasticity through synaptic remodeling and activity-dependent pruning. Frequently stimulated neural pathways are strengthened through long-term potentiation, while inactive connections are systematically dismantled, optimizing cognitive efficiency and motor skill acquisition.",
-        "text": "The author of Passage IV (\"Neuroplasticity & Synaptic Pruning\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage IV suggests that viewing the brain as static and unchangeable would:",
         "options": [
             "lead to rapid efficiency improvements in industrial manufacturing.",
             "be the most accurate way to quantify its economic value.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "overlook the dynamic, activity-dependent synaptic remodeling that shapes brain function throughout life.",
             "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"overlook the dynamic, activity-dependent synaptic remodeling that shapes brain function throughout life.\". The passage emphasizes that the human brain exhibits lifelong neuroplasticity, continuously remodeling active and inactive pathways."
     },
     {
         "id": 131,
@@ -1870,10 +1870,10 @@ const ACT_QUESTIONS1 = [
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
+            "Lifelong neuroplasticity optimizes brain performance through activity-dependent pathway strengthening and synaptic pruning."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Lifelong neuroplasticity optimizes brain performance through activity-dependent pathway strengthening and synaptic pruning.\". The passage concludes that synaptic remodeling and activity-dependent pruning optimize cognitive efficiency and motor skill acquisition throughout life."
     }
 ];
 

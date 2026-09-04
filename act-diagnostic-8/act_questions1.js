@@ -1,5 +1,5 @@
 // =============================================
-// act_questions1.js – ACT Diagnostic Test 8
+// act_questions1.js – ACT-DIAGNOSTIC-8
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
 // Total: 131 questions
 // =============================================
@@ -1462,13 +1462,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"The Midnight Conservatory\"\n\nThe municipal conservatory stood as an architectural triumph of Victorian ironwork and curved glass. Within its temperature-controlled chambers flourished rare tropical palms and carnivorous pitcher plants gathered from remote expeditions. For the resident horticulturist, maintenance of this fragile oasis was a continuous dialogue between delicate ecology and mechanical heating systems.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"The Midnight Conservatory\")?",
         "options": [
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Diurnal pollinators are superior to nocturnal species in every floral habitat.",
+            "The quiet rhythms of nocturnal ecosystems reveal specialized biological adaptations that are invisible during daylight hours.",
+            "Greenhouses are incapable of simulating natural nighttime humidity levels.",
+            "Night-blooming flowers require artificial ultraviolet lamps to attract pollinating moths."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 1,
+        "explanation": "Correct Answer: \"The quiet rhythms of nocturnal ecosystems reveal specialized biological adaptations that are invisible during daylight hours.\". The passage celebrates the subtle adaptations of flora and fauna thriving in nighttime environments."
     },
     {
         "id": 105,
@@ -1597,13 +1597,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Urban Mobility & Transportation Equity\"\n\nUrban transit infrastructure is inextricably linked with socioeconomic mobility. Communities with robust access to affordable, high-frequency bus and rail networks experience higher employment rates and improved educational access, highlighting the necessity of transportation equity in municipal budgeting.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"Urban Mobility & Transportation Equity\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "High-density transit networks should be restricted to affluent commercial corridors.",
+            "Private vehicle ownership remains the sole sustainable solution for modern urban congestion.",
+            "Equitable public transit investment directly enhances socioeconomic mobility by connecting underserved neighborhoods to vital urban centers.",
+            "Fare-free transit policies inevitably reduce ridership across municipal bus fleets."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 2,
+        "explanation": "Correct Answer: \"Equitable public transit investment directly enhances socioeconomic mobility by connecting underserved neighborhoods to vital urban centers.\". The author underscores transportation access as an essential prerequisite for economic equity."
     },
     {
         "id": 114,
@@ -1732,13 +1732,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"Acoustic Design in Ancient Amphitheaters\"\n\nThe acoustic brilliance of Greco-Roman theaters, such as the amphitheater at Epidaurus, resulted from sophisticated geometric design and stone acoustic filtering. Stepped limestone seating rows effectively suppressed low-frequency background noise while amplifying high-frequency vocal consonants across vast open-air spaces.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage III (\"Acoustic Design in Ancient Amphitheaters\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Ancient amphitheater architects achieved extraordinary acoustic amplification by ingeniously balancing tiered limestone geometry with natural sound wave filtering.",
+            "Greek theater architects relied entirely on modern electronic sound reinforcement principles.",
+            "Limestone benches muffled actors' voices, requiring performers to shout continuously.",
+            "Circular orchestra design was adopted purely for aesthetic symmetry rather than acoustic projection."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Ancient amphitheater architects achieved extraordinary acoustic amplification by ingeniously balancing tiered limestone geometry with natural sound wave filtering.\". The passage explains how ancient builders mastered architectural acoustics through material and geometric choices."
     },
     {
         "id": 123,
@@ -1867,19 +1867,15 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Quantum Entanglement & Superposition\"\n\nQuantum entanglement occurs when pairs of particles become entangled such that the quantum state of each particle cannot be described independently of the other. Measuring the spin state of one entangled particle instantly determines the state of its counterpart, regardless of spatial separation.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Quantum Entanglement & Superposition\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
+            "Quantum entanglement violates the conservation of energy in closed laboratory systems.",
+            "Superposition collapses permanently whenever two subatomic particles interact in a vacuum.",
+            "Classical computing architectures will permanently outpace quantum processors in cryptography.",
+            "Non-local quantum correlations challenge classical intuition while laying the fundamental groundwork for exponentially scalable quantum information processing."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Non-local quantum correlations challenge classical intuition while laying the fundamental groundwork for exponentially scalable quantum information processing.\". The conclusion points to entanglement as both a conceptual breakthrough and a technological revolution."
     }
 ];
-
-if (typeof window !== 'undefined') {
-    window.ACT_QUESTIONS1 = ACT_QUESTIONS1;
-}
 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = ACT_QUESTIONS1;

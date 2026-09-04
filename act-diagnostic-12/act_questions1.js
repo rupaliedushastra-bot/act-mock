@@ -1,5 +1,5 @@
 // =============================================
-// act_questions1.js – ACT Diagnostic Test 12
+// act_questions1.js – ACT-DIAGNOSTIC-12
 // Core ACT Format: English (50Q), Math (45Q), Reading (36Q)
 // Total: 131 questions
 // =============================================
@@ -1462,13 +1462,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE I: LITERARY NARRATIVE\n\n\"Footsteps on the Cobblestone\"\n\nWalking through the historic alleys of Bruges in the quiet hours before dawn, Marcus listened to the echoes of his own footsteps against ancient granite. The gabled facades reflected centuries of Hanseatic merchant history, their weathered brickwork bearing silent witness to the rise and fall of medieval trading dynasties.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage I (\"Footsteps on the Cobblestone\")?",
         "options": [
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Cobblestone pavements should be paved over with asphalt to maximize vehicular speed.",
+            "Walking historic cobblestone streets evokes a living continuum connecting contemporary urban life with the ancestral memories embedded in historic architecture.",
+            "Modern city residents feel completely disconnected from the architectural legacy of past centuries.",
+            "Historical preservation of city alleys creates unnecessary economic hardship for local residents."
         ],
-        "answer": 0,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 1,
+        "explanation": "Correct Answer: \"Walking historic cobblestone streets evokes a living continuum connecting contemporary urban life with the ancestral memories embedded in historic architecture.\". The essay captures the emotional dialogue between modern pedestrians and centuries-old urban memories."
     },
     {
         "id": 105,
@@ -1597,13 +1597,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"Historic Preservation vs Modern Growth\"\n\nMunicipal planners in historic cities grapple with balancing architectural preservation and modern housing density demands. Successful zoning frameworks integrate adaptive reuse of historic facades with modern interior retrofitting, preserving cultural heritage without stifling urban vitality.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"Historic Preservation vs Modern Growth\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Historic districts should be completely demolished whenever commercial developers propose high-rise towers.",
+            "Modern architectural growth can thrive only by freezing all building activity in historical cities.",
+            "Sustainable urban planning achieves balance through adaptive reuse strategies that honor historical heritage while accommodating dynamic modern growth.",
+            "Adaptive reuse projects always cost significantly more than erecting brand-new concrete structures."
         ],
-        "answer": 1,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 2,
+        "explanation": "Correct Answer: \"Sustainable urban planning achieves balance through adaptive reuse strategies that honor historical heritage while accommodating dynamic modern growth.\". The author advocates for adaptive reuse as the optimal synthesis of architectural preservation and modern expansion."
     },
     {
         "id": 114,
@@ -1732,13 +1732,13 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE III: HUMANITIES\n\n\"Mythology & Epic Storytelling\"\n\nEpic poetry across world cultures preserves foundational cultural mythologies and ethical codes. From the Epic of Gilgamesh to Homer's Odyssey, heroic journeys dramatize humanity's struggle against mortality, fate, and cosmic disorder.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage III (\"Mythology & Epic Storytelling\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
-            "Theoretical models are vastly superior to empirical practice in every domain."
+            "Epic mythologies endure across civilizations because their archetypal narrative structures address universal human struggles, mortality, and moral purpose.",
+            "Ancient myths were composed purely as literal historical records with no allegorical intent.",
+            "Oral storytelling traditions corrupted mythological texts beyond any analytical utility.",
+            "Modern literature has completely discarded ancient narrative archetypes like the hero's journey."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "answer": 0,
+        "explanation": "Correct Answer: \"Epic mythologies endure across civilizations because their archetypal narrative structures address universal human struggles, mortality, and moral purpose.\". The humanities scholar shows how mythic archetypes reflect enduring human truths across cultures."
     },
     {
         "id": 123,
@@ -1867,19 +1867,15 @@ const ACT_QUESTIONS1 = [
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"Symbiotic Micro-Biomes & Human Health\"\n\nThe human gastrointestinal tract harbors trillions of symbiotic microorganisms that coordinate nutrient metabolism, synthesize essential vitamins, and regulate immune system maturation. Dysbiosis in gut microbiome composition has been linked to metabolic, autoimmune, and neurological conditions.",
         "text": "Which statement best expresses the overarching conclusion presented in Passage IV (\"Symbiotic Micro-Biomes & Human Health\")?",
         "options": [
-            "Technological disruption inevitably erodes the value of all historical traditions.",
-            "Individual achievement is entirely dependent on institutional patronage.",
-            "Theoretical models are vastly superior to empirical practice in every domain.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
+            "All bacterial microorganisms inside the human digestive tract are inherently pathogenic and harmful.",
+            "Broad-spectrum antibiotics improve long-term gut microbiome diversity when taken daily.",
+            "Gut microbiota have no measurable communication pathways with the central nervous system.",
+            "The human microbiome functions as a crucial symbiotic organ system that regulates metabolic health, immune responses, and disease resistance."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"The human microbiome functions as a crucial symbiotic organ system that regulates metabolic health, immune responses, and disease resistance.\". The article concludes that diverse microbial ecosystems are essential partners in maintaining systemic human health."
     }
 ];
-
-if (typeof window !== 'undefined') {
-    window.ACT_QUESTIONS1 = ACT_QUESTIONS1;
-}
 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = ACT_QUESTIONS1;

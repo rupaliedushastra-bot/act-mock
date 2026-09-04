@@ -1490,15 +1490,15 @@ const ACT_QUESTIONS1 = [
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Evolution of Trade Currencies\"\n\nThe historical transition from commodity barter systems to standardized coinage transformed ancient commerce by reducing transaction friction. Early Mediterranean mints marked silver and bronze ingots with civic seals, guaranteeing weight and purity, which in turn enabled long-distance maritime trade and capital accumulation.",
-        "text": "According to the discussion in Passage II (\"The Evolution of Trade Currencies\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to Passage II (\"The Evolution of Trade Currencies\"), standardized coinage facilitated ancient commerce primarily by:",
         "options": [
             "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
+            "reducing transaction friction and guaranteeing metal weight and purity.",
             "It requires meticulous attention to detail and a deep understanding of foundational principles.",
             "It relies exclusively on automated machinery rather than human expertise."
         ],
-        "answer": 2,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "answer": 1,
+        "explanation": "Correct Answer: \"reducing transaction friction and guaranteeing metal weight and purity.\". The passage states that standardized coinage transformed ancient commerce by reducing transaction friction and guaranteeing weight and purity through civic seals."
     },
     {
         "id": 107,
@@ -1510,25 +1510,25 @@ const ACT_QUESTIONS1 = [
             "dismissive and cynical.",
             "detached and uninterested.",
             "confrontational and hostile.",
-            "reverent and analytical."
+            "analytical and informative."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"analytical and informative.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
     },
     {
         "id": 108,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Evolution of Trade Currencies\"\n\nThe historical transition from commodity barter systems to standardized coinage transformed ancient commerce by reducing transaction friction. Early Mediterranean mints marked silver and bronze ingots with civic seals, guaranteeing weight and purity, which in turn enabled long-distance maritime trade and capital accumulation.",
-        "text": "It can reasonably be inferred from the narrative presented in Passage II (\"The Evolution of Trade Currencies\") that:",
+        "text": "It can reasonably be inferred from the discussion presented in Passage II (\"The Evolution of Trade Currencies\") that:",
         "options": [
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "civic seals established commercial trust necessary for long-distance maritime trade.",
             "the primary actors involved were unaware of the consequences of their actions.",
             "external economic conditions had no impact on the development of the field.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"civic seals established commercial trust necessary for long-distance maritime trade.\". By guaranteeing the weight and purity of ingots, civic seals provided the trust required for merchants to engage in long-distance maritime trade."
     },
     {
         "id": 109,
@@ -1538,57 +1538,57 @@ const ACT_QUESTIONS1 = [
         "text": "The structural development of Passage II (\"The Evolution of Trade Currencies\") serves primarily to:",
         "options": [
             "open with a refutation of an established scientific consensus.",
-            "establish context before exploring specific examples and deeper philosophical implications.",
+            "trace the transition from barter to coinage and explain its broader economic impact.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"trace the transition from barter to coinage and explain its broader economic impact.\". The passage begins by setting the context of transitioning from barter to standardized coinage, then details how guaranteed weight and purity enabled long-distance trade."
     },
     {
         "id": 110,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Evolution of Trade Currencies\"\n\nThe historical transition from commodity barter systems to standardized coinage transformed ancient commerce by reducing transaction friction. Early Mediterranean mints marked silver and bronze ingots with civic seals, guaranteeing weight and purity, which in turn enabled long-distance maritime trade and capital accumulation.",
-        "text": "In Passage II (\"The Evolution of Trade Currencies\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage II (\"The Evolution of Trade Currencies\"), the expansion of ancient commerce is most directly attributed to:",
         "options": [
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
-            "hasty improvisation under urgent time constraints."
+            "guaranteeing ingot weight and purity through minted civic seals.",
+            "a harmonious blend of disciplined craft, historical knowledge, and perseverance."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"guaranteeing ingot weight and purity through minted civic seals.\". The text illustrates that the enablement of long-distance maritime trade and capital accumulation stemmed directly from civic seals guaranteeing ingot weight and purity."
     },
     {
         "id": 111,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Evolution of Trade Currencies\"\n\nThe historical transition from commodity barter systems to standardized coinage transformed ancient commerce by reducing transaction friction. Early Mediterranean mints marked silver and bronze ingots with civic seals, guaranteeing weight and purity, which in turn enabled long-distance maritime trade and capital accumulation.",
-        "text": "The author's perspective toward the evolution of Passage II (\"The Evolution of Trade Currencies\") is best described as:",
+        "text": "The author's perspective toward the development of standardized coinage in Passage II is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
-            "strictly neutral and reporting raw data.",
+            "strictly neutral and informative, detailing historical economic functions.",
             "nostalgic yet dismissive of modern adaptations.",
-            "deeply respectful of its heritage and nuanced complexities."
+            "deeply respectful of its sacred spiritual heritage."
         ],
-        "answer": 3,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "answer": 1,
+        "explanation": "Correct Answer: \"strictly neutral and informative, detailing historical economic functions.\". The descriptive language emphasizes objective analysis of the economic functions and commercial evolution."
     },
     {
         "id": 112,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE II: SOCIAL SCIENCE\n\n\"The Evolution of Trade Currencies\"\n\nThe historical transition from commodity barter systems to standardized coinage transformed ancient commerce by reducing transaction friction. Early Mediterranean mints marked silver and bronze ingots with civic seals, guaranteeing weight and purity, which in turn enabled long-distance maritime trade and capital accumulation.",
-        "text": "The author of Passage II (\"The Evolution of Trade Currencies\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage II (\"The Evolution of Trade Currencies\") suggests that viewing standardized coinage merely as raw metal pieces would:",
         "options": [
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "overlook its transformative economic role in reducing trade friction and enabling capital accumulation.",
             "lead to rapid efficiency improvements in industrial manufacturing.",
             "be the most accurate way to quantify its economic value.",
             "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"overlook its transformative economic role in reducing trade friction and enabling capital accumulation.\". The author explicitly contrasts purely material views of metals with the deeper economic significance of standardized currency."
     },
     {
         "id": 113,
@@ -1598,12 +1598,12 @@ const ACT_QUESTIONS1 = [
         "text": "Which statement best expresses the overarching conclusion presented in Passage II (\"The Evolution of Trade Currencies\")?",
         "options": [
             "Technological disruption inevitably erodes the value of all historical traditions.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Standardized coinage transformed ancient commerce by reducing transaction friction and enabling maritime expansion.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Standardized coinage transformed ancient commerce by reducing transaction friction and enabling maritime expansion.\". The concluding lines reflect on the broader significance of guaranteed coinage in facilitating long-distance maritime commerce."
     },
     {
         "id": 114,
@@ -1614,11 +1614,11 @@ const ACT_QUESTIONS1 = [
         "options": [
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
-            "examine the intricate relationship between the philosophy of architectural form and its broader significance.",
+            "examine the intricate relationship between architectural form and internal spatial function.",
             "argue that modern technological advancements have rendered past practices obsolete."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"examine the intricate relationship between the philosophy of architectural form and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"The Philosophy of Architectural Form\"."
+        "explanation": "Correct Answer: \"examine the intricate relationship between architectural form and internal spatial function.\". The passage as a whole focuses on introducing and exploring how structural form expresses internal spatial function across history."
     },
     {
         "id": 115,
@@ -1630,10 +1630,10 @@ const ACT_QUESTIONS1 = [
             "It was achieved without significant labor or long-term dedication.",
             "It was largely rejected by contemporary experts during its initial phase.",
             "It relies exclusively on automated machinery rather than human expertise.",
-            "It requires meticulous attention to detail and a deep understanding of foundational principles."
+            "Structural form should articulate internal spatial function."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"Structural form should articulate internal spatial function.\". The text provides specific details showing that architectural form is meant to articulate internal spatial function."
     },
     {
         "id": 116,
@@ -1658,12 +1658,12 @@ const ACT_QUESTIONS1 = [
         "text": "It can reasonably be inferred from the narrative presented in Passage III (\"The Philosophy of Architectural Form\") that:",
         "options": [
             "the primary actors involved were unaware of the consequences of their actions.",
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "structural elements can serve both functional engineering needs and expressive aesthetic purposes.",
             "external economic conditions had no impact on the development of the field.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"structural elements can serve both functional engineering needs and expressive aesthetic purposes.\". The narrative suggests that structural elements like flying buttresses express engineering honesty while achieving aesthetic elegance."
     },
     {
         "id": 118,
@@ -1674,11 +1674,11 @@ const ACT_QUESTIONS1 = [
         "options": [
             "open with a refutation of an established scientific consensus.",
             "present a chronological series of unrelated anecdotes.",
-            "establish context before exploring specific examples and deeper philosophical implications.",
+            "state a core theoretical premise and illustrate it with historical examples.",
             "compare two equally viable opposing hypotheses."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"state a core theoretical premise and illustrate it with historical examples.\". The passage begins by setting the theoretical premise that form should articulate function, then proceeds to detail specific historical examples."
     },
     {
         "id": 119,
@@ -1690,10 +1690,10 @@ const ACT_QUESTIONS1 = [
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints.",
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance."
+            "an ongoing dialogue between aesthetic elegance and engineering honesty."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"an ongoing dialogue between aesthetic elegance and engineering honesty.\". The text illustrates that architectural achievement stems from balancing aesthetic elegance with engineering honesty."
     },
     {
         "id": 120,
@@ -1715,15 +1715,15 @@ const ACT_QUESTIONS1 = [
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE III: HUMANITIES\n\n\"The Philosophy of Architectural Form\"\n\nArchitectural theorists have long argued that structural form should articulate internal spatial function. From Gothic flying buttresses that openly celebrated gravitational thrust to twentieth-century modernism's dictum that 'form follows function,' architectural history reflects an ongoing dialogue between aesthetic elegance and engineering honesty.",
-        "text": "The author of Passage III (\"The Philosophy of Architectural Form\") suggests that viewing the subject merely as a routine process would:",
+        "text": "According to Passage III (\"The Philosophy of Architectural Form\"), the modernist dictum 'form follows function' suggests that:",
         "options": [
             "lead to rapid efficiency improvements in industrial manufacturing.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "a building's external structure should be determined by its internal practical requirements.",
             "be the most accurate way to quantify its economic value.",
             "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"a building's external structure should be determined by its internal practical requirements.\". The author cites 'form follows function' as a direct expression of structural form articulating internal spatial purpose."
     },
     {
         "id": 122,
@@ -1734,11 +1734,11 @@ const ACT_QUESTIONS1 = [
         "options": [
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.",
+            "Architectural history reflects a continuous synthesis of aesthetic elegance and engineering honesty.",
             "Theoretical models are vastly superior to empirical practice in every domain."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Architectural history reflects a continuous synthesis of aesthetic elegance and engineering honesty.\". The concluding lines reflect on the broader significance of balancing visual design and engineering reality."
     },
     {
         "id": 123,
@@ -1750,25 +1750,25 @@ const ACT_QUESTIONS1 = [
             "criticize traditional approaches while advocating for immediate reform.",
             "provide a purely statistical timeline of historical events.",
             "argue that modern technological advancements have rendered past practices obsolete.",
-            "examine the intricate relationship between crispr & epigenetic regulation and its broader significance."
+            "examine the intricate relationship between epigenetic regulation and physiological adaptation."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"examine the intricate relationship between crispr & epigenetic regulation and its broader significance.\". The passage as a whole focuses on introducing and exploring the nuances and deeper meaning of \"CRISPR & Epigenetic Regulation\"."
+        "explanation": "Correct Answer: \"examine the intricate relationship between epigenetic regulation and physiological adaptation.\". The passage as a whole focuses on explaining how epigenetic mechanisms dynamically regulate gene expression."
     },
     {
         "id": 124,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"CRISPR & Epigenetic Regulation\"\n\nEpigenetic mechanisms modify gene expression patterns without altering underlying DNA nucleotide sequences. DNA methylation and histone acetylation act as cellular switches, allowing organisms to dynamically regulate physiological responses to environmental stressors and developmental cues.",
-        "text": "According to the discussion in Passage IV (\"CRISPR & Epigenetic Regulation\"), which of the following is explicitly emphasized about the subject?",
+        "text": "According to the discussion in Passage IV (\"CRISPR & Epigenetic Regulation\"), which of the following is explicitly emphasized about epigenetic mechanisms?",
         "options": [
-            "It requires meticulous attention to detail and a deep understanding of foundational principles.",
-            "It was achieved without significant labor or long-term dedication.",
-            "It was largely rejected by contemporary experts during its initial phase.",
-            "It relies exclusively on automated machinery rather than human expertise."
+            "They modify gene expression patterns without altering underlying DNA sequences.",
+            "They were achieved without significant labor or long-term dedication.",
+            "They were largely rejected by contemporary experts during its initial phase.",
+            "They rely exclusively on automated machinery rather than human expertise."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"It requires meticulous attention to detail and a deep understanding of foundational principles.\". The text provides specific narrative details showing the precision, dedication, and knowledge required."
+        "explanation": "Correct Answer: \"They modify gene expression patterns without altering underlying DNA sequences.\". The text provides specific scientific details defining epigenetic mechanisms as modifying gene expression without altering underlying DNA sequences."
     },
     {
         "id": 125,
@@ -1778,12 +1778,12 @@ const ACT_QUESTIONS1 = [
         "text": "In the context of Passage IV (\"CRISPR & Epigenetic Regulation\"), the author's descriptive tone is best characterized as:",
         "options": [
             "dismissive and cynical.",
-            "reverent and analytical.",
+            "scientific and explanatory.",
             "detached and uninterested.",
             "confrontational and hostile."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"reverent and analytical.\". The author treats the subject with serious appreciation and structured, thoughtful analysis."
+        "explanation": "Correct Answer: \"scientific and explanatory.\". The author treats the subject with objective clarity and structured scientific analysis."
     },
     {
         "id": 126,
@@ -1794,11 +1794,11 @@ const ACT_QUESTIONS1 = [
         "options": [
             "the primary actors involved were unaware of the consequences of their actions.",
             "external economic conditions had no impact on the development of the field.",
-            "the underlying principles discussed have enduring value that transcends simple utility.",
+            "epigenetic switches provide organisms with adaptable physiological flexibility.",
             "the subject will likely lose relevance within the coming decade."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"the underlying principles discussed have enduring value that transcends simple utility.\". The narrative suggests that the true significance lies beyond immediate material or practical outcomes."
+        "explanation": "Correct Answer: \"epigenetic switches provide organisms with adaptable physiological flexibility.\". The narrative explains that cellular switches like methylation and acetylation enable dynamic physiological responses."
     },
     {
         "id": 127,
@@ -1810,55 +1810,55 @@ const ACT_QUESTIONS1 = [
             "open with a refutation of an established scientific consensus.",
             "present a chronological series of unrelated anecdotes.",
             "compare two equally viable opposing hypotheses.",
-            "establish context before exploring specific examples and deeper philosophical implications."
+            "define a biological mechanism and detail its functional molecular components."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"establish context before exploring specific examples and deeper philosophical implications.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
+        "explanation": "Correct Answer: \"define a biological mechanism and detail its functional molecular components.\". The passage begins by setting the scene and context, then proceeds to detail specific techniques or insights."
     },
     {
         "id": 128,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"CRISPR & Epigenetic Regulation\"\n\nEpigenetic mechanisms modify gene expression patterns without altering underlying DNA nucleotide sequences. DNA methylation and histone acetylation act as cellular switches, allowing organisms to dynamically regulate physiological responses to environmental stressors and developmental cues.",
-        "text": "In Passage IV (\"CRISPR & Epigenetic Regulation\"), the success or impact of the central endeavor is most directly attributed to:",
+        "text": "In Passage IV (\"CRISPR & Epigenetic Regulation\"), dynamic cellular regulation is most directly attributed to:",
         "options": [
-            "a harmonious blend of disciplined craft, historical knowledge, and perseverance.",
+            "DNA methylation and histone acetylation functioning as cellular switches.",
             "favorable political mandates enacted by municipal authorities.",
             "sheer chance and fortuitous external interventions.",
             "hasty improvisation under urgent time constraints."
         ],
         "answer": 0,
-        "explanation": "Correct Answer: \"a harmonious blend of disciplined craft, historical knowledge, and perseverance.\". The text illustrates that mastery and lasting impact stem from deliberate discipline and deep understanding."
+        "explanation": "Correct Answer: \"DNA methylation and histone acetylation functioning as cellular switches.\". The text illustrates that dynamic physiological regulation is directly mediated by methylation and acetylation acting as cellular switches."
     },
     {
         "id": 129,
         "section": "reading",
         "topic": "Style & Tone",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"CRISPR & Epigenetic Regulation\"\n\nEpigenetic mechanisms modify gene expression patterns without altering underlying DNA nucleotide sequences. DNA methylation and histone acetylation act as cellular switches, allowing organisms to dynamically regulate physiological responses to environmental stressors and developmental cues.",
-        "text": "The author's perspective toward the evolution of Passage IV (\"CRISPR & Epigenetic Regulation\") is best described as:",
+        "text": "The author's perspective toward epigenetic mechanisms in Passage IV is best described as:",
         "options": [
             "skeptical of its claimed achievements.",
-            "deeply respectful of its heritage and nuanced complexities.",
-            "strictly neutral and reporting raw data.",
+            "objective and neutral, presenting molecular biological functions.",
+            "strictly emotional and reporting personal reflections.",
             "nostalgic yet dismissive of modern adaptations."
         ],
         "answer": 1,
-        "explanation": "Correct Answer: \"deeply respectful of its heritage and nuanced complexities.\". The descriptive language emphasizes admiration for the precision, craft, and significance of the subject."
+        "explanation": "Correct Answer: \"objective and neutral, presenting molecular biological functions.\". The descriptive language emphasizes scientific objectivity regarding cellular mechanisms."
     },
     {
         "id": 130,
         "section": "reading",
         "topic": "Inference",
         "passage": "PASSAGE IV: NATURAL SCIENCE\n\n\"CRISPR & Epigenetic Regulation\"\n\nEpigenetic mechanisms modify gene expression patterns without altering underlying DNA nucleotide sequences. DNA methylation and histone acetylation act as cellular switches, allowing organisms to dynamically regulate physiological responses to environmental stressors and developmental cues.",
-        "text": "The author of Passage IV (\"CRISPR & Epigenetic Regulation\") suggests that viewing the subject merely as a routine process would:",
+        "text": "The author of Passage IV (\"CRISPR & Epigenetic Regulation\") suggests that epigenetic modifications are crucial because they:",
         "options": [
             "lead to rapid efficiency improvements in industrial manufacturing.",
             "be the most accurate way to quantify its economic value.",
-            "overlook the profound cultural, ecological, or intellectual dimensions it embodies.",
+            "allow organisms to adapt dynamically to environmental stressors and developmental cues.",
             "align perfectly with the original creator's stated philosophy."
         ],
         "answer": 2,
-        "explanation": "Correct Answer: \"overlook the profound cultural, ecological, or intellectual dimensions it embodies.\". The author explicitly contrasts superficial or purely utilitarian views with deeper appreciation."
+        "explanation": "Correct Answer: \"allow organisms to adapt dynamically to environmental stressors and developmental cues.\". The author highlights that cellular switches enable organisms to adapt dynamically to external environmental changes."
     },
     {
         "id": 131,
@@ -1870,10 +1870,10 @@ const ACT_QUESTIONS1 = [
             "Technological disruption inevitably erodes the value of all historical traditions.",
             "Individual achievement is entirely dependent on institutional patronage.",
             "Theoretical models are vastly superior to empirical practice in every domain.",
-            "True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work."
+            "Epigenetic switches allow flexible physiological adaptation without altering the genetic code."
         ],
         "answer": 3,
-        "explanation": "Correct Answer: \"True mastery and understanding arise from honoring fundamental principles while engaging deeply with the work.\". The concluding lines reflect on the broader significance of dedicated stewardship and deep comprehension."
+        "explanation": "Correct Answer: \"Epigenetic switches allow flexible physiological adaptation without altering the genetic code.\". The concluding lines reflect on the broader significance of methylation and acetylation in enabling flexible adaptation without altering underlying DNA."
     }
 ];
 

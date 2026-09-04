@@ -1100,27 +1100,27 @@
             </div>
             <div class="hdr-section-info">
                 <div class="section-badge" id="sectionBadge">English</div>
-                <span class="q-counter" id="qCounter">Q 1 / 75</span>
+                <span class="q-counter" id="qCounter">Q 1 / 50</span>
             </div>
             <a href="dashboard.html" class="hdr-exit-btn" style="color:rgba(255,255,255,0.7); font-size:0.8rem; font-weight:600; text-decoration:none; padding:5px 12px; border:1px solid rgba(255,255,255,0.18); border-radius:6px; margin-right:12px;">Exit to Dashboard ↵</a>
             <div class="timer-wrap">
                 <span class="timer-label">Time Left</span>
-                <span id="timerDisplay">45:00</span>
+                <span id="timerDisplay">35:00</span>
             </div>
         </header>
         <!-- Section tabs -->
         <div class="section-tabs" id="sectionTabs">
             <div class="sec-tab english active" onclick="goToSection('english')">
                 📝 English
-                <div class="tab-count" id="tabCount-english">0/75</div>
+                <div class="tab-count" id="tabCount-english">0/50</div>
             </div>
             <div class="sec-tab math" onclick="goToSection('math')">
                 🔢 Math
-                <div class="tab-count" id="tabCount-math">0/60</div>
+                <div class="tab-count" id="tabCount-math">0/45</div>
             </div>
             <div class="sec-tab reading" onclick="goToSection('reading')">
                 📖 Reading
-                <div class="tab-count" id="tabCount-reading">0/40</div>
+                <div class="tab-count" id="tabCount-reading">0/36</div>
             </div>
         </div>
         <!-- Body -->
@@ -1225,17 +1225,26 @@
     <script>
 
         function formatLaTeX(str) {
-            if (!str || typeof str !== 'string') return str || '';
-            let res = str.replace(/\$([^\$]+)\$/g, (m, math) => {
-                if (window.katex) {
-                    try {
-                        return katex.renderToString(math, { throwOnError: false });
-                    } catch (e) { }
-                }
-                return `<span class="latex-math">${formatMathCaret(math)}</span>`;
-            });
-            return formatMathCaret(res);
+    if (!str || typeof str !== 'string') return str || '';
+    const currencyMap = [];
+    const clean = str.replace(/\$(?:\d[\d,]*(?:\.\d+)?)(?=[,\s\.\)\?\!\;\–\—\-]|$)/g, (match) => {
+        const placeholder = `@@CURRENCY_${currencyMap.length}@@`;
+        currencyMap.push(match);
+        return placeholder;
+    });
+    let res = clean.replace(/\$([^\$]+)\$/g, (m, math) => {
+        if (typeof window !== 'undefined' && window.katex && window.katex.renderToString) {
+            try {
+                return window.katex.renderToString(math, { throwOnError: false });
+            } catch (e) { }
         }
+        return `<span class="latex-math">${formatMathCaret(math)}</span>`;
+    });
+    if (currencyMap.length > 0) {
+        res = res.replace(/@@CURRENCY_(\d+)@@/g, (_, idx) => currencyMap[Number(idx)]);
+    }
+    return formatMathCaret(res);
+}
 
         
 function formatPassageHTML(passage, qText) {
