@@ -417,5 +417,77 @@ CREATE POLICY "Users can view own AP report" ON public.ap_report
 CREATE POLICY "Users can insert own AP report" ON public.ap_report
     FOR INSERT WITH CHECK (auth.uid() = user_id OR student_email = auth.jwt() ->> 'email' OR auth.jwt() ->> 'email' = 'rupali.eduquest@gmail.com');
 
+-- ============================================================================
+-- 9. CREATE ACT SIGNUP TABLE & AUTO-TRIGGER
+-- ============================================================================
+CREATE TABLE IF NOT EXISTS public.act_signup (
+    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
+    email TEXT NOT NULL,
+    role TEXT DEFAULT 'student',            -- 'student' ya 'admin'
+    status TEXT DEFAULT 'pending',          -- 'pending', 'approved', 'rejected'
+    full_name TEXT,                         -- Student Name (Optional)
+    phone TEXT,                             -- Phone Number (Optional)
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+ALTER TABLE public.act_signup ENABLE ROW LEVEL SECURITY;
+
+DROP POLICY IF EXISTS "Allow insert to act_signup" ON public.act_signup;
+CREATE POLICY "Allow insert to act_signup"
+    ON public.act_signup FOR INSERT
+    WITH CHECK (true);
+
+DROP POLICY IF EXISTS "Allow select on act_signup" ON public.act_signup;
+CREATE POLICY "Allow select on act_signup"
+    ON public.act_signup FOR SELECT
+    USING (
+        auth.uid() = user_id 
+        OR email = (auth.jwt() ->> 'email')
+        OR (auth.jwt() ->> 'email') = 'rupali.eduquest@gmail.com'
+    );
+
+DROP POLICY IF EXISTS "Allow admin update on act_signup" ON public.act_signup;
+CREATE POLICY "Allow admin update on act_signup"
+    ON public.act_signup FOR UPDATE
+    USING ((auth.jwt() ->> 'email') = 'rupali.eduquest@gmail.com');
+
+-- Auto-Trigger to sync any new auth user to act_signup and profiles
+CREATE OR REPLACE FUNCTION public.handle_new_act_signup()
+RETURNS TRIGGER AS $$
+BEGIN
+    -- 1. Insert into act_signup table
+    INSERT INTO public.act_signup (user_id, email, role, status)
+    VALUES (
+        NEW.id,
+        NEW.email,
+        COALESCE(NEW.raw_user_meta_data->>'role', 'student'),
+        'pending'
+    )
+    ON CONFLICT (id) DO NOTHING;
+
+    -- 2. Insert into profiles table (Admin approval aur Test unlock ke liye zaroori)
+    INSERT INTO public.profiles (id, email, has_access, has_act_access, has_act_diag_access, act_access_requested)
+    VALUES (
+        NEW.id,
+        NEW.email,
+        FALSE,
+        FALSE,
+        FALSE,
+        TRUE
+    )
+    ON CONFLICT (id) DO UPDATE
+    SET act_access_requested = TRUE;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+DROP TRIGGER IF EXISTS on_auth_user_created_act_signup ON auth.users;
+CREATE TRIGGER on_auth_user_created_act_signup
+    AFTER INSERT ON auth.users
+    FOR EACH ROW EXECUTE FUNCTION public.handle_new_act_signup();
+
 -- Done! All tables and columns are ready for the Universal Portal.
 

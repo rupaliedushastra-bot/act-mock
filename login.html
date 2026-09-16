@@ -432,6 +432,34 @@ function formatMathCaret(text) {
             const { data, error } = await supabaseClient.auth.signUp({ email, password });
             if (error) { showMsg(error.message, 'error'); return; }
 
+            // Save record in act_signup table
+            try {
+                await supabaseClient.from('act_signup').insert([{
+                    user_id: data.user?.id || null,
+                    email: email,
+                    role: 'student',
+                    status: 'pending'
+                }]);
+            } catch (signupErr) {
+                console.warn('act_signup insert notice:', signupErr);
+            }
+
+            // Ensure student profile exists with access request flagged
+            if (data.user?.id) {
+                try {
+                    await supabaseClient.from('profiles').upsert([{
+                        id: data.user.id,
+                        email: email,
+                        has_access: false,
+                        has_act_access: false,
+                        has_act_diag_access: false,
+                        act_access_requested: true
+                    }], { onConflict: 'id' });
+                } catch (profileErr) {
+                    console.warn('profiles upsert notice:', profileErr);
+                }
+            }
+
             showMsg('Account created! You can now login. Note: access must be approved by admin.', 'success');
             
             if (typeof sendSignupNotification === 'function') {
@@ -464,6 +492,18 @@ function formatMathCaret(text) {
 
             const { data, error } = await supabaseClient.auth.signUp({ email, password });
             if (error) { showMsg(error.message, 'error'); return; }
+
+            // Save record in act_signup table
+            try {
+                await supabaseClient.from('act_signup').insert([{
+                    user_id: data.user?.id || null,
+                    email: email,
+                    role: 'admin',
+                    status: 'approved'
+                }]);
+            } catch (signupErr) {
+                console.warn('act_signup insert notice:', signupErr);
+            }
 
             showMsg('Admin account created! You can now login as admin. Make sure this email matches ADMIN_EMAIL in admin.html.', 'success');
         }
