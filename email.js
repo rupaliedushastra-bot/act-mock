@@ -47,14 +47,18 @@ async function sendEmails(result) {
 }
 
 // ── Send admin email when a new user signs up ───────
-async function sendSignupNotification(userEmail) {
+async function sendSignupNotification(userData) {
   try {
+    const payload = typeof userData === 'string' ? { email: userData } : (userData || {});
     const res = await fetch(EMAIL_API_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         type: 'signup',
-        userEmail: userEmail,
+        userEmail: payload.email || payload.userEmail || '',
+        fullName: payload.fullName || payload.name || 'Student',
+        phone: payload.phone || '–',
+        role: payload.role || 'student',
       })
     });
 

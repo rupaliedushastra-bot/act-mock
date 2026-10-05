@@ -39,6 +39,37 @@ const server = http.createServer((req, res) => {
     const parsedUrl = url.parse(req.url);
     let pathname = decodeURIComponent(parsedUrl.pathname);
 
+    // API Route for Send Email
+    if (pathname === '/api/send-email') {
+        let bodyStr = '';
+        req.on('data', chunk => { bodyStr += chunk; });
+        req.on('end', async () => {
+            try {
+                req.body = bodyStr ? JSON.parse(bodyStr) : {};
+            } catch (e) {
+                req.body = {};
+            }
+            res.status = function (code) {
+                this.statusCode = code;
+                return this;
+            };
+            res.json = function (data) {
+                this.setHeader('Content-Type', 'application/json');
+                this.end(JSON.stringify(data));
+                return this;
+            };
+            try {
+                const handler = require('./api/send-email');
+                await handler(req, res);
+            } catch (err) {
+                console.error('API Send-Email Error:', err);
+                res.writeHead(500, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ error: 'Server error', details: err.message }));
+            }
+        });
+        return;
+    }
+
     if (pathname === '/') {
         pathname = '/index.html';
     }

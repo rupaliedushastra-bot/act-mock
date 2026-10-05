@@ -10,6 +10,8 @@
 -- (Using IF NOT EXISTS so it won't error if columns already exist)
 
 ALTER TABLE IF EXISTS public.profiles
+  ADD COLUMN IF NOT EXISTS full_name TEXT,
+  ADD COLUMN IF NOT EXISTS phone TEXT,
   ADD COLUMN IF NOT EXISTS organization TEXT,
   -- SAT Mock
   ADD COLUMN IF NOT EXISTS has_access BOOLEAN DEFAULT FALSE,
@@ -458,27 +460,34 @@ CREATE OR REPLACE FUNCTION public.handle_new_act_signup()
 RETURNS TRIGGER AS $$
 BEGIN
     -- 1. Insert into act_signup table
-    INSERT INTO public.act_signup (user_id, email, role, status)
+    INSERT INTO public.act_signup (user_id, email, full_name, phone, role, status)
     VALUES (
         NEW.id,
         NEW.email,
+        COALESCE(NEW.raw_user_meta_data->>'full_name', NEW.raw_user_meta_data->>'name', ''),
+        COALESCE(NEW.raw_user_meta_data->>'phone', ''),
         COALESCE(NEW.raw_user_meta_data->>'role', 'student'),
         'pending'
     )
     ON CONFLICT (id) DO NOTHING;
 
     -- 2. Insert into profiles table (Admin approval aur Test unlock ke liye zaroori)
-    INSERT INTO public.profiles (id, email, has_access, has_act_access, has_act_diag_access, act_access_requested)
+    INSERT INTO public.profiles (id, email, full_name, phone, has_access, has_act_access, has_act_diag_access, act_access_requested)
     VALUES (
         NEW.id,
         NEW.email,
+        COALESCE(NEW.raw_user_meta_data->>'full_name', NEW.raw_user_meta_data->>'name', ''),
+        COALESCE(NEW.raw_user_meta_data->>'phone', ''),
         FALSE,
         FALSE,
         FALSE,
         TRUE
     )
     ON CONFLICT (id) DO UPDATE
-    SET act_access_requested = TRUE;
+    SET 
+        full_name = COALESCE(EXCLUDED.full_name, public.profiles.full_name),
+        phone = COALESCE(EXCLUDED.phone, public.profiles.phone),
+        act_access_requested = TRUE;
 
     RETURN NEW;
 END;

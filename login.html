@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login – EduQuest ACT Portal</title>
+    <title>Login & Sign Up – EduQuest ACT Portal</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -12,7 +12,7 @@
         * {
             box-sizing: border-box;
             margin: 0;
-            padding: 0
+            padding: 0;
         }
 
         body {
@@ -23,7 +23,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px
+            padding: 24px 16px;
         }
 
         .card {
@@ -31,22 +31,28 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 20px;
             padding: 36px 32px;
-            max-width: 420px;
-            width: 100%
+            max-width: 440px;
+            width: 100%;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
         }
 
         h2 {
             font-family: 'Syne', sans-serif;
-            font-size: 1.6rem;
+            font-size: 1.65rem;
             margin-bottom: 6px;
-            text-align: center
+            text-align: center;
+            background: linear-gradient(135deg, #ffffff 40%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .sub {
             text-align: center;
             color: rgba(255, 255, 255, 0.5);
             font-size: 0.85rem;
-            margin-bottom: 24px
+            margin-bottom: 22px;
         }
 
         /* Role toggle */
@@ -56,7 +62,7 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 10px;
             padding: 4px;
-            margin-bottom: 18px
+            margin-bottom: 18px;
         }
 
         .role-btn {
@@ -68,13 +74,14 @@
             font-weight: 600;
             cursor: pointer;
             color: rgba(255, 255, 255, 0.5);
-            transition: all .15s;
-            user-select: none
+            transition: all .15s ease;
+            user-select: none;
         }
 
         .role-btn.active {
-            background: rgba(26, 86, 219, 0.25);
-            color: #fff
+            background: rgba(26, 86, 219, 0.35);
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(26, 86, 219, 0.3);
         }
 
         /* Mode tabs (login/signup) */
@@ -82,62 +89,92 @@
             display: flex;
             gap: 8px;
             margin-bottom: 22px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08)
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .mode-tab {
             flex: 1;
             text-align: center;
             padding: 10px 0;
-            font-size: 0.88rem;
+            font-size: 0.9rem;
             font-weight: 600;
             color: rgba(255, 255, 255, 0.4);
             cursor: pointer;
             border-bottom: 2px solid transparent;
-            transition: all .15s;
-            user-select: none
+            transition: all .15s ease;
+            user-select: none;
         }
 
         .mode-tab.active {
             color: #fff;
-            border-bottom-color: #1a56db
+            border-bottom-color: #1a56db;
         }
 
         .field {
-            margin-bottom: 16px
+            margin-bottom: 15px;
         }
 
         .field label {
             display: block;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             font-weight: 600;
-            color: rgba(255, 255, 255, 0.5);
+            color: rgba(255, 255, 255, 0.6);
             text-transform: uppercase;
             letter-spacing: .05em;
-            margin-bottom: 6px
+            margin-bottom: 6px;
         }
 
-        .field input {
+        .field label .req {
+            color: #f87171;
+            font-weight: 700;
+            margin-left: 2px;
+        }
+
+        .field input, .field select {
             width: 100%;
             border: 1.5px solid rgba(255, 255, 255, 0.12);
             border-radius: 8px;
             padding: 11px 14px;
             font-family: inherit;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             outline: none;
             background: rgba(255, 255, 255, 0.03);
-            color: #fff
+            color: #fff;
+            transition: border-color 0.15s ease;
         }
 
-        .field input:focus {
-            border-color: #1a56db
+        .field input:focus, .field select:focus {
+            border-color: #1a56db;
+            background: rgba(26, 86, 219, 0.05);
+        }
+
+        .phone-row {
+            display: flex;
+            gap: 8px;
+        }
+
+        .phone-row select {
+            width: 42%;
+            background: #141420;
+            cursor: pointer;
+            padding: 11px 8px;
+            font-size: 0.85rem;
+        }
+
+        .phone-row select option {
+            background: #141420;
+            color: #fff;
+        }
+
+        .phone-row input {
+            flex: 1;
         }
 
         .hint {
-            font-size: 0.76rem;
-            color: rgba(255, 255, 255, 0.35);
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.4);
             margin-top: 6px;
-            line-height: 1.5
+            line-height: 1.5;
         }
 
         .password-wrapper {
@@ -162,7 +199,7 @@
         }
 
         .eye-btn:hover {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.85);
         }
 
         .btn {
@@ -175,60 +212,79 @@
             font-weight: 600;
             cursor: pointer;
             border: none;
-            margin-top: 6px;
-            transition: all .15s
+            margin-top: 10px;
+            transition: all .15s ease;
         }
 
         .btn-primary {
             background: linear-gradient(135deg, #1a56db, #1e429f);
-            color: #fff
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(26, 86, 219, 0.35);
         }
 
         .btn-primary:hover {
-            transform: translateY(-1px)
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(26, 86, 219, 0.45);
         }
 
         .btn-primary.admin {
-            background: linear-gradient(135deg, #7c3aed, #5b21b6)
+            background: linear-gradient(135deg, #7c3aed, #5b21b6);
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+        }
+
+        .btn-primary.admin:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(124, 58, 237, 0.45);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
         }
 
         #msg {
             text-align: center;
             font-size: 0.85rem;
             margin-top: 14px;
-            min-height: 20px
+            min-height: 20px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            display: none;
         }
 
         #msg.error {
-            color: #f87171
+            display: block;
+            background: rgba(239, 68, 68, 0.12);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #fca5a5;
         }
 
         #msg.success {
-            color: #34d399
+            display: block;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #6ee7b7;
         }
 
         .form-section {
-            display: none
+            display: none;
         }
 
         .form-section.active {
-            display: block
+            display: block;
         }
     </style>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-
-</head>
-
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 </head>
 
 <body>
 
     <div class="card">
         <h2>Welcome</h2>
-        <p class="sub">Login or create an account to continue</p>
+        <p class="sub">Login or create your account to continue</p>
 
         <!-- ROLE TOGGLE -->
         <div class="role-toggle">
@@ -245,118 +301,109 @@
         <!-- STUDENT LOGIN -->
         <div class="form-section active" id="studentLogin">
             <div class="field">
-                <label>Email</label>
-                <input type="email" id="stuLoginEmail" placeholder="you@example.com" autocomplete="off" value="">
+                <label>Email Address <span class="req">*</span></label>
+                <input type="email" id="stuLoginEmail" placeholder="you@example.com" autocomplete="off">
             </div>
             <div class="field">
-                <label>Password</label>
+                <label>Password <span class="req">*</span></label>
                 <div class="password-wrapper">
-                    <input type="password" id="stuLoginPassword" placeholder="••••••••" autocomplete="new-password" value="">
+                    <input type="password" id="stuLoginPassword" placeholder="••••••••" autocomplete="new-password">
                     <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
                 </div>
             </div>
-            <button class="btn btn-primary" onclick="studentLogin()">Login as Student</button>
+            <button class="btn btn-primary" id="btnStudentLogin" onclick="studentLogin()">Login as Student</button>
         </div>
 
         <!-- STUDENT SIGNUP -->
         <div class="form-section" id="studentSignup">
             <div class="field">
-                <label>Email</label>
-                <input type="email" id="stuSignupEmail" placeholder="you@example.com" autocomplete="off" value="">
+                <label>Full Name <span class="req">*</span></label>
+                <input type="text" id="stuSignupName" placeholder="Enter your full name" autocomplete="name">
             </div>
             <div class="field">
-                <label>Password</label>
+                <label>Email Address <span class="req">*</span></label>
+                <input type="email" id="stuSignupEmail" placeholder="you@example.com" autocomplete="email">
+            </div>
+            <div class="field">
+                <label>Phone Number <span class="req">*</span></label>
+                <div class="phone-row">
+                    <select id="stuSignupCountryCode"></select>
+                    <input type="tel" id="stuSignupPhone" placeholder="Mobile / Phone number" autocomplete="tel">
+                </div>
+            </div>
+            <div class="field">
+                <label>Password <span class="req">*</span></label>
                 <div class="password-wrapper">
-                    <input type="password" id="stuSignupPassword" placeholder="At least 6 characters" autocomplete="new-password" value="">
+                    <input type="password" id="stuSignupPassword" placeholder="At least 6 characters" autocomplete="new-password">
                     <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
                 </div>
-                <p class="hint">After signup, an admin will need to approve your account before you can access locked exams.</p>
+                <p class="hint">After signup, an admin will approve your account to grant access to practice and diagnostic tests.</p>
             </div>
-            <button class="btn btn-primary" onclick="studentSignup()">Create Student Account</button>
+            <button class="btn btn-primary" id="btnStudentSignup" onclick="studentSignup()">Create Student Account</button>
         </div>
 
         <!-- ADMIN LOGIN -->
         <div class="form-section" id="adminLogin">
             <div class="field">
-                <label>Admin Email</label>
-                <input type="email" id="adminLoginEmail" placeholder="admin@email.com" autocomplete="off" value="">
+                <label>Admin Email <span class="req">*</span></label>
+                <input type="email" id="adminLoginEmail" placeholder="admin@email.com" autocomplete="off">
             </div>
             <div class="field">
-                <label>Password</label>
+                <label>Password <span class="req">*</span></label>
                 <div class="password-wrapper">
-                    <input type="password" id="adminLoginPassword" placeholder="••••••••" autocomplete="new-password" value="">
+                    <input type="password" id="adminLoginPassword" placeholder="••••••••" autocomplete="new-password">
                     <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
                 </div>
             </div>
-            <button class="btn btn-primary admin" onclick="adminLogin()">Login as Admin</button>
+            <button class="btn btn-primary admin" id="btnAdminLogin" onclick="adminLogin()">Login as Admin</button>
         </div>
 
         <!-- ADMIN SIGNUP -->
         <div class="form-section" id="adminSignup">
             <div class="field">
-                <label>Admin Email</label>
-                <input type="email" id="adminSignupEmail" placeholder="admin@email.com" autocomplete="off" value="">
+                <label>Full Name <span class="req">*</span></label>
+                <input type="text" id="adminSignupName" placeholder="Admin full name" autocomplete="name">
             </div>
             <div class="field">
-                <label>Password</label>
+                <label>Admin Email <span class="req">*</span></label>
+                <input type="email" id="adminSignupEmail" placeholder="admin@email.com" autocomplete="email">
+            </div>
+            <div class="field">
+                <label>Phone Number <span class="req">*</span></label>
+                <div class="phone-row">
+                    <select id="adminSignupCountryCode"></select>
+                    <input type="tel" id="adminSignupPhone" placeholder="Mobile / Phone number" autocomplete="tel">
+                </div>
+            </div>
+            <div class="field">
+                <label>Password <span class="req">*</span></label>
                 <div class="password-wrapper">
-                    <input type="password" id="adminSignupPassword" placeholder="At least 6 characters" autocomplete="new-password" value="">
+                    <input type="password" id="adminSignupPassword" placeholder="At least 6 characters" autocomplete="new-password">
                     <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
                 </div>
             </div>
             <div class="field">
-                <label>Admin Access Code</label>
+                <label>Admin Access Code <span class="req">*</span></label>
                 <div class="password-wrapper">
-                    <input type="password" id="adminAccessCode" placeholder="Secret access code" autocomplete="new-password" value="">
+                    <input type="password" id="adminAccessCode" placeholder="Secret access code" autocomplete="new-password">
                     <button type="button" class="eye-btn" onclick="togglePassword(this)">👁️</button>
                 </div>
-                <p class="hint">Only people with the correct access code can create an admin account.</p>
+                <p class="hint">Only authorized educators with the admin code can register an admin account.</p>
             </div>
-            <button class="btn btn-primary admin" onclick="adminSignup()">Create Admin Account</button>
+            <button class="btn btn-primary admin" id="btnAdminSignup" onclick="adminSignup()">Create Admin Account</button>
         </div>
 
         <p id="msg"></p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="countries.js"></script>
     <script src="supabase.js"></script>
     <script src="email.js"></script>
     <script>
-
-function formatLaTeX(str) {
-    if (!str || typeof str !== 'string') return str || '';
-    const currencyMap = [];
-    const clean = str.replace(/\$(?:\d[\d,]*(?:\.\d+)?)(?=[,\s\.\)\?\!\;\–\—\-]|$)/g, (match) => {
-        const placeholder = `@@CURRENCY_${currencyMap.length}@@`;
-        currencyMap.push(match);
-        return placeholder;
-    });
-    let res = clean.replace(/\$([^\$]+)\$/g, (m, math) => {
-        if (typeof window !== 'undefined' && window.katex && window.katex.renderToString) {
-            try {
-                return window.katex.renderToString(math, { throwOnError: false });
-            } catch (e) { }
-        }
-        return `<span class="latex-math">${formatMathCaret(math)}</span>`;
-    });
-    if (currencyMap.length > 0) {
-        res = res.replace(/@@CURRENCY_(\d+)@@/g, (_, idx) => currencyMap[Number(idx)]);
-    }
-    return formatMathCaret(res);
-}
-
-function formatMathCaret(text) {
-    if (!text) return '';
-    return text.replace(/([A-Za-z0-9\)\}\]]+)\^(\(([^\)]+)\)|(\{([^\}]+)\})|(\-?[A-Za-z0-9\/]+))/g, (m, base, p2, p3, p4, p5, p6) => {
-        const exp = p3 || p5 || p6;
-        return `${base}<sup>${exp}</sup>`;
-    });
-}
-
-
         const supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
 
-        // Change this to your own secret code before deploying
+        // Secret code for creating admin accounts
         const ADMIN_ACCESS_CODE = 'Lovelypanda';
 
         let currentRole = 'student';
@@ -369,19 +416,52 @@ function formatMathCaret(text) {
 
         function showMsg(text, type) {
             const m = document.getElementById('msg');
+            if (!text) {
+                m.textContent = '';
+                m.className = '';
+                m.style.display = 'none';
+                return;
+            }
             m.textContent = text;
             m.className = type;
+            m.style.display = 'block';
         }
 
         function togglePassword(btn) {
             const input = btn.previousElementSibling;
             if (input.type === 'password') {
                 input.type = 'text';
-                btn.textContent = '👁️‍🗨️'; // Crossed eye or similar open eye
+                btn.textContent = '👁️‍🗨️';
             } else {
                 input.type = 'password';
                 btn.textContent = '👁️';
             }
+        }
+
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        // ── Populate Country Dropdowns ──────────────────
+        function initCountryDropdowns() {
+            const selectIds = ['stuSignupCountryCode', 'adminSignupCountryCode'];
+            if (typeof COUNTRIES === 'undefined' || !Array.isArray(COUNTRIES)) return;
+
+            selectIds.forEach(id => {
+                const select = document.getElementById(id);
+                if (!select) return;
+                select.innerHTML = '';
+                COUNTRIES.forEach(c => {
+                    const opt = document.createElement('option');
+                    opt.value = c.dial_code;
+                    const flag = typeof countryCodeToFlag === 'function' ? countryCodeToFlag(c.code) : '';
+                    opt.textContent = `${flag} ${c.dial_code} (${c.code})`;
+                    if (c.code === 'IN') {
+                        opt.selected = true;
+                    }
+                    select.appendChild(opt);
+                });
+            });
         }
 
         // ── Role / Mode switching ──────────────────────
@@ -414,56 +494,124 @@ function formatMathCaret(text) {
         async function studentLogin() {
             const email = document.getElementById('stuLoginEmail').value.trim();
             const password = document.getElementById('stuLoginPassword').value;
-            if (!email || !password) { showMsg('Please fill all fields.', 'error'); return; }
+            const btn = document.getElementById('btnStudentLogin');
 
-            const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
-            if (error) { showMsg(error.message, 'error'); return; }
-            showMsg('Login successful! Redirecting...', 'success');
-            setTimeout(() => window.location.href = getRedirect(), 600);
+            if (!email) { showMsg('Please enter your email address.', 'error'); return; }
+            if (!isValidEmail(email)) { showMsg('Please enter a valid email address.', 'error'); return; }
+            if (!password) { showMsg('Please enter your password.', 'error'); return; }
+
+            btn.disabled = true;
+            btn.textContent = 'Logging in...';
+
+            try {
+                const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
+                if (error) { showMsg(error.message, 'error'); return; }
+
+                showMsg('Login successful! Redirecting...', 'success');
+                setTimeout(() => window.location.href = getRedirect(), 600);
+            } catch (err) {
+                showMsg('An error occurred during login. Please try again.', 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Login as Student';
+            }
         }
 
         // ── Student Signup ──────────────────────────────
         async function studentSignup() {
+            const name = document.getElementById('stuSignupName').value.trim();
             const email = document.getElementById('stuSignupEmail').value.trim();
+            const cc = document.getElementById('stuSignupCountryCode')?.value || '+91';
+            const phone = document.getElementById('stuSignupPhone').value.trim();
             const password = document.getElementById('stuSignupPassword').value;
-            if (!email || !password) { showMsg('Please fill all fields.', 'error'); return; }
+            const btn = document.getElementById('btnStudentSignup');
+
+            // Strict Validation - All fields required
+            if (!name) { showMsg('Please enter your full name.', 'error'); return; }
+            if (!email) { showMsg('Please enter your email address.', 'error'); return; }
+            if (!isValidEmail(email)) { showMsg('Please enter a valid email address format.', 'error'); return; }
+            if (!phone) { showMsg('Please enter your phone number.', 'error'); return; }
+            if (!password) { showMsg('Please enter a password.', 'error'); return; }
             if (password.length < 6) { showMsg('Password must be at least 6 characters.', 'error'); return; }
 
-            const { data, error } = await supabaseClient.auth.signUp({ email, password });
-            if (error) { showMsg(error.message, 'error'); return; }
+            const fullPhone = `${cc} ${phone}`;
 
-            // Save record in act_signup table
+            btn.disabled = true;
+            btn.textContent = 'Creating account...';
+
             try {
-                await supabaseClient.from('act_signup').insert([{
-                    user_id: data.user?.id || null,
+                // 1. Supabase Auth Signup with metadata
+                const { data, error } = await supabaseClient.auth.signUp({
                     email: email,
-                    role: 'student',
-                    status: 'pending'
-                }]);
-            } catch (signupErr) {
-                console.warn('act_signup insert notice:', signupErr);
-            }
+                    password: password,
+                    options: {
+                        data: {
+                            full_name: name,
+                            phone: fullPhone,
+                            role: 'student'
+                        }
+                    }
+                });
 
-            // Ensure student profile exists with access request flagged
-            if (data.user?.id) {
-                try {
-                    await supabaseClient.from('profiles').upsert([{
-                        id: data.user.id,
-                        email: email,
-                        has_access: false,
-                        has_act_access: false,
-                        has_act_diag_access: false,
-                        act_access_requested: true
-                    }], { onConflict: 'id' });
-                } catch (profileErr) {
-                    console.warn('profiles upsert notice:', profileErr);
+                if (error) {
+                    showMsg(error.message, 'error');
+                    return;
                 }
-            }
 
-            showMsg('Account created! You can now login. Note: access must be approved by admin.', 'success');
-            
-            if (typeof sendSignupNotification === 'function') {
-                sendSignupNotification(email);
+                // 2. Save user details in act_signup table
+                try {
+                    await supabaseClient.from('act_signup').insert([{
+                        user_id: data.user?.id || null,
+                        email: email,
+                        full_name: name,
+                        phone: fullPhone,
+                        role: 'student',
+                        status: 'pending'
+                    }]);
+                } catch (signupErr) {
+                    console.warn('act_signup insert notice:', signupErr);
+                }
+
+                // 3. Ensure student profile exists in profiles table
+                if (data.user?.id) {
+                    try {
+                        await supabaseClient.from('profiles').upsert([{
+                            id: data.user.id,
+                            email: email,
+                            full_name: name,
+                            phone: fullPhone,
+                            has_access: false,
+                            has_act_access: false,
+                            has_act_diag_access: false,
+                            act_access_requested: true
+                        }], { onConflict: 'id' });
+                    } catch (profileErr) {
+                        console.warn('profiles upsert notice:', profileErr);
+                    }
+                }
+
+                // 4. Send email notification via SMTP to rupali.eduquest@gmail.com with heading 'ACT New Signup'
+                if (typeof sendSignupNotification === 'function') {
+                    sendSignupNotification({
+                        fullName: name,
+                        email: email,
+                        phone: fullPhone,
+                        role: 'student'
+                    });
+                }
+
+                showMsg('🎉 Account created successfully! You can now log in. Access will be reviewed by admin.', 'success');
+                setTimeout(() => {
+                    setMode('login');
+                    document.getElementById('stuLoginEmail').value = email;
+                }, 1500);
+
+            } catch (err) {
+                console.error('Signup error:', err);
+                showMsg('Signup failed. Please check your internet connection.', 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Create Student Account';
             }
         }
 
@@ -471,46 +619,136 @@ function formatMathCaret(text) {
         async function adminLogin() {
             const email = document.getElementById('adminLoginEmail').value.trim();
             const password = document.getElementById('adminLoginPassword').value;
-            if (!email || !password) { showMsg('Please fill all fields.', 'error'); return; }
+            const btn = document.getElementById('btnAdminLogin');
 
-            const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
-            if (error) { showMsg(error.message, 'error'); return; }
+            if (!email) { showMsg('Please enter admin email.', 'error'); return; }
+            if (!isValidEmail(email)) { showMsg('Please enter a valid email address.', 'error'); return; }
+            if (!password) { showMsg('Please enter your password.', 'error'); return; }
 
-            showMsg('Admin login successful! Redirecting...', 'success');
-            setTimeout(() => window.location.href = 'admin.html', 600);
+            btn.disabled = true;
+            btn.textContent = 'Logging in...';
+
+            try {
+                const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
+                if (error) { showMsg(error.message, 'error'); return; }
+
+                showMsg('Admin login successful! Redirecting...', 'success');
+                setTimeout(() => window.location.href = 'admin.html', 600);
+            } catch (err) {
+                showMsg('An error occurred during admin login.', 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Login as Admin';
+            }
         }
 
         // ── Admin Signup ─────────────────────────────────
         async function adminSignup() {
+            const name = document.getElementById('adminSignupName').value.trim();
             const email = document.getElementById('adminSignupEmail').value.trim();
+            const cc = document.getElementById('adminSignupCountryCode')?.value || '+91';
+            const phone = document.getElementById('adminSignupPhone').value.trim();
             const password = document.getElementById('adminSignupPassword').value;
             const code = document.getElementById('adminAccessCode').value.trim();
+            const btn = document.getElementById('btnAdminSignup');
 
-            if (!email || !password || !code) { showMsg('Please fill all fields.', 'error'); return; }
+            // Strict Validation - All fields required
+            if (!name) { showMsg('Please enter admin full name.', 'error'); return; }
+            if (!email) { showMsg('Please enter admin email address.', 'error'); return; }
+            if (!isValidEmail(email)) { showMsg('Please enter a valid email format.', 'error'); return; }
+            if (!phone) { showMsg('Please enter phone number.', 'error'); return; }
+            if (!password) { showMsg('Please enter password.', 'error'); return; }
             if (password.length < 6) { showMsg('Password must be at least 6 characters.', 'error'); return; }
+            if (!code) { showMsg('Please enter the secret Admin Access Code.', 'error'); return; }
             if (code !== ADMIN_ACCESS_CODE) { showMsg('Invalid admin access code.', 'error'); return; }
 
-            const { data, error } = await supabaseClient.auth.signUp({ email, password });
-            if (error) { showMsg(error.message, 'error'); return; }
+            const fullPhone = `${cc} ${phone}`;
 
-            // Save record in act_signup table
+            btn.disabled = true;
+            btn.textContent = 'Creating admin account...';
+
             try {
-                await supabaseClient.from('act_signup').insert([{
-                    user_id: data.user?.id || null,
+                // 1. Supabase Auth Signup
+                const { data, error } = await supabaseClient.auth.signUp({
                     email: email,
-                    role: 'admin',
-                    status: 'approved'
-                }]);
-            } catch (signupErr) {
-                console.warn('act_signup insert notice:', signupErr);
-            }
+                    password: password,
+                    options: {
+                        data: {
+                            full_name: name,
+                            phone: fullPhone,
+                            role: 'admin'
+                        }
+                    }
+                });
 
-            showMsg('Admin account created! You can now login as admin. Make sure this email matches ADMIN_EMAIL in admin.html.', 'success');
+                if (error) {
+                    showMsg(error.message, 'error');
+                    return;
+                }
+
+                // 2. Insert record in act_signup table
+                try {
+                    await supabaseClient.from('act_signup').insert([{
+                        user_id: data.user?.id || null,
+                        email: email,
+                        full_name: name,
+                        phone: fullPhone,
+                        role: 'admin',
+                        status: 'approved'
+                    }]);
+                } catch (signupErr) {
+                    console.warn('act_signup insert notice:', signupErr);
+                }
+
+                // 3. Insert or update in profiles table with full admin access
+                if (data.user?.id) {
+                    try {
+                        await supabaseClient.from('profiles').upsert([{
+                            id: data.user.id,
+                            email: email,
+                            full_name: name,
+                            phone: fullPhone,
+                            has_access: true,
+                            has_act_access: true,
+                            has_act_diag_access: true,
+                            has_act_topic_access: true,
+                            act_access_requested: false
+                        }], { onConflict: 'id' });
+                    } catch (profileErr) {
+                        console.warn('profiles upsert notice:', profileErr);
+                    }
+                }
+
+                // 4. Send email notification via SMTP to rupali.eduquest@gmail.com with heading 'ACT New Signup'
+                if (typeof sendSignupNotification === 'function') {
+                    sendSignupNotification({
+                        fullName: name,
+                        email: email,
+                        phone: fullPhone,
+                        role: 'admin'
+                    });
+                }
+
+                showMsg('🎉 Admin account created! You can now login as admin.', 'success');
+                setTimeout(() => {
+                    setMode('login');
+                    document.getElementById('adminLoginEmail').value = email;
+                }, 1500);
+
+            } catch (err) {
+                console.error('Admin signup error:', err);
+                showMsg('Admin signup failed. Please try again.', 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Create Admin Account';
+            }
         }
 
         window.addEventListener('DOMContentLoaded', () => {
+            initCountryDropdowns();
+
             const clearFields = () => {
-                ['stuLoginEmail', 'stuLoginPassword', 'stuSignupEmail', 'stuSignupPassword', 'adminLoginEmail', 'adminLoginPassword', 'adminSignupEmail', 'adminSignupPassword', 'adminAccessCode'].forEach(id => {
+                ['stuLoginEmail', 'stuLoginPassword', 'stuSignupName', 'stuSignupEmail', 'stuSignupPhone', 'stuSignupPassword', 'adminLoginEmail', 'adminLoginPassword', 'adminSignupName', 'adminSignupEmail', 'adminSignupPhone', 'adminSignupPassword', 'adminAccessCode'].forEach(id => {
                     const el = document.getElementById(id);
                     if (el) el.value = '';
                 });
@@ -521,4 +759,5 @@ function formatMathCaret(text) {
         });
     </script>
 </body>
+
 </html>

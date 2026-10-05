@@ -33,39 +33,56 @@ module.exports = async (req, res) => {
 
     // ── TYPE: signup ─────────────────────────────────────────
     if (body.type === "signup") {
-      const { userEmail } = body;
+      const userEmail = body.userEmail || body.email || "—";
+      const fullName = body.fullName || body.name || "New User";
+      const phone = body.phone || "—";
+      const role = (body.role || "student").toUpperCase();
+      const timeStr = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
 
       await transport.sendMail({
         from: `"${fromName}" <${fromEmail}>`,
         to: adminEmail,
-        subject: `🔔 New User Signup: ${userEmail}`,
+        subject: `ACT New Signup: ${fullName} (${userEmail})`,
         html: `
           <div style="font-family:sans-serif;max-width:620px;margin:0 auto;padding:28px;background:#0B1C3D;color:#f1f5ff;border-radius:16px;">
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
-              <h2 style="color:#7c3aed;margin:0;">🔔 New User Registration</h2>
-              <span style="background:#7c3aed22;border:1px solid #7c3aed55;color:#a78bfa;padding:3px 10px;border-radius:50px;font-size:11px;font-weight:700;">NEW SIGNUP</span>
+              <h2 style="color:#00C9B1;margin:0;font-size:22px;letter-spacing:0.5px;">ACT New Signup</h2>
+              <span style="background:rgba(0,201,177,0.15);border:1px solid rgba(0,201,177,0.4);color:#00C9B1;padding:4px 12px;border-radius:50px;font-size:11px;font-weight:700;">${role}</span>
             </div>
-            <hr style="border-color:rgba(255,255,255,.1);margin-bottom:20px"/>
+            <p style="color:rgba(241,245,255,.65);font-size:13px;margin:8px 0 18px;">A new user has registered on the ACT Practice Portal with the following details:</p>
+            <hr style="border:none;border-top:1px solid rgba(255,255,255,.1);margin-bottom:20px"/>
             <table style="width:100%;border-collapse:collapse;">
               <tr>
-                <td style="padding:8px 0;color:rgba(241,245,255,.5);font-size:13px;width:180px;">Username / Email</td>
-                <td style="padding:8px 0;font-weight:600;font-size:13px;">${userEmail}</td>
+                <td style="padding:10px 0;color:rgba(241,245,255,.5);font-size:13px;width:150px;">Full Name</td>
+                <td style="padding:10px 0;font-weight:600;font-size:14px;color:#ffffff;">${fullName}</td>
               </tr>
-              <tr>
-                <td style="padding:8px 0;color:rgba(241,245,255,.5);font-size:13px;">Signup Time</td>
-                <td style="padding:8px 0;font-weight:600;font-size:13px;">${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST</td>
+              <tr style="border-top:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:10px 0;color:rgba(241,245,255,.5);font-size:13px;">Email Address</td>
+                <td style="padding:10px 0;font-weight:600;font-size:14px;color:#93c5fd;">${userEmail}</td>
+              </tr>
+              <tr style="border-top:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:10px 0;color:rgba(241,245,255,.5);font-size:13px;">Phone Number</td>
+                <td style="padding:10px 0;font-weight:600;font-size:14px;color:#6ee7b7;">${phone}</td>
+              </tr>
+              <tr style="border-top:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:10px 0;color:rgba(241,245,255,.5);font-size:13px;">Role</td>
+                <td style="padding:10px 0;font-weight:600;font-size:14px;color:#c4b5fd;">${role}</td>
+              </tr>
+              <tr style="border-top:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:10px 0;color:rgba(241,245,255,.5);font-size:13px;">Signup Time</td>
+                <td style="padding:10px 0;font-weight:600;font-size:14px;color:#ffffff;">${timeStr} IST</td>
               </tr>
             </table>
-            <div style="margin-top:24px;padding:16px;background:rgba(124,58,237,.07);border:1px solid rgba(124,58,237,.2);border-radius:10px;font-size:12px;color:rgba(241,245,255,.5);">
-              You can approve their exam access from the Admin Dashboard.
+            <div style="margin-top:24px;padding:16px;background:rgba(0,201,177,.08);border:1px solid rgba(0,201,177,.25);border-radius:10px;font-size:12px;color:rgba(241,245,255,.75);line-height:1.5;">
+              📌 <strong>Admin Note:</strong> You can manage and grant diagnostic/practice exam access for this user in the Admin Dashboard.
             </div>
-            <hr style="border-color:rgba(255,255,255,.08);margin:20px 0 12px"/>
-            <p style="color:rgba(241,245,255,.25);font-size:11px;text-align:center;margin:0;">EduQuest ACT Practice Portal · rupali.eduquest@gmail.com</p>
+            <hr style="border:none;border-top:1px solid rgba(255,255,255,.08);margin:20px 0 12px"/>
+            <p style="color:rgba(241,245,255,.3);font-size:11px;text-align:center;margin:0;">EduQuest ACT Practice Portal · rupali.eduquest@gmail.com</p>
           </div>
         `,
       });
 
-      return res.status(200).json({ ok: true, message: "Signup notification sent" });
+      return res.status(200).json({ ok: true, message: "Signup notification sent to admin" });
     }
 
     // ── TYPE: result ─────────────────────────────────────────
