@@ -209,20 +209,33 @@ function generateACTPDFReport(result, shouldSave = true) {
             const answerVal = qObj.answer !== undefined && qObj.answer !== null ? qObj.answer : qObj.correct_option;
             const status = qObj.status || (chosenVal === answerVal ? 'correct' : (chosenVal !== null ? 'wrong' : 'unattempted'));
 
+            // ── All Options (A, B, C, D) ──
+            const allOpts = [];
+            if (Array.isArray(qObj.options) && qObj.options.length > 0) {
+                qObj.options.forEach((opt, optIdx) => {
+                    const ltr = LETTERS[optIdx] || String(optIdx);
+                    const isChosen = (optIdx === chosenVal || String(optIdx) === String(chosenVal));
+                    const isCorrect = (optIdx === answerVal || String(optIdx) === String(answerVal));
+                    let optStr = `   (${ltr}) ${clean(opt)}`;
+                    if (isCorrect && isChosen) optStr += '  ✓ (Your Choice & Correct)';
+                    else if (isChosen) optStr += '  ✗ (Your Choice)';
+                    else if (isCorrect) optStr += '  ✓ (Correct)';
+                    const splitOpt = doc.splitTextToSize(optStr, W - 2 * M - 16);
+                    allOpts.push({ lines: splitOpt, isChosen, isCorrect });
+                });
+            }
+
             let yAnsText = '';
             if (status === 'unattempted' || chosenVal === null) {
-                yAnsText = `➖ Your Answer: (Skipped)`;
+                yAnsText = `➖ Selected Answer: (Skipped)`;
             } else if (status === 'correct') {
-                yAnsText = `✓ Your Answer: (${getLetter(chosenVal)}) ${getOptText(qObj, chosenVal)}`;
+                yAnsText = `✓ Selected Answer: (${getLetter(chosenVal)}) ${getOptText(qObj, chosenVal)} (Correct)`;
             } else {
-                yAnsText = `✗ Your Answer: (${getLetter(chosenVal)}) ${getOptText(qObj, chosenVal)}`;
+                yAnsText = `✗ Selected Answer: (${getLetter(chosenVal)}) ${getOptText(qObj, chosenVal)} (Incorrect)`;
             }
             const yAns = doc.splitTextToSize(yAnsText, W - 2 * M - 14);
             
-            let cAns = [];
-            if (status !== 'correct' && answerVal !== null) {
-                cAns = doc.splitTextToSize(`✓ Correct:     (${getLetter(answerVal)}) ${getOptText(qObj, answerVal)}`, W - 2 * M - 14);
-            }
+            const cAns = doc.splitTextToSize(`✓ Correct Answer:  (${getLetter(answerVal)}) ${getOptText(qObj, answerVal)}`, W - 2 * M - 14);
 
             let expLines = [];
             const expText = qObj.explanation || qObj.solution;
@@ -230,28 +243,51 @@ function generateACTPDFReport(result, shouldSave = true) {
                 expLines = doc.splitTextToSize(`💡 Explanation: ${clean(expText)}`, W - 2 * M - 14);
             }
 
-            const need = qLines.length * 4.5 + yAns.length * 4.2 + cAns.length * 4.2 + expLines.length * 4 + 10;
+            const totalOptLines = allOpts.reduce((acc, o) => acc + o.lines.length, 0);
+            const need = qLines.length * 4.5 + totalOptLines * 3.8 + yAns.length * 4.2 + (status !== 'correct' ? cAns.length * 4.2 : 0) + expLines.length * 4 + 14;
             if (y + need > 275) { doc.addPage(); y = 20; }
 
             const accentColor = status === 'correct' ? [5, 130, 80] : status === 'unattempted' ? [217, 119, 6] : [220, 38, 38];
             rect(M, y, 1.8, need - 3, ...accentColor);
 
             let iy = y + 1;
+            // 1. Question Prompt
             doc.setFontSize(8.5); doc.setFont('helvetica', 'bold'); doc.setTextColor(30, 30, 30);
             qLines.forEach(l => { doc.text(l, M + 5, iy + 3.5); iy += 4.5; });
             
-            doc.setFontSize(8); doc.setFont('helvetica', 'normal');
+            // 2. All Options
+            doc.setFontSize(7.5); doc.setFont('helvetica', 'normal');
+            allOpts.forEach(optItem => {
+                if (optItem.isCorrect) {
+                    doc.setTextColor(5, 130, 80);
+                    doc.setFont('helvetica', 'bold');
+                } else if (optItem.isChosen) {
+                    doc.setTextColor(200, 30, 30);
+                    doc.setFont('helvetica', 'bold');
+                } else {
+                    doc.setTextColor(80, 80, 95);
+                    doc.setFont('helvetica', 'normal');
+                }
+                optItem.lines.forEach(l => { doc.text(l, M + 6, iy + 3.0); iy += 3.8; });
+            });
+
+            // 3. Selected Answer
+            iy += 1.5;
+            doc.setFontSize(8); doc.setFont('helvetica', 'bold');
             doc.setTextColor(...(status === 'correct' ? [5, 130, 80] : status === 'unattempted' ? [217, 119, 6] : [200, 30, 30]));
-            yAns.forEach(l => { doc.text(l, M + 8, iy + 3.2); iy += 4.2; });
+            yAns.forEach(l => { doc.text(l, M + 6, iy + 3.2); iy += 4.2; });
             
+            // 4. Correct Answer (if student was wrong or skipped)
             if (status !== 'correct' && cAns.length > 0) {
                 doc.setTextColor(5, 130, 80);
-                cAns.forEach(l => { doc.text(l, M + 8, iy + 3.2); iy += 4.2; });
+                cAns.forEach(l => { doc.text(l, M + 6, iy + 3.2); iy += 4.2; });
             }
 
+            // 5. Explanation
             if (expLines.length > 0) {
+                doc.setFontSize(7.8); doc.setFont('helvetica', 'normal');
                 doc.setTextColor(70, 90, 150);
-                expLines.forEach(l => { doc.text(l, M + 8, iy + 3.2); iy += 4.0; });
+                expLines.forEach(l => { doc.text(l, M + 6, iy + 3.2); iy += 4.0; });
             }
 
             y += need + 2;

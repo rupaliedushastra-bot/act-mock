@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT Math – Intermediate Algebra (Difficult Level) – EduQuest</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        :root {
+            --english: #1a56db;
+            --math: #059669;
+            --reading: #7c3aed;
+            --science: #d97706;
+            --bg: #0d0d14;
+            --surface: rgba(255, 255, 255, 0.04);
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background: var(--bg);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column
+        }
+
+        /* ── REGISTRATION SCREEN ─────────────────── */
+        #regScreen {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .reg-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px 36px;
+            max-width: 480px;
+            width: 100%;
+        }
+
+        .reg-card h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 4px
+        }
+
+        .reg-card h1 span {
+            background: linear-gradient(135deg, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text
+        }
+
+        .reg-sub {
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 0.88rem;
+            margin-bottom: 28px;
+            line-height: 1.6
+        }
+
+        .reg-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 24px
+        }
+
+        .reg-meta-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 14px
+        }
+
+        .reg-meta-item .val {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700
+        }
+
+        .reg-meta-item .lbl {
+            font-size: 0.68rem;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            margin-top: 2px
+        }
+
+        .sections-preview {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 24px
+        }
+
+        .sec-chip {
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 0.8rem
+        }
+
+        .sec-chip .sec-name {
+            font-weight: 700;
+            margin-bottom: 2px
+        }
+
+        .sec-chip .sec-detail {
+            font-size: 0.72rem;
+            opacity: 0.7
+        }
+
+        .field {
+            margin-bottom: 14px
+        }
+
+        .field label {
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            margin-bottom: 6px
+        }
+
+        .field input,
+        .field select {
+            width: 100%;
+            border: 1.5px solid rgba(255, 255, 255, 0.12);
+            border-radius: 8px;
+            padding: 11px 14px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            outline: none;
+            background: rgba(255, 255, 255, 0.03);
+            color: #fff
+        }
+
+        .field input:focus,
+        .field select:focus {
+            border-color: #1a56db
+        }
+
+        .field select option {
+            background: #1a1a2e
+        }
+
+        .phone-row {
+            display: flex;
+            gap: 8px
+        }
+
+        .phone-row select {
+            width: 160px;
+            flex-shrink: 0
+        }
+
+        .phone-row input {
+            flex: 1
+        }
+
+        .btn-start {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #1a56db, #1e429f);
+            color: #fff;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            margin-top: 8px;
+            transition: all .15s;
+        }
+
+        .btn-start:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 25px rgba(26, 86, 219, 0.4)
+        }
+
+        #regMsg {
+            color: #f87171;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            min-height: 18px
+        }
+
+        /* ── TEST SCREEN ─────────────────────────── */
+        #testScreen {
+            display: none;
+            flex: 1;
+            flex-direction: column
+        }
+
+        /* Header */
+        .test-hdr {
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            background: #0d0d14;
+            z-index: 100;
+            gap: 16px;
+        }
+
+        .hdr-brand {
+            font-family: 'Syne', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .hdr-brand-pill {
+            font-size: 0.65rem;
+            background: #1a56db;
+            border-radius: 4px;
+            padding: 2px 8px;
+            text-transform: uppercase;
+            letter-spacing: .08em
+        }
+
+        .hdr-section-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex: 1;
+            justify-content: center
+        }
+
+        .section-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 14px;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border: 1px solid;
+            transition: all .2s;
+        }
+
+        .section-badge.english {
+            background: rgba(26, 86, 219, 0.15);
+            border-color: rgba(26, 86, 219, 0.3);
+            color: #93c5fd
+        }
+
+        .section-badge.math {
+            background: rgba(5, 150, 105, 0.15);
+            border-color: rgba(5, 150, 105, 0.3);
+            color: #6ee7b7
+        }
+
+        .section-badge.reading {
+            background: rgba(124, 58, 237, 0.15);
+            border-color: rgba(124, 58, 237, 0.3);
+            color: #c4b5fd
+        }
+
+        .section-badge.science {
+            background: rgba(217, 119, 6, 0.15);
+            border-color: rgba(217, 119, 6, 0.3);
+            color: #fde68a
+        }
+
+        .q-counter {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.5)
+        }
+
+        .timer-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .timer-label {
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: .05em
+        }
+
+        #timerDisplay {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #34d399;
+            min-width: 68px;
+            text-align: right
+        }
+
+        #timerDisplay.warn {
+            color: #fbbf24
+        }
+
+        #timerDisplay.danger {
+            color: #f87171
+        }
+
+        /* Section tabs */
+        .section-tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid var(--border);
+            background: rgba(255, 255, 255, 0.02);
+            overflow-x: auto;
+        }
+
+        .sec-tab {
+            flex: 1;
+            min-width: 100px;
+            padding: 10px 16px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.4);
+            border-bottom: 3px solid transparent;
+            transition: all .15s;
+            user-select: none;
+            border-right: 1px solid var(--border);
+            white-space: nowrap;
+        }
+
+        .sec-tab.english.active {
+            color: #93c5fd;
+            border-bottom-color: #1a56db
+        }
+
+        .sec-tab.math.active {
+            color: #6ee7b7;
+            border-bottom-color: #059669
+        }
+
+        .sec-tab.reading.active {
+            color: #c4b5fd;
+            border-bottom-color: #7c3aed
+        }
+
+        .sec-tab.science.active {
+            color: #fde68a;
+            border-bottom-color: #d97706
+        }
+
+        .sec-tab .tab-count {
+            font-size: 0.7rem;
+            opacity: 0.7;
+            margin-top: 1px
+        }
+
+        /* Main layout */
+        .test-body {
+            display: flex;
+            flex: 1;
+            overflow: hidden
+        }
+
+        /* Question area */
+        .q-area {
+            flex: 1;
+            overflow-y: auto;
+            padding: 28px 32px
+        }
+
+        @media(max-width:768px) {
+            .test-hdr {
+                height: auto;
+                min-height: 56px;
+                padding: 10px 12px;
+                flex-wrap: wrap;
+                gap: 8px;
+                justify-content: space-between;
+            }
+            .hdr-section-info {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                border-top: 1px solid rgba(255,255,255,0.06);
+                padding-top: 6px;
+                margin-top: 2px;
+            }
+            .q-area {
+                padding: 20px 16px
+            }
+            .palette-wrap {
+                display: none
+            }
+        }
+
+        .q-num-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: rgba(255, 255, 255, 0.3);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .q-topic-tag {
+            display: inline-block;
+            font-size: 0.68rem;
+            padding: 2px 8px;
+            border-radius: 100px;
+            font-weight: 600;
+            border: 1px solid;
+        }
+
+        .q-text {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 24px;
+            white-space: pre-wrap
+        }
+
+        /* Options */
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px
+        }
+
+        .option {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all .12s;
+        }
+
+        .option:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.06)
+        }
+
+        .option.selected.english {
+            border-color: #1a56db;
+            background: rgba(26, 86, 219, 0.12)
+        }
+
+        .option.selected.math {
+            border-color: #059669;
+            background: rgba(5, 150, 105, 0.12)
+        }
+
+        .option.selected.reading {
+            border-color: #7c3aed;
+            background: rgba(124, 58, 237, 0.12)
+        }
+
+        .option.selected.science {
+            border-color: #d97706;
+            background: rgba(217, 119, 6, 0.12)
+        }
+
+        .opt-letter {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .option.selected.english .opt-letter {
+            background: #1a56db;
+            border-color: #1a56db;
+            color: #fff
+        }
+
+        .option.selected.math .opt-letter {
+            background: #059669;
+            border-color: #059669;
+            color: #fff
+        }
+
+        .option.selected.reading .opt-letter {
+            background: #7c3aed;
+            border-color: #7c3aed;
+            color: #fff
+        }
+
+        .option.selected.science .opt-letter {
+            background: #d97706;
+            border-color: #d97706;
+            color: #fff
+        }
+
+        .opt-text {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.85);
+            padding-top: 4px
+        }
+
+        /* Nav buttons */
+        .q-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 28px;
+            gap: 12px
+        }
+
+        .btn-nav {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .12s;
+            border: 1px solid;
+        }
+
+        .btn-prev {
+            background: none;
+            border-color: rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.7)
+        }
+
+        .btn-prev:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            color: #fff
+        }
+
+        .btn-next {
+            background: rgba(26, 86, 219, 0.15);
+            border-color: rgba(26, 86, 219, 0.3);
+            color: #93c5fd
+        }
+
+        .btn-next:hover {
+            background: rgba(26, 86, 219, 0.25);
+            border-color: rgba(26, 86, 219, 0.5)
+        }
+
+        .btn-submit-test {
+            background: linear-gradient(135deg, #059669, #047857);
+            border-color: transparent;
+            color: #fff;
+            padding: 10px 24px;
+        }
+
+        .btn-submit-test:hover {
+            box-shadow: 0 4px 15px rgba(5, 150, 105, 0.35);
+            transform: translateY(-1px)
+        }
+
+        /* Palette */
+        .palette-wrap {
+            width: 260px;
+            border-left: 1px solid var(--border);
+            overflow-y: auto;
+            background: rgba(255, 255, 255, 0.01);
+            padding: 16px;
+            flex-shrink: 0;
+        }
+
+        @media(max-width:900px) {
+            .palette-wrap {
+                display: none
+            }
+        }
+
+        .palette-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            color: rgba(255, 255, 255, 0.3);
+            margin-bottom: 12px
+        }
+
+        .palette-section {
+            margin-bottom: 16px
+        }
+
+        .palette-section-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .palette-section-label.english {
+            background: rgba(26, 86, 219, 0.12);
+            color: #93c5fd
+        }
+
+        .palette-section-label.math {
+            background: rgba(5, 150, 105, 0.12);
+            color: #6ee7b7
+        }
+
+        .palette-section-label.reading {
+            background: rgba(124, 58, 237, 0.12);
+            color: #c4b5fd
+        }
+
+        .palette-section-label.science {
+            background: rgba(217, 119, 6, 0.12);
+            color: #fde68a
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 4px
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.72rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .1s;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .pal-btn:hover {
+            border-color: rgba(255, 255, 255, 0.25);
+            color: #fff
+        }
+
+        .pal-btn.answered.english {
+            background: rgba(26, 86, 219, 0.2);
+            border-color: #1a56db;
+            color: #93c5fd
+        }
+
+        .pal-btn.answered.math {
+            background: rgba(5, 150, 105, 0.2);
+            border-color: #059669;
+            color: #6ee7b7
+        }
+
+        .pal-btn.answered.reading {
+            background: rgba(124, 58, 237, 0.2);
+            border-color: #7c3aed;
+            color: #c4b5fd
+        }
+
+        .pal-btn.answered.science {
+            background: rgba(217, 119, 6, 0.2);
+            border-color: #d97706;
+            color: #fde68a
+        }
+
+        .pal-btn.current {
+            box-shadow: 0 0 0 2px #fff
+        }
+
+        .palette-legend {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border)
+        }
+
+        .leg-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.68rem;
+            color: rgba(255, 255, 255, 0.4)
+        }
+
+        .leg-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 3px
+        }
+
+        .palette-submit {
+            width: 100%;
+            margin-top: 14px;
+            padding: 10px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #059669, #047857);
+            color: #fff;
+            font-family: inherit;
+            font-size: 0.88rem;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            transition: all .15s;
+        }
+
+        .palette-submit:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(5, 150, 105, 0.35)
+        }
+
+        /* ── RESULT SCREEN ───────────────────────── */
+        #resultScreen {
+            display: none;
+            flex: 1;
+            flex-direction: column
+        }
+
+        .result-wrap {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 32px 24px
+        }
+
+        .result-hero {
+            text-align: center;
+            padding: 36px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            margin-bottom: 28px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .result-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #1a56db, #7c3aed, #059669, #d97706)
+        }
+
+        .composite-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: rgba(255, 255, 255, 0.4);
+            margin-bottom: 8px
+        }
+
+        .composite-score {
+            font-family: 'Syne', sans-serif;
+            font-size: 5rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 4px
+        }
+
+        .composite-max {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.4);
+            margin-bottom: 20px
+        }
+
+        .section-scores-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            max-width: 600px;
+            margin: 0 auto
+        }
+
+        .sec-score-box {
+            border-radius: 12px;
+            padding: 14px;
+            text-align: center
+        }
+
+        .sec-score-box .s-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            margin-bottom: 4px;
+            opacity: 0.8
+        }
+
+        .sec-score-box .s-val {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800
+        }
+
+        .sec-score-box .s-max {
+            font-size: 0.72rem;
+            opacity: 0.6;
+            margin-top: 2px
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 24px
+        }
+
+        .stat-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 18px;
+            text-align: center
+        }
+
+        .stat-box .sv {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800
+        }
+
+        .stat-box .sl {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            margin-top: 4px
+        }
+
+        .topic-table-wrap {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 24px
+        }
+
+        .topic-table-hdr {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .topic-table-hdr h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse
+        }
+
+        thead th {
+            padding: 10px 16px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            color: rgba(255, 255, 255, 0.4);
+            text-align: left;
+            border-bottom: 1px solid var(--border)
+        }
+
+        tbody td {
+            padding: 11px 16px;
+            font-size: 0.88rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04)
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none
+        }
+
+        .acc-bar-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .acc-bar-bg {
+            flex: 1;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 3px;
+            overflow: hidden
+        }
+
+        .acc-bar-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width .3s
+        }
+
+        .result-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center
+        }
+
+        .btn-action-res {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid;
+            transition: all .15s;
+        }
+
+        .btn-pdf {
+            background: linear-gradient(135deg, #1a56db, #1e429f);
+            border-color: transparent;
+            color: #fff
+        }
+
+        .btn-pdf:hover {
+            box-shadow: 0 4px 15px rgba(26, 86, 219, 0.4)
+        }
+
+        .btn-home {
+            background: none;
+            border-color: rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.8)
+        }
+
+        .btn-home:hover {
+            border-color: rgba(255, 255, 255, 0.4);
+            color: #fff
+        }
+
+        /* Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 999;
+            overflow-y: auto;
+            padding: 40px 20px
+        }
+
+        .modal-box {
+            max-width: 920px;
+            margin: 0 auto;
+            background: #0d0d14;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            position: relative
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .modal-close:hover {
+            border-color: #f87171;
+            color: #f87171
+        }
+    </style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════════
+     REGISTRATION SCREEN
+════════════════════════════════════════════════ -->
+    <div id="regScreen">
+        <div class="reg-card">
+            
+            <h1 id="regCardTitle">ACT Practice <span>Test</span></h1>
+            <p class="reg-sub" id="regCardSub">Targeted Topic Practice</p>
+
+            <div class="reg-meta" id="regCardMeta"></div>
+            <div class="sections-preview" id="regCardPreview"></div>
+
+            <div class="field">
+                <label>Full Name</label>
+                <input type="text" id="regName" placeholder="Your full name">
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="email" id="regEmail" placeholder="you@example.com">
+            </div>
+            <div class="field">
+                <label>Phone</label>
+                <div class="phone-row">
+                    <select id="regCountryCode"></select>
+                    <input type="tel" id="regPhone" placeholder="Phone number">
+                </div>
+            </div>
+
+            <button class="btn-start" onclick="startTest()">Begin Intermediate Algebra →</button>
+            <p id="regMsg"></p>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+     TEST SCREEN
+════════════════════════════════════════════════ -->
+    <div id="testScreen">
+        <!-- Header -->
+        <header class="test-hdr">
+            <div class="hdr-brand">
+                <span>📝</span><span>EduQuest</span>
+                <span class="hdr-brand-pill">ACT</span>
+            </div>
+            <div class="hdr-section-info">
+                <div class="section-badge math" id="sectionBadge">🔢 Math</div>
+                <span class="q-counter" id="qCounter">Q 1 / 20</span>
+            </div>
+            <a href="../dashboard.html" class="hdr-exit-btn" style="color:rgba(255,255,255,0.7); font-size:0.8rem; font-weight:600; text-decoration:none; padding:5px 12px; border:1px solid rgba(255,255,255,0.18); border-radius:6px; margin-right:12px;">Exit to Dashboard ↵</a>
+            <div class="timer-wrap">
+                <span class="timer-label">Time Left</span>
+                <span id="timerDisplay">20:00</span>
+            </div>
+        </header>
+
+        <!-- Section tabs -->
+        <div class="section-tabs" id="sectionTabs">
+            <div class="sec-tab english" style="display:none;" onclick="goToSection('english')">
+                📝 English
+                <div class="tab-count" id="tabCount-english">0/20</div>
+            </div>
+            <div class="sec-tab math active" onclick="goToSection('math')">
+                🔢 Math
+                <div class="tab-count" id="tabCount-math">0/20</div>
+            </div>
+            <div class="sec-tab reading" style="display:none;" onclick="goToSection('reading')">
+                📖 Reading
+                <div class="tab-count" id="tabCount-reading">0/20</div>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="test-body">
+            <!-- Question area -->
+            <div class="q-area" id="qArea">
+                <div class="q-num-label" id="qNumLabel">
+                    Question <span id="qNumSpan">1</span>
+                    <span class="q-topic-tag" id="qTopicTag"></span>
+                </div>
+                <div class="q-text" id="qText"></div>
+                <div class="options" id="optionsWrap"></div>
+                <div class="q-nav">
+                    <button class="btn-nav btn-prev" onclick="prevQ()">← Previous</button>
+                    <button class="btn-nav btn-next" id="btnNext" onclick="nextQ()">Next →</button>
+                </div>
+            </div>
+
+            <!-- Palette -->
+            <div class="palette-wrap">
+                <div class="palette-title">Question Palette</div>
+                <div id="paletteContent"></div>
+                <div class="palette-legend">
+                    <div class="leg-item">
+                        <div class="leg-dot" style="background:rgba(26,86,219,0.4);border:1px solid #1a56db"></div>
+                        Answered
+                    </div>
+                    <div class="leg-item">
+                        <div class="leg-dot"
+                            style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1)"></div>
+                        Unanswered
+                    </div>
+                </div>
+                <button class="palette-submit" onclick="confirmSubmit()">Submit Test</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+     RESULT SCREEN
+════════════════════════════════════════════════ -->
+    <div id="resultScreen">
+        <div class="result-wrap">
+            <div class="result-hero">
+                <div class="composite-label">ACT Composite Score</div>
+                <div class="composite-score" id="compositeScore">—</div>
+                <div class="composite-max">out of 36</div>
+                <div class="section-scores-row" id="sectionScoresRow"></div>
+            </div>
+
+            <div class="result-stats" id="resultStats"></div>
+
+            <div class="topic-table-wrap">
+                <div class="topic-table-hdr">
+                    <h3>📊 Topic-wise Performance</h3>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Topic</th>
+                            <th>Section</th>
+                            <th>Total</th>
+                            <th>Correct</th>
+                            <th>Wrong</th>
+                            <th>Accuracy</th>
+                        </tr>
+                    </thead>
+                    <tbody id="topicTableBody"></tbody>
+                </table>
+            </div>
+
+            
+            <!-- Inline Questions & Answers Review -->
+            <div class="inline-review-wrap" style="margin-top: 24px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom: 16px;">
+                    <h3 style="font-family:'Syne',sans-serif; font-size: 1.3rem; font-weight:700; margin:0; display:flex; align-items:center; gap:8px;">
+                        <span>📝 Detailed Question & Answer Review</span>
+                    </h3>
+                    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                        <button onclick="filterInlineReview('all', this)" style="background:#1a56db; color:#fff; border:none; padding:6px 14px; border-radius:6px; cursor:pointer; font-size:0.82rem; font-weight:600">All</button>
+                        <button onclick="filterInlineReview('correct', this)" style="background:rgba(255,255,255,0.08); color:#fff; border:1px solid rgba(255,255,255,0.15); padding:6px 14px; border-radius:6px; cursor:pointer; font-size:0.82rem; font-weight:600">Correct</button>
+                        <button onclick="filterInlineReview('wrong', this)" style="background:rgba(255,255,255,0.08); color:#fff; border:1px solid rgba(255,255,255,0.15); padding:6px 14px; border-radius:6px; cursor:pointer; font-size:0.82rem; font-weight:600">Wrong</button>
+                        <button onclick="filterInlineReview('unattempted', this)" style="background:rgba(255,255,255,0.08); color:#fff; border:1px solid rgba(255,255,255,0.15); padding:6px 14px; border-radius:6px; cursor:pointer; font-size:0.82rem; font-weight:600">Skipped</button>
+                    </div>
+                </div>
+                <div id="inlineReviewContent" style="display:flex; flex-direction:column; gap:14px;"></div>
+            </div>
+
+            <div class="result-actions">
+                <button class="btn-action-res btn-pdf" onclick="downloadPDF()">📥 Download PDF Report</button>
+                <button class="btn-action-res btn-home" onclick="window.location.href='../index.html'">← Back to
+                    Home</button>
+                <button class="btn-action-res btn-home" onclick="showReviewModal()">📝 Review Questions</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div class="modal-overlay" id="reviewModal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeReview()">✕</button>
+            <h2 style="font-family:'Syne',sans-serif;font-size:1.6rem;margin-bottom:20px;text-align:center">Question
+                Review</h2>
+            <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
+                <button onclick="filterReview('all',this)"
+                    style="background:#1a56db;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">All</button>
+                <button onclick="filterReview('correct',this)"
+                    style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Correct</button>
+                <button onclick="filterReview('wrong',this)"
+                    style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Wrong</button>
+                <button onclick="filterReview('unattempted',this)"
+                    style="background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:0.82rem;font-weight:600">Skipped</button>
+            </div>
+            <div id="reviewContent" style="display:flex;flex-direction:column;gap:14px;max-height:70vh;overflow-y:auto">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="../countries.js"></script>
+    <script src="../supabase.js"></script>
+    <script src="../email.js"></script>
+    
+    <script src="questions.js"></script>
+    <script src="report.js"></script>
+    
+    <script src="../access-check.js"></script>
+
+    <script>
+
+function formatLaTeX(str) {
+    if (!str || typeof str !== 'string') return str || '';
+    const currencyMap = [];
+    const clean = str.replace(/\$(?:\d[\d,]*(?:\.\d+)?)(?=[,\s\.\)\?\!\;\–\—\-]|$)/g, (match) => {
+        const placeholder = `@@CURRENCY_${currencyMap.length}@@`;
+        currencyMap.push(match);
+        return placeholder;
+    });
+    let res = clean.replace(/\$([^\$]+)\$/g, (m, math) => {
+        if (typeof window !== 'undefined' && window.katex && window.katex.renderToString) {
+            try {
+                return window.katex.renderToString(math, { throwOnError: false });
+            } catch (e) { }
+        }
+        return `<span class="latex-math">${formatMathCaret(math)}</span>`;
+    });
+    if (currencyMap.length > 0) {
+        res = res.replace(/@@CURRENCY_(\d+)@@/g, (_, idx) => currencyMap[Number(idx)]);
+    }
+    return formatMathCaret(res);
+}
+
+
+function formatPassageHTML(passage, qText) {
+    if (!passage || typeof passage !== 'string') return '';
+    let targetNum = null;
+    if (qText) {
+        const m = qText.match(/\[(\d+)\]/);
+        if (m) targetNum = m[1];
+    }
+
+    let html = passage.replace(/\[(\d+)\]/g, (match, num) => {
+        if (targetNum && num === targetNum) {
+            return `<span class="passage-tag active-tag" style="background:#f59e0b; color:#000; font-weight:800; font-size:0.85rem; padding:2px 8px; border-radius:4px; margin:0 4px; box-shadow:0 0 10px rgba(245,158,11,0.5);">[${num}]</span>`;
+        } else {
+            return `<span class="passage-tag" style="background:rgba(56,189,248,0.2); color:#38bdf8; border:1px solid rgba(56,189,248,0.4); font-weight:700; font-size:0.8rem; padding:1px 6px; border-radius:4px; margin:0 2px;">[${num}]</span>`;
+        }
+    });
+
+    return `
+        <div class="passage-box" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:18px 20px; margin-bottom:20px; font-size:0.95rem; line-height:1.75; color:#e2e8f0; max-height:340px; overflow-y:auto; font-family:'IBM Plex Sans', sans-serif;">
+            <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#a78bfa; margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+                <span>📖 PASSAGE READING CONTEXT</span>
+            </div>
+            <div style="white-space:pre-wrap;">${formatLaTeX(html)}</div>
+        </div>
+    `;
+}
+
+function formatMathCaret(text) {
+    if (!text) return '';
+    return text.replace(/([A-Za-z0-9\)\}\]]+)\^(\(([^\)]+)\)|(\{([^\}]+)\})|(\-?[A-Za-z0-9\/]+))/g, (m, base, p2, p3, p4, p5, p6) => {
+        const exp = p3 || p5 || p6;
+        return `${base}<sup>${exp}</sup>`;
+    });
+}
+
+
+        // ── State ─────────────────────────────────────────
+        let studentInfo = {};
+        let testStartTime = null;
+                let currentQIndex = 0;        // index within CURRENT section questions
+        let answers = {};              // { questionId: chosenIndex }
+        let timerInterval = null;
+        let sectionTimers = { english: 1200, math: 1200, reading: 1200 };
+        let sectionTimerRemaining = 1200;
+        let testResult = null;
+
+        // Section question arrays
+        const SECTION_QUESTIONS = {
+            english: ACT_QUESTIONS1.filter(q => q.section === 'english'),
+            math: ACT_QUESTIONS1.filter(q => q.section === 'math'),
+            reading: ACT_QUESTIONS1.filter(q => q.section === 'reading')
+        };
+        const activeSections = Object.keys(SECTION_QUESTIONS).filter(sec => SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0);
+        let currentSection = 'math';
+
+        // Dynamic initialization
+        window.addEventListener('DOMContentLoaded', () => {
+            if (typeof updateTimerDisplay === 'function') updateTimerDisplay();
+
+            // Auto-prefill student registration if logged in
+            const regEmailInput = document.getElementById('regEmail');
+            const regNameInput = document.getElementById('regName');
+            const regPhoneInput = document.getElementById('regPhone');
+            const cachedEmail = localStorage.getItem('user_email') || localStorage.getItem('student_email');
+            if (regEmailInput && cachedEmail && !regEmailInput.value) {
+                regEmailInput.value = cachedEmail;
+            }
+            if (window.supabase && typeof SUPABASE_CONFIG !== 'undefined' && SUPABASE_CONFIG.url) {
+                try {
+                    const client = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
+                    client.auth.getSession().then(({ data }) => {
+                        const session = data && data.session;
+                        if (session && session.user) {
+                            if (regEmailInput) regEmailInput.value = session.user.email;
+                            client.from('profiles').select('*').eq('id', session.user.id).single().then(({ data: profile }) => {
+                                if (profile) {
+                                    if (regNameInput && !regNameInput.value && (profile.full_name || profile.name)) {
+                                        regNameInput.value = profile.full_name || profile.name;
+                                    }
+                                    if (regPhoneInput && !regPhoneInput.value && profile.phone) {
+                                        regPhoneInput.value = profile.phone;
+                                    }
+                                }
+                            });
+                        }
+                    });
+                } catch(e) { console.warn('Prefill error:', e); }
+            }
+     // init on load
+            const sections = Object.keys(SECTION_QUESTIONS).filter(sec => SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0);
+            const totalQ = ACT_QUESTIONS1.length;
+            const timeLimit = Math.round(sectionTimerRemaining / 60);
+            const topicName = ACT_QUESTIONS1[0] ? ACT_QUESTIONS1[0].topic : "Topic Practice";
+            
+            // Set Titles
+            document.title = `ACT Topic Test - ${topicName} – EduQuest`;
+            document.getElementById('regCardTitle').innerHTML = `ACT Math – Intermediate Algebra (Difficult Level)`;
+            document.getElementById('regCardSub').textContent = `Difficult Level Practice · 1 section · ${totalQ} questions · ${timeLimit} minutes · Scored 1–36`;
+            
+            // Set Meta Grid
+            document.getElementById('regCardMeta').innerHTML = `
+                <div class="reg-meta-item">
+                    <div class="val">${totalQ}</div>
+                    <div class="lbl">Questions</div>
+                </div>
+                <div class="reg-meta-item">
+                    <div class="val">${timeLimit}</div>
+                    <div class="lbl">Minutes</div>
+                </div>
+                <div class="reg-meta-item">
+                    <div class="val">${sections.length}</div>
+                    <div class="lbl">Sections</div>
+                </div>
+                <div class="reg-meta-item">
+                    <div class="val">1–36</div>
+                    <div class="lbl">Score Range</div>
+                </div>
+            `;
+            
+            // Set Section Chips Preview
+            const secColors = { english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd' };
+            const secBgs = { english: 'rgba(26,86,219,0.1)', math: 'rgba(5,150,105,0.1)', reading: 'rgba(124,58,237,0.1)' };
+            const secBorders = { english: 'rgba(26,86,219,0.2)', math: 'rgba(5,150,105,0.2)', reading: 'rgba(124,58,237,0.2)' };
+            
+            document.getElementById('regCardPreview').innerHTML = sections.map(sec => `
+                <div class="sec-chip" style="background:${secBgs[sec]};border:1px solid ${secBorders[sec]}">
+                    <div class="sec-name" style="color:${secColors[sec]}">${SECTION_NAMES[sec]}</div>
+                    <div class="sec-detail" style="color:${secColors[sec]}77">${SECTION_QUESTIONS[sec].length} Qs · ${timeLimit} min</div>
+                </div>
+            `).join('');
+            
+            // Hide empty tabs
+            /* Auto-hide empty section tabs */
+            ['english', 'math', 'reading', 'science'].forEach(sec => {
+                const count = SECTION_QUESTIONS[sec] ? SECTION_QUESTIONS[sec].length : 0;
+                const el = document.querySelector('.sec-tab.' + sec);
+                if (el) el.style.display = count === 0 ? 'none' : 'flex';
+            });
+        });
+    
+
+        var SECTION_COLORS = window.SECTION_COLORS = window.SECTION_COLORS || {
+            english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd'
+        };
+        var SECTION_NAMES = window.SECTION_NAMES = window.SECTION_NAMES || { english: '📝 English', math: '🔢 Math', reading: '📖 Reading' };
+
+        // ── Start test ────────────────────────────────────
+        function startTest() {
+            try {
+                const nameEl = document.getElementById('regName');
+                const emailEl = document.getElementById('regEmail');
+                const ccEl = document.getElementById('regCountryCode');
+                const phoneEl = document.getElementById('regPhone');
+                const msg = document.getElementById('regMsg');
+
+                const name = nameEl ? nameEl.value.trim() : '';
+                const email = emailEl ? emailEl.value.trim() : '';
+                const cc = ccEl ? ccEl.value : '';
+                const phone = phoneEl ? phoneEl.value.trim() : '';
+
+                if (!name || !email || !phone) {
+                    if (msg) msg.textContent = 'Please fill all fields.';
+                    return;
+                }
+                if (!email || !email.includes('@')) {
+                    if (msg) msg.textContent = 'Enter a valid email.';
+                    return;
+                }
+
+                studentInfo = { name, email, phone: cc + phone, startTime: new Date().toISOString() };
+                testStartTime = studentInfo.startTime;
+
+                try {
+                    localStorage.setItem('student_email', email);
+                    if (!localStorage.getItem('user_email')) {
+                        localStorage.setItem('user_email', email);
+                    }
+                } catch (e) {}
+
+                try {
+                    if (typeof saveRegistration === 'function') {
+                        saveRegistration(studentInfo, "ACT Math – Intermediate Algebra (Difficult Level)");
+                    }
+                } catch (e) {
+                    console.error("saveRegistration error:", e);
+                }
+
+                const regScreen = document.getElementById('regScreen');
+                const testScreen = document.getElementById('testScreen');
+                if (regScreen) regScreen.style.display = 'none';
+                if (testScreen) {
+                    testScreen.style.display = 'flex';
+                    testScreen.style.flexDirection = 'column';
+                }
+
+                if (typeof renderQuestion === 'function') renderQuestion();
+                if (typeof renderPalette === 'function') renderPalette();
+                if (typeof startSectionTimer === 'function') startSectionTimer(typeof currentSection !== 'undefined' ? currentSection : 'english');
+            } catch (err) {
+                console.error("startTest error:", err);
+                const regScreen = document.getElementById('regScreen');
+                const testScreen = document.getElementById('testScreen');
+                if (regScreen) regScreen.style.display = 'none';
+                if (testScreen) {
+                    testScreen.style.display = 'flex';
+                    testScreen.style.flexDirection = 'column';
+                }
+            }
+        }
+
+        // ── Timer ─────────────────────────────────────────
+        function startSectionTimer(section) {
+            clearInterval(timerInterval);
+            sectionTimerRemaining = sectionTimers[section];
+            updateTimerDisplay();
+            timerInterval = setInterval(() => {
+                sectionTimerRemaining--;
+                sectionTimers[section] = sectionTimerRemaining;
+                updateTimerDisplay();
+                if (sectionTimerRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    autoAdvanceSection();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const m = Math.floor(sectionTimerRemaining / 60);
+            const s = sectionTimerRemaining % 60;
+            const el = document.getElementById('timerDisplay');
+            el.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+            el.className = sectionTimerRemaining <= 300 ? (sectionTimerRemaining <= 60 ? 'danger' : 'warn') : '';
+        }
+
+        function autoAdvanceSection() {
+            const activeSections = Object.keys(SECTION_QUESTIONS).filter(sec => SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0);
+            const idx = activeSections.indexOf(currentSection);
+            if (idx < activeSections.length - 1) {
+                const next = activeSections[idx + 1];
+                alert(`Time's up for ${SECTION_NAMES[currentSection]}! Moving to ${SECTION_NAMES[next]}.`);
+                goToSection(next);
+            } else {
+                submitTest();
+            }
+        }
+
+        // ── Section navigation ────────────────────────────
+        function goToSection(section) {
+            if (section !== currentSection) {
+                sectionTimers[currentSection] = sectionTimerRemaining;
+                currentSection = section;
+                currentQIndex = 0;
+            }
+            // Update tabs
+            document.querySelectorAll('.sec-tab').forEach(t => {
+                t.classList.toggle('active', t.classList.contains(section));
+            });
+            // Update section badge
+            const badge = document.getElementById('sectionBadge');
+            badge.className = `section-badge ${section}`;
+            badge.textContent = SECTION_NAMES[section];
+
+            renderQuestion();
+            renderPalette();
+            startSectionTimer(section);
+        }
+
+        // ── Render question ───────────────────────────────
+        function renderQuestion() {
+            const qs = SECTION_QUESTIONS[currentSection];
+            const q = qs[currentQIndex];
+            if (!q) return;
+
+            document.getElementById('qNumSpan').textContent = currentQIndex + 1;
+
+            // Topic tag
+            const tag = document.getElementById('qTopicTag');
+            tag.textContent = q.topic || '';
+            const clr = { english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd' }[currentSection];
+            const bgr = { english: 'rgba(26,86,219,0.12)', math: 'rgba(5,150,105,0.12)', reading: 'rgba(124,58,237,0.12)' }[currentSection];
+            const bdr = { english: 'rgba(26,86,219,0.3)', math: 'rgba(5,150,105,0.3)', reading: 'rgba(124,58,237,0.3)' }[currentSection];
+            tag.style.cssText = `color:${clr};background:${bgr};border-color:${bdr}`;
+
+            // Counter
+            document.getElementById('qCounter').textContent = `Q ${currentQIndex + 1} / ${qs.length}`;
+
+            // Text
+            let htmlContent = '';
+            const passageText = q.passage || null;
+            if (passageText) htmlContent += formatPassageHTML(passageText, q.text);
+            if (q.diagram) {
+                htmlContent += `<div class="q-diagram-container" style="text-align:center; margin:16px 0; background:rgba(0,0,0,0.3); padding:16px; border-radius:14px; border:1px solid rgba(255,255,255,0.12);">
+                    <img src="${q.diagram}" alt="Question Diagram" style="max-width:100%; max-height:380px; object-fit:contain; border-radius:10px; box-shadow:0 6px 25px rgba(0,0,0,0.6);">
+                </div>`;
+            }
+            htmlContent += `<div class="q-main-prompt" style="font-size:1.05rem; font-weight:600; color:#fff; line-height:1.6;">${formatLaTeX(q.text)}</div>`;
+            document.getElementById('qText').innerHTML = htmlContent;
+
+            // Options
+            const LETTERS = ['A', 'B', 'C', 'D'];
+            const optWrap = document.getElementById('optionsWrap');
+            optWrap.innerHTML = '';
+            q.options.forEach((opt, i) => {
+                const div = document.createElement('div');
+                div.className = `option${answers[q.id] === i ? ` selected ${currentSection}` : ''}`;
+                div.innerHTML = `<div class="opt-letter">${LETTERS[i]}</div><div class="opt-text">${formatLaTeX(opt)}</div>`;
+                div.onclick = () => selectOption(q.id, i, div, optWrap);
+                optWrap.appendChild(div);
+            });
+
+            // Next / Submit button
+            const activeSecs = Object.keys(SECTION_QUESTIONS).filter(sec => SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0);
+            const lastSec = activeSecs[activeSecs.length - 1] || currentSection;
+            const isLastSection = currentSection === lastSec;
+            const isLastQ = currentQIndex === qs.length - 1;
+            const btnNext = document.getElementById('btnNext');
+
+            if (isLastSection && isLastQ) {
+                btnNext.textContent = 'Submit Test ✓';
+                btnNext.className = 'btn-nav btn-submit-test';
+                btnNext.onclick = confirmSubmit;
+            } else if (isLastQ) {
+                const nextIdx = activeSecs.indexOf(currentSection) + 1;
+                const nextSecName = activeSecs[nextIdx];
+                btnNext.textContent = `Next Section (${SECTION_NAMES[nextSecName] || 'Next'}) →`;
+                btnNext.className = 'btn-nav btn-next';
+                btnNext.onclick = () => goToSection(nextSecName);
+            } else {
+                btnNext.textContent = 'Next →';
+                btnNext.className = 'btn-nav btn-next';
+                btnNext.onclick = nextQ;
+            }
+
+            updateTabCounts();
+        }
+
+        function selectOption(qId, i, div, wrap) {
+            answers[qId] = i;
+            wrap.querySelectorAll('.option').forEach(o => o.className = 'option');
+            div.className = `option selected ${currentSection}`;
+            renderPaletteSection(currentSection);
+            updateTabCounts();
+        }
+
+        // ── Navigation ────────────────────────────────────
+        function prevQ() {
+            if (currentQIndex > 0) { currentQIndex--; renderQuestion(); }
+        }
+        function nextQ() {
+            const qs = SECTION_QUESTIONS[currentSection];
+            if (currentQIndex < qs.length - 1) { currentQIndex++; renderQuestion(); }
+        }
+
+        // ── Palette ───────────────────────────────────────
+        function renderPalette() {
+            const wrap = document.getElementById('paletteContent');
+            wrap.innerHTML = '';
+            ['english', 'math', 'reading', 'science'].forEach(sec => {
+                const qs = SECTION_QUESTIONS[sec] || [];
+                if (qs.length === 0) return;
+                const section = document.createElement('div');
+                section.className = 'palette-section';
+                section.innerHTML = `
+      <div class="palette-section-label ${sec}">
+        <span>${SECTION_NAMES[sec]}</span>
+        <span>${qs.length}Q</span>
+      </div>
+      <div class="palette-grid" id="palGrid-${sec}"></div>
+    `;
+                wrap.appendChild(section);
+                renderPaletteSection(sec);
+            });
+        }
+
+        function renderPaletteSection(sec) {
+            const grid = document.getElementById(`palGrid-${sec}`);
+            if (!grid) return;
+            const qs = SECTION_QUESTIONS[sec];
+            grid.innerHTML = '';
+            qs.forEach((q, i) => {
+                const btn = document.createElement('div');
+                const answered = answers[q.id] !== undefined;
+                const isCurrent = sec === currentSection && i === currentQIndex;
+                btn.className = `pal-btn${answered ? ` answered ${sec}` : ''}${isCurrent ? ' current' : ''}`;
+                btn.textContent = i + 1;
+                btn.onclick = () => {
+                    if (sec !== currentSection) goToSection(sec);
+                    currentQIndex = i;
+                    renderQuestion();
+                    renderPalette();
+                };
+                grid.appendChild(btn);
+            });
+        }
+
+        function updateTabCounts() {
+            ['english', 'math', 'reading', 'science'].forEach(sec => {
+                const qs = SECTION_QUESTIONS[sec] || [];
+                const answered = qs.filter(q => answers[q.id] !== undefined).length;
+                const el = document.getElementById(`tabCount-${sec}`);
+                if (el) el.textContent = `${answered}/${qs.length}`;
+            });
+        }
+
+        // ── Submit ─────────────────────────────────────────
+        function confirmSubmit() {
+            const total = ACT_QUESTIONS1.length;
+            const answered = Object.keys(answers).length;
+            const unanswered = total - answered;
+            let msg = `Submit ACT Topic Test?\n\n✅ Answered: ${answered}/${total}`;
+            if (unanswered > 0) msg += `\n⚠️ Unanswered: ${unanswered} questions`;
+            if (confirm(msg)) submitTest();
+        }
+
+        function submitTest() {
+            clearInterval(timerInterval);
+            const submitTime = new Date().toISOString();
+
+            // ── Score calculation ─────────────────────────
+            let correct = 0, wrong = 0, unattempted = 0;
+            const sectionRaw = { english: 0, math: 0, reading: 0 };
+            const sectionCorrect = { english: 0, math: 0, reading: 0 };
+            const topicMap = {};
+
+            ACT_QUESTIONS1.forEach(q => {
+                const chosen = answers[q.id];
+                let status;
+                if (chosen === undefined || chosen === null) {
+                    status = 'unattempted'; unattempted++;
+                } else if (chosen === q.answer) {
+                    status = 'correct'; correct++; sectionRaw[q.section]++; sectionCorrect[q.section]++;
+                } else {
+                    status = 'wrong'; wrong++;
+                }
+
+                // Topic map
+                const tKey = `${q.section}::${q.topic}`;
+                if (!topicMap[tKey]) topicMap[tKey] = { section: q.section, topic: q.topic,
+                passage: q.passage || null, total: 0, correct: 0, wrong: 0 };
+                topicMap[tKey].total++;
+                if (status === 'correct') topicMap[tKey].correct++;
+                if (status === 'wrong') topicMap[tKey].wrong++;
+
+                // Attach status to question for review
+                q._status = status;
+                q._chosen = chosen;
+            });
+
+            // Section scaled scores
+            const sectionScores = {
+                english: getACTSectionScore('english', sectionRaw.english, (typeof SECTION_QUESTIONS !== 'undefined' && SECTION_QUESTIONS.english) ? SECTION_QUESTIONS.english.length : 50),
+                math: getACTSectionScore('math', sectionRaw.math, (typeof SECTION_QUESTIONS !== 'undefined' && SECTION_QUESTIONS.math) ? SECTION_QUESTIONS.math.length : 45),
+                reading: getACTSectionScore('reading', sectionRaw.reading, (typeof SECTION_QUESTIONS !== 'undefined' && SECTION_QUESTIONS.reading) ? SECTION_QUESTIONS.reading.length : 36)
+            };
+            const composite = getACTCompositeScore(sectionScores);
+
+            const total = ACT_QUESTIONS1.length;
+            const pct = Math.round((correct / total) * 100);
+            const grade = pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : pct >= 50 ? 'D' : 'F';
+
+            const topicAnalysis = Object.entries(topicMap).map(([key, t]) => ({
+                key,
+                section: t.section,
+                name: t.topic,
+                total: t.total,
+                correct: t.correct,
+                wrong: t.wrong,
+                attempted: t.correct + t.wrong,
+                acc: (t.correct + t.wrong) > 0 ? Math.round((t.correct / (t.correct + t.wrong)) * 100) : 0
+            }));
+
+            const details = ACT_QUESTIONS1.map(q => ({
+                id: q.id,
+                section: q.section,
+                topic: q.topic,
+                text: q.text,
+                options: q.options,
+                answer: q.answer,
+                status: q._status,
+                chosen: q._chosen !== undefined ? q._chosen : null,
+                explanation: q.explanation || q.solution || "Option (" + (['A','B','C','D'][q.answer] || 'correct') + ") is the correct answer."
+            }));
+
+            testResult = {
+                student: studentInfo,
+                examName: "ACT Math – Intermediate Algebra (Difficult Level)",
+                correct,
+                wrong,
+                unattempted,
+                total,
+                pct,
+                grade,
+                composite,
+                sectionScores,
+                topicAnalysis,
+                details,
+                submitTime,
+                startTime: testStartTime,
+            };
+
+            // Save to Supabase & send email
+            saveACTResult(testResult);
+            if (typeof sendEmails === 'function') sendEmails({
+                ...testResult,
+                scaled: composite,
+                rwScore: null,
+                mathScore: null,
+            });
+
+            showResultScreen(testResult);
+        }
+
+        // ── Result screen ─────────────────────────────────
+        function showResultScreen(r) {
+            document.getElementById('testScreen').style.display = 'none';
+            document.getElementById('resultScreen').style.display = 'flex';
+            document.getElementById('resultScreen').style.flexDirection = 'column';
+
+            // Composite
+            const scoreColor = r.composite >= 28 ? '#34d399' : r.composite >= 20 ? '#fbbf24' : '#f87171';
+            const el = document.getElementById('compositeScore');
+            el.textContent = r.composite;
+            el.style.color = scoreColor;
+
+            // Section scores
+            const secRow = document.getElementById('sectionScoresRow');
+            const secColors = { english: '#1a56db', math: '#059669', reading: '#7c3aed' };
+            const secLabels = { english: 'English', math: 'Math', reading: 'Reading' };
+            const activeSecKeys = Object.keys(r.sectionScores || {}).filter(sec => {
+                return (SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0) || (r.details && r.details.some(d => d.section === sec));
+            });
+            secRow.innerHTML = activeSecKeys.map(sec => `
+    <div class="sec-score-box" style="background:${secColors[sec]}22;border:1px solid ${secColors[sec]}44">
+      <div class="s-label" style="color:${SECTION_COLORS[sec]}">${secLabels[sec]}</div>
+      <div class="s-val" style="color:${SECTION_COLORS[sec]}">${r.sectionScores[sec]}</div>
+      <div class="s-max" style="color:${SECTION_COLORS[sec]}aa">/ 36</div>
+    </div>
+  `).join('');
+
+            // Stats
+            const statsWrap = document.getElementById('resultStats');
+            statsWrap.innerHTML = [
+                ['✅ Correct', r.correct, '#34d399'],
+                ['❌ Wrong', r.wrong, '#f87171'],
+                ['➖ Skipped', r.unattempted, '#fbbf24'],
+                ['🎯 Accuracy', r.pct + '%', '#60a5fa'],
+            ].map(([l, v, c]) => `
+    <div class="stat-box">
+      <div class="sv" style="color:${c}">${v}</div>
+      <div class="sl">${l}</div>
+    </div>
+  `).join('');
+
+            // Topic table
+            const tbody = document.getElementById('topicTableBody');
+            const secClrs = { english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd', science: '#fde68a' };
+            tbody.innerHTML = r.topicAnalysis.map(t => {
+                const bc = t.acc >= 70 ? '#34d399' : t.acc >= 40 ? '#fbbf24' : '#f87171';
+                return `
+      <tr>
+        <td>${t.name}</td>
+        <td><span style="color:${secClrs[t.section]};font-size:0.78rem;font-weight:600">${t.section.toUpperCase()}</span></td>
+        <td>${t.total}</td>
+        <td style="color:#34d399;font-weight:600">${t.correct}</td>
+        <td style="color:#f87171;font-weight:600">${t.wrong}</td>
+        <td>
+          <div class="acc-bar-wrap">
+            <div class="acc-bar-bg"><div class="acc-bar-fill" style="width:${t.acc}%;background:${bc}"></div></div>
+            <span style="font-size:0.8rem;font-weight:600;color:${bc};min-width:40px">${t.acc}%</span>
+          </div>
+        </td>
+      </tr>
+    `;
+            }).join('');
+        renderInlineReview('all');
+        }
+
+        // ── Review modal ──────────────────────────────────
+        
+        function filterInlineReview(status, btn) {
+            if (btn && btn.parentElement) {
+                btn.parentElement.querySelectorAll('button').forEach(b => {
+                    b.style.background = 'rgba(255,255,255,0.08)';
+                    b.style.border = '1px solid rgba(255,255,255,0.15)';
+                });
+                btn.style.background = '#1a56db';
+                btn.style.border = 'none';
+            }
+            renderInlineReview(status);
+        }
+
+        function renderInlineReview(filter) {
+            const LETTERS = ['A', 'B', 'C', 'D'];
+            const wrap = document.getElementById('inlineReviewContent');
+            if (!wrap || !testResult || !testResult.details) return;
+            const qs = testResult.details.filter(q => filter === 'all' || q.status === filter);
+            const secClrs = { english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd', science: '#fde68a' };
+
+            const getOptLabel = (q, idx) => {
+                if (idx === null || idx === undefined) return 'Skipped';
+                if (typeof idx === 'number' && q.options && q.options[idx] !== undefined) return `(${LETTERS[idx] || idx}) ${q.options[idx]}`;
+                if (typeof idx === 'string') {
+                    const num = parseInt(idx, 10);
+                    if (!isNaN(num) && q.options && q.options[num] !== undefined) return `(${LETTERS[num] || num}) ${q.options[num]}`;
+                    return idx;
+                }
+                return String(idx);
+            };
+
+            wrap.innerHTML = qs.map(q => {
+                const secKey = (q.section || 'math').toLowerCase();
+                const chosenText = getOptLabel(q, q.chosen);
+                const correctText = getOptLabel(q, q.answer);
+                const statusBadge = q.status === 'correct' 
+                    ? `<span style="background:rgba(52,211,153,0.15);color:#34d399;border:1px solid rgba(52,211,153,0.3);padding:3px 10px;border-radius:6px;font-size:0.75rem;font-weight:700">✓ Correct</span>`
+                    : q.status === 'wrong'
+                    ? `<span style="background:rgba(248,113,113,0.15);color:#f87171;border:1px solid rgba(248,113,113,0.3);padding:3px 10px;border-radius:6px;font-size:0.75rem;font-weight:700">✕ Wrong</span>`
+                    : `<span style="background:rgba(251,191,36,0.15);color:#fbbf24;border:1px solid rgba(251,191,36,0.3);padding:3px 10px;border-radius:6px;font-size:0.75rem;font-weight:700">− Skipped</span>`;
+
+                const formattedText = typeof formatLaTeX === 'function' ? formatLaTeX(q.text) : q.text;
+                const formattedExp = q.explanation ? (typeof formatLaTeX === 'function' ? formatLaTeX(q.explanation) : q.explanation) : '';
+
+                return `
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:20px;font-size:0.92rem;margin-bottom:12px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:12px;align-items:center;flex-wrap:wrap;gap:8px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-weight:800;color:${secClrs[secKey] || '#6ee7b7'};font-size:1.05rem">Q${q.id}</span>
+          <span style="font-size:0.75rem;background:rgba(255,255,255,0.06);padding:3px 10px;border-radius:6px;color:rgba(255,255,255,0.7);font-weight:600">${q.topic || 'Math'}</span>
+        </div>
+        <div>${statusBadge}</div>
+      </div>
+      
+      <div style="line-height:1.65;color:#e2e8f0;margin-bottom:14px;font-weight:500">${formattedText}</div>
+      
+      ${q.diagram ? `<div style="text-align:center;margin:14px 0;"><img src="${q.diagram}" alt="Diagram" style="max-width:100%;max-height:280px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);box-shadow:0 4px 15px rgba(0,0,0,0.4);"></div>` : ''}
+
+      <!-- All Options (A, B, C, D) -->
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px">
+        ${(q.options || []).map((opt, oIdx) => {
+            const isCorrect = (oIdx === q.answer || String(oIdx) === String(q.answer));
+            const isChosen = (oIdx === q.chosen || String(oIdx) === String(q.chosen));
+            let bg = 'rgba(255,255,255,0.02)';
+            let bdr = 'rgba(255,255,255,0.07)';
+            let clr = '#cbd5e1';
+            let badge = '';
+            if (isCorrect && isChosen) {
+                bg = 'rgba(52,211,153,0.18)'; bdr = '#10b981'; clr = '#34d399';
+                badge = '<span style="margin-left:auto;font-weight:700;color:#34d399;font-size:0.78rem">✓ Your Choice & Correct</span>';
+            } else if (isChosen) {
+                bg = 'rgba(239,68,68,0.18)'; bdr = '#ef4444'; clr = '#f87171';
+                badge = '<span style="margin-left:auto;font-weight:700;color:#f87171;font-size:0.78rem">✗ Your Choice</span>';
+            } else if (isCorrect) {
+                bg = 'rgba(52,211,153,0.12)'; bdr = 'rgba(52,211,153,0.4)'; clr = '#34d399';
+                badge = '<span style="margin-left:auto;font-weight:700;color:#34d399;font-size:0.78rem">✓ Correct Option</span>';
+            }
+            return `<div style="display:flex;align-items:center;padding:10px 14px;border-radius:8px;background:${bg};border:1px solid ${bdr};color:${clr};font-size:0.9rem">
+                <strong style="margin-right:10px">(${LETTERS[oIdx] || oIdx})</strong>
+                <span>${typeof formatLaTeX === 'function' ? formatLaTeX(opt) : opt}</span>
+                ${badge}
+            </div>`;
+        }).join('')}
+      </div>
+
+      <!-- Result Answer Summary Box -->
+      <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;border:1px solid rgba(255,255,255,0.06)">
+        ${q.status === 'unattempted' || q.chosen === null || q.chosen === undefined
+            ? `<div style="color:#fbbf24;font-weight:600;display:flex;align-items:center;gap:6px"><span>➖</span> <span>Selected Answer: <em>Skipped</em></span></div>
+               <div style="color:#34d399;font-weight:600;display:flex;align-items:center;gap:6px"><span>✅</span> <span>Correct Answer: ${correctText}</span></div>`
+            : q.status === 'correct'
+            ? `<div style="color:#34d399;font-weight:600;display:flex;align-items:center;gap:6px"><span>✅</span> <span>Selected Answer: ${chosenText} (Correct)</span></div>`
+            : `<div style="color:#f87171;font-weight:600;display:flex;align-items:center;gap:6px"><span>❌</span> <span>Selected Answer: ${chosenText} (Incorrect)</span></div>
+               <div style="color:#34d399;font-weight:600;display:flex;align-items:center;gap:6px"><span>✅</span> <span>Correct Answer: ${correctText}</span></div>`
+        }
+        ${formattedExp ? `<div style="margin-top:8px;padding-top:10px;border-top:1px dashed rgba(255,255,255,0.1);color:#94a3b8;font-size:0.88rem;line-height:1.6"><strong style="color:#a78bfa">💡 Explanation:</strong> ${formattedExp}</div>` : ''}
+      </div>
+    </div>
+  `;
+            }).join('');
+        }
+
+        function showReviewModal() {
+            renderReviewContent('all');
+            document.getElementById('reviewModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeReview() {
+            document.getElementById('reviewModal').style.display = 'none';
+            document.body.style.overflow = '';
+        }
+        function filterReview(status, btn) {
+            btn.parentElement.querySelectorAll('button').forEach(b => {
+                b.style.background = 'rgba(255,255,255,0.08)';
+                b.style.border = '1px solid rgba(255,255,255,0.15)';
+            });
+            btn.style.background = '#1a56db';
+            btn.style.border = 'none';
+            renderReviewContent(status);
+        }
+        function renderReviewContent(filter) {
+            const LETTERS = ['A', 'B', 'C', 'D'];
+            const wrap = document.getElementById('reviewContent');
+            const qs = testResult.details.filter(q => filter === 'all' || q.status === filter);
+            const secClrs = { english: '#93c5fd', math: '#6ee7b7', reading: '#c4b5fd', science: '#fde68a' };
+            wrap.innerHTML = qs.map(q => `
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:16px;font-size:0.88rem">
+      <div style="display:flex;justify-content:space-between;margin-bottom:8px;align-items:center">
+        <span style="font-weight:700;color:${secClrs[q.section] || '#6ee7b7'}">Q${q.id} [${q.topic || 'Math'}]</span>
+        <span style="font-size:0.72rem;background:rgba(255,255,255,0.06);padding:2px 8px;border-radius:6px;color:rgba(255,255,255,0.5);text-transform:uppercase">${q.section}</span>
+      </div>
+      <div style="line-height:1.6;color:rgba(255,255,255,0.9);margin-bottom:12px;white-space:pre-wrap">${typeof formatLaTeX === 'function' ? formatLaTeX(q.text) : q.text}</div>
+      
+      ${q.diagram ? `<div style="text-align:center;margin:10px 0;"><img src="${q.diagram}" alt="Diagram" style="max-width:100%;max-height:220px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);"></div>` : ''}
+
+      <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:12px">
+        ${(q.options || []).map((opt, oIdx) => {
+            const isCorrect = (oIdx === q.answer || String(oIdx) === String(q.answer));
+            const isChosen = (oIdx === q.chosen || String(oIdx) === String(q.chosen));
+            let bg = 'rgba(255,255,255,0.02)';
+            let bdr = 'rgba(255,255,255,0.06)';
+            let clr = '#cbd5e1';
+            let badge = '';
+            if (isCorrect && isChosen) {
+                bg = 'rgba(52,211,153,0.15)'; bdr = '#10b981'; clr = '#34d399';
+                badge = ' <span style="margin-left:auto;font-weight:700;color:#34d399">✓ Chosen & Correct</span>';
+            } else if (isChosen) {
+                bg = 'rgba(239,68,68,0.15)'; bdr = '#ef4444'; clr = '#f87171';
+                badge = ' <span style="margin-left:auto;font-weight:700;color:#f87171">✗ Your Choice</span>';
+            } else if (isCorrect) {
+                bg = 'rgba(52,211,153,0.12)'; bdr = 'rgba(52,211,153,0.4)'; clr = '#34d399';
+                badge = ' <span style="margin-left:auto;font-weight:700;color:#34d399">✓ Correct</span>';
+            }
+            return `<div style="display:flex;align-items:center;padding:8px 12px;border-radius:6px;background:${bg};border:1px solid ${bdr};color:${clr};font-size:0.85rem">
+                <strong style="margin-right:8px">(${LETTERS[oIdx] || oIdx})</strong>
+                <span>${typeof formatLaTeX === 'function' ? formatLaTeX(opt) : opt}</span>
+                ${badge}
+            </div>`;
+        }).join('')}
+      </div>
+
+      <div style="background:rgba(0,0,0,0.25);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:6px">
+        ${q.status === 'unattempted'
+            ? `<div style="color:#fbbf24;font-weight:600">➖ Selected answer: Skipped</div>
+               <div style="color:#34d399;font-weight:600">✅ Correct: (${LETTERS[q.answer]}) ${q.options[q.answer]}</div>`
+            : q.status === 'correct'
+            ? `<div style="color:#34d399;font-weight:600">✅ Selected answer: (${LETTERS[q.chosen]}) ${q.options[q.chosen]} (Correct)</div>`
+            : `<div style="color:#f87171;font-weight:600">❌ Selected answer: (${LETTERS[q.chosen]}) ${q.options[q.chosen]}</div>
+               <div style="color:#34d399;font-weight:600">✅ Correct: (${LETTERS[q.answer]}) ${q.options[q.answer]}</div>`
+        }
+        ${q.explanation ? `<div style="margin-top:6px;padding-top:6px;border-top:1px dashed rgba(255,255,255,0.1);color:#94a3b8;font-size:0.82rem"><strong style="color:#a78bfa">💡 Explanation:</strong> ${typeof formatLaTeX === 'function' ? formatLaTeX(q.explanation) : q.explanation}</div>` : ''}
+      </div>
+    </div>
+  `).join('');
+        }
+
+        // ── PDF ───────────────────────────────────────────
+        function downloadPDF() {
+            if (typeof generateACTPDFReport === 'function') {
+                generateACTPDFReport(testResult);
+            } else {
+                alert('PDF generator not loaded.');
+            }
+        }
+    </script>
+</body>
+
+</html>

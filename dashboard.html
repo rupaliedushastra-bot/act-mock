@@ -621,6 +621,7 @@
         <button class="filter-tab active" id="act-sub-all" onclick="setActSubFilter('all')" style="padding: 8px 16px; font-size: 0.85rem;">All ACT Exams</button>
         <button class="filter-tab" id="act-sub-diag" onclick="setActSubFilter('diag')" style="padding: 8px 16px; font-size: 0.85rem;">🎯 ACT Practice 4-8</button>
         <button class="filter-tab" id="act-sub-topic" onclick="setActSubFilter('topic')" style="padding: 8px 16px; font-size: 0.85rem;">📖 ACT Topic</button>
+        <button class="filter-tab" id="act-sub-math-diff" onclick="setActSubFilter('math-diff')" style="padding: 8px 16px; font-size: 0.85rem;">⚡ Maths (Difficult Level)</button>
       </div>
 
       <div class="history-list" id="history-list">
@@ -1282,6 +1283,10 @@ function formatPassageHTML(passage, qText) {
         if (currentFilter === 'all') return true;
         if (r._type !== currentFilter) return false;
         if (currentFilter === 'act' && currentActSubFilter !== 'all') {
+          if (currentActSubFilter === 'math-diff') {
+            const title = (r.exam_title || r.exam_name || '').toLowerCase();
+            return r._subType === 'math-diff' || title.includes('difficult') || title.includes('math mock') || title.includes('maths test');
+          }
           return r._subType === currentActSubFilter;
         }
         return true;
@@ -1440,6 +1445,7 @@ function formatPassageHTML(passage, qText) {
                   </div>
                   
                   ${d.passage ? formatPassageHTML(d.passage, qText) : ''}
+                  ${d.diagram ? `<div style="text-align:center;margin:12px 0;"><img src="${d.diagram.replace(/^(\.\.\/)+/, '')}" alt="Diagram" style="max-width:100%;max-height:260px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);box-shadow:0 4px 15px rgba(0,0,0,0.4);"></div>` : ''}
                   ${hasText ? `<div class="q-text">${formatLaTeX(qText)}</div>` : `<div class="q-text" style="opacity:0.6;">Question text not available for this topic.</div>`}
 
                   ${d.options && (Array.isArray(d.options) ? d.options.length > 0 : typeof d.options === 'object') ? `

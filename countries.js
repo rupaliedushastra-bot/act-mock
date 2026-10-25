@@ -260,19 +260,38 @@ function populateCountryDropdown() {
   if (select) {
     const prevVal = select.value;
     select.innerHTML = '';
-    
+
+    const popularCodes = ['IN', 'US', 'GB', 'CA', 'AE', 'AU', 'SG'];
+    const popular = [];
+    const others = [];
+
     COUNTRIES.forEach(c => {
+      if (popularCodes.includes(c.code)) {
+        popular.push(c);
+      } else {
+        others.push(c);
+      }
+    });
+
+    popular.sort((a, b) => popularCodes.indexOf(a.code) - popularCodes.indexOf(b.code));
+    others.sort((a, b) => a.name.localeCompare(b.name));
+
+    const addOpt = (c) => {
       const opt = document.createElement('option');
       opt.value = c.dial_code;
-      const flag = countryCodeToFlag(c.code);
-      opt.textContent = `${flag} ${c.dial_code} (${c.name})`;
-      
-      // Default selected is India (+91)
-      if (c.code === 'IN') {
+      opt.textContent = `${c.dial_code} — ${c.name}`;
+      if (c.code === 'IN' && !prevVal) {
         opt.selected = true;
       }
       select.appendChild(opt);
-    });
+    };
+
+    popular.forEach(addOpt);
+    const sep = document.createElement('option');
+    sep.disabled = true;
+    sep.textContent = '──────────';
+    select.appendChild(sep);
+    others.forEach(addOpt);
 
     if (prevVal) {
       select.value = prevVal;
