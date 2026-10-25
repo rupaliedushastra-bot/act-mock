@@ -165,28 +165,34 @@
         gap: 12px;
         justify-content: center;
       }
+
       .hdr-right {
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
         width: 100%;
       }
+
       .contact {
         font-size: 0.78rem;
         word-break: break-all;
         text-align: center;
         width: 100%;
       }
+
       .login-btn {
         padding: 6px 14px;
         font-size: 0.78rem;
       }
+
       .cards {
         grid-template-columns: 1fr
       }
+
       .topic-cards {
         grid-template-columns: 1fr
       }
+
       .hero {
         padding: 32px 16px;
       }
@@ -357,8 +363,8 @@
     }
   </style>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 
 </head>
 
@@ -371,7 +377,7 @@
       <span class="brand-pill">ACT Portal</span>
     </div>
     <div class="hdr-right" id="hdrRight">
-      <div class="contact">rupali.eduquest@gmail.com</div>
+      <div class="contact"></div>
       <a href="login.html" class="login-btn">Login / Sign Up</a>
     </div>
   </header>
@@ -382,11 +388,16 @@
     <p>Authentic ACT-format practice with real questions, timed sections, composite scoring (1–36), and instant PDF
       report download.</p>
 
-    
+
     <div class="tabs" style="display:flex; gap:16px; margin-bottom:24px;">
-      <button id="tab-btn-diagnostic" onclick="switchTab('diagnostic')" class="card-btn" style="width:auto; padding: 10px 24px; border: none; outline: none;">Practice Tests</button>
-      <button id="tab-btn-topics" onclick="switchTab('topics')" class="card-btn" style="width:auto; padding: 10px 24px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); outline: none;">Mini Topic Tests</button>
-      <button id="tab-btn-math-diff" onclick="switchTab('math-diff')" class="card-btn" style="width:auto; padding: 10px 24px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); outline: none;">Maths (difficult level)</button>
+      <button id="tab-btn-diagnostic" onclick="switchTab('diagnostic')" class="card-btn"
+        style="width:auto; padding: 10px 24px; border: none; outline: none;">Practice Tests</button>
+      <button id="tab-btn-topics" onclick="switchTab('topics')" class="card-btn"
+        style="width:auto; padding: 10px 24px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); outline: none;">Mini
+        Topic Tests</button>
+      <button id="tab-btn-math-diff" onclick="switchTab('math-diff')" class="card-btn"
+        style="width:auto; padding: 10px 24px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); outline: none;">Maths
+        (difficult level)</button>
     </div>
     <div class="cards" id="tab-diagnostic">
       <!-- ACT Practice Test 1 -->
@@ -1035,7 +1046,7 @@
       </div>
     </div>
 
-    
+
     <div id="tab-topics" style="display:none;" class="topic-cards">
 
       <!-- Topic Test 01 -->
@@ -1569,10 +1580,22 @@
         <div class="card-title">Active &amp; Passive Voice</div>
         <div class="card-sub">1 section · English<br>Targeted Topic Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">12</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">12</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
@@ -1589,10 +1612,22 @@
         <div class="card-title">Transitions</div>
         <div class="card-sub">1 section · English<br>Targeted Topic Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">12</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">12</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
@@ -1609,10 +1644,22 @@
         <div class="card-title">Wordiness &amp; Redundancy</div>
         <div class="card-sub">1 section · English<br>Targeted Topic Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">12</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">12</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(26,86,219,0.1);border:1px solid rgba(26,86,219,0.2)">
@@ -1629,10 +1676,22 @@
         <div class="card-title">Ratios &amp; Proportions</div>
         <div class="card-sub">1 section · Math<br>Targeted Topic Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1649,10 +1708,22 @@
         <div class="card-title">Percentages</div>
         <div class="card-sub">1 section · Math<br>Targeted Topic Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1669,10 +1740,22 @@
         <div class="card-title">Exponents &amp; Radicals</div>
         <div class="card-sub">1 section · Math<br>Targeted Topic Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1689,10 +1772,22 @@
         <div class="card-title">Statistics &amp; Probability</div>
         <div class="card-sub">1 section · Math<br>Targeted Topic Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1700,7 +1795,8 @@
             <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
           </div>
         </div>
-        <a href="./topic-statistics_probability/test.html" class="card-btn">Start Statistics &amp; Probability Test →</a>
+        <a href="./topic-statistics_probability/test.html" class="card-btn">Start Statistics &amp; Probability Test
+          →</a>
       </div>
 
       <!-- Topic Test 23 -->
@@ -1709,10 +1805,22 @@
         <div class="card-title">Main Idea &amp; Supporting Details</div>
         <div class="card-sub">1 section · Reading<br>Targeted Topic Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">18</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">18</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
@@ -1729,10 +1837,22 @@
         <div class="card-title">Drawing Conclusions &amp; Inference</div>
         <div class="card-sub">1 section · Reading<br>Targeted Topic Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">18</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">18</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2)">
@@ -1758,10 +1878,22 @@
         <div class="card-title">Coordinate Geometry (Difficult)</div>
         <div class="card-sub">1 section · Mathematics<br>Targeted Difficult Level Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1769,7 +1901,8 @@
             <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
           </div>
         </div>
-        <a href="./math-diff-coordinate_geometry/test.html" class="card-btn" id="btn-math-diff-1">Start Coordinate Geometry Test →</a>
+        <a href="./math-diff-coordinate_geometry/test.html" class="card-btn" id="btn-math-diff-1">Start Coordinate
+          Geometry Test →</a>
       </div>
 
       <!-- Topic Test 02: Elementary Algebra -->
@@ -1778,10 +1911,22 @@
         <div class="card-title">Elementary Algebra (Difficult)</div>
         <div class="card-sub">1 section · Mathematics<br>Targeted Difficult Level Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1789,7 +1934,8 @@
             <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
           </div>
         </div>
-        <a href="./math-diff-elementary_algebra/test.html" class="card-btn" id="btn-math-diff-2">Start Elementary Algebra Test →</a>
+        <a href="./math-diff-elementary_algebra/test.html" class="card-btn" id="btn-math-diff-2">Start Elementary
+          Algebra Test →</a>
       </div>
 
       <!-- Topic Test 03: Exponents & Radicals -->
@@ -1798,10 +1944,22 @@
         <div class="card-title">Exponents & Radicals (Difficult)</div>
         <div class="card-sub">1 section · Mathematics<br>Targeted Difficult Level Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1809,7 +1967,8 @@
             <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
           </div>
         </div>
-        <a href="./math-diff-exponents_radicals/test.html" class="card-btn" id="btn-math-diff-3">Start Exponents & Radicals Test →</a>
+        <a href="./math-diff-exponents_radicals/test.html" class="card-btn" id="btn-math-diff-3">Start Exponents &
+          Radicals Test →</a>
       </div>
 
       <!-- Topic Test 04: Intermediate Algebra -->
@@ -1818,10 +1977,22 @@
         <div class="card-title">Intermediate Algebra (Difficult)</div>
         <div class="card-sub">1 section · Mathematics<br>Targeted Difficult Level Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1829,7 +2000,8 @@
             <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
           </div>
         </div>
-        <a href="./math-diff-intermediate_algebra/test.html" class="card-btn" id="btn-math-diff-4">Start Intermediate Algebra Test →</a>
+        <a href="./math-diff-intermediate_algebra/test.html" class="card-btn" id="btn-math-diff-4">Start Intermediate
+          Algebra Test →</a>
       </div>
 
       <!-- Topic Test 05: Percentages -->
@@ -1838,10 +2010,22 @@
         <div class="card-title">Percentages (Difficult)</div>
         <div class="card-sub">1 section · Mathematics<br>Targeted Difficult Level Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1858,10 +2042,22 @@
         <div class="card-title">Plane Geometry (Difficult)</div>
         <div class="card-sub">1 section · Mathematics · With Diagrams<br>Targeted Difficult Level Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1873,7 +2069,8 @@
             <div class="s-detail" style="color:rgba(196,181,253,0.7)">Figures Included</div>
           </div>
         </div>
-        <a href="./math-diff-plane_geometry/test.html" class="card-btn" id="btn-math-diff-6">Start Plane Geometry Test →</a>
+        <a href="./math-diff-plane_geometry/test.html" class="card-btn" id="btn-math-diff-6">Start Plane Geometry Test
+          →</a>
       </div>
 
       <!-- Topic Test 07: Pre-Algebra -->
@@ -1882,10 +2079,22 @@
         <div class="card-title">Pre-Algebra (Difficult)</div>
         <div class="card-sub">1 section · Mathematics<br>Targeted Difficult Level Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1902,10 +2111,22 @@
         <div class="card-title">Ratios & Proportions (Difficult)</div>
         <div class="card-sub">1 section · Mathematics<br>Targeted Difficult Level Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1913,7 +2134,8 @@
             <div class="s-detail" style="color:rgba(110,231,183,0.7)">20 Qs · 20 min</div>
           </div>
         </div>
-        <a href="./math-diff-ratios_proportions/test.html" class="card-btn" id="btn-math-diff-8">Start Ratios & Proportions Test →</a>
+        <a href="./math-diff-ratios_proportions/test.html" class="card-btn" id="btn-math-diff-8">Start Ratios &
+          Proportions Test →</a>
       </div>
 
       <!-- Topic Test 09: Statistics & Probability -->
@@ -1922,10 +2144,22 @@
         <div class="card-title">Statistics & Probability (Difficult)</div>
         <div class="card-sub">1 section · Mathematics · With Diagrams<br>Targeted Difficult Level Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1937,7 +2171,8 @@
             <div class="s-detail" style="color:rgba(196,181,253,0.7)">Figures Included</div>
           </div>
         </div>
-        <a href="./math-diff-statistics_probability/test.html" class="card-btn" id="btn-math-diff-9">Start Statistics & Probability Test →</a>
+        <a href="./math-diff-statistics_probability/test.html" class="card-btn" id="btn-math-diff-9">Start Statistics &
+          Probability Test →</a>
       </div>
 
       <!-- Topic Test 10: Trigonometry -->
@@ -1946,10 +2181,22 @@
         <div class="card-title">Trigonometry (Difficult)</div>
         <div class="card-sub">1 section · Mathematics · With Diagrams<br>Targeted Difficult Level Practice</div>
         <div class="card-meta">
-          <div class="cm"><div class="val">20</div><div class="lbl">Questions</div></div>
-          <div class="cm"><div class="val">20</div><div class="lbl">Minutes</div></div>
-          <div class="cm"><div class="val">1</div><div class="lbl">Sections</div></div>
-          <div class="cm"><div class="val">1–36</div><div class="lbl">Score Range</div></div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Questions</div>
+          </div>
+          <div class="cm">
+            <div class="val">20</div>
+            <div class="lbl">Minutes</div>
+          </div>
+          <div class="cm">
+            <div class="val">1</div>
+            <div class="lbl">Sections</div>
+          </div>
+          <div class="cm">
+            <div class="val">1–36</div>
+            <div class="lbl">Score Range</div>
+          </div>
         </div>
         <div class="section-chips">
           <div class="s-chip" style="background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.2)">
@@ -1961,21 +2208,29 @@
             <div class="s-detail" style="color:rgba(196,181,253,0.7)">Figures Included</div>
           </div>
         </div>
-        <a href="./math-diff-trigonometry/test.html" class="card-btn" id="btn-math-diff-10">Start Trigonometry Test →</a>
+        <a href="./math-diff-trigonometry/test.html" class="card-btn" id="btn-math-diff-10">Start Trigonometry Test
+          →</a>
       </div>
 
-<!-- ACT Math Mock Test (Difficult Level) -->
-      <div class="exam-card" style="grid-column: 1 / -1; background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(5, 150, 105, 0.15)); border: 1px solid rgba(167, 139, 250, 0.35); box-shadow: 0 10px 30px rgba(124, 58, 237, 0.18);">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
-          <div style="display:inline-flex; align-items:center; gap:6px; background:linear-gradient(135deg, #7c3aed, #5b21b6); color:#fff; font-size:0.75rem; font-weight:700; padding:4px 14px; border-radius:100px; text-transform:uppercase; letter-spacing:0.05em;">
+      <!-- ACT Math Mock Test (Difficult Level) -->
+      <div class="exam-card"
+        style="grid-column: 1 / -1; background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(5, 150, 105, 0.15)); border: 1px solid rgba(167, 139, 250, 0.35); box-shadow: 0 10px 30px rgba(124, 58, 237, 0.18);">
+        <div
+          style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+          <div
+            style="display:inline-flex; align-items:center; gap:6px; background:linear-gradient(135deg, #7c3aed, #5b21b6); color:#fff; font-size:0.75rem; font-weight:700; padding:4px 14px; border-radius:100px; text-transform:uppercase; letter-spacing:0.05em;">
             <span>⭐ FULL-LENGTH MATH SECTION MOCK</span>
           </div>
-          <span style="font-size:0.8rem; color:#a78bfa; font-weight:600; background:rgba(124,58,237,0.15); padding:3px 10px; border-radius:6px; border:1px solid rgba(124,58,237,0.3);">Medium-Hard / Hard Level</span>
+          <span
+            style="font-size:0.8rem; color:#a78bfa; font-weight:600; background:rgba(124,58,237,0.15); padding:3px 10px; border-radius:6px; border:1px solid rgba(124,58,237,0.3);">Medium-Hard
+            / Hard Level</span>
         </div>
         <div class="card-num" style="color:rgba(167, 139, 250, 0.25);">MOCK</div>
         <div class="card-title" style="font-size:1.6rem; color:#fff;">ACT Math Mock Test (Difficult Level)</div>
         <div class="card-sub" style="font-size:0.92rem; max-width:700px; line-height:1.6; margin-bottom:20px;">
-          Authentic 45-question ACT mathematics simulation covering coordinate geometry, trigonometry, algebra, and advanced word problems. Includes high-resolution geometry diagrams, parabolas, scatter plots, and 50-minute timed section scoring (1–36).
+          Authentic 45-question ACT mathematics simulation covering coordinate geometry, trigonometry, algebra, and
+          advanced word problems. Includes high-resolution geometry diagrams, parabolas, scatter plots, and 50-minute
+          timed section scoring (1–36).
         </div>
 
         <div class="card-meta" style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); margin-bottom:20px;">
@@ -2008,10 +2263,12 @@
           </div>
         </div>
 
-        <a href="./math-diff-mock-test/test.html" class="card-btn" id="btn-math-diff-mock" style="background:linear-gradient(135deg, #7c3aed, #5b21b6); font-size:1.02rem; padding:14px; box-shadow:0 6px 20px rgba(124, 58, 237, 0.35);">Start ACT Math Mock Test (Difficult) →</a>
+        <a href="./math-diff-mock-test/test.html" class="card-btn" id="btn-math-diff-mock"
+          style="background:linear-gradient(135deg, #7c3aed, #5b21b6); font-size:1.02rem; padding:14px; box-shadow:0 6px 20px rgba(124, 58, 237, 0.35);">Start
+          ACT Math Mock Test (Difficult) →</a>
       </div>
 
-      
+
     </div>
 
     <div class="features">
@@ -2023,41 +2280,41 @@
     </div>
   </main>
 
-  <footer>© EduQuest · ACT Practice Portal · rupali.eduquest@gmail.com</footer>
+  <footer>© EduQuest · ACT Practice Portal </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase.js"></script>
   <script>
 
-function formatLaTeX(str) {
-    if (!str || typeof str !== 'string') return str || '';
-    const currencyMap = [];
-    const clean = str.replace(/\$(?:\d[\d,]*(?:\.\d+)?)(?=[,\s\.\)\?\!\;\–\—\-]|$)/g, (match) => {
+    function formatLaTeX(str) {
+      if (!str || typeof str !== 'string') return str || '';
+      const currencyMap = [];
+      const clean = str.replace(/\$(?:\d[\d,]*(?:\.\d+)?)(?=[,\s\.\)\?\!\;\–\—\-]|$)/g, (match) => {
         const placeholder = `@@CURRENCY_${currencyMap.length}@@`;
         currencyMap.push(match);
         return placeholder;
-    });
-    let res = clean.replace(/\$([^\$]+)\$/g, (m, math) => {
+      });
+      let res = clean.replace(/\$([^\$]+)\$/g, (m, math) => {
         if (typeof window !== 'undefined' && window.katex && window.katex.renderToString) {
-            try {
-                return window.katex.renderToString(math, { throwOnError: false });
-            } catch (e) { }
+          try {
+            return window.katex.renderToString(math, { throwOnError: false });
+          } catch (e) { }
         }
         return `<span class="latex-math">${formatMathCaret(math)}</span>`;
-    });
-    if (currencyMap.length > 0) {
+      });
+      if (currencyMap.length > 0) {
         res = res.replace(/@@CURRENCY_(\d+)@@/g, (_, idx) => currencyMap[Number(idx)]);
+      }
+      return formatMathCaret(res);
     }
-    return formatMathCaret(res);
-}
 
-function formatMathCaret(text) {
-    if (!text) return '';
-    return text.replace(/([A-Za-z0-9\)\}\]]+)\^(\(([^\)]+)\)|(\{([^\}]+)\})|(\-?[A-Za-z0-9\/]+))/g, (m, base, p2, p3, p4, p5, p6) => {
+    function formatMathCaret(text) {
+      if (!text) return '';
+      return text.replace(/([A-Za-z0-9\)\}\]]+)\^(\(([^\)]+)\)|(\{([^\}]+)\})|(\-?[A-Za-z0-9\/]+))/g, (m, base, p2, p3, p4, p5, p6) => {
         const exp = p3 || p5 || p6;
         return `${base}<sup>${exp}</sup>`;
-    });
-}
+      });
+    }
 
     const ADMIN_EMAIL = 'rupali.eduquest@gmail.com';
     const supabaseClient = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.anonKey);
@@ -2066,7 +2323,7 @@ function formatMathCaret(text) {
       const { data: { session } } = await supabaseClient.auth.getSession();
       const btn2 = document.getElementById('btn-act2');
       const btn3 = document.getElementById('btn-act3');
-      
+
       const diagButtons = [];
 
       // Math Difficult Buttons handling
@@ -2211,24 +2468,24 @@ function formatMathCaret(text) {
       const diagWrap = document.getElementById('tab-diagnostic');
       const topicWrap = document.getElementById('tab-topics');
       const mathDiffWrap = document.getElementById('tab-math-diff');
-      if(diagWrap) diagWrap.style.display = tabId === 'diagnostic' ? 'grid' : 'none';
-      if(topicWrap) topicWrap.style.display = tabId === 'topics' ? 'grid' : 'none';
-      if(mathDiffWrap) mathDiffWrap.style.display = tabId === 'math-diff' ? 'grid' : 'none';
-      
+      if (diagWrap) diagWrap.style.display = tabId === 'diagnostic' ? 'grid' : 'none';
+      if (topicWrap) topicWrap.style.display = tabId === 'topics' ? 'grid' : 'none';
+      if (mathDiffWrap) mathDiffWrap.style.display = tabId === 'math-diff' ? 'grid' : 'none';
+
       const btnD = document.getElementById('tab-btn-diagnostic');
       const btnT = document.getElementById('tab-btn-topics');
       const btnM = document.getElementById('tab-btn-math-diff');
-      if(btnD) {
-          btnD.style.background = tabId === 'diagnostic' ? 'linear-gradient(135deg, #059669, #047857)' : 'rgba(255,255,255,0.1)';
-          btnD.style.border = tabId === 'diagnostic' ? 'none' : '1px solid rgba(255,255,255,0.2)';
+      if (btnD) {
+        btnD.style.background = tabId === 'diagnostic' ? 'linear-gradient(135deg, #059669, #047857)' : 'rgba(255,255,255,0.1)';
+        btnD.style.border = tabId === 'diagnostic' ? 'none' : '1px solid rgba(255,255,255,0.2)';
       }
-      if(btnT) {
-          btnT.style.background = tabId === 'topics' ? 'linear-gradient(135deg, #059669, #047857)' : 'rgba(255,255,255,0.1)';
-          btnT.style.border = tabId === 'topics' ? 'none' : '1px solid rgba(255,255,255,0.2)';
+      if (btnT) {
+        btnT.style.background = tabId === 'topics' ? 'linear-gradient(135deg, #059669, #047857)' : 'rgba(255,255,255,0.1)';
+        btnT.style.border = tabId === 'topics' ? 'none' : '1px solid rgba(255,255,255,0.2)';
       }
-      if(btnM) {
-          btnM.style.background = tabId === 'math-diff' ? 'linear-gradient(135deg, #7c3aed, #5b21b6)' : 'rgba(255,255,255,0.1)';
-          btnM.style.border = tabId === 'math-diff' ? 'none' : '1px solid rgba(255,255,255,0.2)';
+      if (btnM) {
+        btnM.style.background = tabId === 'math-diff' ? 'linear-gradient(135deg, #7c3aed, #5b21b6)' : 'rgba(255,255,255,0.1)';
+        btnM.style.border = tabId === 'math-diff' ? 'none' : '1px solid rgba(255,255,255,0.2)';
       }
     }
   </script>
