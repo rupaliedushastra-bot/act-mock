@@ -1,11 +1,18 @@
 // =============================================
-// act_report1.js – ACT PDF Report via jsPDF
+// act_report1.js & report.js – ACT PDF Report via jsPDF
 // EduQuest ACT Practice Portal
 // =============================================
 
 function generateACTPDFReport(result, shouldSave = true) {
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+    result = result || {};
+    const jsPDFConstructor = (window.jspdf && window.jspdf.jsPDF) || window.jsPDF;
+    if (!jsPDFConstructor) {
+        console.error('jsPDF library is not loaded');
+        alert('PDF generator library is not ready. Please refresh or try again.');
+        return null;
+    }
+
+    const doc = new jsPDFConstructor({ unit: 'mm', format: 'a4' });
     const W = 210, M = 15;
     let y = 0;
 
@@ -20,49 +27,59 @@ function generateACTPDFReport(result, shouldSave = true) {
         doc.setFontSize(sz);
         doc.setFont('helvetica', bold ? 'bold' : 'normal');
         doc.setTextColor(...color);
-        doc.text(String(s), x, yy, { align });
+        doc.text(String(s === null || s === undefined ? '' : s), x, yy, { align });
     };
 
     // ── PAGE 1 ──────────────────────────────────────
-    // Header — rainbow gradient bar (4-section colors)
     rect(0, 0, W, 30, 13, 13, 20);
-    rect(0, 0, 6, 30, 26, 86, 219);   // English blue
+    rect(0, 0, 6, 30, 26, 86, 219);
     rect(0, 0, 3, 30, 26, 86, 219);
-    // Color accent strips at top
     const stripColors = [[26, 86, 219], [5, 150, 105], [124, 58, 237], [217, 119, 6]];
     stripColors.forEach(([r, g, b], i) => {
         doc.setFillColor(r, g, b);
         doc.rect(0, 0, W * (i + 1) / 4, 2, 'F');
     });
-    txt(result.examName || 'ACT Practice Test 1', W / 2, 13, 15, true, [255, 255, 255], 'center');
+    txt(result.examName || 'ACT Practice Test', W / 2, 13, 15, true, [255, 255, 255], 'center');
     txt('Student Performance Report', W / 2, 21, 9, false, [160, 180, 255], 'center');
     txt('EduQuest · rupali.eduquest@gmail.com', W / 2, 27, 7, false, [120, 140, 220], 'center');
     y = 36;
 
-    // Student info box
+    const student = result.student || {};
+    const sName = String(student.name || 'Student');
+    const sEmail = String(student.email || 'student@eduquest.com');
+    const sPhone = String(student.phone || '–');
+    let dateStr = '–';
+    try {
+        dateStr = new Date(result.submitTime || Date.now()).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+        if (dateStr === 'Invalid Date') dateStr = new Date().toLocaleDateString();
+    } catch (e) {
+        dateStr = new Date().toLocaleDateString();
+    }
+
     rect(M, y, W - 2 * M, 22, 240, 244, 255);
     doc.setDrawColor(180, 190, 240); doc.setLineWidth(0.3);
     doc.rect(M, y, W - 2 * M, 22, 'S');
     txt('STUDENT INFO', M + 4, y + 6, 7.5, true, [26, 86, 219]);
-    txt(`Name:   ${result.student.name}`, M + 4, y + 13, 9);
-    txt(`Email:  ${result.student.email}`, M + 4, y + 19, 8.5);
-    txt(`Phone:  ${result.student.phone}`, W / 2 + 4, y + 13, 9);
-    txt(`Date:   ${new Date(result.submitTime).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`, W / 2 + 4, y + 19, 8.5);
+    txt('Name:   ' + sName, M + 4, y + 13, 9);
+    txt('Email:  ' + sEmail, M + 4, y + 19, 8.5);
+    txt('Phone:  ' + sPhone, W / 2 + 4, y + 13, 9);
+    txt('Date:   ' + dateStr, W / 2 + 4, y + 19, 8.5);
     y += 28;
 
-    // Composite score hero
-    const gc = result.composite >= 28 ? [5, 150, 105] : result.composite >= 20 ? [180, 100, 0] : [200, 30, 30];
+    const compScore = Number(result.composite) || 0;
+    const gc = compScore >= 28 ? [5, 150, 105] : compScore >= 20 ? [180, 100, 0] : [200, 30, 30];
     rect(M, y, W - 2 * M, 28, ...gc);
-    txt(String(result.composite), M + 16, y + 20, 32, true, [255, 255, 255]);
+    txt(String(result.composite !== undefined && result.composite !== null ? result.composite : 0), M + 16, y + 20, 32, true, [255, 255, 255]);
     txt('ACT Composite Score', M + 16, y + 26, 7, false, [200, 255, 220]);
-    // Section scores on right (filtered for active sections in topic/diagnostic tests)
+
+    const secScores = result.sectionScores || {};
     const allSecCandidates = [
-        ['english', 'English', result.sectionScores?.english, [93, 197, 253]],
-        ['math', 'Math', result.sectionScores?.math, [110, 231, 183]],
-        ['reading', 'Reading', result.sectionScores?.reading, [196, 181, 253]]
+        ['english', 'English', secScores.english, [93, 197, 253]],
+        ['math', 'Math', secScores.math, [110, 231, 183]],
+        ['reading', 'Reading', secScores.reading, [196, 181, 253]]
     ];
 
-    const activeSecKeysInDetails = new Set((result.details || []).map(d => (d.section || '').toLowerCase()));
+    const activeSecKeysInDetails = new Set((result.details || []).map(d => (d && d.section ? String(d.section).toLowerCase() : '')));
     const hasSpecificDetails = activeSecKeysInDetails.size > 0;
 
     let secData = allSecCandidates.filter(([secKey, name, score]) => {
@@ -73,13 +90,13 @@ function generateACTPDFReport(result, shouldSave = true) {
 
     if (secData.length === 0) {
         secData = [
-            ['English', result.sectionScores?.english || '-', [93, 197, 253]],
-            ['Math', result.sectionScores?.math || '-', [110, 231, 183]],
-            ['Reading', result.sectionScores?.reading || '-', [196, 181, 253]]
+            ['English', secScores.english !== undefined ? secScores.english : '–', [93, 197, 253]],
+            ['Math', secScores.math !== undefined ? secScores.math : '–', [110, 231, 183]],
+            ['Reading', secScores.reading !== undefined ? secScores.reading : '–', [196, 181, 253]]
         ];
     }
 
-    const secBoxW = (W - 2 * M - 55) / secData.length;
+    const secBoxW = (W - 2 * M - 55) / (secData.length || 1);
     secData.forEach(([name, score, [r, g, b]], i) => {
         const sx = M + 52 + i * (secBoxW + 2);
         doc.setFillColor(0, 0, 0, 0.3);
@@ -87,19 +104,24 @@ function generateACTPDFReport(result, shouldSave = true) {
         doc.setFillColor(r, g, b, 0.1);
         rect(sx, y + 3, secBoxW, 22, Math.floor(r / 4), Math.floor(g / 4), Math.floor(b / 4));
         txt(name, sx + secBoxW / 2, y + 10, 6.5, true, [r, g, b], 'center');
-        txt(String(score), sx + secBoxW / 2, y + 20, 14, true, [255, 255, 255], 'center');
+        txt(String(score !== undefined && score !== null ? score : '–'), sx + secBoxW / 2, y + 20, 14, true, [255, 255, 255], 'center');
         txt('/36', sx + secBoxW / 2, y + 25.5, 6, false, [r, g, b], 'center');
     });
     y += 34;
 
-    // Stats row
+    const correctCount = Number(result.correct) || 0;
+    const wrongCount = Number(result.wrong) || 0;
+    const skippedCount = Number(result.unattempted) || 0;
+    const pctVal = result.pct !== undefined ? result.pct : 0;
+    const gradeVal = result.grade || 'B';
+
     const STATS = [
-        ['Attempted', result.correct + result.wrong, [13, 13, 20]],
-        ['Correct', result.correct, [5, 150, 105]],
-        ['Wrong', result.wrong, [220, 38, 38]],
-        ['Skipped', result.unattempted, [180, 100, 0]],
-        ['Accuracy', result.pct + '%', [26, 86, 219]],
-        ['Grade', result.grade, [124, 58, 237]],
+        ['Attempted', correctCount + wrongCount, [13, 13, 20]],
+        ['Correct', correctCount, [5, 150, 105]],
+        ['Wrong', wrongCount, [220, 38, 38]],
+        ['Skipped', skippedCount, [180, 100, 0]],
+        ['Accuracy', pctVal + '%', [26, 86, 219]],
+        ['Grade', gradeVal, [124, 58, 237]],
     ];
     const bw = (W - 2 * M - 10) / 6;
     STATS.forEach(([label, val, [r, g, b]], i) => {
@@ -111,7 +133,6 @@ function generateACTPDFReport(result, shouldSave = true) {
     });
     y += 22;
 
-    // Topic table header
     txt('TOPIC-WISE PERFORMANCE', M, y + 5, 7.5, true, [26, 86, 219]);
     y += 9;
     rect(M, y, W - 2 * M, 7, 230, 235, 255);
@@ -126,71 +147,99 @@ function generateACTPDFReport(result, shouldSave = true) {
     };
 
     (result.topicAnalysis || []).forEach((t, idx) => {
+        if (!t || typeof t !== 'object') return;
         if (y > 268) { doc.addPage(); y = 20; }
         if (idx % 2 === 0) rect(M, y, W - 2 * M, 7, 249, 250, 255);
         doc.setDrawColor(220, 224, 240); doc.setLineWidth(0.2); doc.rect(M, y, W - 2 * M, 7, 'S');
-        txt(t.name || '', M + 3, y + 5, 7.5);
-        const sc = sectionColorMap[t.section] || [80, 80, 100];
-        txt(t.section ? t.section.toUpperCase() : 'GENERAL', M + 80, y + 5, 7, true, sc);
-        txt(t.total !== undefined ? t.total : '–', M + 108, y + 5, 7.5, false, [80, 80, 100], 'center');
-        txt(t.correct !== undefined ? t.correct : '–', M + 121, y + 5, 7.5, false, [5, 150, 105], 'center');
-        txt(t.wrong !== undefined ? t.wrong : '–', M + 133, y + 5, 7.5, false, [220, 38, 38], 'center');
+        txt(String(t.name || ''), M + 3, y + 5, 7.5);
+        const secKey = typeof t.section === 'string' ? t.section.toLowerCase() : '';
+        const sc = sectionColorMap[secKey] || [80, 80, 100];
+        txt(secKey ? secKey.toUpperCase() : 'GENERAL', M + 80, y + 5, 7, true, sc);
+        txt(t.total !== undefined ? String(t.total) : '–', M + 108, y + 5, 7.5, false, [80, 80, 100], 'center');
+        txt(t.correct !== undefined ? String(t.correct) : '–', M + 121, y + 5, 7.5, false, [5, 150, 105], 'center');
+        txt(t.wrong !== undefined ? String(t.wrong) : '–', M + 133, y + 5, 7.5, false, [220, 38, 38], 'center');
         const accVal = t.acc !== undefined ? t.acc : (t.accuracy !== undefined ? t.accuracy : 0);
         const bc = accVal >= 70 ? [5, 150, 105] : accVal >= 40 ? [180, 100, 0] : [220, 38, 38];
         rect(M + 144, y + 2.5, 30, 2.5, 220, 224, 235);
-        if (accVal > 0) rect(M + 144, y + 2.5, 30 * (accVal / 100), 2.5, ...bc);
-        txt(`${accVal}%`, M + 178, y + 5, 7, false, [80, 80, 100]);
+        if (accVal > 0) rect(M + 144, y + 2.5, 30 * (Math.min(100, Math.max(0, accVal)) / 100), 2.5, ...bc);
+        txt(accVal + '%', M + 178, y + 5, 7, false, [80, 80, 100]);
         y += 7;
     });
     y += 4;
 
-    // ── PAGE 2+: All Questions & Answers Review ─────
-    const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
-    const reviewQs = result.details || [];
-    const clean = str => (str || '').replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, m =>
-        ({ '&nbsp;': ' ', '&deg;': '°', '&rarr;': '→', '&larr;': '←', '&minus;': '−', '&sup2;': '²', '&sup3;': '³' }[m] || ' ')
-    );
+    const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+    const reviewQs = Array.isArray(result.details) ? result.details : [];
 
-    const getOptText = (q, val) => {
-        if (val === null || val === undefined || val === '') return '';
-        if (Array.isArray(q.options) && q.options.length > 0) {
-            if (typeof val === 'number' && q.options[val] !== undefined) return clean(q.options[val]);
-            if (typeof val === 'string') {
-                const num = parseInt(val, 10);
-                if (!isNaN(num) && num >= 0 && num < q.options.length) return clean(q.options[num]);
-                const idx = LETTERS.indexOf(val.toUpperCase());
-                if (idx !== -1 && q.options[idx] !== undefined) return clean(q.options[idx]);
-                return clean(val);
-            }
-        }
-        if (q.options && typeof q.options === 'object') {
-            if (typeof val === 'string' && q.options[val.toUpperCase()]) return clean(q.options[val.toUpperCase()]);
-            if (typeof val === 'number' && LETTERS[val] && q.options[LETTERS[val]]) return clean(q.options[LETTERS[val]]);
-        }
-        return clean(String(val));
+    const clean = str => {
+        if (str === null || str === undefined) return '';
+        const s = typeof str === 'string' ? str : String(str);
+        return s.replace(/<[^>]*>/g, '').replace(/&[a-z]+;/gi, m =>
+            ({ '&nbsp;': ' ', '&deg;': '°', '&rarr;': '→', '&larr;': '←', '&minus;': '−', '&sup2;': '²', '&sup3;': '³' }[m] || ' ')
+        );
     };
 
-    const getLetter = (val) => {
-        if (val === null || val === undefined || val === '') return '';
-        if (typeof val === 'number') return LETTERS[val] || String(val);
-        if (typeof val === 'string') {
-            const num = parseInt(val, 10);
-            if (!isNaN(num) && LETTERS[num]) return LETTERS[num];
-            return val.length === 1 ? val.toUpperCase() : '';
+    const isOptMatch = (targetVal, optIdx, opt) => {
+        if (targetVal === null || targetVal === undefined || targetVal === '' || targetVal === 'None' || targetVal === -1) return false;
+        if (typeof targetVal === 'number') return targetVal === optIdx;
+        const strVal = String(targetVal).trim();
+        if (/^d+$/.test(strVal)) return parseInt(strVal, 10) === optIdx;
+        if (LETTERS[optIdx] && strVal.toUpperCase() === LETTERS[optIdx]) return true;
+        const m = strVal.match(/^[\(\[]?([A-Ha-h])[\)\]\.]?/);
+        if (m && LETTERS[optIdx] && m[1].toUpperCase() === LETTERS[optIdx]) return true;
+        if (opt !== undefined && opt !== null) {
+            const cOpt = clean(opt).trim().toLowerCase();
+            const cTar = clean(strVal).trim().toLowerCase();
+            if (cOpt === cTar) return true;
+        }
+        return false;
+    };
+
+    const getLetter = (val, optArray) => {
+        if (val === null || val === undefined || val === '' || val === 'None' || val === -1) return '';
+        if (typeof val === 'number') return LETTERS[val] || String(val + 1);
+        const strVal = String(val).trim();
+        if (/^d+$/.test(strVal)) {
+            const num = parseInt(strVal, 10);
+            return LETTERS[num] || String(num + 1);
+        }
+        if (/^[A-Ha-h]$/.test(strVal)) return strVal.toUpperCase();
+        const m = strVal.match(/^[\(\[]?([A-Ha-h])[\)\]\.]?/);
+        if (m) return m[1].toUpperCase();
+        if (Array.isArray(optArray)) {
+            const idx = optArray.findIndex((opt, i) => isOptMatch(val, i, opt));
+            if (idx !== -1 && LETTERS[idx]) return LETTERS[idx];
         }
         return '';
+    };
+
+    const getOptText = (q, val) => {
+        if (val === null || val === undefined || val === '' || val === 'None' || val === -1) return '';
+        const optArray = Array.isArray(q.options) ? q.options : (typeof q.options === 'object' && q.options !== null ? Object.values(q.options) : []);
+        if (optArray.length > 0) {
+            if (typeof val === 'number' && optArray[val] !== undefined) return clean(optArray[val]);
+            const strVal = String(val).trim();
+            const num = parseInt(strVal, 10);
+            if (/^d+$/.test(strVal) && !isNaN(num) && num >= 0 && num < optArray.length) return clean(optArray[num]);
+            const ltrIdx = LETTERS.indexOf(strVal.toUpperCase());
+            if (ltrIdx !== -1 && optArray[ltrIdx] !== undefined) return clean(optArray[ltrIdx]);
+            const matchIdx = optArray.findIndex((o, i) => isOptMatch(val, i, o));
+            if (matchIdx !== -1) return clean(optArray[matchIdx]);
+            return clean(val);
+        }
+        return clean(String(val));
     };
 
     if (reviewQs.length > 0) {
         doc.addPage(); y = 20;
         rect(M, y, W - 2 * M, 9, 230, 242, 255);
         doc.setDrawColor(26, 86, 219); doc.setLineWidth(0.4); doc.rect(M, y, W - 2 * M, 9, 'S');
-        txt(`COMPLETE QUESTIONS & ANSWERS REVIEW  (${reviewQs.length} questions)`, M + 4, y + 6, 9, true, [26, 86, 219]);
+        txt('COMPLETE QUESTIONS & ANSWERS REVIEW  (' + reviewQs.length + ' questions)', M + 4, y + 6, 9, true, [26, 86, 219]);
         y += 15;
 
         let lastSection = null;
         reviewQs.forEach(qObj => {
-            const secKey = (qObj.section || 'General').toLowerCase();
+            if (!qObj) return;
+            const secKey = String(qObj.section || 'General').toLowerCase();
             if (secKey !== lastSection) {
                 if (y > 260) { doc.addPage(); y = 20; }
                 const sc = sectionColorMap[secKey] || [80, 80, 100];
@@ -202,46 +251,37 @@ function generateACTPDFReport(result, shouldSave = true) {
             }
 
             const rawText = qObj.text || qObj.question || qObj.prompt || 'Question text unavailable';
-            const qText = `Q${qObj.id || ''} [${qObj.topic || ''}]: ${clean(rawText)}`;
+            const qText = 'Q' + (qObj.id || '') + ' [' + (qObj.topic || '') + ']: ' + clean(rawText);
             const qLines = doc.splitTextToSize(qText, W - 2 * M - 10);
             
-            const chosenVal = qObj.chosen !== undefined && qObj.chosen !== null ? qObj.chosen : qObj.chosen_option;
-            const answerVal = qObj.answer !== undefined && qObj.answer !== null ? qObj.answer : qObj.correct_option;
-
-            const isOptMatch = (targetVal, optIdx, opt) => {
-                if (targetVal === null || targetVal === undefined || targetVal === '' || targetVal === 'None' || targetVal === -1) return false;
-                if (typeof targetVal === 'number') return targetVal === optIdx;
-                const strVal = String(targetVal).trim();
-                if (/^\d+$/.test(strVal)) return parseInt(strVal, 10) === optIdx;
-                if (LETTERS[optIdx] && strVal.toUpperCase() === LETTERS[optIdx]) return true;
-                const m = strVal.match(/^[\(\[]?([A-Fa-f])[\)\]\.]?/);
-                if (m && LETTERS[optIdx] && m[1].toUpperCase() === LETTERS[optIdx]) return true;
-                if (opt !== undefined && opt !== null) {
-                    const cOpt = clean(String(opt)).trim().toLowerCase();
-                    const cTar = clean(strVal).trim().toLowerCase();
-                    if (cOpt === cTar) return true;
-                }
-                return false;
-            };
+            const chosenVal = qObj.chosen !== undefined && qObj.chosen !== null ? qObj.chosen : (qObj.chosen_option !== undefined ? qObj.chosen_option : qObj.userAnswer);
+            const answerVal = qObj.answer !== undefined && qObj.answer !== null ? qObj.answer : (qObj.correct_option !== undefined ? qObj.correct_option : (qObj.correctAnswer !== undefined ? qObj.correctAnswer : qObj.fillAnswer));
 
             const isSkipped = (chosenVal === null || chosenVal === undefined || chosenVal === '' || chosenVal === 'None' || chosenVal === -1);
             let isCorrect = false;
+            const optArray = Array.isArray(qObj.options) ? qObj.options : (typeof qObj.options === 'object' && qObj.options !== null ? Object.values(qObj.options) : []);
+
             if (!isSkipped) {
                 if (qObj.status === 'correct') isCorrect = true;
                 else if (qObj.status === 'wrong') isCorrect = false;
                 else if (typeof chosenVal === 'number' && typeof answerVal === 'number') isCorrect = (chosenVal === answerVal);
-                else isCorrect = (String(chosenVal).trim().toUpperCase() === String(answerVal).trim().toUpperCase());
+                else if (String(chosenVal).trim().toUpperCase() === String(answerVal).trim().toUpperCase()) isCorrect = true;
+                else if (optArray.length > 0) {
+                    const cIdx = optArray.findIndex((o, idx) => isOptMatch(chosenVal, idx, o));
+                    const aIdx = optArray.findIndex((o, idx) => isOptMatch(answerVal, idx, o));
+                    if (cIdx !== -1 && aIdx !== -1 && cIdx === aIdx) isCorrect = true;
+                }
             }
             const status = isSkipped ? 'unattempted' : (isCorrect ? 'correct' : 'wrong');
 
             // ── All Options (A, B, C, D) ──
             const allOpts = [];
-            if (Array.isArray(qObj.options) && qObj.options.length > 0) {
-                qObj.options.forEach((opt, optIdx) => {
+            if (optArray.length > 0) {
+                optArray.forEach((opt, optIdx) => {
                     const ltr = LETTERS[optIdx] || String(optIdx + 1);
                     const isChosen = isOptMatch(chosenVal, optIdx, opt);
                     const isAns = isOptMatch(answerVal, optIdx, opt);
-                    let optStr = `   (${ltr}) ${clean(opt)}`;
+                    let optStr = '   (' + ltr + ') ' + clean(opt);
                     if (isAns && isChosen) optStr += '  ✓ (Your Choice & Correct)';
                     else if (isChosen) optStr += '  ✗ (Your Choice)';
                     else if (isAns) optStr += '  ✓ (Correct)';
@@ -251,25 +291,25 @@ function generateACTPDFReport(result, shouldSave = true) {
             }
 
             let yAnsText = '';
-            const chosenLtr = getLetter(chosenVal, qObj.options);
+            const chosenLtr = getLetter(chosenVal, optArray);
             const chosenTxt = getOptText(qObj, chosenVal);
             if (status === 'unattempted') {
-                yAnsText = `➖ Selected Answer: (Skipped / Not Attempted)`;
+                yAnsText = '➖ Selected Answer: (Skipped / Not Attempted)';
             } else if (status === 'correct') {
-                yAnsText = `✓ Selected Answer: (${chosenLtr || '–'}) ${chosenTxt} (Correct)`;
+                yAnsText = '✓ Selected Answer: (' + (chosenLtr || '–') + ') ' + chosenTxt + ' (Correct)';
             } else {
-                yAnsText = `✗ Selected Answer: (${chosenLtr || '–'}) ${chosenTxt} (Incorrect)`;
+                yAnsText = '✗ Selected Answer: (' + (chosenLtr || '–') + ') ' + chosenTxt + ' (Incorrect)';
             }
             const yAns = doc.splitTextToSize(yAnsText, W - 2 * M - 14);
             
-            const ansLtr = getLetter(answerVal, qObj.options);
+            const ansLtr = getLetter(answerVal, optArray);
             const ansTxt = getOptText(qObj, answerVal);
-            const cAns = doc.splitTextToSize(`✓ Correct Answer:  (${ansLtr || '–'}) ${ansTxt}`, W - 2 * M - 14);
+            const cAns = doc.splitTextToSize('✓ Correct Answer:  (' + (ansLtr || '–') + ') ' + ansTxt, W - 2 * M - 14);
 
             let expLines = [];
             const expText = qObj.explanation || qObj.solution;
             if (expText) {
-                expLines = doc.splitTextToSize(`💡 Explanation: ${clean(expText)}`, W - 2 * M - 14);
+                expLines = doc.splitTextToSize('💡 Explanation: ' + clean(expText), W - 2 * M - 14);
             }
 
             const totalOptLines = allOpts.reduce((acc, o) => acc + o.lines.length, 0);
@@ -306,7 +346,7 @@ function generateACTPDFReport(result, shouldSave = true) {
             doc.setTextColor(...(status === 'correct' ? [5, 130, 80] : status === 'unattempted' ? [217, 119, 6] : [200, 30, 30]));
             yAns.forEach(l => { doc.text(l, M + 6, iy + 3.2); iy += 4.2; });
             
-            // 4. Correct Answer (always show for complete clarity)
+            // 4. Correct Answer
             doc.setTextColor(5, 130, 80);
             cAns.forEach(l => { doc.text(l, M + 6, iy + 3.2); iy += 4.2; });
 
@@ -326,12 +366,37 @@ function generateACTPDFReport(result, shouldSave = true) {
     for (let p = 1; p <= totalPages; p++) {
         doc.setPage(p);
         line(M, 285, W - M, 285, 180, 190, 220);
-        txt(`${result.examName || 'ACT Practice Test 1'} — EduQuest`, M, 290, 6.5, false, [140, 150, 180]);
-        txt(`Page ${p} of ${totalPages}`, W - M, 290, 6.5, false, [140, 150, 180], 'right');
+        txt((result.examName || 'ACT Practice Test') + ' — EduQuest', M, 290, 6.5, false, [140, 150, 180]);
+        txt('Page ' + p + ' of ' + totalPages, W - M, 290, 6.5, false, [140, 150, 180], 'right');
         txt('rupali.eduquest@gmail.com', W / 2, 290, 6.5, false, [140, 150, 180], 'center');
     }
 
-    const filename = `${result.student.name.replace(/\s+/g, '_')}_ACT_Report.pdf`;
-    if (shouldSave) doc.save(filename);
+    const safeName = String(student.name || 'Student').replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '_') || 'Student';
+    const filename = safeName + '_ACT_Report.pdf';
+    if (shouldSave) {
+        try {
+            doc.save(filename);
+        } catch (saveErr) {
+            console.warn('doc.save failed, trying blob download fallback:', saveErr);
+            const blob = doc.output('blob');
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            setTimeout(() => {
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }, 1000);
+        }
+    }
     return doc;
+}
+
+if (typeof window !== 'undefined') {
+    window.generateACTPDFReport = generateACTPDFReport;
+}
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { generateACTPDFReport };
 }

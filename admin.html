@@ -1923,6 +1923,22 @@ function formatPassageHTML(passage, qText) {
           const studentName = t.student_name || t.name || email.split('@')[0];
           const studentPhone = t.student_phone || t.phone || '–';
 
+          let topicList = [];
+          if (t.topic_scores && typeof t.topic_scores === 'object') {
+            if (Array.isArray(t.topic_scores)) {
+              topicList = t.topic_scores;
+            } else {
+              topicList = Object.entries(t.topic_scores).map(([k, v]) => {
+                if (v && typeof v === 'object') {
+                  return { name: k, ...v };
+                }
+                return { name: k, accuracy: v, acc: v };
+              });
+            }
+          } else if (Array.isArray(t.topicAnalysis)) {
+            topicList = t.topicAnalysis;
+          }
+
           if (currentPortal === 'act' && typeof window.generateACTPDFReport === 'function') {
             const payload = {
               student: { name: studentName, email: t.student_email || email, phone: studentPhone },
@@ -1935,7 +1951,7 @@ function formatPassageHTML(passage, qText) {
               unattempted: t.unattempted || 0,
               pct: t.percentage || t.pct || 0,
               grade: t.grade || 'B',
-              topicAnalysis: typeof t.topic_scores === 'object' ? Object.values(t.topic_scores) : (t.topicAnalysis || []),
+              topicAnalysis: topicList,
               details: parsedDetails
             };
             window.generateACTPDFReport(payload, true);

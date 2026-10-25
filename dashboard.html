@@ -1514,10 +1514,10 @@ function formatPassageHTML(passage, qText) {
 
         const card = document.createElement('div');
         card.className = 'test-card';
-        card.title = "Click to view full updated report with options, answers & explanation";
+        card.title = "Click to download PDF report";
         card.onclick = (e) => {
           if (e.target.closest('button')) return;
-          openReviewModal(idx);
+          downloadSinglePDF(idx);
         };
         card.innerHTML = `
           <div class="tc-left">
@@ -1538,8 +1538,7 @@ function formatPassageHTML(passage, qText) {
               <div class="tc-score-lbl">Scaled / Comp</div>
             </div>
             <div class="tc-actions">
-              <button class="btn-review" style="display:inline-flex; align-items:center; gap:6px;" onclick="event.stopPropagation(); openReviewModal(${idx})">👁️ Detailed Report</button>
-              <button class="btn-pdf" style="display:inline-flex; align-items:center; gap:6px;" onclick="event.stopPropagation(); downloadSinglePDF(${idx})">📄 PDF Report</button>
+              <button class="btn-pdf" style="display:inline-flex; align-items:center; gap:6px;" onclick="event.stopPropagation(); downloadSinglePDF(${idx})">📄 Download PDF</button>
             </div>
           </div>
         `;
@@ -1866,45 +1865,68 @@ function formatPassageHTML(passage, qText) {
     }
 
     function downloadSinglePDF(idx) {
-      const filtered = getFilteredExams();
-      const t = filtered[idx];
-      if (!t) return;
+      try {
+        const filtered = getFilteredExams();
+        const t = filtered[idx];
+        if (!t) {
+          alert('Test record not found.');
+          return;
+        }
 
-      const parsedDetails = extractDetails(t);
+        const parsedDetails = extractDetails(t);
 
-      if (typeof window.generateACTPDFReport === 'function') {
+        const studentObj = {
+          name: t.student_name || (currentUser && (currentUser.name || currentUser.user_metadata?.full_name || currentUser.email)) || 'Student',
+          email: t.student_email || (currentUser && currentUser.email) || 'student@eduquest.com',
+          phone: t.student_phone || t.phone || '–'
+        };
+
+        let topicList = [];
+        if (t.topic_scores && typeof t.topic_scores === 'object') {
+          if (Array.isArray(t.topic_scores)) {
+            topicList = t.topic_scores;
+          } else {
+            topicList = Object.entries(t.topic_scores).map(([k, v]) => {
+              if (v && typeof v === 'object') {
+                return { name: k, ...v };
+              }
+              return { name: k, accuracy: v, acc: v };
+            });
+          }
+        } else if (Array.isArray(t.topicAnalysis)) {
+          topicList = t.topicAnalysis;
+        }
+
         const payload = {
-          student: { name: t.student_name || currentUser?.email || 'Student', email: t.student_email || currentUser?.email || 'student@eduquest.com', phone: t.student_phone || t.phone || '–' },
+          student: studentObj,
           examName: t.exam_name || t.exam_title || t.topic || 'ACT Practice Test',
-          submitTime: t._date || new Date().toISOString(),
-          composite: t.composite_score || t.scaled_score || t.composite || 0,
-          sectionScores: t.section_scores || { english: t.english_score||0, math: t.math_score||0, reading: t.reading_score||0, science: t.science_score||0 },
+          submitTime: t._date || t.submitted_at || t.created_at || new Date().toISOString(),
+          composite: t.composite_score || t.scaled_score || t.composite || t.scaled || 0,
+          sectionScores: t.section_scores || {
+            english: t.english_score || 0,
+            math: t.math_score || 0,
+            reading: t.reading_score || 0,
+            science: t.science_score || 0
+          },
           correct: t.correct_count !== undefined ? t.correct_count : (t.correct || 0),
           wrong: t.wrong || 0,
           unattempted: t.unattempted || 0,
           pct: t.percentage || t.pct || 0,
           grade: t.grade || 'B',
-          topicAnalysis: typeof t.topic_scores === 'object' ? Object.values(t.topic_scores) : (t.topicAnalysis || []),
+          topicAnalysis: topicList,
           details: parsedDetails
         };
-        window.generateACTPDFReport(payload, true);
-      } else if (typeof window.generatePDFReport === 'function') {
-        const payload = {
-          student: { name: t.student_name || currentUser?.email || 'Student', email: t.student_email || currentUser?.email || 'student@eduquest.com', phone: t.student_phone || t.phone || '–' },
-          examName: t.exam_title || t.exam_name || t.topic || 'Practice Test',
-          submitTime: t._date || new Date().toISOString(),
-          scaled: t.scaled_score || t.composite_score || t.sat_score || 0,
-          correct: t.correct_count !== undefined ? t.correct_count : (t.correct || 0),
-          wrong: t.wrong || 0,
-          unattempted: t.unattempted || 0,
-          total: t.total_questions !== undefined ? t.total_questions : (t.total || 0),
-          pct: t.percentage || t.pct || 0,
-          grade: t.grade || 'B',
-          details: parsedDetails
-        };
-        window.generatePDFReport(payload, true);
-      } else {
-        alert('📄 PDF Report generator is loading, please try again in a moment...');
+
+        if (typeof window.generateACTPDFReport === 'function') {
+          window.generateACTPDFReport(payload, true);
+        } else if (typeof window.generatePDFReport === 'function') {
+          window.generatePDFReport(payload, true);
+        } else {
+          alert('📄 PDF Report generator is loading, please try again in a moment...');
+        }
+      } catch (err) {
+        console.error('Error generating PDF report:', err);
+        alert('Could not generate PDF: ' + (err.message || err));
       }
     }
 
