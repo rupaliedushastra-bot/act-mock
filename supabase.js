@@ -350,15 +350,28 @@ async function saveACTResult(result) {
     const enrichedDetails = (result.details || []).map(d => {
         const answerIdx = (typeof d.answer === 'number') ? d.answer : (typeof d.correct_option === 'number' ? d.correct_option : null);
         const ansLetter = answerIdx !== null && LETTERS[answerIdx] ? LETTERS[answerIdx] : (d.answer || d.correct_option || '–');
+        const chosenVal = d.chosen !== undefined ? d.chosen : d.chosen_option;
+        const answerVal = d.answer !== undefined ? d.answer : d.correct_option;
+        const isSkipped = (chosenVal === null || chosenVal === undefined || chosenVal === '' || chosenVal === 'None' || chosenVal === -1);
+        let isCorrect = false;
+        if (!isSkipped) {
+            if (d.status === 'correct') isCorrect = true;
+            else if (d.status === 'wrong') isCorrect = false;
+            else if (typeof chosenVal === 'number' && typeof answerVal === 'number') isCorrect = (chosenVal === answerVal);
+            else if (String(chosenVal).trim().toUpperCase() === String(answerVal).trim().toUpperCase()) isCorrect = true;
+        }
+        const statusVal = isSkipped ? 'unattempted' : (isCorrect ? 'correct' : 'wrong');
         return {
             id: d.id,
             section: d.section || 'General',
             topic: d.topic || 'General',
             text: d.text || d.question || d.prompt || '',
+            passage: d.passage || '',
+            diagram: d.diagram || '',
             options: d.options || [],
-            answer: d.answer !== undefined ? d.answer : d.correct_option,
-            chosen: d.chosen !== undefined ? d.chosen : d.chosen_option,
-            status: d.status || (d.chosen === d.answer ? 'correct' : (d.chosen !== null && d.chosen !== undefined ? 'wrong' : 'unattempted')),
+            answer: answerVal,
+            chosen: chosenVal,
+            status: statusVal,
             explanation: d.explanation || d.solution || `Option (${ansLetter}) is the correct answer.`
         };
     });

@@ -74,7 +74,14 @@ const server = http.createServer((req, res) => {
         pathname = '/index.html';
     }
 
-    const filePath = path.join(__dirname, pathname);
+    let filePath = path.join(__dirname, pathname);
+
+    // Support clean extensionless URLs (e.g. /login -> login.html, /dashboard -> dashboard.html)
+    if (!path.extname(filePath)) {
+        if (fs.existsSync(filePath + '.html')) {
+            filePath = filePath + '.html';
+        }
+    }
 
     // Security check: ensure path is within directory
     if (!filePath.startsWith(__dirname)) {

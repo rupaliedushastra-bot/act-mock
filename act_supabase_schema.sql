@@ -94,6 +94,7 @@ CREATE TABLE IF NOT EXISTS public.act_results (
     topic_scores JSONB,
     weak_topics TEXT,
     details JSONB,
+    details_json JSONB,
     student_answers JSONB,
     submitted_at TIMESTAMPTZ DEFAULT NOW(),
     created_at TIMESTAMPTZ DEFAULT NOW()
@@ -124,6 +125,7 @@ ALTER TABLE IF EXISTS public.act_results
     ADD COLUMN IF NOT EXISTS topic_scores JSONB,
     ADD COLUMN IF NOT EXISTS weak_topics TEXT,
     ADD COLUMN IF NOT EXISTS details JSONB,
+    ADD COLUMN IF NOT EXISTS details_json JSONB,
     ADD COLUMN IF NOT EXISTS student_answers JSONB,
     ADD COLUMN IF NOT EXISTS submitted_at TIMESTAMPTZ DEFAULT NOW(),
     ADD COLUMN IF NOT EXISTS created_at TIMESTAMPTZ DEFAULT NOW();

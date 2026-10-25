@@ -207,35 +207,64 @@ function generateACTPDFReport(result, shouldSave = true) {
             
             const chosenVal = qObj.chosen !== undefined && qObj.chosen !== null ? qObj.chosen : qObj.chosen_option;
             const answerVal = qObj.answer !== undefined && qObj.answer !== null ? qObj.answer : qObj.correct_option;
-            const status = qObj.status || (chosenVal === answerVal ? 'correct' : (chosenVal !== null ? 'wrong' : 'unattempted'));
+
+            const isOptMatch = (targetVal, optIdx, opt) => {
+                if (targetVal === null || targetVal === undefined || targetVal === '' || targetVal === 'None' || targetVal === -1) return false;
+                if (typeof targetVal === 'number') return targetVal === optIdx;
+                const strVal = String(targetVal).trim();
+                if (/^\d+$/.test(strVal)) return parseInt(strVal, 10) === optIdx;
+                if (LETTERS[optIdx] && strVal.toUpperCase() === LETTERS[optIdx]) return true;
+                const m = strVal.match(/^[\(\[]?([A-Fa-f])[\)\]\.]?/);
+                if (m && LETTERS[optIdx] && m[1].toUpperCase() === LETTERS[optIdx]) return true;
+                if (opt !== undefined && opt !== null) {
+                    const cOpt = clean(String(opt)).trim().toLowerCase();
+                    const cTar = clean(strVal).trim().toLowerCase();
+                    if (cOpt === cTar) return true;
+                }
+                return false;
+            };
+
+            const isSkipped = (chosenVal === null || chosenVal === undefined || chosenVal === '' || chosenVal === 'None' || chosenVal === -1);
+            let isCorrect = false;
+            if (!isSkipped) {
+                if (qObj.status === 'correct') isCorrect = true;
+                else if (qObj.status === 'wrong') isCorrect = false;
+                else if (typeof chosenVal === 'number' && typeof answerVal === 'number') isCorrect = (chosenVal === answerVal);
+                else isCorrect = (String(chosenVal).trim().toUpperCase() === String(answerVal).trim().toUpperCase());
+            }
+            const status = isSkipped ? 'unattempted' : (isCorrect ? 'correct' : 'wrong');
 
             // ── All Options (A, B, C, D) ──
             const allOpts = [];
             if (Array.isArray(qObj.options) && qObj.options.length > 0) {
                 qObj.options.forEach((opt, optIdx) => {
-                    const ltr = LETTERS[optIdx] || String(optIdx);
-                    const isChosen = (optIdx === chosenVal || String(optIdx) === String(chosenVal));
-                    const isCorrect = (optIdx === answerVal || String(optIdx) === String(answerVal));
+                    const ltr = LETTERS[optIdx] || String(optIdx + 1);
+                    const isChosen = isOptMatch(chosenVal, optIdx, opt);
+                    const isAns = isOptMatch(answerVal, optIdx, opt);
                     let optStr = `   (${ltr}) ${clean(opt)}`;
-                    if (isCorrect && isChosen) optStr += '  ✓ (Your Choice & Correct)';
+                    if (isAns && isChosen) optStr += '  ✓ (Your Choice & Correct)';
                     else if (isChosen) optStr += '  ✗ (Your Choice)';
-                    else if (isCorrect) optStr += '  ✓ (Correct)';
+                    else if (isAns) optStr += '  ✓ (Correct)';
                     const splitOpt = doc.splitTextToSize(optStr, W - 2 * M - 16);
-                    allOpts.push({ lines: splitOpt, isChosen, isCorrect });
+                    allOpts.push({ lines: splitOpt, isChosen, isCorrect: isAns });
                 });
             }
 
             let yAnsText = '';
-            if (status === 'unattempted' || chosenVal === null) {
-                yAnsText = `➖ Selected Answer: (Skipped)`;
+            const chosenLtr = getLetter(chosenVal, qObj.options);
+            const chosenTxt = getOptText(qObj, chosenVal);
+            if (status === 'unattempted') {
+                yAnsText = `➖ Selected Answer: (Skipped / Not Attempted)`;
             } else if (status === 'correct') {
-                yAnsText = `✓ Selected Answer: (${getLetter(chosenVal)}) ${getOptText(qObj, chosenVal)} (Correct)`;
+                yAnsText = `✓ Selected Answer: (${chosenLtr || '–'}) ${chosenTxt} (Correct)`;
             } else {
-                yAnsText = `✗ Selected Answer: (${getLetter(chosenVal)}) ${getOptText(qObj, chosenVal)} (Incorrect)`;
+                yAnsText = `✗ Selected Answer: (${chosenLtr || '–'}) ${chosenTxt} (Incorrect)`;
             }
             const yAns = doc.splitTextToSize(yAnsText, W - 2 * M - 14);
             
-            const cAns = doc.splitTextToSize(`✓ Correct Answer:  (${getLetter(answerVal)}) ${getOptText(qObj, answerVal)}`, W - 2 * M - 14);
+            const ansLtr = getLetter(answerVal, qObj.options);
+            const ansTxt = getOptText(qObj, answerVal);
+            const cAns = doc.splitTextToSize(`✓ Correct Answer:  (${ansLtr || '–'}) ${ansTxt}`, W - 2 * M - 14);
 
             let expLines = [];
             const expText = qObj.explanation || qObj.solution;
@@ -244,7 +273,7 @@ function generateACTPDFReport(result, shouldSave = true) {
             }
 
             const totalOptLines = allOpts.reduce((acc, o) => acc + o.lines.length, 0);
-            const need = qLines.length * 4.5 + totalOptLines * 3.8 + yAns.length * 4.2 + (status !== 'correct' ? cAns.length * 4.2 : 0) + expLines.length * 4 + 14;
+            const need = qLines.length * 4.5 + totalOptLines * 3.8 + yAns.length * 4.2 + cAns.length * 4.2 + expLines.length * 4 + 14;
             if (y + need > 275) { doc.addPage(); y = 20; }
 
             const accentColor = status === 'correct' ? [5, 130, 80] : status === 'unattempted' ? [217, 119, 6] : [220, 38, 38];
@@ -277,11 +306,9 @@ function generateACTPDFReport(result, shouldSave = true) {
             doc.setTextColor(...(status === 'correct' ? [5, 130, 80] : status === 'unattempted' ? [217, 119, 6] : [200, 30, 30]));
             yAns.forEach(l => { doc.text(l, M + 6, iy + 3.2); iy += 4.2; });
             
-            // 4. Correct Answer (if student was wrong or skipped)
-            if (status !== 'correct' && cAns.length > 0) {
-                doc.setTextColor(5, 130, 80);
-                cAns.forEach(l => { doc.text(l, M + 6, iy + 3.2); iy += 4.2; });
-            }
+            // 4. Correct Answer (always show for complete clarity)
+            doc.setTextColor(5, 130, 80);
+            cAns.forEach(l => { doc.text(l, M + 6, iy + 3.2); iy += 4.2; });
 
             // 5. Explanation
             if (expLines.length > 0) {

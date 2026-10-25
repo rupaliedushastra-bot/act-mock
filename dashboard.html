@@ -463,48 +463,234 @@
     .modal-stat-box .num { font-family: var(--font-brand); font-size: 1.4rem; font-weight: 800; }
     .modal-stat-box .lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-top: 4px; }
     
+    .test-card {
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .test-card:hover {
+      border-color: rgba(167, 139, 250, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .q-review-filter-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 18px 0 22px;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+    }
+    .q-filter-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .q-filter-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #cbd5e1;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .q-filter-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+    }
+    .q-filter-btn.active {
+      background: linear-gradient(135deg, #7c3aed, #5b21b6);
+      border-color: #a78bfa;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.35);
+    }
+
     .q-review-card {
       background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: 14px;
-      padding: 18px;
-      margin-bottom: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      transition: all 0.2s;
+    }
+    .q-review-card:hover {
+      border-color: rgba(255, 255, 255, 0.15);
     }
     .q-review-hdr {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 12px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      padding-bottom: 10px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 10px;
     }
-    .q-status-badge { padding: 4px 10px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; }
-    .q-status-correct { background: rgba(16, 185, 129, 0.15); color: #34d399; }
-    .q-status-wrong { background: rgba(239, 68, 68, 0.15); color: #f87171; }
-    .q-status-skipped { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+    .q-meta-tags {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .q-section-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: rgba(124, 58, 237, 0.2);
+      color: #c4b5fd;
+      border: 1px solid rgba(124, 58, 237, 0.4);
+    }
+    .q-topic-tag {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .q-status-badge {
+      padding: 4px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .q-status-correct { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .q-status-wrong { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+    .q-status-skipped { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
     
-    .q-text { font-size: 0.95rem; color: #fff; line-height: 1.5; margin-bottom: 14px; }
-    .q-opt-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+    .q-text { font-size: 0.98rem; color: #fff; line-height: 1.6; margin-bottom: 16px; font-weight: 500; }
+    .q-opt-list { display: flex; flex-direction: column; gap: 9px; margin-bottom: 16px; }
     .q-opt {
-      padding: 10px 14px;
+      padding: 12px 16px;
       border-radius: 10px;
       background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      font-size: 0.88rem;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      font-size: 0.9rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-    .q-opt.correct-ans { background: rgba(16, 185, 129, 0.15); border-color: #10b981; color: #34d399; font-weight: 600; }
-    .q-opt.wrong-chosen { background: rgba(239, 68, 68, 0.15); border-color: #ef4444; color: #f87171; font-weight: 600; }
-    .q-exp {
-      background: rgba(96, 165, 250, 0.08);
-      border-left: 3px solid #60a5fa;
-      padding: 12px 16px;
-      border-radius: 8px;
-      font-size: 0.85rem;
+      gap: 12px;
+      line-height: 1.4;
       color: #cbd5e1;
-      line-height: 1.5;
+    }
+    .q-opt.correct-ans {
+      background: rgba(16, 185, 129, 0.12);
+      border-color: #10b981;
+      color: #34d399;
+      font-weight: 600;
+    }
+    .q-opt.wrong-chosen {
+      background: rgba(239, 68, 68, 0.12);
+      border-color: #ef4444;
+      color: #f87171;
+      font-weight: 600;
+    }
+    .q-opt-badge {
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 6px;
+      margin-left: auto;
+      white-space: nowrap;
+    }
+    .q-opt-badge.badge-correct {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+    }
+    .q-opt-badge.badge-wrong {
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+    }
+
+    .q-ans-comparison {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin: 14px 0 16px;
+    }
+    .ans-box {
+      border-radius: 12px;
+      padding: 12px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      background: rgba(255, 255, 255, 0.025);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .ans-box.your-ans.correct {
+      background: rgba(16, 185, 129, 0.08);
+      border-color: rgba(16, 185, 129, 0.35);
+    }
+    .ans-box.your-ans.wrong {
+      background: rgba(239, 68, 68, 0.08);
+      border-color: rgba(239, 68, 68, 0.35);
+    }
+    .ans-box.your-ans.skipped {
+      background: rgba(245, 158, 11, 0.08);
+      border-color: rgba(245, 158, 11, 0.35);
+    }
+    .ans-box.correct-target {
+      background: rgba(16, 185, 129, 0.08);
+      border-color: rgba(16, 185, 129, 0.35);
+    }
+    .ans-box-lbl {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .ans-box.your-ans.correct .ans-box-lbl { color: #34d399; }
+    .ans-box.your-ans.wrong .ans-box-lbl { color: #f87171; }
+    .ans-box.your-ans.skipped .ans-box-lbl { color: #fbbf24; }
+    .ans-box.correct-target .ans-box-lbl { color: #34d399; }
+    .ans-box-val {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.4;
+    }
+
+    .q-exp-box {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(59, 130, 246, 0.05));
+      border: 1px solid rgba(99, 102, 241, 0.25);
+      border-left: 4px solid #818cf8;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-top: 14px;
+    }
+    .q-exp-hdr {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #a5b4fc;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .q-exp-txt {
+      font-size: 0.9rem;
+      color: #e2e8f0;
+      line-height: 1.6;
     }
     @media(max-width: 768px) {
       .hdr {
@@ -1328,6 +1514,11 @@ function formatPassageHTML(passage, qText) {
 
         const card = document.createElement('div');
         card.className = 'test-card';
+        card.title = "Click to view full updated report with options, answers & explanation";
+        card.onclick = (e) => {
+          if (e.target.closest('button')) return;
+          openReviewModal(idx);
+        };
         card.innerHTML = `
           <div class="tc-left">
             <div class="tc-icon">${icons[r._type] || '⚡'}</div>
@@ -1347,7 +1538,8 @@ function formatPassageHTML(passage, qText) {
               <div class="tc-score-lbl">Scaled / Comp</div>
             </div>
             <div class="tc-actions">
-              <button class="btn-pdf" onclick="downloadSinglePDF(${idx})">📄 PDF Report</button>
+              <button class="btn-review" style="display:inline-flex; align-items:center; gap:6px;" onclick="event.stopPropagation(); openReviewModal(${idx})">👁️ Detailed Report</button>
+              <button class="btn-pdf" style="display:inline-flex; align-items:center; gap:6px;" onclick="event.stopPropagation(); downloadSinglePDF(${idx})">📄 PDF Report</button>
             </div>
           </div>
         `;
@@ -1356,6 +1548,213 @@ function formatPassageHTML(passage, qText) {
     }
 
     let modalChartInst = null;
+    let _activeModalDetails = [];
+    let _activeModalExam = null;
+    let _activeQuestionFilter = 'all';
+
+    function isOptionMatch(targetVal, optIndex, optText) {
+      if (targetVal === null || targetVal === undefined || targetVal === '' || targetVal === 'None' || targetVal === -1) {
+        return false;
+      }
+      if (typeof targetVal === 'number') {
+        return targetVal === optIndex;
+      }
+      const strVal = String(targetVal).trim();
+      if (/^\d+$/.test(strVal)) {
+        return parseInt(strVal, 10) === optIndex;
+      }
+      const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+      if (LETTERS[optIndex] && strVal.toUpperCase() === LETTERS[optIndex]) {
+        return true;
+      }
+      const letterMatch = strVal.match(/^[\(\[]?([A-Ha-h])[\)\]\.]?/);
+      if (letterMatch && LETTERS[optIndex] && letterMatch[1].toUpperCase() === LETTERS[optIndex]) {
+        return true;
+      }
+      if (optText !== undefined && optText !== null) {
+        const cleanOpt = String(optText).replace(/<[^>]*>/g, '').replace(/\$/g, '').trim().toLowerCase();
+        const cleanTarget = strVal.replace(/<[^>]*>/g, '').replace(/\$/g, '').trim().toLowerCase();
+        if (cleanOpt === cleanTarget) return true;
+      }
+      return false;
+    }
+
+    function formatAnswerDisplay(val, optArray) {
+      if (val === null || val === undefined || val === '' || val === 'None' || val === -1) {
+        return { letter: '', text: 'Not Attempted / Skipped', isSkipped: true };
+      }
+      const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+      if (Array.isArray(optArray) && optArray.length > 0) {
+        const idx = optArray.findIndex((opt, i) => isOptionMatch(val, i, opt));
+        if (idx !== -1) {
+          return {
+            letter: LETTERS[idx] || String(idx + 1),
+            text: optArray[idx],
+            isSkipped: false
+          };
+        }
+      }
+      if (typeof val === 'string' && /^[A-Ha-h]$/.test(val.trim())) {
+        const ltr = val.trim().toUpperCase();
+        const idx = LETTERS.indexOf(ltr);
+        const txt = (Array.isArray(optArray) && optArray[idx] !== undefined) ? optArray[idx] : ltr;
+        return { letter: ltr, text: txt, isSkipped: false };
+      }
+      if (typeof val === 'number' && LETTERS[val]) {
+        const txt = (Array.isArray(optArray) && optArray[val] !== undefined) ? optArray[val] : LETTERS[val];
+        return { letter: LETTERS[val], text: txt, isSkipped: false };
+      }
+      return { letter: '', text: String(val), isSkipped: false };
+    }
+
+    function renderReviewQuestionCards(details, filterType) {
+      if (!details || details.length === 0) {
+        return '<div style="text-align:center; padding:30px; color:var(--text-muted);">No question details recorded for this test.</div>';
+      }
+      const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+
+      const filtered = details.filter((d, i) => {
+        if (!filterType || filterType === 'all') return true;
+        const chosenVal = d.chosen !== undefined && d.chosen !== null ? d.chosen : (d.chosen_option !== undefined ? d.chosen_option : d.userAnswer);
+        const answerVal = d.answer !== undefined && d.answer !== null ? d.answer : (d.correct_option !== undefined ? d.correct_option : (d.correctAnswer !== undefined ? d.correctAnswer : d.fillAnswer));
+        const optArray = Array.isArray(d.options) ? d.options : (typeof d.options === 'object' && d.options !== null ? Object.values(d.options) : []);
+
+        const isSkipped = (chosenVal === null || chosenVal === undefined || chosenVal === '' || chosenVal === 'None' || chosenVal === -1);
+        let isCorrect = false;
+        if (!isSkipped) {
+          if (d.status === 'correct') isCorrect = true;
+          else if (d.status === 'wrong') isCorrect = false;
+          else if (typeof chosenVal === 'number' && typeof answerVal === 'number') isCorrect = (chosenVal === answerVal);
+          else if (String(chosenVal).trim().toUpperCase() === String(answerVal).trim().toUpperCase()) isCorrect = true;
+          else if (optArray.length > 0) {
+            const cIdx = optArray.findIndex((o, idx) => isOptionMatch(chosenVal, idx, o));
+            const aIdx = optArray.findIndex((o, idx) => isOptionMatch(answerVal, idx, o));
+            if (cIdx !== -1 && aIdx !== -1 && cIdx === aIdx) isCorrect = true;
+          }
+        }
+        const qStatus = isSkipped ? 'skipped' : (isCorrect ? 'correct' : 'wrong');
+        return qStatus === filterType;
+      });
+
+      if (filtered.length === 0) {
+        return '<div style="text-align:center; padding:35px; color:var(--text-muted); background:rgba(255,255,255,0.02); border-radius:12px; border:1px dashed rgba(255,255,255,0.1);">No questions matching the "' + filterType.toUpperCase() + '" filter.</div>';
+      }
+
+      return filtered.map((d, i) => {
+        const qNum = d.id || (i + 1);
+        const section = d.section || 'General';
+        const topic = d.topic || 'General';
+        const qText = d.question || d.text || d.prompt || d.qText || '';
+        const hasText = !!qText;
+        const chosenVal = d.chosen !== undefined && d.chosen !== null ? d.chosen : (d.chosen_option !== undefined ? d.chosen_option : d.userAnswer);
+        const answerVal = d.answer !== undefined && d.answer !== null ? d.answer : (d.correct_option !== undefined ? d.correct_option : (d.correctAnswer !== undefined ? d.correctAnswer : d.fillAnswer));
+        const optArray = Array.isArray(d.options) ? d.options : (typeof d.options === 'object' && d.options !== null ? Object.values(d.options) : []);
+
+        const isSkipped = (chosenVal === null || chosenVal === undefined || chosenVal === '' || chosenVal === 'None' || chosenVal === -1);
+        let isCorrect = false;
+        if (!isSkipped) {
+          if (d.status === 'correct') isCorrect = true;
+          else if (d.status === 'wrong') isCorrect = false;
+          else if (typeof chosenVal === 'number' && typeof answerVal === 'number') isCorrect = (chosenVal === answerVal);
+          else if (String(chosenVal).trim().toUpperCase() === String(answerVal).trim().toUpperCase()) isCorrect = true;
+          else if (optArray.length > 0) {
+            const cIdx = optArray.findIndex((o, idx) => isOptionMatch(chosenVal, idx, o));
+            const aIdx = optArray.findIndex((o, idx) => isOptionMatch(answerVal, idx, o));
+            if (cIdx !== -1 && aIdx !== -1 && cIdx === aIdx) isCorrect = true;
+          }
+        }
+
+        const status = isSkipped ? 'skipped' : (isCorrect ? 'correct' : 'wrong');
+        const statusBadge = status === 'correct' 
+          ? '<span class="q-status-badge q-status-correct">✅ Correct (+1)</span>' 
+          : status === 'wrong' 
+          ? '<span class="q-status-badge q-status-wrong">❌ Incorrect (0)</span>' 
+          : '<span class="q-status-badge q-status-skipped">⏭ Skipped (0)</span>';
+
+        const given = formatAnswerDisplay(chosenVal, optArray);
+        const correct = formatAnswerDisplay(answerVal, optArray);
+
+        const exp = d.explanation || d.solution || (correct.letter ? ('Option (' + correct.letter + ') is the correct answer according to official test scoring guidelines.') : 'Correct answer explanation confirmed.');
+
+        const givenValHtml = given.isSkipped 
+          ? '<span style="color:#fbbf24;">⏭ Not Attempted / Skipped</span>' 
+          : ('Option (' + (given.letter || '–') + '): ' + formatLaTeX(given.text));
+
+        const correctValHtml = 'Option (' + (correct.letter || '–') + '): ' + formatLaTeX(correct.text);
+
+        let optionsHtml = '';
+        if (optArray.length > 0) {
+          optionsHtml = '<div class="q-opt-list">' + optArray.map((opt, oIdx) => {
+            const isAns = isOptionMatch(answerVal, oIdx, opt);
+            const isChosen = isOptionMatch(chosenVal, oIdx, opt);
+            let cls = '';
+            let badge = '';
+            if (isAns && isChosen) {
+              cls = 'correct-ans';
+              badge = '<span class="q-opt-badge badge-correct">✓ Your Answer &amp; Correct</span>';
+            } else if (isAns) {
+              cls = 'correct-ans';
+              badge = '<span class="q-opt-badge badge-correct">✓ Correct Answer</span>';
+            } else if (isChosen) {
+              cls = 'wrong-chosen';
+              badge = '<span class="q-opt-badge badge-wrong">✗ Your Answer</span>';
+            }
+            const ltr = LETTERS[oIdx] || String(oIdx + 1);
+            return '<div class="q-opt ' + cls + '"><span><strong>' + ltr + '.</strong> ' + formatLaTeX(opt) + '</span>' + badge + '</div>';
+          }).join('') + '</div>';
+        }
+
+        let passageHtml = d.passage ? formatPassageHTML(d.passage, qText) : '';
+        let diagramHtml = d.diagram ? '<div style="text-align:center;margin:14px 0;"><img src="' + d.diagram.replace(/^(\.\.\/)+/, '') + '" alt="Question Diagram" style="max-width:100%;max-height:280px;border-radius:12px;border:1px solid rgba(255,255,255,0.18);box-shadow:0 6px 20px rgba(0,0,0,0.45);background:#fff;padding:4px;"></div>' : '';
+        let promptHtml = hasText ? '<div class="q-text">' + formatLaTeX(qText) + '</div>' : '<div class="q-text" style="opacity:0.6;">Question prompt not recorded.</div>';
+
+        return (
+          '<div class="q-review-card" id="q-card-' + qNum + '">' +
+            '<div class="q-review-hdr">' +
+              '<div class="q-meta-tags">' +
+                '<span style="font-weight:800; font-size:1.05rem; color:#fff; font-family:var(--font-brand);">Question ' + qNum + '</span>' +
+                '<span class="q-section-tag">' + section.toUpperCase() + '</span>' +
+                '<span class="q-topic-tag">📌 ' + topic + '</span>' +
+              '</div>' +
+              '<div>' + statusBadge + '</div>' +
+            '</div>' +
+            passageHtml +
+            diagramHtml +
+            promptHtml +
+            optionsHtml +
+            '<div class="q-ans-comparison">' +
+              '<div class="ans-box your-ans ' + status + '">' +
+                '<span class="ans-box-lbl">' + (status === 'correct' ? '✓' : status === 'wrong' ? '✗' : '⏭') + ' Answer Given (Student Choice):</span>' +
+                '<span class="ans-box-val">' + givenValHtml + '</span>' +
+              '</div>' +
+              '<div class="ans-box correct-target">' +
+                '<span class="ans-box-lbl">✓ Official Correct Answer:</span>' +
+                '<span class="ans-box-val">' + correctValHtml + '</span>' +
+              '</div>' +
+            '</div>' +
+            '<div class="q-exp-box">' +
+              '<div class="q-exp-hdr"><span>💡</span><span>Explanation &amp; Detailed Solution:</span></div>' +
+              '<div class="q-exp-txt">' + formatLaTeX(exp) + '</div>' +
+            '</div>' +
+          '</div>'
+        );
+      }).join('');
+    }
+
+
+    function filterModalQuestions(type) {
+      _activeQuestionFilter = type;
+      const btns = document.querySelectorAll('.q-filter-btn');
+      btns.forEach(b => {
+        if (b.getAttribute('data-filter') === type) b.classList.add('active');
+        else b.classList.remove('active');
+      });
+      const container = document.getElementById('modalQuestionsContainer');
+      if (container && _activeModalDetails) {
+        container.innerHTML = renderReviewQuestionCards(_activeModalDetails, type);
+      }
+    }
+
     function openReviewModal(idx) {
       const filtered = getFilteredExams();
       const t = filtered[idx];
@@ -1376,22 +1775,29 @@ function formatPassageHTML(passage, qText) {
         const grade = t.grade || (pct >= 90 ? 'A+' : pct >= 80 ? 'A' : pct >= 70 ? 'B' : pct >= 60 ? 'C' : 'D');
 
         const details = extractDetails(t);
+        _activeModalDetails = details;
+        _activeModalExam = t;
+        _activeQuestionFilter = 'all';
 
         const modal = document.getElementById('reportModalContent');
         if (!modal) return;
 
         modal.innerHTML = `
           <div class="modal-hdr">
-            <h3>${title}</h3>
+            <div>
+              <h3>${title}</h3>
+              <div style="font-size:0.84rem; color:var(--text-muted); margin-top:3px;">Updated Student Performance &amp; Detailed Question Review</div>
+            </div>
             <div style="display:flex; gap:10px; align-items:center;">
-              <button class="btn-pdf" onclick="downloadSinglePDF(${idx})" style="padding:6px 14px; font-size:0.85rem;">📄 Download PDF</button>
+              <button class="btn-pdf" onclick="downloadSinglePDF(${idx})" style="padding:7px 16px; font-size:0.85rem; background:linear-gradient(135deg, #7c3aed, #5b21b6); color:#fff; border:none; box-shadow:0 4px 14px rgba(124, 58, 237, 0.35);">📄 Download PDF Report</button>
               <button class="modal-close" onclick="closeReportModal()">✕</button>
             </div>
           </div>
-          <div style="text-align:center; margin-bottom:12px;">
-            <div style="font-size:0.95rem; font-weight:600; color:rgba(255,255,255,0.6); margin-bottom:4px;">Student: ${currentUser?.email || 'Student'}</div>
-            <div style="font-family:'Syne'; font-size:2.4rem; font-weight:800; color:#a78bfa;">${scaled}</div>
-            <div style="font-size:0.82rem; color:rgba(255,255,255,0.4);">Score · ${dateStr}</div>
+
+          <div style="text-align:center; margin-bottom:14px; background:rgba(255,255,255,0.02); padding:16px; border-radius:16px; border:1px solid rgba(255,255,255,0.06);">
+            <div style="font-size:0.95rem; font-weight:600; color:rgba(255,255,255,0.7); margin-bottom:4px;">Candidate: ${currentUser?.email || t.student_email || 'Student'}</div>
+            <div style="font-family:'Syne'; font-size:2.6rem; font-weight:800; color:#a78bfa; letter-spacing:-0.02em;">${scaled}</div>
+            <div style="font-size:0.82rem; color:rgba(255,255,255,0.45); text-transform:uppercase; letter-spacing:0.06em;">Composite / Scaled Score · ${dateStr}</div>
           </div>
 
           <div class="modal-stats-grid">
@@ -1399,81 +1805,29 @@ function formatPassageHTML(passage, qText) {
             <div class="modal-stat-box"><div class="num" style="color:#f87171">${wrong}</div><div class="lbl">Wrong</div></div>
             <div class="modal-stat-box"><div class="num" style="color:#fbbf24">${skipped}</div><div class="lbl">Skipped</div></div>
             <div class="modal-stat-box"><div class="num" style="color:#60a5fa">${total}</div><div class="lbl">Total Qs</div></div>
-            <div class="modal-stat-box"><div class="num" style="color:#a78bfa">${pct}%</div><div class="lbl">Score %</div></div>
+            <div class="modal-stat-box"><div class="num" style="color:#a78bfa">${pct}%</div><div class="lbl">Accuracy</div></div>
             <div class="modal-stat-box"><div class="num" style="color:#34d399">${grade}</div><div class="lbl">Grade</div></div>
           </div>
 
-          <div style="max-width:320px; margin:24px auto;"><canvas id="modalPieChart" height="200"></canvas></div>
+          <div style="max-width:320px; margin:20px auto;"><canvas id="modalPieChart" height="200"></canvas></div>
 
-          <h4 style="color:#fff; font-family:var(--font-brand); margin:24px 0 16px; font-size:1.1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:8px;">
-            📋 Detailed Question Review (${details.length || total} questions)
-          </h4>
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:28px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:10px;">
+            <h4 style="color:#fff; font-family:var(--font-brand); font-size:1.15rem; margin:0;">
+              📋 Detailed Questions Review (${details.length || total} Questions)
+            </h4>
+            <div style="font-size:0.8rem; color:#a78bfa;">Includes Options, Answer Given, Correct Answer &amp; Explanation</div>
+          </div>
+
+          <div class="q-review-filter-bar">
+            <span class="q-filter-label">Filter:</span>
+            <button class="q-filter-btn active" data-filter="all" onclick="filterModalQuestions('all')">All (${details.length})</button>
+            <button class="q-filter-btn" data-filter="wrong" onclick="filterModalQuestions('wrong')">❌ Wrong (${wrong})</button>
+            <button class="q-filter-btn" data-filter="skipped" onclick="filterModalQuestions('skipped')">⏭ Skipped (${skipped})</button>
+            <button class="q-filter-btn" data-filter="correct" onclick="filterModalQuestions('correct')">✅ Correct (${correct})</button>
+          </div>
 
           <div id="modalQuestionsContainer">
-            ${details && details.length > 0 ? details.map((d, i) => {
-              const qText = d.question || d.text || d.prompt || d.qText || '';
-              const hasText = !!qText;
-              const chosenVal = d.chosen !== undefined && d.chosen !== null ? d.chosen : (d.chosen_option !== undefined ? d.chosen_option : d.userAnswer);
-              const answerVal = d.answer !== undefined && d.answer !== null ? d.answer : (d.correct_option !== undefined ? d.correct_option : (d.correctAnswer !== undefined ? d.correctAnswer : d.fillAnswer));
-              
-              const status = d.status || (chosenVal === answerVal ? 'correct' : (chosenVal !== undefined && chosenVal !== 'None' && chosenVal !== '' ? 'wrong' : 'unattempted'));
-              const statusClass = status === 'correct' ? 'q-status-correct' : status === 'wrong' ? 'q-status-wrong' : 'q-status-skipped';
-              const statusText = status === 'correct' ? '✅ Correct' : status === 'wrong' ? '❌ Wrong' : '⏭ Skipped';
-              const exp = d.explanation || d.solution || 'No detailed explanation available for this question.';
-              const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
-
-              const getOptText = (optVal) => {
-                if (optVal === null || optVal === undefined || optVal === '') return '';
-                if (Array.isArray(d.options) && d.options.length > 0) {
-                  if (typeof optVal === 'number' && d.options[optVal] !== undefined) return d.options[optVal];
-                  if (typeof optVal === 'string') {
-                    const num = parseInt(optVal, 10);
-                    if (!isNaN(num) && num >= 0 && num < d.options.length) return d.options[num];
-                    const idx = LETTERS.indexOf(optVal.toUpperCase());
-                    if (idx !== -1 && d.options[idx] !== undefined) return d.options[idx];
-                    return optVal;
-                  }
-                }
-                return String(optVal);
-              };
-
-              return `
-                <div class="q-review-card">
-                  <div class="q-review-hdr">
-                    <span style="font-weight:700; font-size:0.95rem; color:#fff;">Question ${d.id || (i + 1)}</span>
-                    <span class="q-status-badge ${statusClass}">${statusText}</span>
-                  </div>
-                  
-                  ${d.passage ? formatPassageHTML(d.passage, qText) : ''}
-                  ${d.diagram ? `<div style="text-align:center;margin:12px 0;"><img src="${d.diagram.replace(/^(\.\.\/)+/, '')}" alt="Diagram" style="max-width:100%;max-height:260px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);box-shadow:0 4px 15px rgba(0,0,0,0.4);"></div>` : ''}
-                  ${hasText ? `<div class="q-text">${formatLaTeX(qText)}</div>` : `<div class="q-text" style="opacity:0.6;">Question text not available for this topic.</div>`}
-
-                  ${d.options && (Array.isArray(d.options) ? d.options.length > 0 : typeof d.options === 'object') ? `
-                    <div class="q-opt-list">
-                      ${(Array.isArray(d.options) ? d.options : Object.values(d.options)).map((opt, oIdx) => {
-                        const optKey = Array.isArray(d.options) ? oIdx : Object.keys(d.options)[oIdx];
-                        const isAns = (oIdx === answerVal || opt === answerVal || LETTERS[oIdx] === answerVal || optKey === answerVal);
-                        const isChosen = (oIdx === chosenVal || opt === chosenVal || LETTERS[oIdx] === chosenVal || optKey === chosenVal);
-                        let cls = '';
-                        let badge = '';
-                        if (isAns) { cls = 'correct-ans'; badge = ' <span style="margin-left:auto; font-weight:700; color:#10b981;">✓ Correct</span>'; }
-                        else if (isChosen && status === 'wrong') { cls = 'wrong-chosen'; badge = ' <span style="margin-left:auto; font-weight:700; color:#ef4444;">✗ Student Choice</span>'; }
-                        return `<div class="q-opt ${cls}"><span><strong>${LETTERS[oIdx] || optKey}.</strong> ${formatLaTeX(opt)}</span>${badge}</div>`;
-                      }).join('')}
-                    </div>
-                  ` : `
-                    <div style="font-size:0.9rem; margin-bottom:12px; color:#cbd5e1;">
-                      ${status === 'wrong' ? `Student Answer: <strong style="color:#ef4444;">${getOptText(chosenVal) || 'None'}</strong> &middot; Correct: <strong style="color:#10b981;">${getOptText(answerVal) || '–'}</strong>` : `Correct Answer: <strong style="color:#10b981;">${getOptText(answerVal) || '–'}</strong>`}
-                    </div>
-                  `}
-
-                  <div class="q-exp">
-                    <strong style="color:#60a5fa; display:block; margin-bottom:4px;">💡 Explanation:</strong>
-                    ${formatLaTeX(exp)}
-                  </div>
-                </div>
-              `;
-            }).join('') : `<div style="text-align:center; padding:30px; color:var(--text-muted);">Detailed question analysis for this test submission. Total Questions: ${total} &middot; Score: ${pct}%</div>`}
+            ${renderReviewQuestionCards(details, 'all')}
           </div>
         `;
 
@@ -1518,10 +1872,10 @@ function formatPassageHTML(passage, qText) {
 
       const parsedDetails = extractDetails(t);
 
-      if (t._type === 'act' && typeof window.generateACTPDFReport === 'function') {
+      if (typeof window.generateACTPDFReport === 'function') {
         const payload = {
           student: { name: t.student_name || currentUser?.email || 'Student', email: t.student_email || currentUser?.email || 'student@eduquest.com', phone: t.student_phone || t.phone || '–' },
-          examName: t.exam_name || t.exam_title || 'ACT Practice Test',
+          examName: t.exam_name || t.exam_title || t.topic || 'ACT Practice Test',
           submitTime: t._date || new Date().toISOString(),
           composite: t.composite_score || t.scaled_score || t.composite || 0,
           sectionScores: t.section_scores || { english: t.english_score||0, math: t.math_score||0, reading: t.reading_score||0, science: t.science_score||0 },
@@ -1550,7 +1904,7 @@ function formatPassageHTML(passage, qText) {
         };
         window.generatePDFReport(payload, true);
       } else {
-        alert('📄 Generating standard PDF report...');
+        alert('📄 PDF Report generator is loading, please try again in a moment...');
       }
     }
 
