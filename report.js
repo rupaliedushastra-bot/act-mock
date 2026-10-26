@@ -66,17 +66,11 @@ function generateACTPDFReport(result, shouldSave = true) {
     txt('Date:   ' + dateStr, W / 2 + 4, y + 19, 8.5);
     y += 28;
 
-    const compScore = Number(result.composite) || 0;
-    const gc = compScore >= 28 ? [5, 150, 105] : compScore >= 20 ? [180, 100, 0] : [200, 30, 30];
-    rect(M, y, W - 2 * M, 28, ...gc);
-    txt(String(result.composite !== undefined && result.composite !== null ? result.composite : 0), M + 16, y + 20, 32, true, [255, 255, 255]);
-    txt('ACT Composite Score', M + 16, y + 26, 7, false, [200, 255, 220]);
-
-    const secScores = result.sectionScores || {};
+    // Score hero banner
     const allSecCandidates = [
-        ['english', 'English', secScores.english, [93, 197, 253]],
-        ['math', 'Math', secScores.math, [110, 231, 183]],
-        ['reading', 'Reading', secScores.reading, [196, 181, 253]]
+        ['english', 'English', (result.sectionScores && result.sectionScores.english), [93, 197, 253]],
+        ['math', 'Math', (result.sectionScores && result.sectionScores.math), [110, 231, 183]],
+        ['reading', 'Reading', (result.sectionScores && result.sectionScores.reading), [196, 181, 253]]
     ];
 
     const activeSecKeysInDetails = new Set((result.details || []).map(d => (d && d.section ? String(d.section).toLowerCase() : '')));
@@ -86,27 +80,55 @@ function generateACTPDFReport(result, shouldSave = true) {
         if (score === undefined || score === null || score === '-') return false;
         if (hasSpecificDetails && !activeSecKeysInDetails.has(secKey)) return false;
         return true;
-    }).map(([secKey, name, score, color]) => [name, score, color]);
+    }).map(([secKey, name, score, color]) => [name, score, color, secKey]);
 
-    if (secData.length === 0) {
-        secData = [
-            ['English', secScores.english !== undefined ? secScores.english : '–', [93, 197, 253]],
-            ['Math', secScores.math !== undefined ? secScores.math : '–', [110, 231, 183]],
-            ['Reading', secScores.reading !== undefined ? secScores.reading : '–', [196, 181, 253]]
-        ];
+    const isSingleSection = secData.length === 1;
+    const isMathTest = (isSingleSection && secData[0][3] === 'math') || ((result.examName || '').toLowerCase().includes('math'));
+
+    let heroScore = result.composite;
+    let heroLabel = 'ACT Composite Score';
+
+    if (isMathTest) {
+        heroLabel = 'ACT Math Score';
+        heroScore = (result.sectionScores && result.sectionScores.math !== undefined) ? result.sectionScores.math : result.composite;
+    } else if (isSingleSection) {
+        heroLabel = 'ACT ' + secData[0][0] + ' Score';
+        heroScore = secData[0][1] !== undefined ? secData[0][1] : result.composite;
     }
 
-    const secBoxW = (W - 2 * M - 55) / (secData.length || 1);
-    secData.forEach(([name, score, [r, g, b]], i) => {
-        const sx = M + 52 + i * (secBoxW + 2);
-        doc.setFillColor(0, 0, 0, 0.3);
-        rect(sx, y + 3, secBoxW, 22, 0, 0, 0);
-        doc.setFillColor(r, g, b, 0.1);
-        rect(sx, y + 3, secBoxW, 22, Math.floor(r / 4), Math.floor(g / 4), Math.floor(b / 4));
-        txt(name, sx + secBoxW / 2, y + 10, 6.5, true, [r, g, b], 'center');
-        txt(String(score !== undefined && score !== null ? score : '–'), sx + secBoxW / 2, y + 20, 14, true, [255, 255, 255], 'center');
-        txt('/36', sx + secBoxW / 2, y + 25.5, 6, false, [r, g, b], 'center');
-    });
+    const numHero = Number(heroScore) || 0;
+    const gc = numHero >= 28 ? [5, 150, 105] : numHero >= 20 ? [180, 100, 0] : [200, 30, 30];
+    rect(M, y, W - 2 * M, 28, ...gc);
+    txt(String(heroScore !== undefined && heroScore !== null ? heroScore : 0), M + 16, y + 20, 32, true, [255, 255, 255]);
+    txt(heroLabel, M + 16, y + 26, 7.5, false, [200, 255, 220]);
+
+    if (!isSingleSection && secData.length > 1) {
+        const secBoxW = (W - 2 * M - 55) / (secData.length || 1);
+        secData.forEach(([name, score, [r, g, b]], i) => {
+            const sx = M + 52 + i * (secBoxW + 2);
+            doc.setFillColor(0, 0, 0, 0.3);
+            rect(sx, y + 3, secBoxW, 22, 0, 0, 0);
+            doc.setFillColor(r, g, b, 0.1);
+            rect(sx, y + 3, secBoxW, 22, Math.floor(r / 4), Math.floor(g / 4), Math.floor(b / 4));
+            txt(name, sx + secBoxW / 2, y + 10, 6.5, true, [r, g, b], 'center');
+            txt(String(score), sx + secBoxW / 2, y + 20, 14, true, [255, 255, 255], 'center');
+            txt('/36', sx + secBoxW / 2, y + 25.5, 6, false, [r, g, b], 'center');
+        });
+    } else {
+        const chips = [
+            ['Accuracy', (result.pct || 0) + '%'],
+            ['Raw Score', (result.correct || 0) + ' / ' + (result.total || 0)],
+            ['Grade', String(result.grade || 'A')]
+        ];
+        const chipW = (W - 2 * M - 60) / 3;
+        chips.forEach(([lbl, val], i) => {
+            const sx = M + 55 + i * (chipW + 2);
+            doc.setFillColor(0, 0, 0, 0.25);
+            rect(sx, y + 4, chipW, 20, 0, 0, 0);
+            txt(lbl, sx + chipW / 2, y + 11, 7, false, [200, 255, 220], 'center');
+            txt(String(val), sx + chipW / 2, y + 20, 11, true, [255, 255, 255], 'center');
+        });
+    }
     y += 34;
 
     const correctCount = Number(result.correct) || 0;

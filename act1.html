@@ -1163,7 +1163,7 @@
     <div id="resultScreen">
         <div class="result-wrap">
             <div class="result-hero">
-                <div class="composite-label">ACT Composite Score</div>
+                <div class="composite-label" id="compositeLabel">ACT Composite Score</div>
                 <div class="composite-score" id="compositeScore">—</div>
                 <div class="composite-max">out of 36</div>
                 <div class="section-scores-row" id="sectionScoresRow"></div>
@@ -1606,12 +1606,15 @@ function formatMathCaret(text) {
             });
 
             // Section scaled scores
-            const sectionScores = {
-                english: getACTSectionScore('english', sectionRaw.english, SECTION_QUESTIONS.english?.length),
-                math: getACTSectionScore('math', sectionRaw.math, SECTION_QUESTIONS.math?.length),
-                reading: getACTSectionScore('reading', sectionRaw.reading, SECTION_QUESTIONS.reading?.length)
-            };
-            const composite = getACTCompositeScore(sectionScores);
+            const activeSecKeys = Object.keys(SECTION_QUESTIONS).filter(sec => SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0);
+            const isSingleSec = activeSecKeys.length === 1;
+            const singleSecKey = isSingleSec ? activeSecKeys[0] : null;
+
+            const sectionScores = {};
+            activeSecKeys.forEach(sec => {
+                sectionScores[sec] = getACTSectionScore(sec, sectionRaw[sec] || 0, SECTION_QUESTIONS[sec].length);
+            });
+            const composite = isSingleSec ? (sectionScores[singleSecKey] || 0) : getACTCompositeScore(sectionScores);;
 
             const total = ACT_QUESTIONS1.length;
             const pct = Math.round((correct / total) * 100);
@@ -1665,7 +1668,7 @@ function formatMathCaret(text) {
                     ...testResult,
                     scaled: composite,
                     rwScore: null,
-                    mathScore: null,
+                    mathScore: (sectionScores && sectionScores.math) || null,
                 });
             } catch (e) {
                 console.error("sendEmails error:", e);
@@ -1680,23 +1683,55 @@ function formatMathCaret(text) {
             document.getElementById('resultScreen').style.display = 'flex';
             document.getElementById('resultScreen').style.flexDirection = 'column';
 
-            // Composite
-            const scoreColor = r.composite >= 28 ? '#34d399' : r.composite >= 20 ? '#fbbf24' : '#f87171';
-            const el = document.getElementById('compositeScore');
-            el.textContent = r.composite;
-            el.style.color = scoreColor;
+            const activeSecKeys = Object.keys(r.sectionScores || {}).filter(sec => {
+                return (typeof SECTION_QUESTIONS !== 'undefined' && SECTION_QUESTIONS[sec] && SECTION_QUESTIONS[sec].length > 0) || (r.details && r.details.some(d => d.section === sec));
+            });
+            const isSingleSec = activeSecKeys.length === 1;
+            const singleSec = isSingleSec ? activeSecKeys[0] : (activeSecKeys.includes('math') && activeSecKeys.length === 1 ? 'math' : null);
+            const isMathTest = singleSec === 'math' || (!singleSec && (r.examName || '').toLowerCase().includes('math'));
 
-            // Section scores
+            let mainLabel = 'ACT Composite Score';
+            let mainScore = r.composite;
+
+            if (isMathTest) {
+                mainLabel = 'ACT Math Score';
+                mainScore = r.sectionScores?.math !== undefined ? r.sectionScores.math : r.composite;
+            } else if (isSingleSec) {
+                const secLabels = { english: 'English', math: 'Math', reading: 'Reading', science: 'Science' };
+                mainLabel = `ACT ${secLabels[singleSec] || singleSec} Score`;
+                mainScore = r.sectionScores?.[singleSec] !== undefined ? r.sectionScores[singleSec] : r.composite;
+            }
+
+            const compLabelEl = document.getElementById('compositeLabel') || document.querySelector('.composite-label');
+            if (compLabelEl) compLabelEl.textContent = mainLabel;
+
+            const scoreNum = Number(mainScore) || 0;
+            const scoreColor = scoreNum >= 28 ? '#34d399' : scoreNum >= 20 ? '#fbbf24' : '#f87171';
+            const el = document.getElementById('compositeScore');
+            if (el) {
+                el.textContent = mainScore;
+                el.style.color = scoreColor;
+            }
+
+            // Section scores row - if single section (e.g. Maths test), do not show redundant sub-card
             const secRow = document.getElementById('sectionScoresRow');
-            const secColors = { english: '#1a56db', math: '#059669', reading: '#7c3aed' };
-            const secLabels = { english: 'English', math: 'Math', reading: 'Reading' };
-            secRow.innerHTML = Object.entries(r.sectionScores).map(([sec, score]) => `
-    <div class="sec-score-box" style="background:${secColors[sec]}22;border:1px solid ${secColors[sec]}44">
-      <div class="s-label" style="color:${SECTION_COLORS[sec]}">${secLabels[sec]}</div>
-      <div class="s-val" style="color:${SECTION_COLORS[sec]}">${score}</div>
-      <div class="s-max" style="color:${SECTION_COLORS[sec]}aa">/ 36</div>
+            if (secRow) {
+                if (isSingleSec || isMathTest) {
+                    secRow.innerHTML = '';
+                    secRow.style.display = 'none';
+                } else {
+                    secRow.style.display = 'grid';
+                    const secColors = { english: '#1a56db', math: '#059669', reading: '#7c3aed', science: '#d97706' };
+                    const secLabels = { english: 'English', math: 'Math', reading: 'Reading', science: 'Science' };
+                    secRow.innerHTML = activeSecKeys.map(sec => `
+    <div class="sec-score-box" style="background:${secColors[sec] || '#222'}22;border:1px solid ${secColors[sec] || '#444'}44">
+      <div class="s-label" style="color:${(typeof SECTION_COLORS !== 'undefined' && SECTION_COLORS[sec]) || '#fff'}">${secLabels[sec] || sec}</div>
+      <div class="s-val" style="color:${(typeof SECTION_COLORS !== 'undefined' && SECTION_COLORS[sec]) || '#fff'}">${r.sectionScores[sec]}</div>
+      <div class="s-max" style="color:${(typeof SECTION_COLORS !== 'undefined' && SECTION_COLORS[sec]) || '#fff'}aa">/ 36</div>
     </div>
   `).join('');
+                }
+            }
 
             // Stats
             const statsWrap = document.getElementById('resultStats');
@@ -1733,7 +1768,7 @@ function formatMathCaret(text) {
       </tr>
     `;
             }).join('');
-        renderInlineReview('all');
+            if (typeof renderInlineReview === 'function') renderInlineReview('all');
         }
 
         // ── Review modal ──────────────────────────────────
